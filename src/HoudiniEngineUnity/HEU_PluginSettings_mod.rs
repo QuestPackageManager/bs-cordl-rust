@@ -45,7 +45,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -54,7 +54,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AssetCachePath", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AssetCachePath", 0usize
                         )
                     })
             });
@@ -69,7 +70,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -78,7 +79,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CollisionGroupName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CollisionGroupName", 0usize
                         )
                     })
             });
@@ -91,7 +93,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         bool,
@@ -100,7 +102,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CookOptionSplitGeosByGroup", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CookOptionSplitGeosByGroup", 0usize
                         )
                     })
             });
@@ -111,12 +114,13 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_CookTemplatedGeos")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CookTemplatedGeos", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CookTemplatedGeos", 0usize
                         )
                     })
             });
@@ -127,12 +131,13 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_CookingEnabled")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CookingEnabled", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CookingEnabled", 0usize
                         )
                     })
             });
@@ -143,7 +148,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         bool,
@@ -152,7 +157,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CookingTriggersDownstreamCooks", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CookingTriggersDownstreamCooks", 0usize
                         )
                     })
             });
@@ -163,12 +169,13 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_Curves_ShowInSceneView")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Curves_ShowInSceneView", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Curves_ShowInSceneView", 0usize
                         )
                     })
             });
@@ -181,7 +188,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -190,7 +197,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_DefaultCurveShader", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_DefaultCurveShader", 0usize
                         )
                     })
             });
@@ -205,7 +213,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -214,7 +222,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_DefaultStandardShader", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_DefaultStandardShader", 0usize
                         )
                     })
             });
@@ -229,7 +238,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -238,7 +247,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_DefaultTerrainMaterial", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_DefaultTerrainMaterial", 0usize
                         )
                     })
             });
@@ -253,7 +263,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -262,7 +272,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_DefaultTransparentShader", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_DefaultTransparentShader", 0usize
                         )
                     })
             });
@@ -277,7 +288,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -286,7 +297,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_DefaultVertexColorShader", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_DefaultVertexColorShader", 0usize
                         )
                     })
             });
@@ -301,7 +313,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -310,7 +322,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_EditorOnly_Tag", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_EditorOnly_Tag", 0usize
                         )
                     })
             });
@@ -325,7 +338,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -334,7 +347,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_HDAData_Name", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_HDAData_Name", 0usize
                         )
                     })
             });
@@ -347,7 +361,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         i32,
@@ -356,7 +370,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_HEngineShelfSelectedIndex", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_HEngineShelfSelectedIndex", 0usize
                         )
                     })
             });
@@ -373,7 +388,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -388,7 +403,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_HEngineToolsShelves", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_HEngineToolsShelves", 0usize
                         )
                     })
             });
@@ -405,7 +421,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -414,7 +430,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_HoudiniDebugLaunchPath", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_HoudiniDebugLaunchPath", 0usize
                         )
                     })
             });
@@ -429,7 +446,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -438,7 +455,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_HoudiniEngineEnvFilePath", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_HoudiniEngineEnvFilePath", 0usize
                         )
                     })
             });
@@ -453,7 +471,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -462,7 +480,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_HoudiniInstallPath", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_HoudiniInstallPath", 0usize
                         )
                     })
             });
@@ -475,12 +494,13 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_ImageGamma")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ImageGamma", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ImageGamma", 0usize
                         )
                     })
             });
@@ -491,7 +511,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         i32,
@@ -500,7 +520,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_InputSelectionFilterLocation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_InputSelectionFilterLocation", 0usize
                         )
                     })
             });
@@ -513,7 +534,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -522,7 +543,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_InputSelectionFilterName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_InputSelectionFilterName", 0usize
                         )
                     })
             });
@@ -535,7 +557,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         bool,
@@ -544,7 +566,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_InputSelectionFilterRoots", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_InputSelectionFilterRoots", 0usize
                         )
                     })
             });
@@ -555,7 +578,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         i32,
@@ -564,7 +587,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_InputSelectionFilterState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_InputSelectionFilterState", 0usize
                         )
                     })
             });
@@ -577,7 +601,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -586,7 +610,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_InstanceAttr", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_InstanceAttr", 0usize
                         )
                     })
             });
@@ -601,7 +626,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -610,7 +635,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_LastExportPath", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_LastExportPath", 0usize
                         )
                     })
             });
@@ -625,7 +651,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -634,7 +660,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_LastHoudiniVersion", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_LastHoudiniVersion", 0usize
                         )
                     })
             });
@@ -649,7 +676,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -658,7 +685,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_LastLoadHDAPath", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_LastLoadHDAPath", 0usize
                         )
                     })
             });
@@ -673,7 +701,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -682,7 +710,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_LastLoadHIPPath", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_LastLoadHIPPath", 0usize
                         )
                     })
             });
@@ -695,7 +724,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::UnityEngine::Color,
@@ -704,7 +733,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_LineColor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_LineColor", 0usize
                         )
                     })
             });
@@ -717,12 +747,13 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("get_MaxVerticesPerPrimitive")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_MaxVerticesPerPrimitive", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_MaxVerticesPerPrimitive", 0usize
                         )
                     })
             });
@@ -733,7 +764,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         f32,
@@ -742,7 +773,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_NormalGenerationThresholdAngle", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_NormalGenerationThresholdAngle", 0usize
                         )
                     })
             });
@@ -753,7 +785,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         bool,
@@ -762,7 +794,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_PushUnityTransformToHoudini", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_PushUnityTransformToHoudini", 0usize
                         )
                     })
             });
@@ -775,7 +808,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -784,7 +817,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_RenderedCollisionGroupName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_RenderedCollisionGroupName", 0usize
                         )
                     })
             });
@@ -799,7 +833,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -808,7 +842,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_RenderedConvexCollisionGroupName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_RenderedConvexCollisionGroupName", 0usize
                         )
                     })
             });
@@ -821,12 +856,13 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_SessionSyncAutoCook")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SessionSyncAutoCook", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SessionSyncAutoCook", 0usize
                         )
                     })
             });
@@ -837,12 +873,13 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_Session_AutoClose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Session_AutoClose", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Session_AutoClose", 0usize
                         )
                     })
             });
@@ -855,7 +892,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -864,7 +901,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Session_Localhost", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Session_Localhost", 0usize
                         )
                     })
             });
@@ -879,7 +917,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::HoudiniEngineUnity::SessionMode,
@@ -888,7 +926,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Session_Mode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Session_Mode", 0usize
                         )
                     })
             });
@@ -903,7 +942,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -912,7 +951,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Session_PipeName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Session_PipeName", 0usize
                         )
                     })
             });
@@ -925,12 +965,13 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("get_Session_Port")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Session_Port", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Session_Port", 0usize
                         )
                     })
             });
@@ -941,12 +982,13 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_Session_Timeout")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Session_Timeout", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Session_Timeout", 0usize
                         )
                     })
             });
@@ -959,7 +1001,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         bool,
@@ -968,8 +1010,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SetCurrentThreadToInvariantCulture",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SetCurrentThreadToInvariantCulture", 0usize
                         )
                     })
             });
@@ -980,12 +1022,13 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_ShortenFolderPaths")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ShortenFolderPaths", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ShortenFolderPaths", 0usize
                         )
                     })
             });
@@ -996,12 +1039,13 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_SupportHoudiniBoxType")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SupportHoudiniBoxType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SupportHoudiniBoxType", 0usize
                         )
                     })
             });
@@ -1012,7 +1056,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         bool,
@@ -1021,7 +1065,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SupportHoudiniSphereType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SupportHoudiniSphereType", 0usize
                         )
                     })
             });
@@ -1034,7 +1079,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1043,7 +1088,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_TerrainSplatTextureDefault", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_TerrainSplatTextureDefault", 0usize
                         )
                     })
             });
@@ -1056,7 +1102,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         bool,
@@ -1065,7 +1111,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_TransformChangeTriggersCooks", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_TransformChangeTriggersCooks", 0usize
                         )
                     })
             });
@@ -1078,7 +1125,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1087,7 +1134,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_UnityInputMeshAttr", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_UnityInputMeshAttr", 0usize
                         )
                     })
             });
@@ -1102,7 +1150,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1111,7 +1159,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_UnityInstanceAttr", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_UnityInstanceAttr", 0usize
                         )
                     })
             });
@@ -1126,7 +1175,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1135,7 +1184,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_UnityLayerAttributeName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_UnityLayerAttributeName", 0usize
                         )
                     })
             });
@@ -1150,7 +1200,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1159,7 +1209,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_UnityMaterialAttribName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_UnityMaterialAttribName", 0usize
                         )
                     })
             });
@@ -1174,7 +1225,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1183,7 +1234,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_UnityScriptAttributeName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_UnityScriptAttributeName", 0usize
                         )
                     })
             });
@@ -1198,7 +1250,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1207,7 +1259,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_UnityStaticAttributeName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_UnityStaticAttributeName", 0usize
                         )
                     })
             });
@@ -1222,7 +1275,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1231,7 +1284,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_UnitySubMaterialAttribName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_UnitySubMaterialAttribName", 0usize
                         )
                     })
             });
@@ -1246,7 +1300,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1255,7 +1309,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_UnitySubMaterialIndexAttribName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_UnitySubMaterialIndexAttribName", 0usize
                         )
                     })
             });
@@ -1270,7 +1325,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1279,7 +1334,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_UnityTagAttributeName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_UnityTagAttributeName", 0usize
                         )
                     })
             });
@@ -1292,7 +1348,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         bool,
@@ -1301,7 +1357,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_UseFullPathNamesForOutput", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_UseFullPathNamesForOutput", 0usize
                         )
                     })
             });
@@ -1312,12 +1369,13 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_UseHDRColor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_UseHDRColor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_UseHDRColor", 0usize
                         )
                     })
             });
@@ -1328,12 +1386,13 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_UseLegacyShaders")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_UseLegacyShaders", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_UseLegacyShaders", 0usize
                         )
                     })
             });
@@ -1344,12 +1403,13 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_UseSpecularShader")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_UseSpecularShader", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_UseSpecularShader", 0usize
                         )
                     })
             });
@@ -1360,12 +1420,13 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_WriteCookLogs")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_WriteCookLogs", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_WriteCookLogs", 0usize
                         )
                     })
             });
@@ -1378,7 +1439,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -1387,7 +1448,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_AssetCachePath", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_AssetCachePath", 1usize
                         )
                     })
             });
@@ -1402,7 +1464,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -1411,7 +1473,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_CollisionGroupName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_CollisionGroupName", 1usize
                         )
                     })
             });
@@ -1426,7 +1489,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -1435,7 +1498,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_CookOptionSplitGeosByGroup", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_CookOptionSplitGeosByGroup", 1usize
                         )
                     })
             });
@@ -1450,7 +1514,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -1459,7 +1523,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_CookTemplatedGeos", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_CookTemplatedGeos", 1usize
                         )
                     })
             });
@@ -1474,7 +1539,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -1483,7 +1548,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_CookingEnabled", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_CookingEnabled", 1usize
                         )
                     })
             });
@@ -1498,7 +1564,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -1507,7 +1573,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_CookingTriggersDownstreamCooks", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_CookingTriggersDownstreamCooks", 1usize
                         )
                     })
             });
@@ -1522,7 +1589,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -1531,7 +1598,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Curves_ShowInSceneView", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Curves_ShowInSceneView", 1usize
                         )
                     })
             });
@@ -1546,7 +1614,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -1555,7 +1623,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_DefaultCurveShader", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_DefaultCurveShader", 1usize
                         )
                     })
             });
@@ -1570,7 +1639,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -1579,7 +1648,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_DefaultStandardShader", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_DefaultStandardShader", 1usize
                         )
                     })
             });
@@ -1594,7 +1664,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -1603,7 +1673,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_DefaultTerrainMaterial", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_DefaultTerrainMaterial", 1usize
                         )
                     })
             });
@@ -1618,7 +1689,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -1627,7 +1698,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_DefaultTransparentShader", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_DefaultTransparentShader", 1usize
                         )
                     })
             });
@@ -1642,7 +1714,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -1651,7 +1723,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_DefaultVertexColorShader", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_DefaultVertexColorShader", 1usize
                         )
                     })
             });
@@ -1666,7 +1739,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -1675,7 +1748,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_EditorOnly_Tag", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_EditorOnly_Tag", 1usize
                         )
                     })
             });
@@ -1690,7 +1764,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -1699,7 +1773,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_HDAData_Name", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_HDAData_Name", 1usize
                         )
                     })
             });
@@ -1714,7 +1789,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -1723,7 +1798,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_HEngineShelfSelectedIndex", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_HEngineShelfSelectedIndex", 1usize
                         )
                     })
             });
@@ -1742,7 +1818,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::List_1<
@@ -1757,7 +1833,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_HEngineToolsShelves", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_HEngineToolsShelves", 1usize
                         )
                     })
             });
@@ -1772,7 +1849,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -1781,7 +1858,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_HoudiniDebugLaunchPath", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_HoudiniDebugLaunchPath", 1usize
                         )
                     })
             });
@@ -1796,7 +1874,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -1805,7 +1883,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_HoudiniEngineEnvFilePath", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_HoudiniEngineEnvFilePath", 1usize
                         )
                     })
             });
@@ -1820,7 +1899,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -1829,7 +1908,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_HoudiniInstallPath", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_HoudiniInstallPath", 1usize
                         )
                     })
             });
@@ -1844,7 +1924,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -1853,7 +1933,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_ImageGamma", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_ImageGamma", 1usize
                         )
                     })
             });
@@ -1868,7 +1949,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -1877,7 +1958,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_InputSelectionFilterLocation", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_InputSelectionFilterLocation", 1usize
                         )
                     })
             });
@@ -1892,7 +1974,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -1901,7 +1983,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_InputSelectionFilterName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_InputSelectionFilterName", 1usize
                         )
                     })
             });
@@ -1916,7 +1999,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -1925,7 +2008,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_InputSelectionFilterRoots", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_InputSelectionFilterRoots", 1usize
                         )
                     })
             });
@@ -1940,7 +2024,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -1949,7 +2033,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_InputSelectionFilterState", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_InputSelectionFilterState", 1usize
                         )
                     })
             });
@@ -1964,7 +2049,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -1973,7 +2058,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_InstanceAttr", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_InstanceAttr", 1usize
                         )
                     })
             });
@@ -1988,7 +2074,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -1997,7 +2083,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_LastExportPath", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_LastExportPath", 1usize
                         )
                     })
             });
@@ -2012,7 +2099,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -2021,7 +2108,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_LastHoudiniVersion", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_LastHoudiniVersion", 1usize
                         )
                     })
             });
@@ -2036,7 +2124,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -2045,7 +2133,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_LastLoadHDAPath", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_LastLoadHDAPath", 1usize
                         )
                     })
             });
@@ -2060,7 +2149,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -2069,7 +2158,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_LastLoadHIPPath", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_LastLoadHIPPath", 1usize
                         )
                     })
             });
@@ -2084,7 +2174,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Color),
                         quest_hook::libil2cpp::Void,
@@ -2093,7 +2183,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_LineColor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_LineColor", 1usize
                         )
                     })
             });
@@ -2108,7 +2199,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -2117,7 +2208,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_MaxVerticesPerPrimitive", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_MaxVerticesPerPrimitive", 1usize
                         )
                     })
             });
@@ -2132,7 +2224,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -2141,7 +2233,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_NormalGenerationThresholdAngle", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_NormalGenerationThresholdAngle", 1usize
                         )
                     })
             });
@@ -2156,7 +2249,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -2165,7 +2258,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_PushUnityTransformToHoudini", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_PushUnityTransformToHoudini", 1usize
                         )
                     })
             });
@@ -2180,7 +2274,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -2189,7 +2283,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_RenderedCollisionGroupName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_RenderedCollisionGroupName", 1usize
                         )
                     })
             });
@@ -2204,7 +2299,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -2213,7 +2308,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_RenderedConvexCollisionGroupName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_RenderedConvexCollisionGroupName", 1usize
                         )
                     })
             });
@@ -2228,7 +2324,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -2237,7 +2333,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_SessionSyncAutoCook", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_SessionSyncAutoCook", 1usize
                         )
                     })
             });
@@ -2252,7 +2349,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -2261,7 +2358,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Session_AutoClose", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Session_AutoClose", 1usize
                         )
                     })
             });
@@ -2276,7 +2374,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -2285,7 +2383,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Session_Localhost", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Session_Localhost", 1usize
                         )
                     })
             });
@@ -2300,7 +2399,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::HoudiniEngineUnity::SessionMode),
                         quest_hook::libil2cpp::Void,
@@ -2309,7 +2408,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Session_Mode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Session_Mode", 1usize
                         )
                     })
             });
@@ -2324,7 +2424,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -2333,7 +2433,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Session_PipeName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Session_PipeName", 1usize
                         )
                     })
             });
@@ -2348,7 +2449,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -2357,7 +2458,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Session_Port", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Session_Port", 1usize
                         )
                     })
             });
@@ -2372,7 +2474,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -2381,7 +2483,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Session_Timeout", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Session_Timeout", 1usize
                         )
                     })
             });
@@ -2396,7 +2499,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -2405,8 +2508,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_SetCurrentThreadToInvariantCulture",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_SetCurrentThreadToInvariantCulture", 1usize
                         )
                     })
             });
@@ -2421,7 +2524,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -2430,7 +2533,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_ShortenFolderPaths", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_ShortenFolderPaths", 1usize
                         )
                     })
             });
@@ -2445,7 +2549,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -2454,7 +2558,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_SupportHoudiniBoxType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_SupportHoudiniBoxType", 1usize
                         )
                     })
             });
@@ -2469,7 +2574,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -2478,7 +2583,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_SupportHoudiniSphereType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_SupportHoudiniSphereType", 1usize
                         )
                     })
             });
@@ -2493,7 +2599,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -2502,7 +2608,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_TerrainSplatTextureDefault", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_TerrainSplatTextureDefault", 1usize
                         )
                     })
             });
@@ -2517,7 +2624,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -2526,7 +2633,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_TransformChangeTriggersCooks", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_TransformChangeTriggersCooks", 1usize
                         )
                     })
             });
@@ -2541,7 +2649,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -2550,7 +2658,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_UnityInputMeshAttr", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_UnityInputMeshAttr", 1usize
                         )
                     })
             });
@@ -2565,7 +2674,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -2574,7 +2683,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_UnityInstanceAttr", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_UnityInstanceAttr", 1usize
                         )
                     })
             });
@@ -2589,7 +2699,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -2598,7 +2708,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_UnityLayerAttributeName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_UnityLayerAttributeName", 1usize
                         )
                     })
             });
@@ -2613,7 +2724,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -2622,7 +2733,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_UnityMaterialAttribName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_UnityMaterialAttribName", 1usize
                         )
                     })
             });
@@ -2637,7 +2749,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -2646,7 +2758,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_UnityScriptAttributeName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_UnityScriptAttributeName", 1usize
                         )
                     })
             });
@@ -2661,7 +2774,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -2670,7 +2783,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_UnityStaticAttributeName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_UnityStaticAttributeName", 1usize
                         )
                     })
             });
@@ -2685,7 +2799,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -2694,7 +2808,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_UnitySubMaterialAttribName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_UnitySubMaterialAttribName", 1usize
                         )
                     })
             });
@@ -2709,7 +2824,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -2718,7 +2833,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_UnitySubMaterialIndexAttribName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_UnitySubMaterialIndexAttribName", 1usize
                         )
                     })
             });
@@ -2733,7 +2849,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -2742,7 +2858,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_UnityTagAttributeName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_UnityTagAttributeName", 1usize
                         )
                     })
             });
@@ -2757,7 +2874,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -2766,7 +2883,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_UseFullPathNamesForOutput", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_UseFullPathNamesForOutput", 1usize
                         )
                     })
             });
@@ -2781,7 +2899,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -2790,7 +2908,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_UseHDRColor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_UseHDRColor", 1usize
                         )
                     })
             });
@@ -2805,7 +2924,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -2814,7 +2933,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_UseLegacyShaders", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_UseLegacyShaders", 1usize
                         )
                     })
             });
@@ -2829,7 +2949,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -2838,7 +2958,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_UseSpecularShader", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_UseSpecularShader", 1usize
                         )
                     })
             });
@@ -2853,7 +2974,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -2862,7 +2983,8 @@ impl crate::HoudiniEngineUnity::HEU_PluginSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_WriteCookLogs", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_WriteCookLogs", 1usize
                         )
                     })
             });

@@ -56,7 +56,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -73,7 +73,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AbortClientHandshake", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AbortClientHandshake", 3usize
                         )
                     })
             });
@@ -96,7 +97,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -114,7 +115,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ClientHandshake", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ClientHandshake", 2usize
                         )
                     })
             });
@@ -137,7 +139,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -155,7 +157,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Connect", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Connect",
+                            2usize
                         )
                     })
             });
@@ -178,7 +181,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -196,7 +199,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenerateCertificateVerify", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateCertificateVerify", 2usize
                         )
                     })
             });
@@ -219,7 +223,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -237,7 +241,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenerateClientHello", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateClientHello", 2usize
                         )
                     })
             });
@@ -257,7 +262,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol_ClientHandshakeState,
@@ -270,7 +275,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenerateClientKeyExchange", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateClientKeyExchange", 1usize
                         )
                     })
             });
@@ -288,7 +294,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol_ClientHandshakeState,
@@ -299,7 +305,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InvalidateSession", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InvalidateSession", 1usize
                         )
                     })
             });
@@ -330,7 +337,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -348,7 +355,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PatchClientHelloWithCookie", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PatchClientHelloWithCookie", 2usize
                         )
                     })
             });
@@ -367,7 +375,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -383,7 +391,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessCertificateRequest", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessCertificateRequest", 2usize
                         )
                     })
             });
@@ -402,7 +411,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -418,7 +427,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessCertificateStatus", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessCertificateStatus", 2usize
                         )
                     })
             });
@@ -439,7 +449,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -457,7 +467,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessHelloVerifyRequest", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessHelloVerifyRequest", 2usize
                         )
                     })
             });
@@ -476,7 +487,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -492,7 +503,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessNewSessionTicket", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessNewSessionTicket", 2usize
                         )
                     })
             });
@@ -513,7 +525,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -531,7 +543,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessServerCertificate", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessServerCertificate", 2usize
                         )
                     })
             });
@@ -550,7 +563,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -566,7 +579,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessServerHello", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessServerHello", 2usize
                         )
                     })
             });
@@ -585,7 +599,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -601,7 +615,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessServerKeyExchange", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessServerKeyExchange", 2usize
                         )
                     })
             });
@@ -620,7 +635,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -636,7 +651,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessServerSupplementalData", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessServerSupplementalData", 2usize
                         )
                     })
             });
@@ -657,7 +673,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -673,7 +689,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReportServerVersion", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReportServerVersion", 2usize
                         )
                     })
             });
@@ -691,7 +708,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Security::SecureRandom,
@@ -702,7 +719,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -824,12 +842,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsClientProtocol_ClientHandshakeSt
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

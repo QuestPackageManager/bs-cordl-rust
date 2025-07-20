@@ -47,7 +47,7 @@ impl crate::UnityEngine::Playables::IPlayableAsset {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Playables::PlayableGraph,
@@ -59,7 +59,8 @@ impl crate::UnityEngine::Playables::IPlayableAsset {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreatePlayable", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreatePlayable", 2usize
                         )
                     })
             });
@@ -77,12 +78,13 @@ impl crate::UnityEngine::Playables::IPlayableAsset {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f64, 0usize>("get_duration")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_duration", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_duration", 0usize
                         )
                     })
             });

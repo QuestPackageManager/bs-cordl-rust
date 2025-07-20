@@ -42,12 +42,13 @@ impl crate::System::Buffers::Utilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("GetMaxSizeForBucket")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMaxSizeForBucket", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMaxSizeForBucket", 1usize
                         )
                     })
             });
@@ -58,12 +59,13 @@ impl crate::System::Buffers::Utilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("SelectBucketIndex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SelectBucketIndex", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SelectBucketIndex", 1usize
                         )
                     })
             });

@@ -49,12 +49,13 @@ impl crate::HMUI::HoverHintController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Awake", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Awake",
+                            0usize
                         )
                     })
             });
@@ -71,7 +72,7 @@ impl crate::HMUI::HoverHintController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::HMUI::HoverHint>),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -80,7 +81,8 @@ impl crate::HMUI::HoverHintController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetScreenTransformForHoverHint", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetScreenTransformForHoverHint", 1usize
                         )
                     })
             });
@@ -96,7 +98,7 @@ impl crate::HMUI::HoverHintController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::HMUI::HoverHint>),
                         quest_hook::libil2cpp::Void,
@@ -105,7 +107,8 @@ impl crate::HMUI::HoverHintController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HideHint", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HideHint", 1usize
                         )
                     })
             });
@@ -123,7 +126,7 @@ impl crate::HMUI::HoverHintController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Gc<
@@ -134,7 +137,8 @@ impl crate::HMUI::HoverHintController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HideHintAfterDelay", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HideHintAfterDelay", 1usize
                         )
                     })
             });
@@ -150,7 +154,7 @@ impl crate::HMUI::HoverHintController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::HMUI::HoverHint>),
                         quest_hook::libil2cpp::Void,
@@ -159,7 +163,8 @@ impl crate::HMUI::HoverHintController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HideHintInstant", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HideHintInstant", 1usize
                         )
                     })
             });
@@ -182,7 +187,7 @@ impl crate::HMUI::HoverHintController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -191,7 +196,8 @@ impl crate::HMUI::HoverHintController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnApplicationFocus", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnApplicationFocus", 1usize
                         )
                     })
             });
@@ -207,7 +213,7 @@ impl crate::HMUI::HoverHintController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::HMUI::HoverHint>),
                         quest_hook::libil2cpp::Void,
@@ -216,7 +222,8 @@ impl crate::HMUI::HoverHintController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetupAndShowHintPanel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetupAndShowHintPanel", 1usize
                         )
                     })
             });
@@ -232,7 +239,7 @@ impl crate::HMUI::HoverHintController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::HMUI::HoverHint>),
                         quest_hook::libil2cpp::Void,
@@ -241,7 +248,8 @@ impl crate::HMUI::HoverHintController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShowHint", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShowHint", 1usize
                         )
                     })
             });
@@ -260,7 +268,7 @@ impl crate::HMUI::HoverHintController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::HMUI::HoverHint>, f32),
                         quest_hook::libil2cpp::Gc<
@@ -271,7 +279,8 @@ impl crate::HMUI::HoverHintController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShowHintAfterDelay", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShowHintAfterDelay", 2usize
                         )
                     })
             });
@@ -287,7 +296,7 @@ impl crate::HMUI::HoverHintController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::HMUI::HoverHint>),
                         quest_hook::libil2cpp::Void,
@@ -296,7 +305,8 @@ impl crate::HMUI::HoverHintController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShowHintInternal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShowHintInternal", 1usize
                         )
                     })
             });
@@ -311,12 +321,13 @@ impl crate::HMUI::HoverHintController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

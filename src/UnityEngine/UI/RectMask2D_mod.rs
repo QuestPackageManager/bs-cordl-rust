@@ -73,7 +73,7 @@ impl crate::UnityEngine::UI::RectMask2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IClippable>),
                         quest_hook::libil2cpp::Void,
@@ -82,7 +82,8 @@ impl crate::UnityEngine::UI::RectMask2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddClippable", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddClippable", 1usize
                         )
                     })
             });
@@ -99,7 +100,7 @@ impl crate::UnityEngine::UI::RectMask2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Vector2,
@@ -111,7 +112,8 @@ impl crate::UnityEngine::UI::RectMask2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsRaycastLocationValid", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsRaycastLocationValid", 2usize
                         )
                     })
             });
@@ -133,7 +135,7 @@ impl crate::UnityEngine::UI::RectMask2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -142,7 +144,8 @@ impl crate::UnityEngine::UI::RectMask2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnCanvasHierarchyChanged", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnCanvasHierarchyChanged", 0usize
                         )
                     })
             });
@@ -157,12 +160,13 @@ impl crate::UnityEngine::UI::RectMask2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDestroy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDestroy", 0usize
                         )
                     })
             });
@@ -177,12 +181,13 @@ impl crate::UnityEngine::UI::RectMask2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDisable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDisable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDisable", 0usize
                         )
                     })
             });
@@ -197,12 +202,13 @@ impl crate::UnityEngine::UI::RectMask2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnEnable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnEnable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnEnable", 0usize
                         )
                     })
             });
@@ -217,7 +223,7 @@ impl crate::UnityEngine::UI::RectMask2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -226,7 +232,8 @@ impl crate::UnityEngine::UI::RectMask2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnTransformParentChanged", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnTransformParentChanged", 0usize
                         )
                     })
             });
@@ -241,7 +248,7 @@ impl crate::UnityEngine::UI::RectMask2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -250,7 +257,8 @@ impl crate::UnityEngine::UI::RectMask2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PerformClipping", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PerformClipping", 0usize
                         )
                     })
             });
@@ -266,7 +274,7 @@ impl crate::UnityEngine::UI::RectMask2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IClippable>),
                         quest_hook::libil2cpp::Void,
@@ -275,7 +283,8 @@ impl crate::UnityEngine::UI::RectMask2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RemoveClippable", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RemoveClippable", 1usize
                         )
                     })
             });
@@ -290,7 +299,7 @@ impl crate::UnityEngine::UI::RectMask2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -299,7 +308,8 @@ impl crate::UnityEngine::UI::RectMask2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateClipSoftness", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateClipSoftness", 0usize
                         )
                     })
             });
@@ -314,12 +324,13 @@ impl crate::UnityEngine::UI::RectMask2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -336,7 +347,7 @@ impl crate::UnityEngine::UI::RectMask2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
@@ -345,7 +356,8 @@ impl crate::UnityEngine::UI::RectMask2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Canvas", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Canvas", 0usize
                         )
                     })
             });
@@ -360,7 +372,7 @@ impl crate::UnityEngine::UI::RectMask2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Rect,
@@ -369,7 +381,8 @@ impl crate::UnityEngine::UI::RectMask2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_canvasRect", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_canvasRect", 0usize
                         )
                     })
             });
@@ -384,7 +397,7 @@ impl crate::UnityEngine::UI::RectMask2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector4,
@@ -393,7 +406,8 @@ impl crate::UnityEngine::UI::RectMask2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_padding", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_padding", 0usize
                         )
                     })
             });
@@ -410,7 +424,7 @@ impl crate::UnityEngine::UI::RectMask2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -419,7 +433,8 @@ impl crate::UnityEngine::UI::RectMask2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rectTransform", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rectTransform", 0usize
                         )
                     })
             });
@@ -434,7 +449,7 @@ impl crate::UnityEngine::UI::RectMask2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Rect,
@@ -443,7 +458,8 @@ impl crate::UnityEngine::UI::RectMask2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rootCanvasRect", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rootCanvasRect", 0usize
                         )
                     })
             });
@@ -458,7 +474,7 @@ impl crate::UnityEngine::UI::RectMask2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector2Int,
@@ -467,7 +483,8 @@ impl crate::UnityEngine::UI::RectMask2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_softness", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_softness", 0usize
                         )
                     })
             });
@@ -483,7 +500,7 @@ impl crate::UnityEngine::UI::RectMask2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector4),
                         quest_hook::libil2cpp::Void,
@@ -492,7 +509,8 @@ impl crate::UnityEngine::UI::RectMask2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_padding", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_padding", 1usize
                         )
                     })
             });
@@ -508,7 +526,7 @@ impl crate::UnityEngine::UI::RectMask2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector2Int),
                         quest_hook::libil2cpp::Void,
@@ -517,7 +535,8 @@ impl crate::UnityEngine::UI::RectMask2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_softness", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_softness", 1usize
                         )
                     })
             });

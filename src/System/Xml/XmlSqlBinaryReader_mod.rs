@@ -126,7 +126,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -142,7 +142,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddInitNamespace", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddInitNamespace", 2usize
                         )
                     })
             });
@@ -157,12 +158,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("AddName")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "AddName",
+                            0usize
                         )
                     })
             });
@@ -177,12 +179,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("AddQName")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddQName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddQName", 0usize
                         )
                     })
             });
@@ -199,7 +202,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -208,7 +211,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CDATAValue", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CDATAValue", 0usize
                         )
                     })
             });
@@ -223,7 +227,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -232,7 +236,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckAllowContent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckAllowContent", 0usize
                         )
                     })
             });
@@ -248,7 +253,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         crate::System::Xml::XmlNodeType,
@@ -257,7 +262,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckText", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckText", 1usize
                         )
                     })
             });
@@ -272,7 +278,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::XmlNodeType,
@@ -281,7 +287,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckTextIsWS", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckTextIsWS", 0usize
                         )
                     })
             });
@@ -296,7 +303,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -305,7 +312,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckValueTokenBounds", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckValueTokenBounds", 0usize
                         )
                     })
             });
@@ -320,7 +328,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -329,7 +337,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ClearAttributes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ClearAttributes", 0usize
                         )
                     })
             });
@@ -344,12 +353,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Close")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Close", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Close",
+                            0usize
                         )
                     })
             });
@@ -365,12 +375,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("Fill")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Fill", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Fill",
+                            1usize
                         )
                     })
             });
@@ -383,12 +394,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("FillAllowEOF")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FillAllowEOF", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FillAllowEOF", 0usize
                         )
                     })
             });
@@ -402,12 +414,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("Fill_")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Fill_", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Fill_",
+                            1usize
                         )
                     })
             });
@@ -422,7 +435,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -431,7 +444,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FinishCDATA", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FinishCDATA", 0usize
                         )
                     })
             });
@@ -446,7 +460,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -455,7 +469,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FinishEndElement", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FinishEndElement", 0usize
                         )
                     })
             });
@@ -470,7 +485,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -479,7 +494,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenerateImpliedXmlnsAttrs", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateImpliedXmlnsAttrs", 0usize
                         )
                     })
             });
@@ -494,7 +510,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -503,7 +519,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenerateTokenTypeMap", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateTokenTypeMap", 0usize
                         )
                     })
             });
@@ -521,7 +538,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -530,7 +547,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAttributeText", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAttributeText", 1usize
                         )
                     })
             });
@@ -548,7 +566,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -557,7 +575,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAttribute", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAttribute", 1usize
                         )
                     })
             });
@@ -576,7 +595,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -592,7 +611,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAttribute", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAttribute", 2usize
                         )
                     })
             });
@@ -610,7 +630,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -619,7 +639,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAttribute", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAttribute", 1usize
                         )
                     })
             });
@@ -632,12 +653,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), f64, 1usize>("GetDouble")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetDouble", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDouble", 1usize
                         )
                     })
             });
@@ -648,12 +670,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i16, 1usize>("GetInt16")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetInt16", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetInt16", 1usize
                         )
                     })
             });
@@ -664,12 +687,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("GetInt32")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetInt32", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetInt32", 1usize
                         )
                     })
             });
@@ -680,12 +704,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i64, 1usize>("GetInt64")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetInt64", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetInt64", 1usize
                         )
                     })
             });
@@ -696,12 +721,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), f32, 1usize>("GetSingle")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSingle", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSingle", 1usize
                         )
                     })
             });
@@ -718,7 +744,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -727,7 +753,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetString", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetString", 2usize
                         )
                     })
             });
@@ -747,7 +774,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -762,7 +789,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetStringAligned", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetStringAligned", 3usize
                         )
                     })
             });
@@ -775,12 +803,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), u16, 1usize>("GetUInt16")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetUInt16", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetUInt16", 1usize
                         )
                     })
             });
@@ -791,12 +820,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), u32, 1usize>("GetUInt32")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetUInt32", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetUInt32", 1usize
                         )
                     })
             });
@@ -807,12 +837,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), u64, 1usize>("GetUInt64")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetUInt64", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetUInt64", 1usize
                         )
                     })
             });
@@ -826,7 +857,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::BinXmlToken),
                         quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -835,7 +866,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetValueType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetValueType", 1usize
                         )
                     })
             });
@@ -851,7 +883,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::BinXmlToken),
                         i32,
@@ -860,7 +892,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetXsdKatmaiTokenLength", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetXsdKatmaiTokenLength", 1usize
                         )
                     })
             });
@@ -873,7 +906,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -882,7 +915,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GrowAttributes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GrowAttributes", 0usize
                         )
                     })
             });
@@ -897,7 +931,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -906,7 +940,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GrowElements", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GrowElements", 0usize
                         )
                     })
             });
@@ -921,7 +956,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -930,7 +965,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HashCheckForDuplicateAttributes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HashCheckForDuplicateAttributes", 0usize
                         )
                     })
             });
@@ -945,7 +981,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -954,7 +990,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ImplReadCDATA", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ImplReadCDATA", 0usize
                         )
                     })
             });
@@ -969,7 +1006,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -978,7 +1015,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ImplReadComment", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ImplReadComment", 0usize
                         )
                     })
             });
@@ -994,7 +1032,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::BinXmlToken),
                         quest_hook::libil2cpp::Void,
@@ -1003,7 +1041,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ImplReadData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ImplReadData", 1usize
                         )
                     })
             });
@@ -1018,7 +1057,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1027,7 +1066,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ImplReadDoctype", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ImplReadDoctype", 0usize
                         )
                     })
             });
@@ -1042,7 +1082,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1051,7 +1091,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ImplReadElement", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ImplReadElement", 0usize
                         )
                     })
             });
@@ -1066,7 +1107,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1075,7 +1116,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ImplReadEndElement", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ImplReadEndElement", 0usize
                         )
                     })
             });
@@ -1090,7 +1132,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1099,7 +1141,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ImplReadEndNest", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ImplReadEndNest", 0usize
                         )
                     })
             });
@@ -1114,7 +1157,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1123,7 +1166,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ImplReadNest", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ImplReadNest", 0usize
                         )
                     })
             });
@@ -1138,12 +1182,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ImplReadPI")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ImplReadPI", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ImplReadPI", 0usize
                         )
                     })
             });
@@ -1158,7 +1203,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1167,7 +1212,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ImplReadXmlText", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ImplReadXmlText", 0usize
                         )
                     })
             });
@@ -1184,7 +1230,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1200,7 +1246,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LocateAttribute", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LocateAttribute", 2usize
                         )
                     })
             });
@@ -1214,7 +1261,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         i32,
@@ -1223,7 +1270,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LocateAttribute", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LocateAttribute", 1usize
                         )
                     })
             });
@@ -1239,7 +1287,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1248,7 +1296,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LookupNamespace", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LookupNamespace", 1usize
                         )
                     })
             });
@@ -1264,7 +1313,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -1273,7 +1322,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MoveToAttribute", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MoveToAttribute", 1usize
                         )
                     })
             });
@@ -1287,7 +1337,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -1296,7 +1346,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MoveToAttribute", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MoveToAttribute", 1usize
                         )
                     })
             });
@@ -1309,12 +1360,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("MoveToElement")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MoveToElement", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MoveToElement", 0usize
                         )
                     })
             });
@@ -1325,12 +1377,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("MoveToFirstAttribute")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MoveToFirstAttribute", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MoveToFirstAttribute", 0usize
                         )
                     })
             });
@@ -1341,12 +1394,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("MoveToNextAttribute")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MoveToNextAttribute", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MoveToNextAttribute", 0usize
                         )
                     })
             });
@@ -1359,12 +1413,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("NameFlush")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NameFlush", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NameFlush", 0usize
                         )
                     })
             });
@@ -1393,7 +1448,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::BinXmlToken,
@@ -1402,7 +1457,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NextToken", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NextToken", 0usize
                         )
                     })
             });
@@ -1417,7 +1473,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::BinXmlToken,
@@ -1426,7 +1482,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NextToken1", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NextToken1", 0usize
                         )
                     })
             });
@@ -1442,7 +1499,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::BinXmlToken),
                         crate::System::Xml::BinXmlToken,
@@ -1451,7 +1508,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NextToken2", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NextToken2", 1usize
                         )
                     })
             });
@@ -1464,12 +1522,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u8), i32, 1usize>("ParseMB32_")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseMB32_", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseMB32_", 1usize
                         )
                     })
             });
@@ -1480,12 +1539,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("ParseMB32")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseMB32", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseMB32", 0usize
                         )
                     })
             });
@@ -1496,12 +1556,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("ParseMB32")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseMB32", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseMB32", 1usize
                         )
                     })
             });
@@ -1512,12 +1573,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("ParseMB64")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseMB64", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseMB64", 0usize
                         )
                     })
             });
@@ -1532,7 +1594,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1541,7 +1603,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseText", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseText", 0usize
                         )
                     })
             });
@@ -1556,7 +1619,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::BinXmlToken,
@@ -1565,7 +1628,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PeekNextToken", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PeekNextToken", 0usize
                         )
                     })
             });
@@ -1580,7 +1644,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::BinXmlToken,
@@ -1589,7 +1653,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PeekToken", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PeekToken", 0usize
                         )
                     })
             });
@@ -1607,7 +1672,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl,
@@ -1618,7 +1683,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PopNamespaces", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PopNamespaces", 1usize
                         )
                     })
             });
@@ -1634,7 +1700,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -1643,7 +1709,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PositionOnAttribute", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PositionOnAttribute", 1usize
                         )
                     })
             });
@@ -1661,7 +1728,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1678,7 +1745,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PushNamespace", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PushNamespace", 3usize
                         )
                     })
             });
@@ -1694,7 +1762,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::BinXmlToken),
                         quest_hook::libil2cpp::Void,
@@ -1703,7 +1771,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReScanOverValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReScanOverValue", 1usize
                         )
                     })
             });
@@ -1716,12 +1785,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("Read")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Read", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Read",
+                            0usize
                         )
                     })
             });
@@ -1732,12 +1802,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("ReadAttributeValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadAttributeValue", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadAttributeValue", 0usize
                         )
                     })
             });
@@ -1748,12 +1819,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u8, 0usize>("ReadByte")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadByte", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadByte", 0usize
                         )
                     })
             });
@@ -1764,12 +1836,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("ReadDoc")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadDoc", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "ReadDoc",
+                            0usize
                         )
                     })
             });
@@ -1783,12 +1856,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(bool), bool, 1usize>("ReadInit")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadInit", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadInit", 1usize
                         )
                     })
             });
@@ -1799,12 +1873,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("ReadNameRef")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadNameRef", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadNameRef", 0usize
                         )
                     })
             });
@@ -1815,12 +1890,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("ReadQNameRef")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadQNameRef", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadQNameRef", 0usize
                         )
                     })
             });
@@ -1833,7 +1909,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::BinXmlToken,
@@ -1842,7 +1918,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadToken", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadToken", 0usize
                         )
                     })
             });
@@ -1855,12 +1932,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u16, 0usize>("ReadUShort")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadUShort", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadUShort", 0usize
                         )
                     })
             });
@@ -1873,7 +1951,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::BinXmlToken,
@@ -1882,7 +1960,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RescanNextToken", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RescanNextToken", 0usize
                         )
                     })
             });
@@ -1897,7 +1976,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1906,7 +1985,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResolveEntity", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResolveEntity", 0usize
                         )
                     })
             });
@@ -1921,7 +2001,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1930,7 +2010,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanAttributes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanAttributes", 0usize
                         )
                     })
             });
@@ -1948,7 +2029,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::BinXmlToken, bool, bool),
                         crate::System::Xml::XmlNodeType,
@@ -1957,7 +2038,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanOverAnyValue", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanOverAnyValue", 3usize
                         )
                     })
             });
@@ -1975,7 +2057,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::BinXmlToken, bool, bool),
                         crate::System::Xml::XmlNodeType,
@@ -1984,7 +2066,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanOverValue", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanOverValue", 3usize
                         )
                     })
             });
@@ -2000,7 +2083,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<i32>),
                         i32,
@@ -2009,7 +2092,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanText", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanText", 1usize
                         )
                     })
             });
@@ -2022,7 +2106,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -2031,7 +2115,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SimpleCheckForDuplicateAttributes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SimpleCheckForDuplicateAttributes", 0usize
                         )
                     })
             });
@@ -2046,12 +2131,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SkipExtn")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SkipExtn", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SkipExtn", 0usize
                         )
                     })
             });
@@ -2074,7 +2160,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::XmlNamespaceScope),
                         quest_hook::libil2cpp::Gc<
@@ -2092,7 +2178,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "System.Xml.IXmlNamespaceResolver.GetNamespacesInScope",
                             1usize
                         )
@@ -2115,7 +2201,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2124,7 +2210,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "System.Xml.IXmlNamespaceResolver.LookupPrefix", 1usize
                         )
                     })
@@ -2143,7 +2229,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -2152,7 +2238,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ThrowNotSupported", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ThrowNotSupported", 1usize
                         )
                     })
             });
@@ -2170,7 +2257,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::BinXmlToken),
                         quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -2179,7 +2266,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ThrowUnexpectedToken", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ThrowUnexpectedToken", 1usize
                         )
                     })
             });
@@ -2197,7 +2285,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -2206,7 +2294,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ThrowXmlException", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ThrowXmlException", 1usize
                         )
                     })
             });
@@ -2226,7 +2315,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2245,7 +2334,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ThrowXmlException", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ThrowXmlException", 3usize
                         )
                     })
             });
@@ -2260,7 +2350,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -2269,7 +2359,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateFromTextReader", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateFromTextReader", 0usize
                         )
                     })
             });
@@ -2285,12 +2376,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(bool), bool, 1usize>("UpdateFromTextReader")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateFromTextReader", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateFromTextReader", 1usize
                         )
                     })
             });
@@ -2305,7 +2397,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2314,7 +2406,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ValueAsDateTimeString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValueAsDateTimeString", 0usize
                         )
                     })
             });
@@ -2329,12 +2422,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::System::Decimal, 0usize>("ValueAsDecimal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ValueAsDecimal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValueAsDecimal", 0usize
                         )
                     })
             });
@@ -2347,12 +2441,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f64, 0usize>("ValueAsDouble")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ValueAsDouble", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValueAsDouble", 0usize
                         )
                     })
             });
@@ -2363,12 +2458,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i64, 0usize>("ValueAsLong")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ValueAsLong", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValueAsLong", 0usize
                         )
                     })
             });
@@ -2384,7 +2480,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::BinXmlToken),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2393,7 +2489,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ValueAsString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValueAsString", 1usize
                         )
                     })
             });
@@ -2406,12 +2503,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u64, 0usize>("ValueAsULong")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ValueAsULong", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValueAsULong", 0usize
                         )
                     })
             });
@@ -2426,7 +2524,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, crate::System::Xml::BinXmlToken),
                         quest_hook::libil2cpp::Void,
@@ -2435,7 +2533,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VerifyVersion", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VerifyVersion", 2usize
                         )
                     })
             });
@@ -2452,7 +2551,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2461,7 +2560,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "XmlDeclValue", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "XmlDeclValue", 0usize
                         )
                     })
             });
@@ -2477,12 +2577,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u8), i32, 1usize>("XsdKatmaiTimeScaleToValueLength")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "XsdKatmaiTimeScaleToValueLength", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "XsdKatmaiTimeScaleToValueLength", 1usize
                         )
                     })
             });
@@ -2501,7 +2602,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -2523,7 +2624,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            6usize
                         )
                     })
             });
@@ -2540,12 +2642,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_AttributeCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AttributeCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AttributeCount", 0usize
                         )
                     })
             });
@@ -2560,7 +2663,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2569,7 +2672,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_BaseURI", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_BaseURI", 0usize
                         )
                     })
             });
@@ -2582,12 +2686,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_Depth")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Depth", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Depth", 0usize
                         )
                     })
             });
@@ -2598,12 +2703,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_EOF")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_EOF", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_EOF",
+                            0usize
                         )
                     })
             });
@@ -2614,12 +2720,13 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsEmptyElement")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsEmptyElement", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsEmptyElement", 0usize
                         )
                     })
             });
@@ -2634,7 +2741,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2643,7 +2750,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_LocalName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_LocalName", 0usize
                         )
                     })
             });
@@ -2660,7 +2768,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
@@ -2669,7 +2777,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_NameTable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_NameTable", 0usize
                         )
                     })
             });
@@ -2686,7 +2795,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2695,7 +2804,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_NamespaceURI", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_NamespaceURI", 0usize
                         )
                     })
             });
@@ -2710,7 +2820,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::XmlNodeType,
@@ -2719,7 +2829,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_NodeType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_NodeType", 0usize
                         )
                     })
             });
@@ -2736,7 +2847,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2745,7 +2856,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Prefix", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Prefix", 0usize
                         )
                     })
             });
@@ -2760,7 +2872,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::ReadState,
@@ -2769,7 +2881,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ReadState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ReadState", 0usize
                         )
                     })
             });
@@ -2786,7 +2899,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReaderSettings>,
@@ -2795,7 +2908,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Settings", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Settings", 0usize
                         )
                     })
             });
@@ -2812,7 +2926,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2821,7 +2935,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Value", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Value", 0usize
                         )
                     })
             });
@@ -2836,7 +2951,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -2845,7 +2960,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ValueType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ValueType", 0usize
                         )
                     })
             });
@@ -2862,7 +2978,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2871,7 +2987,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_XmlLang", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_XmlLang", 0usize
                         )
                     })
             });
@@ -2886,7 +3003,7 @@ impl crate::System::Xml::XmlSqlBinaryReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::XmlSpace,
@@ -2895,7 +3012,8 @@ impl crate::System::Xml::XmlSqlBinaryReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_XmlSpace", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_XmlSpace", 0usize
                         )
                     })
             });
@@ -3042,7 +3160,7 @@ impl crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -3051,7 +3169,8 @@ impl crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AdjustPosition", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AdjustPosition", 1usize
                         )
                     })
             });
@@ -3072,7 +3191,7 @@ impl crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -3092,7 +3211,8 @@ impl crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLocalnameAndNamespaceUri", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLocalnameAndNamespaceUri", 2usize
                         )
                     })
             });
@@ -3114,7 +3234,7 @@ impl crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -3137,7 +3257,8 @@ impl crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLocalnameAndNamespaceUriAndHash", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLocalnameAndNamespaceUriAndHash", 3usize
                         )
                     })
             });
@@ -3155,7 +3276,7 @@ impl crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -3172,7 +3293,8 @@ impl crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MatchHashNS", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MatchHashNS", 3usize
                         )
                     })
             });
@@ -3189,7 +3311,7 @@ impl crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -3205,7 +3327,8 @@ impl crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MatchNS", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "MatchNS",
+                            2usize
                         )
                     })
             });
@@ -3222,7 +3345,7 @@ impl crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Xml::XmlSqlBinaryReader_QName,
@@ -3236,7 +3359,8 @@ impl crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Set", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Set",
+                            2usize
                         )
                     })
             });
@@ -3253,7 +3377,7 @@ impl crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::XmlSqlBinaryReader_QName, i32),
                         quest_hook::libil2cpp::Void,
@@ -3262,7 +3386,8 @@ impl crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Set", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Set",
+                            2usize
                         )
                     })
             });
@@ -3389,7 +3514,7 @@ impl crate::System::Xml::XmlSqlBinaryReader_ElemInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3400,7 +3525,8 @@ impl crate::System::Xml::XmlSqlBinaryReader_ElemInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Clear", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Clear",
+                            0usize
                         )
                     })
             });
@@ -3417,7 +3543,7 @@ impl crate::System::Xml::XmlSqlBinaryReader_ElemInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::XmlSqlBinaryReader_QName, bool),
                         quest_hook::libil2cpp::Void,
@@ -3426,7 +3552,8 @@ impl crate::System::Xml::XmlSqlBinaryReader_ElemInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Set", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Set",
+                            2usize
                         )
                     })
             });
@@ -3524,7 +3651,7 @@ impl crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -3548,7 +3675,8 @@ impl crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            6usize
                         )
                     })
             });
@@ -3642,7 +3770,7 @@ impl crate::System::Xml::XmlSqlBinaryReader_NestedBinXml {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Xml::XmlSqlBinaryReader_SymbolTables,
@@ -3657,7 +3785,8 @@ impl crate::System::Xml::XmlSqlBinaryReader_NestedBinXml {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -3790,7 +3919,7 @@ impl crate::System::Xml::XmlSqlBinaryReader_QName {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -3806,7 +3935,8 @@ impl crate::System::Xml::XmlSqlBinaryReader_QName {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckPrefixNS", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckPrefixNS", 2usize
                         )
                     })
             });
@@ -3821,12 +3951,13 @@ impl crate::System::Xml::XmlSqlBinaryReader_QName {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Clear", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Clear",
+                            0usize
                         )
                     })
             });
@@ -3842,7 +3973,7 @@ impl crate::System::Xml::XmlSqlBinaryReader_QName {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         bool,
@@ -3851,7 +3982,8 @@ impl crate::System::Xml::XmlSqlBinaryReader_QName {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Equals", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            1usize
                         )
                     })
             });
@@ -3862,12 +3994,13 @@ impl crate::System::Xml::XmlSqlBinaryReader_QName {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHashCode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHashCode", 0usize
                         )
                     })
             });
@@ -3881,7 +4014,7 @@ impl crate::System::Xml::XmlSqlBinaryReader_QName {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::SecureStringHasher,
@@ -3892,7 +4025,8 @@ impl crate::System::Xml::XmlSqlBinaryReader_QName {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNSHashCode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNSHashCode", 1usize
                         )
                     })
             });
@@ -3907,7 +4041,7 @@ impl crate::System::Xml::XmlSqlBinaryReader_QName {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -3923,7 +4057,8 @@ impl crate::System::Xml::XmlSqlBinaryReader_QName {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MatchNs", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "MatchNs",
+                            2usize
                         )
                     })
             });
@@ -3940,7 +4075,7 @@ impl crate::System::Xml::XmlSqlBinaryReader_QName {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -3956,7 +4091,8 @@ impl crate::System::Xml::XmlSqlBinaryReader_QName {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MatchPrefix", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MatchPrefix", 2usize
                         )
                     })
             });
@@ -3974,7 +4110,7 @@ impl crate::System::Xml::XmlSqlBinaryReader_QName {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -3993,7 +4129,8 @@ impl crate::System::Xml::XmlSqlBinaryReader_QName {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Set", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Set",
+                            3usize
                         )
                     })
             });
@@ -4010,7 +4147,7 @@ impl crate::System::Xml::XmlSqlBinaryReader_QName {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -4019,7 +4156,8 @@ impl crate::System::Xml::XmlSqlBinaryReader_QName {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToString", 0usize
                         )
                     })
             });
@@ -4037,7 +4175,7 @@ impl crate::System::Xml::XmlSqlBinaryReader_QName {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -4056,7 +4194,8 @@ impl crate::System::Xml::XmlSqlBinaryReader_QName {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -4072,7 +4211,7 @@ impl crate::System::Xml::XmlSqlBinaryReader_QName {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::Xml::XmlSqlBinaryReader_QName,
@@ -4084,7 +4223,8 @@ impl crate::System::Xml::XmlSqlBinaryReader_QName {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Equality", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Equality", 2usize
                         )
                     })
             });
@@ -4309,12 +4449,13 @@ impl crate::System::Xml::XmlSqlBinaryReader_SymbolTables {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Init")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Init", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            0usize
                         )
                     })
             });

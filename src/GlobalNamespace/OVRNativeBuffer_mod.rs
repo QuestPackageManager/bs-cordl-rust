@@ -47,12 +47,13 @@ impl crate::GlobalNamespace::OVRNativeBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Dispose", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            0usize
                         )
                     })
             });
@@ -68,7 +69,7 @@ impl crate::GlobalNamespace::OVRNativeBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -77,7 +78,8 @@ impl crate::GlobalNamespace::OVRNativeBuffer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Dispose", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            1usize
                         )
                     })
             });
@@ -92,12 +94,13 @@ impl crate::GlobalNamespace::OVRNativeBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Finalize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Finalize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Finalize", 0usize
                         )
                     })
             });
@@ -110,12 +113,13 @@ impl crate::GlobalNamespace::OVRNativeBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetCapacity")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCapacity", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCapacity", 0usize
                         )
                     })
             });
@@ -129,12 +133,13 @@ impl crate::GlobalNamespace::OVRNativeBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), crate::System::IntPtr, 1usize>("GetPointer")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPointer", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPointer", 1usize
                         )
                     })
             });
@@ -159,7 +164,7 @@ impl crate::GlobalNamespace::OVRNativeBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -168,7 +173,8 @@ impl crate::GlobalNamespace::OVRNativeBuffer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Reallocate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Reallocate", 1usize
                         )
                     })
             });
@@ -183,12 +189,13 @@ impl crate::GlobalNamespace::OVRNativeBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Release")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Release", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Release",
+                            0usize
                         )
                     })
             });
@@ -204,12 +211,13 @@ impl crate::GlobalNamespace::OVRNativeBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("Reset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Reset", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Reset",
+                            1usize
                         )
                     })
             });
@@ -225,12 +233,13 @@ impl crate::GlobalNamespace::OVRNativeBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });

@@ -57,7 +57,7 @@ impl crate::UnityEngine::UIElements::Hash128Field {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::EventBase,
@@ -68,7 +68,8 @@ impl crate::UnityEngine::UIElements::Hash128Field {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExecuteDefaultAction", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExecuteDefaultAction", 1usize
                         )
                     })
             });
@@ -101,7 +102,7 @@ impl crate::UnityEngine::UIElements::Hash128Field {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Hash128),
                         quest_hook::libil2cpp::Void,
@@ -110,7 +111,8 @@ impl crate::UnityEngine::UIElements::Hash128Field {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetValueWithoutNotify", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetValueWithoutNotify", 1usize
                         )
                     })
             });
@@ -126,7 +128,7 @@ impl crate::UnityEngine::UIElements::Hash128Field {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         crate::UnityEngine::Hash128,
@@ -135,7 +137,8 @@ impl crate::UnityEngine::UIElements::Hash128Field {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StringToValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StringToValue", 1usize
                         )
                     })
             });
@@ -150,7 +153,7 @@ impl crate::UnityEngine::UIElements::Hash128Field {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -159,7 +162,8 @@ impl crate::UnityEngine::UIElements::Hash128Field {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateTextFromValue", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateTextFromValue", 0usize
                         )
                     })
             });
@@ -174,7 +178,7 @@ impl crate::UnityEngine::UIElements::Hash128Field {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -183,7 +187,8 @@ impl crate::UnityEngine::UIElements::Hash128Field {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateValueFromText", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateValueFromText", 0usize
                         )
                     })
             });
@@ -201,7 +206,7 @@ impl crate::UnityEngine::UIElements::Hash128Field {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Hash128),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -210,7 +215,8 @@ impl crate::UnityEngine::UIElements::Hash128Field {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ValueToString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValueToString", 1usize
                         )
                     })
             });
@@ -225,12 +231,13 @@ impl crate::UnityEngine::UIElements::Hash128Field {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -247,7 +254,7 @@ impl crate::UnityEngine::UIElements::Hash128Field {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -261,7 +268,8 @@ impl crate::UnityEngine::UIElements::Hash128Field {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -276,12 +284,13 @@ impl crate::UnityEngine::UIElements::Hash128Field {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::UnityEngine::Hash128, 0usize>("get_value")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_value", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_value", 0usize
                         )
                     })
             });
@@ -297,7 +306,7 @@ impl crate::UnityEngine::UIElements::Hash128Field {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Hash128),
                         quest_hook::libil2cpp::Void,
@@ -306,7 +315,8 @@ impl crate::UnityEngine::UIElements::Hash128Field {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_value", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_value", 1usize
                         )
                     })
             });
@@ -374,12 +384,13 @@ impl crate::UnityEngine::UIElements::Hash128Field_Hash128Input {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(char), bool, 1usize>("AcceptCharacter")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AcceptCharacter", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AcceptCharacter", 1usize
                         )
                     })
             });
@@ -399,7 +410,7 @@ impl crate::UnityEngine::UIElements::Hash128Field_Hash128Input {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         crate::UnityEngine::Hash128,
@@ -408,7 +419,8 @@ impl crate::UnityEngine::UIElements::Hash128Field_Hash128Input {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Parse", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Parse",
+                            1usize
                         )
                     })
             });
@@ -424,7 +436,7 @@ impl crate::UnityEngine::UIElements::Hash128Field_Hash128Input {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         crate::UnityEngine::Hash128,
@@ -433,7 +445,8 @@ impl crate::UnityEngine::UIElements::Hash128Field_Hash128Input {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StringToValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StringToValue", 1usize
                         )
                     })
             });
@@ -448,12 +461,13 @@ impl crate::UnityEngine::UIElements::Hash128Field_Hash128Input {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -470,7 +484,7 @@ impl crate::UnityEngine::UIElements::Hash128Field_Hash128Input {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -479,7 +493,8 @@ impl crate::UnityEngine::UIElements::Hash128Field_Hash128Input {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_allowedCharacters", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_allowedCharacters", 0usize
                         )
                     })
             });
@@ -563,12 +578,13 @@ impl crate::UnityEngine::UIElements::Hash128Field_UxmlFactory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -652,12 +668,13 @@ impl crate::UnityEngine::UIElements::Hash128Field_UxmlTraits {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

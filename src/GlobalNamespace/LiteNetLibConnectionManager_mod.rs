@@ -150,7 +150,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -159,7 +159,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AcceptAllPendingRequests", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AcceptAllPendingRequests", 0usize
                         )
                     })
             });
@@ -176,7 +177,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -185,7 +186,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BackgroundDisconnectSentry", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BackgroundDisconnectSentry", 0usize
                         )
                     })
             });
@@ -202,7 +204,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -211,7 +213,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BackgroundShutdownSentry", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BackgroundShutdownSentry", 0usize
                         )
                     })
             });
@@ -226,7 +229,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -235,7 +238,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckSentryState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckSentryState", 0usize
                         )
                     })
             });
@@ -256,7 +260,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -280,7 +284,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConnectToEndPoint", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConnectToEndPoint", 6usize
                         )
                     })
             });
@@ -310,7 +315,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
@@ -328,7 +333,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreatePendingConnection", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreatePendingConnection", 4usize
                         )
                     })
             });
@@ -344,7 +350,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::DisconnectedReason),
                         quest_hook::libil2cpp::Void,
@@ -353,7 +359,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Disconnect", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Disconnect", 1usize
                         )
                     })
             });
@@ -370,7 +377,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::GlobalNamespace::DisconnectedReason,
@@ -382,7 +389,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DisconnectInternal", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DisconnectInternal", 2usize
                         )
                     })
             });
@@ -397,12 +405,13 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Dispose", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            0usize
                         )
                     })
             });
@@ -419,7 +428,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -428,7 +437,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DisposeAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DisposeAsync", 0usize
                         )
                     })
             });
@@ -443,7 +453,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -452,7 +462,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DisposeInternal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DisposeInternal", 0usize
                         )
                     })
             });
@@ -467,7 +478,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::LiteNetLib::DeliveryMethod),
                         crate::BGNet::Core::DeliveryMethod,
@@ -476,7 +487,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FromLiteNetDeliveryMethod", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FromLiteNetDeliveryMethod", 1usize
                         )
                     })
             });
@@ -493,7 +505,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -504,7 +516,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetConnectionMessage", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetConnectionMessage", 0usize
                         )
                     })
             });
@@ -524,7 +537,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>),
                         quest_hook::libil2cpp::Gc<
@@ -535,7 +548,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetConnection", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetConnection", 1usize
                         )
                     })
             });
@@ -553,7 +567,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
@@ -562,7 +576,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetConnection", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetConnection", 1usize
                         )
                     })
             });
@@ -581,7 +596,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection,
@@ -592,7 +607,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLogFormatConnection", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLogFormatConnection", 1usize
                         )
                     })
             });
@@ -611,7 +627,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -628,7 +644,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLogFormatUserInfo", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLogFormatUserInfo", 3usize
                         )
                     })
             });
@@ -644,7 +661,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>),
                         bool,
@@ -653,7 +670,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HasConnectionToEndPoint", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HasConnectionToEndPoint", 1usize
                         )
                     })
             });
@@ -667,7 +685,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>),
                         bool,
@@ -676,7 +694,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HasPendingConnectionToEndPoint", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HasPendingConnectionToEndPoint", 1usize
                         )
                     })
             });
@@ -696,7 +715,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::IConnectionInitParams_1<T>,
@@ -707,7 +726,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Init", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            1usize
                         )
                     })
             });
@@ -721,7 +741,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -730,7 +750,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsConnectedToUser", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsConnectedToUser", 1usize
                         )
                     })
             });
@@ -744,7 +765,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::LiteNetLib::ConnectionRequest,
@@ -755,7 +776,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "LiteNetLib.INetEventListener.OnConnectionRequest", 1usize
                         )
                     })
@@ -773,7 +794,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -785,8 +806,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LiteNetLib.INetEventListener.OnNetworkError",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LiteNetLib.INetEventListener.OnNetworkError", 2usize
                         )
                     })
             });
@@ -803,7 +824,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>, i32),
                         quest_hook::libil2cpp::Void,
@@ -812,7 +833,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "LiteNetLib.INetEventListener.OnNetworkLatencyUpdate", 2usize
                         )
                     })
@@ -831,7 +852,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
@@ -846,7 +867,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "LiteNetLib.INetEventListener.OnNetworkReceive", 3usize
                         )
                     })
@@ -865,7 +886,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -880,7 +901,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "LiteNetLib.INetEventListener.OnNetworkReceiveUnconnected",
                             3usize
                         )
@@ -898,7 +919,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>),
                         quest_hook::libil2cpp::Void,
@@ -907,7 +928,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "LiteNetLib.INetEventListener.OnPeerConnected", 1usize
                         )
                     })
@@ -925,7 +946,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
@@ -937,7 +958,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "LiteNetLib.INetEventListener.OnPeerDisconnected", 2usize
                         )
                     })
@@ -954,7 +975,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -963,7 +984,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Log", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Log",
+                            1usize
                         )
                     })
             });
@@ -979,7 +1001,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -988,7 +1010,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LogError", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LogError", 1usize
                         )
                     })
             });
@@ -1020,7 +1043,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1029,7 +1052,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NoDomainReloadInit", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NoDomainReloadInit", 0usize
                         )
                     })
             });
@@ -1044,12 +1068,13 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("PollUpdate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PollUpdate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PollUpdate", 0usize
                         )
                     })
             });
@@ -1066,7 +1091,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
@@ -1078,7 +1103,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RemoveConnection", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RemoveConnection", 2usize
                         )
                     })
             });
@@ -1098,7 +1124,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1115,7 +1141,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SendToAll", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SendToAll", 3usize
                         )
                     })
             });
@@ -1132,7 +1159,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1146,7 +1173,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SendToAll", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SendToAll", 2usize
                         )
                     })
             });
@@ -1163,7 +1191,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -1177,7 +1205,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SendUnconnectedMessage", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SendUnconnectedMessage", 2usize
                         )
                     })
             });
@@ -1192,7 +1221,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1201,7 +1230,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartBackgroundSentry", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartBackgroundSentry", 0usize
                         )
                     })
             });
@@ -1217,7 +1247,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::LiteNetLib::DisconnectReason),
                         crate::GlobalNamespace::ConnectionFailedReason,
@@ -1226,7 +1256,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToConnectionFailedReason", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToConnectionFailedReason", 1usize
                         )
                     })
             });
@@ -1242,7 +1273,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::LiteNetLib::DisconnectReason),
                         crate::GlobalNamespace::DisconnectedReason,
@@ -1251,7 +1282,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToDisconnectedReason", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToDisconnectedReason", 1usize
                         )
                     })
             });
@@ -1266,7 +1298,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::BGNet::Core::DeliveryMethod),
                         crate::LiteNetLib::DeliveryMethod,
@@ -1275,7 +1307,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToLiteNetDeliveryMethod", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToLiteNetDeliveryMethod", 1usize
                         )
                     })
             });
@@ -1294,7 +1327,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1314,7 +1347,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryAccept", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryAccept", 4usize
                         )
                     })
             });
@@ -1331,7 +1365,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::LiteNetLib::DisconnectReason),
                         quest_hook::libil2cpp::Void,
@@ -1340,7 +1374,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryDisconnect", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryDisconnect", 1usize
                         )
                     })
             });
@@ -1357,12 +1392,13 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, bool), bool, 2usize>("TryStartNetManager")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryStartNetManager", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryStartNetManager", 2usize
                         )
                     })
             });
@@ -1377,7 +1413,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1386,7 +1422,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateStatistics", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateStatistics", 0usize
                         )
                     })
             });
@@ -1401,7 +1438,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1410,7 +1447,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<DisposeAsync>b__98_0", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<DisposeAsync>b__98_0", 0usize
                         )
                     })
             });
@@ -1425,12 +1463,13 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -1447,7 +1486,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITimeProvider>,
@@ -1459,7 +1498,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -1475,7 +1515,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -1484,7 +1524,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_onConnectedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_onConnectedEvent", 1usize
                         )
                     })
             });
@@ -1504,7 +1545,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -1519,7 +1560,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_onConnectionConnectedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_onConnectionConnectedEvent", 1usize
                         )
                     })
             });
@@ -1540,7 +1582,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_2<
@@ -1556,7 +1598,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_onConnectionDisconnectedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_onConnectionDisconnectedEvent", 1usize
                         )
                     })
             });
@@ -1574,7 +1617,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -1587,7 +1630,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_onConnectionFailedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_onConnectionFailedEvent", 1usize
                         )
                     })
             });
@@ -1605,7 +1649,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -1618,7 +1662,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_onDisconnectedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_onDisconnectedEvent", 1usize
                         )
                     })
             });
@@ -1634,7 +1679,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -1643,7 +1688,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_onInitializedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_onInitializedEvent", 1usize
                         )
                     })
             });
@@ -1664,7 +1710,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_2<
@@ -1680,7 +1726,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_onReceiveUnconnectedDataEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_onReceiveUnconnectedDataEvent", 1usize
                         )
                     })
             });
@@ -1702,7 +1749,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_3<
@@ -1721,7 +1768,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_onReceivedDataEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_onReceivedDataEvent", 1usize
                         )
                     })
             });
@@ -1739,7 +1787,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDelegate,
@@ -1750,7 +1798,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_onStatisticsUpdatedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_onStatisticsUpdatedEvent", 1usize
                         )
                     })
             });
@@ -1763,12 +1812,13 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_connectionCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_connectionCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_connectionCount", 0usize
                         )
                     })
             });
@@ -1783,7 +1833,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1794,7 +1844,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_connectionRequestHandler", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_connectionRequestHandler", 0usize
                         )
                     })
             });
@@ -1811,7 +1862,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1822,7 +1873,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_encryptionLayer", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_encryptionLayer", 0usize
                         )
                     })
             });
@@ -1835,12 +1887,13 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_hasConnectionOwner")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_hasConnectionOwner", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_hasConnectionOwner", 0usize
                         )
                     })
             });
@@ -1851,12 +1904,13 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isClient")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_isClient", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isClient", 0usize
                         )
                     })
             });
@@ -1867,12 +1921,13 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isConnected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_isConnected", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isConnected", 0usize
                         )
                     })
             });
@@ -1883,12 +1938,13 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isConnecting")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_isConnecting", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isConnecting", 0usize
                         )
                     })
             });
@@ -1899,12 +1955,13 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isConnectionOwner")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_isConnectionOwner", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isConnectionOwner", 0usize
                         )
                     })
             });
@@ -1915,12 +1972,13 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isDisconnecting")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_isDisconnecting", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isDisconnecting", 0usize
                         )
                     })
             });
@@ -1931,12 +1989,13 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isDisposed")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_isDisposed", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isDisposed", 0usize
                         )
                     })
             });
@@ -1947,12 +2006,13 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isServer")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_isServer", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isServer", 0usize
                         )
                     })
             });
@@ -1963,12 +2023,13 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_port")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_port", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_port", 0usize
                         )
                     })
             });
@@ -1983,7 +2044,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1994,7 +2055,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_unconnectedPacketHeader", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_unconnectedPacketHeader", 0usize
                         )
                     })
             });
@@ -2011,7 +2073,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2020,7 +2082,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_userId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_userId", 0usize
                         )
                     })
             });
@@ -2037,7 +2100,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2046,7 +2109,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_userName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_userName", 0usize
                         )
                     })
             });
@@ -2062,7 +2126,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -2071,7 +2135,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_onConnectedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_onConnectedEvent", 1usize
                         )
                     })
             });
@@ -2091,7 +2156,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -2106,7 +2171,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_onConnectionConnectedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_onConnectionConnectedEvent", 1usize
                         )
                     })
             });
@@ -2127,7 +2193,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_2<
@@ -2143,7 +2209,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_onConnectionDisconnectedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_onConnectionDisconnectedEvent", 1usize
                         )
                     })
             });
@@ -2161,7 +2228,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -2174,7 +2241,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_onConnectionFailedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_onConnectionFailedEvent", 1usize
                         )
                     })
             });
@@ -2192,7 +2260,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -2205,7 +2273,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_onDisconnectedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_onDisconnectedEvent", 1usize
                         )
                     })
             });
@@ -2221,7 +2290,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -2230,7 +2299,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_onInitializedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_onInitializedEvent", 1usize
                         )
                     })
             });
@@ -2251,7 +2321,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_2<
@@ -2267,7 +2337,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_onReceiveUnconnectedDataEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_onReceiveUnconnectedDataEvent", 1usize
                         )
                     })
             });
@@ -2289,7 +2360,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_3<
@@ -2308,7 +2379,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_onReceivedDataEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_onReceivedDataEvent", 1usize
                         )
                     })
             });
@@ -2326,7 +2398,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDelegate,
@@ -2337,7 +2409,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_onStatisticsUpdatedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_onStatisticsUpdatedEvent", 1usize
                         )
                     })
             });
@@ -2475,12 +2548,13 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectToServerParams {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -2659,12 +2733,13 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionPar
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -2767,12 +2842,13 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Disconnect")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Disconnect", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Disconnect", 0usize
                         )
                     })
             });
@@ -2788,7 +2864,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         bool,
@@ -2797,7 +2873,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Equals", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            1usize
                         )
                     })
             });
@@ -2813,7 +2890,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection,
@@ -2824,7 +2901,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Equals", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            1usize
                         )
                     })
             });
@@ -2835,12 +2913,13 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHashCode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHashCode", 0usize
                         )
                     })
             });
@@ -2867,7 +2946,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2881,7 +2960,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Send", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Send",
+                            2usize
                         )
                     })
             });
@@ -2900,7 +2980,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
@@ -2918,7 +2998,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
                         )
                     })
             });
@@ -2932,12 +3013,13 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isConnectionOwner")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_isConnectionOwner", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isConnectionOwner", 0usize
                         )
                     })
             });
@@ -2952,7 +3034,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2961,7 +3043,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_userId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_userId", 0usize
                         )
                     })
             });
@@ -2978,7 +3061,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2987,7 +3070,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_userName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_userName", 0usize
                         )
                     })
             });
@@ -3112,7 +3196,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionReques
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
@@ -3121,7 +3205,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionReques
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Accept", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Accept",
+                            0usize
                         )
                     })
             });
@@ -3152,7 +3237,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionReques
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -3172,7 +3257,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionReques
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
                         )
                     })
             });
@@ -3190,7 +3276,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionReques
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -3199,7 +3285,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionReques
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_endPoint", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_endPoint", 0usize
                         )
                     })
             });
@@ -3212,12 +3299,13 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionReques
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isConnectionOwner")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_isConnectionOwner", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isConnectionOwner", 0usize
                         )
                     })
             });
@@ -3232,7 +3320,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionReques
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3241,7 +3329,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionReques
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_userId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_userId", 0usize
                         )
                     })
             });
@@ -3258,7 +3347,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionReques
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3267,7 +3356,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionReques
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_userName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_userName", 0usize
                         )
                     })
             });
@@ -3436,12 +3526,13 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -3519,12 +3610,13 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_StartServerParams {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

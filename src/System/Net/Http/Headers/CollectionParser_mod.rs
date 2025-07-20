@@ -49,7 +49,7 @@ impl crate::System::Net::Http::Headers::CollectionParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -70,7 +70,8 @@ impl crate::System::Net::Http::Headers::CollectionParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryParseStringElement", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryParseStringElement", 3usize
                         )
                     })
             });
@@ -93,7 +94,7 @@ impl crate::System::Net::Http::Headers::CollectionParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -116,7 +117,8 @@ impl crate::System::Net::Http::Headers::CollectionParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryParse", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryParse", 3usize
                         )
                     })
             });
@@ -142,7 +144,7 @@ impl crate::System::Net::Http::Headers::CollectionParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -164,7 +166,8 @@ impl crate::System::Net::Http::Headers::CollectionParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryParse", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryParse", 4usize
                         )
                     })
             });

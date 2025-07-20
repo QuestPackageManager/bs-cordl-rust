@@ -271,7 +271,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -287,7 +287,8 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CalculateGroupMeshTopology", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CalculateGroupMeshTopology", 2usize
                         )
                     })
             });
@@ -317,7 +318,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -343,7 +344,8 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CombineMeshes", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CombineMeshes", 5usize
                         )
                     })
             });
@@ -379,7 +381,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -401,7 +403,8 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CombineQuadMeshes", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CombineQuadMeshes", 3usize
                         )
                     })
             });
@@ -420,7 +423,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -434,8 +437,8 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateMaterialInfoEntryFromAttributeIndex",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateMaterialInfoEntryFromAttributeIndex", 2usize
                         )
                     })
             });
@@ -457,7 +460,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -475,7 +478,8 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateMeshFromMeshData", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateMeshFromMeshData", 4usize
                         )
                     })
             });
@@ -510,7 +514,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -541,7 +545,8 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenerateGeoGroupUsingGeoCachePoints", 9usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateGeoGroupUsingGeoCachePoints", 9usize
                         )
                     })
             });
@@ -586,7 +591,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -617,8 +622,8 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenerateGeoGroupUsingGeoCacheVertices",
-                            9usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateGeoGroupUsingGeoCacheVertices", 9usize
                         )
                     })
             });
@@ -663,7 +668,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -694,7 +699,8 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenerateLODMeshesFromGeoGroups", 9usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateLODMeshesFromGeoGroups", 9usize
                         )
                     })
             });
@@ -742,7 +748,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -776,7 +782,8 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenerateMeshFromGeoGroup", 10usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateMeshFromGeoGroup", 10usize
                         )
                     })
             });
@@ -818,7 +825,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -845,7 +852,8 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenerateMeshFromSingleGroup", 9usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateMeshFromSingleGroup", 9usize
                         )
                     })
             });
@@ -891,7 +899,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -919,7 +927,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "GetFinalMaterialsFromComparingNewWithPrevious", 4usize
                         )
                     })
@@ -949,7 +957,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -974,7 +982,8 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMaterialKeyFromAttributeIndex", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMaterialKeyFromAttributeIndex", 5usize
                         )
                     })
             });
@@ -1013,7 +1022,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1042,7 +1051,8 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPopulatedGeoCache", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPopulatedGeoCache", 7usize
                         )
                     })
             });
@@ -1083,7 +1093,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1103,7 +1113,8 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseLODTransitionAttribute", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseLODTransitionAttribute", 4usize
                         )
                     })
             });
@@ -1120,7 +1131,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1134,7 +1145,8 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PopulateGeometryData", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PopulateGeometryData", 2usize
                         )
                     })
             });
@@ -1150,7 +1162,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::HoudiniEngineUnity::HEU_SessionBase,
@@ -1161,7 +1173,8 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PopulateUnityMaterialData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PopulateUnityMaterialData", 1usize
                         )
                     })
             });
@@ -1194,7 +1207,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1227,7 +1240,8 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TransferRegularAttributesToVertices", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TransferRegularAttributesToVertices", 7usize
                         )
                     })
             });
@@ -1262,7 +1276,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1281,7 +1295,8 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateCollider", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateCollider", 3usize
                         )
                     })
             });
@@ -1301,7 +1316,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1317,7 +1332,8 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateColliders", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateColliders", 2usize
                         )
                     })
             });
@@ -1332,12 +1348,13 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -1350,12 +1367,13 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_AssetID")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AssetID", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AssetID", 0usize
                         )
                     })
             });
@@ -1366,12 +1384,13 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_GeoID")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_GeoID", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_GeoID", 0usize
                         )
                     })
             });
@@ -1382,12 +1401,13 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_PartID")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_PartID", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_PartID", 0usize
                         )
                     })
             });
@@ -1401,7 +1421,7 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -1410,7 +1430,8 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_AssetID", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_AssetID", 1usize
                         )
                     })
             });
@@ -1506,12 +1527,13 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

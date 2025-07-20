@@ -44,12 +44,13 @@ impl crate::Unity::XR::Oculus::Boundary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("GetBoundaryConfigured")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBoundaryConfigured", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBoundaryConfigured", 0usize
                         )
                     })
             });
@@ -63,7 +64,7 @@ impl crate::Unity::XR::Oculus::Boundary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Unity::XR::Oculus::Boundary_BoundaryType,
@@ -75,7 +76,8 @@ impl crate::Unity::XR::Oculus::Boundary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBoundaryDimensions", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBoundaryDimensions", 2usize
                         )
                     })
             });
@@ -88,12 +90,13 @@ impl crate::Unity::XR::Oculus::Boundary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("GetBoundaryVisible")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBoundaryVisible", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBoundaryVisible", 0usize
                         )
                     })
             });
@@ -106,7 +109,7 @@ impl crate::Unity::XR::Oculus::Boundary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -115,7 +118,8 @@ impl crate::Unity::XR::Oculus::Boundary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetBoundaryVisible", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetBoundaryVisible", 1usize
                         )
                     })
             });

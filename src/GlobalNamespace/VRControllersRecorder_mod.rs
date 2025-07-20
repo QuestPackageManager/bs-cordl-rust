@@ -76,12 +76,13 @@ impl crate::GlobalNamespace::SavedData_VRControllersRecorder_KeyframeSerializabl
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -197,12 +198,13 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("CheckNodes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckNodes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckNodes", 0usize
                         )
                     })
             });
@@ -219,7 +221,7 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
@@ -228,7 +230,8 @@ impl crate::GlobalNamespace::VRControllersRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateAnimationClipFromRecording", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateAnimationClipFromRecording", 1usize
                         )
                     })
             });
@@ -245,7 +248,7 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -256,7 +259,8 @@ impl crate::GlobalNamespace::VRControllersRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBinaryFormatter", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBinaryFormatter", 0usize
                         )
                     })
             });
@@ -281,7 +285,7 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IReadOnlyList_1<
@@ -298,7 +302,8 @@ impl crate::GlobalNamespace::VRControllersRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSavedData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSavedData", 1usize
                         )
                     })
             });
@@ -315,7 +320,7 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -329,7 +334,8 @@ impl crate::GlobalNamespace::VRControllersRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleControllerAnchorUpdate", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleControllerAnchorUpdate", 2usize
                         )
                     })
             });
@@ -344,12 +350,13 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("LateUpdate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LateUpdate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LateUpdate", 0usize
                         )
                     })
             });
@@ -362,12 +369,13 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("Load")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Load", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Load",
+                            0usize
                         )
                     })
             });
@@ -384,7 +392,7 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                         quest_hook::libil2cpp::Gc<
@@ -395,7 +403,8 @@ impl crate::GlobalNamespace::VRControllersRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadSavedData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadSavedData", 1usize
                         )
                     })
             });
@@ -412,7 +421,7 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                         quest_hook::libil2cpp::Gc<
@@ -423,7 +432,8 @@ impl crate::GlobalNamespace::VRControllersRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadStateWithDefaultOffset", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadStateWithDefaultOffset", 1usize
                         )
                     })
             });
@@ -442,7 +452,7 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -457,7 +467,8 @@ impl crate::GlobalNamespace::VRControllersRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadState", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadState", 3usize
                         )
                     })
             });
@@ -481,7 +492,7 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                         quest_hook::libil2cpp::Gc<
@@ -492,7 +503,8 @@ impl crate::GlobalNamespace::VRControllersRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadState", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadState", 1usize
                         )
                     })
             });
@@ -514,12 +526,13 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDestroy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDestroy", 0usize
                         )
                     })
             });
@@ -534,7 +547,7 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -543,7 +556,8 @@ impl crate::GlobalNamespace::VRControllersRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PlaybackTick", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PlaybackTick", 0usize
                         )
                     })
             });
@@ -558,7 +572,7 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>),
                         u32,
@@ -567,7 +581,8 @@ impl crate::GlobalNamespace::VRControllersRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadHeader", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadHeader", 1usize
                         )
                     })
             });
@@ -580,12 +595,13 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("RecordTick")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RecordTick", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RecordTick", 0usize
                         )
                     })
             });
@@ -600,12 +616,13 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Save")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Save", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Save",
+                            0usize
                         )
                     })
             });
@@ -623,7 +640,7 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -637,7 +654,8 @@ impl crate::GlobalNamespace::VRControllersRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SerializeSavedData", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SerializeSavedData", 2usize
                         )
                     })
             });
@@ -652,7 +670,7 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -661,7 +679,8 @@ impl crate::GlobalNamespace::VRControllersRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetDefaultSettings", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetDefaultSettings", 0usize
                         )
                     })
             });
@@ -676,7 +695,7 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -685,7 +704,8 @@ impl crate::GlobalNamespace::VRControllersRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetInGamePlaybackDefaultSettings", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetInGamePlaybackDefaultSettings", 0usize
                         )
                     })
             });
@@ -704,7 +724,7 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -718,7 +738,8 @@ impl crate::GlobalNamespace::VRControllersRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetPositionAndRotation", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetPositionAndRotation", 4usize
                         )
                     })
             });
@@ -733,12 +754,13 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Start", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Start",
+                            0usize
                         )
                     })
             });
@@ -753,12 +775,13 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Update")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Update", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Update",
+                            0usize
                         )
                     })
             });
@@ -773,7 +796,7 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IO::BinaryWriter>),
                         quest_hook::libil2cpp::Void,
@@ -782,7 +805,8 @@ impl crate::GlobalNamespace::VRControllersRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteHeader", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteHeader", 1usize
                         )
                     })
             });
@@ -800,7 +824,7 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::IO::BinaryWriter>,
@@ -814,7 +838,8 @@ impl crate::GlobalNamespace::VRControllersRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteTo", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "WriteTo",
+                            2usize
                         )
                     })
             });
@@ -829,12 +854,13 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -847,12 +873,13 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_changeToNonVRCamera")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_changeToNonVRCamera", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_changeToNonVRCamera", 0usize
                         )
                     })
             });
@@ -871,7 +898,7 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::ValueTuple_3<
@@ -884,7 +911,8 @@ impl crate::GlobalNamespace::VRControllersRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_currentPoses", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_currentPoses", 0usize
                         )
                     })
             });
@@ -903,7 +931,7 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::VRControllersRecorder_Mode,
@@ -912,7 +940,8 @@ impl crate::GlobalNamespace::VRControllersRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_mode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_mode", 0usize
                         )
                     })
             });
@@ -929,7 +958,7 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -938,7 +967,8 @@ impl crate::GlobalNamespace::VRControllersRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_path", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_path", 0usize
                         )
                     })
             });
@@ -955,7 +985,7 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -964,7 +994,8 @@ impl crate::GlobalNamespace::VRControllersRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_recordingFileName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_recordingFileName", 0usize
                         )
                     })
             });
@@ -981,7 +1012,7 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
@@ -990,7 +1021,8 @@ impl crate::GlobalNamespace::VRControllersRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_recordingTextAsset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_recordingTextAsset", 0usize
                         )
                     })
             });
@@ -1006,7 +1038,7 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -1015,7 +1047,8 @@ impl crate::GlobalNamespace::VRControllersRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_changeToNonVRCamera", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_changeToNonVRCamera", 1usize
                         )
                     })
             });
@@ -1031,7 +1064,7 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::VRControllersRecorder_Mode),
                         quest_hook::libil2cpp::Void,
@@ -1040,7 +1073,8 @@ impl crate::GlobalNamespace::VRControllersRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_mode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_mode", 1usize
                         )
                     })
             });
@@ -1056,7 +1090,7 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -1065,7 +1099,8 @@ impl crate::GlobalNamespace::VRControllersRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_recordingFileName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_recordingFileName", 1usize
                         )
                     })
             });
@@ -1081,7 +1116,7 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>),
                         quest_hook::libil2cpp::Void,
@@ -1090,7 +1125,8 @@ impl crate::GlobalNamespace::VRControllersRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_recordingTextAsset", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_recordingTextAsset", 1usize
                         )
                     })
             });
@@ -1165,7 +1201,7 @@ impl crate::GlobalNamespace::VRControllersRecorder_Keyframe {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         bool,
@@ -1174,7 +1210,8 @@ impl crate::GlobalNamespace::VRControllersRecorder_Keyframe {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Equals", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            1usize
                         )
                     })
             });
@@ -1190,7 +1227,7 @@ impl crate::GlobalNamespace::VRControllersRecorder_Keyframe {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::VRControllersRecorder_Keyframe,
@@ -1201,7 +1238,8 @@ impl crate::GlobalNamespace::VRControllersRecorder_Keyframe {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Equals", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            1usize
                         )
                     })
             });
@@ -1218,7 +1256,7 @@ impl crate::GlobalNamespace::VRControllersRecorder_Keyframe {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::SavedData_VRControllersRecorder_KeyframeSerializable,
@@ -1231,7 +1269,8 @@ impl crate::GlobalNamespace::VRControllersRecorder_Keyframe {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FromSerializable", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FromSerializable", 1usize
                         )
                     })
             });
@@ -1244,12 +1283,13 @@ impl crate::GlobalNamespace::VRControllersRecorder_Keyframe {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHashCode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHashCode", 0usize
                         )
                     })
             });
@@ -1291,7 +1331,7 @@ impl crate::GlobalNamespace::VRControllersRecorder_Keyframe {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>),
                         quest_hook::libil2cpp::Gc<
@@ -1302,7 +1342,8 @@ impl crate::GlobalNamespace::VRControllersRecorder_Keyframe {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadFrom", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadFrom", 1usize
                         )
                     })
             });
@@ -1319,7 +1360,7 @@ impl crate::GlobalNamespace::VRControllersRecorder_Keyframe {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1328,7 +1369,8 @@ impl crate::GlobalNamespace::VRControllersRecorder_Keyframe {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToConstructorString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToConstructorString", 0usize
                         )
                     })
             });
@@ -1347,7 +1389,7 @@ impl crate::GlobalNamespace::VRControllersRecorder_Keyframe {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1358,7 +1400,8 @@ impl crate::GlobalNamespace::VRControllersRecorder_Keyframe {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToSerializable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToSerializable", 0usize
                         )
                     })
             });
@@ -1374,7 +1417,7 @@ impl crate::GlobalNamespace::VRControllersRecorder_Keyframe {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IO::BinaryWriter>),
                         quest_hook::libil2cpp::Void,
@@ -1383,7 +1426,8 @@ impl crate::GlobalNamespace::VRControllersRecorder_Keyframe {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteTo", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "WriteTo",
+                            1usize
                         )
                     })
             });
@@ -1402,7 +1446,7 @@ impl crate::GlobalNamespace::VRControllersRecorder_Keyframe {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Pose,
@@ -1416,7 +1460,8 @@ impl crate::GlobalNamespace::VRControllersRecorder_Keyframe {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
                         )
                     })
             });
@@ -1442,7 +1487,7 @@ impl crate::GlobalNamespace::VRControllersRecorder_Keyframe {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Vector3,
@@ -1459,7 +1504,8 @@ impl crate::GlobalNamespace::VRControllersRecorder_Keyframe {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            7usize
                         )
                     })
             });
@@ -1478,12 +1524,13 @@ impl crate::GlobalNamespace::VRControllersRecorder_Keyframe {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::UnityEngine::Pose, 0usize>("get_headPose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_headPose", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_headPose", 0usize
                         )
                     })
             });
@@ -1498,7 +1545,7 @@ impl crate::GlobalNamespace::VRControllersRecorder_Keyframe {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Pose,
@@ -1507,7 +1554,8 @@ impl crate::GlobalNamespace::VRControllersRecorder_Keyframe {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_leftControllerPose", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_leftControllerPose", 0usize
                         )
                     })
             });
@@ -1522,7 +1570,7 @@ impl crate::GlobalNamespace::VRControllersRecorder_Keyframe {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Pose,
@@ -1531,7 +1579,8 @@ impl crate::GlobalNamespace::VRControllersRecorder_Keyframe {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rightControllerPose", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rightControllerPose", 0usize
                         )
                     })
             });
@@ -1749,12 +1798,13 @@ impl crate::GlobalNamespace::VRControllersRecorder_SavedData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -1834,7 +1884,7 @@ impl crate::GlobalNamespace::VRControllersRecorder_State {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::VRControllersRecorder_Keyframe,
@@ -1845,7 +1895,8 @@ impl crate::GlobalNamespace::VRControllersRecorder_State {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddKeyframe", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddKeyframe", 1usize
                         )
                     })
             });
@@ -1866,7 +1917,7 @@ impl crate::GlobalNamespace::VRControllersRecorder_State {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1883,7 +1934,8 @@ impl crate::GlobalNamespace::VRControllersRecorder_State {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FromSavedData", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FromSavedData", 3usize
                         )
                     })
             });
@@ -1974,7 +2026,7 @@ impl crate::GlobalNamespace::VRControllersRecorder_State {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>),
                         quest_hook::libil2cpp::Gc<
@@ -1985,7 +2037,8 @@ impl crate::GlobalNamespace::VRControllersRecorder_State {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadFrom", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadFrom", 1usize
                         )
                     })
             });
@@ -2004,7 +2057,7 @@ impl crate::GlobalNamespace::VRControllersRecorder_State {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Pose, crate::UnityEngine::Pose),
                         quest_hook::libil2cpp::Gc<
@@ -2015,7 +2068,8 @@ impl crate::GlobalNamespace::VRControllersRecorder_State {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Upgrade", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Upgrade",
+                            2usize
                         )
                     })
             });
@@ -2037,7 +2091,7 @@ impl crate::GlobalNamespace::VRControllersRecorder_State {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IO::BinaryWriter>),
                         quest_hook::libil2cpp::Void,
@@ -2046,7 +2100,8 @@ impl crate::GlobalNamespace::VRControllersRecorder_State {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteTo", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "WriteTo",
+                            1usize
                         )
                     })
             });
@@ -2061,12 +2116,13 @@ impl crate::GlobalNamespace::VRControllersRecorder_State {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -2090,7 +2146,7 @@ impl crate::GlobalNamespace::VRControllersRecorder_State {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2109,7 +2165,8 @@ impl crate::GlobalNamespace::VRControllersRecorder_State {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -2137,7 +2194,7 @@ impl crate::GlobalNamespace::VRControllersRecorder_State {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2156,7 +2213,8 @@ impl crate::GlobalNamespace::VRControllersRecorder_State {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -2185,7 +2243,7 @@ impl crate::GlobalNamespace::VRControllersRecorder_State {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2205,7 +2263,8 @@ impl crate::GlobalNamespace::VRControllersRecorder_State {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
                         )
                     })
             });
@@ -2232,7 +2291,7 @@ impl crate::GlobalNamespace::VRControllersRecorder_State {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2247,7 +2306,8 @@ impl crate::GlobalNamespace::VRControllersRecorder_State {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_keyframes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_keyframes", 0usize
                         )
                     })
             });
@@ -2264,12 +2324,13 @@ impl crate::GlobalNamespace::VRControllersRecorder_State {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u32, 0usize>("get_version")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_version", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_version", 0usize
                         )
                     })
             });
@@ -2338,7 +2399,7 @@ impl crate::GlobalNamespace::VRControllersRecorder_TypeSerializationBinder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2354,7 +2415,8 @@ impl crate::GlobalNamespace::VRControllersRecorder_TypeSerializationBinder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindToType", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindToType", 2usize
                         )
                     })
             });
@@ -2376,12 +2438,13 @@ impl crate::GlobalNamespace::VRControllersRecorder_TypeSerializationBinder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

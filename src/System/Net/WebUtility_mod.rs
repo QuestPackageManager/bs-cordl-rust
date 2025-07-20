@@ -49,7 +49,7 @@ impl crate::System::Net::WebUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -65,8 +65,8 @@ impl crate::System::Net::WebUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNextUnicodeScalarValueFromUtf16Surrogate",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNextUnicodeScalarValueFromUtf16Surrogate", 2usize
                         )
                     })
             });
@@ -79,12 +79,13 @@ impl crate::System::Net::WebUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(char), i32, 1usize>("HexToInt")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HexToInt", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HexToInt", 1usize
                         )
                     })
             });
@@ -99,7 +100,7 @@ impl crate::System::Net::WebUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -108,7 +109,8 @@ impl crate::System::Net::WebUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HtmlEncode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HtmlEncode", 1usize
                         )
                     })
             });
@@ -124,7 +126,7 @@ impl crate::System::Net::WebUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -138,7 +140,8 @@ impl crate::System::Net::WebUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HtmlEncode", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HtmlEncode", 2usize
                         )
                     })
             });
@@ -154,7 +157,7 @@ impl crate::System::Net::WebUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -168,7 +171,8 @@ impl crate::System::Net::WebUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IndexOfHtmlEncodingChars", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IndexOfHtmlEncodingChars", 2usize
                         )
                     })
             });
@@ -183,7 +187,7 @@ impl crate::System::Net::WebUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -192,7 +196,8 @@ impl crate::System::Net::WebUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UrlDecode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UrlDecode", 1usize
                         )
                     })
             });
@@ -210,7 +215,7 @@ impl crate::System::Net::WebUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -224,7 +229,8 @@ impl crate::System::Net::WebUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UrlDecodeInternal", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UrlDecodeInternal", 2usize
                         )
                     })
             });
@@ -239,7 +245,7 @@ impl crate::System::Net::WebUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::System::Net::Configuration::UnicodeEncodingConformance,
@@ -248,7 +254,8 @@ impl crate::System::Net::WebUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_HtmlEncodeConformance", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_HtmlEncodeConformance", 0usize
                         )
                     })
             });
@@ -320,12 +327,13 @@ impl crate::System::Net::WebUtility_UrlDecoder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u8), quest_hook::libil2cpp::Void, 1usize>("AddByte")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddByte", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "AddByte",
+                            1usize
                         )
                     })
             });
@@ -341,7 +349,7 @@ impl crate::System::Net::WebUtility_UrlDecoder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (char),
                         quest_hook::libil2cpp::Void,
@@ -350,7 +358,8 @@ impl crate::System::Net::WebUtility_UrlDecoder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddChar", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "AddChar",
+                            1usize
                         )
                     })
             });
@@ -365,12 +374,13 @@ impl crate::System::Net::WebUtility_UrlDecoder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("FlushBytes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FlushBytes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FlushBytes", 0usize
                         )
                     })
             });
@@ -387,7 +397,7 @@ impl crate::System::Net::WebUtility_UrlDecoder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -396,7 +406,8 @@ impl crate::System::Net::WebUtility_UrlDecoder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetString", 0usize
                         )
                     })
             });
@@ -423,7 +434,7 @@ impl crate::System::Net::WebUtility_UrlDecoder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>),
                         quest_hook::libil2cpp::Void,
@@ -432,7 +443,8 @@ impl crate::System::Net::WebUtility_UrlDecoder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });

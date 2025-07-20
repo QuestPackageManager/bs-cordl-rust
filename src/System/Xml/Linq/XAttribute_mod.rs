@@ -50,7 +50,7 @@ impl crate::System::Xml::Linq::XAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::Linq::XNamespace,
@@ -61,7 +61,8 @@ impl crate::System::Xml::Linq::XAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPrefixOfNamespace", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPrefixOfNamespace", 1usize
                         )
                     })
             });
@@ -97,7 +98,7 @@ impl crate::System::Xml::Linq::XAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -106,7 +107,8 @@ impl crate::System::Xml::Linq::XAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToString", 0usize
                         )
                     })
             });
@@ -122,7 +124,7 @@ impl crate::System::Xml::Linq::XAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>,
@@ -136,7 +138,8 @@ impl crate::System::Xml::Linq::XAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ValidateAttribute", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValidateAttribute", 2usize
                         )
                     })
             });
@@ -152,7 +155,7 @@ impl crate::System::Xml::Linq::XAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::Linq::XAttribute,
@@ -163,7 +166,8 @@ impl crate::System::Xml::Linq::XAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -180,7 +184,7 @@ impl crate::System::Xml::Linq::XAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>,
@@ -194,7 +198,8 @@ impl crate::System::Xml::Linq::XAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -207,12 +212,13 @@ impl crate::System::Xml::Linq::XAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsNamespaceDeclaration")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsNamespaceDeclaration", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsNamespaceDeclaration", 0usize
                         )
                     })
             });
@@ -227,7 +233,7 @@ impl crate::System::Xml::Linq::XAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>,
@@ -236,7 +242,8 @@ impl crate::System::Xml::Linq::XAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Name", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Name", 0usize
                         )
                     })
             });
@@ -251,7 +258,7 @@ impl crate::System::Xml::Linq::XAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::XmlNodeType,
@@ -260,7 +267,8 @@ impl crate::System::Xml::Linq::XAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_NodeType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_NodeType", 0usize
                         )
                     })
             });
@@ -277,7 +285,7 @@ impl crate::System::Xml::Linq::XAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -286,7 +294,8 @@ impl crate::System::Xml::Linq::XAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Value", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Value", 0usize
                         )
                     })
             });
@@ -302,7 +311,7 @@ impl crate::System::Xml::Linq::XAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -311,7 +320,8 @@ impl crate::System::Xml::Linq::XAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Value", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Value", 1usize
                         )
                     })
             });

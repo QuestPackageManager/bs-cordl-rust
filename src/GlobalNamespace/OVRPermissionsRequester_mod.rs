@@ -51,7 +51,7 @@ impl crate::GlobalNamespace::OVRPermissionsRequester {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -62,7 +62,8 @@ impl crate::GlobalNamespace::OVRPermissionsRequester {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BuildPermissionCallbacks", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BuildPermissionCallbacks", 0usize
                         )
                     })
             });
@@ -79,7 +80,7 @@ impl crate::GlobalNamespace::OVRPermissionsRequester {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPermissionsRequester_Permission),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -88,7 +89,8 @@ impl crate::GlobalNamespace::OVRPermissionsRequester {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPermissionId", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPermissionId", 1usize
                         )
                     })
             });
@@ -103,7 +105,7 @@ impl crate::GlobalNamespace::OVRPermissionsRequester {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPermissionsRequester_Permission),
                         bool,
@@ -112,7 +114,8 @@ impl crate::GlobalNamespace::OVRPermissionsRequester {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsPermissionGranted", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsPermissionGranted", 1usize
                         )
                     })
             });
@@ -125,7 +128,7 @@ impl crate::GlobalNamespace::OVRPermissionsRequester {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPermissionsRequester_Permission),
                         bool,
@@ -134,7 +137,8 @@ impl crate::GlobalNamespace::OVRPermissionsRequester {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsPermissionSupportedByPlatform", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsPermissionSupportedByPlatform", 1usize
                         )
                     })
             });
@@ -151,7 +155,7 @@ impl crate::GlobalNamespace::OVRPermissionsRequester {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<
@@ -164,7 +168,8 @@ impl crate::GlobalNamespace::OVRPermissionsRequester {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Request", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Request",
+                            1usize
                         )
                     })
             });
@@ -183,7 +188,7 @@ impl crate::GlobalNamespace::OVRPermissionsRequester {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<
@@ -196,7 +201,8 @@ impl crate::GlobalNamespace::OVRPermissionsRequester {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RequestPermissions", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RequestPermissions", 1usize
                         )
                     })
             });
@@ -211,7 +217,7 @@ impl crate::GlobalNamespace::OVRPermissionsRequester {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPermissionsRequester_Permission),
                         bool,
@@ -220,7 +226,8 @@ impl crate::GlobalNamespace::OVRPermissionsRequester {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShouldRequestPermission", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShouldRequestPermission", 1usize
                         )
                     })
             });
@@ -237,7 +244,7 @@ impl crate::GlobalNamespace::OVRPermissionsRequester {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -252,7 +259,8 @@ impl crate::GlobalNamespace::OVRPermissionsRequester {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_PermissionGranted", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_PermissionGranted", 1usize
                         )
                     })
             });
@@ -271,7 +279,7 @@ impl crate::GlobalNamespace::OVRPermissionsRequester {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -286,7 +294,8 @@ impl crate::GlobalNamespace::OVRPermissionsRequester {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_PermissionGranted", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_PermissionGranted", 1usize
                         )
                     })
             });

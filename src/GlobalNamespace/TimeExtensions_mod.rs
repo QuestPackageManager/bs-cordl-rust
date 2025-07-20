@@ -44,7 +44,7 @@ impl crate::GlobalNamespace::TimeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i64),
                         crate::System::DateTime,
@@ -53,7 +53,8 @@ impl crate::GlobalNamespace::TimeExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AsUnixTime", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AsUnixTime", 1usize
                         )
                     })
             });
@@ -66,12 +67,13 @@ impl crate::GlobalNamespace::TimeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("DaysToSeconds")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DaysToSeconds", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DaysToSeconds", 1usize
                         )
                     })
             });
@@ -86,7 +88,7 @@ impl crate::GlobalNamespace::TimeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::TimeSpan),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -95,7 +97,7 @@ impl crate::GlobalNamespace::TimeExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "GetFormattedRemainingTimeTwoOfDaysHoursMinutes", 1usize
                         )
                     })
@@ -109,12 +111,13 @@ impl crate::GlobalNamespace::TimeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32), i32, 1usize>("Hours")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Hours", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Hours",
+                            1usize
                         )
                     })
             });
@@ -125,12 +128,13 @@ impl crate::GlobalNamespace::TimeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("HoursToSeconds")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HoursToSeconds", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HoursToSeconds", 1usize
                         )
                     })
             });
@@ -141,12 +145,13 @@ impl crate::GlobalNamespace::TimeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32), i32, 1usize>("Milliseconds")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Milliseconds", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Milliseconds", 1usize
                         )
                     })
             });
@@ -161,7 +166,7 @@ impl crate::GlobalNamespace::TimeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -170,7 +175,8 @@ impl crate::GlobalNamespace::TimeExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MinSecDurationText", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MinSecDurationText", 1usize
                         )
                     })
             });
@@ -187,7 +193,7 @@ impl crate::GlobalNamespace::TimeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -196,7 +202,8 @@ impl crate::GlobalNamespace::TimeExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MinSecMillisecDurationText", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MinSecMillisecDurationText", 1usize
                         )
                     })
             });
@@ -209,12 +216,13 @@ impl crate::GlobalNamespace::TimeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32), i32, 1usize>("Minutes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Minutes", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Minutes",
+                            1usize
                         )
                     })
             });
@@ -225,12 +233,13 @@ impl crate::GlobalNamespace::TimeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("MinutesToSeconds")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MinutesToSeconds", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MinutesToSeconds", 1usize
                         )
                     })
             });
@@ -241,12 +250,13 @@ impl crate::GlobalNamespace::TimeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32), f32, 1usize>("OneBeatDuration")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OneBeatDuration", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OneBeatDuration", 1usize
                         )
                     })
             });
@@ -257,12 +267,13 @@ impl crate::GlobalNamespace::TimeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32), i32, 1usize>("Seconds")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Seconds", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Seconds",
+                            1usize
                         )
                     })
             });
@@ -273,12 +284,13 @@ impl crate::GlobalNamespace::TimeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("SecondsToDays")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SecondsToDays", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SecondsToDays", 1usize
                         )
                     })
             });
@@ -289,12 +301,13 @@ impl crate::GlobalNamespace::TimeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("SecondsToHours")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SecondsToHours", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SecondsToHours", 1usize
                         )
                     })
             });
@@ -305,12 +318,13 @@ impl crate::GlobalNamespace::TimeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32), f32, 1usize>("SecondsToMinutes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SecondsToMinutes", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SecondsToMinutes", 1usize
                         )
                     })
             });
@@ -323,12 +337,13 @@ impl crate::GlobalNamespace::TimeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("SecondsToMinutes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SecondsToMinutes", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SecondsToMinutes", 1usize
                         )
                     })
             });
@@ -339,12 +354,13 @@ impl crate::GlobalNamespace::TimeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32, f32), f32, 2usize>("TimeToBeat")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TimeToBeat", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TimeToBeat", 2usize
                         )
                     })
             });
@@ -359,7 +375,7 @@ impl crate::GlobalNamespace::TimeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::DateTime),
                         i64,
@@ -368,7 +384,8 @@ impl crate::GlobalNamespace::TimeExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToUnixTime", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToUnixTime", 1usize
                         )
                     })
             });
@@ -379,12 +396,13 @@ impl crate::GlobalNamespace::TimeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32), i32, 1usize>("TotalDays")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TotalDays", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TotalDays", 1usize
                         )
                     })
             });
@@ -395,12 +413,13 @@ impl crate::GlobalNamespace::TimeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32), i32, 1usize>("TotalHours")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TotalHours", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TotalHours", 1usize
                         )
                     })
             });
@@ -411,12 +430,13 @@ impl crate::GlobalNamespace::TimeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32), i32, 1usize>("TotalMinutes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TotalMinutes", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TotalMinutes", 1usize
                         )
                     })
             });
@@ -427,12 +447,13 @@ impl crate::GlobalNamespace::TimeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32), i32, 1usize>("TotalSeconds")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TotalSeconds", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TotalSeconds", 1usize
                         )
                     })
             });

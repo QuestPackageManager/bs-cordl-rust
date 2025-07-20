@@ -46,12 +46,13 @@ impl crate::UnityEngine::ScriptableObject {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), T, 0usize>("CreateInstance")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateInstance", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateInstance", 0usize
                         )
                     })
             });
@@ -66,7 +67,7 @@ impl crate::UnityEngine::ScriptableObject {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
@@ -75,7 +76,8 @@ impl crate::UnityEngine::ScriptableObject {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateInstance", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateInstance", 1usize
                         )
                     })
             });
@@ -90,7 +92,7 @@ impl crate::UnityEngine::ScriptableObject {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ScriptableObject,
@@ -101,7 +103,8 @@ impl crate::UnityEngine::ScriptableObject {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateScriptableObject", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateScriptableObject", 1usize
                         )
                     })
             });
@@ -119,7 +122,7 @@ impl crate::UnityEngine::ScriptableObject {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>, bool),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
@@ -128,8 +131,8 @@ impl crate::UnityEngine::ScriptableObject {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateScriptableObjectInstanceFromType",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateScriptableObjectInstanceFromType", 2usize
                         )
                     })
             });
@@ -153,12 +156,13 @@ impl crate::UnityEngine::ScriptableObject {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

@@ -103,7 +103,7 @@ impl crate::ENet::Address {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -112,7 +112,8 @@ impl crate::ENet::Address {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHost", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetHost",
+                            0usize
                         )
                     })
             });
@@ -129,7 +130,7 @@ impl crate::ENet::Address {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -138,7 +139,8 @@ impl crate::ENet::Address {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetIP", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetIP",
+                            0usize
                         )
                     })
             });
@@ -154,7 +156,7 @@ impl crate::ENet::Address {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -163,7 +165,8 @@ impl crate::ENet::Address {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetHost", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetHost",
+                            1usize
                         )
                     })
             });
@@ -177,7 +180,7 @@ impl crate::ENet::Address {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -186,7 +189,8 @@ impl crate::ENet::Address {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetIP", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetIP",
+                            1usize
                         )
                     })
             });
@@ -200,7 +204,7 @@ impl crate::ENet::Address {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::ENet::ENetAddress),
                         quest_hook::libil2cpp::Void,
@@ -209,7 +213,8 @@ impl crate::ENet::Address {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -224,7 +229,7 @@ impl crate::ENet::Address {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::ENet::ENetAddress,
@@ -233,7 +238,8 @@ impl crate::ENet::Address {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_NativeData", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_NativeData", 0usize
                         )
                     })
             });
@@ -246,12 +252,13 @@ impl crate::ENet::Address {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u16, 0usize>("get_Port")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Port", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Port", 0usize
                         )
                     })
             });
@@ -265,7 +272,7 @@ impl crate::ENet::Address {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::ENet::ENetAddress),
                         quest_hook::libil2cpp::Void,
@@ -274,7 +281,8 @@ impl crate::ENet::Address {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_NativeData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_NativeData", 1usize
                         )
                     })
             });
@@ -290,7 +298,7 @@ impl crate::ENet::Address {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u16),
                         quest_hook::libil2cpp::Void,
@@ -299,7 +307,8 @@ impl crate::ENet::Address {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Port", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Port", 1usize
                         )
                     })
             });

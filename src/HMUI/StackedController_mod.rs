@@ -49,7 +49,7 @@ impl crate::HMUI::StackedController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::List_1<
@@ -62,7 +62,8 @@ impl crate::HMUI::StackedController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LayoutViewControllers", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LayoutViewControllers", 1usize
                         )
                     })
             });
@@ -86,7 +87,7 @@ impl crate::HMUI::StackedController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>, bool),
                         quest_hook::libil2cpp::Void,
@@ -95,7 +96,8 @@ impl crate::HMUI::StackedController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PopViewController", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PopViewController", 2usize
                         )
                     })
             });
@@ -113,7 +115,7 @@ impl crate::HMUI::StackedController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, quest_hook::libil2cpp::Gc<crate::System::Action>, bool),
                         quest_hook::libil2cpp::Void,
@@ -122,7 +124,8 @@ impl crate::HMUI::StackedController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PopViewControllers", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PopViewControllers", 3usize
                         )
                     })
             });
@@ -144,7 +147,7 @@ impl crate::HMUI::StackedController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
@@ -157,7 +160,8 @@ impl crate::HMUI::StackedController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PushViewController", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PushViewController", 3usize
                         )
                     })
             });
@@ -174,7 +178,7 @@ impl crate::HMUI::StackedController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>, i32),
                         quest_hook::libil2cpp::Void,
@@ -183,7 +187,8 @@ impl crate::HMUI::StackedController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetupViewControllerRect", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetupViewControllerRect", 2usize
                         )
                     })
             });
@@ -203,7 +208,7 @@ impl crate::HMUI::StackedController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             f32,
@@ -219,7 +224,7 @@ impl crate::HMUI::StackedController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "<PushViewController>g__AnimationLayouter|3_0", 2usize
                         )
                     })
@@ -235,12 +240,13 @@ impl crate::HMUI::StackedController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -257,7 +263,7 @@ impl crate::HMUI::StackedController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
@@ -266,7 +272,8 @@ impl crate::HMUI::StackedController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_topStackedViewController", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_topStackedViewController", 0usize
                         )
                     })
             });

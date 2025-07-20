@@ -56,7 +56,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -71,7 +71,8 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCertificates", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCertificates", 0usize
                         )
                     })
             });
@@ -117,7 +118,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Crypto::IStreamCalculator,
@@ -128,7 +129,8 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Process", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Process",
+                            1usize
                         )
                     })
             });
@@ -145,7 +147,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -156,7 +158,8 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToAsn1Message", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToAsn1Message", 0usize
                         )
                     })
             });
@@ -174,7 +177,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Crypto::IVerifierFactory,
@@ -185,7 +188,8 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Verify", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Verify",
+                            1usize
                         )
                     })
             });
@@ -204,7 +208,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -220,7 +224,8 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Verify", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Verify",
+                            2usize
                         )
                     })
             });
@@ -238,7 +243,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Cmp::GeneralPkiMessage,
@@ -249,7 +254,8 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -267,7 +273,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage,
@@ -278,7 +284,8 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -295,7 +302,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -306,7 +313,8 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Body", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Body", 0usize
                         )
                     })
             });
@@ -321,12 +329,13 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_HasPasswordBasedMacProtected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_HasPasswordBasedMacProtected", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_HasPasswordBasedMacProtected", 0usize
                         )
                     })
             });
@@ -341,7 +350,7 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -352,7 +361,8 @@ impl crate::Org::BouncyCastle::Cmp::ProtectedPkiMessage {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Header", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Header", 0usize
                         )
                     })
             });

@@ -70,7 +70,7 @@ impl crate::GlobalNamespace::GameLiftNetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::GlobalNamespace::BeatmapLevelSelectionMask,
@@ -94,7 +94,8 @@ impl crate::GlobalNamespace::GameLiftNetworkPlayerModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetConnectToServerParams", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetConnectToServerParams", 4usize
                         )
                     })
             });
@@ -125,7 +126,7 @@ impl crate::GlobalNamespace::GameLiftNetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::GlobalNamespace::BeatmapLevelSelectionMask,
@@ -143,7 +144,8 @@ impl crate::GlobalNamespace::GameLiftNetworkPlayerModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetStartClientParams", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetStartClientParams", 2usize
                         )
                     })
             });
@@ -183,7 +185,7 @@ impl crate::GlobalNamespace::GameLiftNetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::GlobalNamespace::BeatmapLevelSelectionMask,
@@ -209,7 +211,8 @@ impl crate::GlobalNamespace::GameLiftNetworkPlayerModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RefreshPublicServers", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RefreshPublicServers", 4usize
                         )
                     })
             });
@@ -228,12 +231,13 @@ impl crate::GlobalNamespace::GameLiftNetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Update")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Update", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Update",
+                            0usize
                         )
                     })
             });
@@ -248,12 +252,13 @@ impl crate::GlobalNamespace::GameLiftNetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -270,7 +275,7 @@ impl crate::GlobalNamespace::GameLiftNetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -279,7 +284,8 @@ impl crate::GlobalNamespace::GameLiftNetworkPlayerModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_code", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_code", 0usize
                         )
                     })
             });
@@ -296,7 +302,7 @@ impl crate::GlobalNamespace::GameLiftNetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::GameplayServerConfiguration,
@@ -305,7 +311,8 @@ impl crate::GlobalNamespace::GameLiftNetworkPlayerModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_configuration", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_configuration", 0usize
                         )
                     })
             });
@@ -322,7 +329,7 @@ impl crate::GlobalNamespace::GameLiftNetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -331,7 +338,8 @@ impl crate::GlobalNamespace::GameLiftNetworkPlayerModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_partyOwnerId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_partyOwnerId", 0usize
                         )
                     })
             });
@@ -348,7 +356,7 @@ impl crate::GlobalNamespace::GameLiftNetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -357,7 +365,8 @@ impl crate::GlobalNamespace::GameLiftNetworkPlayerModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_secret", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_secret", 0usize
                         )
                     })
             });
@@ -374,7 +383,7 @@ impl crate::GlobalNamespace::GameLiftNetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::BeatmapLevelSelectionMask,
@@ -383,7 +392,8 @@ impl crate::GlobalNamespace::GameLiftNetworkPlayerModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_selectionMask", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_selectionMask", 0usize
                         )
                     })
             });

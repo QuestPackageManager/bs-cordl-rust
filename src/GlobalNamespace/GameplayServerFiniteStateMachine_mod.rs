@@ -79,7 +79,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams),
                         quest_hook::libil2cpp::Void,
@@ -88,7 +88,8 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -105,7 +106,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -116,7 +117,8 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_beatmapProvider", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_beatmapProvider", 0usize
                         )
                     })
             });
@@ -133,7 +135,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::GameplayServerConfiguration,
@@ -142,7 +144,8 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_configuration", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_configuration", 0usize
                         )
                     })
             });
@@ -159,7 +162,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -170,7 +173,8 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_gameplayRpcManager", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_gameplayRpcManager", 0usize
                         )
                     })
             });
@@ -187,7 +191,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -198,7 +202,8 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_menuRpcManager", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_menuRpcManager", 0usize
                         )
                     })
             });
@@ -215,7 +220,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -226,7 +231,8 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_multiplayerSessionManager", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_multiplayerSessionManager", 0usize
                         )
                     })
             });
@@ -243,7 +249,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -252,7 +258,8 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ownerUserId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ownerUserId", 0usize
                         )
                     })
             });
@@ -269,7 +276,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::BeatmapLevelSelectionMask,
@@ -278,7 +285,8 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_selectionMask", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_selectionMask", 0usize
                         )
                     })
             });
@@ -295,7 +303,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
@@ -304,7 +312,8 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_taskUtility", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_taskUtility", 0usize
                         )
                     })
             });
@@ -320,7 +329,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::IServerBeatmapProvider,
@@ -331,7 +340,8 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_beatmapProvider", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_beatmapProvider", 1usize
                         )
                     })
             });
@@ -347,7 +357,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::GameplayServerConfiguration),
                         quest_hook::libil2cpp::Void,
@@ -356,7 +366,8 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_configuration", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_configuration", 1usize
                         )
                     })
             });
@@ -372,7 +383,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::GameplayRpcManager,
@@ -383,7 +394,8 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_gameplayRpcManager", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_gameplayRpcManager", 1usize
                         )
                     })
             });
@@ -399,7 +411,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::MenuRpcManager,
@@ -410,7 +422,8 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_menuRpcManager", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_menuRpcManager", 1usize
                         )
                     })
             });
@@ -428,7 +441,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::IMultiplayerSessionManager,
@@ -439,7 +452,8 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_multiplayerSessionManager", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_multiplayerSessionManager", 1usize
                         )
                     })
             });
@@ -455,7 +469,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -464,7 +478,8 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_ownerUserId", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_ownerUserId", 1usize
                         )
                     })
             });
@@ -480,7 +495,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::BeatmapLevelSelectionMask),
                         quest_hook::libil2cpp::Void,
@@ -489,7 +504,8 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_selectionMask", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_selectionMask", 1usize
                         )
                     })
             });
@@ -505,7 +521,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>),
                         quest_hook::libil2cpp::Void,
@@ -514,7 +530,8 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_taskUtility", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_taskUtility", 1usize
                         )
                     })
             });
@@ -662,7 +679,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
@@ -684,7 +701,8 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            6usize
                         )
                     })
             });

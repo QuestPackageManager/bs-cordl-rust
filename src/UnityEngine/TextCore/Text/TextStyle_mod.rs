@@ -83,7 +83,7 @@ impl crate::UnityEngine::TextCore::Text::TextStyle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -92,7 +92,8 @@ impl crate::UnityEngine::TextCore::Text::TextStyle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RefreshStyle", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RefreshStyle", 0usize
                         )
                     })
             });
@@ -114,7 +115,7 @@ impl crate::UnityEngine::TextCore::Text::TextStyle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -133,7 +134,8 @@ impl crate::UnityEngine::TextCore::Text::TextStyle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -150,12 +152,13 @@ impl crate::UnityEngine::TextCore::Text::TextStyle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_hashCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_hashCode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_hashCode", 0usize
                         )
                     })
             });
@@ -170,7 +173,7 @@ impl crate::UnityEngine::TextCore::Text::TextStyle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -181,7 +184,8 @@ impl crate::UnityEngine::TextCore::Text::TextStyle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_styleClosingTagArray", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_styleClosingTagArray", 0usize
                         )
                     })
             });
@@ -198,7 +202,7 @@ impl crate::UnityEngine::TextCore::Text::TextStyle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -209,7 +213,8 @@ impl crate::UnityEngine::TextCore::Text::TextStyle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_styleOpeningTagArray", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_styleOpeningTagArray", 0usize
                         )
                     })
             });

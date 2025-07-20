@@ -61,12 +61,13 @@ impl crate::GlobalNamespace::PlayerTransforms {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Awake", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Awake",
+                            0usize
                         )
                     })
             });
@@ -81,7 +82,7 @@ impl crate::GlobalNamespace::PlayerTransforms {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -90,7 +91,8 @@ impl crate::GlobalNamespace::PlayerTransforms {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ClearHeadPositionOverride", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ClearHeadPositionOverride", 0usize
                         )
                     })
             });
@@ -113,7 +115,7 @@ impl crate::GlobalNamespace::PlayerTransforms {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector3),
                         quest_hook::libil2cpp::Void,
@@ -122,7 +124,8 @@ impl crate::GlobalNamespace::PlayerTransforms {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OverrideHeadPos", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OverrideHeadPos", 1usize
                         )
                     })
             });
@@ -137,12 +140,13 @@ impl crate::GlobalNamespace::PlayerTransforms {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Update")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Update", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Update",
+                            0usize
                         )
                     })
             });
@@ -157,12 +161,13 @@ impl crate::GlobalNamespace::PlayerTransforms {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -177,7 +182,7 @@ impl crate::GlobalNamespace::PlayerTransforms {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector3,
@@ -186,7 +191,8 @@ impl crate::GlobalNamespace::PlayerTransforms {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_headPseudoLocalPos", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_headPseudoLocalPos", 0usize
                         )
                     })
             });
@@ -201,7 +207,7 @@ impl crate::GlobalNamespace::PlayerTransforms {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Quaternion,
@@ -210,7 +216,8 @@ impl crate::GlobalNamespace::PlayerTransforms {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_headPseudoLocalRot", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_headPseudoLocalRot", 0usize
                         )
                     })
             });
@@ -225,7 +232,7 @@ impl crate::GlobalNamespace::PlayerTransforms {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector3,
@@ -234,7 +241,8 @@ impl crate::GlobalNamespace::PlayerTransforms {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_headPseudoLocalZOnlyPos", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_headPseudoLocalZOnlyPos", 0usize
                         )
                     })
             });
@@ -249,7 +257,7 @@ impl crate::GlobalNamespace::PlayerTransforms {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector3,
@@ -258,7 +266,8 @@ impl crate::GlobalNamespace::PlayerTransforms {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_headWorldPos", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_headWorldPos", 0usize
                         )
                     })
             });
@@ -273,7 +282,7 @@ impl crate::GlobalNamespace::PlayerTransforms {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Quaternion,
@@ -282,7 +291,8 @@ impl crate::GlobalNamespace::PlayerTransforms {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_headWorldRot", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_headWorldRot", 0usize
                         )
                     })
             });
@@ -297,7 +307,7 @@ impl crate::GlobalNamespace::PlayerTransforms {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector3,
@@ -306,7 +316,8 @@ impl crate::GlobalNamespace::PlayerTransforms {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_leftHandPseudoLocalPos", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_leftHandPseudoLocalPos", 0usize
                         )
                     })
             });
@@ -321,7 +332,7 @@ impl crate::GlobalNamespace::PlayerTransforms {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Quaternion,
@@ -330,7 +341,8 @@ impl crate::GlobalNamespace::PlayerTransforms {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_leftHandPseudoLocalRot", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_leftHandPseudoLocalRot", 0usize
                         )
                     })
             });
@@ -345,7 +357,7 @@ impl crate::GlobalNamespace::PlayerTransforms {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector3,
@@ -354,7 +366,8 @@ impl crate::GlobalNamespace::PlayerTransforms {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rightHandPseudoLocalPos", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rightHandPseudoLocalPos", 0usize
                         )
                     })
             });
@@ -369,7 +382,7 @@ impl crate::GlobalNamespace::PlayerTransforms {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Quaternion,
@@ -378,7 +391,8 @@ impl crate::GlobalNamespace::PlayerTransforms {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rightHandPseudoLocalRot", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rightHandPseudoLocalRot", 0usize
                         )
                     })
             });

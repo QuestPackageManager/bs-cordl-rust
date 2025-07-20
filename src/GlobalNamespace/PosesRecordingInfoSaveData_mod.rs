@@ -84,7 +84,7 @@ impl crate::GlobalNamespace::PosesRecordingInfoSaveData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -107,7 +107,8 @@ impl crate::GlobalNamespace::PosesRecordingInfoSaveData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -128,7 +129,7 @@ impl crate::GlobalNamespace::PosesRecordingInfoSaveData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -137,7 +138,8 @@ impl crate::GlobalNamespace::PosesRecordingInfoSaveData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_dataFileName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_dataFileName", 0usize
                         )
                     })
             });
@@ -156,7 +158,7 @@ impl crate::GlobalNamespace::PosesRecordingInfoSaveData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -167,7 +169,8 @@ impl crate::GlobalNamespace::PosesRecordingInfoSaveData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_externalCameraCalibration", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_externalCameraCalibration", 0usize
                         )
                     })
             });
@@ -188,7 +191,7 @@ impl crate::GlobalNamespace::PosesRecordingInfoSaveData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -203,7 +206,8 @@ impl crate::GlobalNamespace::PosesRecordingInfoSaveData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_objectIds", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_objectIds", 0usize
                         )
                     })
             });
@@ -222,7 +226,7 @@ impl crate::GlobalNamespace::PosesRecordingInfoSaveData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -231,7 +235,8 @@ impl crate::GlobalNamespace::PosesRecordingInfoSaveData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_version", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_version", 0usize
                         )
                     })
             });
@@ -326,7 +331,7 @@ impl crate::GlobalNamespace::PosesRecordingInfoSaveData_ExternalCameraCalibratio
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32, f32, f32, f32, f32),
                         quest_hook::libil2cpp::Void,
@@ -335,7 +340,8 @@ impl crate::GlobalNamespace::PosesRecordingInfoSaveData_ExternalCameraCalibratio
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            5usize
                         )
                     })
             });
@@ -352,12 +358,13 @@ impl crate::GlobalNamespace::PosesRecordingInfoSaveData_ExternalCameraCalibratio
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_farClip")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_farClip", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_farClip", 0usize
                         )
                     })
             });
@@ -368,12 +375,13 @@ impl crate::GlobalNamespace::PosesRecordingInfoSaveData_ExternalCameraCalibratio
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_fieldOfVision")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_fieldOfVision", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_fieldOfVision", 0usize
                         )
                     })
             });
@@ -384,12 +392,13 @@ impl crate::GlobalNamespace::PosesRecordingInfoSaveData_ExternalCameraCalibratio
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_hmdOffset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_hmdOffset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_hmdOffset", 0usize
                         )
                     })
             });
@@ -400,12 +409,13 @@ impl crate::GlobalNamespace::PosesRecordingInfoSaveData_ExternalCameraCalibratio
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_nearClip")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_nearClip", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_nearClip", 0usize
                         )
                     })
             });
@@ -416,12 +426,13 @@ impl crate::GlobalNamespace::PosesRecordingInfoSaveData_ExternalCameraCalibratio
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_nearOffset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_nearOffset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_nearOffset", 0usize
                         )
                     })
             });

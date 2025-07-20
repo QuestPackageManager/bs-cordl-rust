@@ -49,7 +49,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::DeleteElements {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -67,7 +67,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::DeleteElements {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DeleteFace", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DeleteFace", 2usize
                         )
                     })
             });
@@ -89,7 +90,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::DeleteElements {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -111,7 +112,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::DeleteElements {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DeleteFaces", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DeleteFaces", 2usize
                         )
                     })
             });
@@ -131,7 +133,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::DeleteElements {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -149,7 +151,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::DeleteElements {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DeleteFaces", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DeleteFaces", 2usize
                         )
                     })
             });
@@ -167,7 +170,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::DeleteElements {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -183,7 +186,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::DeleteElements {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DeleteVertices", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DeleteVertices", 2usize
                         )
                     })
             });
@@ -200,7 +204,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::DeleteElements {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::ProBuilderMesh,
@@ -213,7 +217,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::DeleteElements {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RemoveDegenerateTriangles", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RemoveDegenerateTriangles", 1usize
                         )
                     })
             });
@@ -230,7 +235,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::DeleteElements {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::ProBuilderMesh,
@@ -243,7 +248,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::DeleteElements {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RemoveUnusedVertices", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RemoveUnusedVertices", 1usize
                         )
                     })
             });

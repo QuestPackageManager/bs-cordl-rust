@@ -64,7 +64,7 @@ impl crate::GlobalNamespace::PS5SharedPackageSKUsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -75,7 +75,8 @@ impl crate::GlobalNamespace::PS5SharedPackageSKUsSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPrimarySKU", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPrimarySKU", 0usize
                         )
                     })
             });
@@ -97,12 +98,13 @@ impl crate::GlobalNamespace::PS5SharedPackageSKUsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -125,7 +127,7 @@ impl crate::GlobalNamespace::PS5SharedPackageSKUsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -140,7 +142,8 @@ impl crate::GlobalNamespace::PS5SharedPackageSKUsSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_availableSKUs", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_availableSKUs", 0usize
                         )
                     })
             });
@@ -161,7 +164,7 @@ impl crate::GlobalNamespace::PS5SharedPackageSKUsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::PS5SharedPackageSKUsSO_BuildType,
@@ -170,7 +173,8 @@ impl crate::GlobalNamespace::PS5SharedPackageSKUsSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_buildType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_buildType", 0usize
                         )
                     })
             });
@@ -189,7 +193,7 @@ impl crate::GlobalNamespace::PS5SharedPackageSKUsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -200,7 +204,8 @@ impl crate::GlobalNamespace::PS5SharedPackageSKUsSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_buildVersion", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_buildVersion", 0usize
                         )
                     })
             });
@@ -217,7 +222,7 @@ impl crate::GlobalNamespace::PS5SharedPackageSKUsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -226,7 +231,8 @@ impl crate::GlobalNamespace::PS5SharedPackageSKUsSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_conceptId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_conceptId", 0usize
                         )
                     })
             });
@@ -245,7 +251,7 @@ impl crate::GlobalNamespace::PS5SharedPackageSKUsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -256,7 +262,8 @@ impl crate::GlobalNamespace::PS5SharedPackageSKUsSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_latestBuildVersion", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_latestBuildVersion", 0usize
                         )
                     })
             });
@@ -423,7 +430,7 @@ impl crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion,
@@ -434,7 +441,8 @@ impl crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CopyValueFrom", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CopyValueFrom", 1usize
                         )
                     })
             });
@@ -449,7 +457,7 @@ impl crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -458,7 +466,8 @@ impl crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IncreaseContentVersion", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IncreaseContentVersion", 0usize
                         )
                     })
             });
@@ -480,12 +489,13 @@ impl crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -502,7 +512,7 @@ impl crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -513,7 +523,8 @@ impl crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_contentVersion", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_contentVersion", 0usize
                         )
                     })
             });
@@ -530,7 +541,7 @@ impl crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SonyVersion>,
@@ -539,7 +550,8 @@ impl crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_masterVersion", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_masterVersion", 0usize
                         )
                     })
             });

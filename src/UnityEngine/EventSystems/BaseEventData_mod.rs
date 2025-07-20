@@ -62,7 +62,7 @@ impl crate::UnityEngine::EventSystems::BaseEventData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::EventSystems::EventSystem,
@@ -73,7 +73,8 @@ impl crate::UnityEngine::EventSystems::BaseEventData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -90,7 +91,7 @@ impl crate::UnityEngine::EventSystems::BaseEventData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -101,7 +102,8 @@ impl crate::UnityEngine::EventSystems::BaseEventData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_currentInputModule", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_currentInputModule", 0usize
                         )
                     })
             });
@@ -118,7 +120,7 @@ impl crate::UnityEngine::EventSystems::BaseEventData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -127,7 +129,8 @@ impl crate::UnityEngine::EventSystems::BaseEventData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_selectedObject", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_selectedObject", 0usize
                         )
                     })
             });
@@ -143,7 +146,7 @@ impl crate::UnityEngine::EventSystems::BaseEventData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
                         quest_hook::libil2cpp::Void,
@@ -152,7 +155,8 @@ impl crate::UnityEngine::EventSystems::BaseEventData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_selectedObject", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_selectedObject", 1usize
                         )
                     })
             });

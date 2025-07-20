@@ -68,7 +68,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -77,7 +77,8 @@ impl crate::System::Threading::ReaderWriterLockSlim {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ClearUpgraderWaiting", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ClearUpgraderWaiting", 0usize
                         )
                     })
             });
@@ -92,7 +93,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -101,7 +102,8 @@ impl crate::System::Threading::ReaderWriterLockSlim {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ClearWriterAcquired", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ClearWriterAcquired", 0usize
                         )
                     })
             });
@@ -116,7 +118,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -125,7 +127,8 @@ impl crate::System::Threading::ReaderWriterLockSlim {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ClearWritersWaiting", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ClearWritersWaiting", 0usize
                         )
                     })
             });
@@ -140,12 +143,13 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Dispose", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            0usize
                         )
                     })
             });
@@ -161,7 +165,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -170,7 +174,8 @@ impl crate::System::Threading::ReaderWriterLockSlim {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Dispose", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            1usize
                         )
                     })
             });
@@ -185,7 +190,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -194,7 +199,8 @@ impl crate::System::Threading::ReaderWriterLockSlim {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnterMyLock", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnterMyLock", 0usize
                         )
                     })
             });
@@ -209,7 +215,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -218,7 +224,8 @@ impl crate::System::Threading::ReaderWriterLockSlim {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnterMyLockSpin", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnterMyLockSpin", 0usize
                         )
                     })
             });
@@ -233,7 +240,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -242,7 +249,8 @@ impl crate::System::Threading::ReaderWriterLockSlim {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnterReadLock", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnterReadLock", 0usize
                         )
                     })
             });
@@ -257,7 +265,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -266,7 +274,8 @@ impl crate::System::Threading::ReaderWriterLockSlim {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnterUpgradeableReadLock", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnterUpgradeableReadLock", 0usize
                         )
                     })
             });
@@ -281,7 +290,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -290,7 +299,8 @@ impl crate::System::Threading::ReaderWriterLockSlim {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnterWriteLock", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnterWriteLock", 0usize
                         )
                     })
             });
@@ -305,7 +315,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -314,7 +324,8 @@ impl crate::System::Threading::ReaderWriterLockSlim {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExitAndWakeUpAppropriateReadWaiters", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExitAndWakeUpAppropriateReadWaiters", 0usize
                         )
                     })
             });
@@ -329,7 +340,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -338,7 +349,8 @@ impl crate::System::Threading::ReaderWriterLockSlim {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExitAndWakeUpAppropriateWaiters", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExitAndWakeUpAppropriateWaiters", 0usize
                         )
                     })
             });
@@ -353,7 +365,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -362,7 +374,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "ExitAndWakeUpAppropriateWaitersPreferringWriters", 0usize
                         )
                     })
@@ -378,12 +390,13 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ExitMyLock")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExitMyLock", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExitMyLock", 0usize
                         )
                     })
             });
@@ -398,7 +411,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -407,7 +420,8 @@ impl crate::System::Threading::ReaderWriterLockSlim {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExitReadLock", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExitReadLock", 0usize
                         )
                     })
             });
@@ -422,7 +436,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -431,7 +445,8 @@ impl crate::System::Threading::ReaderWriterLockSlim {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExitUpgradeableReadLock", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExitUpgradeableReadLock", 0usize
                         )
                     })
             });
@@ -446,7 +461,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -455,7 +470,8 @@ impl crate::System::Threading::ReaderWriterLockSlim {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExitWriteLock", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExitWriteLock", 0usize
                         )
                     })
             });
@@ -468,12 +484,13 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u32, 0usize>("GetNumReaders")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNumReaders", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNumReaders", 0usize
                         )
                     })
             });
@@ -489,7 +506,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Gc<
@@ -500,7 +517,8 @@ impl crate::System::Threading::ReaderWriterLockSlim {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetThreadRWCount", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetThreadRWCount", 1usize
                         )
                     })
             });
@@ -515,7 +533,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -524,7 +542,8 @@ impl crate::System::Threading::ReaderWriterLockSlim {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitializeThreadCounts", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitializeThreadCounts", 0usize
                         )
                     })
             });
@@ -539,7 +558,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Threading::ReaderWriterCount,
@@ -550,7 +569,8 @@ impl crate::System::Threading::ReaderWriterLockSlim {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsRWEntryEmpty", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsRWEntryEmpty", 1usize
                         )
                     })
             });
@@ -564,7 +584,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Threading::ReaderWriterCount,
@@ -575,7 +595,8 @@ impl crate::System::Threading::ReaderWriterLockSlim {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsRwHashEntryChanged", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsRwHashEntryChanged", 1usize
                         )
                     })
             });
@@ -586,12 +607,13 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsWriterAcquired")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsWriterAcquired", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsWriterAcquired", 0usize
                         )
                     })
             });
@@ -608,7 +630,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -624,7 +646,8 @@ impl crate::System::Threading::ReaderWriterLockSlim {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LazyCreateEvent", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LazyCreateEvent", 2usize
                         )
                     })
             });
@@ -655,7 +678,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -664,7 +687,8 @@ impl crate::System::Threading::ReaderWriterLockSlim {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetUpgraderWaiting", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetUpgraderWaiting", 0usize
                         )
                     })
             });
@@ -679,7 +703,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -688,7 +712,8 @@ impl crate::System::Threading::ReaderWriterLockSlim {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetWriterAcquired", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetWriterAcquired", 0usize
                         )
                     })
             });
@@ -703,7 +728,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -712,7 +737,8 @@ impl crate::System::Threading::ReaderWriterLockSlim {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetWritersWaiting", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetWritersWaiting", 0usize
                         )
                     })
             });
@@ -727,7 +753,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -736,7 +762,8 @@ impl crate::System::Threading::ReaderWriterLockSlim {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SpinWait", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SpinWait", 1usize
                         )
                     })
             });
@@ -752,7 +779,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker),
                         bool,
@@ -761,7 +788,8 @@ impl crate::System::Threading::ReaderWriterLockSlim {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryEnterReadLockCore", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryEnterReadLockCore", 1usize
                         )
                     })
             });
@@ -775,7 +803,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker),
                         bool,
@@ -784,7 +812,8 @@ impl crate::System::Threading::ReaderWriterLockSlim {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryEnterReadLock", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryEnterReadLock", 1usize
                         )
                     })
             });
@@ -798,12 +827,13 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), bool, 1usize>("TryEnterReadLock")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryEnterReadLock", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryEnterReadLock", 1usize
                         )
                     })
             });
@@ -819,7 +849,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker),
                         bool,
@@ -828,7 +858,8 @@ impl crate::System::Threading::ReaderWriterLockSlim {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryEnterUpgradeableReadLockCore", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryEnterUpgradeableReadLockCore", 1usize
                         )
                     })
             });
@@ -842,7 +873,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker),
                         bool,
@@ -851,7 +882,8 @@ impl crate::System::Threading::ReaderWriterLockSlim {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryEnterUpgradeableReadLock", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryEnterUpgradeableReadLock", 1usize
                         )
                     })
             });
@@ -865,12 +897,13 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), bool, 1usize>("TryEnterUpgradeableReadLock")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryEnterUpgradeableReadLock", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryEnterUpgradeableReadLock", 1usize
                         )
                     })
             });
@@ -886,7 +919,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker),
                         bool,
@@ -895,7 +928,8 @@ impl crate::System::Threading::ReaderWriterLockSlim {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryEnterWriteLockCore", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryEnterWriteLockCore", 1usize
                         )
                     })
             });
@@ -909,7 +943,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker),
                         bool,
@@ -918,7 +952,8 @@ impl crate::System::Threading::ReaderWriterLockSlim {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryEnterWriteLock", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryEnterWriteLock", 1usize
                         )
                     })
             });
@@ -932,12 +967,13 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), bool, 1usize>("TryEnterWriteLock")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryEnterWriteLock", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryEnterWriteLock", 1usize
                         )
                     })
             });
@@ -956,7 +992,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -972,7 +1008,8 @@ impl crate::System::Threading::ReaderWriterLockSlim {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WaitOnEvent", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WaitOnEvent", 4usize
                         )
                     })
             });
@@ -988,12 +1025,13 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -1009,7 +1047,7 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::LockRecursionPolicy),
                         quest_hook::libil2cpp::Void,
@@ -1018,7 +1056,8 @@ impl crate::System::Threading::ReaderWriterLockSlim {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -1031,12 +1070,13 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsReadLockHeld")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsReadLockHeld", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsReadLockHeld", 0usize
                         )
                     })
             });
@@ -1049,12 +1089,13 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsUpgradeableReadLockHeld")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsUpgradeableReadLockHeld", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsUpgradeableReadLockHeld", 0usize
                         )
                     })
             });
@@ -1065,12 +1106,13 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsWriteLockHeld")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsWriteLockHeld", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsWriteLockHeld", 0usize
                         )
                     })
             });
@@ -1081,12 +1123,13 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_RecursiveReadCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_RecursiveReadCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_RecursiveReadCount", 0usize
                         )
                     })
             });
@@ -1097,12 +1140,13 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_RecursiveUpgradeCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_RecursiveUpgradeCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_RecursiveUpgradeCount", 0usize
                         )
                     })
             });
@@ -1113,12 +1157,13 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_RecursiveWriteCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_RecursiveWriteCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_RecursiveWriteCount", 0usize
                         )
                     })
             });
@@ -1129,12 +1174,13 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_WaitingReadCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_WaitingReadCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_WaitingReadCount", 0usize
                         )
                     })
             });
@@ -1145,12 +1191,13 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_WaitingUpgradeCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_WaitingUpgradeCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_WaitingUpgradeCount", 0usize
                         )
                     })
             });
@@ -1161,12 +1208,13 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_WaitingWriteCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_WaitingWriteCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_WaitingWriteCount", 0usize
                         )
                     })
             });
@@ -1309,12 +1357,13 @@ impl crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -1327,12 +1376,13 @@ impl crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsExpired")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsExpired", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsExpired", 0usize
                         )
                     })
             });
@@ -1343,12 +1393,13 @@ impl crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_RemainingMilliseconds")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_RemainingMilliseconds", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_RemainingMilliseconds", 0usize
                         )
                     })
             });

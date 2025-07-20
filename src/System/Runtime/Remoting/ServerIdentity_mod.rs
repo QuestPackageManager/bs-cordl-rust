@@ -66,7 +66,7 @@ impl crate::System::Runtime::Remoting::ServerIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -84,7 +84,8 @@ impl crate::System::Runtime::Remoting::ServerIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AsyncObjectProcessMessage", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AsyncObjectProcessMessage", 2usize
                         )
                     })
             });
@@ -103,7 +104,7 @@ impl crate::System::Runtime::Remoting::ServerIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>,
@@ -117,7 +118,8 @@ impl crate::System::Runtime::Remoting::ServerIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AttachServerObject", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AttachServerObject", 2usize
                         )
                     })
             });
@@ -135,7 +137,7 @@ impl crate::System::Runtime::Remoting::ServerIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<
@@ -146,7 +148,8 @@ impl crate::System::Runtime::Remoting::ServerIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateObjRef", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateObjRef", 1usize
                         )
                     })
             });
@@ -161,7 +164,7 @@ impl crate::System::Runtime::Remoting::ServerIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -170,7 +173,8 @@ impl crate::System::Runtime::Remoting::ServerIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DisposeServerObject", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DisposeServerObject", 0usize
                         )
                     })
             });
@@ -198,7 +202,7 @@ impl crate::System::Runtime::Remoting::ServerIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -207,7 +211,8 @@ impl crate::System::Runtime::Remoting::ServerIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnLifetimeExpired", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnLifetimeExpired", 0usize
                         )
                     })
             });
@@ -225,7 +230,7 @@ impl crate::System::Runtime::Remoting::ServerIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Runtime::Remoting::Lifetime::ILease,
@@ -236,7 +241,8 @@ impl crate::System::Runtime::Remoting::ServerIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartTrackingLifetime", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartTrackingLifetime", 1usize
                         )
                     })
             });
@@ -256,7 +262,7 @@ impl crate::System::Runtime::Remoting::ServerIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Runtime::Remoting::Messaging::IMessage,
@@ -269,7 +275,8 @@ impl crate::System::Runtime::Remoting::ServerIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SyncObjectProcessMessage", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SyncObjectProcessMessage", 1usize
                         )
                     })
             });
@@ -289,7 +296,7 @@ impl crate::System::Runtime::Remoting::ServerIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -306,7 +313,8 @@ impl crate::System::Runtime::Remoting::ServerIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -323,7 +331,7 @@ impl crate::System::Runtime::Remoting::ServerIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -334,7 +342,8 @@ impl crate::System::Runtime::Remoting::ServerIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Context", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Context", 0usize
                         )
                     })
             });
@@ -351,7 +360,7 @@ impl crate::System::Runtime::Remoting::ServerIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -362,7 +371,8 @@ impl crate::System::Runtime::Remoting::ServerIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Lease", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Lease", 0usize
                         )
                     })
             });
@@ -377,7 +387,7 @@ impl crate::System::Runtime::Remoting::ServerIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -386,7 +396,8 @@ impl crate::System::Runtime::Remoting::ServerIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ObjectType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ObjectType", 0usize
                         )
                     })
             });
@@ -404,7 +415,7 @@ impl crate::System::Runtime::Remoting::ServerIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Runtime::Remoting::Contexts::Context,
@@ -415,7 +426,8 @@ impl crate::System::Runtime::Remoting::ServerIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Context", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Context", 1usize
                         )
                     })
             });

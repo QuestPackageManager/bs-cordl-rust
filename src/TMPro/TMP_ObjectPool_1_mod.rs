@@ -73,12 +73,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_ObjectPool_1<T> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), T, 0usize>("Get")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Get", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Get",
+                            0usize
                         )
                     })
             });
@@ -114,12 +115,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_ObjectPool_1<T> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(T), quest_hook::libil2cpp::Void, 1usize>("Release")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Release", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Release",
+                            1usize
                         )
                     })
             });
@@ -144,7 +146,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_ObjectPool_1<T> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -160,7 +162,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_ObjectPool_1<T> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -177,12 +180,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_ObjectPool_1<T> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_countActive")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_countActive", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_countActive", 0usize
                         )
                     })
             });
@@ -197,12 +201,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_ObjectPool_1<T> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_countAll")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_countAll", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_countAll", 0usize
                         )
                     })
             });
@@ -217,12 +222,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_ObjectPool_1<T> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_countInactive")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_countInactive", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_countInactive", 0usize
                         )
                     })
             });
@@ -240,7 +246,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_ObjectPool_1<T> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -249,7 +255,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_ObjectPool_1<T> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_countAll", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_countAll", 1usize
                         )
                     })
             });

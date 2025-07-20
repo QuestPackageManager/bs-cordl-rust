@@ -50,7 +50,7 @@ impl crate::Unity::XR::OpenVR::ViveTracker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -59,7 +59,8 @@ impl crate::Unity::XR::OpenVR::ViveTracker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FinishSetup", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FinishSetup", 0usize
                         )
                     })
             });
@@ -81,12 +82,13 @@ impl crate::Unity::XR::OpenVR::ViveTracker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -105,7 +107,7 @@ impl crate::Unity::XR::OpenVR::ViveTracker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -116,7 +118,8 @@ impl crate::Unity::XR::OpenVR::ViveTracker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_deviceAngularVelocity", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_deviceAngularVelocity", 0usize
                         )
                     })
             });
@@ -135,7 +138,7 @@ impl crate::Unity::XR::OpenVR::ViveTracker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -146,7 +149,8 @@ impl crate::Unity::XR::OpenVR::ViveTracker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_deviceVelocity", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_deviceVelocity", 0usize
                         )
                     })
             });
@@ -164,7 +168,7 @@ impl crate::Unity::XR::OpenVR::ViveTracker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -175,7 +179,8 @@ impl crate::Unity::XR::OpenVR::ViveTracker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_deviceAngularVelocity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_deviceAngularVelocity", 1usize
                         )
                     })
             });
@@ -193,7 +198,7 @@ impl crate::Unity::XR::OpenVR::ViveTracker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -204,7 +209,8 @@ impl crate::Unity::XR::OpenVR::ViveTracker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_deviceVelocity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_deviceVelocity", 1usize
                         )
                     })
             });

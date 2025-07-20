@@ -74,7 +74,7 @@ impl crate::GlobalNamespace::CutScoreBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -88,8 +88,8 @@ impl crate::GlobalNamespace::CutScoreBuffer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleSaberSwingRatingCounterDidChange",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleSaberSwingRatingCounterDidChange", 2usize
                         )
                     })
             });
@@ -107,7 +107,7 @@ impl crate::GlobalNamespace::CutScoreBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::ISaberSwingRatingCounter,
@@ -118,8 +118,8 @@ impl crate::GlobalNamespace::CutScoreBuffer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleSaberSwingRatingCounterDidFinish",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleSaberSwingRatingCounterDidFinish", 1usize
                         )
                     })
             });
@@ -135,7 +135,7 @@ impl crate::GlobalNamespace::CutScoreBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::NoteCutInfo,
@@ -146,7 +146,8 @@ impl crate::GlobalNamespace::CutScoreBuffer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Init", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            1usize
                         )
                     })
             });
@@ -166,7 +167,7 @@ impl crate::GlobalNamespace::CutScoreBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -175,7 +176,8 @@ impl crate::GlobalNamespace::CutScoreBuffer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RefreshScores", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RefreshScores", 0usize
                         )
                     })
             });
@@ -193,7 +195,7 @@ impl crate::GlobalNamespace::CutScoreBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::ICutScoreBufferDidChangeReceiver,
@@ -204,7 +206,8 @@ impl crate::GlobalNamespace::CutScoreBuffer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterDidChangeReceiver", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterDidChangeReceiver", 1usize
                         )
                     })
             });
@@ -222,7 +225,7 @@ impl crate::GlobalNamespace::CutScoreBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver,
@@ -233,7 +236,8 @@ impl crate::GlobalNamespace::CutScoreBuffer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterDidFinishReceiver", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterDidFinishReceiver", 1usize
                         )
                     })
             });
@@ -251,7 +255,7 @@ impl crate::GlobalNamespace::CutScoreBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::ICutScoreBufferDidChangeReceiver,
@@ -262,7 +266,8 @@ impl crate::GlobalNamespace::CutScoreBuffer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnregisterDidChangeReceiver", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnregisterDidChangeReceiver", 1usize
                         )
                     })
             });
@@ -280,7 +285,7 @@ impl crate::GlobalNamespace::CutScoreBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver,
@@ -291,7 +296,8 @@ impl crate::GlobalNamespace::CutScoreBuffer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnregisterDidFinishReceiver", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnregisterDidFinishReceiver", 1usize
                         )
                     })
             });
@@ -306,12 +312,13 @@ impl crate::GlobalNamespace::CutScoreBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -324,12 +331,13 @@ impl crate::GlobalNamespace::CutScoreBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_afterCutScore")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_afterCutScore", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_afterCutScore", 0usize
                         )
                     })
             });
@@ -340,12 +348,13 @@ impl crate::GlobalNamespace::CutScoreBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_afterCutSwingRating")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_afterCutSwingRating", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_afterCutSwingRating", 0usize
                         )
                     })
             });
@@ -356,12 +365,13 @@ impl crate::GlobalNamespace::CutScoreBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_beforeCutScore")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_beforeCutScore", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_beforeCutScore", 0usize
                         )
                     })
             });
@@ -372,12 +382,13 @@ impl crate::GlobalNamespace::CutScoreBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_beforeCutSwingRating")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_beforeCutSwingRating", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_beforeCutSwingRating", 0usize
                         )
                     })
             });
@@ -388,12 +399,13 @@ impl crate::GlobalNamespace::CutScoreBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_centerDistanceCutScore")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_centerDistanceCutScore", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_centerDistanceCutScore", 0usize
                         )
                     })
             });
@@ -404,12 +416,13 @@ impl crate::GlobalNamespace::CutScoreBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_cutScore")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_cutScore", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_cutScore", 0usize
                         )
                     })
             });
@@ -420,12 +433,13 @@ impl crate::GlobalNamespace::CutScoreBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_executionOrder")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_executionOrder", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_executionOrder", 0usize
                         )
                     })
             });
@@ -436,12 +450,13 @@ impl crate::GlobalNamespace::CutScoreBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isFinished")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_isFinished", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isFinished", 0usize
                         )
                     })
             });
@@ -452,12 +467,13 @@ impl crate::GlobalNamespace::CutScoreBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_maxPossibleCutScore")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_maxPossibleCutScore", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_maxPossibleCutScore", 0usize
                         )
                     })
             });
@@ -470,7 +486,7 @@ impl crate::GlobalNamespace::CutScoreBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::NoteCutInfo,
@@ -479,7 +495,8 @@ impl crate::GlobalNamespace::CutScoreBuffer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_noteCutInfo", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_noteCutInfo", 0usize
                         )
                     })
             });
@@ -496,7 +513,7 @@ impl crate::GlobalNamespace::CutScoreBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -507,7 +524,8 @@ impl crate::GlobalNamespace::CutScoreBuffer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_noteScoreDefinition", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_noteScoreDefinition", 0usize
                         )
                     })
             });

@@ -51,7 +51,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Extension {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Security::Cryptography::AsnEncodedData,
@@ -62,7 +62,8 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Extension {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CopyFrom", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CopyFrom", 1usize
                         )
                     })
             });
@@ -80,7 +81,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Extension {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -91,7 +92,8 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Extension {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FormatUnkownData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FormatUnkownData", 1usize
                         )
                     })
             });
@@ -124,12 +126,13 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Extension {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -147,7 +150,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Extension {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -164,7 +167,8 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Extension {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -177,12 +181,13 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Extension {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_Critical")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Critical", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Critical", 0usize
                         )
                     })
             });
@@ -196,7 +201,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Extension {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -205,7 +210,8 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Extension {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Critical", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Critical", 1usize
                         )
                     })
             });

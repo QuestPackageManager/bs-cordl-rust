@@ -49,7 +49,7 @@ impl crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::EventBase,
@@ -60,7 +60,8 @@ impl crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExecuteDefaultActionAtTarget", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExecuteDefaultActionAtTarget", 1usize
                         )
                     })
             });
@@ -90,7 +91,7 @@ impl crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::BlurEvent,
@@ -101,7 +102,8 @@ impl crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnBlur", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "OnBlur",
+                            1usize
                         )
                     })
             });
@@ -119,7 +121,7 @@ impl crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::ExecuteCommandEvent,
@@ -130,7 +132,8 @@ impl crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnExecuteCommandEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnExecuteCommandEvent", 1usize
                         )
                     })
             });
@@ -146,7 +149,7 @@ impl crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::FocusEvent,
@@ -157,7 +160,8 @@ impl crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnFocus", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "OnFocus",
+                            1usize
                         )
                     })
             });
@@ -173,7 +177,7 @@ impl crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::KeyDownEvent,
@@ -184,7 +188,8 @@ impl crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnKeyDown", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnKeyDown", 1usize
                         )
                     })
             });
@@ -206,7 +211,7 @@ impl crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::NavigationEventBase_1<TEvent>,
@@ -217,7 +222,8 @@ impl crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnNavigationEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnNavigationEvent", 1usize
                         )
                     })
             });
@@ -235,7 +241,7 @@ impl crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::ValidateCommandEvent,
@@ -246,7 +252,8 @@ impl crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnValidateCommandEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnValidateCommandEvent", 1usize
                         )
                     })
             });
@@ -261,7 +268,7 @@ impl crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -270,7 +277,8 @@ impl crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateLabel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateLabel", 0usize
                         )
                     })
             });
@@ -291,7 +299,7 @@ impl crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -307,7 +315,8 @@ impl crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });

@@ -51,12 +51,13 @@ impl crate::System::Xml::ReadContentAsBinaryHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Finish")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Finish", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Finish",
+                            0usize
                         )
                     })
             });
@@ -72,12 +73,13 @@ impl crate::System::Xml::ReadContentAsBinaryHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(bool), bool, 1usize>("MoveToNextContentNode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MoveToNextContentNode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MoveToNextContentNode", 1usize
                         )
                     })
             });
@@ -92,12 +94,13 @@ impl crate::System::Xml::ReadContentAsBinaryHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Reset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Reset",
+                            0usize
                         )
                     })
             });

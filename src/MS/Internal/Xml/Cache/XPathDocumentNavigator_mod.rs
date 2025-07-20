@@ -55,7 +55,7 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -66,7 +66,8 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Clone", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Clone",
+                            0usize
                         )
                     })
             });
@@ -79,12 +80,13 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetPositionHashCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPositionHashCode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPositionHashCode", 0usize
                         )
                     })
             });
@@ -95,12 +97,13 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("HasLineInfo")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HasLineInfo", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HasLineInfo", 0usize
                         )
                     })
             });
@@ -114,7 +117,7 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::XPath::XPathNavigator,
@@ -125,7 +128,8 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsSamePosition", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsSamePosition", 1usize
                         )
                     })
             });
@@ -139,7 +143,7 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::XPath::XPathNamespaceScope),
                         bool,
@@ -148,7 +152,8 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MoveToFirstNamespace", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MoveToFirstNamespace", 1usize
                         )
                     })
             });
@@ -164,7 +169,7 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::XPath::XPathNamespaceScope),
                         bool,
@@ -173,7 +178,8 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MoveToNextNamespace", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MoveToNextNamespace", 1usize
                         )
                     })
             });
@@ -184,12 +190,13 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("MoveToParent")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MoveToParent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MoveToParent", 0usize
                         )
                     })
             });
@@ -234,7 +241,7 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -256,7 +263,8 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
                         )
                     })
             });
@@ -273,12 +281,13 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_LineNumber")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_LineNumber", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_LineNumber", 0usize
                         )
                     })
             });
@@ -289,12 +298,13 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_LinePosition")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_LinePosition", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_LinePosition", 0usize
                         )
                     })
             });
@@ -309,7 +319,7 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -318,7 +328,8 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_LocalName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_LocalName", 0usize
                         )
                     })
             });
@@ -335,7 +346,7 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
@@ -344,7 +355,8 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_NameTable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_NameTable", 0usize
                         )
                     })
             });
@@ -361,7 +373,7 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -370,7 +382,8 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_NamespaceURI", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_NamespaceURI", 0usize
                         )
                     })
             });
@@ -385,7 +398,7 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::XPath::XPathNodeType,
@@ -394,7 +407,8 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_NodeType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_NodeType", 0usize
                         )
                     })
             });
@@ -411,7 +425,7 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -420,7 +434,8 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Prefix", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Prefix", 0usize
                         )
                     })
             });
@@ -437,7 +452,7 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -446,7 +461,8 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_UnderlyingObject", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_UnderlyingObject", 0usize
                         )
                     })
             });
@@ -463,7 +479,7 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -472,7 +488,8 @@ impl crate::MS::Internal::Xml::Cache::XPathDocumentNavigator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Value", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Value", 0usize
                         )
                     })
             });

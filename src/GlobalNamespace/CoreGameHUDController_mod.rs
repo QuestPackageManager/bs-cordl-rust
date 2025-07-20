@@ -55,7 +55,7 @@ impl crate::GlobalNamespace::CoreGameHUDController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::CoreGameHUDController_InitData,
@@ -66,7 +66,8 @@ impl crate::GlobalNamespace::CoreGameHUDController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize", 1usize
                         )
                     })
             });
@@ -88,12 +89,13 @@ impl crate::GlobalNamespace::CoreGameHUDController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -110,7 +112,7 @@ impl crate::GlobalNamespace::CoreGameHUDController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -119,7 +121,8 @@ impl crate::GlobalNamespace::CoreGameHUDController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_energyPanelGo", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_energyPanelGo", 0usize
                         )
                     })
             });
@@ -136,7 +139,7 @@ impl crate::GlobalNamespace::CoreGameHUDController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -145,7 +148,8 @@ impl crate::GlobalNamespace::CoreGameHUDController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_immediateRankGo", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_immediateRankGo", 0usize
                         )
                     })
             });
@@ -162,7 +166,7 @@ impl crate::GlobalNamespace::CoreGameHUDController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -171,7 +175,8 @@ impl crate::GlobalNamespace::CoreGameHUDController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_relativeScoreGo", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_relativeScoreGo", 0usize
                         )
                     })
             });
@@ -188,7 +193,7 @@ impl crate::GlobalNamespace::CoreGameHUDController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -197,7 +202,8 @@ impl crate::GlobalNamespace::CoreGameHUDController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_songProgressPanelGO", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_songProgressPanelGO", 0usize
                         )
                     })
             });
@@ -213,7 +219,7 @@ impl crate::GlobalNamespace::CoreGameHUDController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -222,7 +228,8 @@ impl crate::GlobalNamespace::CoreGameHUDController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_alpha", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_alpha", 1usize
                         )
                     })
             });
@@ -306,7 +313,7 @@ impl crate::GlobalNamespace::CoreGameHUDController_InitData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, bool, bool),
                         quest_hook::libil2cpp::Void,
@@ -315,7 +322,8 @@ impl crate::GlobalNamespace::CoreGameHUDController_InitData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });

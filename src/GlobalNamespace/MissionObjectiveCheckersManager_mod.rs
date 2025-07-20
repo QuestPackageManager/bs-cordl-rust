@@ -71,7 +71,7 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::MissionObjectiveTypeSO,
@@ -84,7 +84,8 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMissionObjectiveChecker", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMissionObjectiveChecker", 1usize
                         )
                     })
             });
@@ -105,7 +106,7 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -120,7 +121,8 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetResults", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetResults", 0usize
                         )
                     })
             });
@@ -137,7 +139,7 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -146,7 +148,8 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleLevelFailed", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleLevelFailed", 0usize
                         )
                     })
             });
@@ -161,7 +164,7 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -170,7 +173,8 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleLevelFinished", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleLevelFinished", 0usize
                         )
                     })
             });
@@ -188,7 +192,7 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::MissionObjectiveChecker,
@@ -199,7 +203,7 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "HandleMissionObjectiveCheckerStatusDidChange", 1usize
                         )
                     })
@@ -222,12 +226,13 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDestroy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDestroy", 0usize
                         )
                     })
             });
@@ -242,12 +247,13 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Start", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Start",
+                            0usize
                         )
                     })
             });
@@ -262,7 +268,7 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -271,7 +277,8 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StopChecking", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StopChecking", 0usize
                         )
                     })
             });
@@ -286,12 +293,13 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -307,7 +315,7 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -316,7 +324,8 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_objectiveDidFailEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_objectiveDidFailEvent", 1usize
                         )
                     })
             });
@@ -332,7 +341,7 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -341,7 +350,8 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_objectiveWasClearedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_objectiveWasClearedEvent", 1usize
                         )
                     })
             });
@@ -357,7 +367,7 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -366,7 +376,8 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_objectivesListDidChangeEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_objectivesListDidChangeEvent", 1usize
                         )
                     })
             });
@@ -389,7 +400,7 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -404,7 +415,8 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_activeMissionObjectiveCheckers", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_activeMissionObjectiveCheckers", 0usize
                         )
                     })
             });
@@ -424,7 +436,7 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -433,7 +445,8 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_objectiveDidFailEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_objectiveDidFailEvent", 1usize
                         )
                     })
             });
@@ -449,7 +462,7 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -458,7 +471,8 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_objectiveWasClearedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_objectiveWasClearedEvent", 1usize
                         )
                     })
             });
@@ -474,7 +488,7 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -483,7 +497,8 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_objectivesListDidChangeEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_objectivesListDidChangeEvent", 1usize
                         )
                     })
             });
@@ -575,7 +590,7 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager_InitData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -590,7 +605,8 @@ impl crate::GlobalNamespace::MissionObjectiveCheckersManager_InitData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });

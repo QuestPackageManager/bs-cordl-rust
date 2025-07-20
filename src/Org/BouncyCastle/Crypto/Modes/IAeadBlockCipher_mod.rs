@@ -43,12 +43,13 @@ impl crate::Org::BouncyCastle::Crypto::Modes::IAeadBlockCipher {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetBlockSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBlockSize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBlockSize", 0usize
                         )
                     })
             });
@@ -63,7 +64,7 @@ impl crate::Org::BouncyCastle::Crypto::Modes::IAeadBlockCipher {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -74,7 +75,8 @@ impl crate::Org::BouncyCastle::Crypto::Modes::IAeadBlockCipher {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetUnderlyingCipher", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetUnderlyingCipher", 0usize
                         )
                     })
             });

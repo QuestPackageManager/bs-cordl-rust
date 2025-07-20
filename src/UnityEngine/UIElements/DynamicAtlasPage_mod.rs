@@ -63,12 +63,13 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Commit")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Commit", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Commit",
+                            0usize
                         )
                     })
             });
@@ -85,7 +86,7 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
@@ -94,7 +95,8 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateAtlasTexture", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateAtlasTexture", 0usize
                         )
                     })
             });
@@ -109,12 +111,13 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Dispose", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            0usize
                         )
                     })
             });
@@ -130,7 +133,7 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -139,7 +142,8 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Dispose", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            1usize
                         )
                     })
             });
@@ -167,7 +171,7 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D),
                         quest_hook::libil2cpp::Void,
@@ -176,7 +180,8 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Remove", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Remove",
+                            1usize
                         )
                     })
             });
@@ -196,7 +201,7 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
@@ -211,7 +216,8 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryAdd", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "TryAdd",
+                            3usize
                         )
                     })
             });
@@ -228,7 +234,7 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
@@ -240,7 +246,8 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Update", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Update",
+                            2usize
                         )
                     })
             });
@@ -255,7 +262,7 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -264,7 +271,8 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateAtlasTexture", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateAtlasTexture", 0usize
                         )
                     })
             });
@@ -283,7 +291,7 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::RenderTextureFormat,
@@ -297,7 +305,8 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
                         )
                     })
             });
@@ -314,7 +323,7 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
@@ -323,7 +332,8 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_atlas", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_atlas", 0usize
                         )
                     })
             });
@@ -336,12 +346,13 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_disposed")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_disposed", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_disposed", 0usize
                         )
                     })
             });
@@ -354,7 +365,7 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::FilterMode,
@@ -363,7 +374,8 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_filterMode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_filterMode", 0usize
                         )
                     })
             });
@@ -378,7 +390,7 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::RenderTextureFormat,
@@ -387,7 +399,8 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_format", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_format", 0usize
                         )
                     })
             });
@@ -402,7 +415,7 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::UIElements::TextureId,
@@ -411,7 +424,8 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_textureId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_textureId", 0usize
                         )
                     })
             });
@@ -427,7 +441,7 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>),
                         quest_hook::libil2cpp::Void,
@@ -436,7 +450,8 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_atlas", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_atlas", 1usize
                         )
                     })
             });
@@ -452,7 +467,7 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -461,7 +476,8 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_disposed", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_disposed", 1usize
                         )
                     })
             });
@@ -477,7 +493,7 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UIElements::TextureId),
                         quest_hook::libil2cpp::Void,
@@ -486,7 +502,8 @@ impl crate::UnityEngine::UIElements::DynamicAtlasPage {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_textureId", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_textureId", 1usize
                         )
                     })
             });

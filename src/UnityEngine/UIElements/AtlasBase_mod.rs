@@ -48,7 +48,7 @@ impl crate::UnityEngine::UIElements::AtlasBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::IPanel,
@@ -59,7 +59,8 @@ impl crate::UnityEngine::UIElements::AtlasBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InvokeAssignedToPanel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InvokeAssignedToPanel", 1usize
                         )
                     })
             });
@@ -75,7 +76,7 @@ impl crate::UnityEngine::UIElements::AtlasBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::IPanel,
@@ -86,7 +87,8 @@ impl crate::UnityEngine::UIElements::AtlasBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InvokeRemovedFromPanel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InvokeRemovedFromPanel", 1usize
                         )
                     })
             });
@@ -102,7 +104,7 @@ impl crate::UnityEngine::UIElements::AtlasBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::IPanel,
@@ -113,7 +115,8 @@ impl crate::UnityEngine::UIElements::AtlasBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InvokeUpdateDynamicTextures", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InvokeUpdateDynamicTextures", 1usize
                         )
                     })
             });
@@ -136,7 +139,7 @@ impl crate::UnityEngine::UIElements::AtlasBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::IPanel,
@@ -147,7 +150,8 @@ impl crate::UnityEngine::UIElements::AtlasBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnAssignedToPanel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnAssignedToPanel", 1usize
                         )
                     })
             });
@@ -163,7 +167,7 @@ impl crate::UnityEngine::UIElements::AtlasBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::IPanel,
@@ -174,7 +178,8 @@ impl crate::UnityEngine::UIElements::AtlasBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnRemovedFromPanel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnRemovedFromPanel", 1usize
                         )
                     })
             });
@@ -190,7 +195,7 @@ impl crate::UnityEngine::UIElements::AtlasBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::IPanel,
@@ -201,7 +206,8 @@ impl crate::UnityEngine::UIElements::AtlasBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnUpdateDynamicTextures", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnUpdateDynamicTextures", 1usize
                         )
                     })
             });
@@ -216,7 +222,7 @@ impl crate::UnityEngine::UIElements::AtlasBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::IPanel,
@@ -227,7 +233,8 @@ impl crate::UnityEngine::UIElements::AtlasBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RepaintTexturedElements", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RepaintTexturedElements", 1usize
                         )
                     })
             });
@@ -242,12 +249,13 @@ impl crate::UnityEngine::UIElements::AtlasBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Reset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Reset",
+                            0usize
                         )
                     })
             });
@@ -265,7 +273,7 @@ impl crate::UnityEngine::UIElements::AtlasBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -280,7 +288,8 @@ impl crate::UnityEngine::UIElements::AtlasBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReturnAtlas", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReturnAtlas", 3usize
                         )
                     })
             });
@@ -297,7 +306,7 @@ impl crate::UnityEngine::UIElements::AtlasBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::UIElements::TextureId,
@@ -309,7 +318,8 @@ impl crate::UnityEngine::UIElements::AtlasBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetDynamicTexture", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetDynamicTexture", 2usize
                         )
                     })
             });
@@ -330,7 +340,7 @@ impl crate::UnityEngine::UIElements::AtlasBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -348,7 +358,8 @@ impl crate::UnityEngine::UIElements::AtlasBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGetAtlas", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetAtlas", 4usize
                         )
                     })
             });
@@ -363,12 +374,13 @@ impl crate::UnityEngine::UIElements::AtlasBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

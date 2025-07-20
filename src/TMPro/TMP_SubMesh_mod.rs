@@ -62,7 +62,7 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshPro>,
@@ -74,7 +74,8 @@ impl crate::TMPro::TMP_SubMesh {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddSubTextObject", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddSubTextObject", 2usize
                         )
                     })
             });
@@ -92,7 +93,7 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -101,7 +102,8 @@ impl crate::TMPro::TMP_SubMesh {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateMaterialInstance", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateMaterialInstance", 1usize
                         )
                     })
             });
@@ -116,7 +118,7 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -125,7 +127,8 @@ impl crate::TMPro::TMP_SubMesh {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DestroySelf", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DestroySelf", 0usize
                         )
                     })
             });
@@ -143,7 +146,7 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -152,7 +155,8 @@ impl crate::TMPro::TMP_SubMesh {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMaterial", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMaterial", 1usize
                         )
                     })
             });
@@ -165,12 +169,13 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("GetPaddingForMaterial")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPaddingForMaterial", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPaddingForMaterial", 0usize
                         )
                     })
             });
@@ -185,7 +190,7 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -194,7 +199,8 @@ impl crate::TMPro::TMP_SubMesh {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSharedMaterial", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSharedMaterial", 0usize
                         )
                     })
             });
@@ -216,12 +222,13 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDestroy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDestroy", 0usize
                         )
                     })
             });
@@ -236,12 +243,13 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDisable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDisable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDisable", 0usize
                         )
                     })
             });
@@ -256,12 +264,13 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnEnable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnEnable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnEnable", 0usize
                         )
                     })
             });
@@ -276,7 +285,7 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -285,7 +294,8 @@ impl crate::TMPro::TMP_SubMesh {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetMaterialDirty", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetMaterialDirty", 0usize
                         )
                     })
             });
@@ -301,7 +311,7 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
                         quest_hook::libil2cpp::Void,
@@ -310,7 +320,8 @@ impl crate::TMPro::TMP_SubMesh {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetSharedMaterial", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetSharedMaterial", 1usize
                         )
                     })
             });
@@ -325,7 +336,7 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -334,7 +345,8 @@ impl crate::TMPro::TMP_SubMesh {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetVerticesDirty", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetVerticesDirty", 0usize
                         )
                     })
             });
@@ -349,7 +361,7 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -358,7 +370,8 @@ impl crate::TMPro::TMP_SubMesh {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateMaterial", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateMaterial", 0usize
                         )
                     })
             });
@@ -375,7 +388,7 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, bool),
                         quest_hook::libil2cpp::Void,
@@ -384,7 +397,8 @@ impl crate::TMPro::TMP_SubMesh {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateMeshPadding", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateMeshPadding", 2usize
                         )
                     })
             });
@@ -399,12 +413,13 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -421,7 +436,7 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -430,7 +445,8 @@ impl crate::TMPro::TMP_SubMesh {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_fallbackMaterial", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_fallbackMaterial", 0usize
                         )
                     })
             });
@@ -447,7 +463,7 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -456,7 +472,8 @@ impl crate::TMPro::TMP_SubMesh {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_fallbackSourceMaterial", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_fallbackSourceMaterial", 0usize
                         )
                     })
             });
@@ -473,7 +490,7 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
@@ -482,7 +499,8 @@ impl crate::TMPro::TMP_SubMesh {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_fontAsset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_fontAsset", 0usize
                         )
                     })
             });
@@ -495,12 +513,13 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isDefaultMaterial")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_isDefaultMaterial", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isDefaultMaterial", 0usize
                         )
                     })
             });
@@ -515,7 +534,7 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -524,7 +543,8 @@ impl crate::TMPro::TMP_SubMesh {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_material", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_material", 0usize
                         )
                     })
             });
@@ -541,7 +561,7 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
@@ -550,7 +570,8 @@ impl crate::TMPro::TMP_SubMesh {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_mesh", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_mesh", 0usize
                         )
                     })
             });
@@ -567,7 +588,7 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
@@ -576,7 +597,8 @@ impl crate::TMPro::TMP_SubMesh {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_meshFilter", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_meshFilter", 0usize
                         )
                     })
             });
@@ -589,12 +611,13 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_padding")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_padding", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_padding", 0usize
                         )
                     })
             });
@@ -609,7 +632,7 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
@@ -618,7 +641,8 @@ impl crate::TMPro::TMP_SubMesh {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_renderer", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_renderer", 0usize
                         )
                     })
             });
@@ -635,7 +659,7 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -644,7 +668,8 @@ impl crate::TMPro::TMP_SubMesh {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_sharedMaterial", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_sharedMaterial", 0usize
                         )
                     })
             });
@@ -661,7 +686,7 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
@@ -670,7 +695,8 @@ impl crate::TMPro::TMP_SubMesh {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_spriteAsset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_spriteAsset", 0usize
                         )
                     })
             });
@@ -687,7 +713,7 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
@@ -696,7 +722,8 @@ impl crate::TMPro::TMP_SubMesh {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_textComponent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_textComponent", 0usize
                         )
                     })
             });
@@ -712,7 +739,7 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
                         quest_hook::libil2cpp::Void,
@@ -721,7 +748,8 @@ impl crate::TMPro::TMP_SubMesh {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_fallbackMaterial", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_fallbackMaterial", 1usize
                         )
                     })
             });
@@ -737,7 +765,7 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
                         quest_hook::libil2cpp::Void,
@@ -746,7 +774,8 @@ impl crate::TMPro::TMP_SubMesh {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_fallbackSourceMaterial", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_fallbackSourceMaterial", 1usize
                         )
                     })
             });
@@ -762,7 +791,7 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>),
                         quest_hook::libil2cpp::Void,
@@ -771,7 +800,8 @@ impl crate::TMPro::TMP_SubMesh {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_fontAsset", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_fontAsset", 1usize
                         )
                     })
             });
@@ -787,7 +817,7 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -796,7 +826,8 @@ impl crate::TMPro::TMP_SubMesh {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_isDefaultMaterial", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_isDefaultMaterial", 1usize
                         )
                     })
             });
@@ -812,7 +843,7 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
                         quest_hook::libil2cpp::Void,
@@ -821,7 +852,8 @@ impl crate::TMPro::TMP_SubMesh {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_material", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_material", 1usize
                         )
                     })
             });
@@ -837,7 +869,7 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>),
                         quest_hook::libil2cpp::Void,
@@ -846,7 +878,8 @@ impl crate::TMPro::TMP_SubMesh {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_mesh", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_mesh", 1usize
                         )
                     })
             });
@@ -862,7 +895,7 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -871,7 +904,8 @@ impl crate::TMPro::TMP_SubMesh {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_padding", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_padding", 1usize
                         )
                     })
             });
@@ -887,7 +921,7 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
                         quest_hook::libil2cpp::Void,
@@ -896,7 +930,8 @@ impl crate::TMPro::TMP_SubMesh {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_sharedMaterial", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_sharedMaterial", 1usize
                         )
                     })
             });
@@ -912,7 +947,7 @@ impl crate::TMPro::TMP_SubMesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>),
                         quest_hook::libil2cpp::Void,
@@ -921,7 +956,8 @@ impl crate::TMPro::TMP_SubMesh {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_spriteAsset", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_spriteAsset", 1usize
                         )
                     })
             });

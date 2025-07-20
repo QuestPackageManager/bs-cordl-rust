@@ -49,7 +49,7 @@ impl crate::GlobalNamespace::IBitMaskUtil {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -63,7 +63,8 @@ impl crate::GlobalNamespace::IBitMaskUtil {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FromBytes", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FromBytes", 2usize
                         )
                     })
             });
@@ -74,12 +75,13 @@ impl crate::GlobalNamespace::IBitMaskUtil {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64), char, 1usize>("GetBase64Char")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBase64Char", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBase64Char", 1usize
                         )
                     })
             });
@@ -90,12 +92,13 @@ impl crate::GlobalNamespace::IBitMaskUtil {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(char), u32, 1usize>("GetBase64Digit")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBase64Digit", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBase64Digit", 1usize
                         )
                     })
             });
@@ -106,12 +109,13 @@ impl crate::GlobalNamespace::IBitMaskUtil {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(char), u32, 1usize>("GetHexDigit")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHexDigit", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHexDigit", 1usize
                         )
                     })
             });
@@ -126,12 +130,13 @@ impl crate::GlobalNamespace::IBitMaskUtil {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(T), i32, 1usize>("NumberOfSetBits")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NumberOfSetBits", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NumberOfSetBits", 1usize
                         )
                     })
             });
@@ -150,7 +155,7 @@ impl crate::GlobalNamespace::IBitMaskUtil {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (T),
                         quest_hook::libil2cpp::Gc<
@@ -161,7 +166,8 @@ impl crate::GlobalNamespace::IBitMaskUtil {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToBytes", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "ToBytes",
+                            1usize
                         )
                     })
             });
@@ -182,7 +188,7 @@ impl crate::GlobalNamespace::IBitMaskUtil {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (T),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -191,7 +197,8 @@ impl crate::GlobalNamespace::IBitMaskUtil {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToShortString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToShortString", 1usize
                         )
                     })
             });
@@ -213,7 +220,7 @@ impl crate::GlobalNamespace::IBitMaskUtil {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -227,7 +234,8 @@ impl crate::GlobalNamespace::IBitMaskUtil {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryParse", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryParse", 2usize
                         )
                     })
             });
@@ -251,7 +259,7 @@ impl crate::GlobalNamespace::IBitMaskUtil {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -267,7 +275,8 @@ impl crate::GlobalNamespace::IBitMaskUtil {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryParse", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryParse", 4usize
                         )
                     })
             });

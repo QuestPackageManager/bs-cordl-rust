@@ -46,7 +46,7 @@ impl crate::TMPro::TMPro_ExtensionMethods {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<char>,
@@ -57,7 +57,8 @@ impl crate::TMPro::TMPro_ExtensionMethods {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ArrayToString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ArrayToString", 1usize
                         )
                     })
             });
@@ -73,7 +74,7 @@ impl crate::TMPro::TMPro_ExtensionMethods {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Color32, crate::UnityEngine::Color32),
                         bool,
@@ -82,7 +83,8 @@ impl crate::TMPro::TMPro_ExtensionMethods {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CompareRGB", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CompareRGB", 2usize
                         )
                     })
             });
@@ -96,7 +98,7 @@ impl crate::TMPro::TMPro_ExtensionMethods {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Color, crate::UnityEngine::Color),
                         bool,
@@ -105,7 +107,8 @@ impl crate::TMPro::TMPro_ExtensionMethods {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CompareRGB", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CompareRGB", 2usize
                         )
                     })
             });
@@ -119,7 +122,7 @@ impl crate::TMPro::TMPro_ExtensionMethods {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Color32, crate::UnityEngine::Color32),
                         bool,
@@ -128,7 +131,8 @@ impl crate::TMPro::TMPro_ExtensionMethods {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Compare", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Compare",
+                            2usize
                         )
                     })
             });
@@ -142,7 +146,7 @@ impl crate::TMPro::TMPro_ExtensionMethods {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Color, crate::UnityEngine::Color),
                         bool,
@@ -151,7 +155,8 @@ impl crate::TMPro::TMPro_ExtensionMethods {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Compare", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Compare",
+                            2usize
                         )
                     })
             });
@@ -166,7 +171,7 @@ impl crate::TMPro::TMPro_ExtensionMethods {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::Quaternion,
@@ -179,7 +184,8 @@ impl crate::TMPro::TMPro_ExtensionMethods {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Compare", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Compare",
+                            3usize
                         )
                     })
             });
@@ -196,7 +202,7 @@ impl crate::TMPro::TMPro_ExtensionMethods {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Vector3, crate::UnityEngine::Vector3, i32),
                         bool,
@@ -205,7 +211,8 @@ impl crate::TMPro::TMPro_ExtensionMethods {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Compare", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Compare",
+                            3usize
                         )
                     })
             });
@@ -225,7 +232,7 @@ impl crate::TMPro::TMPro_ExtensionMethods {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -239,7 +246,8 @@ impl crate::TMPro::TMPro_ExtensionMethods {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FindInstanceID", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindInstanceID", 2usize
                         )
                     })
             });
@@ -254,7 +262,7 @@ impl crate::TMPro::TMPro_ExtensionMethods {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<i32>,
@@ -265,7 +273,8 @@ impl crate::TMPro::TMPro_ExtensionMethods {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IntToString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IntToString", 1usize
                         )
                     })
             });
@@ -284,7 +293,7 @@ impl crate::TMPro::TMPro_ExtensionMethods {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -299,7 +308,8 @@ impl crate::TMPro::TMPro_ExtensionMethods {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IntToString", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IntToString", 3usize
                         )
                     })
             });
@@ -315,7 +325,7 @@ impl crate::TMPro::TMPro_ExtensionMethods {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Color, crate::UnityEngine::Color),
                         crate::UnityEngine::Color,
@@ -324,7 +334,8 @@ impl crate::TMPro::TMPro_ExtensionMethods {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MinAlpha", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MinAlpha", 2usize
                         )
                     })
             });
@@ -340,7 +351,7 @@ impl crate::TMPro::TMPro_ExtensionMethods {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Color32, crate::UnityEngine::Color32),
                         crate::UnityEngine::Color32,
@@ -349,7 +360,8 @@ impl crate::TMPro::TMPro_ExtensionMethods {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Multiply", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Multiply", 2usize
                         )
                     })
             });
@@ -365,7 +377,7 @@ impl crate::TMPro::TMPro_ExtensionMethods {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Color32, crate::UnityEngine::Color32),
                         crate::UnityEngine::Color32,
@@ -374,7 +386,8 @@ impl crate::TMPro::TMPro_ExtensionMethods {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Tint", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Tint",
+                            2usize
                         )
                     })
             });
@@ -390,7 +403,7 @@ impl crate::TMPro::TMPro_ExtensionMethods {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Color32, f32),
                         crate::UnityEngine::Color32,
@@ -399,7 +412,8 @@ impl crate::TMPro::TMPro_ExtensionMethods {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Tint", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Tint",
+                            2usize
                         )
                     })
             });
@@ -416,7 +430,7 @@ impl crate::TMPro::TMPro_ExtensionMethods {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -427,7 +441,8 @@ impl crate::TMPro::TMPro_ExtensionMethods {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToIntArray", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToIntArray", 1usize
                         )
                     })
             });
@@ -446,7 +461,7 @@ impl crate::TMPro::TMPro_ExtensionMethods {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::List_1<u32>,
@@ -457,7 +472,8 @@ impl crate::TMPro::TMPro_ExtensionMethods {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UintToString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UintToString", 1usize
                         )
                     })
             });

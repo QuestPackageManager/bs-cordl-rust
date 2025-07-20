@@ -74,7 +74,7 @@ impl crate::UnityEngine::UIElements::FocusController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -94,7 +94,8 @@ impl crate::UnityEngine::UIElements::FocusController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AboutToGrabFocus", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AboutToGrabFocus", 4usize
                         )
                     })
             });
@@ -121,7 +122,7 @@ impl crate::UnityEngine::UIElements::FocusController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -141,7 +142,8 @@ impl crate::UnityEngine::UIElements::FocusController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AboutToReleaseFocus", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AboutToReleaseFocus", 4usize
                         )
                     })
             });
@@ -163,7 +165,7 @@ impl crate::UnityEngine::UIElements::FocusController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -178,7 +180,8 @@ impl crate::UnityEngine::UIElements::FocusController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Blur", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Blur",
+                            3usize
                         )
                     })
             });
@@ -193,7 +196,7 @@ impl crate::UnityEngine::UIElements::FocusController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -202,7 +205,8 @@ impl crate::UnityEngine::UIElements::FocusController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BlurLastFocusedElement", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BlurLastFocusedElement", 0usize
                         )
                     })
             });
@@ -218,7 +222,7 @@ impl crate::UnityEngine::UIElements::FocusController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::Focusable,
@@ -229,7 +233,8 @@ impl crate::UnityEngine::UIElements::FocusController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoFocusChange", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoFocusChange", 1usize
                         )
                     })
             });
@@ -249,7 +254,7 @@ impl crate::UnityEngine::UIElements::FocusController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::FocusChangeDirection,
@@ -262,7 +267,8 @@ impl crate::UnityEngine::UIElements::FocusController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FocusNextInDirection", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FocusNextInDirection", 1usize
                         )
                     })
             });
@@ -281,7 +287,7 @@ impl crate::UnityEngine::UIElements::FocusController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -299,7 +305,8 @@ impl crate::UnityEngine::UIElements::FocusController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetFocusableParentForPointerEvent", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetFocusableParentForPointerEvent", 2usize
                         )
                     })
             });
@@ -316,7 +323,7 @@ impl crate::UnityEngine::UIElements::FocusController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -327,7 +334,8 @@ impl crate::UnityEngine::UIElements::FocusController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLeafFocusedElement", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLeafFocusedElement", 0usize
                         )
                     })
             });
@@ -347,7 +355,7 @@ impl crate::UnityEngine::UIElements::FocusController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::VisualElement,
@@ -360,7 +368,8 @@ impl crate::UnityEngine::UIElements::FocusController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetRetargetedFocusedElement", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetRetargetedFocusedElement", 1usize
                         )
                     })
             });
@@ -384,7 +393,7 @@ impl crate::UnityEngine::UIElements::FocusController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -405,7 +414,8 @@ impl crate::UnityEngine::UIElements::FocusController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GrabFocus", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GrabFocus", 5usize
                         )
                     })
             });
@@ -431,7 +441,7 @@ impl crate::UnityEngine::UIElements::FocusController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::Focusable,
@@ -442,7 +452,8 @@ impl crate::UnityEngine::UIElements::FocusController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsFocused", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsFocused", 1usize
                         )
                     })
             });
@@ -456,7 +467,7 @@ impl crate::UnityEngine::UIElements::FocusController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::Focusable,
@@ -467,7 +478,8 @@ impl crate::UnityEngine::UIElements::FocusController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsLocalElement", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsLocalElement", 1usize
                         )
                     })
             });
@@ -481,7 +493,7 @@ impl crate::UnityEngine::UIElements::FocusController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::Focusable,
@@ -492,7 +504,8 @@ impl crate::UnityEngine::UIElements::FocusController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsPendingFocus", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsPendingFocus", 1usize
                         )
                     })
             });
@@ -515,7 +528,7 @@ impl crate::UnityEngine::UIElements::FocusController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::Focusable,
@@ -526,7 +539,8 @@ impl crate::UnityEngine::UIElements::FocusController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessPendingFocusChange", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessPendingFocusChange", 1usize
                         )
                     })
             });
@@ -541,7 +555,7 @@ impl crate::UnityEngine::UIElements::FocusController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -550,7 +564,8 @@ impl crate::UnityEngine::UIElements::FocusController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReevaluateFocus", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReevaluateFocus", 0usize
                         )
                     })
             });
@@ -573,7 +588,7 @@ impl crate::UnityEngine::UIElements::FocusController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -593,7 +608,8 @@ impl crate::UnityEngine::UIElements::FocusController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReleaseFocus", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReleaseFocus", 4usize
                         )
                     })
             });
@@ -612,7 +628,7 @@ impl crate::UnityEngine::UIElements::FocusController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -621,7 +637,8 @@ impl crate::UnityEngine::UIElements::FocusController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetFocusToLastFocusedElement", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetFocusToLastFocusedElement", 0usize
                         )
                     })
             });
@@ -637,7 +654,7 @@ impl crate::UnityEngine::UIElements::FocusController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::EventBase,
@@ -648,7 +665,8 @@ impl crate::UnityEngine::UIElements::FocusController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SwitchFocusOnEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SwitchFocusOnEvent", 1usize
                         )
                     })
             });
@@ -671,7 +689,7 @@ impl crate::UnityEngine::UIElements::FocusController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -689,7 +707,8 @@ impl crate::UnityEngine::UIElements::FocusController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SwitchFocus", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SwitchFocus", 4usize
                         )
                     })
             });
@@ -713,7 +732,7 @@ impl crate::UnityEngine::UIElements::FocusController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -728,7 +747,8 @@ impl crate::UnityEngine::UIElements::FocusController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SwitchFocus", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SwitchFocus", 3usize
                         )
                     })
             });
@@ -752,7 +772,7 @@ impl crate::UnityEngine::UIElements::FocusController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -767,7 +787,8 @@ impl crate::UnityEngine::UIElements::FocusController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SyncIMGUIFocus", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SyncIMGUIFocus", 3usize
                         )
                     })
             });
@@ -791,7 +812,7 @@ impl crate::UnityEngine::UIElements::FocusController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::IFocusRing,
@@ -802,7 +823,8 @@ impl crate::UnityEngine::UIElements::FocusController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -819,7 +841,7 @@ impl crate::UnityEngine::UIElements::FocusController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -830,7 +852,8 @@ impl crate::UnityEngine::UIElements::FocusController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_focusRing", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_focusRing", 0usize
                         )
                     })
             });
@@ -847,7 +870,7 @@ impl crate::UnityEngine::UIElements::FocusController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -858,7 +881,8 @@ impl crate::UnityEngine::UIElements::FocusController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_focusedElement", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_focusedElement", 0usize
                         )
                     })
             });
@@ -871,12 +895,13 @@ impl crate::UnityEngine::UIElements::FocusController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_imguiKeyboardControl")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_imguiKeyboardControl", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_imguiKeyboardControl", 0usize
                         )
                     })
             });
@@ -890,7 +915,7 @@ impl crate::UnityEngine::UIElements::FocusController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -899,7 +924,8 @@ impl crate::UnityEngine::UIElements::FocusController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_imguiKeyboardControl", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_imguiKeyboardControl", 1usize
                         )
                     })
             });
@@ -915,7 +941,7 @@ impl crate::UnityEngine::UIElements::FocusController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::TextElement,
@@ -926,7 +952,8 @@ impl crate::UnityEngine::UIElements::FocusController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_selectedTextElement", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_selectedTextElement", 1usize
                         )
                     })
             });

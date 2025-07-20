@@ -46,7 +46,7 @@ impl crate::System::Reflection::SignatureTypeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -60,7 +60,8 @@ impl crate::System::Reflection::SignatureTypeExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MatchesExactly", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MatchesExactly", 2usize
                         )
                     })
             });
@@ -76,7 +77,7 @@ impl crate::System::Reflection::SignatureTypeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -90,7 +91,8 @@ impl crate::System::Reflection::SignatureTypeExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MatchesParameterTypeExactly", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MatchesParameterTypeExactly", 2usize
                         )
                     })
             });
@@ -105,7 +107,7 @@ impl crate::System::Reflection::SignatureTypeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -114,7 +116,8 @@ impl crate::System::Reflection::SignatureTypeExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryMakeArrayType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryMakeArrayType", 1usize
                         )
                     })
             });
@@ -130,7 +133,7 @@ impl crate::System::Reflection::SignatureTypeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>, i32),
                         quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -139,7 +142,8 @@ impl crate::System::Reflection::SignatureTypeExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryMakeArrayType", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryMakeArrayType", 2usize
                         )
                     })
             });
@@ -154,7 +158,7 @@ impl crate::System::Reflection::SignatureTypeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -163,7 +167,8 @@ impl crate::System::Reflection::SignatureTypeExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryMakeByRefType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryMakeByRefType", 1usize
                         )
                     })
             });
@@ -183,7 +188,7 @@ impl crate::System::Reflection::SignatureTypeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -199,7 +204,8 @@ impl crate::System::Reflection::SignatureTypeExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryMakeGenericType", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryMakeGenericType", 2usize
                         )
                     })
             });
@@ -214,7 +220,7 @@ impl crate::System::Reflection::SignatureTypeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -223,7 +229,8 @@ impl crate::System::Reflection::SignatureTypeExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryMakePointerType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryMakePointerType", 1usize
                         )
                     })
             });
@@ -245,7 +252,7 @@ impl crate::System::Reflection::SignatureTypeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -263,7 +270,8 @@ impl crate::System::Reflection::SignatureTypeExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryResolve", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryResolve", 2usize
                         )
                     })
             });
@@ -281,7 +289,7 @@ impl crate::System::Reflection::SignatureTypeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -297,7 +305,8 @@ impl crate::System::Reflection::SignatureTypeExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryResolveAgainstGenericMethod", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryResolveAgainstGenericMethod", 2usize
                         )
                     })
             });

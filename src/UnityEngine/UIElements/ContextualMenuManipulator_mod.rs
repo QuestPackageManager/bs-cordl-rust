@@ -53,7 +53,7 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::EventBase,
@@ -64,7 +64,8 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoDisplayMenu", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoDisplayMenu", 1usize
                         )
                     })
             });
@@ -97,7 +98,7 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
@@ -108,7 +109,8 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnContextualMenuEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnContextualMenuEvent", 1usize
                         )
                     })
             });
@@ -124,7 +126,7 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::KeyUpEvent,
@@ -135,7 +137,8 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnKeyUpEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnKeyUpEvent", 1usize
                         )
                     })
             });
@@ -151,7 +154,7 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::MouseDownEvent,
@@ -162,7 +165,8 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnMouseDownEventOSX", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnMouseDownEventOSX", 1usize
                         )
                     })
             });
@@ -178,7 +182,7 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::IMouseEvent,
@@ -189,7 +193,8 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnMouseUpDownEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnMouseUpDownEvent", 1usize
                         )
                     })
             });
@@ -205,7 +210,7 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::MouseUpEvent,
@@ -216,7 +221,8 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnMouseUpEventOSX", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnMouseUpEventOSX", 1usize
                         )
                     })
             });
@@ -231,7 +237,7 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -240,7 +246,8 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterCallbacksOnTarget", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterCallbacksOnTarget", 0usize
                         )
                     })
             });
@@ -255,7 +262,7 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -264,7 +271,8 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnregisterCallbacksFromTarget", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnregisterCallbacksFromTarget", 0usize
                         )
                     })
             });
@@ -286,7 +294,7 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -301,7 +309,8 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });

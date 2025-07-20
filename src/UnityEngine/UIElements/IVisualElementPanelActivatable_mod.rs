@@ -44,12 +44,13 @@ impl crate::UnityEngine::UIElements::IVisualElementPanelActivatable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("CanBeActivated")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CanBeActivated", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CanBeActivated", 0usize
                         )
                     })
             });
@@ -62,7 +63,7 @@ impl crate::UnityEngine::UIElements::IVisualElementPanelActivatable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -71,7 +72,8 @@ impl crate::UnityEngine::UIElements::IVisualElementPanelActivatable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnPanelActivate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnPanelActivate", 0usize
                         )
                     })
             });
@@ -86,7 +88,7 @@ impl crate::UnityEngine::UIElements::IVisualElementPanelActivatable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -95,7 +97,8 @@ impl crate::UnityEngine::UIElements::IVisualElementPanelActivatable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnPanelDeactivate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnPanelDeactivate", 0usize
                         )
                     })
             });
@@ -117,7 +120,7 @@ impl crate::UnityEngine::UIElements::IVisualElementPanelActivatable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -128,7 +131,8 @@ impl crate::UnityEngine::UIElements::IVisualElementPanelActivatable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_element", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_element", 0usize
                         )
                     })
             });

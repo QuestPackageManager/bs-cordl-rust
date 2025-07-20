@@ -51,7 +51,7 @@ impl crate::System::Runtime::Serialization::ISerializationSurrogate {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -68,7 +68,8 @@ impl crate::System::Runtime::Serialization::ISerializationSurrogate {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetObjectData", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetObjectData", 3usize
                         )
                     })
             });
@@ -93,7 +94,7 @@ impl crate::System::Runtime::Serialization::ISerializationSurrogate {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -113,7 +114,8 @@ impl crate::System::Runtime::Serialization::ISerializationSurrogate {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetObjectData", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetObjectData", 4usize
                         )
                     })
             });

@@ -65,7 +65,7 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -88,7 +88,8 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCSVString", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCSVString", 3usize
                         )
                     })
             });
@@ -108,7 +109,7 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -117,7 +118,8 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMessageForSingleKey", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMessageForSingleKey", 1usize
                         )
                     })
             });
@@ -139,7 +141,7 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::List_1<
@@ -154,7 +156,8 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMessageforMergeKeys", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMessageforMergeKeys", 1usize
                         )
                     })
             });
@@ -177,7 +180,7 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -195,7 +198,8 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMultipleAssignableTypesMessage", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMultipleAssignableTypesMessage", 2usize
                         )
                     })
             });
@@ -213,7 +217,7 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -222,7 +226,8 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNotFoundMessage", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNotFoundMessage", 1usize
                         )
                     })
             });
@@ -245,7 +250,7 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -263,7 +268,8 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTypeNotAssignableMessage", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTypeNotAssignableMessage", 2usize
                         )
                     })
             });
@@ -289,7 +295,7 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -314,7 +320,8 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTypeToKeys", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTypeToKeys", 2usize
                         )
                     })
             });
@@ -336,7 +343,7 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -349,7 +356,8 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTypesForKey", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTypesForKey", 1usize
                         )
                     })
             });
@@ -461,12 +469,13 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -482,7 +491,7 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Void,
@@ -491,7 +500,8 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -508,7 +518,7 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -522,7 +532,8 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -542,7 +553,7 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -559,7 +570,8 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -577,7 +589,7 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -592,7 +604,8 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -613,7 +626,7 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -631,7 +644,8 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
                         )
                     })
             });
@@ -647,7 +661,7 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -656,7 +670,8 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -673,7 +688,7 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -687,7 +702,8 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -706,7 +722,7 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -720,7 +736,8 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -737,7 +754,7 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -746,7 +763,8 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_Key",
+                            0usize
                         )
                     })
             });
@@ -765,7 +783,7 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Nullable_1<
@@ -776,7 +794,8 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_MergeMode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_MergeMode", 0usize
                         )
                     })
             });
@@ -793,7 +812,7 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -802,7 +821,8 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Message", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Message", 0usize
                         )
                     })
             });
@@ -817,7 +837,7 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -826,7 +846,8 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Type", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Type", 0usize
                         )
                     })
             });
@@ -842,7 +863,7 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Void,
@@ -851,7 +872,8 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Key", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_Key",
+                            1usize
                         )
                     })
             });
@@ -867,7 +889,7 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Void,
@@ -876,7 +898,8 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Type", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Type", 1usize
                         )
                     })
             });

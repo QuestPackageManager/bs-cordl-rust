@@ -60,12 +60,13 @@ impl crate::GlobalNamespace::LightRotationGroupEffect {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Cleanup")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Cleanup", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Cleanup",
+                            0usize
                         )
                     })
             });
@@ -83,7 +84,7 @@ impl crate::GlobalNamespace::LightRotationGroupEffect {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32, f32, i32, crate::GlobalNamespace::LightRotationDirection),
                         f32,
@@ -92,7 +93,8 @@ impl crate::GlobalNamespace::LightRotationGroupEffect {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ComputeTargetAngle", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ComputeTargetAngle", 4usize
                         )
                     })
             });
@@ -114,7 +116,7 @@ impl crate::GlobalNamespace::LightRotationGroupEffect {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::LightRotationBeatmapEventData,
@@ -125,7 +127,8 @@ impl crate::GlobalNamespace::LightRotationGroupEffect {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleRotationChangeBeatmapEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleRotationChangeBeatmapEvent", 1usize
                         )
                     })
             });
@@ -161,7 +164,7 @@ impl crate::GlobalNamespace::LightRotationGroupEffect {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -170,7 +173,8 @@ impl crate::GlobalNamespace::LightRotationGroupEffect {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetRotation", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetRotation", 1usize
                         )
                     })
             });
@@ -194,7 +198,7 @@ impl crate::GlobalNamespace::LightRotationGroupEffect {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -213,7 +217,8 @@ impl crate::GlobalNamespace::LightRotationGroupEffect {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -307,7 +312,7 @@ impl crate::GlobalNamespace::LightRotationGroupEffect_InitData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -322,7 +327,8 @@ impl crate::GlobalNamespace::LightRotationGroupEffect_InitData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            5usize
                         )
                     })
             });

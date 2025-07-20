@@ -77,7 +77,7 @@ impl crate::GlobalNamespace::CenterStageScreenController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::ILevelGameplaySetupData,
@@ -90,7 +90,7 @@ impl crate::GlobalNamespace::CenterStageScreenController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "HandleLobbyGameStateControllerSelectedLevelGameplaySetupDataChanged",
                             1usize
                         )
@@ -107,12 +107,13 @@ impl crate::GlobalNamespace::CenterStageScreenController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Hide")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Hide", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Hide",
+                            0usize
                         )
                     })
             });
@@ -128,7 +129,7 @@ impl crate::GlobalNamespace::CenterStageScreenController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -137,7 +138,8 @@ impl crate::GlobalNamespace::CenterStageScreenController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HideCountdown", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HideCountdown", 1usize
                         )
                     })
             });
@@ -160,7 +162,7 @@ impl crate::GlobalNamespace::CenterStageScreenController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i64),
                         quest_hook::libil2cpp::Void,
@@ -169,7 +171,8 @@ impl crate::GlobalNamespace::CenterStageScreenController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetCountdownEndTime", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetCountdownEndTime", 1usize
                         )
                     })
             });
@@ -187,7 +190,7 @@ impl crate::GlobalNamespace::CenterStageScreenController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::ILevelGameplaySetupData,
@@ -198,7 +201,8 @@ impl crate::GlobalNamespace::CenterStageScreenController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetNextGameplaySetupData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetNextGameplaySetupData", 1usize
                         )
                     })
             });
@@ -214,12 +218,13 @@ impl crate::GlobalNamespace::CenterStageScreenController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("Setup")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Setup", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Setup",
+                            1usize
                         )
                     })
             });
@@ -234,12 +239,13 @@ impl crate::GlobalNamespace::CenterStageScreenController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Show")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Show", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Show",
+                            0usize
                         )
                     })
             });
@@ -255,7 +261,7 @@ impl crate::GlobalNamespace::CenterStageScreenController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i64),
                         quest_hook::libil2cpp::Void,
@@ -264,7 +270,8 @@ impl crate::GlobalNamespace::CenterStageScreenController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShowCountdown", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShowCountdown", 1usize
                         )
                     })
             });
@@ -280,7 +287,7 @@ impl crate::GlobalNamespace::CenterStageScreenController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -289,7 +296,8 @@ impl crate::GlobalNamespace::CenterStageScreenController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShowCountdownColorPreset", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShowCountdownColorPreset", 1usize
                         )
                     })
             });
@@ -305,7 +313,7 @@ impl crate::GlobalNamespace::CenterStageScreenController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -314,7 +322,8 @@ impl crate::GlobalNamespace::CenterStageScreenController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShowLobbyColorPreset", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShowLobbyColorPreset", 1usize
                         )
                     })
             });
@@ -329,12 +338,13 @@ impl crate::GlobalNamespace::CenterStageScreenController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -347,12 +357,13 @@ impl crate::GlobalNamespace::CenterStageScreenController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_countdownShown")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_countdownShown", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_countdownShown", 0usize
                         )
                     })
             });
@@ -366,7 +377,7 @@ impl crate::GlobalNamespace::CenterStageScreenController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -375,7 +386,8 @@ impl crate::GlobalNamespace::CenterStageScreenController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_countdownShown", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_countdownShown", 1usize
                         )
                     })
             });

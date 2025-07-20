@@ -79,7 +79,7 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -88,7 +88,8 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnAfterInputUpdate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnAfterInputUpdate", 0usize
                         )
                     })
             });
@@ -104,7 +105,7 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::InputAction_CallbackContext),
                         quest_hook::libil2cpp::Void,
@@ -113,7 +114,8 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnButtonActionTriggered", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnButtonActionTriggered", 1usize
                         )
                     })
             });
@@ -128,12 +130,13 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDisable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDisable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDisable", 0usize
                         )
                     })
             });
@@ -148,12 +151,13 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnEnable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnEnable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnEnable", 0usize
                         )
                     })
             });
@@ -171,7 +175,7 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -185,7 +189,8 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetAction", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetAction", 2usize
                         )
                     })
             });
@@ -206,7 +211,7 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::InputSystem::InputActionProperty,
@@ -223,7 +228,8 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetActionCallback", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetActionCallback", 3usize
                         )
                     })
             });
@@ -238,7 +244,7 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -247,7 +253,8 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryEnableHardwareCursor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryEnableHardwareCursor", 0usize
                         )
                     })
             });
@@ -262,7 +269,7 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -271,7 +278,8 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryFindCanvas", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryFindCanvas", 0usize
                         )
                     })
             });
@@ -286,7 +294,7 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -295,7 +303,8 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateMotion", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateMotion", 0usize
                         )
                     })
             });
@@ -310,12 +319,13 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -332,7 +342,7 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::InputSystem::InputActionProperty,
@@ -341,7 +351,8 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_backButtonAction", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_backButtonAction", 0usize
                         )
                     })
             });
@@ -358,7 +369,7 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
@@ -367,7 +378,8 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_cursorGraphic", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_cursorGraphic", 0usize
                         )
                     })
             });
@@ -384,7 +396,7 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::InputSystem::UI::VirtualMouseInput_CursorMode,
@@ -393,7 +405,8 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_cursorMode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_cursorMode", 0usize
                         )
                     })
             });
@@ -406,12 +419,13 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_cursorSpeed")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_cursorSpeed", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_cursorSpeed", 0usize
                         )
                     })
             });
@@ -426,7 +440,7 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -435,7 +449,8 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_cursorTransform", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_cursorTransform", 0usize
                         )
                     })
             });
@@ -452,7 +467,7 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::InputSystem::InputActionProperty,
@@ -461,7 +476,8 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_forwardButtonAction", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_forwardButtonAction", 0usize
                         )
                     })
             });
@@ -478,7 +494,7 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::InputSystem::InputActionProperty,
@@ -487,7 +503,8 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_leftButtonAction", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_leftButtonAction", 0usize
                         )
                     })
             });
@@ -504,7 +521,7 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::InputSystem::InputActionProperty,
@@ -513,7 +530,8 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_middleButtonAction", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_middleButtonAction", 0usize
                         )
                     })
             });
@@ -530,7 +548,7 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::InputSystem::InputActionProperty,
@@ -539,7 +557,8 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rightButtonAction", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rightButtonAction", 0usize
                         )
                     })
             });
@@ -552,12 +571,13 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_scrollSpeed")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_scrollSpeed", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_scrollSpeed", 0usize
                         )
                     })
             });
@@ -572,7 +592,7 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::InputSystem::InputActionProperty,
@@ -581,7 +601,8 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_scrollWheelAction", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_scrollWheelAction", 0usize
                         )
                     })
             });
@@ -598,7 +619,7 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::InputSystem::InputActionProperty,
@@ -607,7 +628,8 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_stickAction", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_stickAction", 0usize
                         )
                     })
             });
@@ -624,7 +646,7 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -635,7 +657,8 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_virtualMouse", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_virtualMouse", 0usize
                         )
                     })
             });
@@ -651,7 +674,7 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::InputActionProperty),
                         quest_hook::libil2cpp::Void,
@@ -660,7 +683,8 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_backButtonAction", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_backButtonAction", 1usize
                         )
                     })
             });
@@ -676,7 +700,7 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>),
                         quest_hook::libil2cpp::Void,
@@ -685,7 +709,8 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_cursorGraphic", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_cursorGraphic", 1usize
                         )
                     })
             });
@@ -701,7 +726,7 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::UI::VirtualMouseInput_CursorMode),
                         quest_hook::libil2cpp::Void,
@@ -710,7 +735,8 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_cursorMode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_cursorMode", 1usize
                         )
                     })
             });
@@ -726,7 +752,7 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -735,7 +761,8 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_cursorSpeed", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_cursorSpeed", 1usize
                         )
                     })
             });
@@ -751,7 +778,7 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>),
                         quest_hook::libil2cpp::Void,
@@ -760,7 +787,8 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_cursorTransform", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_cursorTransform", 1usize
                         )
                     })
             });
@@ -776,7 +804,7 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::InputActionProperty),
                         quest_hook::libil2cpp::Void,
@@ -785,7 +813,8 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_forwardButtonAction", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_forwardButtonAction", 1usize
                         )
                     })
             });
@@ -801,7 +830,7 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::InputActionProperty),
                         quest_hook::libil2cpp::Void,
@@ -810,7 +839,8 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_leftButtonAction", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_leftButtonAction", 1usize
                         )
                     })
             });
@@ -826,7 +856,7 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::InputActionProperty),
                         quest_hook::libil2cpp::Void,
@@ -835,7 +865,8 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_middleButtonAction", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_middleButtonAction", 1usize
                         )
                     })
             });
@@ -851,7 +882,7 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::InputActionProperty),
                         quest_hook::libil2cpp::Void,
@@ -860,7 +891,8 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_rightButtonAction", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_rightButtonAction", 1usize
                         )
                     })
             });
@@ -876,7 +908,7 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -885,7 +917,8 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_scrollSpeed", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_scrollSpeed", 1usize
                         )
                     })
             });
@@ -901,7 +934,7 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::InputActionProperty),
                         quest_hook::libil2cpp::Void,
@@ -910,7 +943,8 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_scrollWheelAction", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_scrollWheelAction", 1usize
                         )
                     })
             });
@@ -926,7 +960,7 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::InputActionProperty),
                         quest_hook::libil2cpp::Void,
@@ -935,7 +969,8 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_stickAction", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_stickAction", 1usize
                         )
                     })
             });

@@ -51,7 +51,7 @@ impl crate::Zenject::SceneContextRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>),
                         quest_hook::libil2cpp::Void,
@@ -60,7 +60,8 @@ impl crate::Zenject::SceneContextRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Add", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Add",
+                            1usize
                         )
                     })
             });
@@ -78,7 +79,7 @@ impl crate::Zenject::SceneContextRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::SceneManagement::Scene),
                         quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
@@ -87,7 +88,8 @@ impl crate::Zenject::SceneContextRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetContainerForScene", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetContainerForScene", 1usize
                         )
                     })
             });
@@ -105,7 +107,7 @@ impl crate::Zenject::SceneContextRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
@@ -114,7 +116,8 @@ impl crate::Zenject::SceneContextRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSceneContextForScene", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSceneContextForScene", 1usize
                         )
                     })
             });
@@ -132,7 +135,7 @@ impl crate::Zenject::SceneContextRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::SceneManagement::Scene),
                         quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
@@ -141,7 +144,8 @@ impl crate::Zenject::SceneContextRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSceneContextForScene", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSceneContextForScene", 1usize
                         )
                     })
             });
@@ -164,7 +168,7 @@ impl crate::Zenject::SceneContextRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>),
                         quest_hook::libil2cpp::Void,
@@ -173,7 +177,8 @@ impl crate::Zenject::SceneContextRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Remove", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Remove",
+                            1usize
                         )
                     })
             });
@@ -191,7 +196,7 @@ impl crate::Zenject::SceneContextRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::SceneManagement::Scene),
                         quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
@@ -200,7 +205,8 @@ impl crate::Zenject::SceneContextRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGetContainerForScene", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetContainerForScene", 1usize
                         )
                     })
             });
@@ -218,7 +224,7 @@ impl crate::Zenject::SceneContextRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
@@ -227,7 +233,8 @@ impl crate::Zenject::SceneContextRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGetSceneContextForScene", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetSceneContextForScene", 1usize
                         )
                     })
             });
@@ -245,7 +252,7 @@ impl crate::Zenject::SceneContextRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::SceneManagement::Scene),
                         quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
@@ -254,7 +261,8 @@ impl crate::Zenject::SceneContextRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGetSceneContextForScene", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetSceneContextForScene", 1usize
                         )
                     })
             });
@@ -275,7 +283,7 @@ impl crate::Zenject::SceneContextRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -290,7 +298,8 @@ impl crate::Zenject::SceneContextRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "__zenCreate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "__zenCreate", 1usize
                         )
                     })
             });
@@ -305,7 +314,7 @@ impl crate::Zenject::SceneContextRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
@@ -314,7 +323,8 @@ impl crate::Zenject::SceneContextRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "__zenCreateInjectTypeInfo", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "__zenCreateInjectTypeInfo", 0usize
                         )
                     })
             });
@@ -329,12 +339,13 @@ impl crate::Zenject::SceneContextRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -355,7 +366,7 @@ impl crate::Zenject::SceneContextRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -368,7 +379,8 @@ impl crate::Zenject::SceneContextRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SceneContexts", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SceneContexts", 0usize
                         )
                     })
             });

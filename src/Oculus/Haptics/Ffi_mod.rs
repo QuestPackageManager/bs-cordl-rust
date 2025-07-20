@@ -58,7 +58,7 @@ impl crate::Oculus::Haptics::Ffi {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Oculus::Haptics::Ffi_Result),
                         bool,
@@ -67,7 +67,8 @@ impl crate::Oculus::Haptics::Ffi {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Failed", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Failed",
+                            1usize
                         )
                     })
             });
@@ -87,7 +88,7 @@ impl crate::Oculus::Haptics::Ffi {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Oculus::Haptics::Ffi_Result),
                         bool,
@@ -96,7 +97,8 @@ impl crate::Oculus::Haptics::Ffi {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Succeeded", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Succeeded", 1usize
                         )
                     })
             });
@@ -109,12 +111,13 @@ impl crate::Oculus::Haptics::Ffi {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -130,7 +133,7 @@ impl crate::Oculus::Haptics::Ffi {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, quest_hook::libil2cpp::ByRefMut<f32>),
                         crate::Oculus::Haptics::Ffi_Result,
@@ -139,7 +142,8 @@ impl crate::Oculus::Haptics::Ffi {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "clip_duration", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "clip_duration", 2usize
                         )
                     })
             });
@@ -154,7 +158,7 @@ impl crate::Oculus::Haptics::Ffi {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<i32>),
                         crate::Oculus::Haptics::Ffi_Result,
@@ -163,7 +167,8 @@ impl crate::Oculus::Haptics::Ffi {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "create_player", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "create_player", 1usize
                         )
                     })
             });
@@ -178,7 +183,7 @@ impl crate::Oculus::Haptics::Ffi {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -187,7 +192,8 @@ impl crate::Oculus::Haptics::Ffi {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "error_message", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "error_message", 0usize
                         )
                     })
             });
@@ -202,7 +208,7 @@ impl crate::Oculus::Haptics::Ffi {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::Oculus::Haptics::Ffi_NullBackendStatistics,
@@ -211,7 +217,8 @@ impl crate::Oculus::Haptics::Ffi {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_null_backend_statistics", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_null_backend_statistics", 0usize
                         )
                     })
             });
@@ -226,7 +233,7 @@ impl crate::Oculus::Haptics::Ffi {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::System::IntPtr,
@@ -235,7 +242,8 @@ impl crate::Oculus::Haptics::Ffi {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "haptics_sdk_error_message", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "haptics_sdk_error_message", 0usize
                         )
                     })
             });
@@ -248,7 +256,7 @@ impl crate::Oculus::Haptics::Ffi {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         i32,
@@ -257,7 +265,8 @@ impl crate::Oculus::Haptics::Ffi {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "haptics_sdk_error_message_length", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "haptics_sdk_error_message_length", 0usize
                         )
                     })
             });
@@ -270,7 +279,7 @@ impl crate::Oculus::Haptics::Ffi {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Oculus::Haptics::Ffi_LogCallback,
@@ -281,7 +290,8 @@ impl crate::Oculus::Haptics::Ffi {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "initialize_with_null_backend", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "initialize_with_null_backend", 1usize
                         )
                     })
             });
@@ -303,7 +313,7 @@ impl crate::Oculus::Haptics::Ffi {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -325,7 +335,8 @@ impl crate::Oculus::Haptics::Ffi {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "initialize_with_ovr_plugin", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "initialize_with_ovr_plugin", 4usize
                         )
                     })
             });
@@ -358,7 +369,7 @@ impl crate::Oculus::Haptics::Ffi {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRef<
@@ -386,7 +397,8 @@ impl crate::Oculus::Haptics::Ffi {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "initialize_with_ovr_plugin_bytes", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "initialize_with_ovr_plugin_bytes", 4usize
                         )
                     })
             });
@@ -410,7 +422,7 @@ impl crate::Oculus::Haptics::Ffi {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<bool>),
                         crate::Oculus::Haptics::Ffi_Result,
@@ -419,7 +431,8 @@ impl crate::Oculus::Haptics::Ffi {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "initialized", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "initialized", 1usize
                         )
                     })
             });
@@ -435,7 +448,7 @@ impl crate::Oculus::Haptics::Ffi {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -449,7 +462,8 @@ impl crate::Oculus::Haptics::Ffi {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "load_clip", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "load_clip", 2usize
                         )
                     })
             });
@@ -468,7 +482,7 @@ impl crate::Oculus::Haptics::Ffi {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRef<
@@ -485,7 +499,8 @@ impl crate::Oculus::Haptics::Ffi {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "load_clip_bytes", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "load_clip_bytes", 3usize
                         )
                     })
             });
@@ -501,7 +516,7 @@ impl crate::Oculus::Haptics::Ffi {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, quest_hook::libil2cpp::ByRefMut<f32>),
                         crate::Oculus::Haptics::Ffi_Result,
@@ -510,7 +525,8 @@ impl crate::Oculus::Haptics::Ffi {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "player_amplitude", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "player_amplitude", 2usize
                         )
                     })
             });
@@ -526,7 +542,7 @@ impl crate::Oculus::Haptics::Ffi {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, quest_hook::libil2cpp::ByRefMut<f32>),
                         crate::Oculus::Haptics::Ffi_Result,
@@ -535,7 +551,8 @@ impl crate::Oculus::Haptics::Ffi {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "player_frequency_shift", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "player_frequency_shift", 2usize
                         )
                     })
             });
@@ -551,7 +568,7 @@ impl crate::Oculus::Haptics::Ffi {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, quest_hook::libil2cpp::ByRefMut<bool>),
                         crate::Oculus::Haptics::Ffi_Result,
@@ -560,7 +577,8 @@ impl crate::Oculus::Haptics::Ffi {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "player_looping_enabled", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "player_looping_enabled", 2usize
                         )
                     })
             });
@@ -576,7 +594,7 @@ impl crate::Oculus::Haptics::Ffi {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, crate::Oculus::Haptics::Ffi_Controller),
                         crate::Oculus::Haptics::Ffi_Result,
@@ -585,7 +603,8 @@ impl crate::Oculus::Haptics::Ffi {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "player_play", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "player_play", 2usize
                         )
                     })
             });
@@ -601,7 +620,7 @@ impl crate::Oculus::Haptics::Ffi {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, quest_hook::libil2cpp::ByRefMut<u32>),
                         crate::Oculus::Haptics::Ffi_Result,
@@ -610,7 +629,8 @@ impl crate::Oculus::Haptics::Ffi {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "player_priority", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "player_priority", 2usize
                         )
                     })
             });
@@ -626,7 +646,7 @@ impl crate::Oculus::Haptics::Ffi {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, f32),
                         crate::Oculus::Haptics::Ffi_Result,
@@ -635,7 +655,8 @@ impl crate::Oculus::Haptics::Ffi {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "player_set_amplitude", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "player_set_amplitude", 2usize
                         )
                     })
             });
@@ -651,7 +672,7 @@ impl crate::Oculus::Haptics::Ffi {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, i32),
                         crate::Oculus::Haptics::Ffi_Result,
@@ -660,7 +681,8 @@ impl crate::Oculus::Haptics::Ffi {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "player_set_clip", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "player_set_clip", 2usize
                         )
                     })
             });
@@ -676,7 +698,7 @@ impl crate::Oculus::Haptics::Ffi {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, f32),
                         crate::Oculus::Haptics::Ffi_Result,
@@ -685,7 +707,8 @@ impl crate::Oculus::Haptics::Ffi {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "player_set_frequency_shift", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "player_set_frequency_shift", 2usize
                         )
                     })
             });
@@ -701,7 +724,7 @@ impl crate::Oculus::Haptics::Ffi {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, bool),
                         crate::Oculus::Haptics::Ffi_Result,
@@ -710,7 +733,8 @@ impl crate::Oculus::Haptics::Ffi {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "player_set_looping_enabled", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "player_set_looping_enabled", 2usize
                         )
                     })
             });
@@ -726,7 +750,7 @@ impl crate::Oculus::Haptics::Ffi {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, u32),
                         crate::Oculus::Haptics::Ffi_Result,
@@ -735,7 +759,8 @@ impl crate::Oculus::Haptics::Ffi {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "player_set_priority", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "player_set_priority", 2usize
                         )
                     })
             });
@@ -750,7 +775,7 @@ impl crate::Oculus::Haptics::Ffi {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         crate::Oculus::Haptics::Ffi_Result,
@@ -759,7 +784,8 @@ impl crate::Oculus::Haptics::Ffi {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "player_stop", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "player_stop", 1usize
                         )
                     })
             });
@@ -774,7 +800,7 @@ impl crate::Oculus::Haptics::Ffi {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         crate::Oculus::Haptics::Ffi_Result,
@@ -783,7 +809,8 @@ impl crate::Oculus::Haptics::Ffi {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "release_clip", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "release_clip", 1usize
                         )
                     })
             });
@@ -798,7 +825,7 @@ impl crate::Oculus::Haptics::Ffi {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         crate::Oculus::Haptics::Ffi_Result,
@@ -807,7 +834,8 @@ impl crate::Oculus::Haptics::Ffi {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "release_player", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "release_player", 1usize
                         )
                     })
             });
@@ -822,7 +850,7 @@ impl crate::Oculus::Haptics::Ffi {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         crate::Oculus::Haptics::Ffi_Result,
@@ -831,7 +859,8 @@ impl crate::Oculus::Haptics::Ffi {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_suspended", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_suspended", 1usize
                         )
                     })
             });
@@ -846,7 +875,7 @@ impl crate::Oculus::Haptics::Ffi {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::Oculus::Haptics::Ffi_Result,
@@ -855,7 +884,8 @@ impl crate::Oculus::Haptics::Ffi {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "uninitialize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "uninitialize", 0usize
                         )
                     })
             });
@@ -870,7 +900,7 @@ impl crate::Oculus::Haptics::Ffi {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::Oculus::Haptics::Ffi_SdkVersion,
@@ -879,7 +909,8 @@ impl crate::Oculus::Haptics::Ffi {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "version", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "version",
+                            0usize
                         )
                     })
             });
@@ -1038,7 +1069,7 @@ impl crate::Oculus::Haptics::Ffi_LogCallback {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::Oculus::Haptics::Ffi_LogLevel,
@@ -1056,7 +1087,8 @@ impl crate::Oculus::Haptics::Ffi_LogCallback {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BeginInvoke", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BeginInvoke", 4usize
                         )
                     })
             });
@@ -1072,7 +1104,7 @@ impl crate::Oculus::Haptics::Ffi_LogCallback {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
                         quest_hook::libil2cpp::Void,
@@ -1081,7 +1113,8 @@ impl crate::Oculus::Haptics::Ffi_LogCallback {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EndInvoke", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EndInvoke", 1usize
                         )
                     })
             });
@@ -1098,7 +1131,7 @@ impl crate::Oculus::Haptics::Ffi_LogCallback {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::Oculus::Haptics::Ffi_LogLevel,
@@ -1112,7 +1145,8 @@ impl crate::Oculus::Haptics::Ffi_LogCallback {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Invoke", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Invoke",
+                            2usize
                         )
                     })
             });
@@ -1139,7 +1173,7 @@ impl crate::Oculus::Haptics::Ffi_LogCallback {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1153,7 +1187,8 @@ impl crate::Oculus::Haptics::Ffi_LogCallback {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });

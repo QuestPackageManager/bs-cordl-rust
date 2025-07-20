@@ -42,7 +42,7 @@ impl crate::System::Platform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -51,7 +51,8 @@ impl crate::System::Platform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckOS", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "CheckOS",
+                            0usize
                         )
                     })
             });
@@ -64,12 +65,13 @@ impl crate::System::Platform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_IsAix")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsAix", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsAix", 0usize
                         )
                     })
             });
@@ -80,12 +82,13 @@ impl crate::System::Platform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_IsFreeBSD")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsFreeBSD", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsFreeBSD", 0usize
                         )
                     })
             });
@@ -96,12 +99,13 @@ impl crate::System::Platform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_IsIBMi")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsIBMi", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsIBMi", 0usize
                         )
                     })
             });
@@ -112,12 +116,13 @@ impl crate::System::Platform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_IsMacOS")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsMacOS", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsMacOS", 0usize
                         )
                     })
             });
@@ -128,12 +133,13 @@ impl crate::System::Platform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_IsOpenBSD")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsOpenBSD", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsOpenBSD", 0usize
                         )
                     })
             });
@@ -144,12 +150,13 @@ impl crate::System::Platform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(crate::System::IntPtr), i32, 1usize>("uname")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "uname", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "uname",
+                            1usize
                         )
                     })
             });

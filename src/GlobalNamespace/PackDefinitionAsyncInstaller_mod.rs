@@ -54,7 +54,7 @@ impl crate::GlobalNamespace::PackDefinitionAsyncInstaller {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -63,7 +63,8 @@ impl crate::GlobalNamespace::PackDefinitionAsyncInstaller {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstallBindings", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstallBindings", 0usize
                         )
                     })
             });
@@ -88,7 +89,7 @@ impl crate::GlobalNamespace::PackDefinitionAsyncInstaller {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::System::Nullable_1<
@@ -107,7 +108,8 @@ impl crate::GlobalNamespace::PackDefinitionAsyncInstaller {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadPackDefinitionListAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadPackDefinitionListAsync", 0usize
                         )
                     })
             });
@@ -138,7 +140,7 @@ impl crate::GlobalNamespace::PackDefinitionAsyncInstaller {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -158,7 +160,8 @@ impl crate::GlobalNamespace::PackDefinitionAsyncInstaller {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadResourcesBeforeInstall", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadResourcesBeforeInstall", 2usize
                         )
                     })
             });
@@ -180,12 +183,13 @@ impl crate::GlobalNamespace::PackDefinitionAsyncInstaller {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -202,7 +206,7 @@ impl crate::GlobalNamespace::PackDefinitionAsyncInstaller {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -211,7 +215,8 @@ impl crate::GlobalNamespace::PackDefinitionAsyncInstaller {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_assetLabelRuntimeKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_assetLabelRuntimeKey", 0usize
                         )
                     })
             });

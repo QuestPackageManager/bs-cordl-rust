@@ -87,12 +87,13 @@ impl crate::GlobalNamespace::SongPreviewPlayer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Awake", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Awake",
+                            0usize
                         )
                     })
             });
@@ -110,7 +111,7 @@ impl crate::GlobalNamespace::SongPreviewPlayer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Gc<
@@ -121,7 +122,8 @@ impl crate::GlobalNamespace::SongPreviewPlayer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CrossFadeAfterDelayCoroutine", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CrossFadeAfterDelayCoroutine", 1usize
                         )
                     })
             });
@@ -136,7 +138,7 @@ impl crate::GlobalNamespace::SongPreviewPlayer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -145,7 +147,8 @@ impl crate::GlobalNamespace::SongPreviewPlayer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CrossfadeToDefault", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CrossfadeToDefault", 0usize
                         )
                     })
             });
@@ -161,7 +164,7 @@ impl crate::GlobalNamespace::SongPreviewPlayer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>),
                         quest_hook::libil2cpp::Void,
@@ -170,7 +173,8 @@ impl crate::GlobalNamespace::SongPreviewPlayer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CrossfadeToNewDefault", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CrossfadeToNewDefault", 1usize
                         )
                     })
             });
@@ -190,7 +194,7 @@ impl crate::GlobalNamespace::SongPreviewPlayer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
@@ -205,7 +209,8 @@ impl crate::GlobalNamespace::SongPreviewPlayer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CrossfadeTo", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CrossfadeTo", 5usize
                         )
                     })
             });
@@ -230,7 +235,7 @@ impl crate::GlobalNamespace::SongPreviewPlayer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
@@ -246,7 +251,8 @@ impl crate::GlobalNamespace::SongPreviewPlayer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CrossfadeTo", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CrossfadeTo", 6usize
                         )
                     })
             });
@@ -273,12 +279,13 @@ impl crate::GlobalNamespace::SongPreviewPlayer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>("FadeOut")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FadeOut", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "FadeOut",
+                            1usize
                         )
                     })
             });
@@ -300,12 +307,13 @@ impl crate::GlobalNamespace::SongPreviewPlayer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDisable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDisable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDisable", 0usize
                         )
                     })
             });
@@ -320,12 +328,13 @@ impl crate::GlobalNamespace::SongPreviewPlayer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnEnable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnEnable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnEnable", 0usize
                         )
                     })
             });
@@ -340,7 +349,7 @@ impl crate::GlobalNamespace::SongPreviewPlayer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -349,7 +358,8 @@ impl crate::GlobalNamespace::SongPreviewPlayer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PauseCurrentChannel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PauseCurrentChannel", 0usize
                         )
                     })
             });
@@ -365,7 +375,7 @@ impl crate::GlobalNamespace::SongPreviewPlayer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -374,7 +384,8 @@ impl crate::GlobalNamespace::SongPreviewPlayer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReportChannelDidFadeOut", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReportChannelDidFadeOut", 1usize
                         )
                     })
             });
@@ -389,12 +400,13 @@ impl crate::GlobalNamespace::SongPreviewPlayer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Start", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Start",
+                            0usize
                         )
                     })
             });
@@ -409,7 +421,7 @@ impl crate::GlobalNamespace::SongPreviewPlayer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -418,7 +430,8 @@ impl crate::GlobalNamespace::SongPreviewPlayer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnPauseCurrentChannel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnPauseCurrentChannel", 0usize
                         )
                     })
             });
@@ -433,12 +446,13 @@ impl crate::GlobalNamespace::SongPreviewPlayer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Update")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Update", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Update",
+                            0usize
                         )
                     })
             });
@@ -453,12 +467,13 @@ impl crate::GlobalNamespace::SongPreviewPlayer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -475,7 +490,7 @@ impl crate::GlobalNamespace::SongPreviewPlayer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
@@ -484,7 +499,8 @@ impl crate::GlobalNamespace::SongPreviewPlayer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_activeAudioClip", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_activeAudioClip", 0usize
                         )
                     })
             });
@@ -501,7 +517,7 @@ impl crate::GlobalNamespace::SongPreviewPlayer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
@@ -510,7 +526,8 @@ impl crate::GlobalNamespace::SongPreviewPlayer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_defaultAudioClip", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_defaultAudioClip", 0usize
                         )
                     })
             });
@@ -587,12 +604,13 @@ impl crate::GlobalNamespace::SongPreviewPlayer_AudioSourceParams {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -607,7 +625,7 @@ impl crate::GlobalNamespace::SongPreviewPlayer_AudioSourceParams {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector3,
@@ -616,7 +634,8 @@ impl crate::GlobalNamespace::SongPreviewPlayer_AudioSourceParams {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_position", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_position", 0usize
                         )
                     })
             });
@@ -629,12 +648,13 @@ impl crate::GlobalNamespace::SongPreviewPlayer_AudioSourceParams {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_reverbZoneMix")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_reverbZoneMix", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_reverbZoneMix", 0usize
                         )
                     })
             });
@@ -645,12 +665,13 @@ impl crate::GlobalNamespace::SongPreviewPlayer_AudioSourceParams {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_spatialBlend")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_spatialBlend", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_spatialBlend", 0usize
                         )
                     })
             });
@@ -661,12 +682,13 @@ impl crate::GlobalNamespace::SongPreviewPlayer_AudioSourceParams {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_spread")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_spread", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_spread", 0usize
                         )
                     })
             });
@@ -746,7 +768,7 @@ impl crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>),
                         quest_hook::libil2cpp::Void,
@@ -755,7 +777,8 @@ impl crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -768,12 +791,13 @@ impl crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_maxVolume")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_maxVolume", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_maxVolume", 0usize
                         )
                     })
             });
@@ -784,12 +808,13 @@ impl crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_volume")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_volume", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_volume", 0usize
                         )
                     })
             });
@@ -803,7 +828,7 @@ impl crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -812,7 +837,8 @@ impl crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_maxVolume", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_maxVolume", 1usize
                         )
                     })
             });
@@ -828,7 +854,7 @@ impl crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -837,7 +863,8 @@ impl crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_volume", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_volume", 1usize
                         )
                     })
             });
@@ -915,12 +942,13 @@ impl crate::GlobalNamespace::SongPreviewPlayer_InitData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });

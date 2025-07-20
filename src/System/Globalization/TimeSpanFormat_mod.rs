@@ -51,7 +51,7 @@ impl crate::System::Globalization::TimeSpanFormat {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -66,7 +66,8 @@ impl crate::System::Globalization::TimeSpanFormat {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AppendNonNegativeInt32", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AppendNonNegativeInt32", 3usize
                         )
                     })
             });
@@ -85,7 +86,7 @@ impl crate::System::Globalization::TimeSpanFormat {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::TimeSpan,
@@ -100,7 +101,8 @@ impl crate::System::Globalization::TimeSpanFormat {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Format", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Format",
+                            3usize
                         )
                     })
             });
@@ -122,7 +124,7 @@ impl crate::System::Globalization::TimeSpanFormat {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::TimeSpan,
@@ -138,7 +140,8 @@ impl crate::System::Globalization::TimeSpanFormat {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FormatCustomized", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FormatCustomized", 4usize
                         )
                     })
             });
@@ -158,7 +161,7 @@ impl crate::System::Globalization::TimeSpanFormat {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::TimeSpan,
@@ -172,7 +175,8 @@ impl crate::System::Globalization::TimeSpanFormat {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FormatStandard", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FormatStandard", 4usize
                         )
                     })
             });
@@ -191,7 +195,7 @@ impl crate::System::Globalization::TimeSpanFormat {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::TimeSpan,
@@ -204,7 +208,8 @@ impl crate::System::Globalization::TimeSpanFormat {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FormatToBuilder", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FormatToBuilder", 3usize
                         )
                     })
             });
@@ -223,7 +228,7 @@ impl crate::System::Globalization::TimeSpanFormat {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::TimeSpan,
@@ -238,7 +243,8 @@ impl crate::System::Globalization::TimeSpanFormat {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryFormat", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryFormat", 5usize
                         )
                     })
             });
@@ -382,7 +388,7 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::ReadOnlySpan_1<char>, bool),
                         quest_hook::libil2cpp::Void,
@@ -391,7 +397,8 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Init", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            2usize
                         )
                     })
             });
@@ -408,7 +415,7 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         crate::System::Globalization::TimeSpanFormat_FormatLiterals,
@@ -417,7 +424,8 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitInvariant", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitInvariant", 1usize
                         )
                     })
             });
@@ -434,7 +442,7 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -443,7 +451,8 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_DayHourSep", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_DayHourSep", 0usize
                         )
                     })
             });
@@ -460,7 +469,7 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -469,7 +478,8 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_End", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_End",
+                            0usize
                         )
                     })
             });
@@ -486,7 +496,7 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -495,7 +505,8 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_HourMinuteSep", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_HourMinuteSep", 0usize
                         )
                     })
             });
@@ -512,7 +523,7 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -521,7 +532,8 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_MinuteSecondSep", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_MinuteSecondSep", 0usize
                         )
                     })
             });
@@ -538,7 +550,7 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -547,7 +559,8 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SecondFractionSep", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SecondFractionSep", 0usize
                         )
                     })
             });
@@ -564,7 +577,7 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -573,7 +586,8 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Start", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Start", 0usize
                         )
                     })
             });

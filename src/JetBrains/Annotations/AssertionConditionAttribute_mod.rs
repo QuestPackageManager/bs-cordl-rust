@@ -56,7 +56,7 @@ impl crate::JetBrains::Annotations::AssertionConditionAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::JetBrains::Annotations::AssertionConditionType),
                         quest_hook::libil2cpp::Void,
@@ -65,7 +65,8 @@ impl crate::JetBrains::Annotations::AssertionConditionAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -82,7 +83,7 @@ impl crate::JetBrains::Annotations::AssertionConditionAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::JetBrains::Annotations::AssertionConditionType,
@@ -91,7 +92,8 @@ impl crate::JetBrains::Annotations::AssertionConditionAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ConditionType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ConditionType", 0usize
                         )
                     })
             });
@@ -107,7 +109,7 @@ impl crate::JetBrains::Annotations::AssertionConditionAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::JetBrains::Annotations::AssertionConditionType),
                         quest_hook::libil2cpp::Void,
@@ -116,7 +118,8 @@ impl crate::JetBrains::Annotations::AssertionConditionAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_ConditionType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_ConditionType", 1usize
                         )
                     })
             });

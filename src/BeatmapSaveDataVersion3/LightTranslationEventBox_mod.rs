@@ -116,7 +116,7 @@ impl crate::BeatmapSaveDataVersion3::LightTranslationEventBox {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -144,7 +144,8 @@ impl crate::BeatmapSaveDataVersion3::LightTranslationEventBox {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 10usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            10usize
                         )
                     })
             });
@@ -174,7 +175,7 @@ impl crate::BeatmapSaveDataVersion3::LightTranslationEventBox {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::BeatmapSaveDataCommon::Axis,
@@ -183,7 +184,8 @@ impl crate::BeatmapSaveDataVersion3::LightTranslationEventBox {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_axis", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_axis", 0usize
                         )
                     })
             });
@@ -196,12 +198,13 @@ impl crate::BeatmapSaveDataVersion3::LightTranslationEventBox {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_flipTranslation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_flipTranslation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_flipTranslation", 0usize
                         )
                     })
             });
@@ -214,7 +217,7 @@ impl crate::BeatmapSaveDataVersion3::LightTranslationEventBox {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::BeatmapSaveDataCommon::EaseType,
@@ -223,7 +226,8 @@ impl crate::BeatmapSaveDataVersion3::LightTranslationEventBox {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_gapDistributionEaseType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_gapDistributionEaseType", 0usize
                         )
                     })
             });
@@ -236,12 +240,13 @@ impl crate::BeatmapSaveDataVersion3::LightTranslationEventBox {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_gapDistributionParam")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_gapDistributionParam", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_gapDistributionParam", 0usize
                         )
                     })
             });
@@ -256,7 +261,7 @@ impl crate::BeatmapSaveDataVersion3::LightTranslationEventBox {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::BeatmapSaveDataCommon::DistributionParamType,
@@ -265,7 +270,8 @@ impl crate::BeatmapSaveDataVersion3::LightTranslationEventBox {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_gapDistributionParamType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_gapDistributionParamType", 0usize
                         )
                     })
             });
@@ -280,7 +286,7 @@ impl crate::BeatmapSaveDataVersion3::LightTranslationEventBox {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         bool,
@@ -289,7 +295,7 @@ impl crate::BeatmapSaveDataVersion3::LightTranslationEventBox {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "get_gapDistributionShouldAffectFirstBaseEvent", 0usize
                         )
                     })
@@ -311,7 +317,7 @@ impl crate::BeatmapSaveDataVersion3::LightTranslationEventBox {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -326,7 +332,8 @@ impl crate::BeatmapSaveDataVersion3::LightTranslationEventBox {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_lightTranslationBaseDataList", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_lightTranslationBaseDataList", 0usize
                         )
                     })
             });

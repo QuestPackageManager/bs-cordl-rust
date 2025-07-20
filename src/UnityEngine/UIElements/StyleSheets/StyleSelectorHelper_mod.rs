@@ -66,7 +66,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StyleSelectorHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -100,7 +100,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::StyleSelectorHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FastLookup", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FastLookup", 5usize
                         )
                     })
             });
@@ -124,7 +125,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StyleSelectorHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -143,7 +144,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::StyleSelectorHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FindMatches", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindMatches", 3usize
                         )
                     })
             });
@@ -169,7 +171,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StyleSelectorHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -193,7 +195,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::StyleSelectorHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MatchRightToLeft", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MatchRightToLeft", 3usize
                         )
                     })
             });
@@ -215,7 +218,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StyleSelectorHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -231,7 +234,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::StyleSelectorHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MatchesSelector", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MatchesSelector", 2usize
                         )
                     })
             });

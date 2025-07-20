@@ -48,7 +48,7 @@ impl crate::GlobalNamespace::FileStorageExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -65,7 +65,8 @@ impl crate::GlobalNamespace::FileStorageExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DeleteFile", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DeleteFile", 3usize
                         )
                     })
             });
@@ -82,7 +83,7 @@ impl crate::GlobalNamespace::FileStorageExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -99,7 +100,8 @@ impl crate::GlobalNamespace::FileStorageExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FileExists", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FileExists", 3usize
                         )
                     })
             });
@@ -118,7 +120,7 @@ impl crate::GlobalNamespace::FileStorageExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -135,7 +137,8 @@ impl crate::GlobalNamespace::FileStorageExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadFile", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadFile", 3usize
                         )
                     })
             });
@@ -158,7 +161,7 @@ impl crate::GlobalNamespace::FileStorageExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -175,7 +178,8 @@ impl crate::GlobalNamespace::FileStorageExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadFromJSONFile", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadFromJSONFile", 3usize
                         )
                     })
             });
@@ -198,7 +202,7 @@ impl crate::GlobalNamespace::FileStorageExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -217,7 +221,8 @@ impl crate::GlobalNamespace::FileStorageExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadFromJSONFileAsync", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadFromJSONFileAsync", 3usize
                         )
                     })
             });
@@ -237,7 +242,7 @@ impl crate::GlobalNamespace::FileStorageExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -257,7 +262,8 @@ impl crate::GlobalNamespace::FileStorageExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SaveFile", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SaveFile", 4usize
                         )
                     })
             });
@@ -278,7 +284,7 @@ impl crate::GlobalNamespace::FileStorageExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -301,7 +307,8 @@ impl crate::GlobalNamespace::FileStorageExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SaveToJSONFile", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SaveToJSONFile", 5usize
                         )
                     })
             });
@@ -334,7 +341,7 @@ impl crate::GlobalNamespace::FileStorageExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -357,7 +364,8 @@ impl crate::GlobalNamespace::FileStorageExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SaveToJSONFileAsync", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SaveToJSONFileAsync", 5usize
                         )
                     })
             });

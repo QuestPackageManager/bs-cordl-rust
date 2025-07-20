@@ -50,7 +50,7 @@ impl crate::Unity::XR::Oculus::Stats {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -61,7 +61,8 @@ impl crate::Unity::XR::Oculus::Stats {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetOculusDisplaySubsystem", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetOculusDisplaySubsystem", 0usize
                         )
                     })
             });
@@ -83,12 +84,13 @@ impl crate::Unity::XR::Oculus::Stats {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -103,7 +105,7 @@ impl crate::Unity::XR::Oculus::Stats {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -112,7 +114,8 @@ impl crate::Unity::XR::Oculus::Stats {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_PluginVersion", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_PluginVersion", 0usize
                         )
                     })
             });
@@ -176,7 +179,7 @@ impl crate::Unity::XR::Oculus::Stats_AdaptivePerformance {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         f32,
@@ -185,7 +188,8 @@ impl crate::Unity::XR::Oculus::Stats_AdaptivePerformance {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AdaptivePerformanceScale", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AdaptivePerformanceScale", 0usize
                         )
                     })
             });
@@ -196,12 +200,13 @@ impl crate::Unity::XR::Oculus::Stats_AdaptivePerformance {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_BatteryLevel")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_BatteryLevel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_BatteryLevel", 0usize
                         )
                     })
             });
@@ -212,12 +217,13 @@ impl crate::Unity::XR::Oculus::Stats_AdaptivePerformance {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_BatteryTemp")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_BatteryTemp", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_BatteryTemp", 0usize
                         )
                     })
             });
@@ -228,12 +234,13 @@ impl crate::Unity::XR::Oculus::Stats_AdaptivePerformance {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("get_CPULevel")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CPULevel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CPULevel", 0usize
                         )
                     })
             });
@@ -244,12 +251,13 @@ impl crate::Unity::XR::Oculus::Stats_AdaptivePerformance {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_GPUAppTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_GPUAppTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_GPUAppTime", 0usize
                         )
                     })
             });
@@ -260,12 +268,13 @@ impl crate::Unity::XR::Oculus::Stats_AdaptivePerformance {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_GPUCompositorTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_GPUCompositorTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_GPUCompositorTime", 0usize
                         )
                     })
             });
@@ -276,12 +285,13 @@ impl crate::Unity::XR::Oculus::Stats_AdaptivePerformance {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("get_GPULevel")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_GPULevel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_GPULevel", 0usize
                         )
                     })
             });
@@ -292,12 +302,13 @@ impl crate::Unity::XR::Oculus::Stats_AdaptivePerformance {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_MotionToPhoton")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_MotionToPhoton", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_MotionToPhoton", 0usize
                         )
                     })
             });
@@ -308,12 +319,13 @@ impl crate::Unity::XR::Oculus::Stats_AdaptivePerformance {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_PowerSavingMode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_PowerSavingMode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_PowerSavingMode", 0usize
                         )
                     })
             });
@@ -324,12 +336,13 @@ impl crate::Unity::XR::Oculus::Stats_AdaptivePerformance {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_RefreshRate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_RefreshRate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_RefreshRate", 0usize
                         )
                     })
             });
@@ -393,7 +406,7 @@ impl crate::Unity::XR::Oculus::Stats_AppMetrics {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -402,7 +415,8 @@ impl crate::Unity::XR::Oculus::Stats_AppMetrics {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnableAppMetrics", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnableAppMetrics", 1usize
                         )
                     })
             });
@@ -415,12 +429,13 @@ impl crate::Unity::XR::Oculus::Stats_AppMetrics {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_AppCPUElapsedTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AppCPUElapsedTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AppCPUElapsedTime", 0usize
                         )
                     })
             });
@@ -431,12 +446,13 @@ impl crate::Unity::XR::Oculus::Stats_AppMetrics {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_AppQueueAheadTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AppQueueAheadTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AppQueueAheadTime", 0usize
                         )
                     })
             });
@@ -447,12 +463,13 @@ impl crate::Unity::XR::Oculus::Stats_AppMetrics {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_CPUStartToGPUEnd")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CPUStartToGPUEnd", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CPUStartToGPUEnd", 0usize
                         )
                     })
             });
@@ -463,12 +480,13 @@ impl crate::Unity::XR::Oculus::Stats_AppMetrics {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_CompositorCPUTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CompositorCPUTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CompositorCPUTime", 0usize
                         )
                     })
             });
@@ -479,12 +497,13 @@ impl crate::Unity::XR::Oculus::Stats_AppMetrics {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_CompositorDroppedFrames")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CompositorDroppedFrames", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CompositorDroppedFrames", 0usize
                         )
                     })
             });
@@ -495,12 +514,13 @@ impl crate::Unity::XR::Oculus::Stats_AppMetrics {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_CompositorLatency")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CompositorLatency", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CompositorLatency", 0usize
                         )
                     })
             });
@@ -511,12 +531,13 @@ impl crate::Unity::XR::Oculus::Stats_AppMetrics {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_GPUEndToVsync")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_GPUEndToVsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_GPUEndToVsync", 0usize
                         )
                     })
             });
@@ -579,7 +600,7 @@ impl crate::Unity::XR::Oculus::Stats_PerfMetrics {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -588,7 +609,8 @@ impl crate::Unity::XR::Oculus::Stats_PerfMetrics {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnablePerfMetrics", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnablePerfMetrics", 1usize
                         )
                     })
             });
@@ -601,12 +623,13 @@ impl crate::Unity::XR::Oculus::Stats_PerfMetrics {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_AppCPUTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AppCPUTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AppCPUTime", 0usize
                         )
                     })
             });
@@ -617,12 +640,13 @@ impl crate::Unity::XR::Oculus::Stats_PerfMetrics {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_AppGPUTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AppGPUTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AppGPUTime", 0usize
                         )
                     })
             });
@@ -633,12 +657,13 @@ impl crate::Unity::XR::Oculus::Stats_PerfMetrics {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_CPUClockFrequency")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CPUClockFrequency", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CPUClockFrequency", 0usize
                         )
                     })
             });
@@ -649,12 +674,13 @@ impl crate::Unity::XR::Oculus::Stats_PerfMetrics {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_CPUUtilizationAverage")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CPUUtilizationAverage", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CPUUtilizationAverage", 0usize
                         )
                     })
             });
@@ -665,12 +691,13 @@ impl crate::Unity::XR::Oculus::Stats_PerfMetrics {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_CPUUtilizationWorst")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CPUUtilizationWorst", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CPUUtilizationWorst", 0usize
                         )
                     })
             });
@@ -681,12 +708,13 @@ impl crate::Unity::XR::Oculus::Stats_PerfMetrics {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_CompositorCPUTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CompositorCPUTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CompositorCPUTime", 0usize
                         )
                     })
             });
@@ -697,12 +725,13 @@ impl crate::Unity::XR::Oculus::Stats_PerfMetrics {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_CompositorGPUTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CompositorGPUTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CompositorGPUTime", 0usize
                         )
                     })
             });
@@ -713,12 +742,13 @@ impl crate::Unity::XR::Oculus::Stats_PerfMetrics {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_GPUClockFrequency")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_GPUClockFrequency", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_GPUClockFrequency", 0usize
                         )
                     })
             });
@@ -729,12 +759,13 @@ impl crate::Unity::XR::Oculus::Stats_PerfMetrics {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_GPUUtilization")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_GPUUtilization", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_GPUUtilization", 0usize
                         )
                     })
             });

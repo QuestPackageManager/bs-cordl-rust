@@ -66,7 +66,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -75,7 +75,8 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LaunchKeyboardSelection", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LaunchKeyboardSelection", 0usize
                         )
                     })
             });
@@ -97,7 +98,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -106,7 +107,8 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetDiffuseShader", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetDiffuseShader", 0usize
                         )
                     })
             });
@@ -121,7 +123,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -130,7 +132,8 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetPresentationKeyLabels", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetPresentationKeyLabels", 0usize
                         )
                     })
             });
@@ -145,7 +148,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -154,7 +157,8 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetPresentationOpaque", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetPresentationOpaque", 0usize
                         )
                     })
             });
@@ -172,7 +176,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -183,7 +187,8 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetShaderCoroutine", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetShaderCoroutine", 1usize
                         )
                     })
             });
@@ -199,7 +204,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -208,7 +213,8 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetTrackingEnabled", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetTrackingEnabled", 1usize
                         )
                     })
             });
@@ -223,7 +229,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -232,7 +238,8 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetUnlitShader", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetUnlitShader", 0usize
                         )
                     })
             });
@@ -247,12 +254,13 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Start", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Start",
+                            0usize
                         )
                     })
             });
@@ -267,12 +275,13 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Update")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Update", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Update",
+                            0usize
                         )
                     })
             });
@@ -287,12 +296,13 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("<SetShaderCoroutine>b__19_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<SetShaderCoroutine>b__19_0", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<SetShaderCoroutine>b__19_0", 0usize
                         )
                     })
             });
@@ -305,12 +315,13 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

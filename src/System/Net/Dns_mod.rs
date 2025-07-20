@@ -52,7 +52,7 @@ impl crate::System::Net::Dns {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -69,7 +69,8 @@ impl crate::System::Net::Dns {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BeginGetHostAddresses", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BeginGetHostAddresses", 3usize
                         )
                     })
             });
@@ -90,7 +91,7 @@ impl crate::System::Net::Dns {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
                         quest_hook::libil2cpp::Gc<
@@ -103,7 +104,8 @@ impl crate::System::Net::Dns {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EndGetHostAddresses", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EndGetHostAddresses", 1usize
                         )
                     })
             });
@@ -120,7 +122,7 @@ impl crate::System::Net::Dns {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -129,7 +131,8 @@ impl crate::System::Net::Dns {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Error_11001", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Error_11001", 1usize
                         )
                     })
             });
@@ -150,7 +153,7 @@ impl crate::System::Net::Dns {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -163,7 +166,8 @@ impl crate::System::Net::Dns {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHostAddresses", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHostAddresses", 1usize
                         )
                     })
             });
@@ -190,7 +194,7 @@ impl crate::System::Net::Dns {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -207,7 +211,8 @@ impl crate::System::Net::Dns {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHostAddressesAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHostAddressesAsync", 1usize
                         )
                     })
             });
@@ -246,7 +251,7 @@ impl crate::System::Net::Dns {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -283,7 +288,8 @@ impl crate::System::Net::Dns {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHostByAddr_icall", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHostByAddr_icall", 5usize
                         )
                     })
             });
@@ -301,7 +307,7 @@ impl crate::System::Net::Dns {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -315,7 +321,8 @@ impl crate::System::Net::Dns {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHostByAddressFromString", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHostByAddressFromString", 2usize
                         )
                     })
             });
@@ -332,7 +339,7 @@ impl crate::System::Net::Dns {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<crate::System::Net::IPHostEntry>,
@@ -341,7 +348,8 @@ impl crate::System::Net::Dns {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHostByName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHostByName", 1usize
                         )
                     })
             });
@@ -374,7 +382,7 @@ impl crate::System::Net::Dns {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -411,7 +419,8 @@ impl crate::System::Net::Dns {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHostByName_icall", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHostByName_icall", 5usize
                         )
                     })
             });
@@ -428,7 +437,7 @@ impl crate::System::Net::Dns {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>),
                         quest_hook::libil2cpp::Gc<crate::System::Net::IPHostEntry>,
@@ -437,7 +446,8 @@ impl crate::System::Net::Dns {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHostEntry", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHostEntry", 1usize
                         )
                     })
             });
@@ -454,7 +464,7 @@ impl crate::System::Net::Dns {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<crate::System::Net::IPHostEntry>,
@@ -463,7 +473,8 @@ impl crate::System::Net::Dns {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHostEntry", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHostEntry", 1usize
                         )
                     })
             });
@@ -478,7 +489,7 @@ impl crate::System::Net::Dns {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -487,7 +498,8 @@ impl crate::System::Net::Dns {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHostName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHostName", 0usize
                         )
                     })
             });
@@ -504,7 +516,7 @@ impl crate::System::Net::Dns {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             quest_hook::libil2cpp::Gc<
@@ -517,7 +529,8 @@ impl crate::System::Net::Dns {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHostName_icall", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHostName_icall", 1usize
                         )
                     })
             });
@@ -543,7 +556,7 @@ impl crate::System::Net::Dns {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -573,7 +586,8 @@ impl crate::System::Net::Dns {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "hostent_to_IPHostEntry", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "hostent_to_IPHostEntry", 4usize
                         )
                     })
             });
@@ -645,7 +659,7 @@ impl crate::System::Net::Dns_GetHostAddressesCallback {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -662,7 +676,8 @@ impl crate::System::Net::Dns_GetHostAddressesCallback {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BeginInvoke", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BeginInvoke", 3usize
                         )
                     })
             });
@@ -684,7 +699,7 @@ impl crate::System::Net::Dns_GetHostAddressesCallback {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
                         quest_hook::libil2cpp::Gc<
@@ -697,7 +712,8 @@ impl crate::System::Net::Dns_GetHostAddressesCallback {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EndInvoke", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EndInvoke", 1usize
                         )
                     })
             });
@@ -721,7 +737,7 @@ impl crate::System::Net::Dns_GetHostAddressesCallback {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -734,7 +750,8 @@ impl crate::System::Net::Dns_GetHostAddressesCallback {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Invoke", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Invoke",
+                            1usize
                         )
                     })
             });
@@ -763,7 +780,7 @@ impl crate::System::Net::Dns_GetHostAddressesCallback {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -777,7 +794,8 @@ impl crate::System::Net::Dns_GetHostAddressesCallback {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });

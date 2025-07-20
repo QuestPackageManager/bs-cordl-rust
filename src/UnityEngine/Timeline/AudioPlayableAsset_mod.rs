@@ -53,7 +53,7 @@ impl crate::UnityEngine::Timeline::AudioPlayableAsset {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Playables::PlayableGraph,
@@ -65,7 +65,8 @@ impl crate::UnityEngine::Timeline::AudioPlayableAsset {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreatePlayable", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreatePlayable", 2usize
                         )
                     })
             });
@@ -87,12 +88,13 @@ impl crate::UnityEngine::Timeline::AudioPlayableAsset {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -105,12 +107,13 @@ impl crate::UnityEngine::Timeline::AudioPlayableAsset {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_bufferingTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_bufferingTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_bufferingTime", 0usize
                         )
                     })
             });
@@ -125,7 +128,7 @@ impl crate::UnityEngine::Timeline::AudioPlayableAsset {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
@@ -134,7 +137,8 @@ impl crate::UnityEngine::Timeline::AudioPlayableAsset {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_clip", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_clip", 0usize
                         )
                     })
             });
@@ -149,7 +153,7 @@ impl crate::UnityEngine::Timeline::AudioPlayableAsset {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Timeline::ClipCaps,
@@ -158,7 +162,8 @@ impl crate::UnityEngine::Timeline::AudioPlayableAsset {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_clipCaps", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_clipCaps", 0usize
                         )
                     })
             });
@@ -171,12 +176,13 @@ impl crate::UnityEngine::Timeline::AudioPlayableAsset {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f64, 0usize>("get_duration")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_duration", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_duration", 0usize
                         )
                     })
             });
@@ -187,12 +193,13 @@ impl crate::UnityEngine::Timeline::AudioPlayableAsset {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_loop")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_loop", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_loop", 0usize
                         )
                     })
             });
@@ -211,7 +218,7 @@ impl crate::UnityEngine::Timeline::AudioPlayableAsset {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -224,7 +231,8 @@ impl crate::UnityEngine::Timeline::AudioPlayableAsset {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_outputs", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_outputs", 0usize
                         )
                     })
             });
@@ -242,7 +250,7 @@ impl crate::UnityEngine::Timeline::AudioPlayableAsset {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -251,7 +259,8 @@ impl crate::UnityEngine::Timeline::AudioPlayableAsset {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_bufferingTime", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_bufferingTime", 1usize
                         )
                     })
             });
@@ -267,7 +276,7 @@ impl crate::UnityEngine::Timeline::AudioPlayableAsset {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>),
                         quest_hook::libil2cpp::Void,
@@ -276,7 +285,8 @@ impl crate::UnityEngine::Timeline::AudioPlayableAsset {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_clip", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_clip", 1usize
                         )
                     })
             });
@@ -292,7 +302,7 @@ impl crate::UnityEngine::Timeline::AudioPlayableAsset {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -301,7 +311,8 @@ impl crate::UnityEngine::Timeline::AudioPlayableAsset {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_loop", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_loop", 1usize
                         )
                     })
             });

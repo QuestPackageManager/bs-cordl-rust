@@ -45,7 +45,7 @@ impl crate::GlobalNamespace::ColorExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Color, f32),
                         crate::UnityEngine::Color,
@@ -54,7 +54,8 @@ impl crate::GlobalNamespace::ColorExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ColorWithAlpha", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ColorWithAlpha", 2usize
                         )
                     })
             });
@@ -70,7 +71,7 @@ impl crate::GlobalNamespace::ColorExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Color, f32),
                         crate::UnityEngine::Color,
@@ -79,7 +80,8 @@ impl crate::GlobalNamespace::ColorExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ColorWithB", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ColorWithB", 2usize
                         )
                     })
             });
@@ -95,7 +97,7 @@ impl crate::GlobalNamespace::ColorExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Color, f32),
                         crate::UnityEngine::Color,
@@ -104,7 +106,8 @@ impl crate::GlobalNamespace::ColorExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ColorWithG", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ColorWithG", 2usize
                         )
                     })
             });
@@ -120,7 +123,7 @@ impl crate::GlobalNamespace::ColorExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Color, f32),
                         crate::UnityEngine::Color,
@@ -129,7 +132,8 @@ impl crate::GlobalNamespace::ColorExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ColorWithMultipliedAlpha", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ColorWithMultipliedAlpha", 2usize
                         )
                     })
             });
@@ -145,7 +149,7 @@ impl crate::GlobalNamespace::ColorExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Color, f32),
                         crate::UnityEngine::Color,
@@ -154,7 +158,8 @@ impl crate::GlobalNamespace::ColorExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ColorWithR", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ColorWithR", 2usize
                         )
                     })
             });
@@ -170,7 +175,7 @@ impl crate::GlobalNamespace::ColorExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Color, f32),
                         crate::UnityEngine::Color,
@@ -179,7 +184,8 @@ impl crate::GlobalNamespace::ColorExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ColorWithValue", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ColorWithValue", 2usize
                         )
                     })
             });
@@ -195,7 +201,7 @@ impl crate::GlobalNamespace::ColorExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -209,7 +215,8 @@ impl crate::GlobalNamespace::ColorExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FromHtmlStringRGBA", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FromHtmlStringRGBA", 2usize
                         )
                     })
             });
@@ -224,7 +231,7 @@ impl crate::GlobalNamespace::ColorExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         crate::UnityEngine::Color,
@@ -233,7 +240,8 @@ impl crate::GlobalNamespace::ColorExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetColorFromHtmlString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetColorFromHtmlString", 1usize
                         )
                     })
             });
@@ -249,7 +257,7 @@ impl crate::GlobalNamespace::ColorExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Color32, crate::UnityEngine::Color32),
                         bool,
@@ -258,7 +266,8 @@ impl crate::GlobalNamespace::ColorExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsEqualTo", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsEqualTo", 2usize
                         )
                     })
             });
@@ -273,7 +282,7 @@ impl crate::GlobalNamespace::ColorExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Color, crate::UnityEngine::Color, f32),
                         crate::UnityEngine::Color,
@@ -282,7 +291,8 @@ impl crate::GlobalNamespace::ColorExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LerpRGBUnclamped", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LerpRGBUnclamped", 3usize
                         )
                     })
             });
@@ -298,7 +308,7 @@ impl crate::GlobalNamespace::ColorExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Color, f32),
                         crate::UnityEngine::Color,
@@ -307,7 +317,8 @@ impl crate::GlobalNamespace::ColorExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MultiplyRGB", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MultiplyRGB", 2usize
                         )
                     })
             });
@@ -323,7 +334,7 @@ impl crate::GlobalNamespace::ColorExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Color, f32),
                         crate::UnityEngine::Color,
@@ -332,7 +343,8 @@ impl crate::GlobalNamespace::ColorExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SaturatedColor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SaturatedColor", 2usize
                         )
                     })
             });
@@ -347,7 +359,7 @@ impl crate::GlobalNamespace::ColorExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         f32,
@@ -356,7 +368,7 @@ impl crate::GlobalNamespace::ColorExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "<FromHtmlStringRGBA>g__HtmlStringToFloat|0_0", 1usize
                         )
                     })

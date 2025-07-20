@@ -58,7 +58,7 @@ impl crate::UnityOpus::Library {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::IntPtr,
@@ -78,7 +78,8 @@ impl crate::UnityOpus::Library {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OpusDecode", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OpusDecode", 6usize
                         )
                     })
             });
@@ -98,7 +99,7 @@ impl crate::UnityOpus::Library {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::IntPtr,
@@ -118,7 +119,8 @@ impl crate::UnityOpus::Library {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OpusDecodeFloat", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OpusDecodeFloat", 6usize
                         )
                     })
             });
@@ -135,7 +137,7 @@ impl crate::UnityOpus::Library {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityOpus::SamplingFrequency,
@@ -148,7 +150,8 @@ impl crate::UnityOpus::Library {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OpusDecoderCreate", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OpusDecoderCreate", 3usize
                         )
                     })
             });
@@ -163,7 +166,7 @@ impl crate::UnityOpus::Library {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         quest_hook::libil2cpp::Void,
@@ -172,7 +175,8 @@ impl crate::UnityOpus::Library {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OpusDecoderDestroy", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OpusDecoderDestroy", 1usize
                         )
                     })
             });
@@ -191,7 +195,7 @@ impl crate::UnityOpus::Library {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::IntPtr,
@@ -210,7 +214,8 @@ impl crate::UnityOpus::Library {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OpusEncode", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OpusEncode", 5usize
                         )
                     })
             });
@@ -229,7 +234,7 @@ impl crate::UnityOpus::Library {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::IntPtr,
@@ -248,7 +253,8 @@ impl crate::UnityOpus::Library {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OpusEncodeFloat", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OpusEncodeFloat", 5usize
                         )
                     })
             });
@@ -266,7 +272,7 @@ impl crate::UnityOpus::Library {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityOpus::SamplingFrequency,
@@ -280,7 +286,8 @@ impl crate::UnityOpus::Library {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OpusEncoderCreate", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OpusEncoderCreate", 4usize
                         )
                     })
             });
@@ -296,7 +303,7 @@ impl crate::UnityOpus::Library {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         quest_hook::libil2cpp::Void,
@@ -305,7 +312,8 @@ impl crate::UnityOpus::Library {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OpusEncoderDestroy", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OpusEncoderDestroy", 1usize
                         )
                     })
             });
@@ -321,7 +329,7 @@ impl crate::UnityOpus::Library {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, i32),
                         i32,
@@ -330,7 +338,8 @@ impl crate::UnityOpus::Library {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OpusEncoderSetBitrate", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OpusEncoderSetBitrate", 2usize
                         )
                     })
             });
@@ -346,7 +355,7 @@ impl crate::UnityOpus::Library {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, i32),
                         i32,
@@ -355,7 +364,8 @@ impl crate::UnityOpus::Library {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OpusEncoderSetComplexity", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OpusEncoderSetComplexity", 2usize
                         )
                     })
             });
@@ -371,7 +381,7 @@ impl crate::UnityOpus::Library {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, crate::UnityOpus::OpusSignal),
                         i32,
@@ -380,7 +390,8 @@ impl crate::UnityOpus::Library {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OpusEncoderSetSignal", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OpusEncoderSetSignal", 2usize
                         )
                     })
             });
@@ -398,7 +409,7 @@ impl crate::UnityOpus::Library {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -416,7 +427,8 @@ impl crate::UnityOpus::Library {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OpusPcmSoftClip", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OpusPcmSoftClip", 4usize
                         )
                     })
             });
@@ -431,12 +443,13 @@ impl crate::UnityOpus::Library {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

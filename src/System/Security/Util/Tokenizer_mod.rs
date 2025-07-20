@@ -80,7 +80,7 @@ impl crate::System::Security::Util::Tokenizer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -89,7 +89,8 @@ impl crate::System::Security::Util::Tokenizer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BasicInitialization", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BasicInitialization", 0usize
                         )
                     })
             });
@@ -105,7 +106,7 @@ impl crate::System::Security::Util::Tokenizer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>),
                         quest_hook::libil2cpp::Void,
@@ -114,7 +115,8 @@ impl crate::System::Security::Util::Tokenizer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ChangeFormat", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ChangeFormat", 1usize
                         )
                     })
             });
@@ -131,7 +133,7 @@ impl crate::System::Security::Util::Tokenizer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -140,7 +142,8 @@ impl crate::System::Security::Util::Tokenizer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetStringToken", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetStringToken", 0usize
                         )
                     })
             });
@@ -160,7 +163,7 @@ impl crate::System::Security::Util::Tokenizer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -175,7 +178,8 @@ impl crate::System::Security::Util::Tokenizer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTokens", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTokens", 3usize
                         )
                     })
             });
@@ -199,12 +203,13 @@ impl crate::System::Security::Util::Tokenizer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Recycle")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Recycle", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Recycle",
+                            0usize
                         )
                     })
             });
@@ -220,7 +225,7 @@ impl crate::System::Security::Util::Tokenizer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -229,7 +234,8 @@ impl crate::System::Security::Util::Tokenizer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -293,12 +299,13 @@ impl crate::System::Security::Util::Tokenizer_ITokenReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("Read")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Read", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Read",
+                            0usize
                         )
                     })
             });
@@ -377,12 +384,13 @@ impl crate::System::Security::Util::Tokenizer_StreamTokenReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("Read")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Read", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Read",
+                            0usize
                         )
                     })
             });
@@ -396,7 +404,7 @@ impl crate::System::Security::Util::Tokenizer_StreamTokenReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IO::StreamReader>),
                         quest_hook::libil2cpp::Void,
@@ -405,7 +413,8 @@ impl crate::System::Security::Util::Tokenizer_StreamTokenReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -418,12 +427,13 @@ impl crate::System::Security::Util::Tokenizer_StreamTokenReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_NumCharEncountered")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_NumCharEncountered", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_NumCharEncountered", 0usize
                         )
                     })
             });
@@ -515,7 +525,7 @@ impl crate::System::Security::Util::Tokenizer_StringMaker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -532,7 +542,8 @@ impl crate::System::Security::Util::Tokenizer_StringMaker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CompareStringAndChars", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CompareStringAndChars", 3usize
                         )
                     })
             });
@@ -546,7 +557,7 @@ impl crate::System::Security::Util::Tokenizer_StringMaker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -560,7 +571,8 @@ impl crate::System::Security::Util::Tokenizer_StringMaker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HashCharArray", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HashCharArray", 2usize
                         )
                     })
             });
@@ -573,7 +585,7 @@ impl crate::System::Security::Util::Tokenizer_StringMaker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         u32,
@@ -582,7 +594,8 @@ impl crate::System::Security::Util::Tokenizer_StringMaker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HashString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HashString", 1usize
                         )
                     })
             });
@@ -597,7 +610,7 @@ impl crate::System::Security::Util::Tokenizer_StringMaker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -606,7 +619,8 @@ impl crate::System::Security::Util::Tokenizer_StringMaker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MakeString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MakeString", 0usize
                         )
                     })
             });
@@ -628,12 +642,13 @@ impl crate::System::Security::Util::Tokenizer_StringMaker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

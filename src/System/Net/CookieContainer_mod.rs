@@ -52,7 +52,7 @@ impl crate::System::Net::CookieContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Net::Cookie>, bool),
                         quest_hook::libil2cpp::Void,
@@ -61,7 +61,8 @@ impl crate::System::Net::CookieContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Add", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Add",
+                            2usize
                         )
                     })
             });
@@ -78,7 +79,7 @@ impl crate::System::Net::CookieContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -92,7 +93,8 @@ impl crate::System::Net::CookieContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddRemoveDomain", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddRemoveDomain", 2usize
                         )
                     })
             });
@@ -108,7 +110,7 @@ impl crate::System::Net::CookieContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -117,7 +119,8 @@ impl crate::System::Net::CookieContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AgeCookies", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AgeCookies", 1usize
                         )
                     })
             });
@@ -140,7 +143,7 @@ impl crate::System::Net::CookieContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Uri>,
@@ -164,8 +167,8 @@ impl crate::System::Net::CookieContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BuildCookieCollectionFromDomainMatches",
-                            6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BuildCookieCollectionFromDomainMatches", 6usize
                         )
                     })
             });
@@ -190,7 +193,7 @@ impl crate::System::Net::CookieContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Uri>,
@@ -208,7 +211,8 @@ impl crate::System::Net::CookieContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CookieCutter", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CookieCutter", 4usize
                         )
                     })
             });
@@ -226,7 +230,7 @@ impl crate::System::Net::CookieContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Net::CookieCollection,
@@ -237,7 +241,8 @@ impl crate::System::Net::CookieContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExpireCollection", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExpireCollection", 1usize
                         )
                     })
             });
@@ -256,7 +261,7 @@ impl crate::System::Net::CookieContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Uri>,
@@ -272,7 +277,8 @@ impl crate::System::Net::CookieContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCookieHeader", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCookieHeader", 2usize
                         )
                     })
             });
@@ -290,7 +296,7 @@ impl crate::System::Net::CookieContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Uri>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -299,7 +305,8 @@ impl crate::System::Net::CookieContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCookieHeader", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCookieHeader", 1usize
                         )
                     })
             });
@@ -317,7 +324,7 @@ impl crate::System::Net::CookieContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Uri>),
                         quest_hook::libil2cpp::Gc<crate::System::Net::CookieCollection>,
@@ -326,7 +333,8 @@ impl crate::System::Net::CookieContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InternalGetCookies", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InternalGetCookies", 1usize
                         )
                     })
             });
@@ -342,7 +350,7 @@ impl crate::System::Net::CookieContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -351,7 +359,8 @@ impl crate::System::Net::CookieContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsLocalDomain", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsLocalDomain", 1usize
                         )
                     })
             });
@@ -369,7 +378,7 @@ impl crate::System::Net::CookieContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -388,7 +397,8 @@ impl crate::System::Net::CookieContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MergeUpdateCollections", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MergeUpdateCollections", 5usize
                         )
                     })
             });
@@ -414,12 +424,13 @@ impl crate::System::Net::CookieContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

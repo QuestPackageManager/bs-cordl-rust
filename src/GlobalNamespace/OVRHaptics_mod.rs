@@ -48,7 +48,7 @@ impl crate::GlobalNamespace::OVRHaptics {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -57,7 +57,8 @@ impl crate::GlobalNamespace::OVRHaptics {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Process", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Process",
+                            0usize
                         )
                     })
             });
@@ -139,7 +140,7 @@ impl crate::GlobalNamespace::OVRHapticsOutput_OVRHaptics_ClipPlaybackTracker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::OVRHapticsClip,
@@ -150,7 +151,8 @@ impl crate::GlobalNamespace::OVRHapticsOutput_OVRHaptics_ClipPlaybackTracker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -167,7 +169,7 @@ impl crate::GlobalNamespace::OVRHapticsOutput_OVRHaptics_ClipPlaybackTracker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -178,7 +180,8 @@ impl crate::GlobalNamespace::OVRHapticsOutput_OVRHaptics_ClipPlaybackTracker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Clip", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Clip", 0usize
                         )
                     })
             });
@@ -191,12 +194,13 @@ impl crate::GlobalNamespace::OVRHapticsOutput_OVRHaptics_ClipPlaybackTracker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_ReadCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ReadCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ReadCount", 0usize
                         )
                     })
             });
@@ -210,7 +214,7 @@ impl crate::GlobalNamespace::OVRHapticsOutput_OVRHaptics_ClipPlaybackTracker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::OVRHapticsClip,
@@ -221,7 +225,8 @@ impl crate::GlobalNamespace::OVRHapticsOutput_OVRHaptics_ClipPlaybackTracker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Clip", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Clip", 1usize
                         )
                     })
             });
@@ -237,7 +242,7 @@ impl crate::GlobalNamespace::OVRHapticsOutput_OVRHaptics_ClipPlaybackTracker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -246,7 +251,8 @@ impl crate::GlobalNamespace::OVRHapticsOutput_OVRHaptics_ClipPlaybackTracker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_ReadCount", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_ReadCount", 1usize
                         )
                     })
             });
@@ -310,7 +316,7 @@ impl crate::GlobalNamespace::OVRHaptics_Config {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -319,7 +325,8 @@ impl crate::GlobalNamespace::OVRHaptics_Config {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Load", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Load",
+                            0usize
                         )
                     })
             });
@@ -332,7 +339,7 @@ impl crate::GlobalNamespace::OVRHaptics_Config {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         i32,
@@ -341,7 +348,8 @@ impl crate::GlobalNamespace::OVRHaptics_Config {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_MaximumBufferSamplesCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_MaximumBufferSamplesCount", 0usize
                         )
                     })
             });
@@ -352,7 +360,7 @@ impl crate::GlobalNamespace::OVRHaptics_Config {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         i32,
@@ -361,7 +369,8 @@ impl crate::GlobalNamespace::OVRHaptics_Config {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_MinimumBufferSamplesCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_MinimumBufferSamplesCount", 0usize
                         )
                     })
             });
@@ -372,7 +381,7 @@ impl crate::GlobalNamespace::OVRHaptics_Config {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         i32,
@@ -381,7 +390,8 @@ impl crate::GlobalNamespace::OVRHaptics_Config {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_MinimumSafeSamplesQueued", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_MinimumSafeSamplesQueued", 0usize
                         )
                     })
             });
@@ -392,7 +402,7 @@ impl crate::GlobalNamespace::OVRHaptics_Config {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         i32,
@@ -401,7 +411,8 @@ impl crate::GlobalNamespace::OVRHaptics_Config {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_OptimalBufferSamplesCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_OptimalBufferSamplesCount", 0usize
                         )
                     })
             });
@@ -412,12 +423,13 @@ impl crate::GlobalNamespace::OVRHaptics_Config {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("get_SampleRateHz")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SampleRateHz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SampleRateHz", 0usize
                         )
                     })
             });
@@ -428,12 +440,13 @@ impl crate::GlobalNamespace::OVRHaptics_Config {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("get_SampleSizeInBytes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SampleSizeInBytes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SampleSizeInBytes", 0usize
                         )
                     })
             });
@@ -446,7 +459,7 @@ impl crate::GlobalNamespace::OVRHaptics_Config {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -455,7 +468,8 @@ impl crate::GlobalNamespace::OVRHaptics_Config {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_MaximumBufferSamplesCount", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_MaximumBufferSamplesCount", 1usize
                         )
                     })
             });
@@ -470,7 +484,7 @@ impl crate::GlobalNamespace::OVRHaptics_Config {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -479,7 +493,8 @@ impl crate::GlobalNamespace::OVRHaptics_Config {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_MinimumBufferSamplesCount", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_MinimumBufferSamplesCount", 1usize
                         )
                     })
             });
@@ -494,7 +509,7 @@ impl crate::GlobalNamespace::OVRHaptics_Config {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -503,7 +518,8 @@ impl crate::GlobalNamespace::OVRHaptics_Config {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_MinimumSafeSamplesQueued", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_MinimumSafeSamplesQueued", 1usize
                         )
                     })
             });
@@ -518,7 +534,7 @@ impl crate::GlobalNamespace::OVRHaptics_Config {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -527,7 +543,8 @@ impl crate::GlobalNamespace::OVRHaptics_Config {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_OptimalBufferSamplesCount", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_OptimalBufferSamplesCount", 1usize
                         )
                     })
             });
@@ -542,7 +559,7 @@ impl crate::GlobalNamespace::OVRHaptics_Config {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -551,7 +568,8 @@ impl crate::GlobalNamespace::OVRHaptics_Config {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_SampleRateHz", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_SampleRateHz", 1usize
                         )
                     })
             });
@@ -566,7 +584,7 @@ impl crate::GlobalNamespace::OVRHaptics_Config {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -575,7 +593,8 @@ impl crate::GlobalNamespace::OVRHaptics_Config {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_SampleSizeInBytes", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_SampleSizeInBytes", 1usize
                         )
                     })
             });
@@ -644,12 +663,13 @@ impl crate::GlobalNamespace::OVRHaptics_OVRHapticsChannel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Clear", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Clear",
+                            0usize
                         )
                     })
             });
@@ -665,7 +685,7 @@ impl crate::GlobalNamespace::OVRHaptics_OVRHapticsChannel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::OVRHapticsClip,
@@ -676,7 +696,8 @@ impl crate::GlobalNamespace::OVRHaptics_OVRHapticsChannel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Mix", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Mix",
+                            1usize
                         )
                     })
             });
@@ -701,7 +722,7 @@ impl crate::GlobalNamespace::OVRHaptics_OVRHapticsChannel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::OVRHapticsClip,
@@ -712,7 +733,8 @@ impl crate::GlobalNamespace::OVRHaptics_OVRHapticsChannel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Preempt", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Preempt",
+                            1usize
                         )
                     })
             });
@@ -728,7 +750,7 @@ impl crate::GlobalNamespace::OVRHaptics_OVRHapticsChannel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::OVRHapticsClip,
@@ -739,7 +761,8 @@ impl crate::GlobalNamespace::OVRHaptics_OVRHapticsChannel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Queue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Queue",
+                            1usize
                         )
                     })
             });
@@ -755,12 +778,13 @@ impl crate::GlobalNamespace::OVRHaptics_OVRHapticsChannel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -847,12 +871,13 @@ impl crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Clear", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Clear",
+                            0usize
                         )
                     })
             });
@@ -868,7 +893,7 @@ impl crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::OVRHapticsClip,
@@ -879,7 +904,8 @@ impl crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Mix", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Mix",
+                            1usize
                         )
                     })
             });
@@ -904,7 +930,7 @@ impl crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::OVRHapticsClip,
@@ -915,7 +941,8 @@ impl crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Preempt", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Preempt",
+                            1usize
                         )
                     })
             });
@@ -930,12 +957,13 @@ impl crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Process")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Process", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Process",
+                            0usize
                         )
                     })
             });
@@ -951,7 +979,7 @@ impl crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::OVRHapticsClip,
@@ -962,7 +990,8 @@ impl crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Queue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Queue",
+                            1usize
                         )
                     })
             });
@@ -978,12 +1007,13 @@ impl crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });

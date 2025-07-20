@@ -115,7 +115,7 @@ impl crate::GlobalNamespace::OVRTelemetryMarker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -131,7 +131,8 @@ impl crate::GlobalNamespace::OVRTelemetryMarker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddAnnotation", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddAnnotation", 2usize
                         )
                     })
             });
@@ -147,7 +148,7 @@ impl crate::GlobalNamespace::OVRTelemetryMarker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::OVRTelemetry_MarkerPoint),
                         crate::GlobalNamespace::OVRTelemetryMarker,
@@ -156,7 +157,8 @@ impl crate::GlobalNamespace::OVRTelemetryMarker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddPoint", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddPoint", 1usize
                         )
                     })
             });
@@ -171,12 +173,13 @@ impl crate::GlobalNamespace::OVRTelemetryMarker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Dispose", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            0usize
                         )
                     })
             });
@@ -191,7 +194,7 @@ impl crate::GlobalNamespace::OVRTelemetryMarker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::OVRTelemetryMarker,
@@ -200,7 +203,8 @@ impl crate::GlobalNamespace::OVRTelemetryMarker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Send", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Send",
+                            0usize
                         )
                     })
             });
@@ -216,7 +220,7 @@ impl crate::GlobalNamespace::OVRTelemetryMarker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         crate::GlobalNamespace::OVRTelemetryMarker,
@@ -225,7 +229,8 @@ impl crate::GlobalNamespace::OVRTelemetryMarker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SendIf", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "SendIf",
+                            1usize
                         )
                     })
             });
@@ -241,7 +246,7 @@ impl crate::GlobalNamespace::OVRTelemetryMarker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::Qpl_OVRPlugin_ResultType),
                         crate::GlobalNamespace::OVRTelemetryMarker,
@@ -250,7 +255,8 @@ impl crate::GlobalNamespace::OVRTelemetryMarker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetResult", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetResult", 1usize
                         )
                     })
             });
@@ -271,7 +277,7 @@ impl crate::GlobalNamespace::OVRTelemetryMarker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -287,7 +293,8 @@ impl crate::GlobalNamespace::OVRTelemetryMarker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
                         )
                     })
             });
@@ -305,7 +312,7 @@ impl crate::GlobalNamespace::OVRTelemetryMarker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32, i64),
                         quest_hook::libil2cpp::Void,
@@ -314,7 +321,8 @@ impl crate::GlobalNamespace::OVRTelemetryMarker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -327,12 +335,13 @@ impl crate::GlobalNamespace::OVRTelemetryMarker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_InstanceKey")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_InstanceKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_InstanceKey", 0usize
                         )
                     })
             });
@@ -343,12 +352,13 @@ impl crate::GlobalNamespace::OVRTelemetryMarker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_MarkerId")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_MarkerId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_MarkerId", 0usize
                         )
                     })
             });
@@ -363,7 +373,7 @@ impl crate::GlobalNamespace::OVRTelemetryMarker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::Qpl_OVRPlugin_ResultType,
@@ -372,7 +382,8 @@ impl crate::GlobalNamespace::OVRTelemetryMarker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Result", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Result", 0usize
                         )
                     })
             });
@@ -385,12 +396,13 @@ impl crate::GlobalNamespace::OVRTelemetryMarker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_Sent")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Sent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Sent", 0usize
                         )
                     })
             });
@@ -405,7 +417,7 @@ impl crate::GlobalNamespace::OVRTelemetryMarker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::OVRTelemetryMarker_OVRTelemetryMarkerState,
@@ -414,7 +426,8 @@ impl crate::GlobalNamespace::OVRTelemetryMarker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_State", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_State", 0usize
                         )
                     })
             });
@@ -430,7 +443,7 @@ impl crate::GlobalNamespace::OVRTelemetryMarker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::OVRTelemetryMarker_OVRTelemetryMarkerState),
                         quest_hook::libil2cpp::Void,
@@ -439,7 +452,8 @@ impl crate::GlobalNamespace::OVRTelemetryMarker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_State", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_State", 1usize
                         )
                     })
             });
@@ -573,7 +587,7 @@ impl crate::GlobalNamespace::OVRTelemetryMarker_OVRTelemetryMarkerState {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, crate::GlobalNamespace::Qpl_OVRPlugin_ResultType),
                         quest_hook::libil2cpp::Void,
@@ -582,7 +596,8 @@ impl crate::GlobalNamespace::OVRTelemetryMarker_OVRTelemetryMarkerState {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -599,7 +614,7 @@ impl crate::GlobalNamespace::OVRTelemetryMarker_OVRTelemetryMarkerState {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::Qpl_OVRPlugin_ResultType,
@@ -608,7 +623,8 @@ impl crate::GlobalNamespace::OVRTelemetryMarker_OVRTelemetryMarkerState {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Result", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Result", 0usize
                         )
                     })
             });
@@ -621,12 +637,13 @@ impl crate::GlobalNamespace::OVRTelemetryMarker_OVRTelemetryMarkerState {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_Sent")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Sent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Sent", 0usize
                         )
                     })
             });
@@ -640,7 +657,7 @@ impl crate::GlobalNamespace::OVRTelemetryMarker_OVRTelemetryMarkerState {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::Qpl_OVRPlugin_ResultType),
                         quest_hook::libil2cpp::Void,
@@ -649,7 +666,8 @@ impl crate::GlobalNamespace::OVRTelemetryMarker_OVRTelemetryMarkerState {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Result", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Result", 1usize
                         )
                     })
             });
@@ -665,7 +683,7 @@ impl crate::GlobalNamespace::OVRTelemetryMarker_OVRTelemetryMarkerState {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -674,7 +692,8 @@ impl crate::GlobalNamespace::OVRTelemetryMarker_OVRTelemetryMarkerState {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Sent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Sent", 1usize
                         )
                     })
             });

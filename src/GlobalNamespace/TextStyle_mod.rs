@@ -65,7 +65,7 @@ impl crate::GlobalNamespace::TextStyle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::TMPro::FontStyles, f32, bool, f32, f32, f32, f32),
                         quest_hook::libil2cpp::Void,
@@ -74,7 +74,8 @@ impl crate::GlobalNamespace::TextStyle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Update", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Update",
+                            7usize
                         )
                     })
             });
@@ -101,12 +102,13 @@ impl crate::GlobalNamespace::TextStyle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -119,12 +121,13 @@ impl crate::GlobalNamespace::TextStyle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_autoSizing")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_autoSizing", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_autoSizing", 0usize
                         )
                     })
             });
@@ -135,12 +138,13 @@ impl crate::GlobalNamespace::TextStyle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_charWidthMaxAdj")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_charWidthMaxAdj", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_charWidthMaxAdj", 0usize
                         )
                     })
             });
@@ -151,12 +155,13 @@ impl crate::GlobalNamespace::TextStyle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_fontSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_fontSize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_fontSize", 0usize
                         )
                     })
             });
@@ -167,12 +172,13 @@ impl crate::GlobalNamespace::TextStyle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_fontSizeMax")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_fontSizeMax", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_fontSizeMax", 0usize
                         )
                     })
             });
@@ -183,12 +189,13 @@ impl crate::GlobalNamespace::TextStyle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_fontSizeMin")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_fontSizeMin", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_fontSizeMin", 0usize
                         )
                     })
             });
@@ -201,12 +208,13 @@ impl crate::GlobalNamespace::TextStyle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::TMPro::FontStyles, 0usize>("get_fontStyle")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_fontStyle", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_fontStyle", 0usize
                         )
                     })
             });
@@ -219,12 +227,13 @@ impl crate::GlobalNamespace::TextStyle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_lineSpacingMax")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_lineSpacingMax", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_lineSpacingMax", 0usize
                         )
                     })
             });

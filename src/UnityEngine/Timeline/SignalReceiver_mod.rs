@@ -51,7 +51,7 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::Events::UnityEvent,
@@ -62,7 +62,8 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddEmptyReaction", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddEmptyReaction", 1usize
                         )
                     })
             });
@@ -77,7 +78,7 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -93,7 +94,8 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddReaction", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddReaction", 2usize
                         )
                     })
             });
@@ -110,7 +112,7 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -124,7 +126,8 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ChangeReactionAtIndex", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ChangeReactionAtIndex", 2usize
                         )
                     })
             });
@@ -141,7 +144,7 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -155,7 +158,8 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ChangeSignalAtIndex", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ChangeSignalAtIndex", 2usize
                         )
                     })
             });
@@ -168,12 +172,13 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("Count")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Count", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Count",
+                            0usize
                         )
                     })
             });
@@ -189,7 +194,7 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::Timeline::SignalAsset,
@@ -202,7 +207,8 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetReaction", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetReaction", 1usize
                         )
                     })
             });
@@ -220,7 +226,7 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
@@ -231,7 +237,8 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetReactionAtIndex", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetReactionAtIndex", 1usize
                         )
                     })
             });
@@ -252,7 +259,7 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -267,7 +274,8 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetRegisteredSignals", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetRegisteredSignals", 0usize
                         )
                     })
             });
@@ -287,7 +295,7 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
@@ -298,7 +306,8 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSignalAssetAtIndex", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSignalAssetAtIndex", 1usize
                         )
                     })
             });
@@ -320,12 +329,13 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnEnable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnEnable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnEnable", 0usize
                         )
                     })
             });
@@ -345,7 +355,7 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Playables::Playable,
@@ -362,7 +372,8 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnNotify", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnNotify", 3usize
                         )
                     })
             });
@@ -378,7 +389,7 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::Timeline::SignalAsset,
@@ -389,7 +400,8 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Remove", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Remove",
+                            1usize
                         )
                     })
             });
@@ -405,7 +417,7 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -414,7 +426,8 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RemoveAtIndex", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RemoveAtIndex", 1usize
                         )
                     })
             });
@@ -429,12 +442,13 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -526,7 +540,7 @@ impl crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -542,7 +556,8 @@ impl crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Append", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Append",
+                            2usize
                         )
                     })
             });
@@ -565,7 +580,7 @@ impl crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::Timeline::SignalAsset,
@@ -576,7 +591,8 @@ impl crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Remove", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Remove",
+                            1usize
                         )
                     })
             });
@@ -592,12 +608,13 @@ impl crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("Remove")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Remove", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Remove",
+                            1usize
                         )
                     })
             });
@@ -616,7 +633,7 @@ impl crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -634,7 +651,8 @@ impl crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGetValue", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetValue", 2usize
                         )
                     })
             });
@@ -647,12 +665,13 @@ impl crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -673,7 +692,7 @@ impl crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -688,7 +707,8 @@ impl crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_events", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_events", 0usize
                         )
                     })
             });
@@ -711,7 +731,7 @@ impl crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -726,7 +746,8 @@ impl crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_signals", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_signals", 0usize
                         )
                     })
             });

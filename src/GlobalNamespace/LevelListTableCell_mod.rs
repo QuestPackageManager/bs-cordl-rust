@@ -73,7 +73,7 @@ impl crate::GlobalNamespace::LevelListTableCell {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -82,7 +82,8 @@ impl crate::GlobalNamespace::LevelListTableCell {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CancelAsyncOperations", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CancelAsyncOperations", 0usize
                         )
                     })
             });
@@ -98,7 +99,7 @@ impl crate::GlobalNamespace::LevelListTableCell {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::HMUI::SelectableCell_TransitionType),
                         quest_hook::libil2cpp::Void,
@@ -107,7 +108,8 @@ impl crate::GlobalNamespace::LevelListTableCell {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HighlightDidChange", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HighlightDidChange", 1usize
                         )
                     })
             });
@@ -133,7 +135,7 @@ impl crate::GlobalNamespace::LevelListTableCell {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -149,7 +151,8 @@ impl crate::GlobalNamespace::LevelListTableCell {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RefreshAvailabilityAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RefreshAvailabilityAsync", 2usize
                         )
                     })
             });
@@ -164,7 +167,7 @@ impl crate::GlobalNamespace::LevelListTableCell {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -173,7 +176,8 @@ impl crate::GlobalNamespace::LevelListTableCell {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RefreshVisuals", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RefreshVisuals", 0usize
                         )
                     })
             });
@@ -189,7 +193,7 @@ impl crate::GlobalNamespace::LevelListTableCell {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::HMUI::SelectableCell_TransitionType),
                         quest_hook::libil2cpp::Void,
@@ -198,7 +202,8 @@ impl crate::GlobalNamespace::LevelListTableCell {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SelectionDidChange", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SelectionDidChange", 1usize
                         )
                     })
             });
@@ -218,7 +223,7 @@ impl crate::GlobalNamespace::LevelListTableCell {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -235,7 +240,8 @@ impl crate::GlobalNamespace::LevelListTableCell {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetDataFromLevelAsync", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetDataFromLevelAsync", 5usize
                         )
                     })
             });
@@ -254,7 +260,7 @@ impl crate::GlobalNamespace::LevelListTableCell {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -263,7 +269,8 @@ impl crate::GlobalNamespace::LevelListTableCell {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WasPreparedForReuse", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WasPreparedForReuse", 0usize
                         )
                     })
             });
@@ -278,12 +285,13 @@ impl crate::GlobalNamespace::LevelListTableCell {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

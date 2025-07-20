@@ -108,7 +108,7 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::ReadOnlySpan_1<char>),
                         quest_hook::libil2cpp::Void,
@@ -117,7 +117,8 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AcceptInt", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AcceptInt", 1usize
                         )
                     })
             });
@@ -134,7 +135,7 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::ReadOnlySpan_1<char>, char),
                         bool,
@@ -143,7 +144,8 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AcceptSingleChar", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AcceptSingleChar", 2usize
                         )
                     })
             });
@@ -158,7 +160,7 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::ReadOnlySpan_1<char>,
@@ -172,7 +174,8 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AcceptString", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AcceptString", 2usize
                         )
                     })
             });
@@ -188,7 +191,7 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::ReadOnlySpan_1<char>),
                         i32,
@@ -197,7 +200,8 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExpectInt", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExpectInt", 1usize
                         )
                     })
             });
@@ -212,7 +216,7 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::ReadOnlySpan_1<char>, char),
                         quest_hook::libil2cpp::Void,
@@ -221,7 +225,8 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExpectSingleChar", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExpectSingleChar", 2usize
                         )
                     })
             });
@@ -237,7 +242,7 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::ReadOnlySpan_1<char>),
                         crate::System::ReadOnlySpan_1<char>,
@@ -246,7 +251,8 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExpectString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExpectString", 1usize
                         )
                     })
             });

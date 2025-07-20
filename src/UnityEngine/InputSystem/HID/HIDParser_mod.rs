@@ -56,7 +56,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -72,7 +72,8 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseReportDescriptor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseReportDescriptor", 2usize
                         )
                     })
             });
@@ -91,7 +92,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -108,7 +109,8 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseReportDescriptor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseReportDescriptor", 3usize
                         )
                     })
             });
@@ -125,7 +127,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -142,7 +144,8 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadData", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadData", 3usize
                         )
                     })
             });
@@ -278,12 +281,13 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetPhysicalMax")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPhysicalMax", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPhysicalMax", 0usize
                         )
                     })
             });
@@ -294,12 +298,13 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetPhysicalMin")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPhysicalMin", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPhysicalMin", 0usize
                         )
                     })
             });
@@ -318,7 +323,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -332,7 +337,8 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetUsagePage", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetUsagePage", 2usize
                         )
                     })
             });
@@ -460,12 +466,13 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("GetUsage")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetUsage", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetUsage", 1usize
                         )
                     })
             });
@@ -480,7 +487,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal,
@@ -491,7 +498,8 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Reset", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Reset",
+                            1usize
                         )
                     })
             });
@@ -507,7 +515,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -516,7 +524,8 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetUsage", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetUsage", 1usize
                         )
                     })
             });
@@ -760,7 +769,7 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::Nullable_1<i32>,
@@ -777,7 +786,8 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FindOrAddReport", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindOrAddReport", 3usize
                         )
                     })
             });

@@ -45,7 +45,7 @@ impl crate::UnityEngine::Audio::AudioMixer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -54,7 +54,8 @@ impl crate::UnityEngine::Audio::AudioMixer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ClearFloat", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ClearFloat", 1usize
                         )
                     })
             });
@@ -74,7 +75,7 @@ impl crate::UnityEngine::Audio::AudioMixer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -89,7 +90,8 @@ impl crate::UnityEngine::Audio::AudioMixer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FindMatchingGroups", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindMatchingGroups", 1usize
                         )
                     })
             });
@@ -109,7 +111,7 @@ impl crate::UnityEngine::Audio::AudioMixer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -120,7 +122,8 @@ impl crate::UnityEngine::Audio::AudioMixer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FindSnapshot", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindSnapshot", 1usize
                         )
                     })
             });
@@ -136,7 +139,7 @@ impl crate::UnityEngine::Audio::AudioMixer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::Audio::AudioMixerGroup,
@@ -147,7 +150,8 @@ impl crate::UnityEngine::Audio::AudioMixer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAbsoluteAudibilityFromGroup", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAbsoluteAudibilityFromGroup", 1usize
                         )
                     })
             });
@@ -162,7 +166,7 @@ impl crate::UnityEngine::Audio::AudioMixer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -176,7 +180,8 @@ impl crate::UnityEngine::Audio::AudioMixer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetFloat", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetFloat", 2usize
                         )
                     })
             });
@@ -198,7 +203,7 @@ impl crate::UnityEngine::Audio::AudioMixer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -212,7 +217,8 @@ impl crate::UnityEngine::Audio::AudioMixer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetFloat", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetFloat", 2usize
                         )
                     })
             });
@@ -229,7 +235,7 @@ impl crate::UnityEngine::Audio::AudioMixer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -243,7 +249,8 @@ impl crate::UnityEngine::Audio::AudioMixer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TransitionToSnapshot", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TransitionToSnapshot", 2usize
                         )
                     })
             });
@@ -262,7 +269,7 @@ impl crate::UnityEngine::Audio::AudioMixer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -276,7 +283,8 @@ impl crate::UnityEngine::Audio::AudioMixer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TransitionToSnapshotInternal", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TransitionToSnapshotInternal", 2usize
                         )
                     })
             });
@@ -298,7 +306,7 @@ impl crate::UnityEngine::Audio::AudioMixer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -319,7 +327,8 @@ impl crate::UnityEngine::Audio::AudioMixer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TransitionToSnapshots", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TransitionToSnapshots", 3usize
                         )
                     })
             });
@@ -334,12 +343,13 @@ impl crate::UnityEngine::Audio::AudioMixer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -356,7 +366,7 @@ impl crate::UnityEngine::Audio::AudioMixer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -367,7 +377,8 @@ impl crate::UnityEngine::Audio::AudioMixer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_outputAudioMixerGroup", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_outputAudioMixerGroup", 0usize
                         )
                     })
             });
@@ -382,7 +393,7 @@ impl crate::UnityEngine::Audio::AudioMixer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Audio::AudioMixerUpdateMode,
@@ -391,7 +402,8 @@ impl crate::UnityEngine::Audio::AudioMixer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_updateMode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_updateMode", 0usize
                         )
                     })
             });
@@ -407,7 +419,7 @@ impl crate::UnityEngine::Audio::AudioMixer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::Audio::AudioMixerGroup,
@@ -418,7 +430,8 @@ impl crate::UnityEngine::Audio::AudioMixer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_outputAudioMixerGroup", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_outputAudioMixerGroup", 1usize
                         )
                     })
             });
@@ -434,7 +447,7 @@ impl crate::UnityEngine::Audio::AudioMixer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Audio::AudioMixerUpdateMode),
                         quest_hook::libil2cpp::Void,
@@ -443,7 +456,8 @@ impl crate::UnityEngine::Audio::AudioMixer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_updateMode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_updateMode", 1usize
                         )
                     })
             });

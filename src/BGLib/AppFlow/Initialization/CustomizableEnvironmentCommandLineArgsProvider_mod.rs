@@ -61,7 +61,7 @@ impl crate::BGLib::AppFlow::Initialization::CustomizableEnvironmentCommandLineAr
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -76,7 +76,8 @@ impl crate::BGLib::AppFlow::Initialization::CustomizableEnvironmentCommandLineAr
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCommandLineArgs", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCommandLineArgs", 0usize
                         )
                     })
             });

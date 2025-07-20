@@ -60,7 +60,7 @@ impl crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Rendering::PassType,
@@ -74,7 +74,8 @@ impl crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -91,7 +92,7 @@ impl crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -100,7 +101,8 @@ impl crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_keywords", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_keywords", 0usize
                         )
                     })
             });
@@ -115,7 +117,7 @@ impl crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Rendering::PassType,
@@ -124,7 +126,8 @@ impl crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_passType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_passType", 0usize
                         )
                     })
             });
@@ -206,7 +209,7 @@ impl crate::GlobalNamespace::ShaderVariantsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -221,7 +224,8 @@ impl crate::GlobalNamespace::ShaderVariantsSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Init", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            1usize
                         )
                     })
             });
@@ -243,12 +247,13 @@ impl crate::GlobalNamespace::ShaderVariantsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -271,7 +276,7 @@ impl crate::GlobalNamespace::ShaderVariantsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -286,7 +291,8 @@ impl crate::GlobalNamespace::ShaderVariantsSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_shaderVariants", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_shaderVariants", 0usize
                         )
                     })
             });
@@ -390,7 +396,7 @@ impl crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
@@ -408,7 +414,8 @@ impl crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -425,7 +432,7 @@ impl crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
@@ -434,7 +441,8 @@ impl crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_shader", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_shader", 0usize
                         )
                     })
             });
@@ -457,7 +465,7 @@ impl crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -472,7 +480,8 @@ impl crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_variants", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_variants", 0usize
                         )
                     })
             });

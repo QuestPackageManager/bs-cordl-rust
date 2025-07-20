@@ -52,7 +52,7 @@ impl crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -66,7 +66,8 @@ impl crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadInt32FromByteArray", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadInt32FromByteArray", 2usize
                         )
                     })
             });
@@ -82,7 +83,7 @@ impl crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -96,7 +97,8 @@ impl crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadObjectFromByteArray", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadObjectFromByteArray", 2usize
                         )
                     })
             });
@@ -113,7 +115,7 @@ impl crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -128,7 +130,8 @@ impl crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteInt32ToByteArray", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteInt32ToByteArray", 3usize
                         )
                     })
             });
@@ -146,7 +149,7 @@ impl crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -162,7 +165,8 @@ impl crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteObjectToByteList", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteObjectToByteList", 2usize
                         )
                     })
             });

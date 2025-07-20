@@ -69,7 +69,7 @@ impl crate::System::Net::Sockets::SafeSocketHandle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -78,7 +78,8 @@ impl crate::System::Net::Sockets::SafeSocketHandle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterForBlockingSyscall", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterForBlockingSyscall", 0usize
                         )
                     })
             });
@@ -91,12 +92,13 @@ impl crate::System::Net::Sockets::SafeSocketHandle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("ReleaseHandle")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReleaseHandle", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReleaseHandle", 0usize
                         )
                     })
             });
@@ -109,7 +111,7 @@ impl crate::System::Net::Sockets::SafeSocketHandle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -118,7 +120,8 @@ impl crate::System::Net::Sockets::SafeSocketHandle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnRegisterForBlockingSyscall", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnRegisterForBlockingSyscall", 0usize
                         )
                     })
             });
@@ -135,7 +138,7 @@ impl crate::System::Net::Sockets::SafeSocketHandle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::IntPtr, bool),
                         quest_hook::libil2cpp::Void,
@@ -144,7 +147,8 @@ impl crate::System::Net::Sockets::SafeSocketHandle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });

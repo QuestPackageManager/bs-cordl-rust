@@ -122,7 +122,7 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::UIR::BaseShaderInfoStorage,
@@ -133,7 +133,8 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Allocate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Allocate", 1usize
                         )
                     })
             });
@@ -151,7 +152,7 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -160,7 +161,8 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Construct", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Construct", 3usize
                         )
                     })
             });
@@ -173,12 +175,13 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32), u8, 1usize>("CountTrailingZeroes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CountTrailingZeroes", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CountTrailingZeroes", 1usize
                         )
                     })
             });
@@ -193,7 +196,7 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u16, u16),
                         quest_hook::libil2cpp::Void,
@@ -202,7 +205,8 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ForceFirstAlloc", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ForceFirstAlloc", 2usize
                         )
                     })
             });
@@ -218,7 +222,7 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UIElements::UIR::BMPAlloc),
                         quest_hook::libil2cpp::Void,
@@ -227,7 +231,8 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Free", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Free",
+                            1usize
                         )
                     })
             });
@@ -245,7 +250,7 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -258,7 +263,8 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAllocPageAtlasLocation", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAllocPageAtlasLocation", 3usize
                         )
                     })
             });
@@ -271,12 +277,13 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_entryHeight")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_entryHeight", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_entryHeight", 0usize
                         )
                     })
             });
@@ -287,12 +294,13 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_entryWidth")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_entryWidth", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_entryWidth", 0usize
                         )
                     })
             });

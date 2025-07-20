@@ -76,7 +76,7 @@ impl crate::MidiParser::MidiFile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -93,7 +93,8 @@ impl crate::MidiParser::MidiFile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseMetaEvent", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseMetaEvent", 5usize
                         )
                     })
             });
@@ -112,7 +113,7 @@ impl crate::MidiParser::MidiFile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -127,7 +128,8 @@ impl crate::MidiParser::MidiFile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseTrack", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseTrack", 3usize
                         )
                     })
             });
@@ -143,7 +145,7 @@ impl crate::MidiParser::MidiFile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -154,7 +156,8 @@ impl crate::MidiParser::MidiFile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -170,7 +173,7 @@ impl crate::MidiParser::MidiFile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -179,7 +182,8 @@ impl crate::MidiParser::MidiFile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -245,7 +249,7 @@ impl crate::MidiParser::MidiFile_Reader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -259,7 +263,8 @@ impl crate::MidiParser::MidiFile_Reader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Read16", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Read16",
+                            2usize
                         )
                     })
             });
@@ -273,7 +278,7 @@ impl crate::MidiParser::MidiFile_Reader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -287,7 +292,8 @@ impl crate::MidiParser::MidiFile_Reader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Read32", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Read32",
+                            2usize
                         )
                     })
             });
@@ -301,7 +307,7 @@ impl crate::MidiParser::MidiFile_Reader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -315,7 +321,8 @@ impl crate::MidiParser::MidiFile_Reader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Read8", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Read8",
+                            2usize
                         )
                     })
             });
@@ -330,7 +337,7 @@ impl crate::MidiParser::MidiFile_Reader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                         quest_hook::libil2cpp::Gc<
@@ -341,7 +348,8 @@ impl crate::MidiParser::MidiFile_Reader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadAllBytesFromStream", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadAllBytesFromStream", 1usize
                         )
                     })
             });
@@ -360,7 +368,7 @@ impl crate::MidiParser::MidiFile_Reader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -375,7 +383,8 @@ impl crate::MidiParser::MidiFile_Reader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadString", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadString", 3usize
                         )
                     })
             });
@@ -391,7 +400,7 @@ impl crate::MidiParser::MidiFile_Reader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -405,7 +414,8 @@ impl crate::MidiParser::MidiFile_Reader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadVarInt", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadVarInt", 2usize
                         )
                     })
             });

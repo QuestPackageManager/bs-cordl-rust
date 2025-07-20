@@ -51,12 +51,13 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Close")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Close", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Close",
+                            0usize
                         )
                     })
             });
@@ -71,12 +72,13 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Finish")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Finish", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Finish",
+                            0usize
                         )
                     })
             });
@@ -91,12 +93,13 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Flush")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Flush", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Flush",
+                            0usize
                         )
                     })
             });
@@ -165,7 +168,7 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -174,7 +177,8 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PartialFlush", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PartialFlush", 1usize
                         )
                     })
             });
@@ -191,7 +195,7 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                         quest_hook::libil2cpp::Gc<
@@ -202,7 +206,8 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Wrap", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Wrap",
+                            1usize
                         )
                     })
             });
@@ -220,7 +225,7 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -235,7 +240,8 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Write", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Write",
+                            3usize
                         )
                     })
             });
@@ -251,7 +257,7 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u8),
                         quest_hook::libil2cpp::Void,
@@ -260,7 +266,8 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteByte", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteByte", 1usize
                         )
                     })
             });
@@ -279,7 +286,7 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Org::BouncyCastle::Bcpg::PacketTag, bool, bool, i64),
                         quest_hook::libil2cpp::Void,
@@ -288,7 +295,8 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteHeader", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteHeader", 4usize
                         )
                     })
             });
@@ -304,7 +312,7 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -313,7 +321,8 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteInt", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteInt", 1usize
                         )
                     })
             });
@@ -329,7 +338,7 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i64),
                         quest_hook::libil2cpp::Void,
@@ -338,7 +347,8 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteLong", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteLong", 1usize
                         )
                     })
             });
@@ -354,7 +364,7 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i64),
                         quest_hook::libil2cpp::Void,
@@ -363,7 +373,8 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteNewPacketLength", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteNewPacketLength", 1usize
                         )
                     })
             });
@@ -379,7 +390,7 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Bcpg::BcpgObject,
@@ -390,7 +401,8 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteObject", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteObject", 1usize
                         )
                     })
             });
@@ -410,7 +422,7 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -425,7 +437,8 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteObjects", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteObjects", 1usize
                         )
                     })
             });
@@ -441,7 +454,7 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Bcpg::ContainedPacket,
@@ -452,7 +465,8 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WritePacket", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WritePacket", 1usize
                         )
                     })
             });
@@ -470,7 +484,7 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::Org::BouncyCastle::Bcpg::PacketTag,
@@ -485,7 +499,8 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WritePacket", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WritePacket", 3usize
                         )
                     })
             });
@@ -503,7 +518,7 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -518,7 +533,8 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WritePartial", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WritePartial", 3usize
                         )
                     })
             });
@@ -534,7 +550,7 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u8),
                         quest_hook::libil2cpp::Void,
@@ -543,7 +559,8 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WritePartial", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WritePartial", 1usize
                         )
                     })
             });
@@ -559,7 +576,7 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i16),
                         quest_hook::libil2cpp::Void,
@@ -568,7 +585,8 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteShort", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteShort", 1usize
                         )
                     })
             });
@@ -585,7 +603,7 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -597,7 +615,8 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -615,7 +634,7 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -630,7 +649,8 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -648,7 +668,7 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -661,7 +681,8 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -680,7 +701,7 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -694,7 +715,8 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
                         )
                     })
             });
@@ -710,7 +732,7 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                         quest_hook::libil2cpp::Void,
@@ -719,7 +741,8 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });

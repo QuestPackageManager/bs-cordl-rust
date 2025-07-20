@@ -60,7 +60,7 @@ impl crate::GlobalNamespace::OtherSettingsViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, bool, bool),
                         quest_hook::libil2cpp::Void,
@@ -69,7 +69,8 @@ impl crate::GlobalNamespace::OtherSettingsViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DidActivate", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DidActivate", 3usize
                         )
                     })
             });
@@ -90,7 +91,7 @@ impl crate::GlobalNamespace::OtherSettingsViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, bool),
                         quest_hook::libil2cpp::Void,
@@ -99,7 +100,8 @@ impl crate::GlobalNamespace::OtherSettingsViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DidDeactivate", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DidDeactivate", 2usize
                         )
                     })
             });
@@ -115,7 +117,7 @@ impl crate::GlobalNamespace::OtherSettingsViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -124,7 +126,8 @@ impl crate::GlobalNamespace::OtherSettingsViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleHideExplicitChanged", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleHideExplicitChanged", 1usize
                         )
                     })
             });
@@ -140,7 +143,7 @@ impl crate::GlobalNamespace::OtherSettingsViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -149,7 +152,8 @@ impl crate::GlobalNamespace::OtherSettingsViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandlePausePressDurationChanged", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandlePausePressDurationChanged", 1usize
                         )
                     })
             });
@@ -171,7 +175,7 @@ impl crate::GlobalNamespace::OtherSettingsViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -180,7 +184,7 @@ impl crate::GlobalNamespace::OtherSettingsViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "UpdateExplicitContentHiddenWarningVisibility", 0usize
                         )
                     })
@@ -196,12 +200,13 @@ impl crate::GlobalNamespace::OtherSettingsViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

@@ -76,7 +76,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData,
@@ -87,7 +87,8 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddScore", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddScore", 1usize
                         )
                     })
             });
@@ -106,7 +107,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -122,7 +123,8 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Init", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            2usize
                         )
                     })
             });
@@ -139,7 +141,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -148,7 +150,8 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadScoresToUploadFromFile", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadScoresToUploadFromFile", 0usize
                         )
                     })
             });
@@ -170,7 +173,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -179,7 +182,8 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnApplicationQuit", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnApplicationQuit", 0usize
                         )
                     })
             });
@@ -194,7 +198,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -203,7 +207,8 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SaveScoresToUploadToFile", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SaveScoresToUploadToFile", 0usize
                         )
                     })
             });
@@ -218,7 +223,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -227,7 +232,8 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Uninitialize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Uninitialize", 0usize
                         )
                     })
             });
@@ -244,7 +250,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -255,7 +261,8 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UploadScoresCoroutine", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UploadScoresCoroutine", 0usize
                         )
                     })
             });
@@ -270,12 +277,13 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("<UploadScoresCoroutine>b__16_1")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<UploadScoresCoroutine>b__16_1", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<UploadScoresCoroutine>b__16_1", 0usize
                         )
                     })
             });
@@ -288,12 +296,13 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -309,7 +318,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -318,7 +327,8 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_allScoresDidUploadEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_allScoresDidUploadEvent", 1usize
                         )
                     })
             });
@@ -334,7 +344,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -343,7 +353,8 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_allScoresDidUploadEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_allScoresDidUploadEvent", 1usize
                         )
                     })
             });
@@ -472,7 +483,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -498,7 +509,8 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 10usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            10usize
                         )
                     })
             });
@@ -526,12 +538,13 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_badCutsCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_badCutsCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_badCutsCount", 0usize
                         )
                     })
             });
@@ -544,7 +557,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::BeatmapKey,
@@ -553,7 +566,8 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_beatmapKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_beatmapKey", 0usize
                         )
                     })
             });
@@ -566,12 +580,13 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_fullCombo")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_fullCombo", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_fullCombo", 0usize
                         )
                     })
             });
@@ -586,7 +601,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -597,7 +612,8 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_gameplayModifiers", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_gameplayModifiers", 0usize
                         )
                     })
             });
@@ -610,12 +626,13 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_goodCutsCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_goodCutsCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_goodCutsCount", 0usize
                         )
                     })
             });
@@ -626,12 +643,13 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_maxCombo")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_maxCombo", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_maxCombo", 0usize
                         )
                     })
             });
@@ -642,12 +660,13 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_missedCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_missedCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_missedCount", 0usize
                         )
                     })
             });
@@ -658,12 +677,13 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_modifiedScore")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_modifiedScore", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_modifiedScore", 0usize
                         )
                     })
             });
@@ -674,12 +694,13 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_multipliedScore")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_multipliedScore", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_multipliedScore", 0usize
                         )
                     })
             });
@@ -694,7 +715,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -703,7 +724,8 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_playerId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_playerId", 0usize
                         )
                     })
             });
@@ -719,7 +741,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -728,7 +750,8 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_badCutsCount", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_badCutsCount", 1usize
                         )
                     })
             });
@@ -744,7 +767,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::BeatmapKey),
                         quest_hook::libil2cpp::Void,
@@ -753,7 +776,8 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_beatmapKey", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_beatmapKey", 1usize
                         )
                     })
             });
@@ -769,7 +793,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -778,7 +802,8 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_fullCombo", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_fullCombo", 1usize
                         )
                     })
             });
@@ -794,7 +819,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::GameplayModifiers,
@@ -805,7 +830,8 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_gameplayModifiers", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_gameplayModifiers", 1usize
                         )
                     })
             });
@@ -821,7 +847,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -830,7 +856,8 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_goodCutsCount", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_goodCutsCount", 1usize
                         )
                     })
             });
@@ -846,7 +873,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -855,7 +882,8 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_maxCombo", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_maxCombo", 1usize
                         )
                     })
             });
@@ -871,7 +899,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -880,7 +908,8 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_missedCount", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_missedCount", 1usize
                         )
                     })
             });
@@ -896,7 +925,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -905,7 +934,8 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_modifiedScore", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_modifiedScore", 1usize
                         )
                     })
             });
@@ -921,7 +951,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -930,7 +960,8 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_multipliedScore", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_multipliedScore", 1usize
                         )
                     })
             });
@@ -946,7 +977,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -955,7 +986,8 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_playerId", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_playerId", 1usize
                         )
                     })
             });
@@ -1038,12 +1070,13 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoresToUploadData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -1122,7 +1155,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1142,7 +1175,8 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BeginInvoke", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BeginInvoke", 4usize
                         )
                     })
             });
@@ -1164,7 +1198,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
                         quest_hook::libil2cpp::Gc<
@@ -1175,7 +1209,8 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EndInvoke", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EndInvoke", 1usize
                         )
                     })
             });
@@ -1198,7 +1233,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1216,7 +1251,8 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Invoke", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Invoke",
+                            2usize
                         )
                     })
             });
@@ -1243,7 +1279,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1257,7 +1293,8 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });

@@ -66,7 +66,7 @@ impl crate::System::Linq::Expressions::Interpreter::DivInstruction {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<
@@ -77,7 +77,8 @@ impl crate::System::Linq::Expressions::Interpreter::DivInstruction {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Create", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Create",
+                            1usize
                         )
                     })
             });
@@ -99,12 +100,13 @@ impl crate::System::Linq::Expressions::Interpreter::DivInstruction {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -117,12 +119,13 @@ impl crate::System::Linq::Expressions::Interpreter::DivInstruction {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_ConsumedStack")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ConsumedStack", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ConsumedStack", 0usize
                         )
                     })
             });
@@ -137,7 +140,7 @@ impl crate::System::Linq::Expressions::Interpreter::DivInstruction {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -146,7 +149,8 @@ impl crate::System::Linq::Expressions::Interpreter::DivInstruction {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_InstructionName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_InstructionName", 0usize
                         )
                     })
             });
@@ -159,12 +163,13 @@ impl crate::System::Linq::Expressions::Interpreter::DivInstruction {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_ProducedStack")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ProducedStack", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ProducedStack", 0usize
                         )
                     })
             });

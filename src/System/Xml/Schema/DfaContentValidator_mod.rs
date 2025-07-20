@@ -54,7 +54,7 @@ impl crate::System::Xml::Schema::DfaContentValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::Schema::ValidationState,
@@ -65,7 +65,8 @@ impl crate::System::Xml::Schema::DfaContentValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CompleteValidation", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CompleteValidation", 1usize
                         )
                     })
             });
@@ -82,7 +83,7 @@ impl crate::System::Xml::Schema::DfaContentValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -96,7 +97,8 @@ impl crate::System::Xml::Schema::DfaContentValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExpectedElements", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExpectedElements", 2usize
                         )
                     })
             });
@@ -116,7 +118,7 @@ impl crate::System::Xml::Schema::DfaContentValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -133,7 +135,8 @@ impl crate::System::Xml::Schema::DfaContentValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExpectedParticles", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExpectedParticles", 3usize
                         )
                     })
             });
@@ -151,7 +154,7 @@ impl crate::System::Xml::Schema::DfaContentValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::Schema::ValidationState,
@@ -162,7 +165,8 @@ impl crate::System::Xml::Schema::DfaContentValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitValidation", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitValidation", 1usize
                         )
                     })
             });
@@ -204,7 +208,7 @@ impl crate::System::Xml::Schema::DfaContentValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -221,7 +225,8 @@ impl crate::System::Xml::Schema::DfaContentValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ValidateElement", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValidateElement", 3usize
                         )
                     })
             });
@@ -247,7 +252,7 @@ impl crate::System::Xml::Schema::DfaContentValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -270,7 +275,8 @@ impl crate::System::Xml::Schema::DfaContentValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            5usize
                         )
                     })
             });

@@ -53,7 +53,7 @@ impl crate::System::Runtime::Remoting::Activation::RemoteActivator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Runtime::Remoting::Activation::IConstructionCallMessage,
@@ -66,7 +66,8 @@ impl crate::System::Runtime::Remoting::Activation::RemoteActivator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Activate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Activate", 1usize
                         )
                     })
             });
@@ -85,7 +86,7 @@ impl crate::System::Runtime::Remoting::Activation::RemoteActivator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -96,7 +97,8 @@ impl crate::System::Runtime::Remoting::Activation::RemoteActivator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_NextActivator", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_NextActivator", 0usize
                         )
                     })
             });

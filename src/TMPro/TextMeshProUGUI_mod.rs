@@ -76,12 +76,13 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Awake", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Awake",
+                            0usize
                         )
                     })
             });
@@ -96,7 +97,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -105,7 +106,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CalculateLayoutInputHorizontal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CalculateLayoutInputHorizontal", 0usize
                         )
                     })
             });
@@ -120,7 +122,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -129,7 +131,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CalculateLayoutInputVertical", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CalculateLayoutInputVertical", 0usize
                         )
                     })
             });
@@ -144,12 +147,13 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ClearMesh")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ClearMesh", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ClearMesh", 0usize
                         )
                     })
             });
@@ -164,7 +168,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -173,7 +177,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ComputeMarginSize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ComputeMarginSize", 0usize
                         )
                     })
             });
@@ -190,7 +195,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Rect, bool),
                         quest_hook::libil2cpp::Void,
@@ -199,7 +204,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Cull", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Cull",
+                            2usize
                         )
                     })
             });
@@ -216,7 +222,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -227,7 +233,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DelayedGraphicRebuild", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DelayedGraphicRebuild", 0usize
                         )
                     })
             });
@@ -244,7 +251,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -255,7 +262,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DelayedMaterialRebuild", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DelayedMaterialRebuild", 0usize
                         )
                     })
             });
@@ -270,7 +278,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -279,7 +287,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DestroySubMeshObjects", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DestroySubMeshObjects", 0usize
                         )
                     })
             });
@@ -294,7 +303,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -303,7 +312,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DisableMasking", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DisableMasking", 0usize
                         )
                     })
             });
@@ -318,7 +328,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -327,7 +337,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnableMasking", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnableMasking", 0usize
                         )
                     })
             });
@@ -344,7 +355,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, bool),
                         quest_hook::libil2cpp::Void,
@@ -353,7 +364,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ForceMeshUpdate", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ForceMeshUpdate", 2usize
                         )
                     })
             });
@@ -368,7 +380,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -377,7 +389,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenerateTextMesh", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateTextMesh", 0usize
                         )
                     })
             });
@@ -394,7 +407,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
@@ -403,7 +416,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCanvas", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCanvas", 0usize
                         )
                     })
             });
@@ -418,7 +432,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Rect,
@@ -427,7 +441,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCanvasSpaceClippingRect", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCanvasSpaceClippingRect", 0usize
                         )
                     })
             });
@@ -442,7 +457,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Bounds,
@@ -451,7 +466,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCompoundBounds", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCompoundBounds", 0usize
                         )
                     })
             });
@@ -469,7 +485,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -478,7 +494,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMaterial", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMaterial", 1usize
                         )
                     })
             });
@@ -504,7 +521,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -521,7 +538,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMaterials", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMaterials", 1usize
                         )
                     })
             });
@@ -541,7 +559,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -550,7 +568,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetModifiedMaterial", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetModifiedMaterial", 1usize
                         )
                     })
             });
@@ -571,7 +590,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -584,7 +603,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSharedMaterials", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSharedMaterials", 0usize
                         )
                     })
             });
@@ -605,7 +625,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -618,7 +638,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTextContainerLocalCorners", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTextContainerLocalCorners", 0usize
                         )
                     })
             });
@@ -636,7 +657,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
@@ -645,7 +666,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTextInfo", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTextInfo", 1usize
                         )
                     })
             });
@@ -663,7 +685,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32, f32, bool),
                         quest_hook::libil2cpp::Void,
@@ -672,7 +694,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InternalCrossFadeAlpha", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InternalCrossFadeAlpha", 3usize
                         )
                     })
             });
@@ -691,7 +714,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Color, f32, bool, bool),
                         quest_hook::libil2cpp::Void,
@@ -700,7 +723,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InternalCrossFadeColor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InternalCrossFadeColor", 4usize
                         )
                     })
             });
@@ -719,7 +743,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -728,7 +752,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InternalUpdate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InternalUpdate", 0usize
                         )
                     })
             });
@@ -743,7 +768,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -752,7 +777,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadFontAsset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadFontAsset", 0usize
                         )
                     })
             });
@@ -774,7 +800,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -783,7 +809,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnCanvasHierarchyChanged", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnCanvasHierarchyChanged", 0usize
                         )
                     })
             });
@@ -798,12 +825,13 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDestroy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDestroy", 0usize
                         )
                     })
             });
@@ -818,7 +846,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -827,7 +855,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDidApplyAnimationProperties", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDidApplyAnimationProperties", 0usize
                         )
                     })
             });
@@ -842,12 +871,13 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDisable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDisable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDisable", 0usize
                         )
                     })
             });
@@ -862,12 +892,13 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnEnable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnEnable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnEnable", 0usize
                         )
                     })
             });
@@ -882,7 +913,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -891,7 +922,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnPreRenderCanvas", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnPreRenderCanvas", 0usize
                         )
                     })
             });
@@ -906,7 +938,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -915,7 +947,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnRectTransformDimensionsChange", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnRectTransformDimensionsChange", 0usize
                         )
                     })
             });
@@ -930,7 +963,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -939,7 +972,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnTransformParentChanged", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnTransformParentChanged", 0usize
                         )
                     })
             });
@@ -955,7 +989,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UI::CanvasUpdate),
                         quest_hook::libil2cpp::Void,
@@ -964,7 +998,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Rebuild", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Rebuild",
+                            1usize
                         )
                     })
             });
@@ -979,7 +1014,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -988,7 +1023,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RecalculateClipping", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RecalculateClipping", 0usize
                         )
                     })
             });
@@ -1004,7 +1040,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -1013,7 +1049,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetActiveSubMeshes", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetActiveSubMeshes", 1usize
                         )
                     })
             });
@@ -1028,7 +1065,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1037,7 +1074,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetAllDirty", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetAllDirty", 0usize
                         )
                     })
             });
@@ -1055,7 +1093,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -1068,7 +1106,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetArraySizes", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetArraySizes", 1usize
                         )
                     })
             });
@@ -1081,12 +1120,13 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SetCulling")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetCulling", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetCulling", 0usize
                         )
                     })
             });
@@ -1102,7 +1142,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Color32),
                         quest_hook::libil2cpp::Void,
@@ -1111,7 +1151,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetFaceColor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetFaceColor", 1usize
                         )
                     })
             });
@@ -1126,7 +1167,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1135,7 +1176,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetLayoutDirty", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetLayoutDirty", 0usize
                         )
                     })
             });
@@ -1150,7 +1192,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1159,7 +1201,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetMaterialDirty", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetMaterialDirty", 0usize
                         )
                     })
             });
@@ -1175,7 +1218,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -1184,7 +1227,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetMeshArrays", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetMeshArrays", 1usize
                         )
                     })
             });
@@ -1200,7 +1244,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Color32),
                         quest_hook::libil2cpp::Void,
@@ -1209,7 +1253,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetOutlineColor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetOutlineColor", 1usize
                         )
                     })
             });
@@ -1225,7 +1270,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -1234,7 +1279,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetOutlineThickness", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetOutlineThickness", 1usize
                         )
                     })
             });
@@ -1249,7 +1295,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1258,7 +1304,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetPerspectiveCorrection", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetPerspectiveCorrection", 0usize
                         )
                     })
             });
@@ -1273,7 +1320,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1282,7 +1329,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetShaderDepth", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetShaderDepth", 0usize
                         )
                     })
             });
@@ -1298,7 +1346,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
                         quest_hook::libil2cpp::Void,
@@ -1307,7 +1355,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetSharedMaterial", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetSharedMaterial", 1usize
                         )
                     })
             });
@@ -1327,7 +1376,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -1340,7 +1389,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetSharedMaterials", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetSharedMaterials", 1usize
                         )
                     })
             });
@@ -1355,7 +1405,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1364,7 +1414,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetVerticesDirty", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetVerticesDirty", 0usize
                         )
                     })
             });
@@ -1379,7 +1430,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1388,7 +1439,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateCulling", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateCulling", 0usize
                         )
                     })
             });
@@ -1403,7 +1455,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1412,7 +1464,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateEnvMapMatrix", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateEnvMapMatrix", 0usize
                         )
                     })
             });
@@ -1427,7 +1480,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1436,7 +1489,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateFontAsset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateFontAsset", 0usize
                         )
                     })
             });
@@ -1453,7 +1507,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>, i32),
                         quest_hook::libil2cpp::Void,
@@ -1462,7 +1516,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateGeometry", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateGeometry", 2usize
                         )
                     })
             });
@@ -1477,12 +1532,13 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("UpdateMask")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateMask", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateMask", 0usize
                         )
                     })
             });
@@ -1497,7 +1553,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1506,7 +1562,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateMaterial", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateMaterial", 0usize
                         )
                     })
             });
@@ -1521,7 +1578,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1530,7 +1587,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateMeshPadding", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateMeshPadding", 0usize
                         )
                     })
             });
@@ -1546,7 +1604,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -1555,7 +1613,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateSDFScale", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateSDFScale", 1usize
                         )
                     })
             });
@@ -1570,7 +1629,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1579,7 +1638,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateSubObjectPivot", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateSubObjectPivot", 0usize
                         )
                     })
             });
@@ -1594,7 +1654,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1603,7 +1663,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateVertexData", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateVertexData", 0usize
                         )
                     })
             });
@@ -1619,7 +1680,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::TMPro::TMP_VertexDataUpdateFlags),
                         quest_hook::libil2cpp::Void,
@@ -1628,7 +1689,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateVertexData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateVertexData", 1usize
                         )
                     })
             });
@@ -1643,12 +1705,13 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -1668,7 +1731,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -1681,7 +1744,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_OnPreRenderText", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_OnPreRenderText", 1usize
                         )
                     })
             });
@@ -1694,12 +1758,13 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_autoSizeTextContainer")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_autoSizeTextContainer", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_autoSizeTextContainer", 0usize
                         )
                     })
             });
@@ -1714,7 +1779,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasRenderer>,
@@ -1723,7 +1788,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_canvasRenderer", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_canvasRenderer", 0usize
                         )
                     })
             });
@@ -1738,7 +1804,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector4,
@@ -1747,7 +1813,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_maskOffset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_maskOffset", 0usize
                         )
                     })
             });
@@ -1764,7 +1831,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -1773,7 +1840,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_materialForRendering", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_materialForRendering", 0usize
                         )
                     })
             });
@@ -1790,7 +1858,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
@@ -1799,7 +1867,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_mesh", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_mesh", 0usize
                         )
                     })
             });
@@ -1819,7 +1888,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -1832,7 +1901,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_OnPreRenderText", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_OnPreRenderText", 1usize
                         )
                     })
             });
@@ -1848,7 +1918,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -1857,7 +1927,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_autoSizeTextContainer", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_autoSizeTextContainer", 1usize
                         )
                     })
             });
@@ -1873,7 +1944,7 @@ impl crate::TMPro::TextMeshProUGUI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector4),
                         quest_hook::libil2cpp::Void,
@@ -1882,7 +1953,8 @@ impl crate::TMPro::TextMeshProUGUI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_maskOffset", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_maskOffset", 1usize
                         )
                     })
             });

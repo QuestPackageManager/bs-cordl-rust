@@ -62,7 +62,7 @@ impl crate::GlobalNamespace::MultiplayerLobbyAvatarController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -71,7 +71,8 @@ impl crate::GlobalNamespace::MultiplayerLobbyAvatarController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ActivateVisualObjects", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ActivateVisualObjects", 1usize
                         )
                     })
             });
@@ -88,7 +89,7 @@ impl crate::GlobalNamespace::MultiplayerLobbyAvatarController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -99,7 +100,8 @@ impl crate::GlobalNamespace::MultiplayerLobbyAvatarController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DespawnAnimationCoroutine", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DespawnAnimationCoroutine", 0usize
                         )
                     })
             });
@@ -114,7 +116,7 @@ impl crate::GlobalNamespace::MultiplayerLobbyAvatarController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -123,7 +125,8 @@ impl crate::GlobalNamespace::MultiplayerLobbyAvatarController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DestroySelf", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DestroySelf", 0usize
                         )
                     })
             });
@@ -147,7 +150,7 @@ impl crate::GlobalNamespace::MultiplayerLobbyAvatarController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -158,7 +161,8 @@ impl crate::GlobalNamespace::MultiplayerLobbyAvatarController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShowDespawnAnimationAndDestroy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShowDespawnAnimationAndDestroy", 0usize
                         )
                     })
             });
@@ -175,7 +179,7 @@ impl crate::GlobalNamespace::MultiplayerLobbyAvatarController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector3, crate::UnityEngine::Quaternion),
                         quest_hook::libil2cpp::Void,
@@ -184,7 +188,8 @@ impl crate::GlobalNamespace::MultiplayerLobbyAvatarController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShowSpawnAnimation", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShowSpawnAnimation", 2usize
                         )
                     })
             });
@@ -201,7 +206,7 @@ impl crate::GlobalNamespace::MultiplayerLobbyAvatarController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -212,7 +217,8 @@ impl crate::GlobalNamespace::MultiplayerLobbyAvatarController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SpawnAnimationCoroutine", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SpawnAnimationCoroutine", 0usize
                         )
                     })
             });
@@ -227,12 +233,13 @@ impl crate::GlobalNamespace::MultiplayerLobbyAvatarController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -318,12 +325,13 @@ impl crate::GlobalNamespace::MultiplayerLobbyAvatarController_Factory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

@@ -54,7 +54,7 @@ impl crate::System::Collections::Generic::EnumerableHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -68,7 +68,8 @@ impl crate::System::Collections::Generic::EnumerableHelpers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToArray", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "ToArray",
+                            2usize
                         )
                     })
             });
@@ -91,7 +92,7 @@ impl crate::System::Collections::Generic::EnumerableHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<T>,
@@ -102,7 +103,8 @@ impl crate::System::Collections::Generic::EnumerableHelpers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToArray", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "ToArray",
+                            1usize
                         )
                     })
             });

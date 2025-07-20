@@ -71,7 +71,7 @@ impl crate::Org::BouncyCastle::Ocsp::RevokedStatus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::DateTime, i32),
                         quest_hook::libil2cpp::Void,
@@ -80,7 +80,8 @@ impl crate::Org::BouncyCastle::Ocsp::RevokedStatus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -98,7 +99,7 @@ impl crate::Org::BouncyCastle::Ocsp::RevokedStatus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Asn1::Ocsp::RevokedInfo,
@@ -109,7 +110,8 @@ impl crate::Org::BouncyCastle::Ocsp::RevokedStatus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -122,12 +124,13 @@ impl crate::Org::BouncyCastle::Ocsp::RevokedStatus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_HasRevocationReason")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_HasRevocationReason", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_HasRevocationReason", 0usize
                         )
                     })
             });
@@ -138,12 +141,13 @@ impl crate::Org::BouncyCastle::Ocsp::RevokedStatus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_RevocationReason")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_RevocationReason", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_RevocationReason", 0usize
                         )
                     })
             });
@@ -156,7 +160,7 @@ impl crate::Org::BouncyCastle::Ocsp::RevokedStatus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::DateTime,
@@ -165,7 +169,8 @@ impl crate::Org::BouncyCastle::Ocsp::RevokedStatus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_RevocationTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_RevocationTime", 0usize
                         )
                     })
             });

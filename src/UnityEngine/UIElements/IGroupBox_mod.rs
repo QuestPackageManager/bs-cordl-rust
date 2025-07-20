@@ -47,7 +47,7 @@ impl crate::UnityEngine::UIElements::IGroupBox {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::IGroupBoxOption,
@@ -58,7 +58,8 @@ impl crate::UnityEngine::UIElements::IGroupBox {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnOptionAdded", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnOptionAdded", 1usize
                         )
                     })
             });
@@ -76,7 +77,7 @@ impl crate::UnityEngine::UIElements::IGroupBox {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::IGroupBoxOption,
@@ -87,7 +88,8 @@ impl crate::UnityEngine::UIElements::IGroupBox {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnOptionRemoved", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnOptionRemoved", 1usize
                         )
                     })
             });

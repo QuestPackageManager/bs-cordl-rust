@@ -53,7 +53,7 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::Security::Cryptography::DerSequenceReader_DerTag,
@@ -68,7 +68,8 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckTag", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckTag", 3usize
                         )
                     })
             });
@@ -81,12 +82,13 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("EatLength")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EatLength", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EatLength", 0usize
                         )
                     })
             });
@@ -100,7 +102,7 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Security::Cryptography::DerSequenceReader_DerTag),
                         quest_hook::libil2cpp::Void,
@@ -109,7 +111,8 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EatTag", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "EatTag",
+                            1usize
                         )
                     })
             });
@@ -154,12 +157,13 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u8, 0usize>("PeekTag")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PeekTag", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "PeekTag",
+                            0usize
                         )
                     })
             });
@@ -174,7 +178,7 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -183,7 +187,8 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadBMPString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadBMPString", 0usize
                         )
                     })
             });
@@ -200,7 +205,7 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -211,7 +216,8 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadBitString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadBitString", 0usize
                         )
                     })
             });
@@ -224,12 +230,13 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("ReadBoolean")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadBoolean", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadBoolean", 0usize
                         )
                     })
             });
@@ -247,7 +254,7 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Security::Cryptography::DerSequenceReader_DerTag),
                         quest_hook::libil2cpp::Gc<
@@ -258,7 +265,8 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadCollectionWithTag", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadCollectionWithTag", 1usize
                         )
                     })
             });
@@ -275,7 +283,7 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -286,7 +294,8 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadContentAsBytes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadContentAsBytes", 0usize
                         )
                     })
             });
@@ -301,7 +310,7 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::DateTime,
@@ -310,7 +319,8 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadGeneralizedTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadGeneralizedTime", 0usize
                         )
                     })
             });
@@ -327,7 +337,7 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -336,7 +346,8 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadIA5String", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadIA5String", 0usize
                         )
                     })
             });
@@ -349,12 +360,13 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("ReadInteger")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadInteger", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadInteger", 0usize
                         )
                     })
             });
@@ -369,7 +381,7 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -380,7 +392,8 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadIntegerBytes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadIntegerBytes", 0usize
                         )
                     })
             });
@@ -397,7 +410,7 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -408,7 +421,8 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadNextEncodedValue", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadNextEncodedValue", 0usize
                         )
                     })
             });
@@ -425,7 +439,7 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -436,7 +450,8 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadOctetString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadOctetString", 0usize
                         )
                     })
             });
@@ -453,7 +468,7 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -462,7 +477,8 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadOidAsString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadOidAsString", 0usize
                         )
                     })
             });
@@ -479,7 +495,7 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -488,7 +504,8 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadPrintableString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadPrintableString", 0usize
                         )
                     })
             });
@@ -507,7 +524,7 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -518,7 +535,8 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadSequence", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadSequence", 0usize
                         )
                     })
             });
@@ -537,7 +555,7 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -548,7 +566,8 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadSet", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "ReadSet",
+                            0usize
                         )
                     })
             });
@@ -565,7 +584,7 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -574,7 +593,8 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadT61String", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadT61String", 0usize
                         )
                     })
             });
@@ -591,7 +611,7 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Security::Cryptography::DerSequenceReader_DerTag,
@@ -605,7 +625,8 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadTime", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadTime", 2usize
                         )
                     })
             });
@@ -620,12 +641,13 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::System::DateTime, 0usize>("ReadUtcTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadUtcTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadUtcTime", 0usize
                         )
                     })
             });
@@ -642,7 +664,7 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -651,7 +673,8 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadUtf8String", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadUtf8String", 0usize
                         )
                     })
             });
@@ -666,12 +689,13 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::System::DateTime, 0usize>("ReadX509Date")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadX509Date", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadX509Date", 0usize
                         )
                     })
             });
@@ -689,7 +713,7 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -705,7 +729,8 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanContentLength", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanContentLength", 4usize
                         )
                     })
             });
@@ -720,12 +745,13 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SkipValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SkipValue", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SkipValue", 0usize
                         )
                     })
             });
@@ -742,7 +768,7 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -751,7 +777,8 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TrimTrailingNulls", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TrimTrailingNulls", 1usize
                         )
                     })
             });
@@ -770,7 +797,7 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Security::Cryptography::DerSequenceReader_DerTag,
@@ -786,7 +813,8 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
                         )
                     })
             });
@@ -802,7 +830,7 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -813,7 +841,8 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -831,7 +860,7 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -846,7 +875,8 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -859,12 +889,13 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_HasData")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_HasData", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_HasData", 0usize
                         )
                     })
             });
@@ -878,7 +909,7 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -887,7 +918,8 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_ContentLength", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_ContentLength", 1usize
                         )
                     })
             });

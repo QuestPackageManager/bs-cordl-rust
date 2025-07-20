@@ -75,7 +75,7 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -89,7 +89,8 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CommitElementUnderPointers", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CommitElementUnderPointers", 2usize
                         )
                     })
             });
@@ -107,7 +108,7 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::EventBase,
@@ -118,7 +119,8 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetEventPointerPosition", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetEventPointerPosition", 1usize
                         )
                     })
             });
@@ -138,7 +140,7 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -153,7 +155,8 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTopElementUnderPointer", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTopElementUnderPointer", 3usize
                         )
                     })
             });
@@ -173,7 +176,7 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
@@ -184,7 +187,8 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTopElementUnderPointer", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTopElementUnderPointer", 1usize
                         )
                     })
             });
@@ -213,7 +217,7 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -230,7 +234,8 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetElementUnderPointer", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetElementUnderPointer", 3usize
                         )
                     })
             });
@@ -257,7 +262,7 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -275,7 +280,8 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetElementUnderPointer", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetElementUnderPointer", 4usize
                         )
                     })
             });
@@ -299,7 +305,7 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -314,7 +320,8 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetElementUnderPointer", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetElementUnderPointer", 3usize
                         )
                     })
             });
@@ -337,7 +344,7 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -354,7 +361,8 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetTemporaryElementUnderPointer", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetTemporaryElementUnderPointer", 3usize
                         )
                     })
             });
@@ -373,12 +381,13 @@ impl crate::UnityEngine::UIElements::ElementUnderPointer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

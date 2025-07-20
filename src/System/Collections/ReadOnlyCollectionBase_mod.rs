@@ -48,7 +48,7 @@ impl crate::System::Collections::ReadOnlyCollectionBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -59,7 +59,8 @@ impl crate::System::Collections::ReadOnlyCollectionBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetEnumerator", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetEnumerator", 0usize
                         )
                     })
             });
@@ -83,7 +84,7 @@ impl crate::System::Collections::ReadOnlyCollectionBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Array>, i32),
                         quest_hook::libil2cpp::Void,
@@ -92,8 +93,8 @@ impl crate::System::Collections::ReadOnlyCollectionBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "System.Collections.ICollection.CopyTo",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "System.Collections.ICollection.CopyTo", 2usize
                         )
                     })
             });
@@ -108,7 +109,7 @@ impl crate::System::Collections::ReadOnlyCollectionBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         bool,
@@ -117,7 +118,7 @@ impl crate::System::Collections::ReadOnlyCollectionBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "System.Collections.ICollection.get_IsSynchronized", 0usize
                         )
                     })
@@ -133,7 +134,7 @@ impl crate::System::Collections::ReadOnlyCollectionBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -142,8 +143,8 @@ impl crate::System::Collections::ReadOnlyCollectionBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "System.Collections.ICollection.get_SyncRoot",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "System.Collections.ICollection.get_SyncRoot", 0usize
                         )
                     })
             });
@@ -158,12 +159,13 @@ impl crate::System::Collections::ReadOnlyCollectionBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -176,12 +178,13 @@ impl crate::System::Collections::ReadOnlyCollectionBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_Count")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Count", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Count", 0usize
                         )
                     })
             });
@@ -196,7 +199,7 @@ impl crate::System::Collections::ReadOnlyCollectionBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
@@ -205,7 +208,8 @@ impl crate::System::Collections::ReadOnlyCollectionBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_InnerList", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_InnerList", 0usize
                         )
                     })
             });

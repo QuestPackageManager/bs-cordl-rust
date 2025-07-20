@@ -42,12 +42,13 @@ impl crate::GlobalNamespace::VarIntExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("GetSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetSize",
+                            1usize
                         )
                     })
             });
@@ -58,12 +59,13 @@ impl crate::GlobalNamespace::VarIntExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i64), i32, 1usize>("GetSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetSize",
+                            1usize
                         )
                     })
             });
@@ -74,12 +76,13 @@ impl crate::GlobalNamespace::VarIntExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32), i32, 1usize>("GetSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetSize",
+                            1usize
                         )
                     })
             });
@@ -90,12 +93,13 @@ impl crate::GlobalNamespace::VarIntExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64), i32, 1usize>("GetSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetSize",
+                            1usize
                         )
                     })
             });
@@ -108,7 +112,7 @@ impl crate::GlobalNamespace::VarIntExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::LiteNetLib::Utils::NetDataReader,
@@ -119,7 +123,8 @@ impl crate::GlobalNamespace::VarIntExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetVarInt", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetVarInt", 1usize
                         )
                     })
             });
@@ -132,7 +137,7 @@ impl crate::GlobalNamespace::VarIntExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::LiteNetLib::Utils::NetDataReader,
@@ -143,7 +148,8 @@ impl crate::GlobalNamespace::VarIntExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetVarLong", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetVarLong", 1usize
                         )
                     })
             });
@@ -156,7 +162,7 @@ impl crate::GlobalNamespace::VarIntExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::LiteNetLib::Utils::NetDataReader,
@@ -167,7 +173,8 @@ impl crate::GlobalNamespace::VarIntExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetVarUInt", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetVarUInt", 1usize
                         )
                     })
             });
@@ -180,7 +187,7 @@ impl crate::GlobalNamespace::VarIntExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::LiteNetLib::Utils::NetDataReader,
@@ -191,7 +198,8 @@ impl crate::GlobalNamespace::VarIntExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetVarULong", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetVarULong", 1usize
                         )
                     })
             });
@@ -205,7 +213,7 @@ impl crate::GlobalNamespace::VarIntExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -219,7 +227,8 @@ impl crate::GlobalNamespace::VarIntExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PutVarInt", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PutVarInt", 2usize
                         )
                     })
             });
@@ -235,7 +244,7 @@ impl crate::GlobalNamespace::VarIntExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -249,7 +258,8 @@ impl crate::GlobalNamespace::VarIntExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PutVarLong", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PutVarLong", 2usize
                         )
                     })
             });
@@ -265,7 +275,7 @@ impl crate::GlobalNamespace::VarIntExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -279,7 +289,8 @@ impl crate::GlobalNamespace::VarIntExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PutVarUInt", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PutVarUInt", 2usize
                         )
                     })
             });
@@ -295,7 +306,7 @@ impl crate::GlobalNamespace::VarIntExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -309,7 +320,8 @@ impl crate::GlobalNamespace::VarIntExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PutVarULong", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PutVarULong", 2usize
                         )
                     })
             });
@@ -325,7 +337,7 @@ impl crate::GlobalNamespace::VarIntExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -339,7 +351,8 @@ impl crate::GlobalNamespace::VarIntExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGetVarUInt", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetVarUInt", 2usize
                         )
                     })
             });
@@ -353,7 +366,7 @@ impl crate::GlobalNamespace::VarIntExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -367,7 +380,8 @@ impl crate::GlobalNamespace::VarIntExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGetVarULong", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetVarULong", 2usize
                         )
                     })
             });

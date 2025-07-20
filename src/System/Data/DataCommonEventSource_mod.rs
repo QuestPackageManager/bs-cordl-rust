@@ -45,7 +45,7 @@ impl crate::System::Data::DataCommonEventSource {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         i64,
@@ -54,7 +54,8 @@ impl crate::System::Data::DataCommonEventSource {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnterScope", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnterScope", 1usize
                         )
                     })
             });
@@ -73,7 +74,7 @@ impl crate::System::Data::DataCommonEventSource {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -87,7 +88,8 @@ impl crate::System::Data::DataCommonEventSource {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnterScope", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnterScope", 2usize
                         )
                     })
             });
@@ -109,7 +111,7 @@ impl crate::System::Data::DataCommonEventSource {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -124,7 +126,8 @@ impl crate::System::Data::DataCommonEventSource {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnterScope", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnterScope", 3usize
                         )
                     })
             });
@@ -151,7 +154,7 @@ impl crate::System::Data::DataCommonEventSource {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -167,7 +170,8 @@ impl crate::System::Data::DataCommonEventSource {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnterScope", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnterScope", 4usize
                         )
                     })
             });
@@ -197,7 +201,7 @@ impl crate::System::Data::DataCommonEventSource {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -214,7 +218,8 @@ impl crate::System::Data::DataCommonEventSource {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnterScope", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnterScope", 5usize
                         )
                     })
             });
@@ -230,7 +235,7 @@ impl crate::System::Data::DataCommonEventSource {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i64),
                         quest_hook::libil2cpp::Void,
@@ -239,7 +244,8 @@ impl crate::System::Data::DataCommonEventSource {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExitScope", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExitScope", 1usize
                         )
                     })
             });
@@ -262,7 +268,7 @@ impl crate::System::Data::DataCommonEventSource {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -271,7 +277,8 @@ impl crate::System::Data::DataCommonEventSource {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Trace", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Trace",
+                            1usize
                         )
                     })
             });
@@ -292,7 +299,7 @@ impl crate::System::Data::DataCommonEventSource {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -306,7 +313,8 @@ impl crate::System::Data::DataCommonEventSource {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Trace", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Trace",
+                            2usize
                         )
                     })
             });
@@ -330,7 +338,7 @@ impl crate::System::Data::DataCommonEventSource {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -345,7 +353,8 @@ impl crate::System::Data::DataCommonEventSource {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Trace", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Trace",
+                            3usize
                         )
                     })
             });
@@ -372,7 +381,7 @@ impl crate::System::Data::DataCommonEventSource {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -388,7 +397,8 @@ impl crate::System::Data::DataCommonEventSource {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Trace", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Trace",
+                            4usize
                         )
                     })
             });
@@ -418,7 +428,7 @@ impl crate::System::Data::DataCommonEventSource {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -435,7 +445,8 @@ impl crate::System::Data::DataCommonEventSource {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Trace", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Trace",
+                            5usize
                         )
                     })
             });
@@ -468,7 +479,7 @@ impl crate::System::Data::DataCommonEventSource {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -486,7 +497,8 @@ impl crate::System::Data::DataCommonEventSource {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Trace", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Trace",
+                            6usize
                         )
                     })
             });
@@ -525,7 +537,7 @@ impl crate::System::Data::DataCommonEventSource {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -545,7 +557,8 @@ impl crate::System::Data::DataCommonEventSource {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Trace", 8usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Trace",
+                            8usize
                         )
                     })
             });
@@ -564,12 +577,13 @@ impl crate::System::Data::DataCommonEventSource {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

@@ -66,7 +66,7 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -77,7 +77,8 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateFromAddressables", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateFromAddressables", 0usize
                         )
                     })
             });
@@ -99,7 +100,7 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::EnvironmentType),
                         quest_hook::libil2cpp::Gc<
@@ -114,7 +115,8 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAllEnvironmentInfosWithType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAllEnvironmentInfosWithType", 1usize
                         )
                     })
             });
@@ -136,7 +138,7 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -147,7 +149,8 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetEnvironmentInfoBySerializedName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetEnvironmentInfoBySerializedName", 1usize
                         )
                     })
             });
@@ -167,7 +170,7 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -178,8 +181,8 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetEnvironmentInfoBySerializedNameSafe",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetEnvironmentInfoBySerializedNameSafe", 1usize
                         )
                     })
             });
@@ -197,7 +200,7 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::EnvironmentType),
                         quest_hook::libil2cpp::Gc<
@@ -208,7 +211,8 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetFirstEnvironmentInfoWithType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetFirstEnvironmentInfoWithType", 1usize
                         )
                     })
             });
@@ -226,7 +230,7 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::EnvironmentType),
                         quest_hook::libil2cpp::Gc<
@@ -237,7 +241,8 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLastEnvironmentInfoWithType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLastEnvironmentInfoWithType", 1usize
                         )
                     })
             });
@@ -270,7 +275,7 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<
@@ -285,7 +290,8 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -306,7 +312,7 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -321,7 +327,8 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_environmentInfos", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_environmentInfos", 0usize
                         )
                     })
             });
@@ -340,7 +347,7 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -349,7 +356,8 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_loggerPrefix", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_loggerPrefix", 0usize
                         )
                     })
             });
@@ -370,7 +378,7 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -385,7 +393,8 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_normalEnvironmentNames", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_normalEnvironmentNames", 0usize
                         )
                     })
             });
@@ -408,7 +417,7 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -423,7 +432,8 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_normalEnvironmentSerializedNames", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_normalEnvironmentSerializedNames", 0usize
                         )
                     })
             });

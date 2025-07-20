@@ -59,7 +59,7 @@ impl crate::Mono::Security::Interface::MonoTlsConnectionInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -68,7 +68,8 @@ impl crate::Mono::Security::Interface::MonoTlsConnectionInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToString", 0usize
                         )
                     })
             });
@@ -83,12 +84,13 @@ impl crate::Mono::Security::Interface::MonoTlsConnectionInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -105,7 +107,7 @@ impl crate::Mono::Security::Interface::MonoTlsConnectionInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Mono::Security::Interface::CipherSuiteCode,
@@ -114,7 +116,8 @@ impl crate::Mono::Security::Interface::MonoTlsConnectionInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CipherSuiteCode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CipherSuiteCode", 0usize
                         )
                     })
             });
@@ -129,7 +132,7 @@ impl crate::Mono::Security::Interface::MonoTlsConnectionInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Mono::Security::Interface::TlsProtocols,
@@ -138,7 +141,8 @@ impl crate::Mono::Security::Interface::MonoTlsConnectionInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ProtocolVersion", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ProtocolVersion", 0usize
                         )
                     })
             });
@@ -154,7 +158,7 @@ impl crate::Mono::Security::Interface::MonoTlsConnectionInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Mono::Security::Interface::CipherSuiteCode),
                         quest_hook::libil2cpp::Void,
@@ -163,7 +167,8 @@ impl crate::Mono::Security::Interface::MonoTlsConnectionInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_CipherSuiteCode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_CipherSuiteCode", 1usize
                         )
                     })
             });
@@ -179,7 +184,7 @@ impl crate::Mono::Security::Interface::MonoTlsConnectionInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -188,7 +193,8 @@ impl crate::Mono::Security::Interface::MonoTlsConnectionInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_PeerDomainName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_PeerDomainName", 1usize
                         )
                     })
             });
@@ -204,7 +210,7 @@ impl crate::Mono::Security::Interface::MonoTlsConnectionInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Mono::Security::Interface::TlsProtocols),
                         quest_hook::libil2cpp::Void,
@@ -213,7 +219,8 @@ impl crate::Mono::Security::Interface::MonoTlsConnectionInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_ProtocolVersion", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_ProtocolVersion", 1usize
                         )
                     })
             });

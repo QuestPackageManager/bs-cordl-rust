@@ -49,7 +49,7 @@ impl crate::GlobalNamespace::WhiteColorOrAlphaGroupEffect {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::EnvironmentColorType, bool, f32),
                         crate::UnityEngine::Color,
@@ -58,7 +58,8 @@ impl crate::GlobalNamespace::WhiteColorOrAlphaGroupEffect {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetColor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetColor", 3usize
                         )
                     })
             });
@@ -122,7 +123,7 @@ impl crate::GlobalNamespace::WhiteColorOrAlphaGroupEffect {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -151,7 +152,8 @@ impl crate::GlobalNamespace::WhiteColorOrAlphaGroupEffect {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            7usize
                         )
                     })
             });

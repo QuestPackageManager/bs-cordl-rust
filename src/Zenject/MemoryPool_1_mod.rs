@@ -77,7 +77,7 @@ impl<TValue: quest_hook::libil2cpp::Type> crate::Zenject::MemoryPool_1<TValue> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (TValue),
                         quest_hook::libil2cpp::Void,
@@ -86,7 +86,8 @@ impl<TValue: quest_hook::libil2cpp::Type> crate::Zenject::MemoryPool_1<TValue> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Reinitialize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Reinitialize", 1usize
                         )
                     })
             });
@@ -103,12 +104,13 @@ impl<TValue: quest_hook::libil2cpp::Type> crate::Zenject::MemoryPool_1<TValue> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), TValue, 0usize>("Spawn")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Spawn", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Spawn",
+                            0usize
                         )
                     })
             });
@@ -125,12 +127,13 @@ impl<TValue: quest_hook::libil2cpp::Type> crate::Zenject::MemoryPool_1<TValue> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), TValue, 0usize>("Zenject.IFactory<TValue>.Create")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Zenject.IFactory<TValue>.Create", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Zenject.IFactory<TValue>.Create", 0usize
                         )
                     })
             });
@@ -153,7 +156,7 @@ impl<TValue: quest_hook::libil2cpp::Type> crate::Zenject::MemoryPool_1<TValue> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -168,7 +171,8 @@ impl<TValue: quest_hook::libil2cpp::Type> crate::Zenject::MemoryPool_1<TValue> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "__zenCreate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "__zenCreate", 1usize
                         )
                     })
             });
@@ -187,7 +191,7 @@ impl<TValue: quest_hook::libil2cpp::Type> crate::Zenject::MemoryPool_1<TValue> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
@@ -196,7 +200,8 @@ impl<TValue: quest_hook::libil2cpp::Type> crate::Zenject::MemoryPool_1<TValue> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "__zenCreateInjectTypeInfo", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "__zenCreateInjectTypeInfo", 0usize
                         )
                     })
             });
@@ -213,12 +218,13 @@ impl<TValue: quest_hook::libil2cpp::Type> crate::Zenject::MemoryPool_1<TValue> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

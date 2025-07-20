@@ -107,7 +107,7 @@ impl crate::Unity::Profiling::ProfilerRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -116,7 +116,8 @@ impl crate::Unity::Profiling::ProfilerRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckInitializedAndThrow", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckInitializedAndThrow", 0usize
                         )
                     })
             });
@@ -132,7 +133,7 @@ impl crate::Unity::Profiling::ProfilerRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Unity::Profiling::ProfilerRecorder,
@@ -144,7 +145,8 @@ impl crate::Unity::Profiling::ProfilerRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Control", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Control",
+                            2usize
                         )
                     })
             });
@@ -162,7 +164,7 @@ impl crate::Unity::Profiling::ProfilerRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -176,7 +178,8 @@ impl crate::Unity::Profiling::ProfilerRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Control_Injected", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Control_Injected", 2usize
                         )
                     })
             });
@@ -193,7 +196,7 @@ impl crate::Unity::Profiling::ProfilerRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle,
@@ -206,7 +209,8 @@ impl crate::Unity::Profiling::ProfilerRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Create", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Create",
+                            3usize
                         )
                     })
             });
@@ -226,7 +230,7 @@ impl crate::Unity::Profiling::ProfilerRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -244,7 +248,8 @@ impl crate::Unity::Profiling::ProfilerRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Create_Injected", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Create_Injected", 4usize
                         )
                     })
             });
@@ -259,12 +264,13 @@ impl crate::Unity::Profiling::ProfilerRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Dispose", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            0usize
                         )
                     })
             });
@@ -279,7 +285,7 @@ impl crate::Unity::Profiling::ProfilerRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Profiling::ProfilerRecorder),
                         i64,
@@ -288,7 +294,8 @@ impl crate::Unity::Profiling::ProfilerRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLastValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLastValue", 1usize
                         )
                     })
             });
@@ -303,7 +310,7 @@ impl crate::Unity::Profiling::ProfilerRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::Unity::Profiling::ProfilerRecorder,
@@ -314,7 +321,8 @@ impl crate::Unity::Profiling::ProfilerRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLastValue_Injected", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLastValue_Injected", 1usize
                         )
                     })
             });
@@ -327,7 +335,7 @@ impl crate::Unity::Profiling::ProfilerRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Profiling::ProfilerRecorder),
                         bool,
@@ -336,7 +344,8 @@ impl crate::Unity::Profiling::ProfilerRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetValid", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetValid", 1usize
                         )
                     })
             });
@@ -351,7 +360,7 @@ impl crate::Unity::Profiling::ProfilerRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::Unity::Profiling::ProfilerRecorder,
@@ -362,7 +371,8 @@ impl crate::Unity::Profiling::ProfilerRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetValid_Injected", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetValid_Injected", 1usize
                         )
                     })
             });
@@ -375,7 +385,7 @@ impl crate::Unity::Profiling::ProfilerRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Profiling::ProfilerRecorder),
                         crate::Unity::Profiling::ProfilerMarkerDataUnit,
@@ -384,7 +394,8 @@ impl crate::Unity::Profiling::ProfilerRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetValueUnitType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetValueUnitType", 1usize
                         )
                     })
             });
@@ -401,7 +412,7 @@ impl crate::Unity::Profiling::ProfilerRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::Unity::Profiling::ProfilerRecorder,
@@ -412,7 +423,8 @@ impl crate::Unity::Profiling::ProfilerRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetValueUnitType_Injected", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetValueUnitType_Injected", 1usize
                         )
                     })
             });
@@ -430,7 +442,7 @@ impl crate::Unity::Profiling::ProfilerRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Unity::Profiling::ProfilerCategory,
@@ -446,7 +458,8 @@ impl crate::Unity::Profiling::ProfilerRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartNew", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartNew", 4usize
                         )
                     })
             });
@@ -466,7 +479,7 @@ impl crate::Unity::Profiling::ProfilerRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::Unity::Profiling::ProfilerCategory,
@@ -483,7 +496,8 @@ impl crate::Unity::Profiling::ProfilerRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            5usize
                         )
                     })
             });
@@ -500,12 +514,13 @@ impl crate::Unity::Profiling::ProfilerRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i64, 0usize>("get_LastValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_LastValue", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_LastValue", 0usize
                         )
                     })
             });
@@ -518,7 +533,7 @@ impl crate::Unity::Profiling::ProfilerRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Profiling::ProfilerMarkerDataUnit,
@@ -527,7 +542,8 @@ impl crate::Unity::Profiling::ProfilerRecorder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_UnitType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_UnitType", 0usize
                         )
                     })
             });
@@ -540,12 +556,13 @@ impl crate::Unity::Profiling::ProfilerRecorder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_Valid")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Valid", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Valid", 0usize
                         )
                     })
             });

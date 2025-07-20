@@ -74,12 +74,13 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), u8, 1usize>("Category")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Category", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Category", 1usize
                         )
                     })
             });
@@ -94,7 +95,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -108,7 +109,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ClearBuffer", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ClearBuffer", 2usize
                         )
                     })
             });
@@ -130,7 +132,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -151,7 +153,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Compare", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Compare",
+                            7usize
                         )
                     })
             });
@@ -168,12 +171,13 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(bool, bool), i32, 2usize>("CompareFlagPair")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CompareFlagPair", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CompareFlagPair", 2usize
                         )
                     })
             });
@@ -199,7 +203,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -226,7 +230,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CompareInternal", 11usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CompareInternal", 11usize
                         )
                     })
             });
@@ -263,7 +268,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -279,7 +284,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FillSortKeyRaw", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FillSortKeyRaw", 4usize
                         )
                     })
             });
@@ -298,7 +304,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -312,7 +318,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FillSurrogateSortKeyRaw", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FillSurrogateSortKeyRaw", 2usize
                         )
                     })
             });
@@ -330,7 +337,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -343,7 +350,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FilterExtender", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FilterExtender", 3usize
                         )
                     })
             });
@@ -358,7 +366,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, crate::System::Globalization::CompareOptions),
                         i32,
@@ -367,7 +375,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FilterOptions", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FilterOptions", 2usize
                         )
                     })
             });
@@ -392,7 +401,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -416,7 +425,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetContraction", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetContraction", 4usize
                         )
                     })
             });
@@ -436,7 +446,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -453,7 +463,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetContraction", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetContraction", 3usize
                         )
                     })
             });
@@ -471,7 +482,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         crate::Mono::Globalization::Unicode::SimpleCollator_ExtenderType,
@@ -480,7 +491,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetExtenderType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetExtenderType", 1usize
                         )
                     })
             });
@@ -497,7 +509,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Globalization::CultureInfo,
@@ -510,7 +522,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNeutralCulture", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNeutralCulture", 1usize
                         )
                     })
             });
@@ -529,7 +542,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -543,7 +556,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSortKey", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSortKey", 2usize
                         )
                     })
             });
@@ -564,7 +578,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -580,7 +594,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSortKey", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSortKey", 4usize
                         )
                     })
             });
@@ -602,7 +617,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -621,7 +636,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSortKey", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSortKey", 5usize
                         )
                     })
             });
@@ -648,7 +664,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -672,7 +688,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTailContraction", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTailContraction", 4usize
                         )
                     })
             });
@@ -692,7 +709,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -709,7 +726,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTailContraction", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTailContraction", 3usize
                         )
                     })
             });
@@ -728,7 +746,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -746,7 +764,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IndexOfOrdinal", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IndexOfOrdinal", 4usize
                         )
                     })
             });
@@ -765,7 +784,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -781,7 +800,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IndexOfOrdinal", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IndexOfOrdinal", 4usize
                         )
                     })
             });
@@ -806,7 +826,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -830,7 +850,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IndexOfSortKey", 8usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IndexOfSortKey", 8usize
                         )
                     })
             });
@@ -854,7 +875,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -873,7 +894,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IndexOf", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "IndexOf",
+                            5usize
                         )
                     })
             });
@@ -896,7 +918,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -920,7 +942,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IndexOf", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "IndexOf",
+                            6usize
                         )
                     })
             });
@@ -937,7 +960,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, crate::System::Globalization::CompareOptions),
                         bool,
@@ -946,7 +969,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsHalfKana", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsHalfKana", 2usize
                         )
                     })
             });
@@ -960,7 +984,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, crate::System::Globalization::CompareOptions),
                         bool,
@@ -969,7 +993,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsIgnorable", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsIgnorable", 2usize
                         )
                     })
             });
@@ -985,7 +1010,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1002,7 +1027,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsPrefix", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsPrefix", 3usize
                         )
                     })
             });
@@ -1022,7 +1048,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1041,7 +1067,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsPrefix", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsPrefix", 5usize
                         )
                     })
             });
@@ -1064,7 +1091,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1086,7 +1113,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsPrefix", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsPrefix", 6usize
                         )
                     })
             });
@@ -1103,12 +1131,13 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), bool, 1usize>("IsSafe")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsSafe", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsSafe",
+                            1usize
                         )
                     })
             });
@@ -1124,7 +1153,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1141,7 +1170,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsSuffix", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsSuffix", 3usize
                         )
                     })
             });
@@ -1161,7 +1191,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1180,7 +1210,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsSuffix", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsSuffix", 5usize
                         )
                     })
             });
@@ -1199,7 +1230,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1217,7 +1248,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LastIndexOfOrdinal", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LastIndexOfOrdinal", 4usize
                         )
                     })
             });
@@ -1242,7 +1274,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1266,7 +1298,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LastIndexOfSortKey", 8usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LastIndexOfSortKey", 8usize
                         )
                     })
             });
@@ -1290,7 +1323,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1309,7 +1342,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LastIndexOf", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LastIndexOf", 5usize
                         )
                     })
             });
@@ -1332,7 +1366,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1356,7 +1390,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LastIndexOf", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LastIndexOf", 6usize
                         )
                     })
             });
@@ -1370,12 +1405,13 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), u8, 1usize>("Level1")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Level1", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Level1",
+                            1usize
                         )
                     })
             });
@@ -1390,7 +1426,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -1402,7 +1438,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Level2", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Level2",
+                            2usize
                         )
                     })
             });
@@ -1425,7 +1462,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1449,7 +1486,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MatchesBackward", 8usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MatchesBackward", 8usize
                         )
                     })
             });
@@ -1482,7 +1520,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1512,7 +1550,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MatchesBackwardCore", 10usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MatchesBackwardCore", 10usize
                         )
                     })
             });
@@ -1540,7 +1579,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1563,7 +1602,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MatchesForward", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MatchesForward", 7usize
                         )
                     })
             });
@@ -1591,7 +1631,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1620,7 +1660,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MatchesForwardCore", 9usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MatchesForwardCore", 9usize
                         )
                     })
             });
@@ -1643,7 +1684,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Globalization::CompareOptions,
@@ -1664,7 +1705,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MatchesPrimitive", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MatchesPrimitive", 7usize
                         )
                     })
             });
@@ -1693,7 +1735,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1712,7 +1754,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "QuickIndexOf", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "QuickIndexOf", 5usize
                         )
                     })
             });
@@ -1747,7 +1790,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1785,7 +1828,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetCJKTable", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetCJKTable", 6usize
                         )
                     })
             });
@@ -1811,7 +1855,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1832,7 +1876,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "System.Globalization.ISimpleCollator.Compare", 7usize
                         )
                     })
@@ -1849,7 +1893,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Mono::Globalization::Unicode::SimpleCollator_ExtenderType,
@@ -1861,7 +1905,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToDashTypeValue", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToDashTypeValue", 2usize
                         )
                     })
             });
@@ -1875,7 +1920,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Globalization::CultureInfo,
@@ -1886,7 +1931,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -2041,7 +2087,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator_Context {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Globalization::CompareOptions,
@@ -2067,7 +2113,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator_Context {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            6usize
                         )
                     })
             });
@@ -2394,12 +2441,13 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator_PreviousInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });

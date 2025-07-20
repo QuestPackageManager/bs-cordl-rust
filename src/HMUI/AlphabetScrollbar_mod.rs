@@ -66,12 +66,13 @@ impl crate::HMUI::AlphabetScrollbar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Awake", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Awake",
+                            0usize
                         )
                     })
             });
@@ -89,7 +90,7 @@ impl crate::HMUI::AlphabetScrollbar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::EventSystems::PointerEventData,
@@ -100,7 +101,8 @@ impl crate::HMUI::AlphabetScrollbar {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPointerCharacterIndex", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPointerCharacterIndex", 1usize
                         )
                     })
             });
@@ -115,7 +117,7 @@ impl crate::HMUI::AlphabetScrollbar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>, char),
                         quest_hook::libil2cpp::Void,
@@ -124,7 +126,8 @@ impl crate::HMUI::AlphabetScrollbar {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitText", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitText", 2usize
                         )
                     })
             });
@@ -149,7 +152,7 @@ impl crate::HMUI::AlphabetScrollbar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::EventSystems::PointerEventData,
@@ -160,7 +163,8 @@ impl crate::HMUI::AlphabetScrollbar {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnPointerDown", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnPointerDown", 1usize
                         )
                     })
             });
@@ -178,7 +182,7 @@ impl crate::HMUI::AlphabetScrollbar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::EventSystems::PointerEventData,
@@ -189,7 +193,8 @@ impl crate::HMUI::AlphabetScrollbar {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnPointerEnter", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnPointerEnter", 1usize
                         )
                     })
             });
@@ -207,7 +212,7 @@ impl crate::HMUI::AlphabetScrollbar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::EventSystems::PointerEventData,
@@ -218,7 +223,8 @@ impl crate::HMUI::AlphabetScrollbar {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnPointerExit", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnPointerExit", 1usize
                         )
                     })
             });
@@ -236,7 +242,7 @@ impl crate::HMUI::AlphabetScrollbar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::EventSystems::PointerEventData,
@@ -247,7 +253,8 @@ impl crate::HMUI::AlphabetScrollbar {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnPointerUp", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnPointerUp", 1usize
                         )
                     })
             });
@@ -267,7 +274,7 @@ impl crate::HMUI::AlphabetScrollbar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::EventSystems::PointerEventData,
@@ -280,7 +287,8 @@ impl crate::HMUI::AlphabetScrollbar {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PointerMoveInsideCoroutine", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PointerMoveInsideCoroutine", 1usize
                         )
                     })
             });
@@ -295,7 +303,7 @@ impl crate::HMUI::AlphabetScrollbar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -304,7 +312,8 @@ impl crate::HMUI::AlphabetScrollbar {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PrepareTransforms", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PrepareTransforms", 0usize
                         )
                     })
             });
@@ -319,7 +328,7 @@ impl crate::HMUI::AlphabetScrollbar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -328,7 +337,8 @@ impl crate::HMUI::AlphabetScrollbar {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RefreshHighlight", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RefreshHighlight", 0usize
                         )
                     })
             });
@@ -350,7 +360,7 @@ impl crate::HMUI::AlphabetScrollbar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IReadOnlyList_1<
@@ -365,7 +375,8 @@ impl crate::HMUI::AlphabetScrollbar {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetData",
+                            1usize
                         )
                     })
             });
@@ -380,12 +391,13 @@ impl crate::HMUI::AlphabetScrollbar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

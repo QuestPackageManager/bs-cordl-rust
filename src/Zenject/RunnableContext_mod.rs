@@ -50,7 +50,7 @@ impl crate::Zenject::RunnableContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
                         T,
@@ -59,7 +59,8 @@ impl crate::Zenject::RunnableContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateComponent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateComponent", 1usize
                         )
                     })
             });
@@ -72,12 +73,13 @@ impl crate::Zenject::RunnableContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Initialize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize", 0usize
                         )
                     })
             });
@@ -97,12 +99,13 @@ impl crate::Zenject::RunnableContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Run")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Run", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Run",
+                            0usize
                         )
                     })
             });
@@ -117,7 +120,7 @@ impl crate::Zenject::RunnableContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -126,7 +129,8 @@ impl crate::Zenject::RunnableContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RunInternal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RunInternal", 0usize
                         )
                     })
             });
@@ -141,7 +145,7 @@ impl crate::Zenject::RunnableContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
@@ -150,7 +154,8 @@ impl crate::Zenject::RunnableContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "__zenCreateInjectTypeInfo", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "__zenCreateInjectTypeInfo", 0usize
                         )
                     })
             });
@@ -165,12 +170,13 @@ impl crate::Zenject::RunnableContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -183,12 +189,13 @@ impl crate::Zenject::RunnableContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_Initialized")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Initialized", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Initialized", 0usize
                         )
                     })
             });
@@ -202,7 +209,7 @@ impl crate::Zenject::RunnableContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -211,7 +218,8 @@ impl crate::Zenject::RunnableContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Initialized", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Initialized", 1usize
                         )
                     })
             });

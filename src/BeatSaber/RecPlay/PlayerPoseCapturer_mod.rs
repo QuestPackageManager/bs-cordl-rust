@@ -52,7 +52,7 @@ impl crate::BeatSaber::RecPlay::PlayerPoseCapturer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32, crate::BeatSaber::RecPlay::PlayerPose),
                         quest_hook::libil2cpp::Void,
@@ -61,7 +61,8 @@ impl crate::BeatSaber::RecPlay::PlayerPoseCapturer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Capture", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Capture",
+                            2usize
                         )
                     })
             });
@@ -76,7 +77,7 @@ impl crate::BeatSaber::RecPlay::PlayerPoseCapturer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::BeatSaber::RecPlay::PlayerPoseFrames,
@@ -85,7 +86,8 @@ impl crate::BeatSaber::RecPlay::PlayerPoseCapturer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreatePlayerPoseFrames", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreatePlayerPoseFrames", 0usize
                         )
                     })
             });
@@ -110,12 +112,13 @@ impl crate::BeatSaber::RecPlay::PlayerPoseCapturer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });

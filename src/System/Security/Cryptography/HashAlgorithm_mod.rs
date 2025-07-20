@@ -51,7 +51,7 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -62,7 +62,8 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CaptureHashCodeAndReinitialize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CaptureHashCodeAndReinitialize", 0usize
                         )
                     })
             });
@@ -77,12 +78,13 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Clear", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Clear",
+                            0usize
                         )
                     })
             });
@@ -100,7 +102,7 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -113,7 +115,8 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ComputeHash", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ComputeHash", 1usize
                         )
                     })
             });
@@ -133,7 +136,7 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -150,7 +153,8 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ComputeHash", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ComputeHash", 3usize
                         )
                     })
             });
@@ -168,7 +172,7 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                         quest_hook::libil2cpp::Gc<
@@ -179,7 +183,8 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ComputeHash", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ComputeHash", 1usize
                         )
                     })
             });
@@ -196,7 +201,7 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -207,7 +212,8 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Create", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Create",
+                            1usize
                         )
                     })
             });
@@ -222,12 +228,13 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Dispose", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            0usize
                         )
                     })
             });
@@ -243,7 +250,7 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -252,7 +259,8 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Dispose", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            1usize
                         )
                     })
             });
@@ -270,7 +278,7 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -285,7 +293,8 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HashCore", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HashCore", 3usize
                         )
                     })
             });
@@ -302,7 +311,7 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -313,7 +322,8 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HashFinal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HashFinal", 0usize
                         )
                     })
             });
@@ -328,12 +338,13 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Initialize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize", 0usize
                         )
                     })
             });
@@ -360,7 +371,7 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -379,7 +390,8 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TransformBlock", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TransformBlock", 5usize
                         )
                     })
             });
@@ -403,7 +415,7 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -420,7 +432,8 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TransformFinalBlock", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TransformFinalBlock", 3usize
                         )
                     })
             });
@@ -440,7 +453,7 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -455,7 +468,8 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ValidateTransformBlock", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValidateTransformBlock", 3usize
                         )
                     })
             });
@@ -470,12 +484,13 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -490,12 +505,13 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_CanTransformMultipleBlocks")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CanTransformMultipleBlocks", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CanTransformMultipleBlocks", 0usize
                         )
                     })
             });
@@ -510,7 +526,7 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -521,7 +537,8 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Hash", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Hash", 0usize
                         )
                     })
             });
@@ -534,12 +551,13 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_HashSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_HashSize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_HashSize", 0usize
                         )
                     })
             });
@@ -550,12 +568,13 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_InputBlockSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_InputBlockSize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_InputBlockSize", 0usize
                         )
                     })
             });
@@ -566,12 +585,13 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_OutputBlockSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_OutputBlockSize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_OutputBlockSize", 0usize
                         )
                     })
             });

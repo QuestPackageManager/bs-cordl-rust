@@ -42,12 +42,13 @@ impl crate::UnityEngine::Time {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_captureDeltaTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_captureDeltaTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_captureDeltaTime", 0usize
                         )
                     })
             });
@@ -58,12 +59,13 @@ impl crate::UnityEngine::Time {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("get_captureFramerate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_captureFramerate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_captureFramerate", 0usize
                         )
                     })
             });
@@ -74,12 +76,13 @@ impl crate::UnityEngine::Time {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_deltaTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_deltaTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_deltaTime", 0usize
                         )
                     })
             });
@@ -90,12 +93,13 @@ impl crate::UnityEngine::Time {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_fixedDeltaTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_fixedDeltaTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_fixedDeltaTime", 0usize
                         )
                     })
             });
@@ -106,12 +110,13 @@ impl crate::UnityEngine::Time {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_fixedUnscaledTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_fixedUnscaledTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_fixedUnscaledTime", 0usize
                         )
                     })
             });
@@ -122,12 +127,13 @@ impl crate::UnityEngine::Time {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("get_frameCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_frameCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_frameCount", 0usize
                         )
                     })
             });
@@ -138,12 +144,13 @@ impl crate::UnityEngine::Time {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_maximumDeltaTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_maximumDeltaTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_maximumDeltaTime", 0usize
                         )
                     })
             });
@@ -154,12 +161,13 @@ impl crate::UnityEngine::Time {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_realtimeSinceStartup")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_realtimeSinceStartup", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_realtimeSinceStartup", 0usize
                         )
                     })
             });
@@ -170,12 +178,13 @@ impl crate::UnityEngine::Time {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_smoothDeltaTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_smoothDeltaTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_smoothDeltaTime", 0usize
                         )
                     })
             });
@@ -186,12 +195,13 @@ impl crate::UnityEngine::Time {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_time")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_time", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_time", 0usize
                         )
                     })
             });
@@ -202,12 +212,13 @@ impl crate::UnityEngine::Time {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_timeScale")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_timeScale", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_timeScale", 0usize
                         )
                     })
             });
@@ -218,12 +229,13 @@ impl crate::UnityEngine::Time {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_timeSinceLevelLoad")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_timeSinceLevelLoad", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_timeSinceLevelLoad", 0usize
                         )
                     })
             });
@@ -234,12 +246,13 @@ impl crate::UnityEngine::Time {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_unscaledDeltaTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_unscaledDeltaTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_unscaledDeltaTime", 0usize
                         )
                     })
             });
@@ -250,12 +263,13 @@ impl crate::UnityEngine::Time {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_unscaledTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_unscaledTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_unscaledTime", 0usize
                         )
                     })
             });
@@ -268,7 +282,7 @@ impl crate::UnityEngine::Time {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -277,7 +291,8 @@ impl crate::UnityEngine::Time {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_captureDeltaTime", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_captureDeltaTime", 1usize
                         )
                     })
             });
@@ -292,7 +307,7 @@ impl crate::UnityEngine::Time {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -301,7 +316,8 @@ impl crate::UnityEngine::Time {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_captureFramerate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_captureFramerate", 1usize
                         )
                     })
             });
@@ -316,7 +332,7 @@ impl crate::UnityEngine::Time {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -325,7 +341,8 @@ impl crate::UnityEngine::Time {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_timeScale", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_timeScale", 1usize
                         )
                     })
             });

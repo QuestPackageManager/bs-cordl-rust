@@ -72,7 +72,7 @@ impl crate::GlobalNamespace::GameObjectIntSwitchEventEffect {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::BasicBeatmapEventData,
@@ -83,7 +83,8 @@ impl crate::GlobalNamespace::GameObjectIntSwitchEventEffect {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleBasicBeatmapEventData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleBasicBeatmapEventData", 1usize
                         )
                     })
             });
@@ -101,7 +102,7 @@ impl crate::GlobalNamespace::GameObjectIntSwitchEventEffect {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::BeatmapCallbacksController,
@@ -112,7 +113,8 @@ impl crate::GlobalNamespace::GameObjectIntSwitchEventEffect {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize", 1usize
                         )
                     })
             });
@@ -134,12 +136,13 @@ impl crate::GlobalNamespace::GameObjectIntSwitchEventEffect {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDestroy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDestroy", 0usize
                         )
                     })
             });
@@ -154,12 +157,13 @@ impl crate::GlobalNamespace::GameObjectIntSwitchEventEffect {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -243,7 +247,7 @@ impl crate::GlobalNamespace::GameObjectIntSwitchEventEffect_GameObjectValueList 
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -252,7 +256,8 @@ impl crate::GlobalNamespace::GameObjectIntSwitchEventEffect_GameObjectValueList 
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetActive", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetActive", 1usize
                         )
                     })
             });
@@ -267,12 +272,13 @@ impl crate::GlobalNamespace::GameObjectIntSwitchEventEffect_GameObjectValueList 
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -285,12 +291,13 @@ impl crate::GlobalNamespace::GameObjectIntSwitchEventEffect_GameObjectValueList 
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isActive")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_isActive", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isActive", 0usize
                         )
                     })
             });
@@ -304,7 +311,7 @@ impl crate::GlobalNamespace::GameObjectIntSwitchEventEffect_GameObjectValueList 
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -313,7 +320,8 @@ impl crate::GlobalNamespace::GameObjectIntSwitchEventEffect_GameObjectValueList 
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_isActive", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_isActive", 1usize
                         )
                     })
             });

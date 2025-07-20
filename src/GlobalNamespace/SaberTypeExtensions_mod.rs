@@ -44,7 +44,7 @@ impl crate::GlobalNamespace::SaberTypeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         crate::GlobalNamespace::SaberType,
@@ -53,7 +53,8 @@ impl crate::GlobalNamespace::SaberTypeExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MainSaber", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MainSaber", 1usize
                         )
                     })
             });
@@ -69,7 +70,7 @@ impl crate::GlobalNamespace::SaberTypeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::SaberType,
@@ -81,7 +82,8 @@ impl crate::GlobalNamespace::SaberTypeExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MatchesColorType", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MatchesColorType", 2usize
                         )
                     })
             });
@@ -96,7 +98,7 @@ impl crate::GlobalNamespace::SaberTypeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::SaberType),
                         crate::UnityEngine::XR::XRNode,
@@ -105,7 +107,8 @@ impl crate::GlobalNamespace::SaberTypeExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Node", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Node",
+                            1usize
                         )
                     })
             });
@@ -120,7 +123,7 @@ impl crate::GlobalNamespace::SaberTypeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::SaberType),
                         crate::GlobalNamespace::ColorType,
@@ -129,7 +132,8 @@ impl crate::GlobalNamespace::SaberTypeExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToColorType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToColorType", 1usize
                         )
                     })
             });
@@ -144,7 +148,7 @@ impl crate::GlobalNamespace::SaberTypeExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::ColorType),
                         crate::GlobalNamespace::SaberType,
@@ -153,7 +157,8 @@ impl crate::GlobalNamespace::SaberTypeExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToSaberType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToSaberType", 1usize
                         )
                     })
             });

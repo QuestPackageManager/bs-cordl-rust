@@ -76,7 +76,7 @@ impl crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -90,7 +90,8 @@ impl crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleDropDownDidSelectCellWithIdx", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleDropDownDidSelectCellWithIdx", 2usize
                         )
                     })
             });
@@ -106,7 +107,7 @@ impl crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -115,7 +116,7 @@ impl crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "HandleOverrideEnvironmentsToggleValueChanged", 1usize
                         )
                     })
@@ -138,12 +139,13 @@ impl crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDestroy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDestroy", 0usize
                         )
                     })
             });
@@ -158,12 +160,13 @@ impl crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Refresh")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Refresh", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Refresh",
+                            0usize
                         )
                     })
             });
@@ -181,7 +184,7 @@ impl crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::OverrideEnvironmentSettings,
@@ -192,7 +195,8 @@ impl crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetData",
+                            1usize
                         )
                     })
             });
@@ -207,7 +211,7 @@ impl crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -216,7 +220,7 @@ impl crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "<HandleOverrideEnvironmentsToggleValueChanged>b__14_0",
                             0usize
                         )
@@ -233,12 +237,13 @@ impl crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -337,12 +342,13 @@ impl crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController_Elements
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -363,7 +369,7 @@ impl crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController_Elements
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -378,7 +384,8 @@ impl crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController_Elements
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_environmentInfos", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_environmentInfos", 0usize
                         )
                     })
             });
@@ -400,7 +407,7 @@ impl crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController_Elements
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::List_1<
@@ -415,7 +422,8 @@ impl crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController_Elements
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_environmentInfos", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_environmentInfos", 1usize
                         )
                     })
             });

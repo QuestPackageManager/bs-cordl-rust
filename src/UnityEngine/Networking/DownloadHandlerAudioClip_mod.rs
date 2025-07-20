@@ -50,7 +50,7 @@ impl crate::UnityEngine::Networking::DownloadHandlerAudioClip {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -67,7 +67,8 @@ impl crate::UnityEngine::Networking::DownloadHandlerAudioClip {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Create", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Create",
+                            3usize
                         )
                     })
             });
@@ -82,12 +83,13 @@ impl crate::UnityEngine::Networking::DownloadHandlerAudioClip {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Dispose", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            0usize
                         )
                     })
             });
@@ -104,7 +106,7 @@ impl crate::UnityEngine::Networking::DownloadHandlerAudioClip {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::Networking::UnityWebRequest,
@@ -115,7 +117,8 @@ impl crate::UnityEngine::Networking::DownloadHandlerAudioClip {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetContent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetContent", 1usize
                         )
                     })
             });
@@ -130,7 +133,7 @@ impl crate::UnityEngine::Networking::DownloadHandlerAudioClip {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Collections::NativeArray_1<u8>,
@@ -139,7 +142,8 @@ impl crate::UnityEngine::Networking::DownloadHandlerAudioClip {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNativeData", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNativeData", 0usize
                         )
                     })
             });
@@ -156,7 +160,7 @@ impl crate::UnityEngine::Networking::DownloadHandlerAudioClip {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -165,7 +169,8 @@ impl crate::UnityEngine::Networking::DownloadHandlerAudioClip {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetText", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetText",
+                            0usize
                         )
                     })
             });
@@ -182,7 +187,7 @@ impl crate::UnityEngine::Networking::DownloadHandlerAudioClip {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -196,7 +201,8 @@ impl crate::UnityEngine::Networking::DownloadHandlerAudioClip {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InternalCreateAudioClip", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InternalCreateAudioClip", 2usize
                         )
                     })
             });
@@ -223,7 +229,7 @@ impl crate::UnityEngine::Networking::DownloadHandlerAudioClip {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -237,7 +243,8 @@ impl crate::UnityEngine::Networking::DownloadHandlerAudioClip {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -254,7 +261,7 @@ impl crate::UnityEngine::Networking::DownloadHandlerAudioClip {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
@@ -263,7 +270,8 @@ impl crate::UnityEngine::Networking::DownloadHandlerAudioClip {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_audioClip", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_audioClip", 0usize
                         )
                     })
             });
@@ -279,7 +287,7 @@ impl crate::UnityEngine::Networking::DownloadHandlerAudioClip {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -288,7 +296,8 @@ impl crate::UnityEngine::Networking::DownloadHandlerAudioClip {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_streamAudio", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_streamAudio", 1usize
                         )
                     })
             });

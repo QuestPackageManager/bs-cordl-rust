@@ -109,7 +109,7 @@ impl crate::UnityEngine::InputSystem::Haptics::DualMotorRumble {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::InputDevice,
@@ -120,7 +120,8 @@ impl crate::UnityEngine::InputSystem::Haptics::DualMotorRumble {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PauseHaptics", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PauseHaptics", 1usize
                         )
                     })
             });
@@ -136,7 +137,7 @@ impl crate::UnityEngine::InputSystem::Haptics::DualMotorRumble {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::InputDevice,
@@ -147,7 +148,8 @@ impl crate::UnityEngine::InputSystem::Haptics::DualMotorRumble {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResetHaptics", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResetHaptics", 1usize
                         )
                     })
             });
@@ -163,7 +165,7 @@ impl crate::UnityEngine::InputSystem::Haptics::DualMotorRumble {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::InputDevice,
@@ -174,7 +176,8 @@ impl crate::UnityEngine::InputSystem::Haptics::DualMotorRumble {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResumeHaptics", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResumeHaptics", 1usize
                         )
                     })
             });
@@ -192,7 +195,7 @@ impl crate::UnityEngine::InputSystem::Haptics::DualMotorRumble {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -207,7 +210,8 @@ impl crate::UnityEngine::InputSystem::Haptics::DualMotorRumble {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetMotorSpeeds", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetMotorSpeeds", 3usize
                         )
                     })
             });
@@ -220,12 +224,13 @@ impl crate::UnityEngine::InputSystem::Haptics::DualMotorRumble {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_highFrequencyMotorSpeed")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_highFrequencyMotorSpeed", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_highFrequencyMotorSpeed", 0usize
                         )
                     })
             });
@@ -236,12 +241,13 @@ impl crate::UnityEngine::InputSystem::Haptics::DualMotorRumble {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isRumbling")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_isRumbling", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isRumbling", 0usize
                         )
                     })
             });
@@ -252,12 +258,13 @@ impl crate::UnityEngine::InputSystem::Haptics::DualMotorRumble {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_lowFrequencyMotorSpeed")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_lowFrequencyMotorSpeed", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_lowFrequencyMotorSpeed", 0usize
                         )
                     })
             });
@@ -271,7 +278,7 @@ impl crate::UnityEngine::InputSystem::Haptics::DualMotorRumble {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -280,7 +287,8 @@ impl crate::UnityEngine::InputSystem::Haptics::DualMotorRumble {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_highFrequencyMotorSpeed", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_highFrequencyMotorSpeed", 1usize
                         )
                     })
             });
@@ -296,7 +304,7 @@ impl crate::UnityEngine::InputSystem::Haptics::DualMotorRumble {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -305,7 +313,8 @@ impl crate::UnityEngine::InputSystem::Haptics::DualMotorRumble {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_lowFrequencyMotorSpeed", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_lowFrequencyMotorSpeed", 1usize
                         )
                     })
             });

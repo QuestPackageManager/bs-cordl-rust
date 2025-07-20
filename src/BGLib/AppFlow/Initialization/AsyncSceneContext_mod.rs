@@ -67,7 +67,7 @@ impl crate::BGLib::AppFlow::Initialization::AsyncSceneContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
@@ -76,7 +76,8 @@ impl crate::BGLib::AppFlow::Initialization::AsyncSceneContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateContainerForLoading", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateContainerForLoading", 0usize
                         )
                     })
             });
@@ -95,7 +96,7 @@ impl crate::BGLib::AppFlow::Initialization::AsyncSceneContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -106,7 +107,8 @@ impl crate::BGLib::AppFlow::Initialization::AsyncSceneContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateRegistry", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateRegistry", 0usize
                         )
                     })
             });
@@ -121,7 +123,7 @@ impl crate::BGLib::AppFlow::Initialization::AsyncSceneContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -130,7 +132,8 @@ impl crate::BGLib::AppFlow::Initialization::AsyncSceneContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstallInstallers", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstallInstallers", 0usize
                         )
                     })
             });
@@ -153,7 +156,7 @@ impl crate::BGLib::AppFlow::Initialization::AsyncSceneContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -168,7 +171,8 @@ impl crate::BGLib::AppFlow::Initialization::AsyncSceneContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadInstallersAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadInstallersAsync", 0usize
                         )
                     })
             });
@@ -192,12 +196,13 @@ impl crate::BGLib::AppFlow::Initialization::AsyncSceneContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Run")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Run", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Run",
+                            0usize
                         )
                     })
             });
@@ -214,7 +219,7 @@ impl crate::BGLib::AppFlow::Initialization::AsyncSceneContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -223,7 +228,8 @@ impl crate::BGLib::AppFlow::Initialization::AsyncSceneContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RunAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RunAsync", 0usize
                         )
                     })
             });
@@ -238,12 +244,13 @@ impl crate::BGLib::AppFlow::Initialization::AsyncSceneContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("<>n__0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<>n__0", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "<>n__0",
+                            0usize
                         )
                     })
             });
@@ -258,12 +265,13 @@ impl crate::BGLib::AppFlow::Initialization::AsyncSceneContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

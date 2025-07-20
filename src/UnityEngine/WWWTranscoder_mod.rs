@@ -47,7 +47,7 @@ impl crate::UnityEngine::WWWTranscoder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u8,
@@ -63,7 +63,8 @@ impl crate::UnityEngine::WWWTranscoder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Byte2Hex", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Byte2Hex", 4usize
                         )
                     })
             });
@@ -79,7 +80,7 @@ impl crate::UnityEngine::WWWTranscoder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -93,7 +94,8 @@ impl crate::UnityEngine::WWWTranscoder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ByteArrayContains", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ByteArrayContains", 2usize
                         )
                     })
             });
@@ -108,7 +110,7 @@ impl crate::UnityEngine::WWWTranscoder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -125,7 +127,8 @@ impl crate::UnityEngine::WWWTranscoder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ByteSubArrayEquals", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ByteSubArrayEquals", 3usize
                         )
                     })
             });
@@ -144,7 +147,7 @@ impl crate::UnityEngine::WWWTranscoder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -163,7 +166,8 @@ impl crate::UnityEngine::WWWTranscoder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Decode", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Decode",
+                            3usize
                         )
                     })
             });
@@ -184,7 +188,7 @@ impl crate::UnityEngine::WWWTranscoder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -207,7 +211,8 @@ impl crate::UnityEngine::WWWTranscoder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Encode", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Encode",
+                            5usize
                         )
                     })
             });
@@ -226,7 +231,7 @@ impl crate::UnityEngine::WWWTranscoder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -240,7 +245,8 @@ impl crate::UnityEngine::WWWTranscoder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Hex2Byte", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Hex2Byte", 2usize
                         )
                     })
             });
@@ -255,7 +261,7 @@ impl crate::UnityEngine::WWWTranscoder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -268,7 +274,8 @@ impl crate::UnityEngine::WWWTranscoder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "URLDecode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "URLDecode", 1usize
                         )
                     })
             });
@@ -285,7 +292,7 @@ impl crate::UnityEngine::WWWTranscoder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -298,7 +305,8 @@ impl crate::UnityEngine::WWWTranscoder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "URLEncode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "URLEncode", 1usize
                         )
                     })
             });

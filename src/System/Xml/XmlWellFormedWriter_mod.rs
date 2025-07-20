@@ -64,7 +64,7 @@ impl crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_BufferChunk {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -79,7 +79,8 @@ impl crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_BufferChunk {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -159,7 +160,7 @@ impl crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_Item {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_ItemType,
@@ -173,7 +174,8 @@ impl crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_Item {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Set", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Set",
+                            2usize
                         )
                     })
             });
@@ -188,12 +190,13 @@ impl crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_Item {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -432,7 +435,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -451,7 +454,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddAttribute", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddAttribute", 3usize
                         )
                     })
             });
@@ -469,7 +473,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -486,7 +490,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddNamespace", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddNamespace", 3usize
                         )
                     })
             });
@@ -502,7 +507,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -511,7 +516,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddToAttrHashTable", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddToAttrHashTable", 1usize
                         )
                     })
             });
@@ -527,7 +533,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -536,7 +542,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddToNamespaceHashtable", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddToNamespaceHashtable", 1usize
                         )
                     })
             });
@@ -552,7 +559,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::XmlWellFormedWriter_Token),
                         quest_hook::libil2cpp::Void,
@@ -561,7 +568,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AdvanceState", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AdvanceState", 1usize
                         )
                     })
             });
@@ -577,7 +585,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -586,7 +594,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckNCName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckNCName", 1usize
                         )
                     })
             });
@@ -601,12 +610,13 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Close")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Close", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Close",
+                            0usize
                         )
                     })
             });
@@ -624,7 +634,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -640,7 +650,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DupAttrException", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DupAttrException", 2usize
                         )
                     })
             });
@@ -655,12 +666,13 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Flush")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Flush", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Flush",
+                            0usize
                         )
                     })
             });
@@ -677,7 +689,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -686,7 +698,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GeneratePrefix", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GeneratePrefix", 0usize
                         )
                     })
             });
@@ -703,7 +716,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::Xml::XmlWellFormedWriter_State),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -712,7 +725,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetStateName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetStateName", 1usize
                         )
                     })
             });
@@ -730,7 +744,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -744,7 +758,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InvalidCharsException", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InvalidCharsException", 2usize
                         )
                     })
             });
@@ -762,7 +777,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -771,7 +786,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LookupLocalNamespace", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LookupLocalNamespace", 1usize
                         )
                     })
             });
@@ -789,7 +805,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -798,7 +814,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LookupNamespace", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LookupNamespace", 1usize
                         )
                     })
             });
@@ -814,7 +831,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         i32,
@@ -823,7 +840,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LookupNamespaceIndex", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LookupNamespaceIndex", 1usize
                         )
                     })
             });
@@ -839,7 +857,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -848,7 +866,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LookupPrefix", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LookupPrefix", 1usize
                         )
                     })
             });
@@ -875,7 +894,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -884,7 +903,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PopNamespaces", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PopNamespaces", 2usize
                         )
                     })
             });
@@ -901,7 +921,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -917,7 +937,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PushNamespaceExplicit", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PushNamespaceExplicit", 2usize
                         )
                     })
             });
@@ -932,7 +953,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -948,7 +969,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PushNamespaceImplicit", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PushNamespaceImplicit", 2usize
                         )
                     })
             });
@@ -964,7 +986,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::XmlWellFormedWriter_SpecialAttribute),
                         quest_hook::libil2cpp::Void,
@@ -973,7 +995,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetSpecialAttribute", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetSpecialAttribute", 1usize
                         )
                     })
             });
@@ -988,7 +1011,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -997,7 +1020,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartElementContent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartElementContent", 0usize
                         )
                     })
             });
@@ -1012,7 +1036,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1021,7 +1045,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartFragment", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartFragment", 0usize
                         )
                     })
             });
@@ -1038,7 +1063,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Xml::XmlWellFormedWriter_Token,
@@ -1050,7 +1075,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ThrowInvalidStateTransition", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ThrowInvalidStateTransition", 2usize
                         )
                     })
             });
@@ -1068,7 +1094,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1083,7 +1109,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteBase64", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteBase64", 3usize
                         )
                     })
             });
@@ -1101,7 +1128,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1116,7 +1143,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteBinHex", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteBinHex", 3usize
                         )
                     })
             });
@@ -1132,7 +1160,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -1141,7 +1169,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteCData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteCData", 1usize
                         )
                     })
             });
@@ -1157,7 +1186,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (char),
                         quest_hook::libil2cpp::Void,
@@ -1166,7 +1195,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteCharEntity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteCharEntity", 1usize
                         )
                     })
             });
@@ -1184,7 +1214,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1199,7 +1229,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteChars", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteChars", 3usize
                         )
                     })
             });
@@ -1215,7 +1246,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -1224,7 +1255,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteComment", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteComment", 1usize
                         )
                     })
             });
@@ -1243,7 +1275,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1265,7 +1297,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteDocType", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteDocType", 4usize
                         )
                     })
             });
@@ -1280,7 +1313,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1289,7 +1322,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteEndAttribute", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteEndAttribute", 0usize
                         )
                     })
             });
@@ -1304,7 +1338,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1313,7 +1347,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteEndDocument", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteEndDocument", 0usize
                         )
                     })
             });
@@ -1328,7 +1363,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1337,7 +1372,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteEndElement", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteEndElement", 0usize
                         )
                     })
             });
@@ -1353,7 +1389,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -1362,7 +1398,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteEntityRef", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteEntityRef", 1usize
                         )
                     })
             });
@@ -1377,7 +1414,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1386,7 +1423,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteFullEndElement", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteFullEndElement", 0usize
                         )
                     })
             });
@@ -1403,7 +1441,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1419,7 +1457,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteProcessingInstruction", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteProcessingInstruction", 2usize
                         )
                     })
             });
@@ -1437,7 +1476,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1452,7 +1491,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteRaw", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteRaw", 3usize
                         )
                     })
             });
@@ -1468,7 +1508,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -1477,7 +1517,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteRaw", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteRaw", 1usize
                         )
                     })
             });
@@ -1495,7 +1536,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1514,7 +1555,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteStartAttribute", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteStartAttribute", 3usize
                         )
                     })
             });
@@ -1530,7 +1572,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::XmlStandalone),
                         quest_hook::libil2cpp::Void,
@@ -1539,7 +1581,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteStartDocumentImpl", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteStartDocumentImpl", 1usize
                         )
                     })
             });
@@ -1554,7 +1597,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1563,7 +1606,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteStartDocument", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteStartDocument", 0usize
                         )
                     })
             });
@@ -1579,7 +1623,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -1588,7 +1632,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteStartDocument", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteStartDocument", 1usize
                         )
                     })
             });
@@ -1606,7 +1651,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1625,7 +1670,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteStartElement", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteStartElement", 3usize
                         )
                     })
             });
@@ -1641,7 +1687,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -1650,7 +1696,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteString", 1usize
                         )
                     })
             });
@@ -1667,7 +1714,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (char, char),
                         quest_hook::libil2cpp::Void,
@@ -1676,7 +1723,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteSurrogateCharEntity", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteSurrogateCharEntity", 2usize
                         )
                     })
             });
@@ -1692,7 +1740,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -1701,7 +1749,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValue", 1usize
                         )
                     })
             });
@@ -1717,7 +1766,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -1726,7 +1775,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteWhitespace", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteWhitespace", 1usize
                         )
                     })
             });
@@ -1743,7 +1793,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
@@ -1757,7 +1807,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -1770,12 +1821,13 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_InBase64")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_InBase64", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_InBase64", 0usize
                         )
                     })
             });
@@ -1786,12 +1838,13 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsClosedOrErrorState")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsClosedOrErrorState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsClosedOrErrorState", 0usize
                         )
                     })
             });
@@ -1806,7 +1859,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlRawWriter>,
@@ -1815,7 +1868,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_RawWriter", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_RawWriter", 0usize
                         )
                     })
             });
@@ -1828,12 +1882,13 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_SaveAttrValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SaveAttrValue", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SaveAttrValue", 0usize
                         )
                     })
             });
@@ -1846,7 +1901,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::WriteState,
@@ -1855,7 +1910,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_WriteState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_WriteState", 0usize
                         )
                     })
             });
@@ -1989,7 +2045,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttrName {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2008,7 +2064,8 @@ impl crate::System::Xml::XmlWellFormedWriter_AttrName {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsDuplicate", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsDuplicate", 3usize
                         )
                     })
             });
@@ -2026,7 +2083,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttrName {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2045,7 +2102,8 @@ impl crate::System::Xml::XmlWellFormedWriter_AttrName {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Set", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Set",
+                            3usize
                         )
                     })
             });
@@ -2123,7 +2181,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_ItemType,
@@ -2137,7 +2195,8 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddItem", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "AddItem",
+                            2usize
                         )
                     })
             });
@@ -2152,12 +2211,13 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Clear", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Clear",
+                            0usize
                         )
                     })
             });
@@ -2180,7 +2240,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>),
                         quest_hook::libil2cpp::Void,
@@ -2189,7 +2249,8 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Replay", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Replay",
+                            1usize
                         )
                     })
             });
@@ -2204,7 +2265,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -2213,7 +2274,8 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartComplexValue", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartComplexValue", 0usize
                         )
                     })
             });
@@ -2228,12 +2290,13 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Trim")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Trim", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Trim",
+                            0usize
                         )
                     })
             });
@@ -2249,7 +2312,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (char),
                         quest_hook::libil2cpp::Void,
@@ -2258,7 +2321,8 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteCharEntity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteCharEntity", 1usize
                         )
                     })
             });
@@ -2276,7 +2340,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2291,7 +2355,8 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteChars", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteChars", 3usize
                         )
                     })
             });
@@ -2307,7 +2372,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -2316,7 +2381,8 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteEntityRef", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteEntityRef", 1usize
                         )
                     })
             });
@@ -2334,7 +2400,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2349,7 +2415,8 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteRaw", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteRaw", 3usize
                         )
                     })
             });
@@ -2365,7 +2432,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -2374,7 +2441,8 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteRaw", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteRaw", 1usize
                         )
                     })
             });
@@ -2390,7 +2458,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -2399,7 +2467,8 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteString", 1usize
                         )
                     })
             });
@@ -2416,7 +2485,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (char, char),
                         quest_hook::libil2cpp::Void,
@@ -2425,7 +2494,8 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteSurrogateCharEntity", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteSurrogateCharEntity", 2usize
                         )
                     })
             });
@@ -2441,7 +2511,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -2450,7 +2520,8 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValue", 1usize
                         )
                     })
             });
@@ -2466,7 +2537,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -2475,7 +2546,8 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteWhitespace", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteWhitespace", 1usize
                         )
                     })
             });
@@ -2490,12 +2562,13 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -2512,7 +2585,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2521,7 +2594,8 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_StringValue", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_StringValue", 0usize
                         )
                     })
             });
@@ -2659,7 +2733,7 @@ impl crate::System::Xml::XmlWellFormedWriter_ElementScope {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2679,7 +2753,8 @@ impl crate::System::Xml::XmlWellFormedWriter_ElementScope {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Set", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Set",
+                            4usize
                         )
                     })
             });
@@ -2695,7 +2770,7 @@ impl crate::System::Xml::XmlWellFormedWriter_ElementScope {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlRawWriter>),
                         quest_hook::libil2cpp::Void,
@@ -2704,7 +2779,8 @@ impl crate::System::Xml::XmlWellFormedWriter_ElementScope {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteEndElement", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteEndElement", 1usize
                         )
                     })
             });
@@ -2720,7 +2796,7 @@ impl crate::System::Xml::XmlWellFormedWriter_ElementScope {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlRawWriter>),
                         quest_hook::libil2cpp::Void,
@@ -2729,7 +2805,8 @@ impl crate::System::Xml::XmlWellFormedWriter_ElementScope {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteFullEndElement", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteFullEndElement", 1usize
                         )
                     })
             });
@@ -2854,7 +2931,7 @@ impl crate::System::Xml::XmlWellFormedWriter_Namespace {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2871,7 +2948,8 @@ impl crate::System::Xml::XmlWellFormedWriter_Namespace {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Set", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Set",
+                            3usize
                         )
                     })
             });
@@ -2888,7 +2966,7 @@ impl crate::System::Xml::XmlWellFormedWriter_Namespace {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
@@ -2900,7 +2978,8 @@ impl crate::System::Xml::XmlWellFormedWriter_Namespace {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteDecl", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteDecl", 2usize
                         )
                     })
             });
@@ -3070,7 +3149,7 @@ impl crate::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::XmlNamespaceScope),
                         quest_hook::libil2cpp::Gc<
@@ -3088,7 +3167,7 @@ impl crate::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "System.Xml.IXmlNamespaceResolver.GetNamespacesInScope",
                             1usize
                         )
@@ -3111,7 +3190,7 @@ impl crate::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3120,7 +3199,7 @@ impl crate::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "System.Xml.IXmlNamespaceResolver.LookupNamespace", 1usize
                         )
                     })
@@ -3139,7 +3218,7 @@ impl crate::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3148,7 +3227,7 @@ impl crate::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "System.Xml.IXmlNamespaceResolver.LookupPrefix", 1usize
                         )
                     })
@@ -3165,7 +3244,7 @@ impl crate::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::XmlWellFormedWriter,
@@ -3176,7 +3255,8 @@ impl crate::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });

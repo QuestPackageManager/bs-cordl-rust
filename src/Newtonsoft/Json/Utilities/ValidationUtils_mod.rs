@@ -46,7 +46,7 @@ impl crate::Newtonsoft::Json::Utilities::ValidationUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -62,7 +62,8 @@ impl crate::Newtonsoft::Json::Utilities::ValidationUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ArgumentNotNull", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ArgumentNotNull", 2usize
                         )
                     })
             });

@@ -45,12 +45,13 @@ impl crate::System::Diagnostics::TraceEventCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("GetProcessId")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetProcessId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetProcessId", 0usize
                         )
                     })
             });
@@ -61,12 +62,13 @@ impl crate::System::Diagnostics::TraceEventCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("GetThreadId")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetThreadId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetThreadId", 0usize
                         )
                     })
             });
@@ -79,7 +81,7 @@ impl crate::System::Diagnostics::TraceEventCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -88,7 +90,8 @@ impl crate::System::Diagnostics::TraceEventCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitProcessInfo", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitProcessInfo", 0usize
                         )
                     })
             });
@@ -110,12 +113,13 @@ impl crate::System::Diagnostics::TraceEventCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -132,7 +136,7 @@ impl crate::System::Diagnostics::TraceEventCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -141,7 +145,8 @@ impl crate::System::Diagnostics::TraceEventCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Callstack", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Callstack", 0usize
                         )
                     })
             });
@@ -156,12 +161,13 @@ impl crate::System::Diagnostics::TraceEventCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::System::DateTime, 0usize>("get_DateTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_DateTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_DateTime", 0usize
                         )
                     })
             });
@@ -178,7 +184,7 @@ impl crate::System::Diagnostics::TraceEventCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Collections::Stack>,
@@ -187,7 +193,8 @@ impl crate::System::Diagnostics::TraceEventCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_LogicalOperationStack", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_LogicalOperationStack", 0usize
                         )
                     })
             });
@@ -200,12 +207,13 @@ impl crate::System::Diagnostics::TraceEventCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_ProcessId")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ProcessId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ProcessId", 0usize
                         )
                     })
             });
@@ -220,7 +228,7 @@ impl crate::System::Diagnostics::TraceEventCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -229,7 +237,8 @@ impl crate::System::Diagnostics::TraceEventCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ThreadId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ThreadId", 0usize
                         )
                     })
             });
@@ -242,12 +251,13 @@ impl crate::System::Diagnostics::TraceEventCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i64, 0usize>("get_Timestamp")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Timestamp", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Timestamp", 0usize
                         )
                     })
             });

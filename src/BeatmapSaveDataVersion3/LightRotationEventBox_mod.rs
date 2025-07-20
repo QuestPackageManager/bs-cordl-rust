@@ -116,7 +116,7 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -144,7 +144,8 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 10usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            10usize
                         )
                     })
             });
@@ -174,7 +175,7 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::BeatmapSaveDataCommon::Axis,
@@ -183,7 +184,8 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_axis", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_axis", 0usize
                         )
                     })
             });
@@ -196,12 +198,13 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_flipRotation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_flipRotation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_flipRotation", 0usize
                         )
                     })
             });
@@ -222,7 +225,7 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -237,7 +240,8 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_lightRotationBaseDataList", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_lightRotationBaseDataList", 0usize
                         )
                     })
             });
@@ -256,7 +260,7 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::BeatmapSaveDataCommon::EaseType,
@@ -265,7 +269,8 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rotationDistributionEaseType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rotationDistributionEaseType", 0usize
                         )
                     })
             });
@@ -280,12 +285,13 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_rotationDistributionParam")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rotationDistributionParam", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rotationDistributionParam", 0usize
                         )
                     })
             });
@@ -300,7 +306,7 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::BeatmapSaveDataCommon::DistributionParamType,
@@ -309,7 +315,8 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rotationDistributionParamType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rotationDistributionParamType", 0usize
                         )
                     })
             });
@@ -324,7 +331,7 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         bool,
@@ -333,7 +340,7 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBox {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "get_rotationDistributionShouldAffectFirstBaseEvent", 0usize
                         )
                     })

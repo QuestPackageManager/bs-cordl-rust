@@ -53,7 +53,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampResponse {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -64,7 +64,8 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampResponse {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetEncoded", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetEncoded", 0usize
                         )
                     })
             });
@@ -81,7 +82,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampResponse {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -92,7 +93,8 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampResponse {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetFailInfo", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetFailInfo", 0usize
                         )
                     })
             });
@@ -109,7 +111,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampResponse {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -118,7 +120,8 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampResponse {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetStatusString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetStatusString", 0usize
                         )
                     })
             });
@@ -165,7 +168,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampResponse {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Tsp::TimeStampRequest,
@@ -176,7 +179,8 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampResponse {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Validate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Validate", 1usize
                         )
                     })
             });
@@ -192,7 +196,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampResponse {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -203,7 +207,8 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampResponse {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -219,7 +224,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampResponse {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                         quest_hook::libil2cpp::Void,
@@ -228,7 +233,8 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampResponse {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -246,7 +252,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampResponse {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Asn1::Tsp::TimeStampResp,
@@ -257,7 +263,8 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampResponse {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -270,12 +277,13 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampResponse {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_Status")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Status", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Status", 0usize
                         )
                     })
             });
@@ -290,7 +298,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampResponse {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -301,7 +309,8 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampResponse {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_TimeStampToken", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_TimeStampToken", 0usize
                         )
                     })
             });
@@ -318,7 +327,7 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampResponse {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Asn1::Asn1InputStream,
@@ -331,7 +340,8 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampResponse {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "readTimeStampResp", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "readTimeStampResp", 1usize
                         )
                     })
             });

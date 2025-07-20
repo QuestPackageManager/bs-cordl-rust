@@ -58,7 +58,7 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -84,7 +84,8 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ApplySmoothingGroups", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ApplySmoothingGroups", 4usize
                         )
                     })
             });
@@ -105,7 +106,7 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -126,7 +127,8 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ApplySmoothingGroups", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ApplySmoothingGroups", 3usize
                         )
                     })
             });
@@ -150,7 +152,7 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -176,7 +178,8 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FindSoftEdgesRecursive", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindSoftEdgesRecursive", 4usize
                         )
                     })
             });
@@ -194,7 +197,7 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -208,7 +211,8 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNextUnusedSmoothingGroup", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNextUnusedSmoothingGroup", 2usize
                         )
                     })
             });
@@ -221,7 +225,7 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::ProBuilderMesh,
@@ -232,7 +236,8 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetUnusedSmoothingGroup", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetUnusedSmoothingGroup", 1usize
                         )
                     })
             });
@@ -243,12 +248,13 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), bool, 1usize>("IsSmooth")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsSmooth", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsSmooth", 1usize
                         )
                     })
             });
@@ -266,7 +272,7 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -284,7 +290,8 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsSoftEdge", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsSoftEdge", 4usize
                         )
                     })
             });

@@ -125,7 +125,7 @@ impl crate::UnityEngine::TextGenerationSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Color, crate::UnityEngine::Color),
                         bool,
@@ -134,7 +134,8 @@ impl crate::UnityEngine::TextGenerationSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CompareColors", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CompareColors", 2usize
                         )
                     })
             });
@@ -149,7 +150,7 @@ impl crate::UnityEngine::TextGenerationSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector2, crate::UnityEngine::Vector2),
                         bool,
@@ -158,7 +159,8 @@ impl crate::UnityEngine::TextGenerationSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CompareVector2", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CompareVector2", 2usize
                         )
                     })
             });
@@ -172,7 +174,7 @@ impl crate::UnityEngine::TextGenerationSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::TextGenerationSettings),
                         bool,
@@ -181,7 +183,8 @@ impl crate::UnityEngine::TextGenerationSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Equals", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            1usize
                         )
                     })
             });

@@ -42,12 +42,13 @@ impl crate::System::Collections::HashHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("ExpandPrime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExpandPrime", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExpandPrime", 1usize
                         )
                     })
             });
@@ -58,12 +59,13 @@ impl crate::System::Collections::HashHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("GetPrime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPrime", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPrime", 1usize
                         )
                     })
             });
@@ -74,12 +76,13 @@ impl crate::System::Collections::HashHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), bool, 1usize>("IsPrime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsPrime", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsPrime",
+                            1usize
                         )
                     })
             });
@@ -99,7 +102,7 @@ impl crate::System::Collections::HashHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -117,7 +120,8 @@ impl crate::System::Collections::HashHelpers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SerializationInfoTable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SerializationInfoTable", 0usize
                         )
                     })
             });

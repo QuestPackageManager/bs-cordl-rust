@@ -59,7 +59,7 @@ impl crate::GlobalNamespace::BezierPath {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector3),
                         quest_hook::libil2cpp::Void,
@@ -68,7 +68,8 @@ impl crate::GlobalNamespace::BezierPath {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddSegmentToEnd", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddSegmentToEnd", 1usize
                         )
                     })
             });
@@ -84,7 +85,7 @@ impl crate::GlobalNamespace::BezierPath {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -93,7 +94,8 @@ impl crate::GlobalNamespace::BezierPath {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AutoSetAllAffectedControlPoints", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AutoSetAllAffectedControlPoints", 1usize
                         )
                     })
             });
@@ -108,7 +110,7 @@ impl crate::GlobalNamespace::BezierPath {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -117,7 +119,8 @@ impl crate::GlobalNamespace::BezierPath {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AutoSetAllControlPoints", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AutoSetAllControlPoints", 0usize
                         )
                     })
             });
@@ -133,7 +136,7 @@ impl crate::GlobalNamespace::BezierPath {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -142,7 +145,8 @@ impl crate::GlobalNamespace::BezierPath {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AutoSetAnchorControlPoints", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AutoSetAnchorControlPoints", 1usize
                         )
                     })
             });
@@ -157,7 +161,7 @@ impl crate::GlobalNamespace::BezierPath {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -166,7 +170,8 @@ impl crate::GlobalNamespace::BezierPath {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AutoSetStartAndEndControls", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AutoSetStartAndEndControls", 0usize
                         )
                     })
             });
@@ -182,12 +187,13 @@ impl crate::GlobalNamespace::BezierPath {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), f32, 1usize>("GetAnchorNormalAngle")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAnchorNormalAngle", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAnchorNormalAngle", 1usize
                         )
                     })
             });
@@ -201,7 +207,7 @@ impl crate::GlobalNamespace::BezierPath {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         crate::UnityEngine::Vector3,
@@ -210,7 +216,8 @@ impl crate::GlobalNamespace::BezierPath {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPoint", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPoint", 1usize
                         )
                     })
             });
@@ -230,7 +237,7 @@ impl crate::GlobalNamespace::BezierPath {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -245,7 +252,8 @@ impl crate::GlobalNamespace::BezierPath {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPointsInSegment", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPointsInSegment", 5usize
                         )
                     })
             });
@@ -266,7 +274,7 @@ impl crate::GlobalNamespace::BezierPath {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -284,7 +292,8 @@ impl crate::GlobalNamespace::BezierPath {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPointsInSegment", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPointsInSegment", 2usize
                         )
                     })
             });
@@ -297,12 +306,13 @@ impl crate::GlobalNamespace::BezierPath {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("LoopIndex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoopIndex", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoopIndex", 1usize
                         )
                     })
             });
@@ -325,7 +335,7 @@ impl crate::GlobalNamespace::BezierPath {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -334,7 +344,8 @@ impl crate::GlobalNamespace::BezierPath {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NotifyPathModified", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NotifyPathModified", 0usize
                         )
                     })
             });
@@ -351,7 +362,7 @@ impl crate::GlobalNamespace::BezierPath {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, f32),
                         quest_hook::libil2cpp::Void,
@@ -360,7 +371,8 @@ impl crate::GlobalNamespace::BezierPath {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetAnchorNormalAngle", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetAnchorNormalAngle", 2usize
                         )
                     })
             });
@@ -378,7 +390,7 @@ impl crate::GlobalNamespace::BezierPath {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, crate::UnityEngine::Vector3, bool),
                         quest_hook::libil2cpp::Void,
@@ -387,7 +399,8 @@ impl crate::GlobalNamespace::BezierPath {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetPoint", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetPoint", 3usize
                         )
                     })
             });
@@ -407,7 +420,7 @@ impl crate::GlobalNamespace::BezierPath {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IReadOnlyList_1<
@@ -420,7 +433,8 @@ impl crate::GlobalNamespace::BezierPath {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateByAnchorPoints", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateByAnchorPoints", 1usize
                         )
                     })
             });
@@ -440,7 +454,7 @@ impl crate::GlobalNamespace::BezierPath {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IReadOnlyList_1<
@@ -453,7 +467,8 @@ impl crate::GlobalNamespace::BezierPath {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateControlPoints", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateControlPoints", 1usize
                         )
                     })
             });
@@ -470,7 +485,7 @@ impl crate::GlobalNamespace::BezierPath {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector3, bool),
                         quest_hook::libil2cpp::Void,
@@ -479,7 +494,8 @@ impl crate::GlobalNamespace::BezierPath {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -495,7 +511,7 @@ impl crate::GlobalNamespace::BezierPath {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -504,7 +520,8 @@ impl crate::GlobalNamespace::BezierPath {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_bezierPathWasModifiedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_bezierPathWasModifiedEvent", 1usize
                         )
                     })
             });
@@ -520,7 +537,7 @@ impl crate::GlobalNamespace::BezierPath {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         crate::UnityEngine::Vector3,
@@ -529,7 +546,8 @@ impl crate::GlobalNamespace::BezierPath {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Item", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Item", 1usize
                         )
                     })
             });
@@ -542,12 +560,13 @@ impl crate::GlobalNamespace::BezierPath {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_anchorPointsCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_anchorPointsCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_anchorPointsCount", 0usize
                         )
                     })
             });
@@ -560,7 +579,7 @@ impl crate::GlobalNamespace::BezierPath {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::BezierPath_ControlMode,
@@ -569,7 +588,8 @@ impl crate::GlobalNamespace::BezierPath {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_controlPointMode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_controlPointMode", 0usize
                         )
                     })
             });
@@ -582,12 +602,13 @@ impl crate::GlobalNamespace::BezierPath {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_pointsCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_pointsCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_pointsCount", 0usize
                         )
                     })
             });
@@ -598,12 +619,13 @@ impl crate::GlobalNamespace::BezierPath {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_segmentsCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_segmentsCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_segmentsCount", 0usize
                         )
                     })
             });
@@ -617,7 +639,7 @@ impl crate::GlobalNamespace::BezierPath {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -626,7 +648,8 @@ impl crate::GlobalNamespace::BezierPath {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_bezierPathWasModifiedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_bezierPathWasModifiedEvent", 1usize
                         )
                     })
             });
@@ -642,7 +665,7 @@ impl crate::GlobalNamespace::BezierPath {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::BezierPath_ControlMode),
                         quest_hook::libil2cpp::Void,
@@ -651,7 +674,8 @@ impl crate::GlobalNamespace::BezierPath {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_controlPointMode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_controlPointMode", 1usize
                         )
                     })
             });

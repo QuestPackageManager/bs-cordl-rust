@@ -48,7 +48,7 @@ impl crate::UnityEngine::EventSystems::ICancelHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::EventSystems::BaseEventData,
@@ -59,7 +59,8 @@ impl crate::UnityEngine::EventSystems::ICancelHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnCancel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnCancel", 1usize
                         )
                     })
             });

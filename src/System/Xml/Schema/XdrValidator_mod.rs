@@ -56,7 +56,7 @@ impl crate::System::Xml::Schema::XdrValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -72,7 +72,8 @@ impl crate::System::Xml::Schema::XdrValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddID", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "AddID",
+                            2usize
                         )
                     })
             });
@@ -98,7 +99,7 @@ impl crate::System::Xml::Schema::XdrValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -132,7 +133,8 @@ impl crate::System::Xml::Schema::XdrValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckDefaultValue", 10usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckDefaultValue", 10usize
                         )
                     })
             });
@@ -162,7 +164,7 @@ impl crate::System::Xml::Schema::XdrValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -171,7 +173,8 @@ impl crate::System::Xml::Schema::XdrValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckForwardRefs", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckForwardRefs", 0usize
                         )
                     })
             });
@@ -188,7 +191,7 @@ impl crate::System::Xml::Schema::XdrValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -204,7 +207,8 @@ impl crate::System::Xml::Schema::XdrValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckValue", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckValue", 2usize
                         )
                     })
             });
@@ -219,7 +223,7 @@ impl crate::System::Xml::Schema::XdrValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -228,7 +232,8 @@ impl crate::System::Xml::Schema::XdrValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CompleteValidation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CompleteValidation", 0usize
                         )
                     })
             });
@@ -246,7 +251,7 @@ impl crate::System::Xml::Schema::XdrValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -255,7 +260,8 @@ impl crate::System::Xml::Schema::XdrValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FindId", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "FindId",
+                            1usize
                         )
                     })
             });
@@ -270,12 +276,13 @@ impl crate::System::Xml::Schema::XdrValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Init")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Init", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            0usize
                         )
                     })
             });
@@ -291,7 +298,7 @@ impl crate::System::Xml::Schema::XdrValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -300,7 +307,8 @@ impl crate::System::Xml::Schema::XdrValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadSchema", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadSchema", 1usize
                         )
                     })
             });
@@ -316,7 +324,7 @@ impl crate::System::Xml::Schema::XdrValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -325,7 +333,8 @@ impl crate::System::Xml::Schema::XdrValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadSchemaFromLocation", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadSchemaFromLocation", 1usize
                         )
                     })
             });
@@ -362,12 +371,13 @@ impl crate::System::Xml::Schema::XdrValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Pop")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Pop", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Pop",
+                            0usize
                         )
                     })
             });
@@ -382,7 +392,7 @@ impl crate::System::Xml::Schema::XdrValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -391,7 +401,8 @@ impl crate::System::Xml::Schema::XdrValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessElement", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessElement", 0usize
                         )
                     })
             });
@@ -406,7 +417,7 @@ impl crate::System::Xml::Schema::XdrValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -415,7 +426,8 @@ impl crate::System::Xml::Schema::XdrValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessInlineSchema", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessInlineSchema", 0usize
                         )
                     })
             });
@@ -432,7 +444,7 @@ impl crate::System::Xml::Schema::XdrValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Xml::XmlTokenizedType,
@@ -446,7 +458,8 @@ impl crate::System::Xml::Schema::XdrValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessTokenizedType", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessTokenizedType", 2usize
                         )
                     })
             });
@@ -462,7 +475,7 @@ impl crate::System::Xml::Schema::XdrValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::XmlQualifiedName,
@@ -473,7 +486,8 @@ impl crate::System::Xml::Schema::XdrValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Push", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Push",
+                            1usize
                         )
                     })
             });
@@ -492,7 +506,7 @@ impl crate::System::Xml::Schema::XdrValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -508,7 +522,8 @@ impl crate::System::Xml::Schema::XdrValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "QualifiedName", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "QualifiedName", 2usize
                         )
                     })
             });
@@ -525,7 +540,7 @@ impl crate::System::Xml::Schema::XdrValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -536,7 +551,8 @@ impl crate::System::Xml::Schema::XdrValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ThoroughGetElementDecl", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ThoroughGetElementDecl", 0usize
                         )
                     })
             });
@@ -551,12 +567,13 @@ impl crate::System::Xml::Schema::XdrValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Validate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Validate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Validate", 0usize
                         )
                     })
             });
@@ -571,7 +588,7 @@ impl crate::System::Xml::Schema::XdrValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -580,7 +597,8 @@ impl crate::System::Xml::Schema::XdrValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ValidateChildElement", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValidateChildElement", 0usize
                         )
                     })
             });
@@ -595,7 +613,7 @@ impl crate::System::Xml::Schema::XdrValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -604,7 +622,8 @@ impl crate::System::Xml::Schema::XdrValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ValidateElement", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValidateElement", 0usize
                         )
                     })
             });
@@ -619,7 +638,7 @@ impl crate::System::Xml::Schema::XdrValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -628,7 +647,8 @@ impl crate::System::Xml::Schema::XdrValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ValidateEndElement", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValidateEndElement", 0usize
                         )
                     })
             });
@@ -643,7 +663,7 @@ impl crate::System::Xml::Schema::XdrValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -652,7 +672,8 @@ impl crate::System::Xml::Schema::XdrValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ValidateEndStartElement", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValidateEndStartElement", 0usize
                         )
                     })
             });
@@ -667,7 +688,7 @@ impl crate::System::Xml::Schema::XdrValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -676,7 +697,8 @@ impl crate::System::Xml::Schema::XdrValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ValidateStartElement", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValidateStartElement", 0usize
                         )
                     })
             });
@@ -692,7 +714,7 @@ impl crate::System::Xml::Schema::XdrValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::Schema::BaseValidator,
@@ -703,7 +725,8 @@ impl crate::System::Xml::Schema::XdrValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -725,7 +748,7 @@ impl crate::System::Xml::Schema::XdrValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -744,7 +767,8 @@ impl crate::System::Xml::Schema::XdrValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -757,12 +781,13 @@ impl crate::System::Xml::Schema::XdrValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_HasSchema")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_HasSchema", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_HasSchema", 0usize
                         )
                     })
             });
@@ -773,12 +798,13 @@ impl crate::System::Xml::Schema::XdrValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsInlineSchemaStarted")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsInlineSchemaStarted", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsInlineSchemaStarted", 0usize
                         )
                     })
             });
@@ -789,12 +815,13 @@ impl crate::System::Xml::Schema::XdrValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_PreserveWhitespace")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_PreserveWhitespace", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_PreserveWhitespace", 0usize
                         )
                     })
             });

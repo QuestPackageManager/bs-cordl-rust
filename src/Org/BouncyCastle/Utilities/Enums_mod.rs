@@ -44,7 +44,7 @@ impl crate::Org::BouncyCastle::Utilities::Enums {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<crate::System::Enum>,
@@ -53,7 +53,8 @@ impl crate::Org::BouncyCastle::Utilities::Enums {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetArbitraryValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetArbitraryValue", 1usize
                         )
                     })
             });
@@ -69,7 +70,7 @@ impl crate::Org::BouncyCastle::Utilities::Enums {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -83,7 +84,8 @@ impl crate::Org::BouncyCastle::Utilities::Enums {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetEnumValue", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetEnumValue", 2usize
                         )
                     })
             });
@@ -98,7 +100,7 @@ impl crate::Org::BouncyCastle::Utilities::Enums {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<crate::System::Array>,
@@ -107,7 +109,8 @@ impl crate::Org::BouncyCastle::Utilities::Enums {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetEnumValues", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetEnumValues", 1usize
                         )
                     })
             });
@@ -122,7 +125,7 @@ impl crate::Org::BouncyCastle::Utilities::Enums {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         bool,
@@ -131,7 +134,8 @@ impl crate::Org::BouncyCastle::Utilities::Enums {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsEnumType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsEnumType", 1usize
                         )
                     })
             });
@@ -151,12 +155,13 @@ impl crate::Org::BouncyCastle::Utilities::Enums {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

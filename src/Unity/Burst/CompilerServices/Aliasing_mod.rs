@@ -52,7 +52,7 @@ impl crate::Unity::Burst::CompilerServices::Aliasing {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<A>,
@@ -64,7 +64,8 @@ impl crate::Unity::Burst::CompilerServices::Aliasing {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExpectAliased", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExpectAliased", 2usize
                         )
                     })
             });
@@ -84,7 +85,7 @@ impl crate::Unity::Burst::CompilerServices::Aliasing {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<A>,
@@ -98,7 +99,8 @@ impl crate::Unity::Burst::CompilerServices::Aliasing {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExpectAliased", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExpectAliased", 2usize
                         )
                     })
             });
@@ -118,7 +120,7 @@ impl crate::Unity::Burst::CompilerServices::Aliasing {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -132,7 +134,8 @@ impl crate::Unity::Burst::CompilerServices::Aliasing {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExpectAliased", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExpectAliased", 2usize
                         )
                     })
             });
@@ -148,7 +151,7 @@ impl crate::Unity::Burst::CompilerServices::Aliasing {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -164,7 +167,8 @@ impl crate::Unity::Burst::CompilerServices::Aliasing {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExpectAliased", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExpectAliased", 2usize
                         )
                     })
             });
@@ -186,7 +190,7 @@ impl crate::Unity::Burst::CompilerServices::Aliasing {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<A>,
@@ -198,7 +202,8 @@ impl crate::Unity::Burst::CompilerServices::Aliasing {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExpectNotAliased", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExpectNotAliased", 2usize
                         )
                     })
             });
@@ -218,7 +223,7 @@ impl crate::Unity::Burst::CompilerServices::Aliasing {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<A>,
@@ -232,7 +237,8 @@ impl crate::Unity::Burst::CompilerServices::Aliasing {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExpectNotAliased", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExpectNotAliased", 2usize
                         )
                     })
             });
@@ -252,7 +258,7 @@ impl crate::Unity::Burst::CompilerServices::Aliasing {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -266,7 +272,8 @@ impl crate::Unity::Burst::CompilerServices::Aliasing {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExpectNotAliased", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExpectNotAliased", 2usize
                         )
                     })
             });
@@ -282,7 +289,7 @@ impl crate::Unity::Burst::CompilerServices::Aliasing {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -298,7 +305,8 @@ impl crate::Unity::Burst::CompilerServices::Aliasing {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExpectNotAliased", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExpectNotAliased", 2usize
                         )
                     })
             });

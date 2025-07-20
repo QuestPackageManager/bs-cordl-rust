@@ -42,12 +42,13 @@ impl crate::System::BitConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f64), i64, 1usize>("DoubleToInt64Bits")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoubleToInt64Bits", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoubleToInt64Bits", 1usize
                         )
                     })
             });
@@ -62,7 +63,7 @@ impl crate::System::BitConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Gc<
@@ -73,7 +74,8 @@ impl crate::System::BitConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBytes", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBytes", 1usize
                         )
                     })
             });
@@ -90,7 +92,7 @@ impl crate::System::BitConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (char),
                         quest_hook::libil2cpp::Gc<
@@ -101,7 +103,8 @@ impl crate::System::BitConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBytes", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBytes", 1usize
                         )
                     })
             });
@@ -118,7 +121,7 @@ impl crate::System::BitConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32),
                         quest_hook::libil2cpp::Gc<
@@ -129,7 +132,8 @@ impl crate::System::BitConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBytes", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBytes", 1usize
                         )
                     })
             });
@@ -146,7 +150,7 @@ impl crate::System::BitConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f64),
                         quest_hook::libil2cpp::Gc<
@@ -157,7 +161,8 @@ impl crate::System::BitConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBytes", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBytes", 1usize
                         )
                     })
             });
@@ -174,7 +179,7 @@ impl crate::System::BitConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i16),
                         quest_hook::libil2cpp::Gc<
@@ -185,7 +190,8 @@ impl crate::System::BitConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBytes", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBytes", 1usize
                         )
                     })
             });
@@ -202,7 +208,7 @@ impl crate::System::BitConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
@@ -213,7 +219,8 @@ impl crate::System::BitConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBytes", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBytes", 1usize
                         )
                     })
             });
@@ -230,7 +237,7 @@ impl crate::System::BitConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i64),
                         quest_hook::libil2cpp::Gc<
@@ -241,7 +248,8 @@ impl crate::System::BitConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBytes", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBytes", 1usize
                         )
                     })
             });
@@ -258,7 +266,7 @@ impl crate::System::BitConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u16),
                         quest_hook::libil2cpp::Gc<
@@ -269,7 +277,8 @@ impl crate::System::BitConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBytes", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBytes", 1usize
                         )
                     })
             });
@@ -286,7 +295,7 @@ impl crate::System::BitConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u32),
                         quest_hook::libil2cpp::Gc<
@@ -297,7 +306,8 @@ impl crate::System::BitConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBytes", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBytes", 1usize
                         )
                     })
             });
@@ -314,7 +324,7 @@ impl crate::System::BitConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<
@@ -325,7 +335,8 @@ impl crate::System::BitConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBytes", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBytes", 1usize
                         )
                     })
             });
@@ -338,12 +349,13 @@ impl crate::System::BitConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), f32, 1usize>("Int32BitsToSingle")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Int32BitsToSingle", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Int32BitsToSingle", 1usize
                         )
                     })
             });
@@ -354,12 +366,13 @@ impl crate::System::BitConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i64), f64, 1usize>("Int64BitsToDouble")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Int64BitsToDouble", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Int64BitsToDouble", 1usize
                         )
                     })
             });
@@ -370,12 +383,13 @@ impl crate::System::BitConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32), i32, 1usize>("SingleToInt32Bits")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SingleToInt32Bits", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SingleToInt32Bits", 1usize
                         )
                     })
             });
@@ -389,7 +403,7 @@ impl crate::System::BitConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -403,7 +417,8 @@ impl crate::System::BitConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToChar", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "ToChar",
+                            2usize
                         )
                     })
             });
@@ -419,7 +434,7 @@ impl crate::System::BitConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -433,7 +448,8 @@ impl crate::System::BitConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToDouble", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToDouble", 2usize
                         )
                     })
             });
@@ -449,7 +465,7 @@ impl crate::System::BitConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -463,7 +479,8 @@ impl crate::System::BitConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToInt16", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "ToInt16",
+                            2usize
                         )
                     })
             });
@@ -479,7 +496,7 @@ impl crate::System::BitConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -493,7 +510,8 @@ impl crate::System::BitConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToInt32", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "ToInt32",
+                            2usize
                         )
                     })
             });
@@ -509,7 +527,7 @@ impl crate::System::BitConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -523,7 +541,8 @@ impl crate::System::BitConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToInt64", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "ToInt64",
+                            2usize
                         )
                     })
             });
@@ -539,7 +558,7 @@ impl crate::System::BitConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -553,7 +572,8 @@ impl crate::System::BitConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToSingle", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToSingle", 2usize
                         )
                     })
             });
@@ -570,7 +590,7 @@ impl crate::System::BitConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -581,7 +601,8 @@ impl crate::System::BitConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToString", 1usize
                         )
                     })
             });
@@ -600,7 +621,7 @@ impl crate::System::BitConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -615,7 +636,8 @@ impl crate::System::BitConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToString", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToString", 3usize
                         )
                     })
             });
@@ -631,7 +653,7 @@ impl crate::System::BitConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -645,7 +667,8 @@ impl crate::System::BitConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToUInt16", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToUInt16", 2usize
                         )
                     })
             });
@@ -661,7 +684,7 @@ impl crate::System::BitConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -675,7 +698,8 @@ impl crate::System::BitConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToUInt32", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToUInt32", 2usize
                         )
                     })
             });
@@ -691,7 +715,7 @@ impl crate::System::BitConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -705,7 +729,8 @@ impl crate::System::BitConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToUInt64", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToUInt64", 2usize
                         )
                     })
             });
@@ -721,7 +746,7 @@ impl crate::System::BitConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::Span_1<u8>, u32),
                         bool,
@@ -730,7 +755,8 @@ impl crate::System::BitConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryWriteBytes", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryWriteBytes", 2usize
                         )
                     })
             });

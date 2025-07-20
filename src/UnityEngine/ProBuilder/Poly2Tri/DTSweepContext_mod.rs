@@ -67,7 +67,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
@@ -78,7 +78,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddNode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "AddNode",
+                            1usize
                         )
                     })
             });
@@ -93,12 +94,13 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Clear", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Clear",
+                            0usize
                         )
                     })
             });
@@ -113,7 +115,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -122,7 +124,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateAdvancingFront", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateAdvancingFront", 0usize
                         )
                     })
             });
@@ -137,7 +140,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -146,7 +149,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FinalizeTriangulation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FinalizeTriangulation", 0usize
                         )
                     })
             });
@@ -168,7 +172,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
@@ -181,7 +185,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LocateNode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LocateNode", 1usize
                         )
                     })
             });
@@ -199,7 +204,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
@@ -210,7 +215,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MapTriangleToNodes", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MapTriangleToNodes", 1usize
                         )
                     })
             });
@@ -228,7 +234,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
@@ -239,7 +245,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MeshClean", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MeshClean", 1usize
                         )
                     })
             });
@@ -257,7 +264,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
@@ -268,7 +275,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MeshCleanReq", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MeshCleanReq", 1usize
                         )
                     })
             });
@@ -300,7 +308,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -318,7 +326,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NewConstraint", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NewConstraint", 2usize
                         )
                     })
             });
@@ -336,7 +345,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable,
@@ -347,7 +356,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PrepareTriangulation", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PrepareTriangulation", 1usize
                         )
                     })
             });
@@ -365,7 +375,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
@@ -376,7 +386,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RemoveFromList", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RemoveFromList", 1usize
                         )
                     })
             });
@@ -394,7 +405,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
@@ -405,7 +416,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RemoveNode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RemoveNode", 1usize
                         )
                     })
             });
@@ -420,12 +432,13 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -442,7 +455,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationAlgorithm,
@@ -451,7 +464,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Algorithm", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Algorithm", 0usize
                         )
                     })
             });
@@ -470,7 +484,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -481,7 +495,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Head", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Head", 0usize
                         )
                     })
             });
@@ -494,12 +509,13 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsDebugEnabled")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsDebugEnabled", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsDebugEnabled", 0usize
                         )
                     })
             });
@@ -516,7 +532,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -527,7 +543,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Tail", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Tail", 0usize
                         )
                     })
             });
@@ -545,7 +562,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
@@ -556,7 +573,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Head", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Head", 1usize
                         )
                     })
             });
@@ -572,7 +590,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -581,7 +599,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_IsDebugEnabled", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_IsDebugEnabled", 1usize
                         )
                     })
             });
@@ -599,7 +618,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
@@ -610,7 +629,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Tail", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Tail", 1usize
                         )
                     })
             });

@@ -44,7 +44,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         quest_hook::libil2cpp::Void,
@@ -53,7 +53,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGConfigFree", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGConfigFree", 1usize
                         )
                     })
             });
@@ -68,7 +69,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         quest_hook::libil2cpp::Void,
@@ -77,7 +78,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGConfigFreeInternal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGConfigFreeInternal", 1usize
                         )
                     })
             });
@@ -90,7 +92,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::System::IntPtr,
@@ -99,7 +101,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGConfigGetDefault", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGConfigGetDefault", 0usize
                         )
                     })
             });
@@ -114,7 +117,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         bool,
@@ -123,7 +126,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGConfigGetUseWebDefaults", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGConfigGetUseWebDefaults", 1usize
                         )
                     })
             });
@@ -134,7 +138,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::System::IntPtr,
@@ -143,7 +147,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGConfigNew", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGConfigNew", 0usize
                         )
                     })
             });
@@ -159,7 +164,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, f32),
                         quest_hook::libil2cpp::Void,
@@ -168,7 +173,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGConfigSetPointScaleFactor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGConfigSetPointScaleFactor", 2usize
                         )
                     })
             });
@@ -184,7 +190,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, bool),
                         quest_hook::libil2cpp::Void,
@@ -193,7 +199,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGConfigSetUseWebDefaults", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGConfigSetUseWebDefaults", 2usize
                         )
                     })
             });
@@ -211,7 +218,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -227,7 +234,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeBaselineInvoke", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeBaselineInvoke", 4usize
                         )
                     })
             });
@@ -245,7 +253,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::IntPtr,
@@ -259,7 +267,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeCalculateLayout", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeCalculateLayout", 4usize
                         )
                     })
             });
@@ -279,7 +288,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, crate::System::IntPtr),
                         quest_hook::libil2cpp::Void,
@@ -288,7 +297,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeCopyStyle", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeCopyStyle", 2usize
                         )
                     })
             });
@@ -303,7 +313,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         quest_hook::libil2cpp::Void,
@@ -312,7 +322,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeFree", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeFree", 1usize
                         )
                     })
             });
@@ -327,7 +338,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         quest_hook::libil2cpp::Void,
@@ -336,7 +347,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeFreeInternal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeFreeInternal", 1usize
                         )
                     })
             });
@@ -351,7 +363,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         bool,
@@ -360,7 +372,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeGetHasNewLayout", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeGetHasNewLayout", 1usize
                         )
                     })
             });
@@ -375,7 +388,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, crate::System::IntPtr, u32),
                         quest_hook::libil2cpp::Void,
@@ -384,7 +397,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeInsertChild", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeInsertChild", 3usize
                         )
                     })
             });
@@ -399,7 +413,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         bool,
@@ -408,7 +422,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeIsDirty", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeIsDirty", 1usize
                         )
                     })
             });
@@ -422,7 +437,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaEdge),
                         f32,
@@ -431,7 +446,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeLayoutGetBorder", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeLayoutGetBorder", 2usize
                         )
                     })
             });
@@ -444,7 +460,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         f32,
@@ -453,7 +469,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeLayoutGetBottom", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeLayoutGetBottom", 1usize
                         )
                     })
             });
@@ -466,7 +483,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         f32,
@@ -475,7 +492,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeLayoutGetHeight", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeLayoutGetHeight", 1usize
                         )
                     })
             });
@@ -488,7 +506,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         f32,
@@ -497,7 +515,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeLayoutGetLeft", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeLayoutGetLeft", 1usize
                         )
                     })
             });
@@ -511,7 +530,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaEdge),
                         f32,
@@ -520,7 +539,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeLayoutGetMargin", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeLayoutGetMargin", 2usize
                         )
                     })
             });
@@ -534,7 +554,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaEdge),
                         f32,
@@ -543,7 +563,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeLayoutGetPadding", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeLayoutGetPadding", 2usize
                         )
                     })
             });
@@ -556,7 +577,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         f32,
@@ -565,7 +586,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeLayoutGetRight", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeLayoutGetRight", 1usize
                         )
                     })
             });
@@ -578,7 +600,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         f32,
@@ -587,7 +609,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeLayoutGetTop", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeLayoutGetTop", 1usize
                         )
                     })
             });
@@ -600,7 +623,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         f32,
@@ -609,7 +632,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeLayoutGetWidth", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeLayoutGetWidth", 1usize
                         )
                     })
             });
@@ -622,7 +646,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         quest_hook::libil2cpp::Void,
@@ -631,7 +655,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeMarkDirty", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeMarkDirty", 1usize
                         )
                     })
             });
@@ -651,7 +676,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -669,7 +694,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeMeasureInvoke", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeMeasureInvoke", 6usize
                         )
                     })
             });
@@ -688,7 +714,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         crate::System::IntPtr,
@@ -697,7 +723,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeNewWithConfig", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeNewWithConfig", 1usize
                         )
                     })
             });
@@ -713,7 +740,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, crate::System::IntPtr),
                         quest_hook::libil2cpp::Void,
@@ -722,7 +749,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeRemoveChild", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeRemoveChild", 2usize
                         )
                     })
             });
@@ -737,7 +765,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         quest_hook::libil2cpp::Void,
@@ -746,7 +774,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeRemoveMeasureFunc", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeRemoveMeasureFunc", 1usize
                         )
                     })
             });
@@ -762,7 +791,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, crate::System::IntPtr),
                         quest_hook::libil2cpp::Void,
@@ -771,7 +800,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeSetConfig", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeSetConfig", 2usize
                         )
                     })
             });
@@ -787,7 +817,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, bool),
                         quest_hook::libil2cpp::Void,
@@ -796,7 +826,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeSetHasNewLayout", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeSetHasNewLayout", 2usize
                         )
                     })
             });
@@ -811,7 +842,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         quest_hook::libil2cpp::Void,
@@ -820,7 +851,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeSetMeasureFunc", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeSetMeasureFunc", 1usize
                         )
                     })
             });
@@ -835,7 +867,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         crate::UnityEngine::Yoga::YogaDirection,
@@ -844,7 +876,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleGetDirection", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleGetDirection", 1usize
                         )
                     })
             });
@@ -860,7 +893,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaAlign),
                         quest_hook::libil2cpp::Void,
@@ -869,7 +902,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetAlignContent", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetAlignContent", 2usize
                         )
                     })
             });
@@ -885,7 +919,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaAlign),
                         quest_hook::libil2cpp::Void,
@@ -894,7 +928,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetAlignItems", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetAlignItems", 2usize
                         )
                     })
             });
@@ -910,7 +945,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaAlign),
                         quest_hook::libil2cpp::Void,
@@ -919,7 +954,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetAlignSelf", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetAlignSelf", 2usize
                         )
                     })
             });
@@ -936,7 +972,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaEdge, f32),
                         quest_hook::libil2cpp::Void,
@@ -945,7 +981,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetBorder", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetBorder", 3usize
                         )
                     })
             });
@@ -961,7 +998,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaDisplay),
                         quest_hook::libil2cpp::Void,
@@ -970,7 +1007,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetDisplay", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetDisplay", 2usize
                         )
                     })
             });
@@ -986,7 +1024,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, f32),
                         quest_hook::libil2cpp::Void,
@@ -995,7 +1033,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetFlex", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetFlex", 2usize
                         )
                     })
             });
@@ -1011,7 +1050,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, f32),
                         quest_hook::libil2cpp::Void,
@@ -1020,7 +1059,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetFlexBasis", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetFlexBasis", 2usize
                         )
                     })
             });
@@ -1035,7 +1075,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         quest_hook::libil2cpp::Void,
@@ -1044,7 +1084,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetFlexBasisAuto", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetFlexBasisAuto", 1usize
                         )
                     })
             });
@@ -1060,7 +1101,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, f32),
                         quest_hook::libil2cpp::Void,
@@ -1069,7 +1110,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetFlexBasisPercent", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetFlexBasisPercent", 2usize
                         )
                     })
             });
@@ -1085,7 +1127,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::IntPtr,
@@ -1097,7 +1139,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetFlexDirection", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetFlexDirection", 2usize
                         )
                     })
             });
@@ -1113,7 +1156,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, f32),
                         quest_hook::libil2cpp::Void,
@@ -1122,7 +1165,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetFlexGrow", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetFlexGrow", 2usize
                         )
                     })
             });
@@ -1138,7 +1182,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, f32),
                         quest_hook::libil2cpp::Void,
@@ -1147,7 +1191,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetFlexShrink", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetFlexShrink", 2usize
                         )
                     })
             });
@@ -1163,7 +1208,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaWrap),
                         quest_hook::libil2cpp::Void,
@@ -1172,7 +1217,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetFlexWrap", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetFlexWrap", 2usize
                         )
                     })
             });
@@ -1188,7 +1234,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, f32),
                         quest_hook::libil2cpp::Void,
@@ -1197,7 +1243,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetHeight", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetHeight", 2usize
                         )
                     })
             });
@@ -1212,7 +1259,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         quest_hook::libil2cpp::Void,
@@ -1221,7 +1268,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetHeightAuto", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetHeightAuto", 1usize
                         )
                     })
             });
@@ -1237,7 +1285,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, f32),
                         quest_hook::libil2cpp::Void,
@@ -1246,7 +1294,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetHeightPercent", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetHeightPercent", 2usize
                         )
                     })
             });
@@ -1262,7 +1311,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaJustify),
                         quest_hook::libil2cpp::Void,
@@ -1271,7 +1320,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetJustifyContent", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetJustifyContent", 2usize
                         )
                     })
             });
@@ -1288,7 +1338,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaEdge, f32),
                         quest_hook::libil2cpp::Void,
@@ -1297,7 +1347,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetMargin", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetMargin", 3usize
                         )
                     })
             });
@@ -1313,7 +1364,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaEdge),
                         quest_hook::libil2cpp::Void,
@@ -1322,7 +1373,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetMarginAuto", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetMarginAuto", 2usize
                         )
                     })
             });
@@ -1339,7 +1391,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaEdge, f32),
                         quest_hook::libil2cpp::Void,
@@ -1348,7 +1400,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetMarginPercent", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetMarginPercent", 3usize
                         )
                     })
             });
@@ -1364,7 +1417,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, f32),
                         quest_hook::libil2cpp::Void,
@@ -1373,7 +1426,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetMaxHeight", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetMaxHeight", 2usize
                         )
                     })
             });
@@ -1389,7 +1443,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, f32),
                         quest_hook::libil2cpp::Void,
@@ -1398,7 +1452,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetMaxHeightPercent", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetMaxHeightPercent", 2usize
                         )
                     })
             });
@@ -1414,7 +1469,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, f32),
                         quest_hook::libil2cpp::Void,
@@ -1423,7 +1478,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetMaxWidth", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetMaxWidth", 2usize
                         )
                     })
             });
@@ -1439,7 +1495,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, f32),
                         quest_hook::libil2cpp::Void,
@@ -1448,7 +1504,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetMaxWidthPercent", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetMaxWidthPercent", 2usize
                         )
                     })
             });
@@ -1464,7 +1521,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, f32),
                         quest_hook::libil2cpp::Void,
@@ -1473,7 +1530,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetMinHeight", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetMinHeight", 2usize
                         )
                     })
             });
@@ -1489,7 +1547,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, f32),
                         quest_hook::libil2cpp::Void,
@@ -1498,7 +1556,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetMinHeightPercent", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetMinHeightPercent", 2usize
                         )
                     })
             });
@@ -1514,7 +1573,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, f32),
                         quest_hook::libil2cpp::Void,
@@ -1523,7 +1582,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetMinWidth", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetMinWidth", 2usize
                         )
                     })
             });
@@ -1539,7 +1599,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, f32),
                         quest_hook::libil2cpp::Void,
@@ -1548,7 +1608,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetMinWidthPercent", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetMinWidthPercent", 2usize
                         )
                     })
             });
@@ -1564,7 +1625,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaOverflow),
                         quest_hook::libil2cpp::Void,
@@ -1573,7 +1634,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetOverflow", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetOverflow", 2usize
                         )
                     })
             });
@@ -1590,7 +1652,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaEdge, f32),
                         quest_hook::libil2cpp::Void,
@@ -1599,7 +1661,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetPadding", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetPadding", 3usize
                         )
                     })
             });
@@ -1616,7 +1679,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaEdge, f32),
                         quest_hook::libil2cpp::Void,
@@ -1625,7 +1688,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetPaddingPercent", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetPaddingPercent", 3usize
                         )
                     })
             });
@@ -1642,7 +1706,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaEdge, f32),
                         quest_hook::libil2cpp::Void,
@@ -1651,7 +1715,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetPosition", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetPosition", 3usize
                         )
                     })
             });
@@ -1668,7 +1733,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, crate::UnityEngine::Yoga::YogaEdge, f32),
                         quest_hook::libil2cpp::Void,
@@ -1677,7 +1742,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetPositionPercent", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetPositionPercent", 3usize
                         )
                     })
             });
@@ -1693,7 +1759,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::IntPtr,
@@ -1705,7 +1771,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetPositionType", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetPositionType", 2usize
                         )
                     })
             });
@@ -1721,7 +1788,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, f32),
                         quest_hook::libil2cpp::Void,
@@ -1730,7 +1797,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetWidth", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetWidth", 2usize
                         )
                     })
             });
@@ -1745,7 +1813,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         quest_hook::libil2cpp::Void,
@@ -1754,7 +1822,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetWidthAuto", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetWidthAuto", 1usize
                         )
                     })
             });
@@ -1770,7 +1839,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, f32),
                         quest_hook::libil2cpp::Void,
@@ -1779,7 +1848,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGNodeStyleSetWidthPercent", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGNodeStyleSetWidthPercent", 2usize
                         )
                     })
             });
@@ -1795,7 +1865,7 @@ impl crate::UnityEngine::Yoga::Native {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::IntPtr,
@@ -1807,7 +1877,8 @@ impl crate::UnityEngine::Yoga::Native {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YGSetManagedObject", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YGSetManagedObject", 2usize
                         )
                     })
             });

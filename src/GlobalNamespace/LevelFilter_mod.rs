@@ -119,7 +119,7 @@ impl crate::GlobalNamespace::LevelFilter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -128,7 +128,8 @@ impl crate::GlobalNamespace::LevelFilter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CleanText", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CleanText", 1usize
                         )
                     })
             });
@@ -158,7 +159,7 @@ impl crate::GlobalNamespace::LevelFilter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -188,7 +189,8 @@ impl crate::GlobalNamespace::LevelFilter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FilterLevelByText", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FilterLevelByText", 2usize
                         )
                     })
             });
@@ -227,7 +229,7 @@ impl crate::GlobalNamespace::LevelFilter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -262,7 +264,8 @@ impl crate::GlobalNamespace::LevelFilter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FilterLevelsAsync", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FilterLevelsAsync", 5usize
                         )
                     })
             });
@@ -317,7 +320,7 @@ impl crate::GlobalNamespace::LevelFilter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -352,7 +355,8 @@ impl crate::GlobalNamespace::LevelFilter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FilterLevelsAsync", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FilterLevelsAsync", 5usize
                         )
                     })
             });
@@ -380,7 +384,7 @@ impl crate::GlobalNamespace::LevelFilter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -394,7 +398,8 @@ impl crate::GlobalNamespace::LevelFilter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsWithoutFilter", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsWithoutFilter", 2usize
                         )
                     })
             });
@@ -414,7 +419,7 @@ impl crate::GlobalNamespace::LevelFilter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -434,7 +439,7 @@ impl crate::GlobalNamespace::LevelFilter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "<FilterLevelByText>g__CalculateMatchScore|15_1", 2usize
                         )
                     })
@@ -453,7 +458,7 @@ impl crate::GlobalNamespace::LevelFilter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -469,7 +474,7 @@ impl crate::GlobalNamespace::LevelFilter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "<FilterLevelsAsync>g__HasPlayedAnyDifficulty|14_0", 2usize
                         )
                     })
@@ -488,7 +493,7 @@ impl crate::GlobalNamespace::LevelFilter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -504,7 +509,7 @@ impl crate::GlobalNamespace::LevelFilter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "<FilterLevelsAsync>g__MatchesCharacteristic|14_1", 2usize
                         )
                     })
@@ -524,7 +529,7 @@ impl crate::GlobalNamespace::LevelFilter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -541,7 +546,7 @@ impl crate::GlobalNamespace::LevelFilter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "<FilterLevelsAsync>g__MatchesDifficulty|14_2", 3usize
                         )
                     })

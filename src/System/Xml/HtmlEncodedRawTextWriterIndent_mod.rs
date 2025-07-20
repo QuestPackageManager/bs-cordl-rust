@@ -49,7 +49,7 @@ impl crate::System::Xml::HtmlEncodedRawTextWriterIndent {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -58,7 +58,8 @@ impl crate::System::Xml::HtmlEncodedRawTextWriterIndent {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FlushBuffer", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FlushBuffer", 0usize
                         )
                     })
             });
@@ -74,7 +75,7 @@ impl crate::System::Xml::HtmlEncodedRawTextWriterIndent {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::XmlWriterSettings,
@@ -85,7 +86,8 @@ impl crate::System::Xml::HtmlEncodedRawTextWriterIndent {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Init", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            1usize
                         )
                     })
             });
@@ -120,7 +122,7 @@ impl crate::System::Xml::HtmlEncodedRawTextWriterIndent {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -129,7 +131,8 @@ impl crate::System::Xml::HtmlEncodedRawTextWriterIndent {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartElementContent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartElementContent", 0usize
                         )
                     })
             });
@@ -148,7 +151,7 @@ impl crate::System::Xml::HtmlEncodedRawTextWriterIndent {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -170,7 +173,8 @@ impl crate::System::Xml::HtmlEncodedRawTextWriterIndent {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteDocType", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteDocType", 4usize
                         )
                     })
             });
@@ -188,7 +192,7 @@ impl crate::System::Xml::HtmlEncodedRawTextWriterIndent {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -207,7 +211,8 @@ impl crate::System::Xml::HtmlEncodedRawTextWriterIndent {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteEndElement", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteEndElement", 3usize
                         )
                     })
             });
@@ -222,7 +227,7 @@ impl crate::System::Xml::HtmlEncodedRawTextWriterIndent {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -231,7 +236,8 @@ impl crate::System::Xml::HtmlEncodedRawTextWriterIndent {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteIndent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteIndent", 0usize
                         )
                     })
             });
@@ -249,7 +255,7 @@ impl crate::System::Xml::HtmlEncodedRawTextWriterIndent {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -268,7 +274,8 @@ impl crate::System::Xml::HtmlEncodedRawTextWriterIndent {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteStartAttribute", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteStartAttribute", 3usize
                         )
                     })
             });
@@ -286,7 +293,7 @@ impl crate::System::Xml::HtmlEncodedRawTextWriterIndent {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -305,7 +312,8 @@ impl crate::System::Xml::HtmlEncodedRawTextWriterIndent {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteStartElement", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteStartElement", 3usize
                         )
                     })
             });
@@ -322,7 +330,7 @@ impl crate::System::Xml::HtmlEncodedRawTextWriterIndent {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -336,7 +344,8 @@ impl crate::System::Xml::HtmlEncodedRawTextWriterIndent {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -353,7 +362,7 @@ impl crate::System::Xml::HtmlEncodedRawTextWriterIndent {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
@@ -367,7 +376,8 @@ impl crate::System::Xml::HtmlEncodedRawTextWriterIndent {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });

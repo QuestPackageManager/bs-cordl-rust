@@ -44,7 +44,7 @@ impl crate::Mono::Unity::UnityTlsConversions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Mono::Unity::UnityTls_unitytls_protocol),
                         crate::Mono::Security::Interface::TlsProtocols,
@@ -53,7 +53,8 @@ impl crate::Mono::Unity::UnityTlsConversions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertProtocolVersion", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertProtocolVersion", 1usize
                         )
                     })
             });
@@ -68,7 +69,7 @@ impl crate::Mono::Unity::UnityTlsConversions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::Security::Authentication::SslProtocols),
                         crate::Mono::Unity::UnityTls_unitytls_protocol,
@@ -77,7 +78,8 @@ impl crate::Mono::Unity::UnityTlsConversions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMaxProtocol", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMaxProtocol", 1usize
                         )
                     })
             });
@@ -92,7 +94,7 @@ impl crate::Mono::Unity::UnityTlsConversions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::Security::Authentication::SslProtocols),
                         crate::Mono::Unity::UnityTls_unitytls_protocol,
@@ -101,7 +103,8 @@ impl crate::Mono::Unity::UnityTlsConversions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMinProtocol", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMinProtocol", 1usize
                         )
                     })
             });
@@ -119,7 +122,7 @@ impl crate::Mono::Unity::UnityTlsConversions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Mono::Unity::UnityTls_unitytls_x509verify_result,
@@ -131,7 +134,8 @@ impl crate::Mono::Unity::UnityTlsConversions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VerifyResultToAlertDescription", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VerifyResultToAlertDescription", 2usize
                         )
                     })
             });
@@ -148,7 +152,7 @@ impl crate::Mono::Unity::UnityTlsConversions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Mono::Unity::UnityTls_unitytls_x509verify_result),
                         crate::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags,
@@ -157,7 +161,8 @@ impl crate::Mono::Unity::UnityTlsConversions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VerifyResultToChainStatus", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VerifyResultToChainStatus", 1usize
                         )
                     })
             });
@@ -172,7 +177,7 @@ impl crate::Mono::Unity::UnityTlsConversions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Mono::Unity::UnityTls_unitytls_x509verify_result),
                         crate::System::Net::Security::SslPolicyErrors,
@@ -181,7 +186,8 @@ impl crate::Mono::Unity::UnityTlsConversions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VerifyResultToPolicyErrror", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VerifyResultToPolicyErrror", 1usize
                         )
                     })
             });

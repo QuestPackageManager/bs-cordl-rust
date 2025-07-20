@@ -45,12 +45,13 @@ impl crate::Oculus::Platform::ChallengeOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Finalize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Finalize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Finalize", 0usize
                         )
                     })
             });
@@ -73,7 +74,7 @@ impl crate::Oculus::Platform::ChallengeOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -82,7 +83,8 @@ impl crate::Oculus::Platform::ChallengeOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetDescription", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetDescription", 1usize
                         )
                     })
             });
@@ -98,7 +100,7 @@ impl crate::Oculus::Platform::ChallengeOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::DateTime),
                         quest_hook::libil2cpp::Void,
@@ -107,7 +109,8 @@ impl crate::Oculus::Platform::ChallengeOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetEndDate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetEndDate", 1usize
                         )
                     })
             });
@@ -123,7 +126,7 @@ impl crate::Oculus::Platform::ChallengeOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -132,7 +135,8 @@ impl crate::Oculus::Platform::ChallengeOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetIncludeActiveChallenges", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetIncludeActiveChallenges", 1usize
                         )
                     })
             });
@@ -148,7 +152,7 @@ impl crate::Oculus::Platform::ChallengeOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -157,7 +161,8 @@ impl crate::Oculus::Platform::ChallengeOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetIncludeFutureChallenges", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetIncludeFutureChallenges", 1usize
                         )
                     })
             });
@@ -173,7 +178,7 @@ impl crate::Oculus::Platform::ChallengeOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -182,7 +187,8 @@ impl crate::Oculus::Platform::ChallengeOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetIncludePastChallenges", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetIncludePastChallenges", 1usize
                         )
                     })
             });
@@ -198,7 +204,7 @@ impl crate::Oculus::Platform::ChallengeOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -207,7 +213,8 @@ impl crate::Oculus::Platform::ChallengeOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetLeaderboardName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetLeaderboardName", 1usize
                         )
                     })
             });
@@ -223,7 +230,7 @@ impl crate::Oculus::Platform::ChallengeOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::DateTime),
                         quest_hook::libil2cpp::Void,
@@ -232,7 +239,8 @@ impl crate::Oculus::Platform::ChallengeOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetStartDate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetStartDate", 1usize
                         )
                     })
             });
@@ -248,7 +256,7 @@ impl crate::Oculus::Platform::ChallengeOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -257,7 +265,8 @@ impl crate::Oculus::Platform::ChallengeOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetTitle", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetTitle", 1usize
                         )
                     })
             });
@@ -273,7 +282,7 @@ impl crate::Oculus::Platform::ChallengeOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Oculus::Platform::ChallengeViewerFilter),
                         quest_hook::libil2cpp::Void,
@@ -282,7 +291,8 @@ impl crate::Oculus::Platform::ChallengeOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetViewerFilter", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetViewerFilter", 1usize
                         )
                     })
             });
@@ -298,7 +308,7 @@ impl crate::Oculus::Platform::ChallengeOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Oculus::Platform::ChallengeVisibility),
                         quest_hook::libil2cpp::Void,
@@ -307,7 +317,8 @@ impl crate::Oculus::Platform::ChallengeOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetVisibility", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetVisibility", 1usize
                         )
                     })
             });
@@ -322,12 +333,13 @@ impl crate::Oculus::Platform::ChallengeOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -342,7 +354,7 @@ impl crate::Oculus::Platform::ChallengeOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Oculus::Platform::ChallengeOptions,
@@ -353,7 +365,8 @@ impl crate::Oculus::Platform::ChallengeOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Explicit", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Explicit", 1usize
                         )
                     })
             });

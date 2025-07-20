@@ -60,7 +60,7 @@ impl crate::GlobalNamespace::FlyingScoreEffect {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::CutScoreBuffer,
@@ -71,7 +71,8 @@ impl crate::GlobalNamespace::FlyingScoreEffect {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleCutScoreBufferDidChange", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleCutScoreBufferDidChange", 1usize
                         )
                     })
             });
@@ -87,7 +88,7 @@ impl crate::GlobalNamespace::FlyingScoreEffect {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::CutScoreBuffer,
@@ -98,7 +99,8 @@ impl crate::GlobalNamespace::FlyingScoreEffect {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleCutScoreBufferDidFinish", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleCutScoreBufferDidFinish", 1usize
                         )
                     })
             });
@@ -119,7 +121,7 @@ impl crate::GlobalNamespace::FlyingScoreEffect {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -135,7 +137,8 @@ impl crate::GlobalNamespace::FlyingScoreEffect {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitAndPresent", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitAndPresent", 4usize
                         )
                     })
             });
@@ -151,7 +154,7 @@ impl crate::GlobalNamespace::FlyingScoreEffect {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -160,7 +163,8 @@ impl crate::GlobalNamespace::FlyingScoreEffect {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ManualUpdate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ManualUpdate", 1usize
                         )
                     })
             });
@@ -184,7 +188,7 @@ impl crate::GlobalNamespace::FlyingScoreEffect {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -193,7 +197,8 @@ impl crate::GlobalNamespace::FlyingScoreEffect {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RefreshScore", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RefreshScore", 2usize
                         )
                     })
             });
@@ -208,7 +213,7 @@ impl crate::GlobalNamespace::FlyingScoreEffect {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -217,7 +222,8 @@ impl crate::GlobalNamespace::FlyingScoreEffect {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnregisterCallbacksIfNeeded", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnregisterCallbacksIfNeeded", 0usize
                         )
                     })
             });
@@ -232,12 +238,13 @@ impl crate::GlobalNamespace::FlyingScoreEffect {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -347,7 +354,7 @@ impl crate::GlobalNamespace::FlyingScoreEffect_Pool {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::FlyingScoreEffect,
@@ -358,7 +365,8 @@ impl crate::GlobalNamespace::FlyingScoreEffect_Pool {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDespawned", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDespawned", 1usize
                         )
                     })
             });
@@ -373,12 +381,13 @@ impl crate::GlobalNamespace::FlyingScoreEffect_Pool {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

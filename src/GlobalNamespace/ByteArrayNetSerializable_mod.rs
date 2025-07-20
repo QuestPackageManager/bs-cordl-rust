@@ -51,12 +51,13 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Clear", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Clear",
+                            0usize
                         )
                     })
             });
@@ -73,7 +74,7 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -87,7 +88,8 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CopyTo", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "CopyTo",
+                            2usize
                         )
                     })
             });
@@ -103,7 +105,7 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -114,7 +116,8 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CopyTo", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "CopyTo",
+                            1usize
                         )
                     })
             });
@@ -130,7 +133,7 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::LiteNetLib::Utils::NetDataReader,
@@ -141,7 +144,8 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Deserialize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Deserialize", 1usize
                         )
                     })
             });
@@ -159,7 +163,7 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Gc<
@@ -170,7 +174,8 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetData",
+                            1usize
                         )
                     })
             });
@@ -209,12 +214,13 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("Resize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Resize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Resize",
+                            1usize
                         )
                     })
             });
@@ -230,7 +236,7 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::LiteNetLib::Utils::NetDataWriter,
@@ -241,7 +247,8 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Serialize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Serialize", 1usize
                         )
                     })
             });
@@ -257,7 +264,7 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -268,7 +275,8 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetData",
+                            1usize
                         )
                     })
             });
@@ -286,7 +294,7 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -301,7 +309,8 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetData", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetData",
+                            3usize
                         )
                     })
             });
@@ -319,7 +328,7 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -334,7 +343,8 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -353,7 +363,7 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -369,7 +379,8 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
                         )
                     })
             });
@@ -386,7 +397,7 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -397,7 +408,8 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_data", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_data", 0usize
                         )
                     })
             });
@@ -410,12 +422,13 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_length")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_length", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_length", 0usize
                         )
                     })
             });
@@ -432,7 +445,7 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::ByteArrayNetSerializable,
@@ -445,7 +458,8 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Implicit", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Implicit", 1usize
                         )
                     })
             });
@@ -461,7 +475,7 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -472,7 +486,8 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_data", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_data", 1usize
                         )
                     })
             });

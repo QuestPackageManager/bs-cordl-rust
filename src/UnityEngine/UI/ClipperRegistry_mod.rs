@@ -49,12 +49,13 @@ impl crate::UnityEngine::UI::ClipperRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Cull")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Cull", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Cull",
+                            0usize
                         )
                     })
             });
@@ -69,7 +70,7 @@ impl crate::UnityEngine::UI::ClipperRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IClipper>),
                         quest_hook::libil2cpp::Void,
@@ -78,7 +79,8 @@ impl crate::UnityEngine::UI::ClipperRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Disable", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Disable",
+                            1usize
                         )
                     })
             });
@@ -100,7 +102,7 @@ impl crate::UnityEngine::UI::ClipperRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IClipper>),
                         quest_hook::libil2cpp::Void,
@@ -109,7 +111,8 @@ impl crate::UnityEngine::UI::ClipperRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Register", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Register", 1usize
                         )
                     })
             });
@@ -124,7 +127,7 @@ impl crate::UnityEngine::UI::ClipperRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IClipper>),
                         quest_hook::libil2cpp::Void,
@@ -133,7 +136,8 @@ impl crate::UnityEngine::UI::ClipperRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Unregister", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Unregister", 1usize
                         )
                     })
             });
@@ -148,12 +152,13 @@ impl crate::UnityEngine::UI::ClipperRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -168,7 +173,7 @@ impl crate::UnityEngine::UI::ClipperRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -179,7 +184,8 @@ impl crate::UnityEngine::UI::ClipperRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_instance", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_instance", 0usize
                         )
                     })
             });

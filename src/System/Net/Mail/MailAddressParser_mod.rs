@@ -46,7 +46,7 @@ impl crate::System::Net::Mail::MailAddressParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -55,7 +55,8 @@ impl crate::System::Net::Mail::MailAddressParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NormalizeOrThrow", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NormalizeOrThrow", 1usize
                         )
                     })
             });
@@ -72,7 +73,7 @@ impl crate::System::Net::Mail::MailAddressParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<crate::System::Net::Mail::MailAddress>,
@@ -81,7 +82,8 @@ impl crate::System::Net::Mail::MailAddressParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseAddress", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseAddress", 1usize
                         )
                     })
             });
@@ -100,7 +102,7 @@ impl crate::System::Net::Mail::MailAddressParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -115,7 +117,8 @@ impl crate::System::Net::Mail::MailAddressParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseAddress", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseAddress", 3usize
                         )
                     })
             });
@@ -136,7 +139,7 @@ impl crate::System::Net::Mail::MailAddressParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -151,7 +154,8 @@ impl crate::System::Net::Mail::MailAddressParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseDisplayName", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseDisplayName", 3usize
                         )
                     })
             });
@@ -171,7 +175,7 @@ impl crate::System::Net::Mail::MailAddressParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -185,7 +189,8 @@ impl crate::System::Net::Mail::MailAddressParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseDomain", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseDomain", 2usize
                         )
                     })
             });
@@ -205,7 +210,7 @@ impl crate::System::Net::Mail::MailAddressParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -221,7 +226,8 @@ impl crate::System::Net::Mail::MailAddressParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseLocalPart", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseLocalPart", 4usize
                         )
                     })
             });
@@ -243,7 +249,7 @@ impl crate::System::Net::Mail::MailAddressParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -257,7 +263,8 @@ impl crate::System::Net::Mail::MailAddressParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadCfwsAndThrowIfIncomplete", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadCfwsAndThrowIfIncomplete", 2usize
                         )
                     })
             });

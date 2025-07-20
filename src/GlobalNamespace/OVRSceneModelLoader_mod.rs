@@ -51,7 +51,7 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -62,7 +62,8 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AttemptToLoadSceneModel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AttemptToLoadSceneModel", 0usize
                         )
                     })
             });
@@ -77,7 +78,7 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -86,7 +87,8 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadSceneModel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadSceneModel", 0usize
                         )
                     })
             });
@@ -108,7 +110,7 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -117,7 +119,8 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnNewSceneModelAvailable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnNewSceneModelAvailable", 0usize
                         )
                     })
             });
@@ -132,7 +135,7 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -141,7 +144,8 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnNoSceneModelToLoad", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnNoSceneModelToLoad", 0usize
                         )
                     })
             });
@@ -156,7 +160,7 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -165,7 +169,8 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnSceneCaptureReturnedWithoutError", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnSceneCaptureReturnedWithoutError", 0usize
                         )
                     })
             });
@@ -180,7 +185,7 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -189,7 +194,8 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnSceneModelLoadedSuccessfully", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnSceneModelLoadedSuccessfully", 0usize
                         )
                     })
             });
@@ -204,12 +210,13 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnStart")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnStart", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "OnStart",
+                            0usize
                         )
                     })
             });
@@ -224,7 +231,7 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -233,7 +240,8 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnUnexpectedErrorWithSceneCapture", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnUnexpectedErrorWithSceneCapture", 0usize
                         )
                     })
             });
@@ -248,12 +256,13 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Start", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Start",
+                            0usize
                         )
                     })
             });
@@ -268,12 +277,13 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -290,7 +300,7 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -301,7 +311,8 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SceneManager", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SceneManager", 0usize
                         )
                     })
             });
@@ -317,7 +328,7 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::OVRSceneManager,
@@ -328,7 +339,8 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_SceneManager", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_SceneManager", 1usize
                         )
                     })
             });

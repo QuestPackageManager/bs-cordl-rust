@@ -57,12 +57,13 @@ impl crate::Tayx::Graphy::Audio::G_AudioMonitor {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Awake", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Awake",
+                            0usize
                         )
                     })
             });
@@ -79,7 +80,7 @@ impl crate::Tayx::Graphy::Audio::G_AudioMonitor {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioListener>,
@@ -88,7 +89,8 @@ impl crate::Tayx::Graphy::Audio::G_AudioMonitor {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FindAudioListener", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindAudioListener", 0usize
                         )
                     })
             });
@@ -103,12 +105,13 @@ impl crate::Tayx::Graphy::Audio::G_AudioMonitor {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Init")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Init", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            0usize
                         )
                     })
             });
@@ -130,12 +133,13 @@ impl crate::Tayx::Graphy::Audio::G_AudioMonitor {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDestroy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDestroy", 0usize
                         )
                     })
             });
@@ -152,7 +156,7 @@ impl crate::Tayx::Graphy::Audio::G_AudioMonitor {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::SceneManagement::Scene,
@@ -164,7 +168,8 @@ impl crate::Tayx::Graphy::Audio::G_AudioMonitor {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnSceneLoaded", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnSceneLoaded", 2usize
                         )
                     })
             });
@@ -179,12 +184,13 @@ impl crate::Tayx::Graphy::Audio::G_AudioMonitor {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Update")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Update", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Update",
+                            0usize
                         )
                     })
             });
@@ -199,7 +205,7 @@ impl crate::Tayx::Graphy::Audio::G_AudioMonitor {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -208,7 +214,8 @@ impl crate::Tayx::Graphy::Audio::G_AudioMonitor {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateParameters", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateParameters", 0usize
                         )
                     })
             });
@@ -223,12 +230,13 @@ impl crate::Tayx::Graphy::Audio::G_AudioMonitor {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -241,12 +249,13 @@ impl crate::Tayx::Graphy::Audio::G_AudioMonitor {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f32), f32, 1usize>("dBNormalized")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "dBNormalized", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "dBNormalized", 1usize
                         )
                     })
             });
@@ -257,12 +266,13 @@ impl crate::Tayx::Graphy::Audio::G_AudioMonitor {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_MaxDB")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_MaxDB", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_MaxDB", 0usize
                         )
                     })
             });
@@ -277,7 +287,7 @@ impl crate::Tayx::Graphy::Audio::G_AudioMonitor {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -288,7 +298,8 @@ impl crate::Tayx::Graphy::Audio::G_AudioMonitor {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Spectrum", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Spectrum", 0usize
                         )
                     })
             });
@@ -301,12 +312,13 @@ impl crate::Tayx::Graphy::Audio::G_AudioMonitor {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_SpectrumDataAvailable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SpectrumDataAvailable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SpectrumDataAvailable", 0usize
                         )
                     })
             });
@@ -321,7 +333,7 @@ impl crate::Tayx::Graphy::Audio::G_AudioMonitor {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -332,7 +344,8 @@ impl crate::Tayx::Graphy::Audio::G_AudioMonitor {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SpectrumHighestValues", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SpectrumHighestValues", 0usize
                         )
                     })
             });
@@ -345,12 +358,13 @@ impl crate::Tayx::Graphy::Audio::G_AudioMonitor {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f32), f32, 1usize>("lin2dB")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "lin2dB", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "lin2dB",
+                            1usize
                         )
                     })
             });
@@ -364,7 +378,7 @@ impl crate::Tayx::Graphy::Audio::G_AudioMonitor {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -373,7 +387,8 @@ impl crate::Tayx::Graphy::Audio::G_AudioMonitor {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_MaxDB", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_MaxDB", 1usize
                         )
                     })
             });
@@ -389,7 +404,7 @@ impl crate::Tayx::Graphy::Audio::G_AudioMonitor {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<f32>,
@@ -400,7 +415,8 @@ impl crate::Tayx::Graphy::Audio::G_AudioMonitor {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Spectrum", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Spectrum", 1usize
                         )
                     })
             });
@@ -416,7 +432,7 @@ impl crate::Tayx::Graphy::Audio::G_AudioMonitor {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<f32>,
@@ -427,7 +443,8 @@ impl crate::Tayx::Graphy::Audio::G_AudioMonitor {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_SpectrumHighestValues", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_SpectrumHighestValues", 1usize
                         )
                     })
             });

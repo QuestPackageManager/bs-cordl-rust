@@ -42,12 +42,13 @@ impl crate::System::Numerics::NumericsHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), u32, 1usize>("Abs")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Abs", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Abs",
+                            1usize
                         )
                     })
             });
@@ -58,12 +59,13 @@ impl crate::System::Numerics::NumericsHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32), i32, 1usize>("CbitHighZero")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CbitHighZero", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CbitHighZero", 1usize
                         )
                     })
             });
@@ -74,12 +76,13 @@ impl crate::System::Numerics::NumericsHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64), i32, 1usize>("CbitHighZero")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CbitHighZero", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CbitHighZero", 1usize
                         )
                     })
             });
@@ -93,12 +96,13 @@ impl crate::System::Numerics::NumericsHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, i32), i32, 2usize>("CombineHash")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CombineHash", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CombineHash", 2usize
                         )
                     })
             });
@@ -112,12 +116,13 @@ impl crate::System::Numerics::NumericsHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32, u32), u32, 2usize>("CombineHash")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CombineHash", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CombineHash", 2usize
                         )
                     })
             });
@@ -130,7 +135,7 @@ impl crate::System::Numerics::NumericsHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u32>,
@@ -141,7 +146,8 @@ impl crate::System::Numerics::NumericsHelpers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DangerousMakeTwosComplement", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DangerousMakeTwosComplement", 1usize
                         )
                     })
             });
@@ -158,7 +164,7 @@ impl crate::System::Numerics::NumericsHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, i32, u64),
                         f64,
@@ -167,7 +173,8 @@ impl crate::System::Numerics::NumericsHelpers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetDoubleFromParts", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDoubleFromParts", 3usize
                         )
                     })
             });
@@ -184,7 +191,7 @@ impl crate::System::Numerics::NumericsHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             f64,
@@ -199,7 +206,8 @@ impl crate::System::Numerics::NumericsHelpers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetDoubleParts", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDoubleParts", 5usize
                         )
                     })
             });
@@ -212,12 +220,13 @@ impl crate::System::Numerics::NumericsHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32, u32), u64, 2usize>("MakeUlong")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MakeUlong", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MakeUlong", 2usize
                         )
                     })
             });

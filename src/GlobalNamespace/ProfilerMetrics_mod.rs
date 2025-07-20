@@ -62,7 +62,7 @@ impl crate::GlobalNamespace::ProfilerMetrics {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::List_1<
@@ -75,7 +75,8 @@ impl crate::GlobalNamespace::ProfilerMetrics {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddExposedMetrics", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddExposedMetrics", 1usize
                         )
                     })
             });
@@ -90,7 +91,7 @@ impl crate::GlobalNamespace::ProfilerMetrics {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -99,7 +100,8 @@ impl crate::GlobalNamespace::ProfilerMetrics {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CaptureFrame", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CaptureFrame", 0usize
                         )
                     })
             });
@@ -114,12 +116,13 @@ impl crate::GlobalNamespace::ProfilerMetrics {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Dispose", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            0usize
                         )
                     })
             });
@@ -137,7 +140,7 @@ impl crate::GlobalNamespace::ProfilerMetrics {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -146,7 +149,8 @@ impl crate::GlobalNamespace::ProfilerMetrics {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenerateListReport", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateListReport", 1usize
                         )
                     })
             });
@@ -164,7 +168,7 @@ impl crate::GlobalNamespace::ProfilerMetrics {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -173,7 +177,8 @@ impl crate::GlobalNamespace::ProfilerMetrics {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenerateTableReport", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateTableReport", 1usize
                         )
                     })
             });
@@ -212,7 +217,7 @@ impl crate::GlobalNamespace::ProfilerMetrics {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -230,7 +235,8 @@ impl crate::GlobalNamespace::ProfilerMetrics {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Record", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Record",
+                            2usize
                         )
                     })
             });
@@ -248,7 +254,7 @@ impl crate::GlobalNamespace::ProfilerMetrics {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, bool),
                         quest_hook::libil2cpp::Gc<
@@ -259,7 +265,8 @@ impl crate::GlobalNamespace::ProfilerMetrics {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RecordAllMetrics", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RecordAllMetrics", 2usize
                         )
                     })
             });
@@ -276,7 +283,7 @@ impl crate::GlobalNamespace::ProfilerMetrics {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
@@ -287,7 +294,8 @@ impl crate::GlobalNamespace::ProfilerMetrics {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RecordFrameTimingMetrics", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RecordFrameTimingMetrics", 1usize
                         )
                     })
             });
@@ -304,7 +312,7 @@ impl crate::GlobalNamespace::ProfilerMetrics {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
@@ -315,7 +323,8 @@ impl crate::GlobalNamespace::ProfilerMetrics {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RecordListedMetrics", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RecordListedMetrics", 1usize
                         )
                     })
             });
@@ -332,7 +341,7 @@ impl crate::GlobalNamespace::ProfilerMetrics {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
@@ -343,7 +352,8 @@ impl crate::GlobalNamespace::ProfilerMetrics {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RecordMemoryMetrics", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RecordMemoryMetrics", 1usize
                         )
                     })
             });
@@ -360,7 +370,7 @@ impl crate::GlobalNamespace::ProfilerMetrics {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
@@ -371,7 +381,8 @@ impl crate::GlobalNamespace::ProfilerMetrics {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RecordRenderingMetrics", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RecordRenderingMetrics", 1usize
                         )
                     })
             });
@@ -395,7 +406,7 @@ impl crate::GlobalNamespace::ProfilerMetrics {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -416,7 +427,8 @@ impl crate::GlobalNamespace::ProfilerMetrics {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });

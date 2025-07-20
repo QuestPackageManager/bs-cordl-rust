@@ -46,7 +46,7 @@ impl crate::GlobalNamespace::MultiplayerPlayerPlacement {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, crate::GlobalNamespace::MultiplayerPlayerLayout),
                         f32,
@@ -55,8 +55,8 @@ impl crate::GlobalNamespace::MultiplayerPlayerPlacement {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAngleBetweenPlayersWithEvenAdjustment",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAngleBetweenPlayersWithEvenAdjustment", 2usize
                         )
                     })
             });
@@ -76,7 +76,7 @@ impl crate::GlobalNamespace::MultiplayerPlayerPlacement {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -96,7 +96,8 @@ impl crate::GlobalNamespace::MultiplayerPlayerPlacement {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLocalPlayerIndex", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLocalPlayerIndex", 2usize
                         )
                     })
             });
@@ -113,7 +114,7 @@ impl crate::GlobalNamespace::MultiplayerPlayerPlacement {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, i32, f32),
                         f32,
@@ -122,7 +123,8 @@ impl crate::GlobalNamespace::MultiplayerPlayerPlacement {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetOuterCirclePositionAngleForPlayer", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetOuterCirclePositionAngleForPlayer", 3usize
                         )
                     })
             });
@@ -142,7 +144,7 @@ impl crate::GlobalNamespace::MultiplayerPlayerPlacement {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32, f32),
                         f32,
@@ -151,7 +153,8 @@ impl crate::GlobalNamespace::MultiplayerPlayerPlacement {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetOuterCircleRadius", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetOuterCircleRadius", 2usize
                         )
                     })
             });
@@ -168,7 +171,7 @@ impl crate::GlobalNamespace::MultiplayerPlayerPlacement {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32, f32, crate::GlobalNamespace::MultiplayerPlayerLayout),
                         crate::UnityEngine::Vector3,
@@ -177,7 +180,8 @@ impl crate::GlobalNamespace::MultiplayerPlayerPlacement {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPlayerWorldPosition", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPlayerWorldPosition", 3usize
                         )
                     })
             });
@@ -200,7 +204,7 @@ impl crate::GlobalNamespace::MultiplayerPlayerPlacement {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::List_1<
@@ -215,7 +219,8 @@ impl crate::GlobalNamespace::MultiplayerPlayerPlacement {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SortPlayers", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SortPlayers", 1usize
                         )
                     })
             });

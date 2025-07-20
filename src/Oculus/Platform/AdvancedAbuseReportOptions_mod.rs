@@ -47,7 +47,7 @@ impl crate::Oculus::Platform::AdvancedAbuseReportOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u64),
                         quest_hook::libil2cpp::Void,
@@ -56,7 +56,8 @@ impl crate::Oculus::Platform::AdvancedAbuseReportOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddSuggestedUser", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddSuggestedUser", 1usize
                         )
                     })
             });
@@ -71,7 +72,7 @@ impl crate::Oculus::Platform::AdvancedAbuseReportOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -80,7 +81,8 @@ impl crate::Oculus::Platform::AdvancedAbuseReportOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ClearDeveloperDefinedContext", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ClearDeveloperDefinedContext", 0usize
                         )
                     })
             });
@@ -95,7 +97,7 @@ impl crate::Oculus::Platform::AdvancedAbuseReportOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -104,7 +106,8 @@ impl crate::Oculus::Platform::AdvancedAbuseReportOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ClearSuggestedUsers", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ClearSuggestedUsers", 0usize
                         )
                     })
             });
@@ -119,12 +122,13 @@ impl crate::Oculus::Platform::AdvancedAbuseReportOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Finalize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Finalize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Finalize", 0usize
                         )
                     })
             });
@@ -148,7 +152,7 @@ impl crate::Oculus::Platform::AdvancedAbuseReportOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -164,7 +168,8 @@ impl crate::Oculus::Platform::AdvancedAbuseReportOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetDeveloperDefinedContext", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetDeveloperDefinedContext", 2usize
                         )
                     })
             });
@@ -180,7 +185,7 @@ impl crate::Oculus::Platform::AdvancedAbuseReportOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -189,7 +194,8 @@ impl crate::Oculus::Platform::AdvancedAbuseReportOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetObjectType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetObjectType", 1usize
                         )
                     })
             });
@@ -205,7 +211,7 @@ impl crate::Oculus::Platform::AdvancedAbuseReportOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Oculus::Platform::AbuseReportType),
                         quest_hook::libil2cpp::Void,
@@ -214,7 +220,8 @@ impl crate::Oculus::Platform::AdvancedAbuseReportOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetReportType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetReportType", 1usize
                         )
                     })
             });
@@ -230,7 +237,7 @@ impl crate::Oculus::Platform::AdvancedAbuseReportOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Oculus::Platform::AbuseReportVideoMode),
                         quest_hook::libil2cpp::Void,
@@ -239,7 +246,8 @@ impl crate::Oculus::Platform::AdvancedAbuseReportOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetVideoMode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetVideoMode", 1usize
                         )
                     })
             });
@@ -254,12 +262,13 @@ impl crate::Oculus::Platform::AdvancedAbuseReportOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -276,7 +285,7 @@ impl crate::Oculus::Platform::AdvancedAbuseReportOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Oculus::Platform::AdvancedAbuseReportOptions,
@@ -287,7 +296,8 @@ impl crate::Oculus::Platform::AdvancedAbuseReportOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Explicit", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Explicit", 1usize
                         )
                     })
             });

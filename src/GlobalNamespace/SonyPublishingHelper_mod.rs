@@ -49,7 +49,7 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -68,7 +68,8 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetContentIdFromNpTitleId", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetContentIdFromNpTitleId", 3usize
                         )
                     })
             });
@@ -89,7 +90,7 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -108,7 +109,8 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetContentIdFromTitleId", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetContentIdFromTitleId", 3usize
                         )
                     })
             });
@@ -128,7 +130,7 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -144,7 +146,8 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetContentId", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetContentId", 2usize
                         )
                     })
             });
@@ -163,7 +166,7 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::SonyPublisherSKUSettingsSO,
@@ -174,7 +177,8 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetContentId", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetContentId", 1usize
                         )
                     })
             });
@@ -191,7 +195,7 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -200,7 +204,8 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNpTitleId", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNpTitleId", 1usize
                         )
                     })
             });
@@ -219,7 +224,7 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::SonyPublisherSKUSettingsSO,
@@ -230,7 +235,8 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetServiceId", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetServiceId", 1usize
                         )
                     })
             });
@@ -248,7 +254,7 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -264,7 +270,8 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetServiceIdFromNpTitleId", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetServiceIdFromNpTitleId", 2usize
                         )
                     })
             });
@@ -282,7 +289,7 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -298,7 +305,8 @@ impl crate::GlobalNamespace::SonyPublishingHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetServiceIdFromTitleId", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetServiceIdFromTitleId", 2usize
                         )
                     })
             });

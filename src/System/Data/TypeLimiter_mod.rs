@@ -49,7 +49,7 @@ impl crate::System::Data::TypeLimiter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Data::TypeLimiter>,
@@ -58,7 +58,8 @@ impl crate::System::Data::TypeLimiter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Capture", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Capture",
+                            0usize
                         )
                     })
             });
@@ -74,7 +75,7 @@ impl crate::System::Data::TypeLimiter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -86,7 +87,8 @@ impl crate::System::Data::TypeLimiter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnsureTypeIsAllowed", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnsureTypeIsAllowed", 2usize
                         )
                     })
             });
@@ -103,7 +105,7 @@ impl crate::System::Data::TypeLimiter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>),
                         quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
@@ -112,7 +114,8 @@ impl crate::System::Data::TypeLimiter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnterRestrictedScope", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnterRestrictedScope", 1usize
                         )
                     })
             });
@@ -129,7 +132,7 @@ impl crate::System::Data::TypeLimiter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>),
                         quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
@@ -138,7 +141,8 @@ impl crate::System::Data::TypeLimiter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnterRestrictedScope", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnterRestrictedScope", 1usize
                         )
                     })
             });
@@ -159,7 +163,7 @@ impl crate::System::Data::TypeLimiter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>),
                         quest_hook::libil2cpp::Gc<
@@ -172,7 +176,8 @@ impl crate::System::Data::TypeLimiter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPreviouslyDeclaredDataTypes", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPreviouslyDeclaredDataTypes", 1usize
                         )
                     })
             });
@@ -195,7 +200,7 @@ impl crate::System::Data::TypeLimiter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>),
                         quest_hook::libil2cpp::Gc<
@@ -208,7 +213,8 @@ impl crate::System::Data::TypeLimiter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPreviouslyDeclaredDataTypes", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPreviouslyDeclaredDataTypes", 1usize
                         )
                     })
             });
@@ -235,7 +241,7 @@ impl crate::System::Data::TypeLimiter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Data::TypeLimiter_Scope,
@@ -246,7 +252,8 @@ impl crate::System::Data::TypeLimiter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -259,12 +266,13 @@ impl crate::System::Data::TypeLimiter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_IsTypeLimitingDisabled")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsTypeLimitingDisabled", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsTypeLimitingDisabled", 0usize
                         )
                     })
             });
@@ -335,12 +343,13 @@ impl crate::System::Data::TypeLimiter_Scope {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Dispose", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            0usize
                         )
                     })
             });
@@ -356,7 +365,7 @@ impl crate::System::Data::TypeLimiter_Scope {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         bool,
@@ -365,7 +374,8 @@ impl crate::System::Data::TypeLimiter_Scope {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsAllowedType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsAllowedType", 1usize
                         )
                     })
             });
@@ -378,7 +388,7 @@ impl crate::System::Data::TypeLimiter_Scope {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         bool,
@@ -387,7 +397,8 @@ impl crate::System::Data::TypeLimiter_Scope {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsTypeUnconditionallyAllowed", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsTypeUnconditionallyAllowed", 1usize
                         )
                     })
             });
@@ -420,7 +431,7 @@ impl crate::System::Data::TypeLimiter_Scope {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -438,7 +449,8 @@ impl crate::System::Data::TypeLimiter_Scope {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });

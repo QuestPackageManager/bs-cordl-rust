@@ -55,7 +55,7 @@ impl crate::LIV::SDK::Unity::SDKShaders {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -64,7 +64,8 @@ impl crate::LIV::SDK::Unity::SDKShaders {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartBackgroundRendering", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartBackgroundRendering", 0usize
                         )
                     })
             });
@@ -79,7 +80,7 @@ impl crate::LIV::SDK::Unity::SDKShaders {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -88,7 +89,8 @@ impl crate::LIV::SDK::Unity::SDKShaders {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartForegroundRendering", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartForegroundRendering", 0usize
                         )
                     })
             });
@@ -103,7 +105,7 @@ impl crate::LIV::SDK::Unity::SDKShaders {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -112,7 +114,8 @@ impl crate::LIV::SDK::Unity::SDKShaders {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartRendering", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartRendering", 0usize
                         )
                     })
             });
@@ -127,7 +130,7 @@ impl crate::LIV::SDK::Unity::SDKShaders {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -136,7 +139,8 @@ impl crate::LIV::SDK::Unity::SDKShaders {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StopBackgroundRendering", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StopBackgroundRendering", 0usize
                         )
                     })
             });
@@ -151,7 +155,7 @@ impl crate::LIV::SDK::Unity::SDKShaders {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -160,7 +164,8 @@ impl crate::LIV::SDK::Unity::SDKShaders {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StopForegroundRendering", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StopForegroundRendering", 0usize
                         )
                     })
             });
@@ -175,7 +180,7 @@ impl crate::LIV::SDK::Unity::SDKShaders {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -184,7 +189,8 @@ impl crate::LIV::SDK::Unity::SDKShaders {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StopRendering", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StopRendering", 0usize
                         )
                     })
             });

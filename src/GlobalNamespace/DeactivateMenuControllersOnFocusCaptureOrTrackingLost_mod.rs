@@ -55,12 +55,13 @@ impl crate::GlobalNamespace::DeactivateMenuControllersOnFocusCaptureOrTrackingLo
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Awake", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Awake",
+                            0usize
                         )
                     })
             });
@@ -78,7 +79,7 @@ impl crate::GlobalNamespace::DeactivateMenuControllersOnFocusCaptureOrTrackingLo
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::IVRPlatformHelper,
@@ -89,7 +90,8 @@ impl crate::GlobalNamespace::DeactivateMenuControllersOnFocusCaptureOrTrackingLo
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Init", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            1usize
                         )
                     })
             });
@@ -104,12 +106,13 @@ impl crate::GlobalNamespace::DeactivateMenuControllersOnFocusCaptureOrTrackingLo
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("LateUpdate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LateUpdate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LateUpdate", 0usize
                         )
                     })
             });
@@ -133,7 +136,7 @@ impl crate::GlobalNamespace::DeactivateMenuControllersOnFocusCaptureOrTrackingLo
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             bool,
@@ -147,7 +150,8 @@ impl crate::GlobalNamespace::DeactivateMenuControllersOnFocusCaptureOrTrackingLo
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetActiveMenuController", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetActiveMenuController", 2usize
                         )
                     })
             });
@@ -162,7 +166,7 @@ impl crate::GlobalNamespace::DeactivateMenuControllersOnFocusCaptureOrTrackingLo
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -171,7 +175,8 @@ impl crate::GlobalNamespace::DeactivateMenuControllersOnFocusCaptureOrTrackingLo
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateMenuControllersState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateMenuControllersState", 0usize
                         )
                     })
             });
@@ -186,12 +191,13 @@ impl crate::GlobalNamespace::DeactivateMenuControllersOnFocusCaptureOrTrackingLo
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -208,7 +214,7 @@ impl crate::GlobalNamespace::DeactivateMenuControllersOnFocusCaptureOrTrackingLo
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -217,7 +223,8 @@ impl crate::GlobalNamespace::DeactivateMenuControllersOnFocusCaptureOrTrackingLo
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_loggerPrefix", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_loggerPrefix", 0usize
                         )
                     })
             });

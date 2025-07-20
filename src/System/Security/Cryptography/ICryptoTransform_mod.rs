@@ -50,7 +50,7 @@ impl crate::System::Security::Cryptography::ICryptoTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -69,7 +69,8 @@ impl crate::System::Security::Cryptography::ICryptoTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TransformBlock", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TransformBlock", 5usize
                         )
                     })
             });
@@ -93,7 +94,7 @@ impl crate::System::Security::Cryptography::ICryptoTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -110,7 +111,8 @@ impl crate::System::Security::Cryptography::ICryptoTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TransformFinalBlock", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TransformFinalBlock", 3usize
                         )
                     })
             });
@@ -132,12 +134,13 @@ impl crate::System::Security::Cryptography::ICryptoTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_CanTransformMultipleBlocks")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CanTransformMultipleBlocks", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CanTransformMultipleBlocks", 0usize
                         )
                     })
             });
@@ -148,12 +151,13 @@ impl crate::System::Security::Cryptography::ICryptoTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_InputBlockSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_InputBlockSize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_InputBlockSize", 0usize
                         )
                     })
             });
@@ -164,12 +168,13 @@ impl crate::System::Security::Cryptography::ICryptoTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_OutputBlockSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_OutputBlockSize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_OutputBlockSize", 0usize
                         )
                     })
             });

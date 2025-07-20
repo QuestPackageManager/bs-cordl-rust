@@ -83,7 +83,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -94,7 +94,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FindKeyOnCurrentKeyboardLayout", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindKeyOnCurrentKeyboardLayout", 1usize
                         )
                     })
             });
@@ -109,7 +110,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -118,7 +119,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FinishSetup", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FinishSetup", 0usize
                         )
                     })
             });
@@ -133,7 +135,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -142,7 +144,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MakeCurrent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MakeCurrent", 0usize
                         )
                     })
             });
@@ -165,7 +168,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::LowLevel::IMECompositionString),
                         quest_hook::libil2cpp::Void,
@@ -174,7 +177,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnIMECompositionChanged", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnIMECompositionChanged", 1usize
                         )
                     })
             });
@@ -189,12 +193,13 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnRemoved")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnRemoved", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnRemoved", 0usize
                         )
                     })
             });
@@ -210,7 +215,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (char),
                         quest_hook::libil2cpp::Void,
@@ -219,7 +224,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnTextInput", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnTextInput", 1usize
                         )
                     })
             });
@@ -234,7 +240,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -243,7 +249,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RefreshConfiguration", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RefreshConfiguration", 0usize
                         )
                     })
             });
@@ -259,7 +266,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector2),
                         quest_hook::libil2cpp::Void,
@@ -268,7 +275,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetIMECursorPosition", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetIMECursorPosition", 1usize
                         )
                     })
             });
@@ -284,7 +292,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -293,7 +301,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetIMEEnabled", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetIMEEnabled", 1usize
                         )
                     })
             });
@@ -308,12 +317,13 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -333,7 +343,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -346,7 +356,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_onIMECompositionChange", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_onIMECompositionChange", 1usize
                         )
                     })
             });
@@ -362,7 +373,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action_1<char>>),
                         quest_hook::libil2cpp::Void,
@@ -371,7 +382,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_onTextInput", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_onTextInput", 1usize
                         )
                     })
             });
@@ -389,7 +401,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::Key),
                         quest_hook::libil2cpp::Gc<
@@ -400,7 +412,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Item", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Item", 1usize
                         )
                     })
             });
@@ -417,7 +430,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -428,7 +441,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_aKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_aKey", 0usize
                         )
                     })
             });
@@ -449,7 +463,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
@@ -462,7 +476,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_allKeys", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_allKeys", 0usize
                         )
                     })
             });
@@ -483,7 +498,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -494,7 +509,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_altKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_altKey", 0usize
                         )
                     })
             });
@@ -513,7 +529,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -524,7 +540,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_anyKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_anyKey", 0usize
                         )
                     })
             });
@@ -541,7 +558,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -552,7 +569,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_bKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_bKey", 0usize
                         )
                     })
             });
@@ -569,7 +587,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -580,7 +598,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_backquoteKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_backquoteKey", 0usize
                         )
                     })
             });
@@ -597,7 +616,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -608,7 +627,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_backslashKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_backslashKey", 0usize
                         )
                     })
             });
@@ -625,7 +645,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -636,7 +656,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_backspaceKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_backspaceKey", 0usize
                         )
                     })
             });
@@ -653,7 +674,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -664,7 +685,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_cKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_cKey", 0usize
                         )
                     })
             });
@@ -681,7 +703,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -692,7 +714,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_capsLockKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_capsLockKey", 0usize
                         )
                     })
             });
@@ -709,7 +732,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -720,7 +743,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_commaKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_commaKey", 0usize
                         )
                     })
             });
@@ -737,7 +761,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -748,7 +772,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_contextMenuKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_contextMenuKey", 0usize
                         )
                     })
             });
@@ -767,7 +792,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -778,7 +803,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ctrlKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ctrlKey", 0usize
                         )
                     })
             });
@@ -793,7 +819,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -804,7 +830,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_current", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_current", 0usize
                         )
                     })
             });
@@ -821,7 +848,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -832,7 +859,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_dKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_dKey", 0usize
                         )
                     })
             });
@@ -849,7 +877,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -860,7 +888,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_deleteKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_deleteKey", 0usize
                         )
                     })
             });
@@ -877,7 +906,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -888,7 +917,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_digit0Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_digit0Key", 0usize
                         )
                     })
             });
@@ -905,7 +935,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -916,7 +946,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_digit1Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_digit1Key", 0usize
                         )
                     })
             });
@@ -933,7 +964,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -944,7 +975,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_digit2Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_digit2Key", 0usize
                         )
                     })
             });
@@ -961,7 +993,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -972,7 +1004,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_digit3Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_digit3Key", 0usize
                         )
                     })
             });
@@ -989,7 +1022,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1000,7 +1033,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_digit4Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_digit4Key", 0usize
                         )
                     })
             });
@@ -1017,7 +1051,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1028,7 +1062,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_digit5Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_digit5Key", 0usize
                         )
                     })
             });
@@ -1045,7 +1080,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1056,7 +1091,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_digit6Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_digit6Key", 0usize
                         )
                     })
             });
@@ -1073,7 +1109,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1084,7 +1120,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_digit7Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_digit7Key", 0usize
                         )
                     })
             });
@@ -1101,7 +1138,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1112,7 +1149,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_digit8Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_digit8Key", 0usize
                         )
                     })
             });
@@ -1129,7 +1167,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1140,7 +1178,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_digit9Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_digit9Key", 0usize
                         )
                     })
             });
@@ -1157,7 +1196,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1168,7 +1207,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_downArrowKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_downArrowKey", 0usize
                         )
                     })
             });
@@ -1185,7 +1225,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1196,7 +1236,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_eKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_eKey", 0usize
                         )
                     })
             });
@@ -1213,7 +1254,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1224,7 +1265,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_endKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_endKey", 0usize
                         )
                     })
             });
@@ -1241,7 +1283,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1252,7 +1294,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_enterKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_enterKey", 0usize
                         )
                     })
             });
@@ -1269,7 +1312,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1280,7 +1323,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_equalsKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_equalsKey", 0usize
                         )
                     })
             });
@@ -1297,7 +1341,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1308,7 +1352,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_escapeKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_escapeKey", 0usize
                         )
                     })
             });
@@ -1325,7 +1370,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1336,7 +1381,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_f10Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_f10Key", 0usize
                         )
                     })
             });
@@ -1353,7 +1399,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1364,7 +1410,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_f11Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_f11Key", 0usize
                         )
                     })
             });
@@ -1381,7 +1428,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1392,7 +1439,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_f12Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_f12Key", 0usize
                         )
                     })
             });
@@ -1409,7 +1457,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1420,7 +1468,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_f1Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_f1Key", 0usize
                         )
                     })
             });
@@ -1437,7 +1486,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1448,7 +1497,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_f2Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_f2Key", 0usize
                         )
                     })
             });
@@ -1465,7 +1515,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1476,7 +1526,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_f3Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_f3Key", 0usize
                         )
                     })
             });
@@ -1493,7 +1544,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1504,7 +1555,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_f4Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_f4Key", 0usize
                         )
                     })
             });
@@ -1521,7 +1573,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1532,7 +1584,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_f5Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_f5Key", 0usize
                         )
                     })
             });
@@ -1549,7 +1602,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1560,7 +1613,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_f6Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_f6Key", 0usize
                         )
                     })
             });
@@ -1577,7 +1631,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1588,7 +1642,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_f7Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_f7Key", 0usize
                         )
                     })
             });
@@ -1605,7 +1660,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1616,7 +1671,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_f8Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_f8Key", 0usize
                         )
                     })
             });
@@ -1633,7 +1689,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1644,7 +1700,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_f9Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_f9Key", 0usize
                         )
                     })
             });
@@ -1661,7 +1718,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1672,7 +1729,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_fKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_fKey", 0usize
                         )
                     })
             });
@@ -1689,7 +1747,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1700,7 +1758,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_gKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_gKey", 0usize
                         )
                     })
             });
@@ -1717,7 +1776,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1728,7 +1787,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_hKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_hKey", 0usize
                         )
                     })
             });
@@ -1745,7 +1805,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1756,7 +1816,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_homeKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_homeKey", 0usize
                         )
                     })
             });
@@ -1773,7 +1834,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1784,7 +1845,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_iKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_iKey", 0usize
                         )
                     })
             });
@@ -1803,7 +1865,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1814,7 +1876,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_imeSelected", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_imeSelected", 0usize
                         )
                     })
             });
@@ -1831,7 +1894,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1842,7 +1905,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_insertKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_insertKey", 0usize
                         )
                     })
             });
@@ -1859,7 +1923,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1870,7 +1934,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_jKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_jKey", 0usize
                         )
                     })
             });
@@ -1887,7 +1952,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1898,7 +1963,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_kKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_kKey", 0usize
                         )
                     })
             });
@@ -1915,7 +1981,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1924,7 +1990,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_keyboardLayout", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_keyboardLayout", 0usize
                         )
                     })
             });
@@ -1947,7 +2014,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1962,7 +2029,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_keys", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_keys", 0usize
                         )
                     })
             });
@@ -1983,7 +2051,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1994,7 +2062,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_lKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_lKey", 0usize
                         )
                     })
             });
@@ -2011,7 +2080,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2022,7 +2091,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_leftAltKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_leftAltKey", 0usize
                         )
                     })
             });
@@ -2039,7 +2109,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2050,7 +2120,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_leftAppleKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_leftAppleKey", 0usize
                         )
                     })
             });
@@ -2067,7 +2138,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2078,7 +2149,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_leftArrowKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_leftArrowKey", 0usize
                         )
                     })
             });
@@ -2095,7 +2167,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2106,7 +2178,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_leftBracketKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_leftBracketKey", 0usize
                         )
                     })
             });
@@ -2123,7 +2196,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2134,7 +2207,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_leftCommandKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_leftCommandKey", 0usize
                         )
                     })
             });
@@ -2151,7 +2225,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2162,7 +2236,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_leftCtrlKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_leftCtrlKey", 0usize
                         )
                     })
             });
@@ -2179,7 +2254,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2190,7 +2265,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_leftMetaKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_leftMetaKey", 0usize
                         )
                     })
             });
@@ -2207,7 +2283,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2218,7 +2294,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_leftShiftKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_leftShiftKey", 0usize
                         )
                     })
             });
@@ -2235,7 +2312,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2246,7 +2323,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_leftWindowsKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_leftWindowsKey", 0usize
                         )
                     })
             });
@@ -2263,7 +2341,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2274,7 +2352,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_mKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_mKey", 0usize
                         )
                     })
             });
@@ -2291,7 +2370,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2302,7 +2381,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_minusKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_minusKey", 0usize
                         )
                     })
             });
@@ -2319,7 +2399,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2330,7 +2410,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_nKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_nKey", 0usize
                         )
                     })
             });
@@ -2347,7 +2428,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2358,7 +2439,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_numLockKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_numLockKey", 0usize
                         )
                     })
             });
@@ -2375,7 +2457,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2386,7 +2468,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_numpad0Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_numpad0Key", 0usize
                         )
                     })
             });
@@ -2403,7 +2486,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2414,7 +2497,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_numpad1Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_numpad1Key", 0usize
                         )
                     })
             });
@@ -2431,7 +2515,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2442,7 +2526,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_numpad2Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_numpad2Key", 0usize
                         )
                     })
             });
@@ -2459,7 +2544,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2470,7 +2555,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_numpad3Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_numpad3Key", 0usize
                         )
                     })
             });
@@ -2487,7 +2573,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2498,7 +2584,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_numpad4Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_numpad4Key", 0usize
                         )
                     })
             });
@@ -2515,7 +2602,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2526,7 +2613,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_numpad5Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_numpad5Key", 0usize
                         )
                     })
             });
@@ -2543,7 +2631,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2554,7 +2642,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_numpad6Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_numpad6Key", 0usize
                         )
                     })
             });
@@ -2571,7 +2660,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2582,7 +2671,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_numpad7Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_numpad7Key", 0usize
                         )
                     })
             });
@@ -2599,7 +2689,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2610,7 +2700,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_numpad8Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_numpad8Key", 0usize
                         )
                     })
             });
@@ -2627,7 +2718,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2638,7 +2729,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_numpad9Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_numpad9Key", 0usize
                         )
                     })
             });
@@ -2655,7 +2747,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2666,7 +2758,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_numpadDivideKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_numpadDivideKey", 0usize
                         )
                     })
             });
@@ -2683,7 +2776,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2694,7 +2787,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_numpadEnterKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_numpadEnterKey", 0usize
                         )
                     })
             });
@@ -2711,7 +2805,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2722,7 +2816,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_numpadEqualsKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_numpadEqualsKey", 0usize
                         )
                     })
             });
@@ -2739,7 +2834,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2750,7 +2845,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_numpadMinusKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_numpadMinusKey", 0usize
                         )
                     })
             });
@@ -2767,7 +2863,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2778,7 +2874,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_numpadMultiplyKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_numpadMultiplyKey", 0usize
                         )
                     })
             });
@@ -2795,7 +2892,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2806,7 +2903,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_numpadPeriodKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_numpadPeriodKey", 0usize
                         )
                     })
             });
@@ -2823,7 +2921,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2834,7 +2932,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_numpadPlusKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_numpadPlusKey", 0usize
                         )
                     })
             });
@@ -2851,7 +2950,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2862,7 +2961,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_oKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_oKey", 0usize
                         )
                     })
             });
@@ -2879,7 +2979,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2890,7 +2990,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_oem1Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_oem1Key", 0usize
                         )
                     })
             });
@@ -2907,7 +3008,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2918,7 +3019,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_oem2Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_oem2Key", 0usize
                         )
                     })
             });
@@ -2935,7 +3037,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2946,7 +3048,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_oem3Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_oem3Key", 0usize
                         )
                     })
             });
@@ -2963,7 +3066,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2974,7 +3077,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_oem4Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_oem4Key", 0usize
                         )
                     })
             });
@@ -2991,7 +3095,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3002,7 +3106,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_oem5Key", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_oem5Key", 0usize
                         )
                     })
             });
@@ -3019,7 +3124,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3030,7 +3135,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_pKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_pKey", 0usize
                         )
                     })
             });
@@ -3047,7 +3153,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3058,7 +3164,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_pageDownKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_pageDownKey", 0usize
                         )
                     })
             });
@@ -3075,7 +3182,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3086,7 +3193,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_pageUpKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_pageUpKey", 0usize
                         )
                     })
             });
@@ -3103,7 +3211,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3114,7 +3222,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_pauseKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_pauseKey", 0usize
                         )
                     })
             });
@@ -3131,7 +3240,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3142,7 +3251,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_periodKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_periodKey", 0usize
                         )
                     })
             });
@@ -3159,7 +3269,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3170,7 +3280,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_printScreenKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_printScreenKey", 0usize
                         )
                     })
             });
@@ -3187,7 +3298,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3198,7 +3309,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_qKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_qKey", 0usize
                         )
                     })
             });
@@ -3215,7 +3327,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3226,7 +3338,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_quoteKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_quoteKey", 0usize
                         )
                     })
             });
@@ -3243,7 +3356,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3254,7 +3367,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rKey", 0usize
                         )
                     })
             });
@@ -3271,7 +3385,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3282,7 +3396,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rightAltKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rightAltKey", 0usize
                         )
                     })
             });
@@ -3299,7 +3414,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3310,7 +3425,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rightAppleKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rightAppleKey", 0usize
                         )
                     })
             });
@@ -3327,7 +3443,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3338,7 +3454,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rightArrowKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rightArrowKey", 0usize
                         )
                     })
             });
@@ -3355,7 +3472,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3366,7 +3483,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rightBracketKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rightBracketKey", 0usize
                         )
                     })
             });
@@ -3383,7 +3501,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3394,7 +3512,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rightCommandKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rightCommandKey", 0usize
                         )
                     })
             });
@@ -3411,7 +3530,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3422,7 +3541,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rightCtrlKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rightCtrlKey", 0usize
                         )
                     })
             });
@@ -3439,7 +3559,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3450,7 +3570,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rightMetaKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rightMetaKey", 0usize
                         )
                     })
             });
@@ -3467,7 +3588,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3478,7 +3599,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rightShiftKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rightShiftKey", 0usize
                         )
                     })
             });
@@ -3495,7 +3617,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3506,7 +3628,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rightWindowsKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rightWindowsKey", 0usize
                         )
                     })
             });
@@ -3523,7 +3646,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3534,7 +3657,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_sKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_sKey", 0usize
                         )
                     })
             });
@@ -3551,7 +3675,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3562,7 +3686,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_scrollLockKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_scrollLockKey", 0usize
                         )
                     })
             });
@@ -3579,7 +3704,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3590,7 +3715,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_semicolonKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_semicolonKey", 0usize
                         )
                     })
             });
@@ -3609,7 +3735,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3620,7 +3746,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_shiftKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_shiftKey", 0usize
                         )
                     })
             });
@@ -3637,7 +3764,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3648,7 +3775,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_slashKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_slashKey", 0usize
                         )
                     })
             });
@@ -3665,7 +3793,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3676,7 +3804,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_spaceKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_spaceKey", 0usize
                         )
                     })
             });
@@ -3693,7 +3822,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3704,7 +3833,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_tKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_tKey", 0usize
                         )
                     })
             });
@@ -3721,7 +3851,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3732,7 +3862,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_tabKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_tabKey", 0usize
                         )
                     })
             });
@@ -3749,7 +3880,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3760,7 +3891,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_uKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_uKey", 0usize
                         )
                     })
             });
@@ -3777,7 +3909,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3788,7 +3920,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_upArrowKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_upArrowKey", 0usize
                         )
                     })
             });
@@ -3805,7 +3938,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3816,7 +3949,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_vKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_vKey", 0usize
                         )
                     })
             });
@@ -3833,7 +3967,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3844,7 +3978,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wKey", 0usize
                         )
                     })
             });
@@ -3861,7 +3996,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3872,7 +4007,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xKey", 0usize
                         )
                     })
             });
@@ -3889,7 +4025,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3900,7 +4036,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yKey", 0usize
                         )
                     })
             });
@@ -3917,7 +4054,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3928,7 +4065,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zKey", 0usize
                         )
                     })
             });
@@ -3948,7 +4086,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -3961,7 +4099,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_onIMECompositionChange", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_onIMECompositionChange", 1usize
                         )
                     })
             });
@@ -3977,7 +4116,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action_1<char>>),
                         quest_hook::libil2cpp::Void,
@@ -3986,7 +4125,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_onTextInput", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_onTextInput", 1usize
                         )
                     })
             });
@@ -4004,7 +4144,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -4015,7 +4155,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_altKey", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_altKey", 1usize
                         )
                     })
             });
@@ -4033,7 +4174,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::AnyKeyControl,
@@ -4044,7 +4185,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_anyKey", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_anyKey", 1usize
                         )
                     })
             });
@@ -4062,7 +4204,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -4073,7 +4215,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_ctrlKey", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_ctrlKey", 1usize
                         )
                     })
             });
@@ -4088,7 +4231,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Keyboard,
@@ -4099,7 +4242,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_current", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_current", 1usize
                         )
                     })
             });
@@ -4117,7 +4261,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -4128,7 +4272,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_imeSelected", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_imeSelected", 1usize
                         )
                     })
             });
@@ -4144,7 +4289,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -4153,7 +4298,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_keyboardLayout", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_keyboardLayout", 1usize
                         )
                     })
             });
@@ -4175,7 +4321,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -4190,7 +4336,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_keys", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_keys", 1usize
                         )
                     })
             });
@@ -4208,7 +4355,7 @@ impl crate::UnityEngine::InputSystem::Keyboard {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -4219,7 +4366,8 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_shiftKey", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_shiftKey", 1usize
                         )
                     })
             });

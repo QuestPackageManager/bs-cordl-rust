@@ -78,12 +78,13 @@ impl crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnValidate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnValidate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnValidate", 0usize
                         )
                     })
             });
@@ -101,7 +102,7 @@ impl crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
@@ -112,7 +113,8 @@ impl crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetColors", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetColors", 1usize
                         )
                     })
             });
@@ -129,7 +131,7 @@ impl crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, i32),
                         quest_hook::libil2cpp::Void,
@@ -138,7 +140,8 @@ impl crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetHighlight", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetHighlight", 2usize
                         )
                     })
             });
@@ -153,7 +156,7 @@ impl crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -162,7 +165,8 @@ impl crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateRenderer", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateRenderer", 0usize
                         )
                     })
             });
@@ -177,12 +181,13 @@ impl crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -271,12 +276,13 @@ impl crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter_Co
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -289,12 +295,13 @@ impl crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter_Co
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_darkerColorMultiplier")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_darkerColorMultiplier", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_darkerColorMultiplier", 0usize
                         )
                     })
             });
@@ -307,7 +314,7 @@ impl crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter_Co
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Color,
@@ -316,7 +323,8 @@ impl crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter_Co
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_defaultColor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_defaultColor", 0usize
                         )
                     })
             });
@@ -329,12 +337,13 @@ impl crate::BeatSaber::BeatAvatarSDK::MulticolorAvatarPartPropertyBlockSetter_Co
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_whiteBoost")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_whiteBoost", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_whiteBoost", 0usize
                         )
                     })
             });

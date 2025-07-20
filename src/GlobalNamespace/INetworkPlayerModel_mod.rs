@@ -51,7 +51,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::INetworkPlayerModelPartyConfig_1<T>,
@@ -62,7 +62,8 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreatePartyConnection", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreatePartyConnection", 1usize
                         )
                     })
             });
@@ -75,7 +76,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -84,7 +85,8 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DestroyPartyConnection", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DestroyPartyConnection", 0usize
                         )
                     })
             });
@@ -104,7 +106,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -119,8 +121,8 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_connectedPlayerManagerCreatedEvent",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_connectedPlayerManagerCreatedEvent", 1usize
                         )
                     })
             });
@@ -140,7 +142,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -155,8 +157,8 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_connectedPlayerManagerDestroyedEvent",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_connectedPlayerManagerDestroyedEvent", 1usize
                         )
                     })
             });
@@ -176,7 +178,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -191,7 +193,8 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_inviteRequestedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_inviteRequestedEvent", 1usize
                         )
                     })
             });
@@ -211,7 +214,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -226,7 +229,8 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_joinRequestedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_joinRequestedEvent", 1usize
                         )
                     })
             });
@@ -246,7 +250,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -261,7 +265,8 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_partyChangedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_partyChangedEvent", 1usize
                         )
                     })
             });
@@ -277,7 +282,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>),
                         quest_hook::libil2cpp::Void,
@@ -286,7 +291,8 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_partySizeChangedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_partySizeChangedEvent", 1usize
                         )
                     })
             });
@@ -308,7 +314,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::GameplayServerConfiguration,
@@ -317,7 +323,8 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_configuration", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_configuration", 0usize
                         )
                     })
             });
@@ -334,7 +341,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -345,7 +352,8 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_connectedPlayerManager", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_connectedPlayerManager", 0usize
                         )
                     })
             });
@@ -358,12 +366,13 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_currentPartySize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_currentPartySize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_currentPartySize", 0usize
                         )
                     })
             });
@@ -374,12 +383,13 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_discoveryEnabled")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_discoveryEnabled", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_discoveryEnabled", 0usize
                         )
                     })
             });
@@ -390,12 +400,13 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_hasNetworkingFailed")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_hasNetworkingFailed", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_hasNetworkingFailed", 0usize
                         )
                     })
             });
@@ -408,12 +419,13 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_localPlayerIsPartyOwner")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_localPlayerIsPartyOwner", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_localPlayerIsPartyOwner", 0usize
                         )
                     })
             });
@@ -432,7 +444,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -447,7 +459,8 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_otherPlayers", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_otherPlayers", 0usize
                         )
                     })
             });
@@ -470,7 +483,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -485,7 +498,8 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_partyPlayers", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_partyPlayers", 0usize
                         )
                     })
             });
@@ -504,7 +518,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::BeatmapLevelSelectionMask,
@@ -513,7 +527,8 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_selectionMask", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_selectionMask", 0usize
                         )
                     })
             });
@@ -533,7 +548,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -548,8 +563,8 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_connectedPlayerManagerCreatedEvent",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_connectedPlayerManagerCreatedEvent", 1usize
                         )
                     })
             });
@@ -569,7 +584,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -584,8 +599,8 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_connectedPlayerManagerDestroyedEvent",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_connectedPlayerManagerDestroyedEvent", 1usize
                         )
                     })
             });
@@ -605,7 +620,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -620,7 +635,8 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_inviteRequestedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_inviteRequestedEvent", 1usize
                         )
                     })
             });
@@ -640,7 +656,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -655,7 +671,8 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_joinRequestedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_joinRequestedEvent", 1usize
                         )
                     })
             });
@@ -675,7 +692,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -690,7 +707,8 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_partyChangedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_partyChangedEvent", 1usize
                         )
                     })
             });
@@ -706,7 +724,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>),
                         quest_hook::libil2cpp::Void,
@@ -715,7 +733,8 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_partySizeChangedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_partySizeChangedEvent", 1usize
                         )
                     })
             });
@@ -731,7 +750,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -740,7 +759,8 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_discoveryEnabled", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_discoveryEnabled", 1usize
                         )
                     })
             });

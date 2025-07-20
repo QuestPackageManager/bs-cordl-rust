@@ -42,12 +42,13 @@ impl crate::GlobalNamespace::PerlinNoise {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32), f32, 1usize>("Fade")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Fade", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Fade",
+                            1usize
                         )
                     })
             });
@@ -63,12 +64,13 @@ impl crate::GlobalNamespace::PerlinNoise {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, f32, f32, f32), f32, 4usize>("Grad3D")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Grad3D", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Grad3D",
+                            4usize
                         )
                     })
             });
@@ -79,12 +81,13 @@ impl crate::GlobalNamespace::PerlinNoise {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, i32), i32, 2usize>("Inc")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Inc", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Inc",
+                            2usize
                         )
                     })
             });
@@ -95,12 +98,13 @@ impl crate::GlobalNamespace::PerlinNoise {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32, f32, f32), f32, 3usize>("Lerp")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Lerp", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Lerp",
+                            3usize
                         )
                     })
             });
@@ -125,7 +129,7 @@ impl crate::GlobalNamespace::PerlinNoise {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32, f32, f32, i32, f32, i32),
                         f32,
@@ -134,7 +138,8 @@ impl crate::GlobalNamespace::PerlinNoise {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OctavePerlin3D", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OctavePerlin3D", 6usize
                         )
                     })
             });
@@ -152,12 +157,13 @@ impl crate::GlobalNamespace::PerlinNoise {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32, f32, f32, i32), f32, 4usize>("Perlin3D")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Perlin3D", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Perlin3D", 4usize
                         )
                     })
             });
@@ -172,12 +178,13 @@ impl crate::GlobalNamespace::PerlinNoise {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

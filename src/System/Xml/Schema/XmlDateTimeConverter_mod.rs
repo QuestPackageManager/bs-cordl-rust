@@ -49,7 +49,7 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::DateTime,
@@ -61,7 +61,8 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ChangeType", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ChangeType", 2usize
                         )
                     })
             });
@@ -81,7 +82,7 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -98,7 +99,8 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ChangeType", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ChangeType", 3usize
                         )
                     })
             });
@@ -120,7 +122,7 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -137,7 +139,8 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ChangeType", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ChangeType", 3usize
                         )
                     })
             });
@@ -156,7 +159,7 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::Schema::XmlSchemaType,
@@ -169,7 +172,8 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Create", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Create",
+                            1usize
                         )
                     })
             });
@@ -194,7 +198,7 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::DateTime),
                         crate::System::DateTimeOffset,
@@ -203,7 +207,8 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToDateTimeOffset", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToDateTimeOffset", 1usize
                         )
                     })
             });
@@ -219,7 +224,7 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         crate::System::DateTimeOffset,
@@ -228,7 +233,8 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToDateTimeOffset", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToDateTimeOffset", 1usize
                         )
                     })
             });
@@ -244,7 +250,7 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         crate::System::DateTimeOffset,
@@ -253,7 +259,8 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToDateTimeOffset", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToDateTimeOffset", 1usize
                         )
                     })
             });
@@ -269,7 +276,7 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::DateTimeOffset),
                         crate::System::DateTime,
@@ -278,7 +285,8 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToDateTime", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToDateTime", 1usize
                         )
                     })
             });
@@ -294,7 +302,7 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         crate::System::DateTime,
@@ -303,7 +311,8 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToDateTime", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToDateTime", 1usize
                         )
                     })
             });
@@ -319,7 +328,7 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         crate::System::DateTime,
@@ -328,7 +337,8 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToDateTime", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToDateTime", 1usize
                         )
                     })
             });
@@ -346,7 +356,7 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::DateTime),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -355,7 +365,8 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToString", 1usize
                         )
                     })
             });
@@ -373,7 +384,7 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::DateTimeOffset),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -382,7 +393,8 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToString", 1usize
                         )
                     })
             });
@@ -401,7 +413,7 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -417,7 +429,8 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToString", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToString", 2usize
                         )
                     })
             });
@@ -433,7 +446,7 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::Schema::XmlSchemaType,
@@ -444,7 +457,8 @@ impl crate::System::Xml::Schema::XmlDateTimeConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });

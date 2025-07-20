@@ -53,7 +53,7 @@ impl crate::GlobalNamespace::StaticPreviewMediaData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -66,7 +66,8 @@ impl crate::GlobalNamespace::StaticPreviewMediaData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCoverSpriteAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCoverSpriteAsync", 0usize
                         )
                     })
             });
@@ -89,7 +90,7 @@ impl crate::GlobalNamespace::StaticPreviewMediaData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -102,7 +103,8 @@ impl crate::GlobalNamespace::StaticPreviewMediaData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPreviewAudioClip", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPreviewAudioClip", 0usize
                         )
                     })
             });
@@ -129,7 +131,7 @@ impl crate::GlobalNamespace::StaticPreviewMediaData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -138,7 +140,8 @@ impl crate::GlobalNamespace::StaticPreviewMediaData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnloadCoverSprite", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnloadCoverSprite", 0usize
                         )
                     })
             });
@@ -153,7 +156,7 @@ impl crate::GlobalNamespace::StaticPreviewMediaData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -162,7 +165,8 @@ impl crate::GlobalNamespace::StaticPreviewMediaData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnloadPreviewAudioClip", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnloadPreviewAudioClip", 0usize
                         )
                     })
             });
@@ -179,7 +183,7 @@ impl crate::GlobalNamespace::StaticPreviewMediaData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
@@ -191,7 +195,8 @@ impl crate::GlobalNamespace::StaticPreviewMediaData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });

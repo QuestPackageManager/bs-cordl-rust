@@ -109,7 +109,7 @@ impl crate::UnityEngine::BoneWeight {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::BoneWeight),
                         bool,
@@ -118,7 +118,8 @@ impl crate::UnityEngine::BoneWeight {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Equals", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            1usize
                         )
                     })
             });
@@ -132,7 +133,7 @@ impl crate::UnityEngine::BoneWeight {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         bool,
@@ -141,7 +142,8 @@ impl crate::UnityEngine::BoneWeight {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Equals", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            1usize
                         )
                     })
             });
@@ -152,12 +154,13 @@ impl crate::UnityEngine::BoneWeight {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHashCode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHashCode", 0usize
                         )
                     })
             });
@@ -168,12 +171,13 @@ impl crate::UnityEngine::BoneWeight {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_boneIndex0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_boneIndex0", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_boneIndex0", 0usize
                         )
                     })
             });
@@ -184,12 +188,13 @@ impl crate::UnityEngine::BoneWeight {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_boneIndex1")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_boneIndex1", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_boneIndex1", 0usize
                         )
                     })
             });
@@ -200,12 +205,13 @@ impl crate::UnityEngine::BoneWeight {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_boneIndex2")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_boneIndex2", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_boneIndex2", 0usize
                         )
                     })
             });
@@ -216,12 +222,13 @@ impl crate::UnityEngine::BoneWeight {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_boneIndex3")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_boneIndex3", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_boneIndex3", 0usize
                         )
                     })
             });
@@ -232,12 +239,13 @@ impl crate::UnityEngine::BoneWeight {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_weight0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_weight0", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_weight0", 0usize
                         )
                     })
             });
@@ -248,12 +256,13 @@ impl crate::UnityEngine::BoneWeight {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_weight1")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_weight1", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_weight1", 0usize
                         )
                     })
             });
@@ -264,12 +273,13 @@ impl crate::UnityEngine::BoneWeight {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_weight2")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_weight2", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_weight2", 0usize
                         )
                     })
             });
@@ -280,12 +290,13 @@ impl crate::UnityEngine::BoneWeight {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_weight3")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_weight3", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_weight3", 0usize
                         )
                     })
             });
@@ -299,7 +310,7 @@ impl crate::UnityEngine::BoneWeight {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -308,7 +319,8 @@ impl crate::UnityEngine::BoneWeight {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_boneIndex0", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_boneIndex0", 1usize
                         )
                     })
             });
@@ -324,7 +336,7 @@ impl crate::UnityEngine::BoneWeight {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -333,7 +345,8 @@ impl crate::UnityEngine::BoneWeight {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_boneIndex1", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_boneIndex1", 1usize
                         )
                     })
             });
@@ -349,7 +362,7 @@ impl crate::UnityEngine::BoneWeight {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -358,7 +371,8 @@ impl crate::UnityEngine::BoneWeight {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_boneIndex2", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_boneIndex2", 1usize
                         )
                     })
             });
@@ -374,7 +388,7 @@ impl crate::UnityEngine::BoneWeight {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -383,7 +397,8 @@ impl crate::UnityEngine::BoneWeight {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_boneIndex3", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_boneIndex3", 1usize
                         )
                     })
             });
@@ -399,7 +414,7 @@ impl crate::UnityEngine::BoneWeight {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -408,7 +423,8 @@ impl crate::UnityEngine::BoneWeight {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_weight0", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_weight0", 1usize
                         )
                     })
             });
@@ -424,7 +440,7 @@ impl crate::UnityEngine::BoneWeight {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -433,7 +449,8 @@ impl crate::UnityEngine::BoneWeight {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_weight1", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_weight1", 1usize
                         )
                     })
             });
@@ -449,7 +466,7 @@ impl crate::UnityEngine::BoneWeight {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -458,7 +475,8 @@ impl crate::UnityEngine::BoneWeight {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_weight2", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_weight2", 1usize
                         )
                     })
             });
@@ -474,7 +492,7 @@ impl crate::UnityEngine::BoneWeight {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -483,7 +501,8 @@ impl crate::UnityEngine::BoneWeight {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_weight3", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_weight3", 1usize
                         )
                     })
             });

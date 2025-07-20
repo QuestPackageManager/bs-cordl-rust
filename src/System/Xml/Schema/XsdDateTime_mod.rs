@@ -111,7 +111,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::Schema::XsdDateTime_Parser),
                         quest_hook::libil2cpp::Void,
@@ -120,7 +120,8 @@ impl crate::System::Xml::Schema::XsdDateTime {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitiateXsdDateTime", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitiateXsdDateTime", 1usize
                         )
                     })
             });
@@ -139,7 +140,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -155,7 +156,8 @@ impl crate::System::Xml::Schema::XsdDateTime {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IntToCharArray", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IntToCharArray", 4usize
                         )
                     })
             });
@@ -171,7 +173,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>),
                         quest_hook::libil2cpp::Void,
@@ -180,7 +182,8 @@ impl crate::System::Xml::Schema::XsdDateTime {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PrintDate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PrintDate", 1usize
                         )
                     })
             });
@@ -196,7 +199,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>),
                         quest_hook::libil2cpp::Void,
@@ -205,7 +208,8 @@ impl crate::System::Xml::Schema::XsdDateTime {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PrintTime", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PrintTime", 1usize
                         )
                     })
             });
@@ -221,7 +225,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>),
                         quest_hook::libil2cpp::Void,
@@ -230,7 +234,8 @@ impl crate::System::Xml::Schema::XsdDateTime {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PrintZone", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PrintZone", 1usize
                         )
                     })
             });
@@ -248,7 +253,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -263,7 +268,8 @@ impl crate::System::Xml::Schema::XsdDateTime {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShortToCharArray", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShortToCharArray", 3usize
                         )
                     })
             });
@@ -280,7 +286,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -289,7 +295,8 @@ impl crate::System::Xml::Schema::XsdDateTime {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToString", 0usize
                         )
                     })
             });
@@ -306,7 +313,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -323,7 +330,8 @@ impl crate::System::Xml::Schema::XsdDateTime {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryParse", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryParse", 3usize
                         )
                     })
             });
@@ -339,7 +347,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::DateTimeOffset),
                         quest_hook::libil2cpp::Void,
@@ -348,7 +356,8 @@ impl crate::System::Xml::Schema::XsdDateTime {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -365,7 +374,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::DateTimeOffset,
@@ -377,7 +386,8 @@ impl crate::System::Xml::Schema::XsdDateTime {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -394,7 +404,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::DateTime,
@@ -406,7 +416,8 @@ impl crate::System::Xml::Schema::XsdDateTime {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -423,7 +434,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -437,7 +448,8 @@ impl crate::System::Xml::Schema::XsdDateTime {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -453,7 +465,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::Schema::XsdDateTime_Parser),
                         quest_hook::libil2cpp::Void,
@@ -462,7 +474,8 @@ impl crate::System::Xml::Schema::XsdDateTime {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -475,12 +488,13 @@ impl crate::System::Xml::Schema::XsdDateTime {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_Day")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Day", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_Day",
+                            0usize
                         )
                     })
             });
@@ -491,12 +505,13 @@ impl crate::System::Xml::Schema::XsdDateTime {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_Fraction")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Fraction", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Fraction", 0usize
                         )
                     })
             });
@@ -507,12 +522,13 @@ impl crate::System::Xml::Schema::XsdDateTime {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_Hour")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Hour", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Hour", 0usize
                         )
                     })
             });
@@ -527,7 +543,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::Schema::XsdDateTime_XsdDateTimeKind,
@@ -536,7 +552,8 @@ impl crate::System::Xml::Schema::XsdDateTime {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_InternalKind", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_InternalKind", 0usize
                         )
                     })
             });
@@ -553,7 +570,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::Schema::XsdDateTime_DateTimeTypeCode,
@@ -562,7 +579,8 @@ impl crate::System::Xml::Schema::XsdDateTime {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_InternalTypeCode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_InternalTypeCode", 0usize
                         )
                     })
             });
@@ -575,12 +593,13 @@ impl crate::System::Xml::Schema::XsdDateTime {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_Minute")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Minute", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Minute", 0usize
                         )
                     })
             });
@@ -591,12 +610,13 @@ impl crate::System::Xml::Schema::XsdDateTime {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_Month")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Month", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Month", 0usize
                         )
                     })
             });
@@ -607,12 +627,13 @@ impl crate::System::Xml::Schema::XsdDateTime {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_Second")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Second", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Second", 0usize
                         )
                     })
             });
@@ -623,12 +644,13 @@ impl crate::System::Xml::Schema::XsdDateTime {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_Year")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Year", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Year", 0usize
                         )
                     })
             });
@@ -639,12 +661,13 @@ impl crate::System::Xml::Schema::XsdDateTime {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_ZoneHour")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ZoneHour", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ZoneHour", 0usize
                         )
                     })
             });
@@ -655,12 +678,13 @@ impl crate::System::Xml::Schema::XsdDateTime {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_ZoneMinute")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ZoneMinute", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ZoneMinute", 0usize
                         )
                     })
             });
@@ -673,7 +697,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::Xml::Schema::XsdDateTime),
                         crate::System::DateTime,
@@ -682,7 +706,8 @@ impl crate::System::Xml::Schema::XsdDateTime {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Implicit", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Implicit", 1usize
                         )
                     })
             });
@@ -697,7 +722,7 @@ impl crate::System::Xml::Schema::XsdDateTime {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::Xml::Schema::XsdDateTime),
                         crate::System::DateTimeOffset,
@@ -706,7 +731,8 @@ impl crate::System::Xml::Schema::XsdDateTime {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Implicit", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Implicit", 1usize
                         )
                     })
             });
@@ -938,7 +964,7 @@ impl crate::System::Xml::Schema::XsdDateTime_Parser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -952,7 +978,8 @@ impl crate::System::Xml::Schema::XsdDateTime_Parser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Parse", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Parse",
+                            2usize
                         )
                     })
             });
@@ -967,7 +994,7 @@ impl crate::System::Xml::Schema::XsdDateTime_Parser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, quest_hook::libil2cpp::ByRefMut<i32>),
                         bool,
@@ -976,7 +1003,8 @@ impl crate::System::Xml::Schema::XsdDateTime_Parser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Parse2Dig", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Parse2Dig", 2usize
                         )
                     })
             });
@@ -991,7 +1019,7 @@ impl crate::System::Xml::Schema::XsdDateTime_Parser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, quest_hook::libil2cpp::ByRefMut<i32>),
                         bool,
@@ -1000,7 +1028,8 @@ impl crate::System::Xml::Schema::XsdDateTime_Parser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Parse4Dig", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Parse4Dig", 2usize
                         )
                     })
             });
@@ -1015,12 +1044,13 @@ impl crate::System::Xml::Schema::XsdDateTime_Parser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, char), bool, 2usize>("ParseChar")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseChar", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseChar", 2usize
                         )
                     })
             });
@@ -1031,12 +1061,13 @@ impl crate::System::Xml::Schema::XsdDateTime_Parser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), bool, 1usize>("ParseDate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseDate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseDate", 1usize
                         )
                     })
             });
@@ -1050,7 +1081,7 @@ impl crate::System::Xml::Schema::XsdDateTime_Parser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<i32>),
                         bool,
@@ -1059,7 +1090,8 @@ impl crate::System::Xml::Schema::XsdDateTime_Parser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseTime", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseTime", 1usize
                         )
                     })
             });
@@ -1073,12 +1105,13 @@ impl crate::System::Xml::Schema::XsdDateTime_Parser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), bool, 1usize>("ParseTimeAndWhitespace")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseTimeAndWhitespace", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseTimeAndWhitespace", 1usize
                         )
                     })
             });
@@ -1092,12 +1125,13 @@ impl crate::System::Xml::Schema::XsdDateTime_Parser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), bool, 1usize>("ParseTimeAndZoneAndWhitespace")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseTimeAndZoneAndWhitespace", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseTimeAndZoneAndWhitespace", 1usize
                         )
                     })
             });
@@ -1111,12 +1145,13 @@ impl crate::System::Xml::Schema::XsdDateTime_Parser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), bool, 1usize>("ParseZoneAndWhitespace")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseZoneAndWhitespace", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseZoneAndWhitespace", 1usize
                         )
                     })
             });
@@ -1130,7 +1165,7 @@ impl crate::System::Xml::Schema::XsdDateTime_Parser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::Xml::Schema::XsdDateTimeFlags,
@@ -1142,7 +1177,8 @@ impl crate::System::Xml::Schema::XsdDateTime_Parser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Test", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Test",
+                            2usize
                         )
                     })
             });

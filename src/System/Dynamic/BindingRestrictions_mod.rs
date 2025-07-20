@@ -58,7 +58,7 @@ impl crate::System::Dynamic::BindingRestrictions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -69,7 +69,8 @@ impl crate::System::Dynamic::BindingRestrictions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetExpression", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetExpression", 0usize
                         )
                     })
             });
@@ -89,7 +90,7 @@ impl crate::System::Dynamic::BindingRestrictions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -107,7 +108,8 @@ impl crate::System::Dynamic::BindingRestrictions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetInstanceRestriction", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetInstanceRestriction", 2usize
                         )
                     })
             });
@@ -124,7 +126,7 @@ impl crate::System::Dynamic::BindingRestrictions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Dynamic::DynamicMetaObject,
@@ -137,7 +139,8 @@ impl crate::System::Dynamic::BindingRestrictions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTypeRestriction", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTypeRestriction", 1usize
                         )
                     })
             });
@@ -157,7 +160,7 @@ impl crate::System::Dynamic::BindingRestrictions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -173,7 +176,8 @@ impl crate::System::Dynamic::BindingRestrictions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTypeRestriction", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTypeRestriction", 2usize
                         )
                     })
             });
@@ -193,7 +197,7 @@ impl crate::System::Dynamic::BindingRestrictions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Dynamic::BindingRestrictions,
@@ -206,7 +210,8 @@ impl crate::System::Dynamic::BindingRestrictions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Merge", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Merge",
+                            1usize
                         )
                     })
             });
@@ -230,7 +235,7 @@ impl crate::System::Dynamic::BindingRestrictions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -241,7 +246,8 @@ impl crate::System::Dynamic::BindingRestrictions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToExpression", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToExpression", 0usize
                         )
                     })
             });
@@ -256,12 +262,13 @@ impl crate::System::Dynamic::BindingRestrictions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -395,7 +402,7 @@ impl crate::System::Dynamic::BindingRestrictions_TestBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Dynamic::BindingRestrictions,
@@ -406,7 +413,8 @@ impl crate::System::Dynamic::BindingRestrictions_TestBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Append", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Append",
+                            1usize
                         )
                     })
             });
@@ -430,7 +438,7 @@ impl crate::System::Dynamic::BindingRestrictions_TestBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -444,7 +452,8 @@ impl crate::System::Dynamic::BindingRestrictions_TestBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Push", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Push",
+                            2usize
                         )
                     })
             });
@@ -461,7 +470,7 @@ impl crate::System::Dynamic::BindingRestrictions_TestBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -472,7 +481,8 @@ impl crate::System::Dynamic::BindingRestrictions_TestBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToExpression", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToExpression", 0usize
                         )
                     })
             });
@@ -487,12 +497,13 @@ impl crate::System::Dynamic::BindingRestrictions_TestBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

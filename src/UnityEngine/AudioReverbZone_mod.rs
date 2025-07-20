@@ -51,12 +51,13 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -69,12 +70,13 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_HFReference")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_HFReference", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_HFReference", 0usize
                         )
                     })
             });
@@ -85,12 +87,13 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_LFReference")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_LFReference", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_LFReference", 0usize
                         )
                     })
             });
@@ -101,12 +104,13 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_decayHFRatio")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_decayHFRatio", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_decayHFRatio", 0usize
                         )
                     })
             });
@@ -117,12 +121,13 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_decayTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_decayTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_decayTime", 0usize
                         )
                     })
             });
@@ -133,12 +138,13 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_density")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_density", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_density", 0usize
                         )
                     })
             });
@@ -149,12 +155,13 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_diffusion")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_diffusion", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_diffusion", 0usize
                         )
                     })
             });
@@ -165,12 +172,13 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_maxDistance")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_maxDistance", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_maxDistance", 0usize
                         )
                     })
             });
@@ -181,12 +189,13 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_minDistance")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_minDistance", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_minDistance", 0usize
                         )
                     })
             });
@@ -197,12 +206,13 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_reflections")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_reflections", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_reflections", 0usize
                         )
                     })
             });
@@ -213,12 +223,13 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_reflectionsDelay")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_reflectionsDelay", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_reflectionsDelay", 0usize
                         )
                     })
             });
@@ -229,12 +240,13 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_reverb")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_reverb", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_reverb", 0usize
                         )
                     })
             });
@@ -245,12 +257,13 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_reverbDelay")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_reverbDelay", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_reverbDelay", 0usize
                         )
                     })
             });
@@ -263,7 +276,7 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::AudioReverbPreset,
@@ -272,7 +285,8 @@ impl crate::UnityEngine::AudioReverbZone {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_reverbPreset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_reverbPreset", 0usize
                         )
                     })
             });
@@ -285,12 +299,13 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_room")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_room", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_room", 0usize
                         )
                     })
             });
@@ -301,12 +316,13 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_roomHF")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_roomHF", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_roomHF", 0usize
                         )
                     })
             });
@@ -317,12 +333,13 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_roomLF")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_roomLF", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_roomLF", 0usize
                         )
                     })
             });
@@ -333,12 +350,13 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_roomRolloffFactor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_roomRolloffFactor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_roomRolloffFactor", 0usize
                         )
                     })
             });
@@ -352,7 +370,7 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -361,7 +379,8 @@ impl crate::UnityEngine::AudioReverbZone {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_HFReference", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_HFReference", 1usize
                         )
                     })
             });
@@ -377,7 +396,7 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -386,7 +405,8 @@ impl crate::UnityEngine::AudioReverbZone {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_LFReference", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_LFReference", 1usize
                         )
                     })
             });
@@ -402,7 +422,7 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -411,7 +431,8 @@ impl crate::UnityEngine::AudioReverbZone {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_decayHFRatio", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_decayHFRatio", 1usize
                         )
                     })
             });
@@ -427,7 +448,7 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -436,7 +457,8 @@ impl crate::UnityEngine::AudioReverbZone {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_decayTime", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_decayTime", 1usize
                         )
                     })
             });
@@ -452,7 +474,7 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -461,7 +483,8 @@ impl crate::UnityEngine::AudioReverbZone {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_density", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_density", 1usize
                         )
                     })
             });
@@ -477,7 +500,7 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -486,7 +509,8 @@ impl crate::UnityEngine::AudioReverbZone {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_diffusion", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_diffusion", 1usize
                         )
                     })
             });
@@ -502,7 +526,7 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -511,7 +535,8 @@ impl crate::UnityEngine::AudioReverbZone {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_maxDistance", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_maxDistance", 1usize
                         )
                     })
             });
@@ -527,7 +552,7 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -536,7 +561,8 @@ impl crate::UnityEngine::AudioReverbZone {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_minDistance", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_minDistance", 1usize
                         )
                     })
             });
@@ -552,7 +578,7 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -561,7 +587,8 @@ impl crate::UnityEngine::AudioReverbZone {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_reflections", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_reflections", 1usize
                         )
                     })
             });
@@ -577,7 +604,7 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -586,7 +613,8 @@ impl crate::UnityEngine::AudioReverbZone {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_reflectionsDelay", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_reflectionsDelay", 1usize
                         )
                     })
             });
@@ -602,7 +630,7 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -611,7 +639,8 @@ impl crate::UnityEngine::AudioReverbZone {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_reverb", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_reverb", 1usize
                         )
                     })
             });
@@ -627,7 +656,7 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -636,7 +665,8 @@ impl crate::UnityEngine::AudioReverbZone {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_reverbDelay", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_reverbDelay", 1usize
                         )
                     })
             });
@@ -652,7 +682,7 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::AudioReverbPreset),
                         quest_hook::libil2cpp::Void,
@@ -661,7 +691,8 @@ impl crate::UnityEngine::AudioReverbZone {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_reverbPreset", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_reverbPreset", 1usize
                         )
                     })
             });
@@ -677,7 +708,7 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -686,7 +717,8 @@ impl crate::UnityEngine::AudioReverbZone {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_room", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_room", 1usize
                         )
                     })
             });
@@ -702,7 +734,7 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -711,7 +743,8 @@ impl crate::UnityEngine::AudioReverbZone {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_roomHF", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_roomHF", 1usize
                         )
                     })
             });
@@ -727,7 +760,7 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -736,7 +769,8 @@ impl crate::UnityEngine::AudioReverbZone {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_roomLF", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_roomLF", 1usize
                         )
                     })
             });
@@ -752,7 +786,7 @@ impl crate::UnityEngine::AudioReverbZone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -761,7 +795,8 @@ impl crate::UnityEngine::AudioReverbZone {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_roomRolloffFactor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_roomRolloffFactor", 1usize
                         )
                     })
             });

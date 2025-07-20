@@ -65,7 +65,7 @@ impl crate::UnityEngine::UI::GraphicRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
@@ -77,7 +77,8 @@ impl crate::UnityEngine::UI::GraphicRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DisableGraphicForCanvas", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DisableGraphicForCanvas", 2usize
                         )
                     })
             });
@@ -93,7 +94,7 @@ impl crate::UnityEngine::UI::GraphicRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
@@ -105,7 +106,8 @@ impl crate::UnityEngine::UI::GraphicRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DisableRaycastGraphicForCanvas", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DisableRaycastGraphicForCanvas", 2usize
                         )
                     })
             });
@@ -126,7 +128,7 @@ impl crate::UnityEngine::UI::GraphicRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>),
                         quest_hook::libil2cpp::Gc<
@@ -139,7 +141,8 @@ impl crate::UnityEngine::UI::GraphicRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetGraphicsForCanvas", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetGraphicsForCanvas", 1usize
                         )
                     })
             });
@@ -162,7 +165,7 @@ impl crate::UnityEngine::UI::GraphicRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>),
                         quest_hook::libil2cpp::Gc<
@@ -175,7 +178,8 @@ impl crate::UnityEngine::UI::GraphicRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetRaycastableGraphicsForCanvas", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetRaycastableGraphicsForCanvas", 1usize
                         )
                     })
             });
@@ -200,7 +204,7 @@ impl crate::UnityEngine::UI::GraphicRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
@@ -212,7 +216,8 @@ impl crate::UnityEngine::UI::GraphicRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterGraphicForCanvas", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterGraphicForCanvas", 2usize
                         )
                     })
             });
@@ -228,7 +233,7 @@ impl crate::UnityEngine::UI::GraphicRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
@@ -240,7 +245,8 @@ impl crate::UnityEngine::UI::GraphicRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterRaycastGraphicForCanvas", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterRaycastGraphicForCanvas", 2usize
                         )
                     })
             });
@@ -256,7 +262,7 @@ impl crate::UnityEngine::UI::GraphicRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
@@ -268,7 +274,8 @@ impl crate::UnityEngine::UI::GraphicRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnregisterGraphicForCanvas", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnregisterGraphicForCanvas", 2usize
                         )
                     })
             });
@@ -284,7 +291,7 @@ impl crate::UnityEngine::UI::GraphicRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
@@ -296,7 +303,8 @@ impl crate::UnityEngine::UI::GraphicRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnregisterRaycastGraphicForCanvas", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnregisterRaycastGraphicForCanvas", 2usize
                         )
                     })
             });
@@ -311,12 +319,13 @@ impl crate::UnityEngine::UI::GraphicRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -331,7 +340,7 @@ impl crate::UnityEngine::UI::GraphicRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -342,7 +351,8 @@ impl crate::UnityEngine::UI::GraphicRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_instance", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_instance", 0usize
                         )
                     })
             });

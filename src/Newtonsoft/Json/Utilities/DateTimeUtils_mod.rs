@@ -51,7 +51,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::DateTime),
                         i64,
@@ -60,7 +60,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertDateTimeToJavaScriptTicks", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertDateTimeToJavaScriptTicks", 1usize
                         )
                     })
             });
@@ -74,7 +75,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::DateTime, crate::System::TimeSpan),
                         i64,
@@ -83,7 +84,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertDateTimeToJavaScriptTicks", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertDateTimeToJavaScriptTicks", 2usize
                         )
                     })
             });
@@ -99,7 +101,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::DateTime, bool),
                         i64,
@@ -108,7 +110,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertDateTimeToJavaScriptTicks", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertDateTimeToJavaScriptTicks", 2usize
                         )
                     })
             });
@@ -123,7 +126,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i64),
                         crate::System::DateTime,
@@ -132,7 +135,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertJavaScriptTicksToDateTime", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertJavaScriptTicksToDateTime", 1usize
                         )
                     })
             });
@@ -150,7 +154,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -166,7 +170,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CopyIntToCharArray", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CopyIntToCharArray", 4usize
                         )
                     })
             });
@@ -181,7 +186,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Newtonsoft::Json::Utilities::DateTimeParser),
                         crate::System::DateTime,
@@ -190,7 +195,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateDateTime", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateDateTime", 1usize
                         )
                     })
             });
@@ -206,7 +212,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::DateTime,
@@ -218,7 +224,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnsureDateTime", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnsureDateTime", 2usize
                         )
                     })
             });
@@ -236,7 +243,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::DateTime,
@@ -250,7 +257,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetDateValues", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDateValues", 4usize
                         )
                     })
             });
@@ -265,7 +273,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::DateTime),
                         crate::System::TimeSpan,
@@ -274,7 +282,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetUtcOffset", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetUtcOffset", 1usize
                         )
                     })
             });
@@ -289,7 +298,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::DateTime),
                         crate::System::DateTime,
@@ -298,7 +307,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SwitchToLocalTime", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SwitchToLocalTime", 1usize
                         )
                     })
             });
@@ -313,7 +323,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::DateTime),
                         crate::System::DateTime,
@@ -322,7 +332,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SwitchToUtcTime", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SwitchToUtcTime", 1usize
                         )
                     })
             });
@@ -339,7 +350,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::DateTimeKind),
                         crate::System::Xml::XmlDateTimeSerializationMode,
@@ -348,7 +359,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToSerializationMode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToSerializationMode", 1usize
                         )
                     })
             });
@@ -363,7 +375,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::DateTime),
                         i64,
@@ -372,7 +384,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToUniversalTicks", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToUniversalTicks", 1usize
                         )
                     })
             });
@@ -386,7 +399,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::DateTime, crate::System::TimeSpan),
                         i64,
@@ -395,7 +408,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToUniversalTicks", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToUniversalTicks", 2usize
                         )
                     })
             });
@@ -414,7 +428,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -435,7 +449,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryParseDateTimeExact", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryParseDateTimeExact", 5usize
                         )
                     })
             });
@@ -456,7 +471,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Newtonsoft::Json::Utilities::StringReference,
@@ -469,7 +484,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryParseDateTimeIso", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryParseDateTimeIso", 3usize
                         )
                     })
             });
@@ -486,7 +502,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Newtonsoft::Json::Utilities::StringReference,
@@ -499,7 +515,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryParseDateTimeMicrosoft", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryParseDateTimeMicrosoft", 3usize
                         )
                     })
             });
@@ -517,7 +534,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -539,7 +556,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryParseDateTimeOffsetExact", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryParseDateTimeOffsetExact", 4usize
                         )
                     })
             });
@@ -555,7 +573,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Newtonsoft::Json::Utilities::StringReference,
@@ -569,7 +587,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryParseDateTimeOffsetIso", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryParseDateTimeOffsetIso", 2usize
                         )
                     })
             });
@@ -583,7 +602,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Newtonsoft::Json::Utilities::StringReference,
@@ -597,7 +616,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryParseDateTimeOffsetMicrosoft", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryParseDateTimeOffsetMicrosoft", 2usize
                         )
                     })
             });
@@ -613,7 +633,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -635,7 +655,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryParseDateTimeOffset", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryParseDateTimeOffset", 4usize
                         )
                     })
             });
@@ -653,7 +674,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Newtonsoft::Json::Utilities::StringReference,
@@ -673,7 +694,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryParseDateTimeOffset", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryParseDateTimeOffset", 4usize
                         )
                     })
             });
@@ -692,7 +714,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -713,7 +735,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryParseDateTime", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryParseDateTime", 5usize
                         )
                     })
             });
@@ -736,7 +759,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Newtonsoft::Json::Utilities::StringReference,
@@ -755,7 +778,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryParseDateTime", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryParseDateTime", 5usize
                         )
                     })
             });
@@ -777,7 +801,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Newtonsoft::Json::Utilities::StringReference,
@@ -791,7 +815,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryParseMicrosoftDate", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryParseMicrosoftDate", 4usize
                         )
                     })
             });
@@ -808,7 +833,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Newtonsoft::Json::Utilities::StringReference,
@@ -821,7 +846,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryReadOffset", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryReadOffset", 3usize
                         )
                     })
             });
@@ -836,7 +862,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i64),
                         i64,
@@ -845,7 +871,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UniversalTicksToJavaScriptTicks", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UniversalTicksToJavaScriptTicks", 1usize
                         )
                     })
             });
@@ -861,7 +888,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -877,7 +904,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteDateTimeOffset", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteDateTimeOffset", 4usize
                         )
                     })
             });
@@ -896,7 +924,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
@@ -915,7 +943,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteDateTimeOffsetString", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteDateTimeOffsetString", 5usize
                         )
                     })
             });
@@ -935,7 +964,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -953,7 +982,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteDateTimeString", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteDateTimeString", 6usize
                         )
                     })
             });
@@ -972,7 +1002,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
@@ -991,7 +1021,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteDateTimeString", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteDateTimeString", 5usize
                         )
                     })
             });
@@ -1008,7 +1039,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1023,7 +1054,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteDefaultIsoDate", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteDefaultIsoDate", 3usize
                         )
                     })
             });

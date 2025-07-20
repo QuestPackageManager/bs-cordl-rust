@@ -44,7 +44,7 @@ impl crate::System::Net::NclUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Net::IPHostEntry>,
@@ -53,7 +53,8 @@ impl crate::System::Net::NclUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLocalHost", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLocalHost", 0usize
                         )
                     })
             });
@@ -68,7 +69,7 @@ impl crate::System::Net::NclUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>),
                         bool,
@@ -77,7 +78,8 @@ impl crate::System::Net::NclUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsAddressLocal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsAddressLocal", 1usize
                         )
                     })
             });
@@ -90,7 +92,7 @@ impl crate::System::Net::NclUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Exception>),
                         bool,
@@ -99,7 +101,8 @@ impl crate::System::Net::NclUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsFatal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsFatal",
+                            1usize
                         )
                     })
             });
@@ -116,7 +119,7 @@ impl crate::System::Net::NclUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -129,7 +132,8 @@ impl crate::System::Net::NclUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_LocalAddresses", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_LocalAddresses", 0usize
                         )
                     })
             });
@@ -146,7 +150,7 @@ impl crate::System::Net::NclUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -155,7 +159,8 @@ impl crate::System::Net::NclUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_LocalAddressesLock", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_LocalAddressesLock", 0usize
                         )
                     })
             });

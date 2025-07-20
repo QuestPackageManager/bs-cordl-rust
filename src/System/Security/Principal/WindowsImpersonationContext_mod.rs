@@ -49,7 +49,7 @@ impl crate::System::Security::Principal::WindowsImpersonationContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         bool,
@@ -58,7 +58,8 @@ impl crate::System::Security::Principal::WindowsImpersonationContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CloseToken", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CloseToken", 1usize
                         )
                     })
             });
@@ -71,12 +72,13 @@ impl crate::System::Security::Principal::WindowsImpersonationContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Dispose", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            0usize
                         )
                     })
             });
@@ -91,7 +93,7 @@ impl crate::System::Security::Principal::WindowsImpersonationContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         crate::System::IntPtr,
@@ -100,7 +102,8 @@ impl crate::System::Security::Principal::WindowsImpersonationContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DuplicateToken", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DuplicateToken", 1usize
                         )
                     })
             });
@@ -122,12 +125,13 @@ impl crate::System::Security::Principal::WindowsImpersonationContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("RevertToSelf")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RevertToSelf", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RevertToSelf", 0usize
                         )
                     })
             });
@@ -140,7 +144,7 @@ impl crate::System::Security::Principal::WindowsImpersonationContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         bool,
@@ -149,7 +153,8 @@ impl crate::System::Security::Principal::WindowsImpersonationContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetCurrentToken", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetCurrentToken", 1usize
                         )
                     })
             });
@@ -162,12 +167,13 @@ impl crate::System::Security::Principal::WindowsImpersonationContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Undo")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Undo", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Undo",
+                            0usize
                         )
                     })
             });
@@ -183,7 +189,7 @@ impl crate::System::Security::Principal::WindowsImpersonationContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::IntPtr),
                         quest_hook::libil2cpp::Void,
@@ -192,7 +198,8 @@ impl crate::System::Security::Principal::WindowsImpersonationContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });

@@ -46,7 +46,7 @@ impl crate::UnityEngine::AudioLowPassFilter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
@@ -55,7 +55,8 @@ impl crate::UnityEngine::AudioLowPassFilter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCustomLowpassLevelCurveCopy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCustomLowpassLevelCurveCopy", 0usize
                         )
                     })
             });
@@ -78,7 +79,7 @@ impl crate::UnityEngine::AudioLowPassFilter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -92,7 +93,8 @@ impl crate::UnityEngine::AudioLowPassFilter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetCustomLowpassLevelCurveHelper", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetCustomLowpassLevelCurveHelper", 2usize
                         )
                     })
             });
@@ -107,12 +109,13 @@ impl crate::UnityEngine::AudioLowPassFilter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -129,7 +132,7 @@ impl crate::UnityEngine::AudioLowPassFilter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
@@ -138,7 +141,8 @@ impl crate::UnityEngine::AudioLowPassFilter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_customCutoffCurve", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_customCutoffCurve", 0usize
                         )
                     })
             });
@@ -151,12 +155,13 @@ impl crate::UnityEngine::AudioLowPassFilter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_cutoffFrequency")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_cutoffFrequency", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_cutoffFrequency", 0usize
                         )
                     })
             });
@@ -167,12 +172,13 @@ impl crate::UnityEngine::AudioLowPassFilter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_lowpassResonanceQ")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_lowpassResonanceQ", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_lowpassResonanceQ", 0usize
                         )
                     })
             });
@@ -186,7 +192,7 @@ impl crate::UnityEngine::AudioLowPassFilter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>),
                         quest_hook::libil2cpp::Void,
@@ -195,7 +201,8 @@ impl crate::UnityEngine::AudioLowPassFilter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_customCutoffCurve", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_customCutoffCurve", 1usize
                         )
                     })
             });
@@ -211,7 +218,7 @@ impl crate::UnityEngine::AudioLowPassFilter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -220,7 +227,8 @@ impl crate::UnityEngine::AudioLowPassFilter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_cutoffFrequency", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_cutoffFrequency", 1usize
                         )
                     })
             });
@@ -236,7 +244,7 @@ impl crate::UnityEngine::AudioLowPassFilter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -245,7 +253,8 @@ impl crate::UnityEngine::AudioLowPassFilter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_lowpassResonanceQ", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_lowpassResonanceQ", 1usize
                         )
                     })
             });

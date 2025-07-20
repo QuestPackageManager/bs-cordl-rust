@@ -46,12 +46,13 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(bool, bool), f32, 2usize>("Acceleration")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Acceleration", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Acceleration", 2usize
                         )
                     })
             });
@@ -66,7 +67,7 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f64),
                         f64,
@@ -75,7 +76,8 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CalculateFloatDragSensitivity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CalculateFloatDragSensitivity", 1usize
                         )
                     })
             });
@@ -90,7 +92,7 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f64, f64, f64),
                         f64,
@@ -99,7 +101,8 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CalculateFloatDragSensitivity", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CalculateFloatDragSensitivity", 3usize
                         )
                     })
             });
@@ -114,7 +117,7 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f64),
                         f64,
@@ -123,7 +126,8 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CalculateIntDragSensitivity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CalculateIntDragSensitivity", 1usize
                         )
                     })
             });
@@ -136,7 +140,7 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i64),
                         i64,
@@ -145,7 +149,8 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CalculateIntDragSensitivity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CalculateIntDragSensitivity", 1usize
                         )
                     })
             });
@@ -160,7 +165,7 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i64, i64, i64),
                         i64,
@@ -169,7 +174,8 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CalculateIntDragSensitivity", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CalculateIntDragSensitivity", 3usize
                         )
                     })
             });
@@ -184,7 +190,7 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         u64,
@@ -193,7 +199,8 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CalculateIntDragSensitivity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CalculateIntDragSensitivity", 1usize
                         )
                     })
             });
@@ -207,7 +214,7 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Vector2, f32),
                         f32,
@@ -216,7 +223,8 @@ impl crate::UnityEngine::NumericFieldDraggerUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NiceDelta", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NiceDelta", 2usize
                         )
                     })
             });

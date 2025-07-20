@@ -65,7 +65,7 @@ impl crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -82,7 +82,8 @@ impl crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Open", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Open",
+                            3usize
                         )
                     })
             });
@@ -101,7 +102,7 @@ impl crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -115,7 +116,8 @@ impl crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Open", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Open",
+                            2usize
                         )
                     })
             });
@@ -131,7 +133,7 @@ impl crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -140,7 +142,8 @@ impl crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetBufferSize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetBufferSize", 1usize
                         )
                     })
             });
@@ -155,12 +158,13 @@ impl crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -251,12 +255,13 @@ impl crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator_CmsCompress
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Close")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Close", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Close",
+                            0usize
                         )
                     })
             });
@@ -294,7 +299,7 @@ impl crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator_CmsCompress
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -309,7 +314,8 @@ impl crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator_CmsCompress
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Write", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Write",
+                            3usize
                         )
                     })
             });
@@ -325,7 +331,7 @@ impl crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator_CmsCompress
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u8),
                         quest_hook::libil2cpp::Void,
@@ -334,7 +340,8 @@ impl crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator_CmsCompress
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteByte", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteByte", 1usize
                         )
                     })
             });
@@ -361,7 +368,7 @@ impl crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator_CmsCompress
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -383,7 +390,8 @@ impl crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator_CmsCompress
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
                         )
                     })
             });

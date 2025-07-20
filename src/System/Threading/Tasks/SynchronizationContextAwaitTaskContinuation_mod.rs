@@ -50,7 +50,7 @@ impl crate::System::Threading::Tasks::SynchronizationContextAwaitTaskContinuatio
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -61,7 +61,8 @@ impl crate::System::Threading::Tasks::SynchronizationContextAwaitTaskContinuatio
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPostActionCallback", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPostActionCallback", 0usize
                         )
                     })
             });
@@ -89,7 +90,7 @@ impl crate::System::Threading::Tasks::SynchronizationContextAwaitTaskContinuatio
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Void,
@@ -98,7 +99,8 @@ impl crate::System::Threading::Tasks::SynchronizationContextAwaitTaskContinuatio
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PostAction", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PostAction", 1usize
                         )
                     })
             });
@@ -115,7 +117,7 @@ impl crate::System::Threading::Tasks::SynchronizationContextAwaitTaskContinuatio
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -129,7 +131,8 @@ impl crate::System::Threading::Tasks::SynchronizationContextAwaitTaskContinuatio
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Run", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Run",
+                            2usize
                         )
                     })
             });
@@ -149,7 +152,7 @@ impl crate::System::Threading::Tasks::SynchronizationContextAwaitTaskContinuatio
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -164,7 +167,8 @@ impl crate::System::Threading::Tasks::SynchronizationContextAwaitTaskContinuatio
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });

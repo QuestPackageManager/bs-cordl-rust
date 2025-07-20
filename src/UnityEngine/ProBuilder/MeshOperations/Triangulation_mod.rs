@@ -52,7 +52,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -73,7 +73,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SortAndTriangulate", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SortAndTriangulate", 3usize
                         )
                     })
             });
@@ -97,7 +98,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -121,7 +122,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TriangulateVertices", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TriangulateVertices", 4usize
                         )
                     })
             });
@@ -148,7 +150,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -177,7 +179,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TriangulateVertices", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TriangulateVertices", 3usize
                         )
                     })
             });
@@ -199,7 +202,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -221,7 +224,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TriangulateVertices", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TriangulateVertices", 4usize
                         )
                     })
             });
@@ -242,7 +246,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -263,7 +267,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Triangulate", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Triangulate", 3usize
                         )
                     })
             });
@@ -292,7 +297,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -321,7 +326,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Triangulate", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Triangulate", 3usize
                         )
                     })
             });
@@ -338,7 +344,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -349,7 +355,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_triangulationContext", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_triangulationContext", 0usize
                         )
                     })
             });

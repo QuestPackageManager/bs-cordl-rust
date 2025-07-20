@@ -63,7 +63,7 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -79,7 +79,8 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CBC", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "CBC",
+                            2usize
                         )
                     })
             });
@@ -96,7 +97,7 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -112,7 +113,8 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CFB", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "CFB",
+                            2usize
                         )
                     })
             });
@@ -129,7 +131,7 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -145,7 +147,8 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CTS", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "CTS",
+                            2usize
                         )
                     })
             });
@@ -163,7 +166,7 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -178,7 +181,8 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckInput", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckInput", 3usize
                         )
                     })
             });
@@ -194,7 +198,7 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -203,7 +207,8 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Dispose", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            1usize
                         )
                     })
             });
@@ -220,7 +225,7 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -236,7 +241,8 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ECB", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "ECB",
+                            2usize
                         )
                     })
             });
@@ -256,7 +262,7 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -273,7 +279,8 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FinalDecrypt", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FinalDecrypt", 3usize
                         )
                     })
             });
@@ -295,7 +302,7 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -312,7 +319,8 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FinalEncrypt", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FinalEncrypt", 3usize
                         )
                     })
             });
@@ -329,12 +337,13 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Finalize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Finalize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Finalize", 0usize
                         )
                     })
             });
@@ -354,7 +363,7 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -373,7 +382,8 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InternalTransformBlock", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InternalTransformBlock", 5usize
                         )
                     })
             });
@@ -407,7 +417,7 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -423,7 +433,8 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OFB", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "OFB",
+                            2usize
                         )
                     })
             });
@@ -441,7 +452,7 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -456,7 +467,8 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Random", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Random",
+                            3usize
                         )
                     })
             });
@@ -471,7 +483,7 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -480,7 +492,8 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "System.IDisposable.Dispose", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "System.IDisposable.Dispose", 0usize
                         )
                     })
             });
@@ -498,7 +511,7 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Security::Cryptography::PaddingMode, i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -507,7 +520,8 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ThrowBadPaddingException", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ThrowBadPaddingException", 3usize
                         )
                     })
             });
@@ -524,7 +538,7 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -540,7 +554,8 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Transform", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Transform", 2usize
                         )
                     })
             });
@@ -560,7 +575,7 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -579,7 +594,8 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TransformBlock", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TransformBlock", 5usize
                         )
                     })
             });
@@ -603,7 +619,7 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -620,7 +636,8 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TransformFinalBlock", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TransformFinalBlock", 3usize
                         )
                     })
             });
@@ -642,7 +659,7 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -659,7 +676,8 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -674,12 +692,13 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_CanTransformMultipleBlocks")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CanTransformMultipleBlocks", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CanTransformMultipleBlocks", 0usize
                         )
                     })
             });
@@ -690,12 +709,13 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_InputBlockSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_InputBlockSize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_InputBlockSize", 0usize
                         )
                     })
             });
@@ -706,12 +726,13 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_KeepLastBlock")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_KeepLastBlock", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_KeepLastBlock", 0usize
                         )
                     })
             });
@@ -722,12 +743,13 @@ impl crate::Mono::Security::Cryptography::SymmetricTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_OutputBlockSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_OutputBlockSize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_OutputBlockSize", 0usize
                         )
                     })
             });

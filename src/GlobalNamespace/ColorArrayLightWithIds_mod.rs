@@ -83,7 +83,7 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -98,7 +98,8 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLightWithIds", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLightWithIds", 0usize
                         )
                     })
             });
@@ -119,7 +120,7 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, crate::UnityEngine::Color),
                         quest_hook::libil2cpp::Void,
@@ -128,7 +129,8 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleColorLightWithIdDidSetColor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleColorLightWithIdDidSetColor", 2usize
                         )
                     })
             });
@@ -150,12 +152,13 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDestroy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDestroy", 0usize
                         )
                     })
             });
@@ -170,12 +173,13 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnEnable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnEnable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnEnable", 0usize
                         )
                     })
             });
@@ -190,7 +194,7 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -199,7 +203,8 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessNewColorData", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessNewColorData", 0usize
                         )
                     })
             });
@@ -214,7 +219,7 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -223,7 +228,8 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterArrayForColorChanges", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterArrayForColorChanges", 0usize
                         )
                     })
             });
@@ -238,7 +244,7 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -247,8 +253,8 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetColorArrayOffsetToMaterialPropertyBlocks",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetColorArrayOffsetToMaterialPropertyBlocks", 0usize
                         )
                     })
             });
@@ -263,7 +269,7 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -272,7 +278,8 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetColorDataToMaterial", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetColorDataToMaterial", 0usize
                         )
                     })
             });
@@ -287,7 +294,7 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -296,7 +303,8 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnregisterArrayFromColorChanges", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnregisterArrayFromColorChanges", 0usize
                         )
                     })
             });
@@ -311,12 +319,13 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -390,7 +399,7 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Color),
                         quest_hook::libil2cpp::Void,
@@ -399,7 +408,8 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ColorWasSet", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ColorWasSet", 1usize
                         )
                     })
             });
@@ -426,7 +436,7 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -435,7 +445,8 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -453,7 +464,7 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_2<i32, crate::UnityEngine::Color>,
@@ -464,7 +475,8 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_didSetColorEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_didSetColorEvent", 1usize
                         )
                     })
             });
@@ -482,7 +494,7 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_2<i32, crate::UnityEngine::Color>,
@@ -493,7 +505,8 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_didSetColorEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_didSetColorEvent", 1usize
                         )
                     })
             });

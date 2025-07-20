@@ -45,7 +45,7 @@ impl crate::UnityEngine::InputSystem::InputExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::InputSystem::TouchPhase),
                         bool,
@@ -54,7 +54,8 @@ impl crate::UnityEngine::InputSystem::InputExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsActive", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsActive", 1usize
                         )
                     })
             });
@@ -67,7 +68,7 @@ impl crate::UnityEngine::InputSystem::InputExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::InputSystem::TouchPhase),
                         bool,
@@ -76,7 +77,8 @@ impl crate::UnityEngine::InputSystem::InputExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsEndedOrCanceled", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsEndedOrCanceled", 1usize
                         )
                     })
             });
@@ -89,7 +91,7 @@ impl crate::UnityEngine::InputSystem::InputExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::InputSystem::InputActionPhase),
                         bool,
@@ -98,7 +100,8 @@ impl crate::UnityEngine::InputSystem::InputExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsInProgress", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsInProgress", 1usize
                         )
                     })
             });
@@ -111,7 +114,7 @@ impl crate::UnityEngine::InputSystem::InputExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::InputSystem::Key),
                         bool,
@@ -120,7 +123,8 @@ impl crate::UnityEngine::InputSystem::InputExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsModifierKey", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsModifierKey", 1usize
                         )
                     })
             });
@@ -133,7 +137,7 @@ impl crate::UnityEngine::InputSystem::InputExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::InputSystem::Key),
                         bool,
@@ -142,7 +146,8 @@ impl crate::UnityEngine::InputSystem::InputExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsTextInputKey", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsTextInputKey", 1usize
                         )
                     })
             });

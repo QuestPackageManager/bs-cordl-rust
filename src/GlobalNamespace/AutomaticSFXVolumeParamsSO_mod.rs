@@ -60,12 +60,13 @@ impl crate::GlobalNamespace::AutomaticSFXVolumeParamsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -78,12 +79,13 @@ impl crate::GlobalNamespace::AutomaticSFXVolumeParamsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_attackTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_attackTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_attackTime", 0usize
                         )
                     })
             });
@@ -94,12 +96,13 @@ impl crate::GlobalNamespace::AutomaticSFXVolumeParamsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_impact")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_impact", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_impact", 0usize
                         )
                     })
             });
@@ -110,12 +113,13 @@ impl crate::GlobalNamespace::AutomaticSFXVolumeParamsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_maxVolume")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_maxVolume", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_maxVolume", 0usize
                         )
                     })
             });
@@ -126,12 +130,13 @@ impl crate::GlobalNamespace::AutomaticSFXVolumeParamsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_minVolume")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_minVolume", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_minVolume", 0usize
                         )
                     })
             });
@@ -142,12 +147,13 @@ impl crate::GlobalNamespace::AutomaticSFXVolumeParamsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_musicVolumeMultiplier")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_musicVolumeMultiplier", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_musicVolumeMultiplier", 0usize
                         )
                     })
             });
@@ -158,12 +164,13 @@ impl crate::GlobalNamespace::AutomaticSFXVolumeParamsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_releaseTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_releaseTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_releaseTime", 0usize
                         )
                     })
             });
@@ -174,12 +181,13 @@ impl crate::GlobalNamespace::AutomaticSFXVolumeParamsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_threshold")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_threshold", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_threshold", 0usize
                         )
                     })
             });
@@ -190,12 +198,13 @@ impl crate::GlobalNamespace::AutomaticSFXVolumeParamsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_volumeSmooth")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_volumeSmooth", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_volumeSmooth", 0usize
                         )
                     })
             });

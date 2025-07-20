@@ -50,7 +50,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsHandshakeRetransmit {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -66,7 +66,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsHandshakeRetransmit {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReceivedHandshakeRecord", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReceivedHandshakeRecord", 4usize
                         )
                     })
             });

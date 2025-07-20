@@ -65,7 +65,7 @@ impl crate::System::LocalDataStoreMgr {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::LocalDataStoreSlot>,
@@ -74,7 +74,8 @@ impl crate::System::LocalDataStoreMgr {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AllocateDataSlot", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AllocateDataSlot", 0usize
                         )
                     })
             });
@@ -92,7 +93,7 @@ impl crate::System::LocalDataStoreMgr {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<crate::System::LocalDataStoreSlot>,
@@ -101,7 +102,8 @@ impl crate::System::LocalDataStoreMgr {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AllocateNamedDataSlot", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AllocateNamedDataSlot", 1usize
                         )
                     })
             });
@@ -118,7 +120,7 @@ impl crate::System::LocalDataStoreMgr {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::LocalDataStoreHolder>,
@@ -127,7 +129,8 @@ impl crate::System::LocalDataStoreMgr {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateLocalDataStore", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateLocalDataStore", 0usize
                         )
                     })
             });
@@ -143,7 +146,7 @@ impl crate::System::LocalDataStoreMgr {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::LocalDataStore>),
                         quest_hook::libil2cpp::Void,
@@ -152,7 +155,8 @@ impl crate::System::LocalDataStoreMgr {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DeleteLocalDataStore", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DeleteLocalDataStore", 1usize
                         )
                     })
             });
@@ -169,7 +173,7 @@ impl crate::System::LocalDataStoreMgr {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i64),
                         quest_hook::libil2cpp::Void,
@@ -178,7 +182,8 @@ impl crate::System::LocalDataStoreMgr {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FreeDataSlot", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FreeDataSlot", 2usize
                         )
                     })
             });
@@ -194,7 +199,7 @@ impl crate::System::LocalDataStoreMgr {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -203,7 +208,8 @@ impl crate::System::LocalDataStoreMgr {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FreeNamedDataSlot", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FreeNamedDataSlot", 1usize
                         )
                     })
             });
@@ -221,7 +227,7 @@ impl crate::System::LocalDataStoreMgr {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<crate::System::LocalDataStoreSlot>,
@@ -230,7 +236,8 @@ impl crate::System::LocalDataStoreMgr {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNamedDataSlot", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNamedDataSlot", 1usize
                         )
                     })
             });
@@ -243,12 +250,13 @@ impl crate::System::LocalDataStoreMgr {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetSlotTableLength")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSlotTableLength", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSlotTableLength", 0usize
                         )
                     })
             });
@@ -269,7 +277,7 @@ impl crate::System::LocalDataStoreMgr {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::LocalDataStoreSlot>),
                         quest_hook::libil2cpp::Void,
@@ -278,7 +286,8 @@ impl crate::System::LocalDataStoreMgr {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ValidateSlot", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValidateSlot", 1usize
                         )
                     })
             });
@@ -293,12 +302,13 @@ impl crate::System::LocalDataStoreMgr {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

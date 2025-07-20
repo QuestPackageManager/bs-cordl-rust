@@ -57,7 +57,7 @@ impl crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>),
                         quest_hook::libil2cpp::Void,
@@ -66,7 +66,8 @@ impl crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddMonoInstaller", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddMonoInstaller", 1usize
                         )
                     })
             });
@@ -84,7 +85,7 @@ impl crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Zenject::ScriptableObjectInstaller,
@@ -95,7 +96,8 @@ impl crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddScriptableObjectInstaller", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddScriptableObjectInstaller", 1usize
                         )
                     })
             });
@@ -117,12 +119,13 @@ impl crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

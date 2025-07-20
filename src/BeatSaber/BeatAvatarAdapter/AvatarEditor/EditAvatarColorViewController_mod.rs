@@ -76,7 +76,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Color),
                         quest_hook::libil2cpp::Void,
@@ -85,7 +85,8 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ChangeColor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ChangeColor", 1usize
                         )
                     })
             });
@@ -100,7 +101,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -109,7 +110,8 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleApplyButtonWasPressed", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleApplyButtonWasPressed", 0usize
                         )
                     })
             });
@@ -124,7 +126,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -133,7 +135,8 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleCancelButtonWasPressed", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleCancelButtonWasPressed", 0usize
                         )
                     })
             });
@@ -150,7 +153,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Color,
@@ -162,8 +165,8 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleHSVPanelControllerColorDidChange",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleHSVPanelControllerColorDidChange", 2usize
                         )
                     })
             });
@@ -179,7 +182,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Color),
                         quest_hook::libil2cpp::Void,
@@ -188,7 +191,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "HandlePreviousColorPanelControllerColorWasSelected", 1usize
                         )
                     })
@@ -211,12 +214,13 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDestroy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDestroy", 0usize
                         )
                     })
             });
@@ -232,7 +236,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Color),
                         quest_hook::libil2cpp::Void,
@@ -241,7 +245,8 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetColor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetColor", 1usize
                         )
                     })
             });
@@ -259,7 +264,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<crate::UnityEngine::Color>,
@@ -270,7 +275,8 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetColorCallback", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetColorCallback", 1usize
                         )
                     })
             });
@@ -285,12 +291,13 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Start", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Start",
+                            0usize
                         )
                     })
             });
@@ -305,12 +312,13 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -328,7 +336,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<crate::UnityEngine::Color>,
@@ -339,7 +347,8 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_didChangeColorEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_didChangeColorEvent", 1usize
                         )
                     })
             });
@@ -355,7 +364,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>),
                         quest_hook::libil2cpp::Void,
@@ -364,7 +373,8 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_didFinishEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_didFinishEvent", 1usize
                         )
                     })
             });
@@ -379,12 +389,13 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::UnityEngine::Color, 0usize>("get_color")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_color", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_color", 0usize
                         )
                     })
             });
@@ -402,7 +413,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<crate::UnityEngine::Color>,
@@ -413,7 +424,8 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_didChangeColorEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_didChangeColorEvent", 1usize
                         )
                     })
             });
@@ -429,7 +441,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>),
                         quest_hook::libil2cpp::Void,
@@ -438,7 +450,8 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_didFinishEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_didFinishEvent", 1usize
                         )
                     })
             });

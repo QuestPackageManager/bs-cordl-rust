@@ -70,12 +70,13 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Awake", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Awake",
+                            0usize
                         )
                     })
             });
@@ -90,7 +91,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -99,7 +100,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindActions", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindActions", 0usize
                         )
                     })
             });
@@ -114,7 +116,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -123,7 +125,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindPosition", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindPosition", 0usize
                         )
                     })
             });
@@ -138,7 +141,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -147,7 +150,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindRotation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindRotation", 0usize
                         )
                     })
             });
@@ -162,7 +166,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -171,7 +175,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindTrackingState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindTrackingState", 0usize
                         )
                     })
             });
@@ -189,7 +194,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -200,7 +205,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HasStereoCamera", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HasStereoCamera", 1usize
                         )
                     })
             });
@@ -222,7 +228,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -231,7 +237,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnBeforeRender", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnBeforeRender", 0usize
                         )
                     })
             });
@@ -246,12 +253,13 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDestroy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDestroy", 0usize
                         )
                     })
             });
@@ -266,12 +274,13 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDisable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDisable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDisable", 0usize
                         )
                     })
             });
@@ -286,12 +295,13 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnEnable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnEnable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnEnable", 0usize
                         )
                     })
             });
@@ -307,7 +317,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::InputAction_CallbackContext),
                         quest_hook::libil2cpp::Void,
@@ -316,7 +326,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnPositionCanceled", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnPositionCanceled", 1usize
                         )
                     })
             });
@@ -332,7 +343,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::InputAction_CallbackContext),
                         quest_hook::libil2cpp::Void,
@@ -341,7 +352,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnPositionPerformed", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnPositionPerformed", 1usize
                         )
                     })
             });
@@ -357,7 +369,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::InputAction_CallbackContext),
                         quest_hook::libil2cpp::Void,
@@ -366,7 +378,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnRotationCanceled", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnRotationCanceled", 1usize
                         )
                     })
             });
@@ -382,7 +395,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::InputAction_CallbackContext),
                         quest_hook::libil2cpp::Void,
@@ -391,7 +404,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnRotationPerformed", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnRotationPerformed", 1usize
                         )
                     })
             });
@@ -407,7 +421,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::InputAction_CallbackContext),
                         quest_hook::libil2cpp::Void,
@@ -416,7 +430,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnTrackingStateCanceled", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnTrackingStateCanceled", 1usize
                         )
                     })
             });
@@ -432,7 +447,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::InputAction_CallbackContext),
                         quest_hook::libil2cpp::Void,
@@ -441,7 +456,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnTrackingStatePerformed", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnTrackingStatePerformed", 1usize
                         )
                     })
             });
@@ -456,12 +472,13 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnUpdate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnUpdate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnUpdate", 0usize
                         )
                     })
             });
@@ -476,7 +493,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -485,7 +502,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PerformUpdate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PerformUpdate", 0usize
                         )
                     })
             });
@@ -500,7 +518,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -509,7 +527,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadTrackingState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadTrackingState", 0usize
                         )
                     })
             });
@@ -524,12 +543,13 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Reset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Reset",
+                            0usize
                         )
                     })
             });
@@ -546,7 +566,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector3, crate::UnityEngine::Quaternion),
                         quest_hook::libil2cpp::Void,
@@ -555,7 +575,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetLocalTransform", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetLocalTransform", 2usize
                         )
                     })
             });
@@ -570,7 +591,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -579,7 +600,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnbindActions", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnbindActions", 0usize
                         )
                     })
             });
@@ -594,7 +616,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -603,7 +625,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnbindPosition", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnbindPosition", 0usize
                         )
                     })
             });
@@ -618,7 +641,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -627,7 +650,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnbindRotation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnbindRotation", 0usize
                         )
                     })
             });
@@ -642,7 +666,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -651,7 +675,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnbindTrackingState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnbindTrackingState", 0usize
                         )
                     })
             });
@@ -666,7 +691,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -675,7 +700,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize",
                             0usize
                         )
@@ -692,7 +717,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -701,7 +726,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize",
                             0usize
                         )
@@ -718,7 +743,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -727,7 +752,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateCallback", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateCallback", 0usize
                         )
                     })
             });
@@ -742,12 +768,13 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -760,12 +787,13 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_ignoreTrackingState")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ignoreTrackingState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ignoreTrackingState", 0usize
                         )
                     })
             });
@@ -780,7 +808,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -791,7 +819,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_positionAction", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_positionAction", 0usize
                         )
                     })
             });
@@ -808,7 +837,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::InputSystem::InputActionProperty,
@@ -817,7 +846,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_positionInput", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_positionInput", 0usize
                         )
                     })
             });
@@ -834,7 +864,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -845,7 +875,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rotationAction", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rotationAction", 0usize
                         )
                     })
             });
@@ -862,7 +893,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::InputSystem::InputActionProperty,
@@ -871,7 +902,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rotationInput", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rotationInput", 0usize
                         )
                     })
             });
@@ -888,7 +920,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::InputSystem::InputActionProperty,
@@ -897,7 +929,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_trackingStateInput", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_trackingStateInput", 0usize
                         )
                     })
             });
@@ -914,7 +947,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingType,
@@ -923,7 +956,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_trackingType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_trackingType", 0usize
                         )
                     })
             });
@@ -940,7 +974,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_UpdateType,
@@ -949,7 +983,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_updateType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_updateType", 0usize
                         )
                     })
             });
@@ -965,7 +1000,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -974,7 +1009,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_ignoreTrackingState", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_ignoreTrackingState", 1usize
                         )
                     })
             });
@@ -990,7 +1026,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::InputAction,
@@ -1001,7 +1037,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_positionAction", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_positionAction", 1usize
                         )
                     })
             });
@@ -1017,7 +1054,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::InputActionProperty),
                         quest_hook::libil2cpp::Void,
@@ -1026,7 +1063,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_positionInput", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_positionInput", 1usize
                         )
                     })
             });
@@ -1042,7 +1080,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::InputAction,
@@ -1053,7 +1091,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_rotationAction", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_rotationAction", 1usize
                         )
                     })
             });
@@ -1069,7 +1108,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::InputActionProperty),
                         quest_hook::libil2cpp::Void,
@@ -1078,7 +1117,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_rotationInput", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_rotationInput", 1usize
                         )
                     })
             });
@@ -1094,7 +1134,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::InputActionProperty),
                         quest_hook::libil2cpp::Void,
@@ -1103,7 +1143,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_trackingStateInput", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_trackingStateInput", 1usize
                         )
                     })
             });
@@ -1119,7 +1160,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingType),
                         quest_hook::libil2cpp::Void,
@@ -1128,7 +1169,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_trackingType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_trackingType", 1usize
                         )
                     })
             });
@@ -1144,7 +1186,7 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_UpdateType),
                         quest_hook::libil2cpp::Void,
@@ -1153,7 +1195,8 @@ impl crate::UnityEngine::InputSystem::XR::TrackedPoseDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_updateType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_updateType", 1usize
                         )
                     })
             });

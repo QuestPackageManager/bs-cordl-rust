@@ -82,7 +82,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::OVRManager_CameraDevice,
@@ -91,7 +91,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.get_capturingCameraDevice",
                             0usize
                         )
@@ -108,7 +108,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Color,
@@ -117,7 +117,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.get_chromaKeyColor",
                             0usize
                         )
@@ -134,7 +134,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         f32,
@@ -143,7 +143,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.get_chromaKeySimilarity",
                             0usize
                         )
@@ -158,7 +158,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         f32,
@@ -167,7 +167,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.get_chromaKeySmoothRange",
                             0usize
                         )
@@ -182,7 +182,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         f32,
@@ -191,7 +191,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.get_chromaKeySpillRange",
                             0usize
                         )
@@ -208,7 +208,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::OVRManager_CompositionMethod,
@@ -217,7 +217,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.get_compositionMethod",
                             0usize
                         )
@@ -234,7 +234,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::OVRManager_DepthQuality,
@@ -243,7 +243,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.get_depthQuality",
                             0usize
                         )
@@ -260,7 +260,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         bool,
@@ -269,7 +269,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.get_dynamicCullingMask",
                             0usize
                         )
@@ -284,7 +284,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         f32,
@@ -295,7 +295,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.get_dynamicLightingDepthVariationClampingValue",
                             0usize
                         )
@@ -310,7 +310,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         f32,
@@ -321,7 +321,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.get_dynamicLightingSmoothFactor",
                             0usize
                         )
@@ -336,7 +336,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         bool,
@@ -345,7 +345,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.get_enableMixedReality",
                             0usize
                         )
@@ -360,7 +360,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Color,
@@ -371,7 +371,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.get_externalCompositionBackdropColorQuest",
                             0usize
                         )
@@ -388,7 +388,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Color,
@@ -399,7 +399,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.get_externalCompositionBackdropColorRift",
                             0usize
                         )
@@ -416,7 +416,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::LayerMask,
@@ -425,7 +425,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.get_extraHiddenLayers",
                             0usize
                         )
@@ -442,7 +442,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::LayerMask,
@@ -451,7 +451,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.get_extraVisibleLayers",
                             0usize
                         )
@@ -468,7 +468,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         bool,
@@ -479,7 +479,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.get_flipCameraFrameHorizontally",
                             0usize
                         )
@@ -494,7 +494,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         bool,
@@ -505,7 +505,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.get_flipCameraFrameVertically",
                             0usize
                         )
@@ -520,7 +520,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         f32,
@@ -529,7 +529,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.get_handPoseStateLatency",
                             0usize
                         )
@@ -548,7 +548,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -561,7 +561,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.get_instantiateMixedRealityCameraGameObject",
                             0usize
                         )
@@ -580,7 +580,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::OVRManager_MrcActivationMode,
@@ -589,7 +589,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.get_mrcActivationMode",
                             0usize
                         )
@@ -606,7 +606,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         i32,
@@ -617,7 +617,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.get_sandwichCompositionBufferedFrames",
                             0usize
                         )
@@ -632,7 +632,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         f32,
@@ -643,7 +643,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.get_sandwichCompositionRenderLatency",
                             0usize
                         )
@@ -658,7 +658,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         bool,
@@ -667,7 +667,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.get_useDynamicLighting",
                             0usize
                         )
@@ -682,7 +682,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         bool,
@@ -693,7 +693,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.get_virtualGreenScreenApplyDepthCulling",
                             0usize
                         )
@@ -708,7 +708,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         f32,
@@ -719,7 +719,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.get_virtualGreenScreenBottomY",
                             0usize
                         )
@@ -734,7 +734,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         f32,
@@ -745,7 +745,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.get_virtualGreenScreenDepthTolerance",
                             0usize
                         )
@@ -760,7 +760,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         f32,
@@ -769,7 +769,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.get_virtualGreenScreenTopY",
                             0usize
                         )
@@ -786,7 +786,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::OVRManager_VirtualGreenScreenType,
@@ -795,7 +795,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.get_virtualGreenScreenType",
                             0usize
                         )
@@ -813,7 +813,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::OVRManager_CameraDevice),
                         quest_hook::libil2cpp::Void,
@@ -822,7 +822,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.set_capturingCameraDevice",
                             1usize
                         )
@@ -840,7 +840,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Color),
                         quest_hook::libil2cpp::Void,
@@ -849,7 +849,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.set_chromaKeyColor",
                             1usize
                         )
@@ -867,7 +867,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -876,7 +876,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.set_chromaKeySimilarity",
                             1usize
                         )
@@ -894,7 +894,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -903,7 +903,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.set_chromaKeySmoothRange",
                             1usize
                         )
@@ -921,7 +921,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -930,7 +930,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.set_chromaKeySpillRange",
                             1usize
                         )
@@ -948,7 +948,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::OVRManager_CompositionMethod),
                         quest_hook::libil2cpp::Void,
@@ -957,7 +957,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.set_compositionMethod",
                             1usize
                         )
@@ -975,7 +975,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::OVRManager_DepthQuality),
                         quest_hook::libil2cpp::Void,
@@ -984,7 +984,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.set_depthQuality",
                             1usize
                         )
@@ -1002,7 +1002,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -1011,7 +1011,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.set_dynamicCullingMask",
                             1usize
                         )
@@ -1029,7 +1029,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -1040,7 +1040,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.set_dynamicLightingDepthVariationClampingValue",
                             1usize
                         )
@@ -1058,7 +1058,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -1069,7 +1069,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.set_dynamicLightingSmoothFactor",
                             1usize
                         )
@@ -1087,7 +1087,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -1096,7 +1096,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.set_enableMixedReality",
                             1usize
                         )
@@ -1114,7 +1114,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Color),
                         quest_hook::libil2cpp::Void,
@@ -1125,7 +1125,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.set_externalCompositionBackdropColorQuest",
                             1usize
                         )
@@ -1143,7 +1143,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Color),
                         quest_hook::libil2cpp::Void,
@@ -1154,7 +1154,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.set_externalCompositionBackdropColorRift",
                             1usize
                         )
@@ -1172,7 +1172,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::LayerMask),
                         quest_hook::libil2cpp::Void,
@@ -1181,7 +1181,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.set_extraHiddenLayers",
                             1usize
                         )
@@ -1199,7 +1199,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::LayerMask),
                         quest_hook::libil2cpp::Void,
@@ -1208,7 +1208,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.set_extraVisibleLayers",
                             1usize
                         )
@@ -1226,7 +1226,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -1237,7 +1237,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.set_flipCameraFrameHorizontally",
                             1usize
                         )
@@ -1255,7 +1255,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -1266,7 +1266,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.set_flipCameraFrameVertically",
                             1usize
                         )
@@ -1284,7 +1284,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -1293,7 +1293,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.set_handPoseStateLatency",
                             1usize
                         )
@@ -1313,7 +1313,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate,
@@ -1326,7 +1326,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.set_instantiateMixedRealityCameraGameObject",
                             1usize
                         )
@@ -1344,7 +1344,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::OVRManager_MrcActivationMode),
                         quest_hook::libil2cpp::Void,
@@ -1353,7 +1353,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.set_mrcActivationMode",
                             1usize
                         )
@@ -1371,7 +1371,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -1382,7 +1382,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.set_sandwichCompositionBufferedFrames",
                             1usize
                         )
@@ -1400,7 +1400,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -1411,7 +1411,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.set_sandwichCompositionRenderLatency",
                             1usize
                         )
@@ -1429,7 +1429,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -1438,7 +1438,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.set_useDynamicLighting",
                             1usize
                         )
@@ -1456,7 +1456,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -1467,7 +1467,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.set_virtualGreenScreenApplyDepthCulling",
                             1usize
                         )
@@ -1485,7 +1485,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -1496,7 +1496,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.set_virtualGreenScreenBottomY",
                             1usize
                         )
@@ -1514,7 +1514,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -1525,7 +1525,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.set_virtualGreenScreenDepthTolerance",
                             1usize
                         )
@@ -1543,7 +1543,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -1552,7 +1552,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.set_virtualGreenScreenTopY",
                             1usize
                         )
@@ -1570,7 +1570,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::OVRManager_VirtualGreenScreenType),
                         quest_hook::libil2cpp::Void,
@@ -1579,7 +1579,7 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OVRMixedRealityCaptureConfiguration.set_virtualGreenScreenType",
                             1usize
                         )
@@ -1596,12 +1596,13 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

@@ -44,7 +44,7 @@ impl crate::UnityEngine::U2D::SpriteAtlasManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::U2D::SpriteAtlas,
@@ -55,7 +55,8 @@ impl crate::UnityEngine::U2D::SpriteAtlasManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PostRegisteredAtlas", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PostRegisteredAtlas", 1usize
                         )
                     })
             });
@@ -70,7 +71,7 @@ impl crate::UnityEngine::U2D::SpriteAtlasManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::U2D::SpriteAtlas,
@@ -81,7 +82,8 @@ impl crate::UnityEngine::U2D::SpriteAtlasManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Register", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Register", 1usize
                         )
                     })
             });
@@ -96,7 +98,7 @@ impl crate::UnityEngine::U2D::SpriteAtlasManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -105,7 +107,8 @@ impl crate::UnityEngine::U2D::SpriteAtlasManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RequestAtlas", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RequestAtlas", 1usize
                         )
                     })
             });
@@ -122,7 +125,7 @@ impl crate::UnityEngine::U2D::SpriteAtlasManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -137,7 +140,8 @@ impl crate::UnityEngine::U2D::SpriteAtlasManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_atlasRegistered", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_atlasRegistered", 1usize
                         )
                     })
             });
@@ -156,7 +160,7 @@ impl crate::UnityEngine::U2D::SpriteAtlasManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -171,7 +175,8 @@ impl crate::UnityEngine::U2D::SpriteAtlasManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_atlasRegistered", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_atlasRegistered", 1usize
                         )
                     })
             });

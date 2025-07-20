@@ -44,7 +44,7 @@ impl crate::UnityEngine::PlayerPrefs {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         i32,
@@ -53,7 +53,8 @@ impl crate::UnityEngine::PlayerPrefs {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetInt", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetInt",
+                            1usize
                         )
                     })
             });
@@ -67,7 +68,7 @@ impl crate::UnityEngine::PlayerPrefs {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -81,7 +82,8 @@ impl crate::UnityEngine::PlayerPrefs {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetInt", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetInt",
+                            2usize
                         )
                     })
             });
@@ -99,7 +101,7 @@ impl crate::UnityEngine::PlayerPrefs {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -115,7 +117,8 @@ impl crate::UnityEngine::PlayerPrefs {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetString", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetString", 2usize
                         )
                     })
             });
@@ -132,7 +135,7 @@ impl crate::UnityEngine::PlayerPrefs {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -141,7 +144,8 @@ impl crate::UnityEngine::PlayerPrefs {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetString", 1usize
                         )
                     })
             });
@@ -156,7 +160,7 @@ impl crate::UnityEngine::PlayerPrefs {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -165,7 +169,8 @@ impl crate::UnityEngine::PlayerPrefs {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HasKey", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "HasKey",
+                            1usize
                         )
                     })
             });
@@ -179,7 +184,7 @@ impl crate::UnityEngine::PlayerPrefs {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -193,7 +198,8 @@ impl crate::UnityEngine::PlayerPrefs {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetInt", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetInt",
+                            2usize
                         )
                     })
             });
@@ -209,7 +215,7 @@ impl crate::UnityEngine::PlayerPrefs {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -223,7 +229,8 @@ impl crate::UnityEngine::PlayerPrefs {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TrySetInt", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TrySetInt", 2usize
                         )
                     })
             });

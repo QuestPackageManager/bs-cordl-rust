@@ -47,7 +47,7 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::Features {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u8),
                         quest_hook::libil2cpp::Gc<
@@ -58,7 +58,8 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::Features {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FeatureToByteArray", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FeatureToByteArray", 1usize
                         )
                     })
             });
@@ -96,7 +97,7 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::Features {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u8, bool),
                         quest_hook::libil2cpp::Void,
@@ -105,7 +106,8 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::Features {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetSupportsFeature", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetSupportsFeature", 2usize
                         )
                     })
             });
@@ -121,12 +123,13 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::Features {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u8), bool, 1usize>("SupportsFeature")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SupportsFeature", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SupportsFeature", 1usize
                         )
                     })
             });
@@ -142,7 +145,7 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::Features {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             bool,
@@ -157,7 +160,8 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::Features {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -174,7 +178,7 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::Features {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, u8),
                         quest_hook::libil2cpp::Void,
@@ -183,7 +187,8 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::Features {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -198,12 +203,13 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::Features {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_SupportsModificationDetection")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SupportsModificationDetection", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SupportsModificationDetection", 0usize
                         )
                     })
             });

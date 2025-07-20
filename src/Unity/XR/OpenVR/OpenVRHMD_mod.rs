@@ -68,7 +68,7 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -77,7 +77,8 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FinishSetup", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FinishSetup", 0usize
                         )
                     })
             });
@@ -99,12 +100,13 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -123,7 +125,7 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -134,7 +136,8 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_centerEyeAngularVelocity", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_centerEyeAngularVelocity", 0usize
                         )
                     })
             });
@@ -153,7 +156,7 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -164,7 +167,8 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_centerEyeVelocity", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_centerEyeVelocity", 0usize
                         )
                     })
             });
@@ -183,7 +187,7 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -194,7 +198,8 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_deviceAngularVelocity", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_deviceAngularVelocity", 0usize
                         )
                     })
             });
@@ -213,7 +218,7 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -224,7 +229,8 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_deviceVelocity", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_deviceVelocity", 0usize
                         )
                     })
             });
@@ -243,7 +249,7 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -254,7 +260,8 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_leftEyeAngularVelocity", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_leftEyeAngularVelocity", 0usize
                         )
                     })
             });
@@ -273,7 +280,7 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -284,7 +291,8 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_leftEyeVelocity", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_leftEyeVelocity", 0usize
                         )
                     })
             });
@@ -303,7 +311,7 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -314,7 +322,8 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rightEyeAngularVelocity", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rightEyeAngularVelocity", 0usize
                         )
                     })
             });
@@ -333,7 +342,7 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -344,7 +353,8 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rightEyeVelocity", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rightEyeVelocity", 0usize
                         )
                     })
             });
@@ -362,7 +372,7 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -373,7 +383,8 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_centerEyeAngularVelocity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_centerEyeAngularVelocity", 1usize
                         )
                     })
             });
@@ -391,7 +402,7 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -402,7 +413,8 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_centerEyeVelocity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_centerEyeVelocity", 1usize
                         )
                     })
             });
@@ -420,7 +432,7 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -431,7 +443,8 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_deviceAngularVelocity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_deviceAngularVelocity", 1usize
                         )
                     })
             });
@@ -449,7 +462,7 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -460,7 +473,8 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_deviceVelocity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_deviceVelocity", 1usize
                         )
                     })
             });
@@ -478,7 +492,7 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -489,7 +503,8 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_leftEyeAngularVelocity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_leftEyeAngularVelocity", 1usize
                         )
                     })
             });
@@ -507,7 +522,7 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -518,7 +533,8 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_leftEyeVelocity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_leftEyeVelocity", 1usize
                         )
                     })
             });
@@ -536,7 +552,7 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -547,7 +563,8 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_rightEyeAngularVelocity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_rightEyeAngularVelocity", 1usize
                         )
                     })
             });
@@ -565,7 +582,7 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -576,7 +593,8 @@ impl crate::Unity::XR::OpenVR::OpenVRHMD {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_rightEyeVelocity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_rightEyeVelocity", 1usize
                         )
                     })
             });

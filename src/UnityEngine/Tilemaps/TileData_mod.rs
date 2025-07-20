@@ -107,7 +107,7 @@ impl crate::UnityEngine::Tilemaps::TileData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::UnityEngine::Tilemaps::TileData,
@@ -116,7 +116,8 @@ impl crate::UnityEngine::Tilemaps::TileData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateDefault", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateDefault", 0usize
                         )
                     })
             });
@@ -132,7 +133,7 @@ impl crate::UnityEngine::Tilemaps::TileData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Tilemaps::Tile_ColliderType),
                         quest_hook::libil2cpp::Void,
@@ -141,7 +142,8 @@ impl crate::UnityEngine::Tilemaps::TileData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_colliderType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_colliderType", 1usize
                         )
                     })
             });
@@ -157,7 +159,7 @@ impl crate::UnityEngine::Tilemaps::TileData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Color),
                         quest_hook::libil2cpp::Void,
@@ -166,7 +168,8 @@ impl crate::UnityEngine::Tilemaps::TileData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_color", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_color", 1usize
                         )
                     })
             });
@@ -182,7 +185,7 @@ impl crate::UnityEngine::Tilemaps::TileData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Tilemaps::TileFlags),
                         quest_hook::libil2cpp::Void,
@@ -191,7 +194,8 @@ impl crate::UnityEngine::Tilemaps::TileData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_flags", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_flags", 1usize
                         )
                     })
             });
@@ -207,7 +211,7 @@ impl crate::UnityEngine::Tilemaps::TileData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
                         quest_hook::libil2cpp::Void,
@@ -216,7 +220,8 @@ impl crate::UnityEngine::Tilemaps::TileData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_gameObject", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_gameObject", 1usize
                         )
                     })
             });
@@ -232,7 +237,7 @@ impl crate::UnityEngine::Tilemaps::TileData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>),
                         quest_hook::libil2cpp::Void,
@@ -241,7 +246,8 @@ impl crate::UnityEngine::Tilemaps::TileData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_sprite", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_sprite", 1usize
                         )
                     })
             });
@@ -257,7 +263,7 @@ impl crate::UnityEngine::Tilemaps::TileData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Matrix4x4),
                         quest_hook::libil2cpp::Void,
@@ -266,7 +272,8 @@ impl crate::UnityEngine::Tilemaps::TileData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_transform", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_transform", 1usize
                         )
                     })
             });

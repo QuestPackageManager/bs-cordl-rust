@@ -50,7 +50,7 @@ impl crate::System::MonoCustomAttrs {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Reflection::ICustomAttributeProvider,
@@ -63,7 +63,8 @@ impl crate::System::MonoCustomAttrs {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBase", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetBase",
+                            1usize
                         )
                     })
             });
@@ -80,7 +81,7 @@ impl crate::System::MonoCustomAttrs {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Reflection::RuntimeEventInfo,
@@ -91,7 +92,8 @@ impl crate::System::MonoCustomAttrs {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBaseEventDefinition", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBaseEventDefinition", 1usize
                         )
                     })
             });
@@ -110,7 +112,7 @@ impl crate::System::MonoCustomAttrs {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Reflection::RuntimePropertyInfo,
@@ -123,7 +125,8 @@ impl crate::System::MonoCustomAttrs {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBasePropertyDefinition", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBasePropertyDefinition", 1usize
                         )
                     })
             });
@@ -148,7 +151,7 @@ impl crate::System::MonoCustomAttrs {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -169,7 +172,8 @@ impl crate::System::MonoCustomAttrs {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCustomAttributesBase", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCustomAttributesBase", 3usize
                         )
                     })
             });
@@ -196,7 +200,7 @@ impl crate::System::MonoCustomAttrs {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -217,7 +221,8 @@ impl crate::System::MonoCustomAttrs {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCustomAttributesDataBase", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCustomAttributesDataBase", 3usize
                         )
                     })
             });
@@ -242,7 +247,7 @@ impl crate::System::MonoCustomAttrs {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Reflection::ICustomAttributeProvider,
@@ -259,7 +264,8 @@ impl crate::System::MonoCustomAttrs {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCustomAttributesDataInternal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCustomAttributesDataInternal", 1usize
                         )
                     })
             });
@@ -286,7 +292,7 @@ impl crate::System::MonoCustomAttrs {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -307,7 +313,8 @@ impl crate::System::MonoCustomAttrs {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCustomAttributesData", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCustomAttributesData", 3usize
                         )
                     })
             });
@@ -333,7 +340,7 @@ impl crate::System::MonoCustomAttrs {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -353,7 +360,8 @@ impl crate::System::MonoCustomAttrs {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCustomAttributesData", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCustomAttributesData", 2usize
                         )
                     })
             });
@@ -380,7 +388,7 @@ impl crate::System::MonoCustomAttrs {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -399,7 +407,8 @@ impl crate::System::MonoCustomAttrs {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCustomAttributesInternal", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCustomAttributesInternal", 3usize
                         )
                     })
             });
@@ -426,7 +435,7 @@ impl crate::System::MonoCustomAttrs {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -447,7 +456,8 @@ impl crate::System::MonoCustomAttrs {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCustomAttributes", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCustomAttributes", 3usize
                         )
                     })
             });
@@ -473,7 +483,7 @@ impl crate::System::MonoCustomAttrs {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -493,7 +503,8 @@ impl crate::System::MonoCustomAttrs {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCustomAttributes", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCustomAttributes", 2usize
                         )
                     })
             });
@@ -519,7 +530,7 @@ impl crate::System::MonoCustomAttrs {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -539,7 +550,8 @@ impl crate::System::MonoCustomAttrs {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPseudoCustomAttributesData", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPseudoCustomAttributesData", 2usize
                         )
                     })
             });
@@ -562,7 +574,7 @@ impl crate::System::MonoCustomAttrs {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<
@@ -577,7 +589,8 @@ impl crate::System::MonoCustomAttrs {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPseudoCustomAttributesData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPseudoCustomAttributesData", 1usize
                         )
                     })
             });
@@ -603,7 +616,7 @@ impl crate::System::MonoCustomAttrs {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -623,7 +636,8 @@ impl crate::System::MonoCustomAttrs {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPseudoCustomAttributes", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPseudoCustomAttributes", 2usize
                         )
                     })
             });
@@ -646,7 +660,7 @@ impl crate::System::MonoCustomAttrs {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<
@@ -661,7 +675,8 @@ impl crate::System::MonoCustomAttrs {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPseudoCustomAttributes", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPseudoCustomAttributes", 1usize
                         )
                     })
             });
@@ -682,7 +697,7 @@ impl crate::System::MonoCustomAttrs {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -697,7 +712,8 @@ impl crate::System::MonoCustomAttrs {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsDefined", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsDefined", 3usize
                         )
                     })
             });
@@ -715,7 +731,7 @@ impl crate::System::MonoCustomAttrs {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -729,7 +745,8 @@ impl crate::System::MonoCustomAttrs {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsDefinedInternal", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsDefinedInternal", 2usize
                         )
                     })
             });
@@ -744,7 +761,7 @@ impl crate::System::MonoCustomAttrs {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         bool,
@@ -753,7 +770,8 @@ impl crate::System::MonoCustomAttrs {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsUserCattrProvider", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsUserCattrProvider", 1usize
                         )
                     })
             });
@@ -768,7 +786,7 @@ impl crate::System::MonoCustomAttrs {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<
@@ -779,7 +797,8 @@ impl crate::System::MonoCustomAttrs {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RetrieveAttributeUsage", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RetrieveAttributeUsage", 1usize
                         )
                     })
             });
@@ -796,7 +815,7 @@ impl crate::System::MonoCustomAttrs {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<
@@ -807,7 +826,8 @@ impl crate::System::MonoCustomAttrs {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RetrieveAttributeUsageNoCache", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RetrieveAttributeUsageNoCache", 1usize
                         )
                     })
             });
@@ -887,7 +907,7 @@ impl crate::System::MonoCustomAttrs_AttributeInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -901,7 +921,8 @@ impl crate::System::MonoCustomAttrs_AttributeInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -914,12 +935,13 @@ impl crate::System::MonoCustomAttrs_AttributeInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_InheritanceLevel")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_InheritanceLevel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_InheritanceLevel", 0usize
                         )
                     })
             });
@@ -934,7 +956,7 @@ impl crate::System::MonoCustomAttrs_AttributeInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -945,7 +967,8 @@ impl crate::System::MonoCustomAttrs_AttributeInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Usage", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Usage", 0usize
                         )
                     })
             });

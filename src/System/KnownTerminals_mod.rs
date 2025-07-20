@@ -44,7 +44,7 @@ impl crate::System::KnownTerminals {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -55,7 +55,8 @@ impl crate::System::KnownTerminals {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ansi", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ansi", 0usize
                         )
                     })
             });
@@ -70,7 +71,7 @@ impl crate::System::KnownTerminals {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -81,7 +82,8 @@ impl crate::System::KnownTerminals {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_linux", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_linux", 0usize
                         )
                     })
             });
@@ -96,7 +98,7 @@ impl crate::System::KnownTerminals {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -107,7 +109,8 @@ impl crate::System::KnownTerminals {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xterm", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xterm", 0usize
                         )
                     })
             });

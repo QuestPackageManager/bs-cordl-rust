@@ -45,7 +45,7 @@ impl crate::System::Net::IPAddressParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u16,
@@ -57,7 +57,8 @@ impl crate::System::Net::IPAddressParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AppendHex", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AppendHex", 2usize
                         )
                     })
             });
@@ -75,7 +76,7 @@ impl crate::System::Net::IPAddressParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -91,7 +92,8 @@ impl crate::System::Net::IPAddressParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AppendSections", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AppendSections", 4usize
                         )
                     })
             });
@@ -106,7 +108,7 @@ impl crate::System::Net::IPAddressParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u16>,
@@ -117,7 +119,8 @@ impl crate::System::Net::IPAddressParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExtractIPv4Address", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExtractIPv4Address", 1usize
                         )
                     })
             });
@@ -132,7 +135,7 @@ impl crate::System::Net::IPAddressParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -147,7 +150,8 @@ impl crate::System::Net::IPAddressParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FormatIPv4AddressNumber", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FormatIPv4AddressNumber", 3usize
                         )
                     })
             });
@@ -163,7 +167,7 @@ impl crate::System::Net::IPAddressParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u32,
@@ -177,7 +181,8 @@ impl crate::System::Net::IPAddressParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IPv4AddressToStringHelper", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IPv4AddressToStringHelper", 2usize
                         )
                     })
             });
@@ -193,7 +198,7 @@ impl crate::System::Net::IPAddressParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u32,
@@ -205,7 +210,8 @@ impl crate::System::Net::IPAddressParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IPv4AddressToString", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IPv4AddressToString", 2usize
                         )
                     })
             });
@@ -222,7 +228,7 @@ impl crate::System::Net::IPAddressParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u32),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -231,7 +237,8 @@ impl crate::System::Net::IPAddressParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IPv4AddressToString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IPv4AddressToString", 1usize
                         )
                     })
             });
@@ -249,7 +256,7 @@ impl crate::System::Net::IPAddressParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -263,7 +270,8 @@ impl crate::System::Net::IPAddressParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IPv6AddressToString", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IPv6AddressToString", 2usize
                         )
                     })
             });
@@ -281,7 +289,7 @@ impl crate::System::Net::IPAddressParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -295,7 +303,8 @@ impl crate::System::Net::IPAddressParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IPv6AddressToStringHelper", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IPv6AddressToStringHelper", 2usize
                         )
                     })
             });
@@ -311,7 +320,7 @@ impl crate::System::Net::IPAddressParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::ReadOnlySpan_1<char>,
@@ -323,7 +332,8 @@ impl crate::System::Net::IPAddressParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Ipv4StringToAddress", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Ipv4StringToAddress", 2usize
                         )
                     })
             });
@@ -341,7 +351,7 @@ impl crate::System::Net::IPAddressParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::ReadOnlySpan_1<char>,
@@ -357,7 +367,8 @@ impl crate::System::Net::IPAddressParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Ipv6StringToAddress", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Ipv6StringToAddress", 4usize
                         )
                     })
             });
@@ -375,7 +386,7 @@ impl crate::System::Net::IPAddressParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::ReadOnlySpan_1<char>, bool),
                         quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
@@ -384,7 +395,8 @@ impl crate::System::Net::IPAddressParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Parse", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Parse",
+                            2usize
                         )
                     })
             });
@@ -397,12 +409,13 @@ impl crate::System::Net::IPAddressParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u16), u16, 1usize>("Reverse")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Reverse", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Reverse",
+                            1usize
                         )
                     })
             });

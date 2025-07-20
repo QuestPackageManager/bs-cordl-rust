@@ -52,7 +52,7 @@ impl crate::System::Buffers::ArrayPoolEventSource {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -67,7 +67,8 @@ impl crate::System::Buffers::ArrayPoolEventSource {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BufferAllocated", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BufferAllocated", 5usize
                         )
                     })
             });
@@ -90,7 +91,7 @@ impl crate::System::Buffers::ArrayPoolEventSource {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32, i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -99,7 +100,8 @@ impl crate::System::Buffers::ArrayPoolEventSource {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BufferRented", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BufferRented", 4usize
                         )
                     })
             });
@@ -117,7 +119,7 @@ impl crate::System::Buffers::ArrayPoolEventSource {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -126,7 +128,8 @@ impl crate::System::Buffers::ArrayPoolEventSource {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BufferReturned", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BufferReturned", 3usize
                         )
                     })
             });
@@ -143,7 +146,7 @@ impl crate::System::Buffers::ArrayPoolEventSource {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -152,7 +155,8 @@ impl crate::System::Buffers::ArrayPoolEventSource {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BufferTrimPoll", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BufferTrimPoll", 2usize
                         )
                     })
             });
@@ -170,7 +174,7 @@ impl crate::System::Buffers::ArrayPoolEventSource {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -179,7 +183,8 @@ impl crate::System::Buffers::ArrayPoolEventSource {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BufferTrimmed", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BufferTrimmed", 3usize
                         )
                     })
             });
@@ -201,12 +206,13 @@ impl crate::System::Buffers::ArrayPoolEventSource {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

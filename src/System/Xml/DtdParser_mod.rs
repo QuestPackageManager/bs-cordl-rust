@@ -101,7 +101,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -110,7 +110,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddUndeclaredNotation", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddUndeclaredNotation", 1usize
                         )
                     })
             });
@@ -125,7 +126,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParser>,
@@ -134,7 +135,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Create", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Create",
+                            0usize
                         )
                     })
             });
@@ -147,12 +149,13 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("EatPublicKeyword")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EatPublicKeyword", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EatPublicKeyword", 0usize
                         )
                     })
             });
@@ -163,12 +166,13 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("EatSystemKeyword")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EatSystemKeyword", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EatSystemKeyword", 0usize
                         )
                     })
             });
@@ -184,7 +188,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
@@ -193,7 +197,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNameQualified", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNameQualified", 1usize
                         )
                     })
             });
@@ -210,7 +215,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -219,7 +224,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNameString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNameString", 0usize
                         )
                     })
             });
@@ -236,7 +242,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -245,7 +251,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNmtokenString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNmtokenString", 0usize
                         )
                     })
             });
@@ -261,7 +268,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         crate::System::Xml::DtdParser_Token,
@@ -270,7 +277,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetToken", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetToken", 1usize
                         )
                     })
             });
@@ -287,7 +295,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -296,7 +304,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetValue", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetValue", 0usize
                         )
                     })
             });
@@ -313,7 +322,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -322,7 +331,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetValueWithStrippedSpaces", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetValueWithStrippedSpaces", 0usize
                         )
                     })
             });
@@ -338,12 +348,13 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(bool), bool, 1usize>("HandleEntityEnd")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleEntityEnd", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleEntityEnd", 1usize
                         )
                     })
             });
@@ -360,7 +371,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -376,7 +387,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleEntityReference", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleEntityReference", 4usize
                         )
                     })
             });
@@ -398,7 +410,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, bool, bool),
                         bool,
@@ -407,7 +419,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleEntityReference", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleEntityReference", 3usize
                         )
                     })
             });
@@ -423,7 +436,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::IDtdParserAdapter,
@@ -434,7 +447,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize", 1usize
                         )
                     })
             });
@@ -455,7 +469,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -483,7 +497,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitializeFreeFloatingDtd", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitializeFreeFloatingDtd", 6usize
                         )
                     })
             });
@@ -503,7 +518,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::DtdParser_Token),
                         bool,
@@ -512,7 +527,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsAttributeValueType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsAttributeValueType", 1usize
                         )
                     })
             });
@@ -525,7 +541,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -534,7 +550,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadParsingBuffer", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadParsingBuffer", 0usize
                         )
                     })
             });
@@ -556,7 +573,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -565,7 +582,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnUnexpectedError", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnUnexpectedError", 0usize
                         )
                     })
             });
@@ -581,12 +599,13 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("Parse")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Parse", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Parse",
+                            1usize
                         )
                     })
             });
@@ -601,7 +620,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -610,7 +629,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseAttlistDecl", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseAttlistDecl", 0usize
                         )
                     })
             });
@@ -627,7 +647,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -641,7 +661,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseAttlistDefault", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseAttlistDefault", 2usize
                         )
                     })
             });
@@ -661,7 +682,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -678,7 +699,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseAttlistType", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseAttlistType", 3usize
                         )
                     })
             });
@@ -693,7 +715,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -702,7 +724,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseComment", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseComment", 0usize
                         )
                     })
             });
@@ -717,7 +740,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -726,7 +749,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseCondSection", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseCondSection", 0usize
                         )
                     })
             });
@@ -741,7 +765,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -750,7 +774,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseElementDecl", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseElementDecl", 0usize
                         )
                     })
             });
@@ -769,7 +794,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -783,7 +808,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseElementMixedContent", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseElementMixedContent", 2usize
                         )
                     })
             });
@@ -802,7 +828,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -816,7 +842,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseElementOnlyContent", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseElementOnlyContent", 2usize
                         )
                     })
             });
@@ -831,7 +858,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -840,7 +867,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseEntityDecl", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseEntityDecl", 0usize
                         )
                     })
             });
@@ -863,7 +891,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Xml::DtdParser_Token,
@@ -885,7 +913,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseExternalId", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseExternalId", 4usize
                         )
                     })
             });
@@ -900,7 +929,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -909,7 +938,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseExternalSubset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseExternalSubset", 0usize
                         )
                     })
             });
@@ -924,7 +954,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -933,7 +963,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseFreeFloatingDtd", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseFreeFloatingDtd", 0usize
                         )
                     })
             });
@@ -951,7 +982,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::Schema::ParticleContentValidator,
@@ -962,7 +993,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseHowMany", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseHowMany", 1usize
                         )
                     })
             });
@@ -978,7 +1010,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -987,7 +1019,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseInDocumentDtd", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseInDocumentDtd", 1usize
                         )
                     })
             });
@@ -1002,7 +1035,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1011,7 +1044,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseInternalSubset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseInternalSubset", 0usize
                         )
                     })
             });
@@ -1026,7 +1060,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1035,7 +1069,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseNotationDecl", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseNotationDecl", 0usize
                         )
                     })
             });
@@ -1050,12 +1085,13 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ParsePI")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParsePI", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "ParsePI",
+                            0usize
                         )
                     })
             });
@@ -1070,7 +1106,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1079,7 +1115,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseSubset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseSubset", 0usize
                         )
                     })
             });
@@ -1097,7 +1134,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1106,7 +1143,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseUnexpectedToken", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseUnexpectedToken", 1usize
                         )
                     })
             });
@@ -1119,12 +1157,13 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("ReadData")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadData", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadData", 0usize
                         )
                     })
             });
@@ -1135,12 +1174,13 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("ReadDataInName")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadDataInName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadDataInName", 0usize
                         )
                     })
             });
@@ -1153,7 +1193,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1162,7 +1202,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SaveParsingBuffer", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SaveParsingBuffer", 0usize
                         )
                     })
             });
@@ -1178,7 +1219,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -1187,7 +1228,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SaveParsingBuffer", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SaveParsingBuffer", 1usize
                         )
                     })
             });
@@ -1202,7 +1244,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::DtdParser_Token,
@@ -1211,7 +1253,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanAttlist1", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanAttlist1", 0usize
                         )
                     })
             });
@@ -1226,7 +1269,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::DtdParser_Token,
@@ -1235,7 +1278,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanAttlist2", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanAttlist2", 0usize
                         )
                     })
             });
@@ -1250,7 +1294,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::DtdParser_Token,
@@ -1259,7 +1303,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanAttlist3", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanAttlist3", 0usize
                         )
                     })
             });
@@ -1274,7 +1319,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::DtdParser_Token,
@@ -1283,7 +1328,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanAttlist4", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanAttlist4", 0usize
                         )
                     })
             });
@@ -1298,7 +1344,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::DtdParser_Token,
@@ -1307,7 +1353,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanAttlist5", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanAttlist5", 0usize
                         )
                     })
             });
@@ -1322,7 +1369,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::DtdParser_Token,
@@ -1331,7 +1378,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanAttlist6", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanAttlist6", 0usize
                         )
                     })
             });
@@ -1346,7 +1394,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::DtdParser_Token,
@@ -1355,7 +1403,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanAttlist7", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanAttlist7", 0usize
                         )
                     })
             });
@@ -1370,7 +1419,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::DtdParser_Token,
@@ -1379,7 +1428,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanClosingTag", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanClosingTag", 0usize
                         )
                     })
             });
@@ -1394,7 +1444,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::DtdParser_Token,
@@ -1403,7 +1453,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanCondSection1", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanCondSection1", 0usize
                         )
                     })
             });
@@ -1418,7 +1469,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::DtdParser_Token,
@@ -1427,7 +1478,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanCondSection2", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanCondSection2", 0usize
                         )
                     })
             });
@@ -1442,7 +1494,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::DtdParser_Token,
@@ -1451,7 +1503,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanCondSection3", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanCondSection3", 0usize
                         )
                     })
             });
@@ -1466,7 +1519,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::DtdParser_Token,
@@ -1475,7 +1528,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanDoctype1", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanDoctype1", 0usize
                         )
                     })
             });
@@ -1490,7 +1544,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::DtdParser_Token,
@@ -1499,7 +1553,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanDoctype2", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanDoctype2", 0usize
                         )
                     })
             });
@@ -1514,7 +1569,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::DtdParser_Token,
@@ -1523,7 +1578,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanElement1", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanElement1", 0usize
                         )
                     })
             });
@@ -1538,7 +1594,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::DtdParser_Token,
@@ -1547,7 +1603,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanElement2", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanElement2", 0usize
                         )
                     })
             });
@@ -1562,7 +1619,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::DtdParser_Token,
@@ -1571,7 +1628,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanElement3", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanElement3", 0usize
                         )
                     })
             });
@@ -1586,7 +1644,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::DtdParser_Token,
@@ -1595,7 +1653,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanElement4", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanElement4", 0usize
                         )
                     })
             });
@@ -1610,7 +1669,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::DtdParser_Token,
@@ -1619,7 +1678,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanElement5", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanElement5", 0usize
                         )
                     })
             });
@@ -1634,7 +1694,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::DtdParser_Token,
@@ -1643,7 +1703,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanElement6", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanElement6", 0usize
                         )
                     })
             });
@@ -1658,7 +1719,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::DtdParser_Token,
@@ -1667,7 +1728,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanElement7", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanElement7", 0usize
                         )
                     })
             });
@@ -1682,7 +1744,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::DtdParser_Token,
@@ -1691,7 +1753,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanEntity1", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanEntity1", 0usize
                         )
                     })
             });
@@ -1706,7 +1769,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::DtdParser_Token,
@@ -1715,7 +1778,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanEntity2", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanEntity2", 0usize
                         )
                     })
             });
@@ -1730,7 +1794,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::DtdParser_Token,
@@ -1739,7 +1803,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanEntity3", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanEntity3", 0usize
                         )
                     })
             });
@@ -1756,7 +1821,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
@@ -1765,7 +1830,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanEntityName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanEntityName", 0usize
                         )
                     })
             });
@@ -1781,7 +1847,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::DtdParser_LiteralType),
                         crate::System::Xml::DtdParser_Token,
@@ -1790,7 +1856,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanLiteral", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanLiteral", 1usize
                         )
                     })
             });
@@ -1805,12 +1872,13 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ScanName")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanName", 0usize
                         )
                     })
             });
@@ -1825,7 +1893,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::DtdParser_Token,
@@ -1834,7 +1902,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanNameExpected", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanNameExpected", 0usize
                         )
                     })
             });
@@ -1849,7 +1918,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1858,7 +1927,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanNmtoken", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanNmtoken", 0usize
                         )
                     })
             });
@@ -1873,7 +1943,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::DtdParser_Token,
@@ -1882,7 +1952,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanNmtokenExpected", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanNmtokenExpected", 0usize
                         )
                     })
             });
@@ -1897,7 +1968,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::DtdParser_Token,
@@ -1906,7 +1977,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanNotation1", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanNotation1", 0usize
                         )
                     })
             });
@@ -1921,7 +1993,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::DtdParser_Token,
@@ -1930,7 +2002,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanPublicId1", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanPublicId1", 0usize
                         )
                     })
             });
@@ -1945,7 +2018,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::DtdParser_Token,
@@ -1954,7 +2027,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanPublicId2", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanPublicId2", 0usize
                         )
                     })
             });
@@ -1969,7 +2043,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::DtdParser_Token,
@@ -1978,7 +2052,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanQNameExpected", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanQNameExpected", 0usize
                         )
                     })
             });
@@ -1993,12 +2068,13 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ScanQName")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanQName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanQName", 0usize
                         )
                     })
             });
@@ -2014,7 +2090,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -2023,7 +2099,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanQName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanQName", 1usize
                         )
                     })
             });
@@ -2038,7 +2115,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::DtdParser_Token,
@@ -2047,7 +2124,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanSubsetContent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanSubsetContent", 0usize
                         )
                     })
             });
@@ -2062,7 +2140,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::DtdParser_Token,
@@ -2071,7 +2149,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScanSystemId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScanSystemId", 0usize
                         )
                     })
             });
@@ -2089,7 +2168,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Xml::Schema::XmlSeverityType,
@@ -2106,7 +2185,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SendValidationEvent", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SendValidationEvent", 3usize
                         )
                     })
             });
@@ -2123,7 +2203,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Xml::Schema::XmlSeverityType,
@@ -2137,7 +2217,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SendValidationEvent", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SendValidationEvent", 2usize
                         )
                     })
             });
@@ -2156,7 +2237,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -2174,7 +2255,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SendValidationEvent", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SendValidationEvent", 4usize
                         )
                     })
             });
@@ -2191,7 +2273,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2200,7 +2282,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StripSpaces", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StripSpaces", 1usize
                         )
                     })
             });
@@ -2223,7 +2306,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2251,8 +2334,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "System.Xml.IDtdParser.ParseFreeFloatingDtd",
-                            6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "System.Xml.IDtdParser.ParseFreeFloatingDtd", 6usize
                         )
                     })
             });
@@ -2275,7 +2358,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2289,8 +2372,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "System.Xml.IDtdParser.ParseInternalDtd",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "System.Xml.IDtdParser.ParseInternalDtd", 2usize
                         )
                     })
             });
@@ -2308,7 +2391,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2323,7 +2406,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ThrowInvalidChar", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ThrowInvalidChar", 3usize
                         )
                     })
             });
@@ -2341,7 +2425,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -2356,7 +2440,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ThrowInvalidChar", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ThrowInvalidChar", 3usize
                         )
                     })
             });
@@ -2374,7 +2459,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -2391,7 +2476,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ThrowUnexpectedToken", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ThrowUnexpectedToken", 3usize
                         )
                     })
             });
@@ -2408,7 +2494,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -2422,7 +2508,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ThrowUnexpectedToken", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ThrowUnexpectedToken", 2usize
                         )
                     })
             });
@@ -2441,7 +2528,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2459,7 +2546,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Throw", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Throw",
+                            4usize
                         )
                     })
             });
@@ -2476,7 +2564,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -2490,7 +2578,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Throw", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Throw",
+                            2usize
                         )
                     })
             });
@@ -2512,7 +2601,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -2533,7 +2622,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Throw", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Throw",
+                            3usize
                         )
                     })
             });
@@ -2551,7 +2641,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -2568,7 +2658,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Throw", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Throw",
+                            3usize
                         )
                     })
             });
@@ -2589,7 +2680,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2607,7 +2698,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VerifyEntityReference", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VerifyEntityReference", 4usize
                         )
                     })
             });
@@ -2628,12 +2720,13 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -2650,7 +2743,7 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2659,7 +2752,8 @@ impl crate::System::Xml::DtdParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_BaseUriStr", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_BaseUriStr", 0usize
                         )
                     })
             });
@@ -2672,12 +2766,13 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IgnoreEntityReferences")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IgnoreEntityReferences", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IgnoreEntityReferences", 0usize
                         )
                     })
             });
@@ -2688,12 +2783,13 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_LineNo")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_LineNo", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_LineNo", 0usize
                         )
                     })
             });
@@ -2704,12 +2800,13 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_LinePos")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_LinePos", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_LinePos", 0usize
                         )
                     })
             });
@@ -2720,12 +2817,13 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_Normalize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Normalize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Normalize", 0usize
                         )
                     })
             });
@@ -2736,12 +2834,13 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_ParsingInternalSubset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ParsingInternalSubset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ParsingInternalSubset", 0usize
                         )
                     })
             });
@@ -2752,12 +2851,13 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_ParsingTopLevelMarkup")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ParsingTopLevelMarkup", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ParsingTopLevelMarkup", 0usize
                         )
                     })
             });
@@ -2770,12 +2870,13 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_SaveInternalSubsetValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SaveInternalSubsetValue", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SaveInternalSubsetValue", 0usize
                         )
                     })
             });
@@ -2786,12 +2887,13 @@ impl crate::System::Xml::DtdParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_SupportNamespaces")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SupportNamespaces", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SupportNamespaces", 0usize
                         )
                     })
             });
@@ -2972,12 +3074,13 @@ impl crate::System::Xml::DtdParser_ParseElementOnlyContent_LocalFrame {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -3321,7 +3424,7 @@ impl crate::System::Xml::DtdParser_UndeclaredNotation {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -3336,7 +3439,8 @@ impl crate::System::Xml::DtdParser_UndeclaredNotation {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });

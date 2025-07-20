@@ -47,12 +47,13 @@ impl crate::HMUI::ITableCellOwner {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_canSelectSelectedCell")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_canSelectSelectedCell", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_canSelectSelectedCell", 0usize
                         )
                     })
             });
@@ -63,12 +64,13 @@ impl crate::HMUI::ITableCellOwner {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_numberOfCells")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_numberOfCells", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_numberOfCells", 0usize
                         )
                     })
             });
@@ -81,7 +83,7 @@ impl crate::HMUI::ITableCellOwner {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::HMUI::TableViewSelectionType,
@@ -90,7 +92,8 @@ impl crate::HMUI::ITableCellOwner {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_selectionType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_selectionType", 0usize
                         )
                     })
             });

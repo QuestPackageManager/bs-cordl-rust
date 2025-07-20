@@ -107,12 +107,13 @@ impl crate::System::Xml::BinXmlSqlDecimal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32), char, 1usize>("ChFromDigit")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ChFromDigit", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ChFromDigit", 1usize
                         )
                     })
             });
@@ -128,7 +129,7 @@ impl crate::System::Xml::BinXmlSqlDecimal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -144,7 +145,8 @@ impl crate::System::Xml::BinXmlSqlDecimal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MpDiv1", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "MpDiv1",
+                            4usize
                         )
                     })
             });
@@ -160,7 +162,7 @@ impl crate::System::Xml::BinXmlSqlDecimal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -174,7 +176,8 @@ impl crate::System::Xml::BinXmlSqlDecimal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MpNormalize", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MpNormalize", 2usize
                         )
                     })
             });
@@ -189,12 +192,13 @@ impl crate::System::Xml::BinXmlSqlDecimal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::System::Decimal, 0usize>("ToDecimal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToDecimal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToDecimal", 0usize
                         )
                     })
             });
@@ -211,7 +215,7 @@ impl crate::System::Xml::BinXmlSqlDecimal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -220,7 +224,8 @@ impl crate::System::Xml::BinXmlSqlDecimal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToString", 0usize
                         )
                     })
             });
@@ -235,7 +240,7 @@ impl crate::System::Xml::BinXmlSqlDecimal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -244,7 +249,8 @@ impl crate::System::Xml::BinXmlSqlDecimal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TrimTrailingZeros", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TrimTrailingZeros", 0usize
                         )
                     })
             });
@@ -260,7 +266,7 @@ impl crate::System::Xml::BinXmlSqlDecimal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -274,7 +280,8 @@ impl crate::System::Xml::BinXmlSqlDecimal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UIntFromByteArray", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UIntFromByteArray", 2usize
                         )
                     })
             });
@@ -290,7 +297,7 @@ impl crate::System::Xml::BinXmlSqlDecimal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -305,7 +312,8 @@ impl crate::System::Xml::BinXmlSqlDecimal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -318,12 +326,13 @@ impl crate::System::Xml::BinXmlSqlDecimal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsPositive")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsPositive", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsPositive", 0usize
                         )
                     })
             });

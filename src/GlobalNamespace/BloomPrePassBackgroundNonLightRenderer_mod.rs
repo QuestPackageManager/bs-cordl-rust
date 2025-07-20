@@ -50,12 +50,13 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Awake", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Awake",
+                            0usize
                         )
                     })
             });
@@ -70,7 +71,7 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -79,7 +80,8 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitIfNeeded", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitIfNeeded", 0usize
                         )
                     })
             });
@@ -101,12 +103,13 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnEnable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnEnable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnEnable", 0usize
                         )
                     })
             });
@@ -121,12 +124,13 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnValidate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnValidate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnValidate", 0usize
                         )
                     })
             });
@@ -142,7 +146,7 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>),
                         quest_hook::libil2cpp::Void,
@@ -151,7 +155,8 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetRenderer", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetRenderer", 1usize
                         )
                     })
             });
@@ -166,12 +171,13 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -188,7 +194,7 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -197,7 +203,8 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_cachedTransform", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_cachedTransform", 0usize
                         )
                     })
             });
@@ -214,7 +221,7 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
@@ -223,7 +230,8 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_meshFilter", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_meshFilter", 0usize
                         )
                     })
             });
@@ -240,7 +248,7 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
@@ -249,7 +257,8 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_renderer", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_renderer", 0usize
                         )
                     })
             });
@@ -265,7 +274,7 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -274,7 +283,8 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundNonLightRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_isPartOfInstancedRendering", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_isPartOfInstancedRendering", 1usize
                         )
                     })
             });

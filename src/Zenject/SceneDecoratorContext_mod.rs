@@ -73,7 +73,7 @@ impl crate::Zenject::SceneDecoratorContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::List_1<
@@ -86,7 +86,8 @@ impl crate::Zenject::SceneDecoratorContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetInjectableMonoBehaviours", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetInjectableMonoBehaviours", 1usize
                         )
                     })
             });
@@ -107,7 +108,7 @@ impl crate::Zenject::SceneDecoratorContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -120,7 +121,8 @@ impl crate::Zenject::SceneDecoratorContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetRootGameObjects", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetRootGameObjects", 0usize
                         )
                     })
             });
@@ -138,7 +140,7 @@ impl crate::Zenject::SceneDecoratorContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>),
                         quest_hook::libil2cpp::Void,
@@ -147,7 +149,8 @@ impl crate::Zenject::SceneDecoratorContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize", 1usize
                         )
                     })
             });
@@ -162,7 +165,7 @@ impl crate::Zenject::SceneDecoratorContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -171,7 +174,8 @@ impl crate::Zenject::SceneDecoratorContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstallDecoratorInstallers", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstallDecoratorInstallers", 0usize
                         )
                     })
             });
@@ -186,7 +190,7 @@ impl crate::Zenject::SceneDecoratorContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -195,7 +199,8 @@ impl crate::Zenject::SceneDecoratorContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstallDecoratorSceneBindings", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstallDecoratorSceneBindings", 0usize
                         )
                     })
             });
@@ -210,7 +215,7 @@ impl crate::Zenject::SceneDecoratorContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -219,7 +224,8 @@ impl crate::Zenject::SceneDecoratorContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstallLateDecoratorInstallers", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstallLateDecoratorInstallers", 0usize
                         )
                     })
             });
@@ -241,7 +247,7 @@ impl crate::Zenject::SceneDecoratorContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
@@ -250,7 +256,8 @@ impl crate::Zenject::SceneDecoratorContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "__zenCreateInjectTypeInfo", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "__zenCreateInjectTypeInfo", 0usize
                         )
                     })
             });
@@ -265,12 +272,13 @@ impl crate::Zenject::SceneDecoratorContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -287,7 +295,7 @@ impl crate::Zenject::SceneDecoratorContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
@@ -296,7 +304,8 @@ impl crate::Zenject::SceneDecoratorContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Container", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Container", 0usize
                         )
                     })
             });
@@ -313,7 +322,7 @@ impl crate::Zenject::SceneDecoratorContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -322,7 +331,8 @@ impl crate::Zenject::SceneDecoratorContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_DecoratedContractName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_DecoratedContractName", 0usize
                         )
                     })
             });
@@ -343,7 +353,7 @@ impl crate::Zenject::SceneDecoratorContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -356,7 +366,8 @@ impl crate::Zenject::SceneDecoratorContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_LateInstallerPrefabs", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_LateInstallerPrefabs", 0usize
                         )
                     })
             });
@@ -379,7 +390,7 @@ impl crate::Zenject::SceneDecoratorContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -392,7 +403,8 @@ impl crate::Zenject::SceneDecoratorContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_LateInstallers", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_LateInstallers", 0usize
                         )
                     })
             });
@@ -415,7 +427,7 @@ impl crate::Zenject::SceneDecoratorContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -430,7 +442,8 @@ impl crate::Zenject::SceneDecoratorContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_LateScriptableObjectInstallers", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_LateScriptableObjectInstallers", 0usize
                         )
                     })
             });
@@ -452,7 +465,7 @@ impl crate::Zenject::SceneDecoratorContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<
@@ -465,7 +478,8 @@ impl crate::Zenject::SceneDecoratorContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_LateInstallerPrefabs", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_LateInstallerPrefabs", 1usize
                         )
                     })
             });
@@ -485,7 +499,7 @@ impl crate::Zenject::SceneDecoratorContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<
@@ -498,7 +512,8 @@ impl crate::Zenject::SceneDecoratorContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_LateInstallers", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_LateInstallers", 1usize
                         )
                     })
             });
@@ -518,7 +533,7 @@ impl crate::Zenject::SceneDecoratorContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<
@@ -533,7 +548,8 @@ impl crate::Zenject::SceneDecoratorContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_LateScriptableObjectInstallers", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_LateScriptableObjectInstallers", 1usize
                         )
                     })
             });

@@ -53,7 +53,7 @@ impl crate::System::Xml::Schema::InteriorNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -72,7 +72,8 @@ impl crate::System::Xml::Schema::InteriorNode {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExpandTree", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExpandTree", 3usize
                         )
                     })
             });
@@ -92,7 +93,7 @@ impl crate::System::Xml::Schema::InteriorNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -111,7 +112,8 @@ impl crate::System::Xml::Schema::InteriorNode {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExpandTreeNoRecursive", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExpandTreeNoRecursive", 3usize
                         )
                     })
             });
@@ -133,12 +135,13 @@ impl crate::System::Xml::Schema::InteriorNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -155,7 +158,7 @@ impl crate::System::Xml::Schema::InteriorNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -166,7 +169,8 @@ impl crate::System::Xml::Schema::InteriorNode {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_LeftChild", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_LeftChild", 0usize
                         )
                     })
             });
@@ -183,7 +187,7 @@ impl crate::System::Xml::Schema::InteriorNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -194,7 +198,8 @@ impl crate::System::Xml::Schema::InteriorNode {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_RightChild", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_RightChild", 0usize
                         )
                     })
             });
@@ -210,7 +215,7 @@ impl crate::System::Xml::Schema::InteriorNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::Schema::SyntaxTreeNode,
@@ -221,7 +226,8 @@ impl crate::System::Xml::Schema::InteriorNode {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_LeftChild", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_LeftChild", 1usize
                         )
                     })
             });
@@ -237,7 +243,7 @@ impl crate::System::Xml::Schema::InteriorNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::Schema::SyntaxTreeNode,
@@ -248,7 +254,8 @@ impl crate::System::Xml::Schema::InteriorNode {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_RightChild", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_RightChild", 1usize
                         )
                     })
             });

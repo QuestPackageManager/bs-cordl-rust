@@ -119,12 +119,13 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Awake", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Awake",
+                            0usize
                         )
                     })
             });
@@ -140,7 +141,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -149,7 +150,8 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleAdvancedHudToggleChanged", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleAdvancedHudToggleChanged", 1usize
                         )
                     })
             });
@@ -166,7 +168,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, crate::GlobalNamespace::ArcVisibilityType),
                         quest_hook::libil2cpp::Void,
@@ -175,7 +177,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "HandleArcVisibilityDropdownDidSelectCellWithIdx", 2usize
                         )
                     })
@@ -195,7 +197,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -209,7 +211,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "HandleHeadsetHapticIntensityControllerValueDidChange",
                             2usize
                         )
@@ -228,7 +230,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, crate::GlobalNamespace::EnvironmentEffectsFilterPreset),
                         quest_hook::libil2cpp::Void,
@@ -237,7 +239,8 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleLightReductionAmountSelected", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleLightReductionAmountSelected", 2usize
                         )
                     })
             });
@@ -253,7 +256,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -262,7 +265,8 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleNoTextsAndHudsToggleChanged", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleNoTextsAndHudsToggleChanged", 1usize
                         )
                     })
             });
@@ -279,7 +283,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, crate::GlobalNamespace::NoteJumpDurationTypeSettings),
                         quest_hook::libil2cpp::Void,
@@ -288,7 +292,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "HandleNoteJumpDurationTypeSettingsDropdownDidSelectCellWithIdx",
                             2usize
                         )
@@ -309,7 +313,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -323,7 +327,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "HandleNoteJumpFixedDurationSettingsControllerValueDidChange",
                             2usize
                         )
@@ -342,7 +346,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, f32),
                         quest_hook::libil2cpp::Void,
@@ -351,7 +355,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "HandleNoteJumpStartBeatOffsetPositionSelected", 2usize
                         )
                     })
@@ -368,7 +372,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -377,7 +381,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "HandlePlayerHeightSettingsControllerValueDidChange", 1usize
                         )
                     })
@@ -397,7 +401,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -411,7 +415,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "HandleSFXVolumeSettingsControllerValueDidChange", 2usize
                         )
                     })
@@ -431,7 +435,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -445,7 +449,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "HandleSaberTrailIntensitySettingsControllerValueDidChange",
                             2usize
                         )
@@ -469,12 +473,13 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDestroy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDestroy", 0usize
                         )
                     })
             });
@@ -489,12 +494,13 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDisable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDisable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDisable", 0usize
                         )
                     })
             });
@@ -509,12 +515,13 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnEnable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnEnable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnEnable", 0usize
                         )
                     })
             });
@@ -529,12 +536,13 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Refresh")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Refresh", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Refresh",
+                            0usize
                         )
                     })
             });
@@ -551,7 +559,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::ArcVisibilityType, bool),
                         quest_hook::libil2cpp::Void,
@@ -560,7 +568,8 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RefreshArcsWarning", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RefreshArcsWarning", 2usize
                         )
                     })
             });
@@ -576,7 +585,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::NoteJumpDurationTypeSettings),
                         quest_hook::libil2cpp::Void,
@@ -585,7 +594,8 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RefreshNoteJumpUI", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RefreshNoteJumpUI", 1usize
                         )
                     })
             });
@@ -601,7 +611,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData>),
                         quest_hook::libil2cpp::Void,
@@ -610,7 +620,8 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetData",
+                            1usize
                         )
                     })
             });
@@ -625,12 +636,13 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SetIsDirty")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetIsDirty", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetIsDirty", 0usize
                         )
                     })
             });
@@ -646,7 +658,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::PlayerSettingsPanelController_PlayerSettingsPanelLayout),
                         quest_hook::libil2cpp::Void,
@@ -655,7 +667,8 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetLayout", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetLayout", 1usize
                         )
                     })
             });
@@ -672,7 +685,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
@@ -684,7 +697,8 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetSectionDisabled", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetSectionDisabled", 2usize
                         )
                     })
             });
@@ -699,7 +713,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -708,7 +722,8 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnsubscribeAllUICallbacks", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnsubscribeAllUICallbacks", 0usize
                         )
                     })
             });
@@ -724,7 +739,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -733,7 +748,8 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<OnEnable>b__42_0", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<OnEnable>b__42_0", 1usize
                         )
                     })
             });
@@ -749,7 +765,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -758,7 +774,8 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<OnEnable>b__42_1", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<OnEnable>b__42_1", 1usize
                         )
                     })
             });
@@ -774,7 +791,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -783,7 +800,8 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<OnEnable>b__42_2", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<OnEnable>b__42_2", 1usize
                         )
                     })
             });
@@ -799,7 +817,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -808,7 +826,8 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<OnEnable>b__42_3", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<OnEnable>b__42_3", 1usize
                         )
                     })
             });
@@ -824,7 +843,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -833,7 +852,8 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<OnEnable>b__42_4", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<OnEnable>b__42_4", 1usize
                         )
                     })
             });
@@ -849,7 +869,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -858,7 +878,8 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<OnEnable>b__42_5", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<OnEnable>b__42_5", 1usize
                         )
                     })
             });
@@ -874,7 +895,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -883,7 +904,8 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<OnEnable>b__42_6", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<OnEnable>b__42_6", 1usize
                         )
                     })
             });
@@ -898,7 +920,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -907,7 +929,8 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<OnEnable>b__42_7", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<OnEnable>b__42_7", 0usize
                         )
                     })
             });
@@ -922,7 +945,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -931,7 +954,8 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<OnEnable>b__42_8", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<OnEnable>b__42_8", 0usize
                         )
                     })
             });
@@ -946,12 +970,13 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -967,7 +992,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -976,7 +1001,8 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_didChangePlayerSettingsEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_didChangePlayerSettingsEvent", 1usize
                         )
                     })
             });
@@ -993,7 +1019,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1004,7 +1030,8 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_playerSpecificSettings", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_playerSpecificSettings", 0usize
                         )
                     })
             });
@@ -1020,7 +1047,7 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -1029,7 +1056,8 @@ impl crate::GlobalNamespace::PlayerSettingsPanelController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_didChangePlayerSettingsEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_didChangePlayerSettingsEvent", 1usize
                         )
                     })
             });

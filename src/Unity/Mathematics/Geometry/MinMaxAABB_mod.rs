@@ -109,7 +109,7 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::Geometry::MinMaxAABB),
                         bool,
@@ -118,7 +118,8 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Contains", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Contains", 1usize
                         )
                     })
             });
@@ -132,7 +133,7 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::float3),
                         bool,
@@ -141,7 +142,8 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Contains", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Contains", 1usize
                         )
                     })
             });
@@ -155,7 +157,7 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Unity::Mathematics::float3,
@@ -167,7 +169,8 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateFromCenterAndExtents", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateFromCenterAndExtents", 2usize
                         )
                     })
             });
@@ -183,7 +186,7 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Unity::Mathematics::float3,
@@ -195,7 +198,8 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateFromCenterAndHalfExtents", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateFromCenterAndHalfExtents", 2usize
                         )
                     })
             });
@@ -211,7 +215,7 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::Geometry::MinMaxAABB),
                         quest_hook::libil2cpp::Void,
@@ -220,7 +224,8 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Encapsulate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Encapsulate", 1usize
                         )
                     })
             });
@@ -236,7 +241,7 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::float3),
                         quest_hook::libil2cpp::Void,
@@ -245,7 +250,8 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Encapsulate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Encapsulate", 1usize
                         )
                     })
             });
@@ -261,7 +267,7 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::Geometry::MinMaxAABB),
                         bool,
@@ -270,7 +276,8 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Equals", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            1usize
                         )
                     })
             });
@@ -284,12 +291,13 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>("Expand")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Expand", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Expand",
+                            1usize
                         )
                     })
             });
@@ -305,7 +313,7 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::Geometry::MinMaxAABB),
                         bool,
@@ -314,7 +322,8 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Overlaps", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Overlaps", 1usize
                         )
                     })
             });
@@ -329,7 +338,7 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -338,7 +347,8 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToString", 0usize
                         )
                     })
             });
@@ -355,7 +365,7 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::Unity::Mathematics::float3,
@@ -367,7 +377,8 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -382,7 +393,7 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::float3,
@@ -391,7 +402,8 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Center", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Center", 0usize
                         )
                     })
             });
@@ -406,7 +418,7 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::float3,
@@ -415,7 +427,8 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Extents", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Extents", 0usize
                         )
                     })
             });
@@ -430,7 +443,7 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::float3,
@@ -439,7 +452,8 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_HalfExtents", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_HalfExtents", 0usize
                         )
                     })
             });
@@ -452,12 +466,13 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsValid")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsValid", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsValid", 0usize
                         )
                     })
             });
@@ -468,12 +483,13 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_SurfaceArea")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SurfaceArea", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SurfaceArea", 0usize
                         )
                     })
             });

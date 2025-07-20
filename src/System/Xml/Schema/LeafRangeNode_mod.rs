@@ -52,7 +52,7 @@ impl crate::System::Xml::Schema::LeafRangeNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -71,7 +71,8 @@ impl crate::System::Xml::Schema::LeafRangeNode {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExpandTree", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExpandTree", 3usize
                         )
                     })
             });
@@ -109,7 +110,7 @@ impl crate::System::Xml::Schema::LeafRangeNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Decimal, crate::System::Decimal),
                         quest_hook::libil2cpp::Void,
@@ -118,7 +119,8 @@ impl crate::System::Xml::Schema::LeafRangeNode {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -136,7 +138,7 @@ impl crate::System::Xml::Schema::LeafRangeNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, crate::System::Decimal, crate::System::Decimal),
                         quest_hook::libil2cpp::Void,
@@ -145,7 +147,8 @@ impl crate::System::Xml::Schema::LeafRangeNode {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -158,12 +161,13 @@ impl crate::System::Xml::Schema::LeafRangeNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsRangeNode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsRangeNode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsRangeNode", 0usize
                         )
                     })
             });
@@ -174,12 +178,13 @@ impl crate::System::Xml::Schema::LeafRangeNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::System::Decimal, 0usize>("get_Max")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Max", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_Max",
+                            0usize
                         )
                     })
             });
@@ -192,12 +197,13 @@ impl crate::System::Xml::Schema::LeafRangeNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::System::Decimal, 0usize>("get_Min")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Min", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_Min",
+                            0usize
                         )
                     })
             });
@@ -214,7 +220,7 @@ impl crate::System::Xml::Schema::LeafRangeNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
@@ -223,7 +229,8 @@ impl crate::System::Xml::Schema::LeafRangeNode {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_NextIteration", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_NextIteration", 0usize
                         )
                     })
             });
@@ -239,7 +246,7 @@ impl crate::System::Xml::Schema::LeafRangeNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>),
                         quest_hook::libil2cpp::Void,
@@ -248,7 +255,8 @@ impl crate::System::Xml::Schema::LeafRangeNode {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_NextIteration", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_NextIteration", 1usize
                         )
                     })
             });

@@ -65,7 +65,7 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -74,7 +74,8 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Dispose", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            1usize
                         )
                     })
             });
@@ -92,7 +93,7 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         crate::System::Security::Cryptography::DSAParameters,
@@ -101,7 +102,8 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExportParameters", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExportParameters", 1usize
                         )
                     })
             });
@@ -116,12 +118,13 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Finalize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Finalize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Finalize", 0usize
                         )
                     })
             });
@@ -136,12 +139,13 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Generate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Generate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Generate", 0usize
                         )
                     })
             });
@@ -156,7 +160,7 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -165,7 +169,8 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenerateKeyPair", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateKeyPair", 0usize
                         )
                     })
             });
@@ -181,7 +186,7 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -190,7 +195,8 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenerateParams", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateParams", 1usize
                         )
                     })
             });
@@ -206,7 +212,7 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Security::Cryptography::DSAParameters),
                         quest_hook::libil2cpp::Void,
@@ -215,7 +221,8 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ImportParameters", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ImportParameters", 1usize
                         )
                     })
             });
@@ -242,7 +249,7 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -255,7 +262,8 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NormalizeArray", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NormalizeArray", 1usize
                         )
                     })
             });
@@ -272,7 +280,7 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -288,7 +296,8 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VerifySignature", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VerifySignature", 2usize
                         )
                     })
             });
@@ -304,12 +313,13 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -327,7 +337,7 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -344,7 +354,8 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "add",
+                            3usize
                         )
                     })
             });
@@ -362,7 +373,7 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Mono::Security::Cryptography::DSAManaged_KeyGeneratedEventHandler,
@@ -373,7 +384,8 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_KeyGenerated", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_KeyGenerated", 1usize
                         )
                     })
             });
@@ -386,12 +398,13 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_KeySize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_KeySize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_KeySize", 0usize
                         )
                     })
             });
@@ -402,12 +415,13 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_PublicOnly")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_PublicOnly", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_PublicOnly", 0usize
                         )
                     })
             });
@@ -424,7 +438,7 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -435,7 +449,8 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Random", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Random", 0usize
                         )
                     })
             });
@@ -453,7 +468,7 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Mono::Security::Cryptography::DSAManaged_KeyGeneratedEventHandler,
@@ -464,7 +479,8 @@ impl crate::Mono::Security::Cryptography::DSAManaged {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_KeyGenerated", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_KeyGenerated", 1usize
                         )
                     })
             });
@@ -535,7 +551,7 @@ impl crate::Mono::Security::Cryptography::DSAManaged_KeyGeneratedEventHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -549,7 +565,8 @@ impl crate::Mono::Security::Cryptography::DSAManaged_KeyGeneratedEventHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Invoke", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Invoke",
+                            2usize
                         )
                     })
             });
@@ -576,7 +593,7 @@ impl crate::Mono::Security::Cryptography::DSAManaged_KeyGeneratedEventHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -590,7 +607,8 @@ impl crate::Mono::Security::Cryptography::DSAManaged_KeyGeneratedEventHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });

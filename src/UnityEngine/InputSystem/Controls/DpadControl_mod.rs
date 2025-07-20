@@ -61,7 +61,7 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -70,7 +70,8 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FinishSetup", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FinishSetup", 0usize
                         )
                     })
             });
@@ -89,7 +90,7 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool, bool, bool, bool, bool),
                         crate::UnityEngine::Vector2,
@@ -98,7 +99,8 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MakeDpadVector", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MakeDpadVector", 5usize
                         )
                     })
             });
@@ -116,7 +118,7 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32, f32, f32, f32),
                         crate::UnityEngine::Vector2,
@@ -125,7 +127,8 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MakeDpadVector", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MakeDpadVector", 4usize
                         )
                     })
             });
@@ -148,7 +151,7 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         crate::UnityEngine::Vector2,
@@ -157,7 +160,8 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadUnprocessedValueFromState", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadUnprocessedValueFromState", 1usize
                         )
                     })
             });
@@ -174,7 +178,7 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Vector2,
@@ -188,7 +192,8 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueIntoState", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueIntoState", 2usize
                         )
                     })
             });
@@ -203,12 +208,13 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -227,7 +233,7 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -238,7 +244,8 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_down", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_down", 0usize
                         )
                     })
             });
@@ -257,7 +264,7 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -268,7 +275,8 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_left", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_left", 0usize
                         )
                     })
             });
@@ -287,7 +295,7 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -298,7 +306,8 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_right", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_right", 0usize
                         )
                     })
             });
@@ -317,7 +326,7 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -328,7 +337,8 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_up", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_up",
+                            0usize
                         )
                     })
             });
@@ -346,7 +356,7 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -357,7 +367,8 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_down", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_down", 1usize
                         )
                     })
             });
@@ -375,7 +386,7 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -386,7 +397,8 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_left", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_left", 1usize
                         )
                     })
             });
@@ -404,7 +416,7 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -415,7 +427,8 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_right", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_right", 1usize
                         )
                     })
             });
@@ -433,7 +446,7 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -444,7 +457,8 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_up", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_up",
+                            1usize
                         )
                     })
             });
@@ -608,7 +622,7 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl_DpadAxisControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -617,7 +631,8 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl_DpadAxisControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FinishSetup", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FinishSetup", 0usize
                         )
                     })
             });
@@ -640,7 +655,7 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl_DpadAxisControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         f32,
@@ -649,7 +664,8 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl_DpadAxisControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadUnprocessedValueFromState", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadUnprocessedValueFromState", 1usize
                         )
                     })
             });
@@ -662,12 +678,13 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl_DpadAxisControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -680,12 +697,13 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl_DpadAxisControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_component")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_component", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_component", 0usize
                         )
                     })
             });
@@ -699,7 +717,7 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl_DpadAxisControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -708,7 +726,8 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl_DpadAxisControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_component", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_component", 1usize
                         )
                     })
             });

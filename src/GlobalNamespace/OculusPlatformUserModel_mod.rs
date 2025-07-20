@@ -73,7 +73,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -88,7 +88,8 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetUserAuthToken", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetUserAuthToken", 0usize
                         )
                     })
             });
@@ -118,7 +119,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Gc<
@@ -137,7 +138,8 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetUserFriendsUserIds", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetUserFriendsUserIds", 1usize
                         )
                     })
             });
@@ -165,7 +167,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<
@@ -178,7 +180,8 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetUserInfo", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetUserInfo", 1usize
                         )
                     })
             });
@@ -202,7 +205,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<
@@ -215,7 +218,8 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetUserInfoInternalAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetUserInfoInternalAsync", 1usize
                         )
                     })
             });
@@ -247,7 +251,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IReadOnlyList_1<
@@ -272,7 +276,8 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetUserNamesForUserIds", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetUserNamesForUserIds", 1usize
                         )
                     })
             });
@@ -293,7 +298,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::BGLib::Polyglot::Language,
@@ -302,7 +307,8 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetUsersSystemLanguage", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetUsersSystemLanguage", 0usize
                         )
                     })
             });
@@ -333,7 +339,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<
@@ -346,7 +352,8 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RequestXPlatformAccessToken", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RequestXPlatformAccessToken", 1usize
                         )
                     })
             });
@@ -373,7 +380,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -392,8 +399,8 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<GetUserNamesForUserIds>g__Fetch|16_0",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<GetUserNamesForUserIds>g__Fetch|16_0", 1usize
                         )
                     })
             });
@@ -415,7 +422,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::BeatSaber::Init::IPlatformInit,
@@ -426,7 +433,8 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -446,7 +454,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -459,7 +467,8 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_platformUserInfoDidChangeEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_platformUserInfoDidChangeEvent", 1usize
                         )
                     })
             });
@@ -474,7 +483,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         bool,
@@ -483,7 +492,8 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CanXPlatformAccessTokenBeCached", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CanXPlatformAccessTokenBeCached", 0usize
                         )
                     })
             });
@@ -501,7 +511,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -514,8 +524,8 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_platformUserInfoDidChangeEvent",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_platformUserInfoDidChangeEvent", 1usize
                         )
                     })
             });
@@ -673,12 +683,13 @@ impl crate::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g_
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("MoveNext")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MoveNext", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MoveNext", 0usize
                         )
                     })
             });
@@ -696,7 +707,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g_
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Runtime::CompilerServices::IAsyncStateMachine,
@@ -707,7 +718,8 @@ impl crate::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g_
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetStateMachine", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetStateMachine", 1usize
                         )
                     })
             });

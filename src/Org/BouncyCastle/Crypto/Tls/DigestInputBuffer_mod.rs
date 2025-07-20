@@ -55,7 +55,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DigestInputBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Crypto::IDigest,
@@ -66,7 +66,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DigestInputBuffer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateDigest", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateDigest", 1usize
                         )
                     })
             });
@@ -81,12 +82,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DigestInputBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -168,7 +170,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DigestInputBuffer_DigStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -183,7 +185,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DigestInputBuffer_DigStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Write", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Write",
+                            3usize
                         )
                     })
             });
@@ -199,7 +202,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DigestInputBuffer_DigStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u8),
                         quest_hook::libil2cpp::Void,
@@ -208,7 +211,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DigestInputBuffer_DigStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteByte", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteByte", 1usize
                         )
                     })
             });
@@ -224,7 +228,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DigestInputBuffer_DigStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Crypto::IDigest,
@@ -235,7 +239,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DigestInputBuffer_DigStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });

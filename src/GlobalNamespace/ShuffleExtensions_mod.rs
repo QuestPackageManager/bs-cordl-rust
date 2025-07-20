@@ -56,7 +56,7 @@ impl crate::GlobalNamespace::ShuffleExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -75,7 +75,8 @@ impl crate::GlobalNamespace::ShuffleExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PickRandomElementsWithTombstone", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PickRandomElementsWithTombstone", 5usize
                         )
                     })
             });
@@ -101,7 +102,7 @@ impl crate::GlobalNamespace::ShuffleExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -117,7 +118,8 @@ impl crate::GlobalNamespace::ShuffleExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Shuffle", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Shuffle",
+                            2usize
                         )
                     })
             });
@@ -137,7 +139,7 @@ impl crate::GlobalNamespace::ShuffleExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -151,7 +153,8 @@ impl crate::GlobalNamespace::ShuffleExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShuffleInPlace", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShuffleInPlace", 2usize
                         )
                     })
             });
@@ -176,7 +179,7 @@ impl crate::GlobalNamespace::ShuffleExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -193,7 +196,8 @@ impl crate::GlobalNamespace::ShuffleExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TakeWithTombstone", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TakeWithTombstone", 3usize
                         )
                     })
             });
@@ -220,7 +224,7 @@ impl crate::GlobalNamespace::ShuffleExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -241,7 +245,8 @@ impl crate::GlobalNamespace::ShuffleExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ZipSkipTombstone", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ZipSkipTombstone", 3usize
                         )
                     })
             });

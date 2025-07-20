@@ -93,7 +93,7 @@ impl crate::GlobalNamespace::MultiplayerIntroAnimationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -110,7 +110,8 @@ impl crate::GlobalNamespace::MultiplayerIntroAnimationController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindRingsAndSetTiming", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindRingsAndSetTiming", 3usize
                         )
                     })
             });
@@ -129,7 +130,7 @@ impl crate::GlobalNamespace::MultiplayerIntroAnimationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -138,7 +139,8 @@ impl crate::GlobalNamespace::MultiplayerIntroAnimationController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindTimeline", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindTimeline", 0usize
                         )
                     })
             });
@@ -160,7 +162,7 @@ impl crate::GlobalNamespace::MultiplayerIntroAnimationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IReadOnlyList_1<
@@ -177,7 +179,8 @@ impl crate::GlobalNamespace::MultiplayerIntroAnimationController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CalculatePlayerIndexSequence", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CalculatePlayerIndexSequence", 1usize
                         )
                     })
             });
@@ -192,12 +195,13 @@ impl crate::GlobalNamespace::MultiplayerIntroAnimationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Completed")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Completed", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Completed", 0usize
                         )
                     })
             });
@@ -210,12 +214,13 @@ impl crate::GlobalNamespace::MultiplayerIntroAnimationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i64, 0usize>("GetFullIntroAnimationTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetFullIntroAnimationTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetFullIntroAnimationTime", 0usize
                         )
                     })
             });
@@ -235,12 +240,13 @@ impl crate::GlobalNamespace::MultiplayerIntroAnimationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnValidate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnValidate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnValidate", 0usize
                         )
                     })
             });
@@ -257,7 +263,7 @@ impl crate::GlobalNamespace::MultiplayerIntroAnimationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32, quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -266,7 +272,8 @@ impl crate::GlobalNamespace::MultiplayerIntroAnimationController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PlayIntroAnimation", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PlayIntroAnimation", 2usize
                         )
                     })
             });
@@ -282,7 +289,7 @@ impl crate::GlobalNamespace::MultiplayerIntroAnimationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -291,7 +298,8 @@ impl crate::GlobalNamespace::MultiplayerIntroAnimationController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetBeforeIntroValue", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetBeforeIntroValue", 0usize
                         )
                     })
             });
@@ -306,7 +314,7 @@ impl crate::GlobalNamespace::MultiplayerIntroAnimationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -315,7 +323,8 @@ impl crate::GlobalNamespace::MultiplayerIntroAnimationController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TransitionToAfterIntroAnimationState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TransitionToAfterIntroAnimationState", 0usize
                         )
                     })
             });
@@ -330,12 +339,13 @@ impl crate::GlobalNamespace::MultiplayerIntroAnimationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

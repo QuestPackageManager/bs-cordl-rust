@@ -56,12 +56,13 @@ impl crate::GlobalNamespace::CampaignProgressModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Awake", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Awake",
+                            0usize
                         )
                     })
             });
@@ -77,7 +78,7 @@ impl crate::GlobalNamespace::CampaignProgressModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -86,7 +87,8 @@ impl crate::GlobalNamespace::CampaignProgressModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsMissionCleared", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsMissionCleared", 1usize
                         )
                     })
             });
@@ -100,7 +102,7 @@ impl crate::GlobalNamespace::CampaignProgressModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -109,7 +111,8 @@ impl crate::GlobalNamespace::CampaignProgressModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsMissionFinal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsMissionFinal", 1usize
                         )
                     })
             });
@@ -123,7 +126,7 @@ impl crate::GlobalNamespace::CampaignProgressModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -132,7 +135,8 @@ impl crate::GlobalNamespace::CampaignProgressModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsMissionRegistered", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsMissionRegistered", 1usize
                         )
                     })
             });
@@ -153,7 +157,7 @@ impl crate::GlobalNamespace::CampaignProgressModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -162,7 +166,8 @@ impl crate::GlobalNamespace::CampaignProgressModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterMissionId", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterMissionId", 1usize
                         )
                     })
             });
@@ -178,7 +183,7 @@ impl crate::GlobalNamespace::CampaignProgressModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -187,7 +192,8 @@ impl crate::GlobalNamespace::CampaignProgressModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetFinalMissionId", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetFinalMissionId", 1usize
                         )
                     })
             });
@@ -203,7 +209,7 @@ impl crate::GlobalNamespace::CampaignProgressModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -212,7 +218,8 @@ impl crate::GlobalNamespace::CampaignProgressModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetMissionCleared", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetMissionCleared", 1usize
                         )
                     })
             });
@@ -227,12 +234,13 @@ impl crate::GlobalNamespace::CampaignProgressModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("UpdateNumberOfClearedMissions")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateNumberOfClearedMissions", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateNumberOfClearedMissions", 0usize
                         )
                     })
             });
@@ -246,7 +254,7 @@ impl crate::GlobalNamespace::CampaignProgressModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -255,7 +263,8 @@ impl crate::GlobalNamespace::CampaignProgressModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WillFinishGameAfterThisMission", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WillFinishGameAfterThisMission", 1usize
                         )
                     })
             });
@@ -270,7 +279,7 @@ impl crate::GlobalNamespace::CampaignProgressModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -284,7 +293,8 @@ impl crate::GlobalNamespace::CampaignProgressModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "__SetMissionCleared", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "__SetMissionCleared", 2usize
                         )
                     })
             });
@@ -299,12 +309,13 @@ impl crate::GlobalNamespace::CampaignProgressModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -317,12 +328,13 @@ impl crate::GlobalNamespace::CampaignProgressModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_numberOfClearedMissions")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_numberOfClearedMissions", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_numberOfClearedMissions", 0usize
                         )
                     })
             });

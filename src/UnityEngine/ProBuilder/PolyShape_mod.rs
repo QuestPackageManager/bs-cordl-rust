@@ -54,12 +54,13 @@ impl crate::UnityEngine::ProBuilder::PolyShape {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsSnapEnabled")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsSnapEnabled", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsSnapEnabled", 0usize
                         )
                     })
             });
@@ -82,7 +83,7 @@ impl crate::UnityEngine::ProBuilder::PolyShape {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IList_1<
@@ -95,7 +96,8 @@ impl crate::UnityEngine::ProBuilder::PolyShape {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetControlPoints", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetControlPoints", 1usize
                         )
                     })
             });
@@ -110,12 +112,13 @@ impl crate::UnityEngine::ProBuilder::PolyShape {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -136,7 +139,7 @@ impl crate::UnityEngine::ProBuilder::PolyShape {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -149,7 +152,8 @@ impl crate::UnityEngine::ProBuilder::PolyShape {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_controlPoints", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_controlPoints", 0usize
                         )
                     })
             });
@@ -164,12 +168,13 @@ impl crate::UnityEngine::ProBuilder::PolyShape {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_extrude")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_extrude", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_extrude", 0usize
                         )
                     })
             });
@@ -180,12 +185,13 @@ impl crate::UnityEngine::ProBuilder::PolyShape {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_flipNormals")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_flipNormals", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_flipNormals", 0usize
                         )
                     })
             });
@@ -200,7 +206,7 @@ impl crate::UnityEngine::ProBuilder::PolyShape {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -211,7 +217,8 @@ impl crate::UnityEngine::ProBuilder::PolyShape {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_mesh", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_mesh", 0usize
                         )
                     })
             });
@@ -228,7 +235,7 @@ impl crate::UnityEngine::ProBuilder::PolyShape {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::ProBuilder::PolyShape_PolyEditMode,
@@ -237,7 +244,8 @@ impl crate::UnityEngine::ProBuilder::PolyShape {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_polyEditMode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_polyEditMode", 0usize
                         )
                     })
             });
@@ -253,7 +261,7 @@ impl crate::UnityEngine::ProBuilder::PolyShape {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -262,7 +270,8 @@ impl crate::UnityEngine::ProBuilder::PolyShape {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_extrude", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_extrude", 1usize
                         )
                     })
             });
@@ -278,7 +287,7 @@ impl crate::UnityEngine::ProBuilder::PolyShape {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -287,7 +296,8 @@ impl crate::UnityEngine::ProBuilder::PolyShape {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_flipNormals", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_flipNormals", 1usize
                         )
                     })
             });
@@ -303,7 +313,7 @@ impl crate::UnityEngine::ProBuilder::PolyShape {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::ProBuilderMesh,
@@ -314,7 +324,8 @@ impl crate::UnityEngine::ProBuilder::PolyShape {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_mesh", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_mesh", 1usize
                         )
                     })
             });
@@ -330,7 +341,7 @@ impl crate::UnityEngine::ProBuilder::PolyShape {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::ProBuilder::PolyShape_PolyEditMode),
                         quest_hook::libil2cpp::Void,
@@ -339,7 +350,8 @@ impl crate::UnityEngine::ProBuilder::PolyShape {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_polyEditMode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_polyEditMode", 1usize
                         )
                     })
             });

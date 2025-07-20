@@ -50,7 +50,7 @@ impl crate::GlobalNamespace::IDiffieHellmanKeyPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -63,7 +63,8 @@ impl crate::GlobalNamespace::IDiffieHellmanKeyPair {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPreMasterSecret", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPreMasterSecret", 1usize
                         )
                     })
             });
@@ -88,7 +89,7 @@ impl crate::GlobalNamespace::IDiffieHellmanKeyPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
@@ -108,7 +109,8 @@ impl crate::GlobalNamespace::IDiffieHellmanKeyPair {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPreMasterSecretAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPreMasterSecretAsync", 2usize
                         )
                     })
             });
@@ -132,7 +134,7 @@ impl crate::GlobalNamespace::IDiffieHellmanKeyPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -143,7 +145,8 @@ impl crate::GlobalNamespace::IDiffieHellmanKeyPair {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_publicKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_publicKey", 0usize
                         )
                     })
             });

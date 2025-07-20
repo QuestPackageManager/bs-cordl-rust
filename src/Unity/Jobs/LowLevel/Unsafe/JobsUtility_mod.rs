@@ -58,7 +58,7 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -78,7 +78,8 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateJobReflectionData", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateJobReflectionData", 4usize
                         )
                     })
             });
@@ -112,7 +113,7 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -133,7 +134,8 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateJobReflectionData", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateJobReflectionData", 5usize
                         )
                     })
             });
@@ -163,7 +165,7 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -179,7 +181,8 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetWorkStealingRange", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetWorkStealingRange", 4usize
                         )
                     })
             });
@@ -194,7 +197,7 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -203,7 +206,8 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InvokePanicFunction", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InvokePanicFunction", 0usize
                         )
                     })
             });
@@ -220,7 +224,7 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters,
@@ -231,7 +235,8 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Schedule", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Schedule", 1usize
                         )
                     })
             });
@@ -250,7 +255,7 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -265,7 +270,8 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScheduleParallelFor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScheduleParallelFor", 3usize
                         )
                     })
             });
@@ -285,7 +291,7 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -303,7 +309,8 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScheduleParallelFor_Injected", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScheduleParallelFor_Injected", 4usize
                         )
                     })
             });
@@ -325,7 +332,7 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -341,7 +348,8 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Schedule_Injected", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Schedule_Injected", 2usize
                         )
                     })
             });
@@ -356,7 +364,7 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -365,7 +373,8 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_JobCompilerEnabled", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_JobCompilerEnabled", 1usize
                         )
                     })
             });
@@ -501,7 +510,7 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -517,7 +526,8 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
                         )
                     })
             });
@@ -580,12 +590,13 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_PanicFunction_ {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Invoke")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Invoke", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Invoke",
+                            0usize
                         )
                     })
             });
@@ -612,7 +623,7 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_PanicFunction_ {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -626,7 +637,8 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_PanicFunction_ {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });

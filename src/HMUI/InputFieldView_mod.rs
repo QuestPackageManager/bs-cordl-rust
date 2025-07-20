@@ -73,7 +73,7 @@ impl crate::HMUI::InputFieldView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::HMUI::UIKeyboard>),
                         quest_hook::libil2cpp::Void,
@@ -82,7 +82,8 @@ impl crate::HMUI::InputFieldView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ActivateKeyboard", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ActivateKeyboard", 1usize
                         )
                     })
             });
@@ -97,12 +98,13 @@ impl crate::HMUI::InputFieldView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Awake", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Awake",
+                            0usize
                         )
                     })
             });
@@ -119,7 +121,7 @@ impl crate::HMUI::InputFieldView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -130,7 +132,8 @@ impl crate::HMUI::InputFieldView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BlinkingCaretCoroutine", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BlinkingCaretCoroutine", 0usize
                         )
                     })
             });
@@ -145,12 +148,13 @@ impl crate::HMUI::InputFieldView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ClearInput")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ClearInput", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ClearInput", 0usize
                         )
                     })
             });
@@ -166,7 +170,7 @@ impl crate::HMUI::InputFieldView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::HMUI::UIKeyboard>),
                         quest_hook::libil2cpp::Void,
@@ -175,7 +179,8 @@ impl crate::HMUI::InputFieldView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DeactivateKeyboard", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DeactivateKeyboard", 1usize
                         )
                     })
             });
@@ -192,7 +197,7 @@ impl crate::HMUI::InputFieldView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UI::Selectable_SelectionState, bool),
                         quest_hook::libil2cpp::Void,
@@ -201,7 +206,8 @@ impl crate::HMUI::InputFieldView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoStateTransition", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoStateTransition", 2usize
                         )
                     })
             });
@@ -216,7 +222,7 @@ impl crate::HMUI::InputFieldView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -225,7 +231,8 @@ impl crate::HMUI::InputFieldView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "KeyboardDeletePressed", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "KeyboardDeletePressed", 0usize
                         )
                     })
             });
@@ -241,7 +248,7 @@ impl crate::HMUI::InputFieldView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (char),
                         quest_hook::libil2cpp::Void,
@@ -250,7 +257,8 @@ impl crate::HMUI::InputFieldView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "KeyboardKeyPressed", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "KeyboardKeyPressed", 1usize
                         )
                     })
             });
@@ -272,12 +280,13 @@ impl crate::HMUI::InputFieldView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDestroy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDestroy", 0usize
                         )
                     })
             });
@@ -293,7 +302,7 @@ impl crate::HMUI::InputFieldView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -302,7 +311,8 @@ impl crate::HMUI::InputFieldView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetText", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetText",
+                            1usize
                         )
                     })
             });
@@ -317,7 +327,7 @@ impl crate::HMUI::InputFieldView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -326,7 +336,8 @@ impl crate::HMUI::InputFieldView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateCaretPosition", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateCaretPosition", 0usize
                         )
                     })
             });
@@ -341,7 +352,7 @@ impl crate::HMUI::InputFieldView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -350,7 +361,8 @@ impl crate::HMUI::InputFieldView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateClearButton", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateClearButton", 0usize
                         )
                     })
             });
@@ -365,7 +377,7 @@ impl crate::HMUI::InputFieldView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -374,7 +386,8 @@ impl crate::HMUI::InputFieldView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdatePlaceholder", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdatePlaceholder", 0usize
                         )
                     })
             });
@@ -389,7 +402,7 @@ impl crate::HMUI::InputFieldView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -398,7 +411,8 @@ impl crate::HMUI::InputFieldView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<Awake>b__34_0", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<Awake>b__34_0", 0usize
                         )
                     })
             });
@@ -413,12 +427,13 @@ impl crate::HMUI::InputFieldView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -436,7 +451,7 @@ impl crate::HMUI::InputFieldView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -449,7 +464,8 @@ impl crate::HMUI::InputFieldView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_selectionStateDidChangeEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_selectionStateDidChangeEvent", 1usize
                         )
                     })
             });
@@ -464,7 +480,7 @@ impl crate::HMUI::InputFieldView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector3,
@@ -473,7 +489,8 @@ impl crate::HMUI::InputFieldView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_keyboardPositionOffset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_keyboardPositionOffset", 0usize
                         )
                     })
             });
@@ -490,7 +507,7 @@ impl crate::HMUI::InputFieldView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -501,7 +518,8 @@ impl crate::HMUI::InputFieldView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_onValueChanged", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_onValueChanged", 0usize
                         )
                     })
             });
@@ -516,7 +534,7 @@ impl crate::HMUI::InputFieldView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::HMUI::InputFieldView_SelectionState,
@@ -525,7 +543,8 @@ impl crate::HMUI::InputFieldView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_selectionState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_selectionState", 0usize
                         )
                     })
             });
@@ -542,7 +561,7 @@ impl crate::HMUI::InputFieldView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -551,7 +570,8 @@ impl crate::HMUI::InputFieldView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_text", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_text", 0usize
                         )
                     })
             });
@@ -564,12 +584,13 @@ impl crate::HMUI::InputFieldView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_useGlobalKeyboard")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_useGlobalKeyboard", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_useGlobalKeyboard", 0usize
                         )
                     })
             });
@@ -585,7 +606,7 @@ impl crate::HMUI::InputFieldView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -598,7 +619,8 @@ impl crate::HMUI::InputFieldView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_selectionStateDidChangeEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_selectionStateDidChangeEvent", 1usize
                         )
                     })
             });
@@ -614,7 +636,7 @@ impl crate::HMUI::InputFieldView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::HMUI::InputFieldView_InputFieldChanged,
@@ -625,7 +647,8 @@ impl crate::HMUI::InputFieldView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_onValueChanged", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_onValueChanged", 1usize
                         )
                     })
             });
@@ -641,7 +664,7 @@ impl crate::HMUI::InputFieldView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -650,7 +673,8 @@ impl crate::HMUI::InputFieldView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_text", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_text", 1usize
                         )
                     })
             });
@@ -727,12 +751,13 @@ impl crate::HMUI::InputFieldView_InputFieldChanged {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

@@ -45,7 +45,7 @@ impl crate::Newtonsoft::Json::Utilities::JsonTokenUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Newtonsoft::Json::JsonToken),
                         bool,
@@ -54,7 +54,8 @@ impl crate::Newtonsoft::Json::Utilities::JsonTokenUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsEndToken", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsEndToken", 1usize
                         )
                     })
             });
@@ -67,7 +68,7 @@ impl crate::Newtonsoft::Json::Utilities::JsonTokenUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Newtonsoft::Json::JsonToken),
                         bool,
@@ -76,7 +77,8 @@ impl crate::Newtonsoft::Json::Utilities::JsonTokenUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsPrimitiveToken", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsPrimitiveToken", 1usize
                         )
                     })
             });
@@ -89,7 +91,7 @@ impl crate::Newtonsoft::Json::Utilities::JsonTokenUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Newtonsoft::Json::JsonToken),
                         bool,
@@ -98,7 +100,8 @@ impl crate::Newtonsoft::Json::Utilities::JsonTokenUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsStartToken", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsStartToken", 1usize
                         )
                     })
             });

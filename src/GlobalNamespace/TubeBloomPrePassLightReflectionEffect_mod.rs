@@ -65,12 +65,13 @@ impl crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Awake", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Awake",
+                            0usize
                         )
                     })
             });
@@ -85,12 +86,13 @@ impl crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("LateUpdate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LateUpdate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LateUpdate", 0usize
                         )
                     })
             });
@@ -121,7 +123,7 @@ impl crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -140,7 +142,8 @@ impl crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RaycastAndSetLightLength", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RaycastAndSetLightLength", 7usize
                         )
                     })
             });
@@ -167,12 +170,13 @@ impl crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -271,7 +275,7 @@ impl crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect_TubeBloomPreP
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, crate::UnityEngine::Color),
                         quest_hook::libil2cpp::Void,
@@ -280,7 +284,8 @@ impl crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect_TubeBloomPreP
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetActive", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetActive", 2usize
                         )
                     })
             });
@@ -297,7 +302,7 @@ impl crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect_TubeBloomPreP
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, crate::UnityEngine::RaycastHit),
                         quest_hook::libil2cpp::Void,
@@ -306,7 +311,8 @@ impl crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect_TubeBloomPreP
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetCollisionLength", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetCollisionLength", 2usize
                         )
                     })
             });
@@ -325,7 +331,7 @@ impl crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect_TubeBloomPreP
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             f32,
@@ -339,7 +345,8 @@ impl crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect_TubeBloomPreP
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetData", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetData",
+                            4usize
                         )
                     })
             });
@@ -358,12 +365,13 @@ impl crate::GlobalNamespace::TubeBloomPrePassLightReflectionEffect_TubeBloomPreP
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

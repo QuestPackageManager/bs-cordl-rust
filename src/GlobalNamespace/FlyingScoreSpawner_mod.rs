@@ -57,7 +57,7 @@ impl crate::GlobalNamespace::FlyingScoreSpawner {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::FlyingObjectEffect,
@@ -68,7 +68,8 @@ impl crate::GlobalNamespace::FlyingScoreSpawner {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleFlyingObjectEffectDidFinish", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleFlyingObjectEffectDidFinish", 1usize
                         )
                     })
             });
@@ -94,7 +95,7 @@ impl crate::GlobalNamespace::FlyingScoreSpawner {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -108,7 +109,8 @@ impl crate::GlobalNamespace::FlyingScoreSpawner {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SpawnFlyingScore", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SpawnFlyingScore", 2usize
                         )
                     })
             });
@@ -127,7 +129,7 @@ impl crate::GlobalNamespace::FlyingScoreSpawner {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -141,7 +143,8 @@ impl crate::GlobalNamespace::FlyingScoreSpawner {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SpawnFlyingScoreNextFrame", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SpawnFlyingScoreNextFrame", 2usize
                         )
                     })
             });
@@ -162,7 +165,7 @@ impl crate::GlobalNamespace::FlyingScoreSpawner {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -178,7 +181,8 @@ impl crate::GlobalNamespace::FlyingScoreSpawner {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SpawnFlyingScoreNextFrameCoroutine", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SpawnFlyingScoreNextFrameCoroutine", 2usize
                         )
                     })
             });
@@ -193,12 +197,13 @@ impl crate::GlobalNamespace::FlyingScoreSpawner {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -291,7 +296,7 @@ impl crate::GlobalNamespace::FlyingScoreSpawner_InitData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition),
                         quest_hook::libil2cpp::Void,
@@ -300,7 +305,8 @@ impl crate::GlobalNamespace::FlyingScoreSpawner_InitData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });

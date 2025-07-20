@@ -56,7 +56,7 @@ impl crate::GlobalNamespace::AbTestExperimentDefinitionSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         crate::GlobalNamespace::AbTestExperimentDefinitionSO_Group,
@@ -65,7 +65,8 @@ impl crate::GlobalNamespace::AbTestExperimentDefinitionSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AbSplit", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "AbSplit",
+                            1usize
                         )
                     })
             });
@@ -81,7 +82,7 @@ impl crate::GlobalNamespace::AbTestExperimentDefinitionSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -90,7 +91,8 @@ impl crate::GlobalNamespace::AbTestExperimentDefinitionSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ComputeCurrentUserTreatment", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ComputeCurrentUserTreatment", 1usize
                         )
                     })
             });
@@ -106,7 +108,7 @@ impl crate::GlobalNamespace::AbTestExperimentDefinitionSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::AbTestExperimentDefinitionSO_Group),
                         quest_hook::libil2cpp::Void,
@@ -115,7 +117,8 @@ impl crate::GlobalNamespace::AbTestExperimentDefinitionSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ForceSetTreatmentGroup", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ForceSetTreatmentGroup", 1usize
                         )
                     })
             });
@@ -137,12 +140,13 @@ impl crate::GlobalNamespace::AbTestExperimentDefinitionSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnValidate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnValidate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnValidate", 0usize
                         )
                     })
             });
@@ -157,12 +161,13 @@ impl crate::GlobalNamespace::AbTestExperimentDefinitionSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -179,7 +184,7 @@ impl crate::GlobalNamespace::AbTestExperimentDefinitionSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::AbTestExperimentDefinitionSO_Group,
@@ -188,7 +193,8 @@ impl crate::GlobalNamespace::AbTestExperimentDefinitionSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_currentUserTreatmentGroup", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_currentUserTreatmentGroup", 0usize
                         )
                     })
             });
@@ -205,7 +211,7 @@ impl crate::GlobalNamespace::AbTestExperimentDefinitionSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -214,7 +220,8 @@ impl crate::GlobalNamespace::AbTestExperimentDefinitionSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_experimentName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_experimentName", 0usize
                         )
                     })
             });
@@ -227,12 +234,13 @@ impl crate::GlobalNamespace::AbTestExperimentDefinitionSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_test1GroupSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_test1GroupSize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_test1GroupSize", 0usize
                         )
                     })
             });
@@ -243,12 +251,13 @@ impl crate::GlobalNamespace::AbTestExperimentDefinitionSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_test2GroupSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_test2GroupSize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_test2GroupSize", 0usize
                         )
                     })
             });

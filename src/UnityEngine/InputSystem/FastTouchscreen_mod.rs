@@ -52,7 +52,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -68,7 +68,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreendelta", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreendelta", 2usize
                         )
                     })
             });
@@ -87,7 +88,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -103,7 +104,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreendeltadown", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreendeltadown", 2usize
                         )
                     })
             });
@@ -122,7 +124,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -138,7 +140,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreendeltaleft", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreendeltaleft", 2usize
                         )
                     })
             });
@@ -157,7 +160,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -173,7 +176,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreendeltaright", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreendeltaright", 2usize
                         )
                     })
             });
@@ -192,7 +196,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -208,7 +212,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreendeltaup", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreendeltaup", 2usize
                         )
                     })
             });
@@ -227,7 +232,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -243,7 +248,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreendeltax", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreendeltax", 2usize
                         )
                     })
             });
@@ -262,7 +268,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -278,7 +284,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreendeltay", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreendeltay", 2usize
                         )
                     })
             });
@@ -299,7 +306,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -315,8 +322,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreendisplayIndex",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreendisplayIndex", 2usize
                         )
                     })
             });
@@ -337,7 +344,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -353,7 +360,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreenposition", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreenposition", 2usize
                         )
                     })
             });
@@ -372,7 +380,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -388,7 +396,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreenpositionx", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreenpositionx", 2usize
                         )
                     })
             });
@@ -407,7 +416,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -423,7 +432,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreenpositiony", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreenpositiony", 2usize
                         )
                     })
             });
@@ -444,7 +454,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -460,7 +470,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreenpress", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreenpress", 2usize
                         )
                     })
             });
@@ -479,7 +490,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -495,7 +506,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreenpressure", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreenpressure", 2usize
                         )
                     })
             });
@@ -516,7 +528,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -532,8 +544,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreenprimaryTouch",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreenprimaryTouch", 2usize
                         )
                     })
             });
@@ -554,7 +566,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -570,8 +582,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreenprimaryTouchdelta",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreenprimaryTouchdelta", 2usize
                         )
                     })
             });
@@ -590,7 +602,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -606,7 +618,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreenprimaryTouchdeltadown", 2usize
                         )
                     })
@@ -626,7 +638,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -642,7 +654,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreenprimaryTouchdeltaleft", 2usize
                         )
                     })
@@ -662,7 +674,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -678,7 +690,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreenprimaryTouchdeltaright", 2usize
                         )
                     })
@@ -698,7 +710,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -714,7 +726,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreenprimaryTouchdeltaup", 2usize
                         )
                     })
@@ -734,7 +746,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -750,7 +762,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreenprimaryTouchdeltax", 2usize
                         )
                     })
@@ -770,7 +782,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -786,7 +798,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreenprimaryTouchdeltay", 2usize
                         )
                     })
@@ -808,7 +820,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -824,7 +836,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreenprimaryTouchdisplayIndex", 2usize
                         )
                     })
@@ -846,7 +858,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -862,7 +874,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreenprimaryTouchindirectTouch", 2usize
                         )
                     })
@@ -884,7 +896,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -900,8 +912,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreenprimaryTouchphase",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreenprimaryTouchphase", 2usize
                         )
                     })
             });
@@ -922,7 +934,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -938,7 +950,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreenprimaryTouchposition", 2usize
                         )
                     })
@@ -958,7 +970,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -974,7 +986,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreenprimaryTouchpositionx", 2usize
                         )
                     })
@@ -994,7 +1006,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1010,7 +1022,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreenprimaryTouchpositiony", 2usize
                         )
                     })
@@ -1032,7 +1044,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1048,8 +1060,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreenprimaryTouchpress",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreenprimaryTouchpress", 2usize
                         )
                     })
             });
@@ -1068,7 +1080,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1084,7 +1096,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreenprimaryTouchpressure", 2usize
                         )
                     })
@@ -1106,7 +1118,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1122,7 +1134,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreenprimaryTouchradius", 2usize
                         )
                     })
@@ -1142,7 +1154,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1158,7 +1170,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreenprimaryTouchradiusx", 2usize
                         )
                     })
@@ -1178,7 +1190,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1194,7 +1206,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreenprimaryTouchradiusy", 2usize
                         )
                     })
@@ -1216,7 +1228,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1232,7 +1244,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreenprimaryTouchstartPosition", 2usize
                         )
                     })
@@ -1252,7 +1264,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1268,7 +1280,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreenprimaryTouchstartPositionx",
                             2usize
                         )
@@ -1289,7 +1301,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1305,7 +1317,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreenprimaryTouchstartPositiony",
                             2usize
                         )
@@ -1328,7 +1340,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1344,7 +1356,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreenprimaryTouchstartTime", 2usize
                         )
                     })
@@ -1366,7 +1378,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1382,8 +1394,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreenprimaryTouchtap",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreenprimaryTouchtap", 2usize
                         )
                     })
             });
@@ -1404,7 +1416,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1420,7 +1432,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreenprimaryTouchtapCount", 2usize
                         )
                     })
@@ -1442,7 +1454,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1458,7 +1470,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreenprimaryTouchtouchId", 2usize
                         )
                     })
@@ -1480,7 +1492,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1496,7 +1508,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreenradius", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreenradius", 2usize
                         )
                     })
             });
@@ -1515,7 +1528,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1531,7 +1544,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreenradiusx", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreenradiusx", 2usize
                         )
                     })
             });
@@ -1550,7 +1564,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1566,7 +1580,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreenradiusy", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreenradiusy", 2usize
                         )
                     })
             });
@@ -1587,7 +1602,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1603,7 +1618,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch0", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch0", 2usize
                         )
                     })
             });
@@ -1624,7 +1640,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1640,8 +1656,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch0delta",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch0delta", 2usize
                         )
                     })
             });
@@ -1660,7 +1676,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1676,8 +1692,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch0deltadown",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch0deltadown", 2usize
                         )
                     })
             });
@@ -1696,7 +1712,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1712,8 +1728,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch0deltaleft",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch0deltaleft", 2usize
                         )
                     })
             });
@@ -1732,7 +1748,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1748,8 +1764,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch0deltaright",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch0deltaright", 2usize
                         )
                     })
             });
@@ -1768,7 +1784,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1784,8 +1800,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch0deltaup",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch0deltaup", 2usize
                         )
                     })
             });
@@ -1804,7 +1820,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1820,8 +1836,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch0deltax",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch0deltax", 2usize
                         )
                     })
             });
@@ -1840,7 +1856,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1856,8 +1872,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch0deltay",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch0deltay", 2usize
                         )
                     })
             });
@@ -1878,7 +1894,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1894,7 +1910,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch0displayIndex", 2usize
                         )
                     })
@@ -1916,7 +1932,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1932,7 +1948,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch0indirectTouch", 2usize
                         )
                     })
@@ -1954,7 +1970,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -1970,8 +1986,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch0phase",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch0phase", 2usize
                         )
                     })
             });
@@ -1992,7 +2008,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2008,8 +2024,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch0position",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch0position", 2usize
                         )
                     })
             });
@@ -2028,7 +2044,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2044,8 +2060,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch0positionx",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch0positionx", 2usize
                         )
                     })
             });
@@ -2064,7 +2080,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2080,8 +2096,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch0positiony",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch0positiony", 2usize
                         )
                     })
             });
@@ -2102,7 +2118,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2118,8 +2134,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch0press",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch0press", 2usize
                         )
                     })
             });
@@ -2138,7 +2154,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2154,8 +2170,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch0pressure",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch0pressure", 2usize
                         )
                     })
             });
@@ -2176,7 +2192,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2192,8 +2208,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch0radius",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch0radius", 2usize
                         )
                     })
             });
@@ -2212,7 +2228,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2228,8 +2244,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch0radiusx",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch0radiusx", 2usize
                         )
                     })
             });
@@ -2248,7 +2264,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2264,8 +2280,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch0radiusy",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch0radiusy", 2usize
                         )
                     })
             });
@@ -2286,7 +2302,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2302,7 +2318,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch0startPosition", 2usize
                         )
                     })
@@ -2322,7 +2338,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2338,7 +2354,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch0startPositionx", 2usize
                         )
                     })
@@ -2358,7 +2374,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2374,7 +2390,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch0startPositiony", 2usize
                         )
                     })
@@ -2396,7 +2412,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2412,8 +2428,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch0startTime",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch0startTime", 2usize
                         )
                     })
             });
@@ -2434,7 +2450,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2450,7 +2466,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch0tap", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch0tap", 2usize
                         )
                     })
             });
@@ -2471,7 +2488,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2487,8 +2504,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch0tapCount",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch0tapCount", 2usize
                         )
                     })
             });
@@ -2509,7 +2526,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2525,8 +2542,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch0touchId",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch0touchId", 2usize
                         )
                     })
             });
@@ -2547,7 +2564,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2563,7 +2580,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch1", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch1", 2usize
                         )
                     })
             });
@@ -2584,7 +2602,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2600,8 +2618,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch1delta",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch1delta", 2usize
                         )
                     })
             });
@@ -2620,7 +2638,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2636,8 +2654,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch1deltadown",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch1deltadown", 2usize
                         )
                     })
             });
@@ -2656,7 +2674,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2672,8 +2690,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch1deltaleft",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch1deltaleft", 2usize
                         )
                     })
             });
@@ -2692,7 +2710,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2708,8 +2726,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch1deltaright",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch1deltaright", 2usize
                         )
                     })
             });
@@ -2728,7 +2746,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2744,8 +2762,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch1deltaup",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch1deltaup", 2usize
                         )
                     })
             });
@@ -2764,7 +2782,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2780,8 +2798,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch1deltax",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch1deltax", 2usize
                         )
                     })
             });
@@ -2800,7 +2818,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2816,8 +2834,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch1deltay",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch1deltay", 2usize
                         )
                     })
             });
@@ -2838,7 +2856,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2854,7 +2872,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch1displayIndex", 2usize
                         )
                     })
@@ -2876,7 +2894,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2892,7 +2910,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch1indirectTouch", 2usize
                         )
                     })
@@ -2914,7 +2932,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2930,8 +2948,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch1phase",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch1phase", 2usize
                         )
                     })
             });
@@ -2952,7 +2970,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2968,8 +2986,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch1position",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch1position", 2usize
                         )
                     })
             });
@@ -2988,7 +3006,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3004,8 +3022,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch1positionx",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch1positionx", 2usize
                         )
                     })
             });
@@ -3024,7 +3042,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3040,8 +3058,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch1positiony",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch1positiony", 2usize
                         )
                     })
             });
@@ -3062,7 +3080,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3078,8 +3096,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch1press",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch1press", 2usize
                         )
                     })
             });
@@ -3098,7 +3116,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3114,8 +3132,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch1pressure",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch1pressure", 2usize
                         )
                     })
             });
@@ -3136,7 +3154,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3152,8 +3170,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch1radius",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch1radius", 2usize
                         )
                     })
             });
@@ -3172,7 +3190,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3188,8 +3206,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch1radiusx",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch1radiusx", 2usize
                         )
                     })
             });
@@ -3208,7 +3226,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3224,8 +3242,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch1radiusy",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch1radiusy", 2usize
                         )
                     })
             });
@@ -3246,7 +3264,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3262,7 +3280,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch1startPosition", 2usize
                         )
                     })
@@ -3282,7 +3300,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3298,7 +3316,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch1startPositionx", 2usize
                         )
                     })
@@ -3318,7 +3336,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3334,7 +3352,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch1startPositiony", 2usize
                         )
                     })
@@ -3356,7 +3374,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3372,8 +3390,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch1startTime",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch1startTime", 2usize
                         )
                     })
             });
@@ -3394,7 +3412,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3410,7 +3428,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch1tap", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch1tap", 2usize
                         )
                     })
             });
@@ -3431,7 +3450,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3447,8 +3466,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch1tapCount",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch1tapCount", 2usize
                         )
                     })
             });
@@ -3469,7 +3488,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3485,8 +3504,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch1touchId",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch1touchId", 2usize
                         )
                     })
             });
@@ -3507,7 +3526,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3523,7 +3542,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch2", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch2", 2usize
                         )
                     })
             });
@@ -3544,7 +3564,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3560,8 +3580,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch2delta",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch2delta", 2usize
                         )
                     })
             });
@@ -3580,7 +3600,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3596,8 +3616,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch2deltadown",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch2deltadown", 2usize
                         )
                     })
             });
@@ -3616,7 +3636,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3632,8 +3652,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch2deltaleft",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch2deltaleft", 2usize
                         )
                     })
             });
@@ -3652,7 +3672,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3668,8 +3688,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch2deltaright",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch2deltaright", 2usize
                         )
                     })
             });
@@ -3688,7 +3708,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3704,8 +3724,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch2deltaup",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch2deltaup", 2usize
                         )
                     })
             });
@@ -3724,7 +3744,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3740,8 +3760,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch2deltax",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch2deltax", 2usize
                         )
                     })
             });
@@ -3760,7 +3780,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3776,8 +3796,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch2deltay",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch2deltay", 2usize
                         )
                     })
             });
@@ -3798,7 +3818,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3814,7 +3834,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch2displayIndex", 2usize
                         )
                     })
@@ -3836,7 +3856,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3852,7 +3872,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch2indirectTouch", 2usize
                         )
                     })
@@ -3874,7 +3894,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3890,8 +3910,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch2phase",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch2phase", 2usize
                         )
                     })
             });
@@ -3912,7 +3932,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3928,8 +3948,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch2position",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch2position", 2usize
                         )
                     })
             });
@@ -3948,7 +3968,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -3964,8 +3984,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch2positionx",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch2positionx", 2usize
                         )
                     })
             });
@@ -3984,7 +4004,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -4000,8 +4020,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch2positiony",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch2positiony", 2usize
                         )
                     })
             });
@@ -4022,7 +4042,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -4038,8 +4058,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch2press",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch2press", 2usize
                         )
                     })
             });
@@ -4058,7 +4078,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -4074,8 +4094,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch2pressure",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch2pressure", 2usize
                         )
                     })
             });
@@ -4096,7 +4116,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -4112,8 +4132,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch2radius",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch2radius", 2usize
                         )
                     })
             });
@@ -4132,7 +4152,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -4148,8 +4168,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch2radiusx",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch2radiusx", 2usize
                         )
                     })
             });
@@ -4168,7 +4188,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -4184,8 +4204,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch2radiusy",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch2radiusy", 2usize
                         )
                     })
             });
@@ -4206,7 +4226,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -4222,7 +4242,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch2startPosition", 2usize
                         )
                     })
@@ -4242,7 +4262,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -4258,7 +4278,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch2startPositionx", 2usize
                         )
                     })
@@ -4278,7 +4298,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -4294,7 +4314,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch2startPositiony", 2usize
                         )
                     })
@@ -4316,7 +4336,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -4332,8 +4352,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch2startTime",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch2startTime", 2usize
                         )
                     })
             });
@@ -4354,7 +4374,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -4370,7 +4390,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch2tap", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch2tap", 2usize
                         )
                     })
             });
@@ -4391,7 +4412,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -4407,8 +4428,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch2tapCount",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch2tapCount", 2usize
                         )
                     })
             });
@@ -4429,7 +4450,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -4445,8 +4466,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch2touchId",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch2touchId", 2usize
                         )
                     })
             });
@@ -4467,7 +4488,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -4483,7 +4504,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch3", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch3", 2usize
                         )
                     })
             });
@@ -4504,7 +4526,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -4520,8 +4542,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch3delta",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch3delta", 2usize
                         )
                     })
             });
@@ -4540,7 +4562,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -4556,8 +4578,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch3deltadown",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch3deltadown", 2usize
                         )
                     })
             });
@@ -4576,7 +4598,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -4592,8 +4614,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch3deltaleft",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch3deltaleft", 2usize
                         )
                     })
             });
@@ -4612,7 +4634,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -4628,8 +4650,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch3deltaright",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch3deltaright", 2usize
                         )
                     })
             });
@@ -4648,7 +4670,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -4664,8 +4686,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch3deltaup",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch3deltaup", 2usize
                         )
                     })
             });
@@ -4684,7 +4706,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -4700,8 +4722,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch3deltax",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch3deltax", 2usize
                         )
                     })
             });
@@ -4720,7 +4742,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -4736,8 +4758,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch3deltay",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch3deltay", 2usize
                         )
                     })
             });
@@ -4758,7 +4780,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -4774,7 +4796,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch3displayIndex", 2usize
                         )
                     })
@@ -4796,7 +4818,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -4812,7 +4834,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch3indirectTouch", 2usize
                         )
                     })
@@ -4834,7 +4856,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -4850,8 +4872,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch3phase",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch3phase", 2usize
                         )
                     })
             });
@@ -4872,7 +4894,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -4888,8 +4910,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch3position",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch3position", 2usize
                         )
                     })
             });
@@ -4908,7 +4930,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -4924,8 +4946,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch3positionx",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch3positionx", 2usize
                         )
                     })
             });
@@ -4944,7 +4966,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -4960,8 +4982,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch3positiony",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch3positiony", 2usize
                         )
                     })
             });
@@ -4982,7 +5004,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -4998,8 +5020,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch3press",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch3press", 2usize
                         )
                     })
             });
@@ -5018,7 +5040,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -5034,8 +5056,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch3pressure",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch3pressure", 2usize
                         )
                     })
             });
@@ -5056,7 +5078,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -5072,8 +5094,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch3radius",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch3radius", 2usize
                         )
                     })
             });
@@ -5092,7 +5114,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -5108,8 +5130,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch3radiusx",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch3radiusx", 2usize
                         )
                     })
             });
@@ -5128,7 +5150,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -5144,8 +5166,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch3radiusy",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch3radiusy", 2usize
                         )
                     })
             });
@@ -5166,7 +5188,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -5182,7 +5204,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch3startPosition", 2usize
                         )
                     })
@@ -5202,7 +5224,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -5218,7 +5240,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch3startPositionx", 2usize
                         )
                     })
@@ -5238,7 +5260,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -5254,7 +5276,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch3startPositiony", 2usize
                         )
                     })
@@ -5276,7 +5298,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -5292,8 +5314,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch3startTime",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch3startTime", 2usize
                         )
                     })
             });
@@ -5314,7 +5336,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -5330,7 +5352,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch3tap", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch3tap", 2usize
                         )
                     })
             });
@@ -5351,7 +5374,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -5367,8 +5390,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch3tapCount",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch3tapCount", 2usize
                         )
                     })
             });
@@ -5389,7 +5412,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -5405,8 +5428,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch3touchId",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch3touchId", 2usize
                         )
                     })
             });
@@ -5427,7 +5450,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -5443,7 +5466,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch4", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch4", 2usize
                         )
                     })
             });
@@ -5464,7 +5488,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -5480,8 +5504,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch4delta",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch4delta", 2usize
                         )
                     })
             });
@@ -5500,7 +5524,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -5516,8 +5540,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch4deltadown",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch4deltadown", 2usize
                         )
                     })
             });
@@ -5536,7 +5560,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -5552,8 +5576,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch4deltaleft",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch4deltaleft", 2usize
                         )
                     })
             });
@@ -5572,7 +5596,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -5588,8 +5612,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch4deltaright",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch4deltaright", 2usize
                         )
                     })
             });
@@ -5608,7 +5632,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -5624,8 +5648,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch4deltaup",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch4deltaup", 2usize
                         )
                     })
             });
@@ -5644,7 +5668,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -5660,8 +5684,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch4deltax",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch4deltax", 2usize
                         )
                     })
             });
@@ -5680,7 +5704,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -5696,8 +5720,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch4deltay",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch4deltay", 2usize
                         )
                     })
             });
@@ -5718,7 +5742,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -5734,7 +5758,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch4displayIndex", 2usize
                         )
                     })
@@ -5756,7 +5780,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -5772,7 +5796,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch4indirectTouch", 2usize
                         )
                     })
@@ -5794,7 +5818,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -5810,8 +5834,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch4phase",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch4phase", 2usize
                         )
                     })
             });
@@ -5832,7 +5856,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -5848,8 +5872,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch4position",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch4position", 2usize
                         )
                     })
             });
@@ -5868,7 +5892,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -5884,8 +5908,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch4positionx",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch4positionx", 2usize
                         )
                     })
             });
@@ -5904,7 +5928,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -5920,8 +5944,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch4positiony",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch4positiony", 2usize
                         )
                     })
             });
@@ -5942,7 +5966,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -5958,8 +5982,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch4press",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch4press", 2usize
                         )
                     })
             });
@@ -5978,7 +6002,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -5994,8 +6018,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch4pressure",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch4pressure", 2usize
                         )
                     })
             });
@@ -6016,7 +6040,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -6032,8 +6056,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch4radius",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch4radius", 2usize
                         )
                     })
             });
@@ -6052,7 +6076,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -6068,8 +6092,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch4radiusx",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch4radiusx", 2usize
                         )
                     })
             });
@@ -6088,7 +6112,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -6104,8 +6128,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch4radiusy",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch4radiusy", 2usize
                         )
                     })
             });
@@ -6126,7 +6150,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -6142,7 +6166,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch4startPosition", 2usize
                         )
                     })
@@ -6162,7 +6186,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -6178,7 +6202,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch4startPositionx", 2usize
                         )
                     })
@@ -6198,7 +6222,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -6214,7 +6238,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch4startPositiony", 2usize
                         )
                     })
@@ -6236,7 +6260,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -6252,8 +6276,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch4startTime",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch4startTime", 2usize
                         )
                     })
             });
@@ -6274,7 +6298,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -6290,7 +6314,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch4tap", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch4tap", 2usize
                         )
                     })
             });
@@ -6311,7 +6336,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -6327,8 +6352,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch4tapCount",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch4tapCount", 2usize
                         )
                     })
             });
@@ -6349,7 +6374,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -6365,8 +6390,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch4touchId",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch4touchId", 2usize
                         )
                     })
             });
@@ -6387,7 +6412,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -6403,7 +6428,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch5", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch5", 2usize
                         )
                     })
             });
@@ -6424,7 +6450,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -6440,8 +6466,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch5delta",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch5delta", 2usize
                         )
                     })
             });
@@ -6460,7 +6486,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -6476,8 +6502,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch5deltadown",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch5deltadown", 2usize
                         )
                     })
             });
@@ -6496,7 +6522,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -6512,8 +6538,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch5deltaleft",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch5deltaleft", 2usize
                         )
                     })
             });
@@ -6532,7 +6558,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -6548,8 +6574,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch5deltaright",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch5deltaright", 2usize
                         )
                     })
             });
@@ -6568,7 +6594,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -6584,8 +6610,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch5deltaup",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch5deltaup", 2usize
                         )
                     })
             });
@@ -6604,7 +6630,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -6620,8 +6646,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch5deltax",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch5deltax", 2usize
                         )
                     })
             });
@@ -6640,7 +6666,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -6656,8 +6682,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch5deltay",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch5deltay", 2usize
                         )
                     })
             });
@@ -6678,7 +6704,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -6694,7 +6720,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch5displayIndex", 2usize
                         )
                     })
@@ -6716,7 +6742,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -6732,7 +6758,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch5indirectTouch", 2usize
                         )
                     })
@@ -6754,7 +6780,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -6770,8 +6796,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch5phase",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch5phase", 2usize
                         )
                     })
             });
@@ -6792,7 +6818,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -6808,8 +6834,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch5position",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch5position", 2usize
                         )
                     })
             });
@@ -6828,7 +6854,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -6844,8 +6870,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch5positionx",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch5positionx", 2usize
                         )
                     })
             });
@@ -6864,7 +6890,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -6880,8 +6906,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch5positiony",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch5positiony", 2usize
                         )
                     })
             });
@@ -6902,7 +6928,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -6918,8 +6944,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch5press",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch5press", 2usize
                         )
                     })
             });
@@ -6938,7 +6964,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -6954,8 +6980,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch5pressure",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch5pressure", 2usize
                         )
                     })
             });
@@ -6976,7 +7002,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -6992,8 +7018,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch5radius",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch5radius", 2usize
                         )
                     })
             });
@@ -7012,7 +7038,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -7028,8 +7054,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch5radiusx",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch5radiusx", 2usize
                         )
                     })
             });
@@ -7048,7 +7074,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -7064,8 +7090,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch5radiusy",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch5radiusy", 2usize
                         )
                     })
             });
@@ -7086,7 +7112,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -7102,7 +7128,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch5startPosition", 2usize
                         )
                     })
@@ -7122,7 +7148,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -7138,7 +7164,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch5startPositionx", 2usize
                         )
                     })
@@ -7158,7 +7184,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -7174,7 +7200,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch5startPositiony", 2usize
                         )
                     })
@@ -7196,7 +7222,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -7212,8 +7238,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch5startTime",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch5startTime", 2usize
                         )
                     })
             });
@@ -7234,7 +7260,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -7250,7 +7276,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch5tap", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch5tap", 2usize
                         )
                     })
             });
@@ -7271,7 +7298,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -7287,8 +7314,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch5tapCount",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch5tapCount", 2usize
                         )
                     })
             });
@@ -7309,7 +7336,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -7325,8 +7352,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch5touchId",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch5touchId", 2usize
                         )
                     })
             });
@@ -7347,7 +7374,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -7363,7 +7390,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch6", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch6", 2usize
                         )
                     })
             });
@@ -7384,7 +7412,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -7400,8 +7428,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch6delta",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch6delta", 2usize
                         )
                     })
             });
@@ -7420,7 +7448,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -7436,8 +7464,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch6deltadown",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch6deltadown", 2usize
                         )
                     })
             });
@@ -7456,7 +7484,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -7472,8 +7500,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch6deltaleft",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch6deltaleft", 2usize
                         )
                     })
             });
@@ -7492,7 +7520,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -7508,8 +7536,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch6deltaright",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch6deltaright", 2usize
                         )
                     })
             });
@@ -7528,7 +7556,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -7544,8 +7572,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch6deltaup",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch6deltaup", 2usize
                         )
                     })
             });
@@ -7564,7 +7592,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -7580,8 +7608,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch6deltax",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch6deltax", 2usize
                         )
                     })
             });
@@ -7600,7 +7628,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -7616,8 +7644,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch6deltay",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch6deltay", 2usize
                         )
                     })
             });
@@ -7638,7 +7666,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -7654,7 +7682,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch6displayIndex", 2usize
                         )
                     })
@@ -7676,7 +7704,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -7692,7 +7720,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch6indirectTouch", 2usize
                         )
                     })
@@ -7714,7 +7742,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -7730,8 +7758,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch6phase",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch6phase", 2usize
                         )
                     })
             });
@@ -7752,7 +7780,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -7768,8 +7796,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch6position",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch6position", 2usize
                         )
                     })
             });
@@ -7788,7 +7816,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -7804,8 +7832,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch6positionx",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch6positionx", 2usize
                         )
                     })
             });
@@ -7824,7 +7852,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -7840,8 +7868,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch6positiony",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch6positiony", 2usize
                         )
                     })
             });
@@ -7862,7 +7890,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -7878,8 +7906,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch6press",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch6press", 2usize
                         )
                     })
             });
@@ -7898,7 +7926,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -7914,8 +7942,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch6pressure",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch6pressure", 2usize
                         )
                     })
             });
@@ -7936,7 +7964,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -7952,8 +7980,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch6radius",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch6radius", 2usize
                         )
                     })
             });
@@ -7972,7 +8000,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -7988,8 +8016,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch6radiusx",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch6radiusx", 2usize
                         )
                     })
             });
@@ -8008,7 +8036,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -8024,8 +8052,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch6radiusy",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch6radiusy", 2usize
                         )
                     })
             });
@@ -8046,7 +8074,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -8062,7 +8090,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch6startPosition", 2usize
                         )
                     })
@@ -8082,7 +8110,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -8098,7 +8126,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch6startPositionx", 2usize
                         )
                     })
@@ -8118,7 +8146,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -8134,7 +8162,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch6startPositiony", 2usize
                         )
                     })
@@ -8156,7 +8184,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -8172,8 +8200,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch6startTime",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch6startTime", 2usize
                         )
                     })
             });
@@ -8194,7 +8222,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -8210,7 +8238,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch6tap", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch6tap", 2usize
                         )
                     })
             });
@@ -8231,7 +8260,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -8247,8 +8276,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch6tapCount",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch6tapCount", 2usize
                         )
                     })
             });
@@ -8269,7 +8298,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -8285,8 +8314,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch6touchId",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch6touchId", 2usize
                         )
                     })
             });
@@ -8307,7 +8336,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -8323,7 +8352,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch7", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch7", 2usize
                         )
                     })
             });
@@ -8344,7 +8374,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -8360,8 +8390,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch7delta",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch7delta", 2usize
                         )
                     })
             });
@@ -8380,7 +8410,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -8396,8 +8426,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch7deltadown",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch7deltadown", 2usize
                         )
                     })
             });
@@ -8416,7 +8446,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -8432,8 +8462,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch7deltaleft",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch7deltaleft", 2usize
                         )
                     })
             });
@@ -8452,7 +8482,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -8468,8 +8498,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch7deltaright",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch7deltaright", 2usize
                         )
                     })
             });
@@ -8488,7 +8518,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -8504,8 +8534,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch7deltaup",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch7deltaup", 2usize
                         )
                     })
             });
@@ -8524,7 +8554,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -8540,8 +8570,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch7deltax",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch7deltax", 2usize
                         )
                     })
             });
@@ -8560,7 +8590,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -8576,8 +8606,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch7deltay",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch7deltay", 2usize
                         )
                     })
             });
@@ -8598,7 +8628,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -8614,7 +8644,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch7displayIndex", 2usize
                         )
                     })
@@ -8636,7 +8666,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -8652,7 +8682,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch7indirectTouch", 2usize
                         )
                     })
@@ -8674,7 +8704,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -8690,8 +8720,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch7phase",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch7phase", 2usize
                         )
                     })
             });
@@ -8712,7 +8742,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -8728,8 +8758,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch7position",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch7position", 2usize
                         )
                     })
             });
@@ -8748,7 +8778,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -8764,8 +8794,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch7positionx",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch7positionx", 2usize
                         )
                     })
             });
@@ -8784,7 +8814,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -8800,8 +8830,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch7positiony",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch7positiony", 2usize
                         )
                     })
             });
@@ -8822,7 +8852,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -8838,8 +8868,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch7press",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch7press", 2usize
                         )
                     })
             });
@@ -8858,7 +8888,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -8874,8 +8904,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch7pressure",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch7pressure", 2usize
                         )
                     })
             });
@@ -8896,7 +8926,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -8912,8 +8942,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch7radius",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch7radius", 2usize
                         )
                     })
             });
@@ -8932,7 +8962,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -8948,8 +8978,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch7radiusx",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch7radiusx", 2usize
                         )
                     })
             });
@@ -8968,7 +8998,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -8984,8 +9014,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch7radiusy",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch7radiusy", 2usize
                         )
                     })
             });
@@ -9006,7 +9036,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -9022,7 +9052,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch7startPosition", 2usize
                         )
                     })
@@ -9042,7 +9072,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -9058,7 +9088,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch7startPositionx", 2usize
                         )
                     })
@@ -9078,7 +9108,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -9094,7 +9124,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch7startPositiony", 2usize
                         )
                     })
@@ -9116,7 +9146,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -9132,8 +9162,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch7startTime",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch7startTime", 2usize
                         )
                     })
             });
@@ -9154,7 +9184,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -9170,7 +9200,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch7tap", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch7tap", 2usize
                         )
                     })
             });
@@ -9191,7 +9222,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -9207,8 +9238,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch7tapCount",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch7tapCount", 2usize
                         )
                     })
             });
@@ -9229,7 +9260,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -9245,8 +9276,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch7touchId",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch7touchId", 2usize
                         )
                     })
             });
@@ -9267,7 +9298,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -9283,7 +9314,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch8", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch8", 2usize
                         )
                     })
             });
@@ -9304,7 +9336,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -9320,8 +9352,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch8delta",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch8delta", 2usize
                         )
                     })
             });
@@ -9340,7 +9372,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -9356,8 +9388,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch8deltadown",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch8deltadown", 2usize
                         )
                     })
             });
@@ -9376,7 +9408,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -9392,8 +9424,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch8deltaleft",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch8deltaleft", 2usize
                         )
                     })
             });
@@ -9412,7 +9444,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -9428,8 +9460,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch8deltaright",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch8deltaright", 2usize
                         )
                     })
             });
@@ -9448,7 +9480,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -9464,8 +9496,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch8deltaup",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch8deltaup", 2usize
                         )
                     })
             });
@@ -9484,7 +9516,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -9500,8 +9532,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch8deltax",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch8deltax", 2usize
                         )
                     })
             });
@@ -9520,7 +9552,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -9536,8 +9568,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch8deltay",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch8deltay", 2usize
                         )
                     })
             });
@@ -9558,7 +9590,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -9574,7 +9606,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch8displayIndex", 2usize
                         )
                     })
@@ -9596,7 +9628,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -9612,7 +9644,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch8indirectTouch", 2usize
                         )
                     })
@@ -9634,7 +9666,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -9650,8 +9682,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch8phase",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch8phase", 2usize
                         )
                     })
             });
@@ -9672,7 +9704,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -9688,8 +9720,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch8position",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch8position", 2usize
                         )
                     })
             });
@@ -9708,7 +9740,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -9724,8 +9756,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch8positionx",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch8positionx", 2usize
                         )
                     })
             });
@@ -9744,7 +9776,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -9760,8 +9792,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch8positiony",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch8positiony", 2usize
                         )
                     })
             });
@@ -9782,7 +9814,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -9798,8 +9830,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch8press",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch8press", 2usize
                         )
                     })
             });
@@ -9818,7 +9850,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -9834,8 +9866,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch8pressure",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch8pressure", 2usize
                         )
                     })
             });
@@ -9856,7 +9888,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -9872,8 +9904,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch8radius",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch8radius", 2usize
                         )
                     })
             });
@@ -9892,7 +9924,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -9908,8 +9940,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch8radiusx",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch8radiusx", 2usize
                         )
                     })
             });
@@ -9928,7 +9960,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -9944,8 +9976,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch8radiusy",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch8radiusy", 2usize
                         )
                     })
             });
@@ -9966,7 +9998,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -9982,7 +10014,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch8startPosition", 2usize
                         )
                     })
@@ -10002,7 +10034,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -10018,7 +10050,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch8startPositionx", 2usize
                         )
                     })
@@ -10038,7 +10070,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -10054,7 +10086,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch8startPositiony", 2usize
                         )
                     })
@@ -10076,7 +10108,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -10092,8 +10124,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch8startTime",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch8startTime", 2usize
                         )
                     })
             });
@@ -10114,7 +10146,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -10130,7 +10162,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch8tap", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch8tap", 2usize
                         )
                     })
             });
@@ -10151,7 +10184,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -10167,8 +10200,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch8tapCount",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch8tapCount", 2usize
                         )
                     })
             });
@@ -10189,7 +10222,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -10205,8 +10238,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch8touchId",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch8touchId", 2usize
                         )
                     })
             });
@@ -10227,7 +10260,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -10243,7 +10276,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch9", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch9", 2usize
                         )
                     })
             });
@@ -10264,7 +10298,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -10280,8 +10314,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch9delta",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch9delta", 2usize
                         )
                     })
             });
@@ -10300,7 +10334,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -10316,8 +10350,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch9deltadown",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch9deltadown", 2usize
                         )
                     })
             });
@@ -10336,7 +10370,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -10352,8 +10386,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch9deltaleft",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch9deltaleft", 2usize
                         )
                     })
             });
@@ -10372,7 +10406,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -10388,8 +10422,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch9deltaright",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch9deltaright", 2usize
                         )
                     })
             });
@@ -10408,7 +10442,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -10424,8 +10458,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch9deltaup",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch9deltaup", 2usize
                         )
                     })
             });
@@ -10444,7 +10478,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -10460,8 +10494,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch9deltax",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch9deltax", 2usize
                         )
                     })
             });
@@ -10480,7 +10514,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -10496,8 +10530,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch9deltay",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch9deltay", 2usize
                         )
                     })
             });
@@ -10518,7 +10552,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -10534,7 +10568,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch9displayIndex", 2usize
                         )
                     })
@@ -10556,7 +10590,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -10572,7 +10606,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch9indirectTouch", 2usize
                         )
                     })
@@ -10594,7 +10628,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -10610,8 +10644,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch9phase",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch9phase", 2usize
                         )
                     })
             });
@@ -10632,7 +10666,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -10648,8 +10682,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch9position",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch9position", 2usize
                         )
                     })
             });
@@ -10668,7 +10702,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -10684,8 +10718,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch9positionx",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch9positionx", 2usize
                         )
                     })
             });
@@ -10704,7 +10738,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -10720,8 +10754,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch9positiony",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch9positiony", 2usize
                         )
                     })
             });
@@ -10742,7 +10776,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -10758,8 +10792,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch9press",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch9press", 2usize
                         )
                     })
             });
@@ -10778,7 +10812,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -10794,8 +10828,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch9pressure",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch9pressure", 2usize
                         )
                     })
             });
@@ -10816,7 +10850,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -10832,8 +10866,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch9radius",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch9radius", 2usize
                         )
                     })
             });
@@ -10852,7 +10886,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -10868,8 +10902,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch9radiusx",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch9radiusx", 2usize
                         )
                     })
             });
@@ -10888,7 +10922,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -10904,8 +10938,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch9radiusy",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch9radiusy", 2usize
                         )
                     })
             });
@@ -10926,7 +10960,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -10942,7 +10976,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch9startPosition", 2usize
                         )
                     })
@@ -10962,7 +10996,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -10978,7 +11012,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch9startPositionx", 2usize
                         )
                     })
@@ -10998,7 +11032,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -11014,7 +11048,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "Initialize_ctrlTouchscreentouch9startPositiony", 2usize
                         )
                     })
@@ -11036,7 +11070,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -11052,8 +11086,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch9startTime",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch9startTime", 2usize
                         )
                     })
             });
@@ -11074,7 +11108,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -11090,7 +11124,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch9tap", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch9tap", 2usize
                         )
                     })
             });
@@ -11111,7 +11146,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -11127,8 +11162,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch9tapCount",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch9tapCount", 2usize
                         )
                     })
             });
@@ -11149,7 +11184,7 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -11165,8 +11200,8 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize_ctrlTouchscreentouch9touchId",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize_ctrlTouchscreentouch9touchId", 2usize
                         )
                     })
             });
@@ -11188,12 +11223,13 @@ impl crate::UnityEngine::InputSystem::FastTouchscreen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

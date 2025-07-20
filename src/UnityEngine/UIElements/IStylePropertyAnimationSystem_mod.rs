@@ -46,7 +46,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -55,7 +55,8 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CancelAllAnimations", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CancelAllAnimations", 0usize
                         )
                     })
             });
@@ -71,7 +72,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::VisualElement,
@@ -82,7 +83,8 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CancelAllAnimations", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CancelAllAnimations", 1usize
                         )
                     })
             });
@@ -99,7 +101,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -113,7 +115,8 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CancelAnimation", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CancelAnimation", 2usize
                         )
                     })
             });
@@ -134,7 +137,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -152,7 +155,8 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAllAnimations", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAllAnimations", 2usize
                         )
                     })
             });
@@ -174,7 +178,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -193,7 +197,8 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartTransition", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartTransition", 7usize
                         )
                     })
             });
@@ -219,7 +224,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -238,7 +243,8 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartTransition", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartTransition", 7usize
                         )
                     })
             });
@@ -264,7 +270,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -283,7 +289,8 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartTransition", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartTransition", 7usize
                         )
                     })
             });
@@ -309,7 +316,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -328,7 +335,8 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartTransition", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartTransition", 7usize
                         )
                     })
             });
@@ -354,7 +362,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -373,7 +381,8 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartTransition", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartTransition", 7usize
                         )
                     })
             });
@@ -399,7 +408,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -418,7 +427,8 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartTransition", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartTransition", 7usize
                         )
                     })
             });
@@ -444,7 +454,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -463,7 +473,8 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartTransition", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartTransition", 7usize
                         )
                     })
             });
@@ -489,7 +500,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -508,7 +519,8 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartTransition", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartTransition", 7usize
                         )
                     })
             });
@@ -534,7 +546,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -553,7 +565,8 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartTransition", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartTransition", 7usize
                         )
                     })
             });
@@ -579,7 +592,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -598,7 +611,8 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartTransition", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartTransition", 7usize
                         )
                     })
             });
@@ -624,7 +638,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -643,7 +657,8 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartTransition", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartTransition", 7usize
                         )
                     })
             });
@@ -669,7 +684,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -688,7 +703,8 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartTransition", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartTransition", 7usize
                         )
                     })
             });
@@ -714,7 +730,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -733,7 +749,8 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartTransition", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartTransition", 7usize
                         )
                     })
             });
@@ -759,7 +776,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -778,7 +795,8 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartTransition", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartTransition", 7usize
                         )
                     })
             });
@@ -804,7 +822,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -823,7 +841,8 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartTransition", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartTransition", 7usize
                         )
                     })
             });
@@ -842,12 +861,13 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Update")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Update", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Update",
+                            0usize
                         )
                     })
             });
@@ -864,7 +884,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -878,7 +898,8 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateAnimation", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateAnimation", 2usize
                         )
                     })
             });

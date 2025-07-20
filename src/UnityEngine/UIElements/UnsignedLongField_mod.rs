@@ -54,7 +54,7 @@ impl crate::UnityEngine::UIElements::UnsignedLongField {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Vector3,
@@ -67,7 +67,8 @@ impl crate::UnityEngine::UIElements::UnsignedLongField {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ApplyInputDeviceDelta", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ApplyInputDeviceDelta", 3usize
                         )
                     })
             });
@@ -83,7 +84,7 @@ impl crate::UnityEngine::UIElements::UnsignedLongField {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -92,7 +93,8 @@ impl crate::UnityEngine::UIElements::UnsignedLongField {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CanTryParse", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CanTryParse", 1usize
                         )
                     })
             });
@@ -123,7 +125,7 @@ impl crate::UnityEngine::UIElements::UnsignedLongField {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         u64,
@@ -132,7 +134,8 @@ impl crate::UnityEngine::UIElements::UnsignedLongField {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StringToValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StringToValue", 1usize
                         )
                     })
             });
@@ -148,7 +151,7 @@ impl crate::UnityEngine::UIElements::UnsignedLongField {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -157,7 +160,8 @@ impl crate::UnityEngine::UIElements::UnsignedLongField {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ValueToString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValueToString", 1usize
                         )
                     })
             });
@@ -172,12 +176,13 @@ impl crate::UnityEngine::UIElements::UnsignedLongField {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -194,7 +199,7 @@ impl crate::UnityEngine::UIElements::UnsignedLongField {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -208,7 +213,8 @@ impl crate::UnityEngine::UIElements::UnsignedLongField {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -227,7 +233,7 @@ impl crate::UnityEngine::UIElements::UnsignedLongField {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -238,7 +244,8 @@ impl crate::UnityEngine::UIElements::UnsignedLongField {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_unsignedLongInput", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_unsignedLongInput", 0usize
                         )
                     })
             });
@@ -310,7 +317,7 @@ impl crate::UnityEngine::UIElements::UnsignedLongField_UnsignedLongInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Vector3,
@@ -323,7 +330,8 @@ impl crate::UnityEngine::UIElements::UnsignedLongField_UnsignedLongInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ApplyInputDeviceDelta", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ApplyInputDeviceDelta", 3usize
                         )
                     })
             });
@@ -340,12 +348,13 @@ impl crate::UnityEngine::UIElements::UnsignedLongField_UnsignedLongInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i64, u64), u64, 2usize>("ClampToMinMaxULongValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ClampToMinMaxULongValue", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ClampToMinMaxULongValue", 2usize
                         )
                     })
             });
@@ -368,7 +377,7 @@ impl crate::UnityEngine::UIElements::UnsignedLongField_UnsignedLongInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         u64,
@@ -377,7 +386,8 @@ impl crate::UnityEngine::UIElements::UnsignedLongField_UnsignedLongInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StringToValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StringToValue", 1usize
                         )
                     })
             });
@@ -393,7 +403,7 @@ impl crate::UnityEngine::UIElements::UnsignedLongField_UnsignedLongInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -402,7 +412,8 @@ impl crate::UnityEngine::UIElements::UnsignedLongField_UnsignedLongInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ValueToString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValueToString", 1usize
                         )
                     })
             });
@@ -417,12 +428,13 @@ impl crate::UnityEngine::UIElements::UnsignedLongField_UnsignedLongInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -439,7 +451,7 @@ impl crate::UnityEngine::UIElements::UnsignedLongField_UnsignedLongInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -448,7 +460,8 @@ impl crate::UnityEngine::UIElements::UnsignedLongField_UnsignedLongInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_allowedCharacters", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_allowedCharacters", 0usize
                         )
                     })
             });
@@ -465,7 +478,7 @@ impl crate::UnityEngine::UIElements::UnsignedLongField_UnsignedLongInput {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -476,7 +489,8 @@ impl crate::UnityEngine::UIElements::UnsignedLongField_UnsignedLongInput {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_parentUnsignedLongField", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_parentUnsignedLongField", 0usize
                         )
                     })
             });
@@ -561,12 +575,13 @@ impl crate::UnityEngine::UIElements::UnsignedLongField_UxmlFactory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -651,12 +666,13 @@ impl crate::UnityEngine::UIElements::UnsignedLongField_UxmlTraits {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

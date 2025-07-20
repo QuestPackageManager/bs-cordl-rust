@@ -44,7 +44,7 @@ impl crate::System::IPv6AddressHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::ReadOnlySpan_1<u16>),
                         crate::System::ValueTuple_2<i32, i32>,
@@ -53,7 +53,8 @@ impl crate::System::IPv6AddressHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FindCompressionRange", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindCompressionRange", 1usize
                         )
                     })
             });
@@ -71,7 +72,7 @@ impl crate::System::IPv6AddressHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -87,7 +88,8 @@ impl crate::System::IPv6AddressHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InternalIsValid", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InternalIsValid", 4usize
                         )
                     })
             });
@@ -102,7 +104,7 @@ impl crate::System::IPv6AddressHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::ReadOnlySpan_1<u16>),
                         bool,
@@ -111,7 +113,8 @@ impl crate::System::IPv6AddressHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsLoopback", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsLoopback", 1usize
                         )
                     })
             });
@@ -126,7 +129,7 @@ impl crate::System::IPv6AddressHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -141,7 +144,8 @@ impl crate::System::IPv6AddressHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsValid", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsValid",
+                            3usize
                         )
                     })
             });
@@ -158,7 +162,7 @@ impl crate::System::IPv6AddressHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -173,7 +177,8 @@ impl crate::System::IPv6AddressHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsValidStrict", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsValidStrict", 3usize
                         )
                     })
             });
@@ -193,7 +198,7 @@ impl crate::System::IPv6AddressHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::ReadOnlySpan_1<char>,
@@ -213,7 +218,8 @@ impl crate::System::IPv6AddressHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Parse", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Parse",
+                            4usize
                         )
                     })
             });
@@ -235,7 +241,7 @@ impl crate::System::IPv6AddressHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -255,7 +261,8 @@ impl crate::System::IPv6AddressHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseCanonicalName", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseCanonicalName", 4usize
                         )
                     })
             });
@@ -270,7 +277,7 @@ impl crate::System::IPv6AddressHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::ReadOnlySpan_1<u16>),
                         bool,
@@ -279,7 +286,8 @@ impl crate::System::IPv6AddressHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShouldHaveIpv4Embedded", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShouldHaveIpv4Embedded", 1usize
                         )
                     })
             });

@@ -50,12 +50,13 @@ impl crate::UnityEngine::UI::AspectRatioFitter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("DoesParentExists")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoesParentExists", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoesParentExists", 0usize
                         )
                     })
             });
@@ -68,7 +69,7 @@ impl crate::UnityEngine::UI::AspectRatioFitter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector2,
@@ -77,7 +78,8 @@ impl crate::UnityEngine::UI::AspectRatioFitter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetParentSize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetParentSize", 0usize
                         )
                     })
             });
@@ -94,12 +96,13 @@ impl crate::UnityEngine::UI::AspectRatioFitter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f32, i32), f32, 2usize>("GetSizeDeltaToProduceSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSizeDeltaToProduceSize", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSizeDeltaToProduceSize", 2usize
                         )
                     })
             });
@@ -112,12 +115,13 @@ impl crate::UnityEngine::UI::AspectRatioFitter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsAspectModeValid")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsAspectModeValid", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsAspectModeValid", 0usize
                         )
                     })
             });
@@ -128,12 +132,13 @@ impl crate::UnityEngine::UI::AspectRatioFitter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsComponentValidOnObject")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsComponentValidOnObject", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsComponentValidOnObject", 0usize
                         )
                     })
             });
@@ -153,12 +158,13 @@ impl crate::UnityEngine::UI::AspectRatioFitter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDisable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDisable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDisable", 0usize
                         )
                     })
             });
@@ -173,12 +179,13 @@ impl crate::UnityEngine::UI::AspectRatioFitter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnEnable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnEnable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnEnable", 0usize
                         )
                     })
             });
@@ -193,7 +200,7 @@ impl crate::UnityEngine::UI::AspectRatioFitter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -202,7 +209,8 @@ impl crate::UnityEngine::UI::AspectRatioFitter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnRectTransformDimensionsChange", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnRectTransformDimensionsChange", 0usize
                         )
                     })
             });
@@ -217,7 +225,7 @@ impl crate::UnityEngine::UI::AspectRatioFitter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -226,7 +234,8 @@ impl crate::UnityEngine::UI::AspectRatioFitter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnTransformParentChanged", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnTransformParentChanged", 0usize
                         )
                     })
             });
@@ -241,12 +250,13 @@ impl crate::UnityEngine::UI::AspectRatioFitter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SetDirty")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetDirty", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetDirty", 0usize
                         )
                     })
             });
@@ -261,7 +271,7 @@ impl crate::UnityEngine::UI::AspectRatioFitter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -270,7 +280,8 @@ impl crate::UnityEngine::UI::AspectRatioFitter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetLayoutHorizontal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetLayoutHorizontal", 0usize
                         )
                     })
             });
@@ -285,7 +296,7 @@ impl crate::UnityEngine::UI::AspectRatioFitter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -294,7 +305,8 @@ impl crate::UnityEngine::UI::AspectRatioFitter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetLayoutVertical", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetLayoutVertical", 0usize
                         )
                     })
             });
@@ -309,12 +321,13 @@ impl crate::UnityEngine::UI::AspectRatioFitter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Start", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Start",
+                            0usize
                         )
                     })
             });
@@ -329,12 +342,13 @@ impl crate::UnityEngine::UI::AspectRatioFitter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Update")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Update", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Update",
+                            0usize
                         )
                     })
             });
@@ -349,12 +363,13 @@ impl crate::UnityEngine::UI::AspectRatioFitter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("UpdateRect")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateRect", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateRect", 0usize
                         )
                     })
             });
@@ -369,12 +384,13 @@ impl crate::UnityEngine::UI::AspectRatioFitter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -391,7 +407,7 @@ impl crate::UnityEngine::UI::AspectRatioFitter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::UI::AspectRatioFitter_AspectMode,
@@ -400,7 +416,8 @@ impl crate::UnityEngine::UI::AspectRatioFitter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_aspectMode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_aspectMode", 0usize
                         )
                     })
             });
@@ -413,12 +430,13 @@ impl crate::UnityEngine::UI::AspectRatioFitter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_aspectRatio")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_aspectRatio", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_aspectRatio", 0usize
                         )
                     })
             });
@@ -433,7 +451,7 @@ impl crate::UnityEngine::UI::AspectRatioFitter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -442,7 +460,8 @@ impl crate::UnityEngine::UI::AspectRatioFitter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rectTransform", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rectTransform", 0usize
                         )
                     })
             });
@@ -458,7 +477,7 @@ impl crate::UnityEngine::UI::AspectRatioFitter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UI::AspectRatioFitter_AspectMode),
                         quest_hook::libil2cpp::Void,
@@ -467,7 +486,8 @@ impl crate::UnityEngine::UI::AspectRatioFitter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_aspectMode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_aspectMode", 1usize
                         )
                     })
             });
@@ -483,7 +503,7 @@ impl crate::UnityEngine::UI::AspectRatioFitter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -492,7 +512,8 @@ impl crate::UnityEngine::UI::AspectRatioFitter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_aspectRatio", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_aspectRatio", 1usize
                         )
                     })
             });

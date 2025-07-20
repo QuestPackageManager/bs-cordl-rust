@@ -68,7 +68,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::ConstrainedPointSet {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext,
@@ -79,7 +79,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::ConstrainedPointSet {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Prepare", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Prepare",
+                            1usize
                         )
                     })
             });
@@ -102,7 +103,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::ConstrainedPointSet {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -122,7 +123,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::ConstrainedPointSet {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -139,7 +141,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::ConstrainedPointSet {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -150,7 +152,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::ConstrainedPointSet {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_EdgeIndex", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_EdgeIndex", 0usize
                         )
                     })
             });
@@ -167,7 +170,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::ConstrainedPointSet {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationMode,
@@ -176,7 +179,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::ConstrainedPointSet {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_TriangulationMode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_TriangulationMode", 0usize
                         )
                     })
             });
@@ -192,7 +196,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::ConstrainedPointSet {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<i32>,
@@ -203,7 +207,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::ConstrainedPointSet {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_EdgeIndex", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_EdgeIndex", 1usize
                         )
                     })
             });

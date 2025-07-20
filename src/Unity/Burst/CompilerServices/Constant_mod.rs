@@ -45,7 +45,7 @@ impl crate::Unity::Burst::CompilerServices::Constant {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         bool,
@@ -54,7 +54,8 @@ impl crate::Unity::Burst::CompilerServices::Constant {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsConstantExpression", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsConstantExpression", 1usize
                         )
                     })
             });
@@ -69,12 +70,13 @@ impl crate::Unity::Burst::CompilerServices::Constant {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(T), bool, 1usize>("IsConstantExpression")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsConstantExpression", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsConstantExpression", 1usize
                         )
                     })
             });

@@ -54,7 +54,7 @@ impl crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -70,7 +70,8 @@ impl crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreatePssParams", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreatePssParams", 2usize
                         )
                     })
             });
@@ -90,7 +91,7 @@ impl crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -101,7 +102,8 @@ impl crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Find", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Find",
+                            1usize
                         )
                     })
             });
@@ -122,7 +124,7 @@ impl crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -133,7 +135,8 @@ impl crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Generate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Generate", 1usize
                         )
                     })
             });
@@ -155,12 +158,13 @@ impl crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

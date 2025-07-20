@@ -49,7 +49,7 @@ impl crate::ModestTree::MiscExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -65,7 +65,8 @@ impl crate::ModestTree::MiscExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AllocFreeAddRange", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AllocFreeAddRange", 2usize
                         )
                     })
             });
@@ -87,7 +88,7 @@ impl crate::ModestTree::MiscExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -107,7 +108,8 @@ impl crate::ModestTree::MiscExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Fmt", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Fmt",
+                            2usize
                         )
                     })
             });
@@ -131,7 +133,7 @@ impl crate::ModestTree::MiscExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -148,7 +150,8 @@ impl crate::ModestTree::MiscExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetValueAndRemove", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetValueAndRemove", 2usize
                         )
                     })
             });
@@ -168,7 +171,7 @@ impl crate::ModestTree::MiscExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -182,7 +185,8 @@ impl crate::ModestTree::MiscExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IndexOf", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "IndexOf",
+                            2usize
                         )
                     })
             });
@@ -202,7 +206,7 @@ impl crate::ModestTree::MiscExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -222,7 +226,8 @@ impl crate::ModestTree::MiscExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Join", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Join",
+                            2usize
                         )
                     })
             });
@@ -244,7 +249,7 @@ impl crate::ModestTree::MiscExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -258,7 +263,8 @@ impl crate::ModestTree::MiscExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RemoveWithConfirm", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RemoveWithConfirm", 2usize
                         )
                     })
             });
@@ -282,7 +288,7 @@ impl crate::ModestTree::MiscExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -299,7 +305,8 @@ impl crate::ModestTree::MiscExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RemoveWithConfirm", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RemoveWithConfirm", 2usize
                         )
                     })
             });
@@ -319,7 +326,7 @@ impl crate::ModestTree::MiscExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -333,7 +340,8 @@ impl crate::ModestTree::MiscExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RemoveWithConfirm", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RemoveWithConfirm", 2usize
                         )
                     })
             });
@@ -355,7 +363,7 @@ impl crate::ModestTree::MiscExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -369,7 +377,8 @@ impl crate::ModestTree::MiscExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RemoveWithConfirm", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RemoveWithConfirm", 2usize
                         )
                     })
             });

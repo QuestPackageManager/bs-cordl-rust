@@ -58,7 +58,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::ISO9796d1Encoding {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -75,7 +75,8 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::ISO9796d1Encoding {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DecodeBlock", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DecodeBlock", 3usize
                         )
                     })
             });
@@ -95,7 +96,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::ISO9796d1Encoding {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -112,7 +113,8 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::ISO9796d1Encoding {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EncodeBlock", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EncodeBlock", 3usize
                         )
                     })
             });
@@ -125,12 +127,13 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::ISO9796d1Encoding {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetInputBlockSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetInputBlockSize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetInputBlockSize", 0usize
                         )
                     })
             });
@@ -141,12 +144,13 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::ISO9796d1Encoding {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetOutputBlockSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetOutputBlockSize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetOutputBlockSize", 0usize
                         )
                     })
             });
@@ -157,12 +161,13 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::ISO9796d1Encoding {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetPadBits")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPadBits", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPadBits", 0usize
                         )
                     })
             });
@@ -179,7 +184,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::ISO9796d1Encoding {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -190,7 +195,8 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::ISO9796d1Encoding {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetUnderlyingCipher", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetUnderlyingCipher", 0usize
                         )
                     })
             });
@@ -209,7 +215,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::ISO9796d1Encoding {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             bool,
@@ -223,7 +229,8 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::ISO9796d1Encoding {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Init", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            2usize
                         )
                     })
             });
@@ -254,7 +261,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::ISO9796d1Encoding {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -271,7 +278,8 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::ISO9796d1Encoding {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessBlock", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessBlock", 3usize
                         )
                     })
             });
@@ -287,7 +295,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::ISO9796d1Encoding {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -296,7 +304,8 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::ISO9796d1Encoding {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetPadBits", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetPadBits", 1usize
                         )
                     })
             });
@@ -314,7 +323,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::ISO9796d1Encoding {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
@@ -325,7 +334,8 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::ISO9796d1Encoding {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -342,7 +352,7 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::ISO9796d1Encoding {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -351,7 +361,8 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::ISO9796d1Encoding {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AlgorithmName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AlgorithmName", 0usize
                         )
                     })
             });

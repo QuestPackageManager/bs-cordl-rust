@@ -122,7 +122,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -137,7 +137,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Parse", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Parse",
+                            3usize
                         )
                     })
             });
@@ -154,7 +155,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, quest_hook::libil2cpp::ByRefMut<i32>),
                         bool,
@@ -163,7 +164,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Parse2Digit", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Parse2Digit", 2usize
                         )
                     })
             });
@@ -178,7 +180,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, quest_hook::libil2cpp::ByRefMut<i32>),
                         bool,
@@ -187,7 +189,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Parse4Digit", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Parse4Digit", 2usize
                         )
                     })
             });
@@ -202,12 +205,13 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, char), bool, 2usize>("ParseChar")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseChar", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseChar", 2usize
                         )
                     })
             });
@@ -218,12 +222,13 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), bool, 1usize>("ParseDate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseDate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseDate", 1usize
                         )
                     })
             });
@@ -237,7 +242,7 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<i32>),
                         bool,
@@ -246,7 +251,8 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseTime", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseTime", 1usize
                         )
                     })
             });
@@ -260,12 +266,13 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), bool, 1usize>("ParseTimeAndZoneAndWhitespace")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseTimeAndZoneAndWhitespace", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseTimeAndZoneAndWhitespace", 1usize
                         )
                     })
             });
@@ -276,12 +283,13 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), bool, 1usize>("ParseZone")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseZone", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseZone", 1usize
                         )
                     })
             });

@@ -49,7 +49,7 @@ impl crate::GlobalNamespace::FileDifficultyBeatmap {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -58,7 +58,8 @@ impl crate::GlobalNamespace::FileDifficultyBeatmap {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBeatmapString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBeatmapString", 0usize
                         )
                     })
             });
@@ -79,7 +80,7 @@ impl crate::GlobalNamespace::FileDifficultyBeatmap {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -94,7 +95,8 @@ impl crate::GlobalNamespace::FileDifficultyBeatmap {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBeatmapStringAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBeatmapStringAsync", 0usize
                         )
                     })
             });
@@ -113,7 +115,7 @@ impl crate::GlobalNamespace::FileDifficultyBeatmap {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -122,7 +124,8 @@ impl crate::GlobalNamespace::FileDifficultyBeatmap {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLightshowString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLightshowString", 0usize
                         )
                     })
             });
@@ -143,7 +146,7 @@ impl crate::GlobalNamespace::FileDifficultyBeatmap {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -158,7 +161,8 @@ impl crate::GlobalNamespace::FileDifficultyBeatmap {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLightshowStringAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLightshowStringAsync", 0usize
                         )
                     })
             });
@@ -187,7 +191,7 @@ impl crate::GlobalNamespace::FileDifficultyBeatmap {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -203,7 +207,8 @@ impl crate::GlobalNamespace::FileDifficultyBeatmap {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });

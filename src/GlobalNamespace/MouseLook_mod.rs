@@ -56,7 +56,7 @@ impl crate::GlobalNamespace::MouseLook {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Quaternion),
                         crate::UnityEngine::Quaternion,
@@ -65,7 +65,8 @@ impl crate::GlobalNamespace::MouseLook {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ClampRotationAroundXAxis", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ClampRotationAroundXAxis", 1usize
                         )
                     })
             });
@@ -81,7 +82,7 @@ impl crate::GlobalNamespace::MouseLook {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
                         quest_hook::libil2cpp::Void,
@@ -90,7 +91,8 @@ impl crate::GlobalNamespace::MouseLook {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Init", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            1usize
                         )
                     })
             });
@@ -105,7 +107,7 @@ impl crate::GlobalNamespace::MouseLook {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -114,7 +116,8 @@ impl crate::GlobalNamespace::MouseLook {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InternalLockUpdate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InternalLockUpdate", 0usize
                         )
                     })
             });
@@ -131,7 +134,7 @@ impl crate::GlobalNamespace::MouseLook {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -143,7 +146,8 @@ impl crate::GlobalNamespace::MouseLook {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LookRotation", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LookRotation", 2usize
                         )
                     })
             });
@@ -166,7 +170,7 @@ impl crate::GlobalNamespace::MouseLook {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -175,7 +179,8 @@ impl crate::GlobalNamespace::MouseLook {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetCursorLock", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetCursorLock", 1usize
                         )
                     })
             });
@@ -192,7 +197,7 @@ impl crate::GlobalNamespace::MouseLook {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Quaternion, crate::UnityEngine::Quaternion),
                         quest_hook::libil2cpp::Void,
@@ -201,7 +206,8 @@ impl crate::GlobalNamespace::MouseLook {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetRotations", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetRotations", 2usize
                         )
                     })
             });
@@ -216,7 +222,7 @@ impl crate::GlobalNamespace::MouseLook {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -225,7 +231,8 @@ impl crate::GlobalNamespace::MouseLook {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateCursorLock", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateCursorLock", 0usize
                         )
                     })
             });
@@ -240,12 +247,13 @@ impl crate::GlobalNamespace::MouseLook {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

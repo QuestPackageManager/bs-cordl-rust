@@ -75,12 +75,13 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Destroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Destroy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Destroy",
+                            0usize
                         )
                     })
             });
@@ -101,12 +102,13 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("EnqueueRpc")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnqueueRpc", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnqueueRpc", 0usize
                         )
                     })
             });
@@ -130,7 +132,7 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (T0),
                         quest_hook::libil2cpp::Void,
@@ -139,7 +141,8 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnqueueRpc", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnqueueRpc", 1usize
                         )
                     })
             });
@@ -166,7 +169,7 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (T0, T1),
                         quest_hook::libil2cpp::Void,
@@ -175,7 +178,8 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnqueueRpc", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnqueueRpc", 2usize
                         )
                     })
             });
@@ -205,7 +209,7 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (T0, T1, T2),
                         quest_hook::libil2cpp::Void,
@@ -214,7 +218,8 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnqueueRpc", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnqueueRpc", 3usize
                         )
                     })
             });
@@ -247,7 +252,7 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (T0, T1, T2, T3),
                         quest_hook::libil2cpp::Void,
@@ -256,7 +261,8 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnqueueRpc", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnqueueRpc", 4usize
                         )
                     })
             });
@@ -300,7 +306,7 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             TType,
@@ -319,7 +325,8 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterCallbackWithTime", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterCallbackWithTime", 2usize
                         )
                     })
             });
@@ -350,7 +357,7 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             TType,
@@ -370,7 +377,8 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterCallbackWithTime", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterCallbackWithTime", 2usize
                         )
                     })
             });
@@ -404,7 +412,7 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             TType,
@@ -425,7 +433,8 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterCallbackWithTime", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterCallbackWithTime", 2usize
                         )
                     })
             });
@@ -462,7 +471,7 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             TType,
@@ -484,7 +493,8 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterCallbackWithTime", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterCallbackWithTime", 2usize
                         )
                     })
             });
@@ -524,7 +534,7 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             TType,
@@ -547,7 +557,8 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterCallbackWithTime", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterCallbackWithTime", 2usize
                         )
                     })
             });
@@ -574,7 +585,7 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             TType,
@@ -592,7 +603,8 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterCallback", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterCallback", 2usize
                         )
                     })
             });
@@ -622,7 +634,7 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             TType,
@@ -641,7 +653,8 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterCallback", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterCallback", 2usize
                         )
                     })
             });
@@ -669,7 +682,7 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             TType,
@@ -688,7 +701,8 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterCallback", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterCallback", 2usize
                         )
                     })
             });
@@ -721,7 +735,7 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             TType,
@@ -741,7 +755,8 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterCallback", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterCallback", 2usize
                         )
                     })
             });
@@ -777,7 +792,7 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             TType,
@@ -798,7 +813,8 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterCallback", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterCallback", 2usize
                         )
                     })
             });
@@ -837,7 +853,7 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             TType,
@@ -859,7 +875,8 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterCallback", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterCallback", 2usize
                         )
                     })
             });
@@ -882,7 +899,7 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -896,7 +913,8 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });

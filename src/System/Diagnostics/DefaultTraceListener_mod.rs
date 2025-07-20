@@ -49,7 +49,7 @@ impl crate::System::Diagnostics::DefaultTraceListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -65,7 +65,8 @@ impl crate::System::Diagnostics::DefaultTraceListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPrefix", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPrefix", 2usize
                         )
                     })
             });
@@ -88,7 +89,7 @@ impl crate::System::Diagnostics::DefaultTraceListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -97,7 +98,8 @@ impl crate::System::Diagnostics::DefaultTraceListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Write", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Write",
+                            1usize
                         )
                     })
             });
@@ -113,7 +115,7 @@ impl crate::System::Diagnostics::DefaultTraceListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -122,7 +124,8 @@ impl crate::System::Diagnostics::DefaultTraceListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteDebugString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteDebugString", 1usize
                         )
                     })
             });
@@ -138,7 +141,7 @@ impl crate::System::Diagnostics::DefaultTraceListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -147,7 +150,8 @@ impl crate::System::Diagnostics::DefaultTraceListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteImpl", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteImpl", 1usize
                         )
                     })
             });
@@ -163,7 +167,7 @@ impl crate::System::Diagnostics::DefaultTraceListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -172,7 +176,8 @@ impl crate::System::Diagnostics::DefaultTraceListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteLine", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteLine", 1usize
                         )
                     })
             });
@@ -189,7 +194,7 @@ impl crate::System::Diagnostics::DefaultTraceListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -205,7 +210,8 @@ impl crate::System::Diagnostics::DefaultTraceListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteLogFile", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteLogFile", 2usize
                         )
                     })
             });
@@ -221,7 +227,7 @@ impl crate::System::Diagnostics::DefaultTraceListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -230,7 +236,8 @@ impl crate::System::Diagnostics::DefaultTraceListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteMonoTrace", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteMonoTrace", 1usize
                         )
                     })
             });
@@ -245,7 +252,7 @@ impl crate::System::Diagnostics::DefaultTraceListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -254,7 +261,8 @@ impl crate::System::Diagnostics::DefaultTraceListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WritePrefix", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WritePrefix", 0usize
                         )
                     })
             });
@@ -269,7 +277,7 @@ impl crate::System::Diagnostics::DefaultTraceListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Void,
@@ -278,7 +286,8 @@ impl crate::System::Diagnostics::DefaultTraceListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteWindowsDebugString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteWindowsDebugString", 1usize
                         )
                     })
             });
@@ -293,12 +302,13 @@ impl crate::System::Diagnostics::DefaultTraceListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -315,7 +325,7 @@ impl crate::System::Diagnostics::DefaultTraceListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -324,7 +334,8 @@ impl crate::System::Diagnostics::DefaultTraceListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_LogFileName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_LogFileName", 0usize
                         )
                     })
             });

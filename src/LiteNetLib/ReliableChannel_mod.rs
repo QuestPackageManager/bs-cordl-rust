@@ -82,7 +82,7 @@ impl crate::LiteNetLib::ReliableChannel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>),
                         quest_hook::libil2cpp::Void,
@@ -91,7 +91,8 @@ impl crate::LiteNetLib::ReliableChannel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessAck", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessAck", 1usize
                         )
                     })
             });
@@ -107,7 +108,7 @@ impl crate::LiteNetLib::ReliableChannel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>),
                         bool,
@@ -116,7 +117,8 @@ impl crate::LiteNetLib::ReliableChannel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessPacket", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessPacket", 1usize
                         )
                     })
             });
@@ -129,7 +131,7 @@ impl crate::LiteNetLib::ReliableChannel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -138,7 +140,8 @@ impl crate::LiteNetLib::ReliableChannel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SendNextPackets", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SendNextPackets", 0usize
                         )
                     })
             });
@@ -156,7 +159,7 @@ impl crate::LiteNetLib::ReliableChannel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
@@ -169,7 +172,8 @@ impl crate::LiteNetLib::ReliableChannel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -300,7 +304,7 @@ impl crate::LiteNetLib::ReliableChannel_PendingPacket {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>),
                         bool,
@@ -309,7 +313,8 @@ impl crate::LiteNetLib::ReliableChannel_PendingPacket {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Clear", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Clear",
+                            1usize
                         )
                     })
             });
@@ -323,7 +328,7 @@ impl crate::LiteNetLib::ReliableChannel_PendingPacket {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>),
                         quest_hook::libil2cpp::Void,
@@ -332,7 +337,8 @@ impl crate::LiteNetLib::ReliableChannel_PendingPacket {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Init", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            1usize
                         )
                     })
             });
@@ -349,7 +355,7 @@ impl crate::LiteNetLib::ReliableChannel_PendingPacket {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -358,7 +364,8 @@ impl crate::LiteNetLib::ReliableChannel_PendingPacket {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToString", 0usize
                         )
                     })
             });
@@ -375,7 +382,7 @@ impl crate::LiteNetLib::ReliableChannel_PendingPacket {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i64, quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>),
                         quest_hook::libil2cpp::Void,
@@ -384,7 +391,8 @@ impl crate::LiteNetLib::ReliableChannel_PendingPacket {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TrySend", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "TrySend",
+                            2usize
                         )
                     })
             });

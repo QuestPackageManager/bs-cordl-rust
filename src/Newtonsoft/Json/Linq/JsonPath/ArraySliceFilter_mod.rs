@@ -63,7 +63,7 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::ArraySliceFilter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -92,7 +92,8 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::ArraySliceFilter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExecuteFilter", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExecuteFilter", 3usize
                         )
                     })
             });
@@ -112,12 +113,13 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::ArraySliceFilter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, i32, bool), bool, 3usize>("IsValid")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsValid", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsValid",
+                            3usize
                         )
                     })
             });
@@ -139,12 +141,13 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::ArraySliceFilter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -159,12 +162,13 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::ArraySliceFilter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::System::Nullable_1<i32>, 0usize>("get_End")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_End", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_End",
+                            0usize
                         )
                     })
             });
@@ -179,7 +183,7 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::ArraySliceFilter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Nullable_1<i32>,
@@ -188,7 +192,8 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::ArraySliceFilter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Start", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Start", 0usize
                         )
                     })
             });
@@ -203,7 +208,7 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::ArraySliceFilter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Nullable_1<i32>,
@@ -212,7 +217,8 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::ArraySliceFilter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Step", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Step", 0usize
                         )
                     })
             });
@@ -228,7 +234,7 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::ArraySliceFilter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Nullable_1<i32>),
                         quest_hook::libil2cpp::Void,
@@ -237,7 +243,8 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::ArraySliceFilter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_End", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_End",
+                            1usize
                         )
                     })
             });
@@ -253,7 +260,7 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::ArraySliceFilter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Nullable_1<i32>),
                         quest_hook::libil2cpp::Void,
@@ -262,7 +269,8 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::ArraySliceFilter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Start", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Start", 1usize
                         )
                     })
             });
@@ -278,7 +286,7 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::ArraySliceFilter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Nullable_1<i32>),
                         quest_hook::libil2cpp::Void,
@@ -287,7 +295,8 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::ArraySliceFilter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Step", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Step", 1usize
                         )
                     })
             });

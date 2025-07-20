@@ -50,7 +50,7 @@ impl crate::Zenject::CopyNonLazyBinder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>),
                         quest_hook::libil2cpp::Void,
@@ -59,7 +59,8 @@ impl crate::Zenject::CopyNonLazyBinder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddSecondaryCopyBindInfo", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddSecondaryCopyBindInfo", 1usize
                         )
                     })
             });
@@ -76,7 +77,7 @@ impl crate::Zenject::CopyNonLazyBinder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::Zenject::NonLazyBinder>,
@@ -85,7 +86,8 @@ impl crate::Zenject::CopyNonLazyBinder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CopyIntoAllSubContainers", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CopyIntoAllSubContainers", 0usize
                         )
                     })
             });
@@ -102,7 +104,7 @@ impl crate::Zenject::CopyNonLazyBinder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::Zenject::NonLazyBinder>,
@@ -111,7 +113,8 @@ impl crate::Zenject::CopyNonLazyBinder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CopyIntoDirectSubContainers", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CopyIntoDirectSubContainers", 0usize
                         )
                     })
             });
@@ -128,7 +131,7 @@ impl crate::Zenject::CopyNonLazyBinder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::Zenject::NonLazyBinder>,
@@ -137,7 +140,8 @@ impl crate::Zenject::CopyNonLazyBinder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MoveIntoAllSubContainers", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MoveIntoAllSubContainers", 0usize
                         )
                     })
             });
@@ -154,7 +158,7 @@ impl crate::Zenject::CopyNonLazyBinder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::Zenject::NonLazyBinder>,
@@ -163,7 +167,8 @@ impl crate::Zenject::CopyNonLazyBinder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MoveIntoDirectSubContainers", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MoveIntoDirectSubContainers", 0usize
                         )
                     })
             });
@@ -188,7 +193,7 @@ impl crate::Zenject::CopyNonLazyBinder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Zenject::BindingInheritanceMethods),
                         quest_hook::libil2cpp::Void,
@@ -197,7 +202,8 @@ impl crate::Zenject::CopyNonLazyBinder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetInheritanceMethod", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetInheritanceMethod", 1usize
                         )
                     })
             });
@@ -213,7 +219,7 @@ impl crate::Zenject::CopyNonLazyBinder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>),
                         quest_hook::libil2cpp::Void,
@@ -222,7 +228,8 @@ impl crate::Zenject::CopyNonLazyBinder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });

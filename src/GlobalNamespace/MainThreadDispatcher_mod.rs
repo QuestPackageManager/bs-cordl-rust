@@ -51,7 +51,7 @@ impl crate::GlobalNamespace::MainThreadDispatcher {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -60,7 +60,8 @@ impl crate::GlobalNamespace::MainThreadDispatcher {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DispatchOnMainThread", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DispatchOnMainThread", 1usize
                         )
                     })
             });
@@ -81,7 +82,7 @@ impl crate::GlobalNamespace::MainThreadDispatcher {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action_1<A>>, A),
                         quest_hook::libil2cpp::Void,
@@ -90,7 +91,8 @@ impl crate::GlobalNamespace::MainThreadDispatcher {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DispatchOnMainThread", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DispatchOnMainThread", 2usize
                         )
                     })
             });
@@ -114,7 +116,7 @@ impl crate::GlobalNamespace::MainThreadDispatcher {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action_2<A, B>>, A, B),
                         quest_hook::libil2cpp::Void,
@@ -123,7 +125,8 @@ impl crate::GlobalNamespace::MainThreadDispatcher {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DispatchOnMainThread", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DispatchOnMainThread", 3usize
                         )
                     })
             });
@@ -150,7 +153,7 @@ impl crate::GlobalNamespace::MainThreadDispatcher {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Action_3<A, B, C>>,
@@ -164,7 +167,8 @@ impl crate::GlobalNamespace::MainThreadDispatcher {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DispatchOnMainThread", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DispatchOnMainThread", 4usize
                         )
                     })
             });
@@ -198,7 +202,7 @@ impl crate::GlobalNamespace::MainThreadDispatcher {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -215,7 +219,8 @@ impl crate::GlobalNamespace::MainThreadDispatcher {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DispatchOnMainThread", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DispatchOnMainThread", 5usize
                         )
                     })
             });
@@ -247,12 +252,13 @@ impl crate::GlobalNamespace::MainThreadDispatcher {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Tick")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Tick", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Tick",
+                            0usize
                         )
                     })
             });
@@ -267,12 +273,13 @@ impl crate::GlobalNamespace::MainThreadDispatcher {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

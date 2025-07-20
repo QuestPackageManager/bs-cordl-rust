@@ -64,7 +64,7 @@ impl crate::GlobalNamespace::MultiplayerSpectatingSpotManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -80,7 +80,8 @@ impl crate::GlobalNamespace::MultiplayerSpectatingSpotManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAdjacentSpot", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAdjacentSpot", 2usize
                         )
                     })
             });
@@ -98,7 +99,7 @@ impl crate::GlobalNamespace::MultiplayerSpectatingSpotManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::IMultiplayerSpectatingSpot,
@@ -109,7 +110,8 @@ impl crate::GlobalNamespace::MultiplayerSpectatingSpotManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetIndexBySpot", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetIndexBySpot", 1usize
                         )
                     })
             });
@@ -134,7 +136,7 @@ impl crate::GlobalNamespace::MultiplayerSpectatingSpotManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::IMultiplayerSpectatingSpot,
@@ -145,7 +147,8 @@ impl crate::GlobalNamespace::MultiplayerSpectatingSpotManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterSpectatingSpot", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterSpectatingSpot", 1usize
                         )
                     })
             });
@@ -163,7 +166,7 @@ impl crate::GlobalNamespace::MultiplayerSpectatingSpotManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::IMultiplayerSpectatingSpot,
@@ -174,7 +177,8 @@ impl crate::GlobalNamespace::MultiplayerSpectatingSpotManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SpotOnHasBeenRemoved", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SpotOnHasBeenRemoved", 1usize
                         )
                     })
             });
@@ -189,7 +193,7 @@ impl crate::GlobalNamespace::MultiplayerSpectatingSpotManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -198,7 +202,8 @@ impl crate::GlobalNamespace::MultiplayerSpectatingSpotManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateIndexBySpotDictionary", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateIndexBySpotDictionary", 0usize
                         )
                     })
             });
@@ -213,12 +218,13 @@ impl crate::GlobalNamespace::MultiplayerSpectatingSpotManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -235,7 +241,7 @@ impl crate::GlobalNamespace::MultiplayerSpectatingSpotManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -246,7 +252,8 @@ impl crate::GlobalNamespace::MultiplayerSpectatingSpotManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_defaultSpot", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_defaultSpot", 0usize
                         )
                     })
             });
@@ -269,7 +276,7 @@ impl crate::GlobalNamespace::MultiplayerSpectatingSpotManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -284,7 +291,8 @@ impl crate::GlobalNamespace::MultiplayerSpectatingSpotManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_spectatingSpots", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_spectatingSpots", 0usize
                         )
                     })
             });

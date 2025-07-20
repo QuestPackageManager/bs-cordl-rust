@@ -120,7 +120,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -139,7 +139,8 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BuyLevelButtonWasPressed", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BuyLevelButtonWasPressed", 3usize
                         )
                     })
             });
@@ -157,7 +158,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -176,7 +177,8 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BuyLevelButtonWasShown", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BuyLevelButtonWasShown", 3usize
                         )
                     })
             });
@@ -194,7 +196,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -213,7 +215,8 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BuyPackButtonWasPressed", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BuyPackButtonWasPressed", 3usize
                         )
                     })
             });
@@ -231,7 +234,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -250,7 +253,8 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BuyPackButtonWasShown", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BuyPackButtonWasShown", 3usize
                         )
                     })
             });
@@ -274,7 +278,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -302,7 +306,8 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetExperimentEventData", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetExperimentEventData", 3usize
                         )
                     })
             });
@@ -331,7 +336,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -349,7 +354,8 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPackDataForMainMenuPromoBanner", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPackDataForMainMenuPromoBanner", 0usize
                         )
                     })
             });
@@ -382,7 +388,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -400,8 +406,8 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPackDataForMainMenuPromoBannerInternal",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPackDataForMainMenuPromoBannerInternal", 0usize
                         )
                     })
             });
@@ -423,7 +429,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -432,7 +438,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "HandleAdditionalContentModelDidInvalidateData", 0usize
                         )
                     })
@@ -448,7 +454,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -457,7 +463,8 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleDidCatalogLoadOrUpdate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleDidCatalogLoadOrUpdate", 0usize
                         )
                     })
             });
@@ -472,12 +479,13 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Initialize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize", 0usize
                         )
                     })
             });
@@ -494,7 +502,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -503,7 +511,8 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitializeAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitializeAsync", 0usize
                         )
                     })
             });
@@ -520,7 +529,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -529,7 +538,8 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitializeInternalAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitializeInternalAsync", 0usize
                         )
                     })
             });
@@ -551,7 +561,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::PackDefinitionSO,
@@ -568,7 +578,8 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadPackPromoInfoAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadPackPromoInfoAsync", 1usize
                         )
                     })
             });
@@ -587,7 +598,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -603,7 +614,8 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MainMenuDlcPromoBannerWasPressed", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MainMenuDlcPromoBannerWasPressed", 2usize
                         )
                     })
             });
@@ -620,7 +632,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -636,7 +648,8 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MainMenuDlcPromoBannerWasShown", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MainMenuDlcPromoBannerWasShown", 2usize
                         )
                     })
             });
@@ -691,7 +704,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -700,7 +713,8 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateDlcPromoPanelDataAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateDlcPromoPanelDataAsync", 0usize
                         )
                     })
             });
@@ -717,7 +731,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -726,7 +740,8 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateModelDataAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateModelDataAsync", 0usize
                         )
                     })
             });
@@ -743,7 +758,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -752,7 +767,8 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateOwnedPacksAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateOwnedPacksAsync", 0usize
                         )
                     })
             });
@@ -769,7 +785,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -778,7 +794,8 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdatePromoInfosAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdatePromoInfosAsync", 0usize
                         )
                     })
             });
@@ -812,7 +829,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -843,7 +860,8 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            7usize
                         )
                     })
             });
@@ -871,7 +889,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -880,7 +898,8 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_hotReloadDidFinish", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_hotReloadDidFinish", 1usize
                         )
                     })
             });
@@ -896,7 +915,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -905,7 +924,8 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_hotReloadDidStart", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_hotReloadDidStart", 1usize
                         )
                     })
             });
@@ -921,7 +941,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -930,7 +950,8 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_hotReloadDidFinish", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_hotReloadDidFinish", 1usize
                         )
                     })
             });
@@ -946,7 +967,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -955,7 +976,8 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_hotReloadDidStart", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_hotReloadDidStart", 1usize
                         )
                     })
             });
@@ -1073,7 +1095,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1087,7 +1109,8 @@ impl crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -1108,7 +1131,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::GlobalNamespace::PromoInfo_DlcPromoPanelModel_PromoType,
@@ -1126,7 +1149,8 @@ impl crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
                         )
                     })
             });

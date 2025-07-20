@@ -53,7 +53,7 @@ impl crate::UnityEngine::UIElements::MultiColumnTreeViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -67,7 +67,8 @@ impl crate::UnityEngine::UIElements::MultiColumnTreeViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindItem", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindItem", 2usize
                         )
                     })
             });
@@ -83,7 +84,7 @@ impl crate::UnityEngine::UIElements::MultiColumnTreeViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::VisualElement,
@@ -94,7 +95,8 @@ impl crate::UnityEngine::UIElements::MultiColumnTreeViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DestroyItem", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DestroyItem", 1usize
                         )
                     })
             });
@@ -109,12 +111,13 @@ impl crate::UnityEngine::UIElements::MultiColumnTreeViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Dispose", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            0usize
                         )
                     })
             });
@@ -132,7 +135,7 @@ impl crate::UnityEngine::UIElements::MultiColumnTreeViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::ReusableCollectionItem,
@@ -143,7 +146,8 @@ impl crate::UnityEngine::UIElements::MultiColumnTreeViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InvokeMakeItem", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InvokeMakeItem", 1usize
                         )
                     })
             });
@@ -160,7 +164,7 @@ impl crate::UnityEngine::UIElements::MultiColumnTreeViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -171,7 +175,8 @@ impl crate::UnityEngine::UIElements::MultiColumnTreeViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MakeItem", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MakeItem", 0usize
                         )
                     })
             });
@@ -205,7 +210,7 @@ impl crate::UnityEngine::UIElements::MultiColumnTreeViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -214,7 +219,8 @@ impl crate::UnityEngine::UIElements::MultiColumnTreeViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PrepareView", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PrepareView", 0usize
                         )
                     })
             });
@@ -233,7 +239,7 @@ impl crate::UnityEngine::UIElements::MultiColumnTreeViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -247,7 +253,8 @@ impl crate::UnityEngine::UIElements::MultiColumnTreeViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnbindItem", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnbindItem", 2usize
                         )
                     })
             });
@@ -273,7 +280,7 @@ impl crate::UnityEngine::UIElements::MultiColumnTreeViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -296,7 +303,8 @@ impl crate::UnityEngine::UIElements::MultiColumnTreeViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -313,7 +321,7 @@ impl crate::UnityEngine::UIElements::MultiColumnTreeViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -324,7 +332,8 @@ impl crate::UnityEngine::UIElements::MultiColumnTreeViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_columnController", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_columnController", 0usize
                         )
                     })
             });
@@ -343,7 +352,7 @@ impl crate::UnityEngine::UIElements::MultiColumnTreeViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -354,7 +363,8 @@ impl crate::UnityEngine::UIElements::MultiColumnTreeViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_header", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_header", 0usize
                         )
                     })
             });

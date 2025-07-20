@@ -89,7 +89,7 @@ impl crate::GlobalNamespace::CustomNetworkConfig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -107,7 +107,8 @@ impl crate::GlobalNamespace::CustomNetworkConfig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
                         )
                     })
             });
@@ -128,7 +129,7 @@ impl crate::GlobalNamespace::CustomNetworkConfig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -137,7 +138,8 @@ impl crate::GlobalNamespace::CustomNetworkConfig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_appId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_appId", 0usize
                         )
                     })
             });
@@ -150,12 +152,13 @@ impl crate::GlobalNamespace::CustomNetworkConfig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_discoveryPort")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_discoveryPort", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_discoveryPort", 0usize
                         )
                     })
             });
@@ -166,12 +169,13 @@ impl crate::GlobalNamespace::CustomNetworkConfig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_forceGameLift")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_forceGameLift", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_forceGameLift", 0usize
                         )
                     })
             });
@@ -186,7 +190,7 @@ impl crate::GlobalNamespace::CustomNetworkConfig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -195,7 +199,8 @@ impl crate::GlobalNamespace::CustomNetworkConfig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_graphAccessToken", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_graphAccessToken", 0usize
                         )
                     })
             });
@@ -212,7 +217,7 @@ impl crate::GlobalNamespace::CustomNetworkConfig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -221,7 +226,8 @@ impl crate::GlobalNamespace::CustomNetworkConfig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_graphUrl", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_graphUrl", 0usize
                         )
                     })
             });
@@ -238,7 +244,7 @@ impl crate::GlobalNamespace::CustomNetworkConfig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DnsEndPoint>,
@@ -247,7 +253,8 @@ impl crate::GlobalNamespace::CustomNetworkConfig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_masterServerEndPoint", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_masterServerEndPoint", 0usize
                         )
                     })
             });
@@ -260,12 +267,13 @@ impl crate::GlobalNamespace::CustomNetworkConfig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_maxPartySize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_maxPartySize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_maxPartySize", 0usize
                         )
                     })
             });
@@ -276,12 +284,13 @@ impl crate::GlobalNamespace::CustomNetworkConfig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_multiplayerPort")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_multiplayerPort", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_multiplayerPort", 0usize
                         )
                     })
             });
@@ -296,7 +305,7 @@ impl crate::GlobalNamespace::CustomNetworkConfig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -305,7 +314,8 @@ impl crate::GlobalNamespace::CustomNetworkConfig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_multiplayerStatusUrl", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_multiplayerStatusUrl", 0usize
                         )
                     })
             });
@@ -318,12 +328,13 @@ impl crate::GlobalNamespace::CustomNetworkConfig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_partyPort")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_partyPort", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_partyPort", 0usize
                         )
                     })
             });
@@ -338,7 +349,7 @@ impl crate::GlobalNamespace::CustomNetworkConfig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -347,7 +358,8 @@ impl crate::GlobalNamespace::CustomNetworkConfig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_quickPlaySetupUrl", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_quickPlaySetupUrl", 0usize
                         )
                     })
             });
@@ -362,7 +374,7 @@ impl crate::GlobalNamespace::CustomNetworkConfig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::ServiceEnvironment,
@@ -371,7 +383,8 @@ impl crate::GlobalNamespace::CustomNetworkConfig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_serviceEnvironment", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_serviceEnvironment", 0usize
                         )
                     })
             });

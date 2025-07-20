@@ -52,12 +52,13 @@ impl crate::GlobalNamespace::VRControllerTransformOffset {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -70,12 +71,13 @@ impl crate::GlobalNamespace::VRControllerTransformOffset {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_alternativeHandling")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_alternativeHandling", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_alternativeHandling", 0usize
                         )
                     })
             });
@@ -88,7 +90,7 @@ impl crate::GlobalNamespace::VRControllerTransformOffset {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector3,
@@ -97,7 +99,8 @@ impl crate::GlobalNamespace::VRControllerTransformOffset {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_leftPositionOffset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_leftPositionOffset", 0usize
                         )
                     })
             });
@@ -112,7 +115,7 @@ impl crate::GlobalNamespace::VRControllerTransformOffset {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector3,
@@ -121,7 +124,8 @@ impl crate::GlobalNamespace::VRControllerTransformOffset {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_leftRotationOffset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_leftRotationOffset", 0usize
                         )
                     })
             });
@@ -136,7 +140,7 @@ impl crate::GlobalNamespace::VRControllerTransformOffset {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector3,
@@ -145,7 +149,8 @@ impl crate::GlobalNamespace::VRControllerTransformOffset {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_positionOffset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_positionOffset", 0usize
                         )
                     })
             });
@@ -160,7 +165,7 @@ impl crate::GlobalNamespace::VRControllerTransformOffset {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector3,
@@ -169,7 +174,8 @@ impl crate::GlobalNamespace::VRControllerTransformOffset {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rightPositionOffset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rightPositionOffset", 0usize
                         )
                     })
             });
@@ -184,7 +190,7 @@ impl crate::GlobalNamespace::VRControllerTransformOffset {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector3,
@@ -193,7 +199,8 @@ impl crate::GlobalNamespace::VRControllerTransformOffset {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rightRotationOffset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rightRotationOffset", 0usize
                         )
                     })
             });
@@ -208,7 +215,7 @@ impl crate::GlobalNamespace::VRControllerTransformOffset {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector3,
@@ -217,7 +224,8 @@ impl crate::GlobalNamespace::VRControllerTransformOffset {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rotationOffset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rotationOffset", 0usize
                         )
                     })
             });

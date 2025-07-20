@@ -52,7 +52,7 @@ impl crate::System::Data::Merger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
@@ -64,7 +64,8 @@ impl crate::System::Data::Merger {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSrcKey", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSrcKey", 2usize
                         )
                     })
             });
@@ -80,7 +81,7 @@ impl crate::System::Data::Merger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>),
                         quest_hook::libil2cpp::Void,
@@ -89,7 +90,8 @@ impl crate::System::Data::Merger {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MergeConstraints", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MergeConstraints", 1usize
                         )
                     })
             });
@@ -105,7 +107,7 @@ impl crate::System::Data::Merger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>),
                         quest_hook::libil2cpp::Void,
@@ -114,7 +116,8 @@ impl crate::System::Data::Merger {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MergeConstraints", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MergeConstraints", 1usize
                         )
                     })
             });
@@ -130,7 +133,7 @@ impl crate::System::Data::Merger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>),
                         quest_hook::libil2cpp::Void,
@@ -139,7 +142,8 @@ impl crate::System::Data::Merger {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MergeDataSet", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MergeDataSet", 1usize
                         )
                     })
             });
@@ -156,7 +160,7 @@ impl crate::System::Data::Merger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -172,7 +176,8 @@ impl crate::System::Data::Merger {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MergeExtendedProperties", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MergeExtendedProperties", 2usize
                         )
                     })
             });
@@ -188,7 +193,7 @@ impl crate::System::Data::Merger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>),
                         quest_hook::libil2cpp::Void,
@@ -197,7 +202,8 @@ impl crate::System::Data::Merger {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MergeRelation", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MergeRelation", 1usize
                         )
                     })
             });
@@ -215,7 +221,7 @@ impl crate::System::Data::Merger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>),
                         quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
@@ -224,7 +230,8 @@ impl crate::System::Data::Merger {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MergeSchema", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MergeSchema", 1usize
                         )
                     })
             });
@@ -240,7 +247,7 @@ impl crate::System::Data::Merger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>),
                         quest_hook::libil2cpp::Void,
@@ -249,7 +256,8 @@ impl crate::System::Data::Merger {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MergeTableData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MergeTableData", 1usize
                         )
                     })
             });
@@ -265,7 +273,7 @@ impl crate::System::Data::Merger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>),
                         quest_hook::libil2cpp::Void,
@@ -274,7 +282,8 @@ impl crate::System::Data::Merger {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MergeTable", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MergeTable", 1usize
                         )
                     })
             });
@@ -291,7 +300,7 @@ impl crate::System::Data::Merger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
@@ -303,7 +312,8 @@ impl crate::System::Data::Merger {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MergeTable", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MergeTable", 2usize
                         )
                     })
             });
@@ -343,7 +353,7 @@ impl crate::System::Data::Merger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
@@ -356,7 +366,8 @@ impl crate::System::Data::Merger {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -375,7 +386,7 @@ impl crate::System::Data::Merger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
@@ -388,7 +399,8 @@ impl crate::System::Data::Merger {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });

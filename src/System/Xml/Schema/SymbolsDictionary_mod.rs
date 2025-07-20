@@ -53,7 +53,7 @@ impl crate::System::Xml::Schema::SymbolsDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -69,7 +69,8 @@ impl crate::System::Xml::Schema::SymbolsDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddName", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "AddName",
+                            2usize
                         )
                     })
             });
@@ -87,7 +88,7 @@ impl crate::System::Xml::Schema::SymbolsDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -104,7 +105,8 @@ impl crate::System::Xml::Schema::SymbolsDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddNamespaceList", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddNamespaceList", 3usize
                         )
                     })
             });
@@ -121,7 +123,7 @@ impl crate::System::Xml::Schema::SymbolsDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -137,7 +139,8 @@ impl crate::System::Xml::Schema::SymbolsDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddWildcard", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddWildcard", 2usize
                         )
                     })
             });
@@ -153,7 +156,7 @@ impl crate::System::Xml::Schema::SymbolsDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::XmlQualifiedName,
@@ -164,7 +167,8 @@ impl crate::System::Xml::Schema::SymbolsDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Exists", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Exists",
+                            1usize
                         )
                     })
             });
@@ -180,7 +184,7 @@ impl crate::System::Xml::Schema::SymbolsDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::Schema::NamespaceList,
@@ -193,7 +197,8 @@ impl crate::System::Xml::Schema::SymbolsDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNamespaceListSymbols", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNamespaceListSymbols", 1usize
                         )
                     })
             });
@@ -211,7 +216,7 @@ impl crate::System::Xml::Schema::SymbolsDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -220,7 +225,8 @@ impl crate::System::Xml::Schema::SymbolsDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetParticle", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetParticle", 1usize
                         )
                     })
             });
@@ -238,7 +244,7 @@ impl crate::System::Xml::Schema::SymbolsDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -247,7 +253,8 @@ impl crate::System::Xml::Schema::SymbolsDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NameOf", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "NameOf",
+                            1usize
                         )
                     })
             });
@@ -269,12 +276,13 @@ impl crate::System::Xml::Schema::SymbolsDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -287,12 +295,13 @@ impl crate::System::Xml::Schema::SymbolsDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_Count")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Count", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Count", 0usize
                         )
                     })
             });
@@ -303,12 +312,13 @@ impl crate::System::Xml::Schema::SymbolsDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsUpaEnforced")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsUpaEnforced", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsUpaEnforced", 0usize
                         )
                     })
             });
@@ -322,7 +332,7 @@ impl crate::System::Xml::Schema::SymbolsDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::XmlQualifiedName,
@@ -333,7 +343,8 @@ impl crate::System::Xml::Schema::SymbolsDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Item", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Item", 1usize
                         )
                     })
             });
@@ -347,7 +358,7 @@ impl crate::System::Xml::Schema::SymbolsDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -356,7 +367,8 @@ impl crate::System::Xml::Schema::SymbolsDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_IsUpaEnforced", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_IsUpaEnforced", 1usize
                         )
                     })
             });

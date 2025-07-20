@@ -65,12 +65,13 @@ impl crate::Ice::FloorLightTilesGrid {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("DespawnAll")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DespawnAll", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DespawnAll", 0usize
                         )
                     })
             });
@@ -86,7 +87,7 @@ impl crate::Ice::FloorLightTilesGrid {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Ice::FloorLightTile>),
                         quest_hook::libil2cpp::Void,
@@ -95,7 +96,8 @@ impl crate::Ice::FloorLightTilesGrid {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DespawnTile", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DespawnTile", 1usize
                         )
                     })
             });
@@ -111,7 +113,7 @@ impl crate::Ice::FloorLightTilesGrid {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Ice::FloorLightTile>),
                         quest_hook::libil2cpp::Void,
@@ -120,7 +122,8 @@ impl crate::Ice::FloorLightTilesGrid {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleFloorLightTileDidFinish", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleFloorLightTileDidFinish", 1usize
                         )
                     })
             });
@@ -140,7 +143,7 @@ impl crate::Ice::FloorLightTilesGrid {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32, f32, f32, crate::UnityEngine::Color),
                         quest_hook::libil2cpp::Void,
@@ -149,7 +152,8 @@ impl crate::Ice::FloorLightTilesGrid {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HighlightTile", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HighlightTile", 5usize
                         )
                     })
             });
@@ -170,7 +174,7 @@ impl crate::Ice::FloorLightTilesGrid {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector3, i32, i32, f32, f32),
                         quest_hook::libil2cpp::Void,
@@ -179,7 +183,8 @@ impl crate::Ice::FloorLightTilesGrid {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Init", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            5usize
                         )
                     })
             });
@@ -205,12 +210,13 @@ impl crate::Ice::FloorLightTilesGrid {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -223,12 +229,13 @@ impl crate::Ice::FloorLightTilesGrid {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_ySize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ySize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ySize", 0usize
                         )
                     })
             });

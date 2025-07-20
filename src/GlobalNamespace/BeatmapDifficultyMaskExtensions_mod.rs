@@ -46,7 +46,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::BeatmapDifficultyMask,
@@ -58,7 +58,8 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Contains", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Contains", 2usize
                         )
                     })
             });
@@ -74,7 +75,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::BeatmapDifficultyMask,
@@ -86,7 +87,8 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Contains", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Contains", 2usize
                         )
                     })
             });
@@ -100,7 +102,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::BeatmapDifficultyMask,
@@ -112,7 +114,8 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DifferenceFrom", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DifferenceFrom", 2usize
                         )
                     })
             });
@@ -125,7 +128,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::BeatmapDifficultyMask),
                         crate::GlobalNamespace::BeatmapDifficulty,
@@ -134,7 +137,8 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FromMask", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FromMask", 1usize
                         )
                     })
             });
@@ -151,7 +155,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::BeatmapDifficultyMask),
                         crate::System::Nullable_1<
@@ -162,7 +166,8 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FromMaskMaybe", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FromMaskMaybe", 1usize
                         )
                     })
             });
@@ -179,7 +184,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::BeatmapDifficultyMask),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -188,7 +193,8 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LocalizedKey", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LocalizedKey", 1usize
                         )
                     })
             });
@@ -205,7 +211,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::BeatmapDifficultyMask),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -214,7 +220,8 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShortLocalizedKey", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShortLocalizedKey", 1usize
                         )
                     })
             });
@@ -231,7 +238,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::BeatmapDifficultyMask),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -240,7 +247,8 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToHexString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToHexString", 1usize
                         )
                     })
             });
@@ -255,7 +263,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::BeatmapDifficulty),
                         crate::GlobalNamespace::BeatmapDifficultyMask,
@@ -264,7 +272,8 @@ impl crate::GlobalNamespace::BeatmapDifficultyMaskExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToMask", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "ToMask",
+                            1usize
                         )
                     })
             });

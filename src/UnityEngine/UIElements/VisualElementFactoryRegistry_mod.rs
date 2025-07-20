@@ -51,7 +51,7 @@ impl crate::UnityEngine::UIElements::VisualElementFactoryRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -65,7 +65,8 @@ impl crate::UnityEngine::UIElements::VisualElementFactoryRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMovedUIControlTypeName", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMovedUIControlTypeName", 2usize
                         )
                     })
             });
@@ -80,7 +81,7 @@ impl crate::UnityEngine::UIElements::VisualElementFactoryRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -89,7 +90,8 @@ impl crate::UnityEngine::UIElements::VisualElementFactoryRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterEngineFactories", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterEngineFactories", 0usize
                         )
                     })
             });
@@ -104,7 +106,7 @@ impl crate::UnityEngine::UIElements::VisualElementFactoryRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::IUxmlFactory,
@@ -115,7 +117,8 @@ impl crate::UnityEngine::UIElements::VisualElementFactoryRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterFactory", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterFactory", 1usize
                         )
                     })
             });
@@ -130,7 +133,7 @@ impl crate::UnityEngine::UIElements::VisualElementFactoryRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -139,7 +142,8 @@ impl crate::UnityEngine::UIElements::VisualElementFactoryRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterUserFactories", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterUserFactories", 0usize
                         )
                     })
             });
@@ -163,7 +167,7 @@ impl crate::UnityEngine::UIElements::VisualElementFactoryRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -185,7 +189,8 @@ impl crate::UnityEngine::UIElements::VisualElementFactoryRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGetValue", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetValue", 2usize
                         )
                     })
             });
@@ -211,7 +216,7 @@ impl crate::UnityEngine::UIElements::VisualElementFactoryRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -233,7 +238,8 @@ impl crate::UnityEngine::UIElements::VisualElementFactoryRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_factories", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_factories", 0usize
                         )
                     })
             });

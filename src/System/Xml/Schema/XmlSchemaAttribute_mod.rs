@@ -62,7 +62,7 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -73,7 +73,8 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Clone", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Clone",
+                            0usize
                         )
                     })
             });
@@ -96,7 +97,7 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::Schema::XmlSchemaSimpleType,
@@ -107,7 +108,8 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetAttributeType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetAttributeType", 1usize
                         )
                     })
             });
@@ -123,7 +125,7 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::XmlQualifiedName,
@@ -134,7 +136,8 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetQualifiedName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetQualifiedName", 1usize
                         )
                     })
             });
@@ -149,12 +152,13 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -171,7 +175,7 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -182,7 +186,8 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AttDef", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AttDef", 0usize
                         )
                     })
             });
@@ -199,7 +204,7 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -210,7 +215,8 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AttributeSchemaType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AttributeSchemaType", 0usize
                         )
                     })
             });
@@ -227,7 +233,7 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -238,7 +244,8 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Datatype", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Datatype", 0usize
                         )
                     })
             });
@@ -255,7 +262,7 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -264,7 +271,8 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_DefaultValue", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_DefaultValue", 0usize
                         )
                     })
             });
@@ -281,7 +289,7 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -290,7 +298,8 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_FixedValue", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_FixedValue", 0usize
                         )
                     })
             });
@@ -305,7 +314,7 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::Schema::XmlSchemaForm,
@@ -314,7 +323,8 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Form", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Form", 0usize
                         )
                     })
             });
@@ -331,7 +341,7 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -340,7 +350,8 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Name", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Name", 0usize
                         )
                     })
             });
@@ -357,7 +368,7 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -366,7 +377,8 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_NameAttribute", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_NameAttribute", 0usize
                         )
                     })
             });
@@ -383,7 +395,7 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
@@ -392,7 +404,8 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_QualifiedName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_QualifiedName", 0usize
                         )
                     })
             });
@@ -409,7 +422,7 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
@@ -418,7 +431,8 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_RefName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_RefName", 0usize
                         )
                     })
             });
@@ -435,7 +449,7 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -446,7 +460,8 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SchemaType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SchemaType", 0usize
                         )
                     })
             });
@@ -463,7 +478,7 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
@@ -472,7 +487,8 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SchemaTypeName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SchemaTypeName", 0usize
                         )
                     })
             });
@@ -487,7 +503,7 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Xml::Schema::XmlSchemaUse,
@@ -496,7 +512,8 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Use", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_Use",
+                            0usize
                         )
                     })
             });
@@ -512,7 +529,7 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::Schema::SchemaAttDef,
@@ -523,7 +540,8 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_AttDef", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_AttDef", 1usize
                         )
                     })
             });
@@ -539,7 +557,7 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -548,7 +566,8 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_DefaultValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_DefaultValue", 1usize
                         )
                     })
             });
@@ -564,7 +583,7 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -573,7 +592,8 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_FixedValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_FixedValue", 1usize
                         )
                     })
             });
@@ -589,7 +609,7 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::Schema::XmlSchemaForm),
                         quest_hook::libil2cpp::Void,
@@ -598,7 +618,8 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Form", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Form", 1usize
                         )
                     })
             });
@@ -614,7 +635,7 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -623,7 +644,8 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Name", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Name", 1usize
                         )
                     })
             });
@@ -639,7 +661,7 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -648,7 +670,8 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_NameAttribute", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_NameAttribute", 1usize
                         )
                     })
             });
@@ -664,7 +687,7 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::XmlQualifiedName,
@@ -675,7 +698,8 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_RefName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_RefName", 1usize
                         )
                     })
             });
@@ -691,7 +715,7 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::Schema::XmlSchemaSimpleType,
@@ -702,7 +726,8 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_SchemaType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_SchemaType", 1usize
                         )
                     })
             });
@@ -718,7 +743,7 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::XmlQualifiedName,
@@ -729,7 +754,8 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_SchemaTypeName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_SchemaTypeName", 1usize
                         )
                     })
             });
@@ -745,7 +771,7 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::Schema::XmlSchemaUse),
                         quest_hook::libil2cpp::Void,
@@ -754,7 +780,8 @@ impl crate::System::Xml::Schema::XmlSchemaAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Use", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_Use",
+                            1usize
                         )
                     })
             });

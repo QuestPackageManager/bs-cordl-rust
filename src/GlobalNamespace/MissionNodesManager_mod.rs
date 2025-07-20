@@ -71,12 +71,13 @@ impl crate::GlobalNamespace::MissionNodesManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Awake", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Awake",
+                            0usize
                         )
                     })
             });
@@ -91,12 +92,13 @@ impl crate::GlobalNamespace::MissionNodesManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("DidFirstLockedMissionStageChange")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DidFirstLockedMissionStageChange", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DidFirstLockedMissionStageChange", 0usize
                         )
                     })
             });
@@ -109,7 +111,7 @@ impl crate::GlobalNamespace::MissionNodesManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -118,7 +120,8 @@ impl crate::GlobalNamespace::MissionNodesManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAllMissionNodes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAllMissionNodes", 0usize
                         )
                     })
             });
@@ -145,7 +148,7 @@ impl crate::GlobalNamespace::MissionNodesManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -171,7 +174,8 @@ impl crate::GlobalNamespace::MissionNodesManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAllMissionNodes", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAllMissionNodes", 2usize
                         )
                     })
             });
@@ -190,7 +194,7 @@ impl crate::GlobalNamespace::MissionNodesManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
@@ -199,7 +203,7 @@ impl crate::GlobalNamespace::MissionNodesManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "GetMissionNodeWithModelClearedStateInconsistency", 0usize
                         )
                     })
@@ -221,7 +225,7 @@ impl crate::GlobalNamespace::MissionNodesManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -236,7 +240,8 @@ impl crate::GlobalNamespace::MissionNodesManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNewEnabledConnection", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNewEnabledConnection", 0usize
                         )
                     })
             });
@@ -255,7 +260,7 @@ impl crate::GlobalNamespace::MissionNodesManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
@@ -264,7 +269,8 @@ impl crate::GlobalNamespace::MissionNodesManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTopMostNotClearedMissionNode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTopMostNotClearedMissionNode", 0usize
                         )
                     })
             });
@@ -285,7 +291,7 @@ impl crate::GlobalNamespace::MissionNodesManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -300,8 +306,8 @@ impl crate::GlobalNamespace::MissionNodesManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IMissionNodesManager.get_allMissionNodes",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IMissionNodesManager.get_allMissionNodes", 0usize
                         )
                     })
             });
@@ -320,7 +326,7 @@ impl crate::GlobalNamespace::MissionNodesManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMissionNode>,
@@ -329,8 +335,8 @@ impl crate::GlobalNamespace::MissionNodesManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IMissionNodesManager.get_finalMissionNode",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IMissionNodesManager.get_finalMissionNode", 0usize
                         )
                     })
             });
@@ -349,7 +355,7 @@ impl crate::GlobalNamespace::MissionNodesManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -363,7 +369,8 @@ impl crate::GlobalNamespace::MissionNodesManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsNodeInteractable", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsNodeInteractable", 2usize
                         )
                     })
             });
@@ -379,7 +386,7 @@ impl crate::GlobalNamespace::MissionNodesManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>),
                         bool,
@@ -388,7 +395,8 @@ impl crate::GlobalNamespace::MissionNodesManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MissionWasCleared", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MissionWasCleared", 1usize
                         )
                     })
             });
@@ -408,7 +416,7 @@ impl crate::GlobalNamespace::MissionNodesManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -417,7 +425,8 @@ impl crate::GlobalNamespace::MissionNodesManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterAllNodes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterAllNodes", 0usize
                         )
                     })
             });
@@ -432,7 +441,7 @@ impl crate::GlobalNamespace::MissionNodesManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -441,7 +450,8 @@ impl crate::GlobalNamespace::MissionNodesManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResetAllNodes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResetAllNodes", 0usize
                         )
                     })
             });
@@ -456,7 +466,7 @@ impl crate::GlobalNamespace::MissionNodesManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -465,7 +475,8 @@ impl crate::GlobalNamespace::MissionNodesManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetupNodeConnections", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetupNodeConnections", 0usize
                         )
                     })
             });
@@ -480,7 +491,7 @@ impl crate::GlobalNamespace::MissionNodesManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -489,7 +500,8 @@ impl crate::GlobalNamespace::MissionNodesManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetupNodeMap", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetupNodeMap", 0usize
                         )
                     })
             });
@@ -508,7 +520,7 @@ impl crate::GlobalNamespace::MissionNodesManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -522,7 +534,8 @@ impl crate::GlobalNamespace::MissionNodesManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetupNodeTree", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetupNodeTree", 2usize
                         )
                     })
             });
@@ -537,7 +550,7 @@ impl crate::GlobalNamespace::MissionNodesManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -546,7 +559,8 @@ impl crate::GlobalNamespace::MissionNodesManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetupStages", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetupStages", 0usize
                         )
                     })
             });
@@ -561,7 +575,7 @@ impl crate::GlobalNamespace::MissionNodesManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -570,7 +584,8 @@ impl crate::GlobalNamespace::MissionNodesManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateStageLockText", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateStageLockText", 0usize
                         )
                     })
             });
@@ -585,12 +600,13 @@ impl crate::GlobalNamespace::MissionNodesManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -603,12 +619,13 @@ impl crate::GlobalNamespace::MissionNodesManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsInitialized")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsInitialized", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsInitialized", 0usize
                         )
                     })
             });
@@ -627,7 +644,7 @@ impl crate::GlobalNamespace::MissionNodesManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -642,7 +659,8 @@ impl crate::GlobalNamespace::MissionNodesManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_allMissionNodes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_allMissionNodes", 0usize
                         )
                     })
             });
@@ -661,7 +679,7 @@ impl crate::GlobalNamespace::MissionNodesManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
@@ -670,7 +688,8 @@ impl crate::GlobalNamespace::MissionNodesManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_finalMissionNode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_finalMissionNode", 0usize
                         )
                     })
             });
@@ -687,7 +706,7 @@ impl crate::GlobalNamespace::MissionNodesManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -698,7 +717,8 @@ impl crate::GlobalNamespace::MissionNodesManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_missionProgressModel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_missionProgressModel", 0usize
                         )
                     })
             });
@@ -715,7 +735,7 @@ impl crate::GlobalNamespace::MissionNodesManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -726,7 +746,8 @@ impl crate::GlobalNamespace::MissionNodesManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_missionStagesManager", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_missionStagesManager", 0usize
                         )
                     })
             });
@@ -743,7 +764,7 @@ impl crate::GlobalNamespace::MissionNodesManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
@@ -752,7 +773,8 @@ impl crate::GlobalNamespace::MissionNodesManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rootMissionNode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rootMissionNode", 0usize
                         )
                     })
             });

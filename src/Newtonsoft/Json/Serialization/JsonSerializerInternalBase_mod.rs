@@ -67,7 +67,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -76,7 +76,8 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ClearErrorContext", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ClearErrorContext", 0usize
                         )
                     })
             });
@@ -97,7 +98,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -119,7 +120,8 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetErrorContext", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetErrorContext", 4usize
                         )
                     })
             });
@@ -144,7 +146,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -170,7 +172,8 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsErrorHandled", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsErrorHandled", 6usize
                         )
                     })
             });
@@ -204,7 +207,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -220,7 +223,8 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResolvedNullValueHandling", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResolvedNullValueHandling", 2usize
                         )
                     })
             });
@@ -236,7 +240,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Newtonsoft::Json::JsonSerializer,
@@ -247,7 +251,8 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -269,7 +274,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -287,7 +292,8 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_DefaultReferenceMappings", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_DefaultReferenceMappings", 0usize
                         )
                     })
             });
@@ -378,7 +384,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase_Referenc
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -396,7 +402,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase_Referenc
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "System.Collections.Generic.IEqualityComparer<System.Object>.Equals",
                             2usize
                         )
@@ -412,7 +418,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase_Referenc
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         i32,
@@ -423,7 +429,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase_Referenc
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "System.Collections.Generic.IEqualityComparer<System.Object>.GetHashCode",
                             1usize
                         )
@@ -438,12 +444,13 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase_Referenc
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

@@ -81,12 +81,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(T), quest_hook::libil2cpp::Void, 1usize>("Add")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Add", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Add",
+                            1usize
                         )
                     })
             });
@@ -106,7 +107,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::OrderedSet_1_Node<T>,
@@ -117,7 +118,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AppendNode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AppendNode", 1usize
                         )
                     })
             });
@@ -137,7 +139,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::OrderedSet_1_Node<T>,
@@ -148,7 +150,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AppendNodeUnchecked", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AppendNodeUnchecked", 1usize
                         )
                     })
             });
@@ -165,12 +168,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Clear", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Clear",
+                            0usize
                         )
                     })
             });
@@ -187,12 +191,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(T), bool, 1usize>("Contains")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Contains", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Contains", 1usize
                         )
                     })
             });
@@ -211,7 +216,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -222,7 +227,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetEnumerator", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetEnumerator", 0usize
                         )
                     })
             });
@@ -239,12 +245,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), T, 0usize>("GetFirstOrDefault")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetFirstOrDefault", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetFirstOrDefault", 0usize
                         )
                     })
             });
@@ -276,7 +283,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::OrderedSet_1_Node<T>,
@@ -287,7 +294,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PrependNode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PrependNode", 1usize
                         )
                     })
             });
@@ -307,7 +315,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::OrderedSet_1_Node<T>,
@@ -318,7 +326,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PrependNodeUnchecked", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PrependNodeUnchecked", 1usize
                         )
                     })
             });
@@ -335,12 +344,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(T), bool, 1usize>("Remove")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Remove", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Remove",
+                            1usize
                         )
                     })
             });
@@ -358,7 +368,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::OrderedSet_1_Node<T>,
@@ -369,7 +379,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RemoveNode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RemoveNode", 1usize
                         )
                     })
             });
@@ -392,7 +403,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -408,7 +419,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SwapNodes", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SwapNodes", 2usize
                         )
                     })
             });
@@ -429,7 +441,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -440,7 +452,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "System.Collections.IEnumerable.GetEnumerator", 0usize
                         )
                     })
@@ -461,7 +473,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<T>),
                         bool,
@@ -470,7 +482,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGetFirst", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetFirst", 1usize
                         )
                     })
             });
@@ -488,7 +501,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::OrderedSet_1_Node<T>,
@@ -499,7 +512,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateSortedPosition", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateSortedPosition", 1usize
                         )
                     })
             });
@@ -519,7 +533,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (T),
                         quest_hook::libil2cpp::Void,
@@ -528,7 +542,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateSortedPosition", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateSortedPosition", 1usize
                         )
                     })
             });
@@ -549,7 +564,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Comparison_1<T>>,
@@ -561,7 +576,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -578,12 +594,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_count")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_count", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_count", 0usize
                         )
                     })
             });
@@ -723,7 +740,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1_Node<T
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (T, i32),
                         quest_hook::libil2cpp::Void,
@@ -732,7 +749,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1_Node<T
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });

@@ -79,12 +79,13 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Activate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Activate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Activate", 0usize
                         )
                     })
             });
@@ -99,12 +100,13 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Deactivate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Deactivate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Deactivate", 0usize
                         )
                     })
             });
@@ -119,7 +121,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -128,7 +130,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "HandleLoadedSelectionViewDidPressCreateButton", 0usize
                         )
                     })
@@ -144,7 +146,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -153,8 +155,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleLoadedSelectionViewDidPressEditButton",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleLoadedSelectionViewDidPressEditButton", 0usize
                         )
                     })
             });
@@ -169,7 +171,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -178,7 +180,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "HandleLoadedSelectionViewDidPressPreferredButton", 0usize
                         )
                     })
@@ -197,7 +199,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
@@ -208,7 +210,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Load", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Load",
+                            1usize
                         )
                     })
             });
@@ -230,12 +233,13 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnEnable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnEnable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnEnable", 0usize
                         )
                     })
             });
@@ -250,7 +254,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -259,7 +263,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReloadIsCreated", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReloadIsCreated", 0usize
                         )
                     })
             });
@@ -277,7 +282,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
@@ -288,7 +293,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetSelectedAvatarSystem", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetSelectedAvatarSystem", 1usize
                         )
                     })
             });
@@ -303,7 +309,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -312,7 +318,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryActivateOnEnable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryActivateOnEnable", 0usize
                         )
                     })
             });
@@ -327,12 +334,13 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -354,7 +362,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -369,7 +377,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_didRequestCreationOfAvatarEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_didRequestCreationOfAvatarEvent", 1usize
                         )
                     })
             });
@@ -391,7 +400,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -406,7 +415,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_didRequestEditOfAvatarEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_didRequestEditOfAvatarEvent", 1usize
                         )
                     })
             });
@@ -428,7 +438,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -443,7 +453,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_didSetAvatarSystemPreferredEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_didSetAvatarSystemPreferredEvent", 1usize
                         )
                     })
             });
@@ -465,7 +476,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -480,8 +491,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_didRequestCreationOfAvatarEvent",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_didRequestCreationOfAvatarEvent", 1usize
                         )
                     })
             });
@@ -503,7 +514,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -518,7 +529,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_didRequestEditOfAvatarEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_didRequestEditOfAvatarEvent", 1usize
                         )
                     })
             });
@@ -540,7 +552,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -555,8 +567,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_didSetAvatarSystemPreferredEvent",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_didSetAvatarSystemPreferredEvent", 1usize
                         )
                     })
             });

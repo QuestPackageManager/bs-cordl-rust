@@ -63,7 +63,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -92,7 +92,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BreakFaceIntoTris", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BreakFaceIntoTris", 3usize
                         )
                     })
             });
@@ -118,7 +119,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -140,7 +141,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConformNormals", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConformNormals", 2usize
                         )
                     })
             });
@@ -157,7 +159,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::WingedEdge,
@@ -170,7 +172,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConformOppositeNormal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConformOppositeNormal", 1usize
                         )
                     })
             });
@@ -186,7 +189,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -202,7 +205,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FlipEdge", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FlipEdge", 2usize
                         )
                     })
             });
@@ -215,7 +219,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::WingedEdge,
@@ -226,7 +230,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCommonEdgeInWindingOrder", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCommonEdgeInWindingOrder", 1usize
                         )
                     })
             });
@@ -248,7 +253,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -270,7 +275,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetWindingFlags", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetWindingFlags", 3usize
                         )
                     })
             });
@@ -287,7 +293,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IList_1<
@@ -300,7 +306,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetWindingOrder", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetWindingOrder", 1usize
                         )
                     })
             });
@@ -322,7 +329,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -342,7 +349,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetWindingOrder", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetWindingOrder", 2usize
                         )
                     })
             });
@@ -358,7 +366,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -374,7 +382,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetWindingOrder", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetWindingOrder", 2usize
                         )
                     })
             });
@@ -393,7 +402,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -412,7 +421,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MatchNormal", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MatchNormal", 3usize
                         )
                     })
             });
@@ -438,7 +448,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -464,7 +474,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToTriangles", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToTriangles", 2usize
                         )
                     })
             });

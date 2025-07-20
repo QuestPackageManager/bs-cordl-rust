@@ -45,7 +45,7 @@ impl crate::GlobalNamespace::IScoreController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -54,7 +54,8 @@ impl crate::GlobalNamespace::IScoreController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetEnabled", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetEnabled", 1usize
                         )
                     })
             });
@@ -70,7 +71,7 @@ impl crate::GlobalNamespace::IScoreController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, f32>>),
                         quest_hook::libil2cpp::Void,
@@ -79,7 +80,8 @@ impl crate::GlobalNamespace::IScoreController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_multiplierDidChangeEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_multiplierDidChangeEvent", 1usize
                         )
                     })
             });
@@ -95,7 +97,7 @@ impl crate::GlobalNamespace::IScoreController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, i32>>),
                         quest_hook::libil2cpp::Void,
@@ -104,7 +106,8 @@ impl crate::GlobalNamespace::IScoreController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_scoreDidChangeEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_scoreDidChangeEvent", 1usize
                         )
                     })
             });
@@ -124,7 +127,7 @@ impl crate::GlobalNamespace::IScoreController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -139,7 +142,8 @@ impl crate::GlobalNamespace::IScoreController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_scoringForNoteFinishedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_scoringForNoteFinishedEvent", 1usize
                         )
                     })
             });
@@ -159,7 +163,7 @@ impl crate::GlobalNamespace::IScoreController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -174,7 +178,8 @@ impl crate::GlobalNamespace::IScoreController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_scoringForNoteStartedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_scoringForNoteStartedEvent", 1usize
                         )
                     })
             });
@@ -194,7 +199,7 @@ impl crate::GlobalNamespace::IScoreController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         i32,
@@ -203,8 +208,8 @@ impl crate::GlobalNamespace::IScoreController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_immediateMaxPossibleModifiedScore",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_immediateMaxPossibleModifiedScore", 0usize
                         )
                     })
             });
@@ -217,7 +222,7 @@ impl crate::GlobalNamespace::IScoreController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         i32,
@@ -226,8 +231,8 @@ impl crate::GlobalNamespace::IScoreController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_immediateMaxPossibleMultipliedScore",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_immediateMaxPossibleMultipliedScore", 0usize
                         )
                     })
             });
@@ -238,12 +243,13 @@ impl crate::GlobalNamespace::IScoreController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_invalidated")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_invalidated", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_invalidated", 0usize
                         )
                     })
             });
@@ -254,12 +260,13 @@ impl crate::GlobalNamespace::IScoreController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_modifiedScore")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_modifiedScore", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_modifiedScore", 0usize
                         )
                     })
             });
@@ -270,12 +277,13 @@ impl crate::GlobalNamespace::IScoreController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_multipliedScore")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_multipliedScore", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_multipliedScore", 0usize
                         )
                     })
             });
@@ -289,7 +297,7 @@ impl crate::GlobalNamespace::IScoreController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, f32>>),
                         quest_hook::libil2cpp::Void,
@@ -298,7 +306,8 @@ impl crate::GlobalNamespace::IScoreController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_multiplierDidChangeEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_multiplierDidChangeEvent", 1usize
                         )
                     })
             });
@@ -314,7 +323,7 @@ impl crate::GlobalNamespace::IScoreController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, i32>>),
                         quest_hook::libil2cpp::Void,
@@ -323,7 +332,8 @@ impl crate::GlobalNamespace::IScoreController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_scoreDidChangeEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_scoreDidChangeEvent", 1usize
                         )
                     })
             });
@@ -343,7 +353,7 @@ impl crate::GlobalNamespace::IScoreController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -358,7 +368,8 @@ impl crate::GlobalNamespace::IScoreController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_scoringForNoteFinishedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_scoringForNoteFinishedEvent", 1usize
                         )
                     })
             });
@@ -378,7 +389,7 @@ impl crate::GlobalNamespace::IScoreController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -393,7 +404,8 @@ impl crate::GlobalNamespace::IScoreController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_scoringForNoteStartedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_scoringForNoteStartedEvent", 1usize
                         )
                     })
             });

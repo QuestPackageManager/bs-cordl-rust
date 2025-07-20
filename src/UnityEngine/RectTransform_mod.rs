@@ -50,7 +50,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -59,7 +59,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ForceUpdateRectTransforms", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ForceUpdateRectTransforms", 0usize
                         )
                     })
             });
@@ -77,7 +78,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -90,7 +91,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLocalCorners", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLocalCorners", 1usize
                         )
                     })
             });
@@ -105,7 +107,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector2,
@@ -114,7 +116,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetParentSize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetParentSize", 0usize
                         )
                     })
             });
@@ -129,7 +132,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Rect,
@@ -138,7 +141,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetRectInParentSpace", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetRectInParentSpace", 0usize
                         )
                     })
             });
@@ -156,7 +160,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -169,7 +173,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetWorldCorners", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetWorldCorners", 1usize
                         )
                     })
             });
@@ -191,7 +196,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>),
                         quest_hook::libil2cpp::Void,
@@ -200,7 +205,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SendReapplyDrivenProperties", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SendReapplyDrivenProperties", 1usize
                         )
                     })
             });
@@ -218,7 +224,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::RectTransform_Edge, f32, f32),
                         quest_hook::libil2cpp::Void,
@@ -227,7 +233,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetInsetAndSizeFromParentEdge", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetInsetAndSizeFromParentEdge", 3usize
                         )
                     })
             });
@@ -244,7 +251,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::RectTransform_Axis, f32),
                         quest_hook::libil2cpp::Void,
@@ -253,7 +260,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetSizeWithCurrentAnchors", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetSizeWithCurrentAnchors", 2usize
                         )
                     })
             });
@@ -268,12 +276,13 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -290,7 +299,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::RectTransform_ReapplyDrivenProperties,
@@ -301,7 +310,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_reapplyDrivenProperties", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_reapplyDrivenProperties", 1usize
                         )
                     })
             });
@@ -316,7 +326,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector2,
@@ -325,7 +335,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_anchorMax", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_anchorMax", 0usize
                         )
                     })
             });
@@ -341,7 +352,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>),
                         quest_hook::libil2cpp::Void,
@@ -350,7 +361,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_anchorMax_Injected", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_anchorMax_Injected", 1usize
                         )
                     })
             });
@@ -365,7 +377,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector2,
@@ -374,7 +386,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_anchorMin", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_anchorMin", 0usize
                         )
                     })
             });
@@ -390,7 +403,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>),
                         quest_hook::libil2cpp::Void,
@@ -399,7 +412,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_anchorMin_Injected", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_anchorMin_Injected", 1usize
                         )
                     })
             });
@@ -414,7 +428,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector2,
@@ -423,7 +437,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_anchoredPosition", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_anchoredPosition", 0usize
                         )
                     })
             });
@@ -438,7 +453,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector3,
@@ -447,7 +462,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_anchoredPosition3D", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_anchoredPosition3D", 0usize
                         )
                     })
             });
@@ -463,7 +479,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>),
                         quest_hook::libil2cpp::Void,
@@ -472,7 +488,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_anchoredPosition_Injected", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_anchoredPosition_Injected", 1usize
                         )
                     })
             });
@@ -489,7 +506,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -498,7 +515,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_drivenByObject", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_drivenByObject", 0usize
                         )
                     })
             });
@@ -513,7 +531,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::DrivenTransformProperties,
@@ -522,7 +540,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_drivenProperties", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_drivenProperties", 0usize
                         )
                     })
             });
@@ -537,7 +556,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector2,
@@ -546,7 +565,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_offsetMax", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_offsetMax", 0usize
                         )
                     })
             });
@@ -561,7 +581,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector2,
@@ -570,7 +590,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_offsetMin", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_offsetMin", 0usize
                         )
                     })
             });
@@ -585,12 +606,13 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::UnityEngine::Vector2, 0usize>("get_pivot")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_pivot", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_pivot", 0usize
                         )
                     })
             });
@@ -606,7 +628,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>),
                         quest_hook::libil2cpp::Void,
@@ -615,7 +637,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_pivot_Injected", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_pivot_Injected", 1usize
                         )
                     })
             });
@@ -630,12 +653,13 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::UnityEngine::Rect, 0usize>("get_rect")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rect", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rect", 0usize
                         )
                     })
             });
@@ -651,7 +675,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>),
                         quest_hook::libil2cpp::Void,
@@ -660,7 +684,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rect_Injected", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rect_Injected", 1usize
                         )
                     })
             });
@@ -675,7 +700,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector2,
@@ -684,7 +709,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_sizeDelta", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_sizeDelta", 0usize
                         )
                     })
             });
@@ -700,7 +726,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>),
                         quest_hook::libil2cpp::Void,
@@ -709,7 +735,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_sizeDelta_Injected", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_sizeDelta_Injected", 1usize
                         )
                     })
             });
@@ -726,7 +753,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::RectTransform_ReapplyDrivenProperties,
@@ -737,7 +764,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_reapplyDrivenProperties", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_reapplyDrivenProperties", 1usize
                         )
                     })
             });
@@ -753,7 +781,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector2),
                         quest_hook::libil2cpp::Void,
@@ -762,7 +790,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_anchorMax", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_anchorMax", 1usize
                         )
                     })
             });
@@ -778,7 +807,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>),
                         quest_hook::libil2cpp::Void,
@@ -787,7 +816,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_anchorMax_Injected", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_anchorMax_Injected", 1usize
                         )
                     })
             });
@@ -803,7 +833,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector2),
                         quest_hook::libil2cpp::Void,
@@ -812,7 +842,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_anchorMin", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_anchorMin", 1usize
                         )
                     })
             });
@@ -828,7 +859,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>),
                         quest_hook::libil2cpp::Void,
@@ -837,7 +868,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_anchorMin_Injected", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_anchorMin_Injected", 1usize
                         )
                     })
             });
@@ -853,7 +885,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector2),
                         quest_hook::libil2cpp::Void,
@@ -862,7 +894,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_anchoredPosition", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_anchoredPosition", 1usize
                         )
                     })
             });
@@ -878,7 +911,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector3),
                         quest_hook::libil2cpp::Void,
@@ -887,7 +920,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_anchoredPosition3D", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_anchoredPosition3D", 1usize
                         )
                     })
             });
@@ -903,7 +937,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>),
                         quest_hook::libil2cpp::Void,
@@ -912,7 +946,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_anchoredPosition_Injected", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_anchoredPosition_Injected", 1usize
                         )
                     })
             });
@@ -928,7 +963,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>),
                         quest_hook::libil2cpp::Void,
@@ -937,7 +972,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_drivenByObject", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_drivenByObject", 1usize
                         )
                     })
             });
@@ -953,7 +989,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::DrivenTransformProperties),
                         quest_hook::libil2cpp::Void,
@@ -962,7 +998,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_drivenProperties", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_drivenProperties", 1usize
                         )
                     })
             });
@@ -978,7 +1015,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector2),
                         quest_hook::libil2cpp::Void,
@@ -987,7 +1024,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_offsetMax", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_offsetMax", 1usize
                         )
                     })
             });
@@ -1003,7 +1041,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector2),
                         quest_hook::libil2cpp::Void,
@@ -1012,7 +1050,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_offsetMin", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_offsetMin", 1usize
                         )
                     })
             });
@@ -1028,7 +1067,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector2),
                         quest_hook::libil2cpp::Void,
@@ -1037,7 +1076,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_pivot", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_pivot", 1usize
                         )
                     })
             });
@@ -1053,7 +1093,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>),
                         quest_hook::libil2cpp::Void,
@@ -1062,7 +1102,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_pivot_Injected", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_pivot_Injected", 1usize
                         )
                     })
             });
@@ -1078,7 +1119,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector2),
                         quest_hook::libil2cpp::Void,
@@ -1087,7 +1128,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_sizeDelta", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_sizeDelta", 1usize
                         )
                     })
             });
@@ -1103,7 +1145,7 @@ impl crate::UnityEngine::RectTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>),
                         quest_hook::libil2cpp::Void,
@@ -1112,7 +1154,8 @@ impl crate::UnityEngine::RectTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_sizeDelta_Injected", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_sizeDelta_Injected", 1usize
                         )
                     })
             });
@@ -1355,7 +1398,7 @@ impl crate::UnityEngine::RectTransform_ReapplyDrivenProperties {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>),
                         quest_hook::libil2cpp::Void,
@@ -1364,7 +1407,8 @@ impl crate::UnityEngine::RectTransform_ReapplyDrivenProperties {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Invoke", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Invoke",
+                            1usize
                         )
                     })
             });
@@ -1391,7 +1435,7 @@ impl crate::UnityEngine::RectTransform_ReapplyDrivenProperties {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1405,7 +1449,8 @@ impl crate::UnityEngine::RectTransform_ReapplyDrivenProperties {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });

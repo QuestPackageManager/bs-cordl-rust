@@ -47,7 +47,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -58,7 +58,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPsk", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetPsk",
+                            0usize
                         )
                     })
             });
@@ -75,7 +76,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -86,7 +87,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPskIdentity", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPskIdentity", 0usize
                         )
                     })
             });
@@ -104,7 +106,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -115,7 +117,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NotifyIdentityHint", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NotifyIdentityHint", 1usize
                         )
                     })
             });
@@ -130,7 +133,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -139,7 +142,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SkipIdentityHint", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SkipIdentityHint", 0usize
                         )
                     })
             });

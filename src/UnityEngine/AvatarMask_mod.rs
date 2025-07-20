@@ -45,7 +45,7 @@ impl crate::UnityEngine::AvatarMask {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::AvatarMaskBodyPart),
                         bool,
@@ -54,7 +54,8 @@ impl crate::UnityEngine::AvatarMask {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHumanoidBodyPartActive", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHumanoidBodyPartActive", 1usize
                         )
                     })
             });
@@ -68,12 +69,13 @@ impl crate::UnityEngine::AvatarMask {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), bool, 1usize>("GetTransformActive")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTransformActive", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTransformActive", 1usize
                         )
                     })
             });
@@ -89,7 +91,7 @@ impl crate::UnityEngine::AvatarMask {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -98,7 +100,8 @@ impl crate::UnityEngine::AvatarMask {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTransformPath", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTransformPath", 1usize
                         )
                     })
             });
@@ -114,12 +117,13 @@ impl crate::UnityEngine::AvatarMask {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), f32, 1usize>("GetTransformWeight")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTransformWeight", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTransformWeight", 1usize
                         )
                     })
             });
@@ -130,12 +134,13 @@ impl crate::UnityEngine::AvatarMask {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_transformCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_transformCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_transformCount", 0usize
                         )
                     })
             });

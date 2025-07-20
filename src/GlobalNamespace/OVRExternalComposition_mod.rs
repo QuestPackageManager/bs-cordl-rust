@@ -87,7 +87,7 @@ impl crate::GlobalNamespace::OVRExternalComposition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -101,7 +101,8 @@ impl crate::GlobalNamespace::OVRExternalComposition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CacheAudioData", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CacheAudioData", 2usize
                         )
                     })
             });
@@ -117,12 +118,13 @@ impl crate::GlobalNamespace::OVRExternalComposition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("CastMrcFrame")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CastMrcFrame", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CastMrcFrame", 1usize
                         )
                     })
             });
@@ -137,12 +139,13 @@ impl crate::GlobalNamespace::OVRExternalComposition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Cleanup")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Cleanup", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Cleanup",
+                            0usize
                         )
                     })
             });
@@ -157,7 +160,7 @@ impl crate::GlobalNamespace::OVRExternalComposition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -166,7 +169,8 @@ impl crate::GlobalNamespace::OVRExternalComposition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CleanupAudioFilter", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CleanupAudioFilter", 0usize
                         )
                     })
             });
@@ -183,7 +187,7 @@ impl crate::GlobalNamespace::OVRExternalComposition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::OVRManager_CompositionMethod,
@@ -192,7 +196,8 @@ impl crate::GlobalNamespace::OVRExternalComposition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CompositionMethod", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CompositionMethod", 0usize
                         )
                     })
             });
@@ -209,7 +214,7 @@ impl crate::GlobalNamespace::OVRExternalComposition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32, f32),
                         quest_hook::libil2cpp::Void,
@@ -218,7 +223,8 @@ impl crate::GlobalNamespace::OVRExternalComposition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DisplayRefreshRateChanged", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DisplayRefreshRateChanged", 2usize
                         )
                     })
             });
@@ -238,7 +244,7 @@ impl crate::GlobalNamespace::OVRExternalComposition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -255,7 +261,8 @@ impl crate::GlobalNamespace::OVRExternalComposition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAndResetAudioData", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAndResetAudioData", 3usize
                         )
                     })
             });
@@ -284,7 +291,7 @@ impl crate::GlobalNamespace::OVRExternalComposition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>),
                         quest_hook::libil2cpp::Void,
@@ -293,7 +300,8 @@ impl crate::GlobalNamespace::OVRExternalComposition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RefreshAudioFilter", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RefreshAudioFilter", 1usize
                         )
                     })
             });
@@ -313,7 +321,7 @@ impl crate::GlobalNamespace::OVRExternalComposition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -328,7 +336,8 @@ impl crate::GlobalNamespace::OVRExternalComposition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RefreshCameraObjects", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RefreshCameraObjects", 3usize
                         )
                     })
             });
@@ -344,7 +353,7 @@ impl crate::GlobalNamespace::OVRExternalComposition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -353,7 +362,8 @@ impl crate::GlobalNamespace::OVRExternalComposition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetCameraTargetTexture", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetCameraTargetTexture", 1usize
                         )
                     })
             });
@@ -374,7 +384,7 @@ impl crate::GlobalNamespace::OVRExternalComposition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -390,7 +400,8 @@ impl crate::GlobalNamespace::OVRExternalComposition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Update", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Update",
+                            4usize
                         )
                     })
             });
@@ -414,7 +425,7 @@ impl crate::GlobalNamespace::OVRExternalComposition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -429,7 +440,8 @@ impl crate::GlobalNamespace::OVRExternalComposition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });

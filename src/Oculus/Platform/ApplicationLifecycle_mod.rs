@@ -45,7 +45,7 @@ impl crate::Oculus::Platform::ApplicationLifecycle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -56,7 +56,8 @@ impl crate::Oculus::Platform::ApplicationLifecycle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLaunchDetails", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLaunchDetails", 0usize
                         )
                     })
             });
@@ -72,7 +73,7 @@ impl crate::Oculus::Platform::ApplicationLifecycle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -86,7 +87,8 @@ impl crate::Oculus::Platform::ApplicationLifecycle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LogDeeplinkResult", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LogDeeplinkResult", 2usize
                         )
                     })
             });
@@ -105,7 +107,7 @@ impl crate::Oculus::Platform::ApplicationLifecycle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Oculus::Platform::Message_1_Callback<
@@ -120,8 +122,8 @@ impl crate::Oculus::Platform::ApplicationLifecycle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetLaunchIntentChangedNotificationCallback",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetLaunchIntentChangedNotificationCallback", 1usize
                         )
                     })
             });

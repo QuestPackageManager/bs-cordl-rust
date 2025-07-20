@@ -70,7 +70,7 @@ impl crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, bool, bool),
                         quest_hook::libil2cpp::Void,
@@ -79,7 +79,8 @@ impl crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DidActivate", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DidActivate", 3usize
                         )
                     })
             });
@@ -100,7 +101,7 @@ impl crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, bool),
                         quest_hook::libil2cpp::Void,
@@ -109,7 +110,8 @@ impl crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DidDeactivate", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DidDeactivate", 2usize
                         )
                     })
             });
@@ -125,7 +127,7 @@ impl crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -134,7 +136,8 @@ impl crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleAntiAliasingLevelChanged", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleAntiAliasingLevelChanged", 1usize
                         )
                     })
             });
@@ -150,7 +153,7 @@ impl crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -159,7 +162,8 @@ impl crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleFullscreenToggled", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleFullscreenToggled", 1usize
                         )
                     })
             });
@@ -175,7 +179,7 @@ impl crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -184,7 +188,8 @@ impl crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleMainEffectChanged", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleMainEffectChanged", 1usize
                         )
                     })
             });
@@ -200,7 +205,7 @@ impl crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -209,7 +214,8 @@ impl crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleMirrorChanged", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleMirrorChanged", 1usize
                         )
                     })
             });
@@ -225,7 +231,7 @@ impl crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -234,7 +240,8 @@ impl crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleScreenDisplacementToggled", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleScreenDisplacementToggled", 1usize
                         )
                     })
             });
@@ -250,7 +257,7 @@ impl crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -259,7 +266,8 @@ impl crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleShockwaveMaxParticlesChanged", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleShockwaveMaxParticlesChanged", 1usize
                         )
                     })
             });
@@ -275,7 +283,7 @@ impl crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -284,7 +292,8 @@ impl crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleSmokeToggled", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleSmokeToggled", 1usize
                         )
                     })
             });
@@ -303,7 +312,7 @@ impl crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -317,7 +326,8 @@ impl crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleVrRenderingScaleChanged", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleVrRenderingScaleChanged", 2usize
                         )
                     })
             });
@@ -339,12 +349,13 @@ impl crate::GlobalNamespace::StandaloneGraphicSettingsViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

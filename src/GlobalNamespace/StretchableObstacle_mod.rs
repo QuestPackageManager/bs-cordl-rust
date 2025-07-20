@@ -71,7 +71,7 @@ impl crate::GlobalNamespace::StretchableObstacle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             f32,
@@ -87,7 +87,8 @@ impl crate::GlobalNamespace::StretchableObstacle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CalculateObstacleTransformProperties", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CalculateObstacleTransformProperties", 6usize
                         )
                     })
             });
@@ -113,12 +114,13 @@ impl crate::GlobalNamespace::StretchableObstacle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnValidate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnValidate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnValidate", 0usize
                         )
                     })
             });
@@ -138,7 +140,7 @@ impl crate::GlobalNamespace::StretchableObstacle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32, f32, f32, crate::UnityEngine::Color, f32),
                         quest_hook::libil2cpp::Void,
@@ -147,7 +149,8 @@ impl crate::GlobalNamespace::StretchableObstacle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetAllProperties", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetAllProperties", 5usize
                         )
                     })
             });
@@ -166,7 +169,7 @@ impl crate::GlobalNamespace::StretchableObstacle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Vector3,
@@ -179,7 +182,8 @@ impl crate::GlobalNamespace::StretchableObstacle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetObstacleCoreTransformProperties", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetObstacleCoreTransformProperties", 3usize
                         )
                     })
             });
@@ -198,7 +202,7 @@ impl crate::GlobalNamespace::StretchableObstacle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32, f32, f32, f32),
                         quest_hook::libil2cpp::Void,
@@ -207,7 +211,8 @@ impl crate::GlobalNamespace::StretchableObstacle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetSizeAndOffset", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetSizeAndOffset", 4usize
                         )
                     })
             });
@@ -222,12 +227,13 @@ impl crate::GlobalNamespace::StretchableObstacle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -242,12 +248,13 @@ impl crate::GlobalNamespace::StretchableObstacle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::UnityEngine::Bounds, 0usize>("get_bounds")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_bounds", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_bounds", 0usize
                         )
                     })
             });

@@ -54,7 +54,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -67,7 +67,8 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DefaultParameters", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DefaultParameters", 1usize
                         )
                     })
             });
@@ -84,7 +85,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -95,7 +96,8 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetIkm", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetIkm",
+                            0usize
                         )
                     })
             });
@@ -112,7 +114,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -123,7 +125,8 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetInfo", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetInfo",
+                            0usize
                         )
                     })
             });
@@ -140,7 +143,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -151,7 +154,8 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSalt", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetSalt",
+                            0usize
                         )
                     })
             });
@@ -194,7 +198,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -212,7 +216,8 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SkipExtractParameters", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SkipExtractParameters", 2usize
                         )
                     })
             });
@@ -230,7 +235,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -249,7 +254,8 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -268,7 +274,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -288,7 +294,8 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
                         )
                     })
             });
@@ -301,12 +308,13 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_SkipExtract")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SkipExtract", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SkipExtract", 0usize
                         )
                     })
             });

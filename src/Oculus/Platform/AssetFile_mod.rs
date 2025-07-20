@@ -52,7 +52,7 @@ impl crate::Oculus::Platform::AssetFile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<
@@ -67,7 +67,8 @@ impl crate::Oculus::Platform::AssetFile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Delete", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Delete",
+                            1usize
                         )
                     })
             });
@@ -94,7 +95,7 @@ impl crate::Oculus::Platform::AssetFile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<
@@ -109,7 +110,8 @@ impl crate::Oculus::Platform::AssetFile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DeleteById", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DeleteById", 1usize
                         )
                     })
             });
@@ -136,7 +138,7 @@ impl crate::Oculus::Platform::AssetFile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -151,7 +153,8 @@ impl crate::Oculus::Platform::AssetFile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DeleteByName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DeleteByName", 1usize
                         )
                     })
             });
@@ -178,7 +181,7 @@ impl crate::Oculus::Platform::AssetFile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<
@@ -193,7 +196,8 @@ impl crate::Oculus::Platform::AssetFile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Download", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Download", 1usize
                         )
                     })
             });
@@ -220,7 +224,7 @@ impl crate::Oculus::Platform::AssetFile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<
@@ -235,7 +239,8 @@ impl crate::Oculus::Platform::AssetFile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DownloadById", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DownloadById", 1usize
                         )
                     })
             });
@@ -262,7 +267,7 @@ impl crate::Oculus::Platform::AssetFile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -277,7 +282,8 @@ impl crate::Oculus::Platform::AssetFile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DownloadByName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DownloadByName", 1usize
                         )
                     })
             });
@@ -304,7 +310,7 @@ impl crate::Oculus::Platform::AssetFile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<
@@ -319,7 +325,8 @@ impl crate::Oculus::Platform::AssetFile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DownloadCancel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DownloadCancel", 1usize
                         )
                     })
             });
@@ -346,7 +353,7 @@ impl crate::Oculus::Platform::AssetFile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<
@@ -361,7 +368,8 @@ impl crate::Oculus::Platform::AssetFile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DownloadCancelById", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DownloadCancelById", 1usize
                         )
                     })
             });
@@ -388,7 +396,7 @@ impl crate::Oculus::Platform::AssetFile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -403,7 +411,8 @@ impl crate::Oculus::Platform::AssetFile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DownloadCancelByName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DownloadCancelByName", 1usize
                         )
                     })
             });
@@ -428,7 +437,7 @@ impl crate::Oculus::Platform::AssetFile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -443,7 +452,8 @@ impl crate::Oculus::Platform::AssetFile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetList", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetList",
+                            0usize
                         )
                     })
             });
@@ -468,7 +478,7 @@ impl crate::Oculus::Platform::AssetFile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Oculus::Platform::Message_1_Callback<
@@ -483,8 +493,8 @@ impl crate::Oculus::Platform::AssetFile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetDownloadUpdateNotificationCallback",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetDownloadUpdateNotificationCallback", 1usize
                         )
                     })
             });
@@ -505,7 +515,7 @@ impl crate::Oculus::Platform::AssetFile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<
@@ -520,7 +530,8 @@ impl crate::Oculus::Platform::AssetFile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Status", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Status",
+                            1usize
                         )
                     })
             });
@@ -543,7 +554,7 @@ impl crate::Oculus::Platform::AssetFile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<
@@ -558,7 +569,8 @@ impl crate::Oculus::Platform::AssetFile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StatusById", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StatusById", 1usize
                         )
                     })
             });
@@ -581,7 +593,7 @@ impl crate::Oculus::Platform::AssetFile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -596,7 +608,8 @@ impl crate::Oculus::Platform::AssetFile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StatusByName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StatusByName", 1usize
                         )
                     })
             });

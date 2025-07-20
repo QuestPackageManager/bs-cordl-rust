@@ -54,7 +54,7 @@ impl crate::UnityEngine::Timeline::SignalEmitter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::PropertyName,
@@ -63,8 +63,8 @@ impl crate::UnityEngine::Timeline::SignalEmitter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnityEngine.Playables.INotification.get_id",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnityEngine.Playables.INotification.get_id", 0usize
                         )
                     })
             });
@@ -79,7 +79,7 @@ impl crate::UnityEngine::Timeline::SignalEmitter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Timeline::NotificationFlags,
@@ -88,7 +88,7 @@ impl crate::UnityEngine::Timeline::SignalEmitter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "UnityEngine.Timeline.INotificationOptionProvider.get_flags",
                             0usize
                         )
@@ -105,12 +105,13 @@ impl crate::UnityEngine::Timeline::SignalEmitter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -127,7 +128,7 @@ impl crate::UnityEngine::Timeline::SignalEmitter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -138,7 +139,8 @@ impl crate::UnityEngine::Timeline::SignalEmitter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_asset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_asset", 0usize
                         )
                     })
             });
@@ -151,12 +153,13 @@ impl crate::UnityEngine::Timeline::SignalEmitter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_emitOnce")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_emitOnce", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_emitOnce", 0usize
                         )
                     })
             });
@@ -167,12 +170,13 @@ impl crate::UnityEngine::Timeline::SignalEmitter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_retroactive")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_retroactive", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_retroactive", 0usize
                         )
                     })
             });
@@ -186,7 +190,7 @@ impl crate::UnityEngine::Timeline::SignalEmitter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::Timeline::SignalAsset,
@@ -197,7 +201,8 @@ impl crate::UnityEngine::Timeline::SignalEmitter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_asset", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_asset", 1usize
                         )
                     })
             });
@@ -213,7 +218,7 @@ impl crate::UnityEngine::Timeline::SignalEmitter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -222,7 +227,8 @@ impl crate::UnityEngine::Timeline::SignalEmitter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_emitOnce", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_emitOnce", 1usize
                         )
                     })
             });
@@ -238,7 +244,7 @@ impl crate::UnityEngine::Timeline::SignalEmitter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -247,7 +253,8 @@ impl crate::UnityEngine::Timeline::SignalEmitter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_retroactive", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_retroactive", 1usize
                         )
                     })
             });

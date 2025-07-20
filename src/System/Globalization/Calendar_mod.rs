@@ -88,7 +88,7 @@ impl crate::System::Globalization::Calendar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -97,7 +97,8 @@ impl crate::System::Globalization::Calendar {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Clone", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Clone",
+                            0usize
                         )
                     })
             });
@@ -113,7 +114,7 @@ impl crate::System::Globalization::Calendar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::DateTime),
                         i32,
@@ -122,7 +123,8 @@ impl crate::System::Globalization::Calendar {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetDayOfMonth", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDayOfMonth", 1usize
                         )
                     })
             });
@@ -136,7 +138,7 @@ impl crate::System::Globalization::Calendar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::DateTime),
                         crate::System::DayOfWeek,
@@ -145,7 +147,8 @@ impl crate::System::Globalization::Calendar {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetDayOfWeek", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDayOfWeek", 1usize
                         )
                     })
             });
@@ -163,12 +166,13 @@ impl crate::System::Globalization::Calendar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, i32, i32), i32, 3usize>("GetDaysInMonth")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetDaysInMonth", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDaysInMonth", 3usize
                         )
                     })
             });
@@ -185,12 +189,13 @@ impl crate::System::Globalization::Calendar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, i32), i32, 2usize>("GetDaysInYear")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetDaysInYear", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDaysInYear", 2usize
                         )
                     })
             });
@@ -204,12 +209,13 @@ impl crate::System::Globalization::Calendar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(crate::System::DateTime), i32, 1usize>("GetEra")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetEra", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetEra",
+                            1usize
                         )
                     })
             });
@@ -223,12 +229,13 @@ impl crate::System::Globalization::Calendar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(crate::System::DateTime), i32, 1usize>("GetMonth")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMonth", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMonth", 1usize
                         )
                     })
             });
@@ -243,12 +250,13 @@ impl crate::System::Globalization::Calendar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, i32), i32, 2usize>("GetMonthsInYear")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMonthsInYear", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMonthsInYear", 2usize
                         )
                     })
             });
@@ -262,7 +270,7 @@ impl crate::System::Globalization::Calendar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, i32),
                         i32,
@@ -271,7 +279,8 @@ impl crate::System::Globalization::Calendar {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSystemTwoDigitYearSetting", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSystemTwoDigitYearSetting", 2usize
                         )
                     })
             });
@@ -287,12 +296,13 @@ impl crate::System::Globalization::Calendar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(crate::System::DateTime), i32, 1usize>("GetYear")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetYear", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetYear",
+                            1usize
                         )
                     })
             });
@@ -306,12 +316,13 @@ impl crate::System::Globalization::Calendar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), bool, 1usize>("IsLeapYear")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsLeapYear", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsLeapYear", 1usize
                         )
                     })
             });
@@ -326,12 +337,13 @@ impl crate::System::Globalization::Calendar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, i32), bool, 2usize>("IsLeapYear")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsLeapYear", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsLeapYear", 2usize
                         )
                     })
             });
@@ -348,12 +360,13 @@ impl crate::System::Globalization::Calendar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, i32, i32, i32), bool, 4usize>("IsValidDay")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsValidDay", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsValidDay", 4usize
                         )
                     })
             });
@@ -371,12 +384,13 @@ impl crate::System::Globalization::Calendar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, i32, i32), bool, 3usize>("IsValidMonth")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsValidMonth", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsValidMonth", 3usize
                         )
                     })
             });
@@ -393,12 +407,13 @@ impl crate::System::Globalization::Calendar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, i32), bool, 2usize>("IsValidYear")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsValidYear", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsValidYear", 2usize
                         )
                     })
             });
@@ -419,7 +434,7 @@ impl crate::System::Globalization::Calendar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -428,7 +443,8 @@ impl crate::System::Globalization::Calendar {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetReadOnlyState", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetReadOnlyState", 1usize
                         )
                     })
             });
@@ -446,7 +462,7 @@ impl crate::System::Globalization::Calendar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, i32, i32, i32),
                         i64,
@@ -455,7 +471,8 @@ impl crate::System::Globalization::Calendar {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TimeToTicks", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TimeToTicks", 4usize
                         )
                     })
             });
@@ -478,7 +495,7 @@ impl crate::System::Globalization::Calendar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32, i32, i32, i32, i32, i32, i32),
                         crate::System::DateTime,
@@ -487,7 +504,8 @@ impl crate::System::Globalization::Calendar {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToDateTime", 8usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToDateTime", 8usize
                         )
                     })
             });
@@ -513,7 +531,7 @@ impl crate::System::Globalization::Calendar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32, i32, i32, i32, i32, i32),
                         crate::System::DateTime,
@@ -522,7 +540,8 @@ impl crate::System::Globalization::Calendar {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToDateTime", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToDateTime", 7usize
                         )
                     })
             });
@@ -539,12 +558,13 @@ impl crate::System::Globalization::Calendar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("ToFourDigitYear")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToFourDigitYear", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToFourDigitYear", 1usize
                         )
                     })
             });
@@ -566,7 +586,7 @@ impl crate::System::Globalization::Calendar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -585,7 +605,8 @@ impl crate::System::Globalization::Calendar {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryToDateTime", 9usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryToDateTime", 9usize
                         )
                     })
             });
@@ -604,7 +625,7 @@ impl crate::System::Globalization::Calendar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -613,7 +634,8 @@ impl crate::System::Globalization::Calendar {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VerifyWritable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VerifyWritable", 0usize
                         )
                     })
             });
@@ -628,12 +650,13 @@ impl crate::System::Globalization::Calendar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -646,12 +669,13 @@ impl crate::System::Globalization::Calendar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_BaseCalendarID")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_BaseCalendarID", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_BaseCalendarID", 0usize
                         )
                     })
             });
@@ -662,12 +686,13 @@ impl crate::System::Globalization::Calendar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_CurrentEraValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CurrentEraValue", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CurrentEraValue", 0usize
                         )
                     })
             });
@@ -682,7 +707,7 @@ impl crate::System::Globalization::Calendar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -693,7 +718,8 @@ impl crate::System::Globalization::Calendar {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Eras", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Eras", 0usize
                         )
                     })
             });
@@ -706,12 +732,13 @@ impl crate::System::Globalization::Calendar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_ID")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ID", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_ID",
+                            0usize
                         )
                     })
             });
@@ -724,7 +751,7 @@ impl crate::System::Globalization::Calendar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::DateTime,
@@ -733,7 +760,8 @@ impl crate::System::Globalization::Calendar {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_MaxSupportedDateTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_MaxSupportedDateTime", 0usize
                         )
                     })
             });
@@ -748,7 +776,7 @@ impl crate::System::Globalization::Calendar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::DateTime,
@@ -757,7 +785,8 @@ impl crate::System::Globalization::Calendar {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_MinSupportedDateTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_MinSupportedDateTime", 0usize
                         )
                     })
             });
@@ -770,12 +799,13 @@ impl crate::System::Globalization::Calendar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_TwoDigitYearMax")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_TwoDigitYearMax", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_TwoDigitYearMax", 0usize
                         )
                     })
             });
@@ -789,7 +819,7 @@ impl crate::System::Globalization::Calendar {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -798,7 +828,8 @@ impl crate::System::Globalization::Calendar {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_TwoDigitYearMax", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_TwoDigitYearMax", 1usize
                         )
                     })
             });

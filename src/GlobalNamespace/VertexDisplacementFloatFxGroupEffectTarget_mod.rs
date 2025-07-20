@@ -59,7 +59,7 @@ impl crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         crate::UnityEngine::Vector4,
@@ -68,7 +68,8 @@ impl crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CalculateDisplacementVector", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CalculateDisplacementVector", 1usize
                         )
                     })
             });
@@ -90,12 +91,13 @@ impl crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnEnable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnEnable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnEnable", 0usize
                         )
                     })
             });
@@ -110,12 +112,13 @@ impl crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnValidate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnValidate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnValidate", 0usize
                         )
                     })
             });
@@ -131,7 +134,7 @@ impl crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -140,7 +143,8 @@ impl crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetValue", 1usize
                         )
                     })
             });
@@ -158,7 +162,7 @@ impl crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32, f32),
                         quest_hook::libil2cpp::Void,
@@ -167,7 +171,8 @@ impl crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetValue", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetValue", 3usize
                         )
                     })
             });
@@ -185,7 +190,7 @@ impl crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32, f32),
                         quest_hook::libil2cpp::Void,
@@ -194,7 +199,8 @@ impl crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TriggerValue", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TriggerValue", 3usize
                         )
                     })
             });
@@ -209,12 +215,13 @@ impl crate::GlobalNamespace::VertexDisplacementFloatFxGroupEffectTarget {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

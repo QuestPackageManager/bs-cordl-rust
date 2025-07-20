@@ -54,7 +54,7 @@ impl crate::UnityEngine::XR::Management::XRGeneralSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -63,7 +63,8 @@ impl crate::UnityEngine::XR::Management::XRGeneralSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AttemptInitializeXRSDKOnLoad", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AttemptInitializeXRSDKOnLoad", 0usize
                         )
                     })
             });
@@ -78,7 +79,7 @@ impl crate::UnityEngine::XR::Management::XRGeneralSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -87,8 +88,8 @@ impl crate::UnityEngine::XR::Management::XRGeneralSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AttemptStartXRSDKOnBeforeSplashScreen",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AttemptStartXRSDKOnBeforeSplashScreen", 0usize
                         )
                     })
             });
@@ -103,12 +104,13 @@ impl crate::UnityEngine::XR::Management::XRGeneralSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Awake", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Awake",
+                            0usize
                         )
                     })
             });
@@ -123,7 +125,7 @@ impl crate::UnityEngine::XR::Management::XRGeneralSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -132,7 +134,8 @@ impl crate::UnityEngine::XR::Management::XRGeneralSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DeInitXRSDK", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DeInitXRSDK", 0usize
                         )
                     })
             });
@@ -147,12 +150,13 @@ impl crate::UnityEngine::XR::Management::XRGeneralSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("InitXRSDK")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitXRSDK", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitXRSDK", 0usize
                         )
                     })
             });
@@ -174,12 +178,13 @@ impl crate::UnityEngine::XR::Management::XRGeneralSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDestroy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDestroy", 0usize
                         )
                     })
             });
@@ -192,7 +197,7 @@ impl crate::UnityEngine::XR::Management::XRGeneralSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -201,7 +206,8 @@ impl crate::UnityEngine::XR::Management::XRGeneralSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Quit", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Quit",
+                            0usize
                         )
                     })
             });
@@ -216,12 +222,13 @@ impl crate::UnityEngine::XR::Management::XRGeneralSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Start", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Start",
+                            0usize
                         )
                     })
             });
@@ -236,12 +243,13 @@ impl crate::UnityEngine::XR::Management::XRGeneralSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("StartXRSDK")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartXRSDK", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartXRSDK", 0usize
                         )
                     })
             });
@@ -256,12 +264,13 @@ impl crate::UnityEngine::XR::Management::XRGeneralSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("StopXRSDK")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StopXRSDK", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StopXRSDK", 0usize
                         )
                     })
             });
@@ -276,12 +285,13 @@ impl crate::UnityEngine::XR::Management::XRGeneralSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -298,7 +308,7 @@ impl crate::UnityEngine::XR::Management::XRGeneralSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -309,7 +319,8 @@ impl crate::UnityEngine::XR::Management::XRGeneralSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AssignedSettings", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AssignedSettings", 0usize
                         )
                     })
             });
@@ -322,12 +333,13 @@ impl crate::UnityEngine::XR::Management::XRGeneralSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_InitManagerOnStart")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_InitManagerOnStart", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_InitManagerOnStart", 0usize
                         )
                     })
             });
@@ -340,7 +352,7 @@ impl crate::UnityEngine::XR::Management::XRGeneralSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -351,7 +363,8 @@ impl crate::UnityEngine::XR::Management::XRGeneralSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Instance", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Instance", 0usize
                         )
                     })
             });
@@ -368,7 +381,7 @@ impl crate::UnityEngine::XR::Management::XRGeneralSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -379,7 +392,8 @@ impl crate::UnityEngine::XR::Management::XRGeneralSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Manager", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Manager", 0usize
                         )
                     })
             });
@@ -397,7 +411,7 @@ impl crate::UnityEngine::XR::Management::XRGeneralSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::XR::Management::XRManagerSettings,
@@ -408,7 +422,8 @@ impl crate::UnityEngine::XR::Management::XRGeneralSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Manager", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Manager", 1usize
                         )
                     })
             });

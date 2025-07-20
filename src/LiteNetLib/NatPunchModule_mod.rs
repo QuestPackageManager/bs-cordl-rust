@@ -75,7 +75,7 @@ impl crate::LiteNetLib::NatPunchModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::LiteNetLib::INatPunchListener,
@@ -86,7 +86,8 @@ impl crate::LiteNetLib::NatPunchModule {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Init", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            1usize
                         )
                     })
             });
@@ -106,7 +107,7 @@ impl crate::LiteNetLib::NatPunchModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -123,7 +124,8 @@ impl crate::LiteNetLib::NatPunchModule {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NatIntroduce", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NatIntroduce", 5usize
                         )
                     })
             });
@@ -161,7 +163,7 @@ impl crate::LiteNetLib::NatPunchModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -175,7 +177,8 @@ impl crate::LiteNetLib::NatPunchModule {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnNatIntroductionRequest", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnNatIntroductionRequest", 2usize
                         )
                     })
             });
@@ -193,7 +196,7 @@ impl crate::LiteNetLib::NatPunchModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket,
@@ -204,7 +207,8 @@ impl crate::LiteNetLib::NatPunchModule {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnNatIntroductionResponse", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnNatIntroductionResponse", 1usize
                         )
                     })
             });
@@ -221,7 +225,7 @@ impl crate::LiteNetLib::NatPunchModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -235,7 +239,8 @@ impl crate::LiteNetLib::NatPunchModule {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnNatPunch", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnNatPunch", 2usize
                         )
                     })
             });
@@ -250,12 +255,13 @@ impl crate::LiteNetLib::NatPunchModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("PollEvents")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PollEvents", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PollEvents", 0usize
                         )
                     })
             });
@@ -272,7 +278,7 @@ impl crate::LiteNetLib::NatPunchModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -284,7 +290,8 @@ impl crate::LiteNetLib::NatPunchModule {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessMessage", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessMessage", 2usize
                         )
                     })
             });
@@ -305,7 +312,7 @@ impl crate::LiteNetLib::NatPunchModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (T, quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>),
                         quest_hook::libil2cpp::Void,
@@ -314,7 +321,8 @@ impl crate::LiteNetLib::NatPunchModule {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Send", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Send",
+                            2usize
                         )
                     })
             });
@@ -331,7 +339,7 @@ impl crate::LiteNetLib::NatPunchModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -345,7 +353,8 @@ impl crate::LiteNetLib::NatPunchModule {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SendNatIntroduceRequest", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SendNatIntroduceRequest", 2usize
                         )
                     })
             });
@@ -363,7 +372,7 @@ impl crate::LiteNetLib::NatPunchModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -380,7 +389,8 @@ impl crate::LiteNetLib::NatPunchModule {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SendNatIntroduceRequest", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SendNatIntroduceRequest", 3usize
                         )
                     })
             });
@@ -396,7 +406,7 @@ impl crate::LiteNetLib::NatPunchModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetSocket>),
                         quest_hook::libil2cpp::Void,
@@ -405,7 +415,8 @@ impl crate::LiteNetLib::NatPunchModule {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -484,12 +495,13 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -506,7 +518,7 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -515,7 +527,8 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Internal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Internal", 0usize
                         )
                     })
             });
@@ -532,7 +545,7 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -541,7 +554,8 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Token", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Token", 0usize
                         )
                     })
             });
@@ -557,7 +571,7 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>),
                         quest_hook::libil2cpp::Void,
@@ -566,7 +580,8 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Internal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Internal", 1usize
                         )
                     })
             });
@@ -582,7 +597,7 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -591,7 +606,8 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Token", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Token", 1usize
                         )
                     })
             });
@@ -675,12 +691,13 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -697,7 +714,7 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -706,7 +723,8 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_External", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_External", 0usize
                         )
                     })
             });
@@ -723,7 +741,7 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -732,7 +750,8 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Internal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Internal", 0usize
                         )
                     })
             });
@@ -749,7 +768,7 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -758,7 +777,8 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Token", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Token", 0usize
                         )
                     })
             });
@@ -774,7 +794,7 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>),
                         quest_hook::libil2cpp::Void,
@@ -783,7 +803,8 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_External", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_External", 1usize
                         )
                     })
             });
@@ -799,7 +820,7 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>),
                         quest_hook::libil2cpp::Void,
@@ -808,7 +829,8 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Internal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Internal", 1usize
                         )
                     })
             });
@@ -824,7 +846,7 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -833,7 +855,8 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Token", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Token", 1usize
                         )
                     })
             });
@@ -911,12 +934,13 @@ impl crate::LiteNetLib::NatPunchModule_NatPunchPacket {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -929,12 +953,13 @@ impl crate::LiteNetLib::NatPunchModule_NatPunchPacket {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsExternal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsExternal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsExternal", 0usize
                         )
                     })
             });
@@ -949,7 +974,7 @@ impl crate::LiteNetLib::NatPunchModule_NatPunchPacket {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -958,7 +983,8 @@ impl crate::LiteNetLib::NatPunchModule_NatPunchPacket {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Token", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Token", 0usize
                         )
                     })
             });
@@ -974,7 +1000,7 @@ impl crate::LiteNetLib::NatPunchModule_NatPunchPacket {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -983,7 +1009,8 @@ impl crate::LiteNetLib::NatPunchModule_NatPunchPacket {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_IsExternal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_IsExternal", 1usize
                         )
                     })
             });
@@ -999,7 +1026,7 @@ impl crate::LiteNetLib::NatPunchModule_NatPunchPacket {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -1008,7 +1035,8 @@ impl crate::LiteNetLib::NatPunchModule_NatPunchPacket {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Token", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Token", 1usize
                         )
                     })
             });

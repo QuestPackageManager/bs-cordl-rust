@@ -47,7 +47,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -61,7 +61,8 @@ impl crate::GlobalNamespace::SliderShaderHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnableSaberAttraction", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnableSaberAttraction", 2usize
                         )
                     })
             });
@@ -79,7 +80,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -93,7 +94,8 @@ impl crate::GlobalNamespace::SliderShaderHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetColor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetColor", 2usize
                         )
                     })
             });
@@ -112,7 +114,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -127,7 +129,8 @@ impl crate::GlobalNamespace::SliderShaderHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetHeadNoteJump", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetHeadNoteJump", 3usize
                         )
                     })
             });
@@ -154,7 +157,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -173,7 +176,8 @@ impl crate::GlobalNamespace::SliderShaderHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetInitialProperties", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetInitialProperties", 7usize
                         )
                     })
             });
@@ -205,7 +209,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -221,7 +225,8 @@ impl crate::GlobalNamespace::SliderShaderHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetInitialProperties", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetInitialProperties", 2usize
                         )
                     })
             });
@@ -240,7 +245,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -255,7 +260,8 @@ impl crate::GlobalNamespace::SliderShaderHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetJumpSpeedAndDistance", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetJumpSpeedAndDistance", 3usize
                         )
                     })
             });
@@ -279,7 +285,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -295,7 +301,8 @@ impl crate::GlobalNamespace::SliderShaderHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetNoteJump", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetNoteJump", 4usize
                         )
                     })
             });
@@ -317,7 +324,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -331,7 +338,8 @@ impl crate::GlobalNamespace::SliderShaderHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetSaberAttractionPoint", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetSaberAttractionPoint", 2usize
                         )
                     })
             });
@@ -349,7 +357,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -363,7 +371,8 @@ impl crate::GlobalNamespace::SliderShaderHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetTailHeadNoteJumpOffsetDifference", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetTailHeadNoteJumpOffsetDifference", 2usize
                         )
                     })
             });
@@ -386,7 +395,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -401,7 +410,8 @@ impl crate::GlobalNamespace::SliderShaderHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetTailNoteJump", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetTailNoteJump", 3usize
                         )
                     })
             });
@@ -423,7 +433,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -437,7 +447,8 @@ impl crate::GlobalNamespace::SliderShaderHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetTimeSinceHeadNoteJump", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetTimeSinceHeadNoteJump", 2usize
                         )
                     })
             });
@@ -464,7 +475,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -487,7 +498,8 @@ impl crate::GlobalNamespace::SliderShaderHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateMaterialPropertyBlock", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateMaterialPropertyBlock", 5usize
                         )
                     })
             });

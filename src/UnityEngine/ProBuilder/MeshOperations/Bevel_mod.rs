@@ -57,7 +57,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Bevel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -82,7 +82,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Bevel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BevelEdges", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BevelEdges", 3usize
                         )
                     })
             });
@@ -130,7 +131,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Bevel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -176,7 +177,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Bevel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBridgeFaces", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBridgeFaces", 4usize
                         )
                     })
             });
@@ -196,7 +198,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Bevel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -210,7 +212,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Bevel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLeadingEdge", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLeadingEdge", 2usize
                         )
                     })
             });
@@ -231,7 +234,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Bevel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -252,7 +255,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Bevel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SlideEdge", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SlideEdge", 3usize
                         )
                     })
             });

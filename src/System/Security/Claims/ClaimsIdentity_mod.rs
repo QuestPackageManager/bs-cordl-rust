@@ -85,7 +85,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Security::Claims::Claim,
@@ -96,7 +96,8 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddClaim", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddClaim", 1usize
                         )
                     })
             });
@@ -113,7 +114,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -124,7 +125,8 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Clone", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Clone",
+                            0usize
                         )
                     })
             });
@@ -144,7 +146,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -159,7 +161,8 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Deserialize", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Deserialize", 3usize
                         )
                     })
             });
@@ -175,7 +178,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -184,7 +187,8 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DeserializeClaims", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DeserializeClaims", 1usize
                         )
                     })
             });
@@ -202,7 +206,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -213,7 +217,8 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FindFirst", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindFirst", 1usize
                         )
                     })
             });
@@ -232,7 +237,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -246,7 +251,8 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetObjectData", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetObjectData", 2usize
                         )
                     })
             });
@@ -264,7 +270,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Security::Claims::ClaimsIdentity,
@@ -275,7 +281,8 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsCircular", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsCircular", 1usize
                         )
                     })
             });
@@ -379,7 +386,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Runtime::Serialization::StreamingContext),
                         quest_hook::libil2cpp::Void,
@@ -388,7 +395,8 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDeserializedMethod", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDeserializedMethod", 1usize
                         )
                     })
             });
@@ -404,7 +412,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Runtime::Serialization::StreamingContext),
                         quest_hook::libil2cpp::Void,
@@ -413,7 +421,8 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDeserializingMethod", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDeserializingMethod", 1usize
                         )
                     })
             });
@@ -429,7 +438,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Runtime::Serialization::StreamingContext),
                         quest_hook::libil2cpp::Void,
@@ -438,7 +447,8 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnSerializingMethod", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnSerializingMethod", 1usize
                         )
                     })
             });
@@ -454,7 +464,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Security::Claims::Claim,
@@ -465,7 +475,8 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SafeAddClaim", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SafeAddClaim", 1usize
                         )
                     })
             });
@@ -485,7 +496,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<
@@ -500,7 +511,8 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SafeAddClaims", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SafeAddClaims", 1usize
                         )
                     })
             });
@@ -517,7 +529,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -526,7 +538,8 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SerializeClaims", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SerializeClaims", 0usize
                         )
                     })
             });
@@ -541,12 +554,13 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -562,7 +576,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Security::Claims::ClaimsIdentity,
@@ -573,7 +587,8 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -593,7 +608,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<
@@ -608,7 +623,8 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -636,7 +652,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -665,7 +681,8 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            5usize
                         )
                     })
             });
@@ -698,7 +715,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -728,7 +745,8 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            6usize
                         )
                     })
             });
@@ -758,7 +776,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -772,7 +790,8 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -789,7 +808,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -800,7 +819,8 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Actor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Actor", 0usize
                         )
                     })
             });
@@ -817,7 +837,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -826,7 +846,8 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AuthenticationType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AuthenticationType", 0usize
                         )
                     })
             });
@@ -847,7 +868,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -862,7 +883,8 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Claims", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Claims", 0usize
                         )
                     })
             });
@@ -881,7 +903,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -890,7 +912,8 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Name", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Name", 0usize
                         )
                     })
             });
@@ -907,7 +930,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -916,7 +939,8 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_NameClaimType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_NameClaimType", 0usize
                         )
                     })
             });
@@ -932,7 +956,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Security::Claims::ClaimsIdentity,
@@ -943,7 +967,8 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Actor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Actor", 1usize
                         )
                     })
             });

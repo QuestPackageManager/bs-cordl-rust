@@ -54,7 +54,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Linq::Expressions::CatchBlock,
@@ -65,7 +65,8 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CatchBlockToString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CatchBlockToString", 1usize
                         )
                     })
             });
@@ -81,7 +82,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Linq::Expressions::LabelTarget,
@@ -92,7 +93,8 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DumpLabel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DumpLabel", 1usize
                         )
                     })
             });
@@ -109,7 +111,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Linq::Expressions::Expression,
@@ -120,7 +122,8 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExpressionToString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExpressionToString", 1usize
                         )
                     })
             });
@@ -136,7 +139,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         i32,
@@ -145,7 +148,8 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetId", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetId",
+                            1usize
                         )
                     })
             });
@@ -159,7 +163,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Linq::Expressions::LabelTarget,
@@ -170,7 +174,8 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLabelId", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLabelId", 1usize
                         )
                     })
             });
@@ -186,7 +191,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Linq::Expressions::ParameterExpression,
@@ -197,7 +202,8 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetParamId", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetParamId", 1usize
                         )
                     })
             });
@@ -210,7 +216,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Linq::Expressions::Expression,
@@ -221,7 +227,8 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsBool", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsBool",
+                            1usize
                         )
                     })
             });
@@ -245,7 +252,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -261,7 +268,8 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OutMember", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OutMember", 2usize
                         )
                     })
             });
@@ -277,7 +285,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -286,7 +294,8 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Out", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Out",
+                            1usize
                         )
                     })
             });
@@ -302,12 +311,13 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(char), quest_hook::libil2cpp::Void, 1usize>("Out")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Out", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Out",
+                            1usize
                         )
                     })
             });
@@ -324,7 +334,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -333,7 +343,8 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToString", 0usize
                         )
                     })
             });
@@ -353,7 +364,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Linq::Expressions::BinaryExpression,
@@ -366,7 +377,8 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VisitBinary", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VisitBinary", 1usize
                         )
                     })
             });
@@ -386,7 +398,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Linq::Expressions::BlockExpression,
@@ -399,7 +411,8 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VisitBlock", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VisitBlock", 1usize
                         )
                     })
             });
@@ -417,7 +430,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Linq::Expressions::CatchBlock,
@@ -430,7 +443,8 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VisitCatchBlock", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VisitCatchBlock", 1usize
                         )
                     })
             });
@@ -450,7 +464,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Linq::Expressions::ConditionalExpression,
@@ -463,7 +477,8 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VisitConditional", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VisitConditional", 1usize
                         )
                     })
             });
@@ -483,7 +498,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Linq::Expressions::ConstantExpression,
@@ -496,7 +511,8 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VisitConstant", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VisitConstant", 1usize
                         )
                     })
             });
@@ -516,7 +532,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Linq::Expressions::DefaultExpression,
@@ -529,7 +545,8 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VisitDefault", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VisitDefault", 1usize
                         )
                     })
             });
@@ -554,7 +571,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             char,
@@ -574,7 +591,8 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VisitExpressions", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VisitExpressions", 4usize
                         )
                     })
             });
@@ -598,7 +616,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             char,
@@ -615,7 +633,8 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VisitExpressions", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VisitExpressions", 3usize
                         )
                     })
             });
@@ -633,7 +652,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Linq::Expressions::Expression,
@@ -646,7 +665,8 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VisitExtension", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VisitExtension", 1usize
                         )
                     })
             });
@@ -664,7 +684,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Linq::Expressions::GotoExpression,
@@ -677,7 +697,8 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VisitGoto", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VisitGoto", 1usize
                         )
                     })
             });
@@ -697,7 +718,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Linq::Expressions::IndexExpression,
@@ -710,7 +731,8 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VisitIndex", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VisitIndex", 1usize
                         )
                     })
             });
@@ -730,7 +752,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Linq::Expressions::InvocationExpression,
@@ -743,7 +765,8 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VisitInvocation", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VisitInvocation", 1usize
                         )
                     })
             });
@@ -763,7 +786,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Linq::Expressions::LabelExpression,
@@ -776,7 +799,8 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VisitLabel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VisitLabel", 1usize
                         )
                     })
             });
@@ -800,7 +824,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Linq::Expressions::Expression_1<T>,
@@ -813,7 +837,8 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VisitLambda", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VisitLambda", 1usize
                         )
                     })
             });
@@ -831,7 +856,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Linq::Expressions::LoopExpression,
@@ -844,7 +869,8 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VisitLoop", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VisitLoop", 1usize
                         )
                     })
             });
@@ -864,7 +890,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Linq::Expressions::MemberExpression,
@@ -877,7 +903,8 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VisitMember", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VisitMember", 1usize
                         )
                     })
             });
@@ -897,7 +924,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Linq::Expressions::MethodCallExpression,
@@ -910,7 +937,8 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VisitMethodCall", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VisitMethodCall", 1usize
                         )
                     })
             });
@@ -930,7 +958,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Linq::Expressions::NewArrayExpression,
@@ -943,7 +971,8 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VisitNewArray", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VisitNewArray", 1usize
                         )
                     })
             });
@@ -963,7 +992,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Linq::Expressions::ParameterExpression,
@@ -976,7 +1005,8 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VisitParameter", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VisitParameter", 1usize
                         )
                     })
             });
@@ -994,7 +1024,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Linq::Expressions::TryExpression,
@@ -1007,7 +1037,8 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VisitTry", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VisitTry", 1usize
                         )
                     })
             });
@@ -1027,7 +1058,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Linq::Expressions::TypeBinaryExpression,
@@ -1040,7 +1071,8 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VisitTypeBinary", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VisitTypeBinary", 1usize
                         )
                     })
             });
@@ -1060,7 +1092,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Linq::Expressions::UnaryExpression,
@@ -1073,7 +1105,8 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VisitUnary", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VisitUnary", 1usize
                         )
                     })
             });
@@ -1088,12 +1121,13 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

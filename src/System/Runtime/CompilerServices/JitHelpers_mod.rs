@@ -49,7 +49,7 @@ impl crate::System::Runtime::CompilerServices::JitHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         T,
@@ -58,7 +58,8 @@ impl crate::System::Runtime::CompilerServices::JitHelpers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnsafeCast", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnsafeCast", 1usize
                         )
                     })
             });
@@ -73,12 +74,13 @@ impl crate::System::Runtime::CompilerServices::JitHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(T), i32, 1usize>("UnsafeEnumCast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnsafeEnumCast", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnsafeEnumCast", 1usize
                         )
                     })
             });
@@ -93,12 +95,13 @@ impl crate::System::Runtime::CompilerServices::JitHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(T), i64, 1usize>("UnsafeEnumCastLong")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnsafeEnumCastLong", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnsafeEnumCastLong", 1usize
                         )
                     })
             });

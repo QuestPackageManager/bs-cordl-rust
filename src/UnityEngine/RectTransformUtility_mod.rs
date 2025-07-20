@@ -46,7 +46,7 @@ impl crate::UnityEngine::RectTransformUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -59,7 +59,8 @@ impl crate::UnityEngine::RectTransformUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FlipLayoutAxes", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FlipLayoutAxes", 3usize
                         )
                     })
             });
@@ -77,7 +78,7 @@ impl crate::UnityEngine::RectTransformUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -91,7 +92,8 @@ impl crate::UnityEngine::RectTransformUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FlipLayoutOnAxis", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FlipLayoutOnAxis", 4usize
                         )
                     })
             });
@@ -106,7 +108,7 @@ impl crate::UnityEngine::RectTransformUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Vector2),
                         crate::UnityEngine::Vector2,
@@ -115,7 +117,8 @@ impl crate::UnityEngine::RectTransformUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTransposed", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTransposed", 1usize
                         )
                     })
             });
@@ -132,7 +135,7 @@ impl crate::UnityEngine::RectTransformUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::Vector2,
@@ -145,7 +148,8 @@ impl crate::UnityEngine::RectTransformUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PixelAdjustPoint", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PixelAdjustPoint", 3usize
                         )
                     })
             });
@@ -163,7 +167,7 @@ impl crate::UnityEngine::RectTransformUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
@@ -177,7 +181,8 @@ impl crate::UnityEngine::RectTransformUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PixelAdjustPoint_Injected", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PixelAdjustPoint_Injected", 4usize
                         )
                     })
             });
@@ -193,7 +198,7 @@ impl crate::UnityEngine::RectTransformUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -205,7 +210,8 @@ impl crate::UnityEngine::RectTransformUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PixelAdjustRect", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PixelAdjustRect", 2usize
                         )
                     })
             });
@@ -222,7 +228,7 @@ impl crate::UnityEngine::RectTransformUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -235,7 +241,8 @@ impl crate::UnityEngine::RectTransformUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PixelAdjustRect_Injected", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PixelAdjustRect_Injected", 3usize
                         )
                     })
             });
@@ -253,7 +260,7 @@ impl crate::UnityEngine::RectTransformUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::Vector2,
@@ -267,7 +274,8 @@ impl crate::UnityEngine::RectTransformUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PointInRectangle", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PointInRectangle", 4usize
                         )
                     })
             });
@@ -285,7 +293,7 @@ impl crate::UnityEngine::RectTransformUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
@@ -299,7 +307,8 @@ impl crate::UnityEngine::RectTransformUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PointInRectangle_Injected", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PointInRectangle_Injected", 4usize
                         )
                     })
             });
@@ -316,7 +325,7 @@ impl crate::UnityEngine::RectTransformUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -329,7 +338,8 @@ impl crate::UnityEngine::RectTransformUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RectangleContainsScreenPoint", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RectangleContainsScreenPoint", 3usize
                         )
                     })
             });
@@ -347,7 +357,7 @@ impl crate::UnityEngine::RectTransformUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -361,7 +371,8 @@ impl crate::UnityEngine::RectTransformUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RectangleContainsScreenPoint", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RectangleContainsScreenPoint", 4usize
                         )
                     })
             });
@@ -379,7 +390,7 @@ impl crate::UnityEngine::RectTransformUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -393,7 +404,8 @@ impl crate::UnityEngine::RectTransformUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScreenPointToLocalPointInRectangle", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScreenPointToLocalPointInRectangle", 4usize
                         )
                     })
             });
@@ -409,7 +421,7 @@ impl crate::UnityEngine::RectTransformUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -421,7 +433,8 @@ impl crate::UnityEngine::RectTransformUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScreenPointToRay", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScreenPointToRay", 2usize
                         )
                     })
             });
@@ -439,7 +452,7 @@ impl crate::UnityEngine::RectTransformUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -453,7 +466,8 @@ impl crate::UnityEngine::RectTransformUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScreenPointToWorldPointInRectangle", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScreenPointToWorldPointInRectangle", 4usize
                         )
                     })
             });
@@ -469,7 +483,7 @@ impl crate::UnityEngine::RectTransformUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -481,7 +495,8 @@ impl crate::UnityEngine::RectTransformUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WorldToScreenPoint", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WorldToScreenPoint", 2usize
                         )
                     })
             });

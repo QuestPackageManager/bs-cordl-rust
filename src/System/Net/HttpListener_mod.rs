@@ -76,7 +76,7 @@ impl crate::System::Net::HttpListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Net::HttpConnection>),
                         quest_hook::libil2cpp::Void,
@@ -85,7 +85,8 @@ impl crate::System::Net::HttpListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddConnection", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddConnection", 1usize
                         )
                     })
             });
@@ -104,7 +105,7 @@ impl crate::System::Net::HttpListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
@@ -118,7 +119,8 @@ impl crate::System::Net::HttpListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BeginGetContext", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BeginGetContext", 2usize
                         )
                     })
             });
@@ -133,7 +135,7 @@ impl crate::System::Net::HttpListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -142,7 +144,8 @@ impl crate::System::Net::HttpListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckDisposed", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckDisposed", 0usize
                         )
                     })
             });
@@ -158,7 +161,7 @@ impl crate::System::Net::HttpListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -167,7 +170,8 @@ impl crate::System::Net::HttpListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Cleanup", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Cleanup",
+                            1usize
                         )
                     })
             });
@@ -182,12 +186,13 @@ impl crate::System::Net::HttpListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Close")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Close", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Close",
+                            0usize
                         )
                     })
             });
@@ -203,12 +208,13 @@ impl crate::System::Net::HttpListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("Close")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Close", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Close",
+                            1usize
                         )
                     })
             });
@@ -230,7 +236,7 @@ impl crate::System::Net::HttpListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -247,7 +253,8 @@ impl crate::System::Net::HttpListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateSslStream", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateSslStream", 3usize
                         )
                     })
             });
@@ -267,7 +274,7 @@ impl crate::System::Net::HttpListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
                         quest_hook::libil2cpp::Gc<
@@ -278,7 +285,8 @@ impl crate::System::Net::HttpListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EndGetContext", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EndGetContext", 1usize
                         )
                     })
             });
@@ -295,7 +303,7 @@ impl crate::System::Net::HttpListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -306,7 +314,8 @@ impl crate::System::Net::HttpListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetContext", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetContext", 0usize
                         )
                     })
             });
@@ -323,7 +332,7 @@ impl crate::System::Net::HttpListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -334,7 +343,8 @@ impl crate::System::Net::HttpListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetContextFromQueue", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetContextFromQueue", 0usize
                         )
                     })
             });
@@ -355,7 +365,7 @@ impl crate::System::Net::HttpListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>, i32),
                         quest_hook::libil2cpp::Gc<
@@ -366,7 +376,8 @@ impl crate::System::Net::HttpListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadCertificateAndKey", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadCertificateAndKey", 2usize
                         )
                     })
             });
@@ -389,7 +400,7 @@ impl crate::System::Net::HttpListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Net::HttpListenerContext,
@@ -400,7 +411,8 @@ impl crate::System::Net::HttpListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterContext", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterContext", 1usize
                         )
                     })
             });
@@ -416,7 +428,7 @@ impl crate::System::Net::HttpListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Net::HttpConnection>),
                         quest_hook::libil2cpp::Void,
@@ -425,7 +437,8 @@ impl crate::System::Net::HttpListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RemoveConnection", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RemoveConnection", 1usize
                         )
                     })
             });
@@ -441,7 +454,7 @@ impl crate::System::Net::HttpListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Net::HttpListenerContext,
@@ -452,7 +465,8 @@ impl crate::System::Net::HttpListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SelectAuthenticationScheme", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SelectAuthenticationScheme", 1usize
                         )
                     })
             });
@@ -467,12 +481,13 @@ impl crate::System::Net::HttpListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Start", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Start",
+                            0usize
                         )
                     })
             });
@@ -487,12 +502,13 @@ impl crate::System::Net::HttpListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Stop")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Stop", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Stop",
+                            0usize
                         )
                     })
             });
@@ -507,7 +523,7 @@ impl crate::System::Net::HttpListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -516,7 +532,8 @@ impl crate::System::Net::HttpListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "System.IDisposable.Dispose", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "System.IDisposable.Dispose", 0usize
                         )
                     })
             });
@@ -532,7 +549,7 @@ impl crate::System::Net::HttpListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Net::HttpListenerContext,
@@ -543,7 +560,8 @@ impl crate::System::Net::HttpListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnregisterContext", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnregisterContext", 1usize
                         )
                     })
             });
@@ -558,12 +576,13 @@ impl crate::System::Net::HttpListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -580,7 +599,7 @@ impl crate::System::Net::HttpListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -591,8 +610,8 @@ impl crate::System::Net::HttpListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AuthenticationSchemeSelectorDelegate",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AuthenticationSchemeSelectorDelegate", 0usize
                         )
                     })
             });
@@ -607,7 +626,7 @@ impl crate::System::Net::HttpListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Net::AuthenticationSchemes,
@@ -616,7 +635,8 @@ impl crate::System::Net::HttpListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AuthenticationSchemes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AuthenticationSchemes", 0usize
                         )
                     })
             });
@@ -629,12 +649,13 @@ impl crate::System::Net::HttpListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IgnoreWriteExceptions")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IgnoreWriteExceptions", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IgnoreWriteExceptions", 0usize
                         )
                     })
             });
@@ -645,12 +666,13 @@ impl crate::System::Net::HttpListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsListening")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsListening", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsListening", 0usize
                         )
                     })
             });
@@ -665,7 +687,7 @@ impl crate::System::Net::HttpListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -676,7 +698,8 @@ impl crate::System::Net::HttpListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Prefixes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Prefixes", 0usize
                         )
                     })
             });
@@ -693,7 +716,7 @@ impl crate::System::Net::HttpListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -702,7 +725,8 @@ impl crate::System::Net::HttpListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Realm", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Realm", 0usize
                         )
                     })
             });

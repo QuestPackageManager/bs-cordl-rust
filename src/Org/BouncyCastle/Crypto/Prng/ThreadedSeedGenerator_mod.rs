@@ -52,7 +52,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::ThreadedSeedGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, bool),
                         quest_hook::libil2cpp::Gc<
@@ -63,7 +63,8 @@ impl crate::Org::BouncyCastle::Crypto::Prng::ThreadedSeedGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenerateSeed", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateSeed", 2usize
                         )
                     })
             });
@@ -85,12 +86,13 @@ impl crate::Org::BouncyCastle::Crypto::Prng::ThreadedSeedGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -165,7 +167,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::ThreadedSeedGenerator_SeedGenerator
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, bool),
                         quest_hook::libil2cpp::Gc<
@@ -176,7 +178,8 @@ impl crate::Org::BouncyCastle::Crypto::Prng::ThreadedSeedGenerator_SeedGenerator
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoGenerateSeed", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoGenerateSeed", 2usize
                         )
                     })
             });
@@ -195,7 +198,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::ThreadedSeedGenerator_SeedGenerator
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, bool),
                         quest_hook::libil2cpp::Gc<
@@ -206,7 +209,8 @@ impl crate::Org::BouncyCastle::Crypto::Prng::ThreadedSeedGenerator_SeedGenerator
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenerateSeed", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateSeed", 2usize
                         )
                     })
             });
@@ -229,7 +233,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::ThreadedSeedGenerator_SeedGenerator
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Void,
@@ -238,7 +242,8 @@ impl crate::Org::BouncyCastle::Crypto::Prng::ThreadedSeedGenerator_SeedGenerator
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Run", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Run",
+                            1usize
                         )
                     })
             });
@@ -253,12 +258,13 @@ impl crate::Org::BouncyCastle::Crypto::Prng::ThreadedSeedGenerator_SeedGenerator
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

@@ -54,12 +54,13 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Clear", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Clear",
+                            0usize
                         )
                     })
             });
@@ -81,12 +82,13 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Redo")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Redo", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Redo",
+                            0usize
                         )
                     })
             });
@@ -101,12 +103,13 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Undo")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Undo", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Undo",
+                            0usize
                         )
                     })
             });
@@ -125,7 +128,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -139,7 +142,8 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateEditHistory", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateEditHistory", 2usize
                         )
                     })
             });
@@ -154,12 +158,13 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -176,7 +181,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarHistorySnapshot,
@@ -185,7 +190,8 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_currentSnapShot", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_currentSnapShot", 0usize
                         )
                     })
             });
@@ -200,7 +206,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::BeatSaber::BeatAvatarSDK::AvatarPart,
@@ -209,7 +215,8 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_lastEditedPart", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_lastEditedPart", 0usize
                         )
                     })
             });
@@ -222,12 +229,13 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_redoAvailable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_redoAvailable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_redoAvailable", 0usize
                         )
                     })
             });
@@ -238,12 +246,13 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_undoAvailable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_undoAvailable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_undoAvailable", 0usize
                         )
                     })
             });

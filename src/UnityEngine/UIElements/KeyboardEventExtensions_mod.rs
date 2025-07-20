@@ -45,7 +45,7 @@ impl crate::UnityEngine::UIElements::KeyboardEventExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::KeyDownEvent,
@@ -56,7 +56,8 @@ impl crate::UnityEngine::UIElements::KeyboardEventExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShouldSendNavigationMoveEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShouldSendNavigationMoveEvent", 1usize
                         )
                     })
             });
@@ -69,7 +70,7 @@ impl crate::UnityEngine::UIElements::KeyboardEventExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>),
                         bool,
@@ -78,7 +79,8 @@ impl crate::UnityEngine::UIElements::KeyboardEventExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShouldSendNavigationMoveEventRuntime", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShouldSendNavigationMoveEventRuntime", 1usize
                         )
                     })
             });

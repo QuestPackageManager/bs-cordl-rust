@@ -47,12 +47,13 @@ impl crate::GlobalNamespace::IAudioTimeSource {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isReady")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_isReady", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isReady", 0usize
                         )
                     })
             });
@@ -63,12 +64,13 @@ impl crate::GlobalNamespace::IAudioTimeSource {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_lastFrameDeltaSongTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_lastFrameDeltaSongTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_lastFrameDeltaSongTime", 0usize
                         )
                     })
             });
@@ -79,12 +81,13 @@ impl crate::GlobalNamespace::IAudioTimeSource {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_songEndTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_songEndTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_songEndTime", 0usize
                         )
                     })
             });
@@ -95,12 +98,13 @@ impl crate::GlobalNamespace::IAudioTimeSource {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_songLength")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_songLength", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_songLength", 0usize
                         )
                     })
             });
@@ -111,12 +115,13 @@ impl crate::GlobalNamespace::IAudioTimeSource {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_songTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_songTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_songTime", 0usize
                         )
                     })
             });
@@ -127,12 +132,13 @@ impl crate::GlobalNamespace::IAudioTimeSource {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_timeScale")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_timeScale", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_timeScale", 0usize
                         )
                     })
             });

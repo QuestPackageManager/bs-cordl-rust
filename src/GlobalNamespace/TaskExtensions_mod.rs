@@ -47,7 +47,7 @@ impl crate::GlobalNamespace::TaskExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -61,7 +61,8 @@ impl crate::GlobalNamespace::TaskExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WaitAsyncInternal", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WaitAsyncInternal", 2usize
                         )
                     })
             });
@@ -83,7 +84,7 @@ impl crate::GlobalNamespace::TaskExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -99,7 +100,8 @@ impl crate::GlobalNamespace::TaskExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WaitAsyncInternal", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WaitAsyncInternal", 2usize
                         )
                     })
             });
@@ -117,7 +119,7 @@ impl crate::GlobalNamespace::TaskExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -131,7 +133,8 @@ impl crate::GlobalNamespace::TaskExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WaitAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WaitAsync", 2usize
                         )
                     })
             });
@@ -153,7 +156,7 @@ impl crate::GlobalNamespace::TaskExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -169,7 +172,8 @@ impl crate::GlobalNamespace::TaskExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WaitAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WaitAsync", 2usize
                         )
                     })
             });
@@ -191,7 +195,7 @@ impl crate::GlobalNamespace::TaskExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -207,7 +211,8 @@ impl crate::GlobalNamespace::TaskExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WithCancellation", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WithCancellation", 2usize
                         )
                     })
             });

@@ -48,7 +48,7 @@ impl crate::System::Net::NetworkInformation::AixNetworkInterfaceAPI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -65,7 +65,8 @@ impl crate::System::Net::NetworkInformation::AixNetworkInterfaceAPI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ByteArrayCopy", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ByteArrayCopy", 3usize
                         )
                     })
             });
@@ -88,7 +89,7 @@ impl crate::System::Net::NetworkInformation::AixNetworkInterfaceAPI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -103,7 +104,8 @@ impl crate::System::Net::NetworkInformation::AixNetworkInterfaceAPI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAllNetworkInterfaces", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAllNetworkInterfaces", 0usize
                         )
                     })
             });
@@ -129,12 +131,13 @@ impl crate::System::Net::NetworkInformation::AixNetworkInterfaceAPI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -147,12 +150,13 @@ impl crate::System::Net::NetworkInformation::AixNetworkInterfaceAPI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("close")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "close", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "close",
+                            1usize
                         )
                     })
             });
@@ -167,7 +171,7 @@ impl crate::System::Net::NetworkInformation::AixNetworkInterfaceAPI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -180,7 +184,8 @@ impl crate::System::Net::NetworkInformation::AixNetworkInterfaceAPI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ioctl", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "ioctl",
+                            3usize
                         )
                     })
             });
@@ -199,7 +204,7 @@ impl crate::System::Net::NetworkInformation::AixNetworkInterfaceAPI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -214,7 +219,8 @@ impl crate::System::Net::NetworkInformation::AixNetworkInterfaceAPI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ioctl", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "ioctl",
+                            3usize
                         )
                     })
             });
@@ -233,7 +239,7 @@ impl crate::System::Net::NetworkInformation::AixNetworkInterfaceAPI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -248,7 +254,8 @@ impl crate::System::Net::NetworkInformation::AixNetworkInterfaceAPI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ioctl", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "ioctl",
+                            3usize
                         )
                     })
             });
@@ -267,7 +274,7 @@ impl crate::System::Net::NetworkInformation::AixNetworkInterfaceAPI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -282,7 +289,8 @@ impl crate::System::Net::NetworkInformation::AixNetworkInterfaceAPI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ioctl", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "ioctl",
+                            3usize
                         )
                     })
             });
@@ -299,7 +307,7 @@ impl crate::System::Net::NetworkInformation::AixNetworkInterfaceAPI {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::Net::NetworkInformation::AixAddressFamily,
@@ -312,7 +320,8 @@ impl crate::System::Net::NetworkInformation::AixNetworkInterfaceAPI {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "socket", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "socket",
+                            3usize
                         )
                     })
             });

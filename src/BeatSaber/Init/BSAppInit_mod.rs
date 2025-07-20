@@ -50,7 +50,7 @@ impl crate::BeatSaber::Init::BSAppInit {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -59,7 +59,8 @@ impl crate::BeatSaber::Init::BSAppInit {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstallBindings", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstallBindings", 0usize
                         )
                     })
             });
@@ -83,7 +84,7 @@ impl crate::BeatSaber::Init::BSAppInit {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -92,7 +93,8 @@ impl crate::BeatSaber::Init::BSAppInit {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PreloadAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PreloadAsync", 0usize
                         )
                     })
             });
@@ -107,12 +109,13 @@ impl crate::BeatSaber::Init::BSAppInit {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -129,7 +132,7 @@ impl crate::BeatSaber::Init::BSAppInit {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult,
@@ -138,7 +141,8 @@ impl crate::BeatSaber::Init::BSAppInit {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_commandLineArguments", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_commandLineArguments", 0usize
                         )
                     })
             });
@@ -154,7 +158,7 @@ impl crate::BeatSaber::Init::BSAppInit {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult),
                         quest_hook::libil2cpp::Void,
@@ -163,7 +167,8 @@ impl crate::BeatSaber::Init::BSAppInit {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_commandLineArguments", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_commandLineArguments", 1usize
                         )
                     })
             });

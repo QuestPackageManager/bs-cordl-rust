@@ -95,7 +95,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::HMUI::TableView>, i32),
                         quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
@@ -104,7 +104,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CellForIdx", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CellForIdx", 2usize
                         )
                     })
             });
@@ -117,12 +118,13 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), f32, 1usize>("CellSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CellSize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CellSize", 1usize
                         )
                     })
             });
@@ -138,7 +140,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, bool, bool),
                         quest_hook::libil2cpp::Void,
@@ -147,7 +149,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DidActivate", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DidActivate", 3usize
                         )
                     })
             });
@@ -168,7 +171,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, bool),
                         quest_hook::libil2cpp::Void,
@@ -177,7 +180,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DidDeactivate", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DidDeactivate", 2usize
                         )
                     })
             });
@@ -195,7 +199,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
@@ -206,7 +210,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "HandleLoadedSelectionViewDidPressCreateButton", 1usize
                         )
                     })
@@ -225,7 +229,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
@@ -236,8 +240,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleLoadedSelectionViewDidPressEditButton",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleLoadedSelectionViewDidPressEditButton", 1usize
                         )
                     })
             });
@@ -255,7 +259,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
@@ -266,7 +270,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "HandleLoadedSelectionViewDidPressPreferredButton", 1usize
                         )
                     })
@@ -287,12 +291,13 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("NumberOfCells")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NumberOfCells", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NumberOfCells", 0usize
                         )
                     })
             });
@@ -315,7 +320,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -335,7 +340,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Prewarm", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Prewarm",
+                            2usize
                         )
                     })
             });
@@ -350,7 +356,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -359,7 +365,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReloadContinueButtonInteractability", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReloadContinueButtonInteractability", 0usize
                         )
                     })
             });
@@ -377,7 +384,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
@@ -388,7 +395,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReloadCreateEditButtonOfAvatarSystem", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReloadCreateEditButtonOfAvatarSystem", 1usize
                         )
                     })
             });
@@ -404,7 +412,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -413,7 +421,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetAllCellsActive", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetAllCellsActive", 1usize
                         )
                     })
             });
@@ -431,7 +440,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
@@ -442,7 +451,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetSelectedAvatarSystem", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetSelectedAvatarSystem", 1usize
                         )
                     })
             });
@@ -457,7 +467,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -466,7 +476,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<DidActivate>b__26_0", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<DidActivate>b__26_0", 0usize
                         )
                     })
             });
@@ -481,12 +492,13 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -502,7 +514,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -511,7 +523,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_didPressContinueButtonEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_didPressContinueButtonEvent", 1usize
                         )
                     })
             });
@@ -533,7 +546,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -548,7 +561,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_didRequestCreationOfAvatarEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_didRequestCreationOfAvatarEvent", 1usize
                         )
                     })
             });
@@ -570,7 +584,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -585,7 +599,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_didRequestEditOfAvatarEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_didRequestEditOfAvatarEvent", 1usize
                         )
                     })
             });
@@ -607,7 +622,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -622,7 +637,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_didSetAvatarSystemPreferredEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_didSetAvatarSystemPreferredEvent", 1usize
                         )
                     })
             });
@@ -635,12 +651,13 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_continueButtonVisible")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_continueButtonVisible", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_continueButtonVisible", 0usize
                         )
                     })
             });
@@ -654,7 +671,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -663,7 +680,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_didPressContinueButtonEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_didPressContinueButtonEvent", 1usize
                         )
                     })
             });
@@ -685,7 +703,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -700,8 +718,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_didRequestCreationOfAvatarEvent",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_didRequestCreationOfAvatarEvent", 1usize
                         )
                     })
             });
@@ -723,7 +741,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -738,7 +756,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_didRequestEditOfAvatarEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_didRequestEditOfAvatarEvent", 1usize
                         )
                     })
             });
@@ -760,7 +779,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -775,8 +794,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_didSetAvatarSystemPreferredEvent",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_didSetAvatarSystemPreferredEvent", 1usize
                         )
                     })
             });
@@ -792,7 +811,7 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -801,7 +820,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_continueButtonVisible", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_continueButtonVisible", 1usize
                         )
                     })
             });

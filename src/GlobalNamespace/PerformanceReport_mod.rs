@@ -50,7 +50,7 @@ impl crate::GlobalNamespace::PerformanceReport {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::DateTime,
@@ -64,7 +64,8 @@ impl crate::GlobalNamespace::PerformanceReport {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateReportDescriptor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateReportDescriptor", 2usize
                         )
                     })
             });
@@ -81,7 +82,7 @@ impl crate::GlobalNamespace::PerformanceReport {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::DateTime),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -90,7 +91,8 @@ impl crate::GlobalNamespace::PerformanceReport {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateTimestamp", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateTimestamp", 1usize
                         )
                     })
             });
@@ -110,7 +112,7 @@ impl crate::GlobalNamespace::PerformanceReport {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -124,7 +126,8 @@ impl crate::GlobalNamespace::PerformanceReport {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ListAggregatedFps", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ListAggregatedFps", 2usize
                         )
                     })
             });
@@ -143,7 +146,7 @@ impl crate::GlobalNamespace::PerformanceReport {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<f32>,
@@ -154,7 +157,8 @@ impl crate::GlobalNamespace::PerformanceReport {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ListFrameDurations", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ListFrameDurations", 1usize
                         )
                     })
             });
@@ -171,7 +175,7 @@ impl crate::GlobalNamespace::PerformanceReport {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<f32>,
@@ -182,7 +186,8 @@ impl crate::GlobalNamespace::PerformanceReport {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ListStat", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ListStat", 1usize
                         )
                     })
             });
@@ -199,7 +204,7 @@ impl crate::GlobalNamespace::PerformanceReport {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<i64>,
@@ -210,7 +215,8 @@ impl crate::GlobalNamespace::PerformanceReport {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ListStat", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ListStat", 1usize
                         )
                     })
             });

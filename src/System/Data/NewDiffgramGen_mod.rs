@@ -54,7 +54,7 @@ impl crate::System::Data::NewDiffgramGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>),
                         quest_hook::libil2cpp::Void,
@@ -63,7 +63,8 @@ impl crate::System::Data::NewDiffgramGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateTableHierarchy", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateTableHierarchy", 1usize
                         )
                     })
             });
@@ -79,7 +80,7 @@ impl crate::System::Data::NewDiffgramGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::ArrayList,
@@ -90,7 +91,8 @@ impl crate::System::Data::NewDiffgramGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoAssignments", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoAssignments", 1usize
                         )
                     })
             });
@@ -103,12 +105,13 @@ impl crate::System::Data::NewDiffgramGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("EmptyData")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EmptyData", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EmptyData", 0usize
                         )
                     })
             });
@@ -124,7 +127,7 @@ impl crate::System::Data::NewDiffgramGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
@@ -137,7 +140,8 @@ impl crate::System::Data::NewDiffgramGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenerateColumn", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateColumn", 3usize
                         )
                     })
             });
@@ -153,7 +157,7 @@ impl crate::System::Data::NewDiffgramGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>),
                         quest_hook::libil2cpp::Void,
@@ -162,7 +166,8 @@ impl crate::System::Data::NewDiffgramGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenerateRow", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateRow", 1usize
                         )
                     })
             });
@@ -178,7 +183,7 @@ impl crate::System::Data::NewDiffgramGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>),
                         quest_hook::libil2cpp::Void,
@@ -187,7 +192,8 @@ impl crate::System::Data::NewDiffgramGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenerateTable", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateTable", 1usize
                         )
                     })
             });
@@ -203,7 +209,7 @@ impl crate::System::Data::NewDiffgramGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>),
                         quest_hook::libil2cpp::Void,
@@ -212,7 +218,8 @@ impl crate::System::Data::NewDiffgramGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenerateTableErrors", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateTableErrors", 1usize
                         )
                     })
             });
@@ -249,7 +256,7 @@ impl crate::System::Data::NewDiffgramGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -265,7 +272,8 @@ impl crate::System::Data::NewDiffgramGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "QualifiedName", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "QualifiedName", 2usize
                         )
                     })
             });
@@ -282,7 +290,7 @@ impl crate::System::Data::NewDiffgramGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
@@ -294,7 +302,8 @@ impl crate::System::Data::NewDiffgramGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Save", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Save",
+                            2usize
                         )
                     })
             });
@@ -310,7 +319,7 @@ impl crate::System::Data::NewDiffgramGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>),
                         quest_hook::libil2cpp::Void,
@@ -319,7 +328,8 @@ impl crate::System::Data::NewDiffgramGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Save", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Save",
+                            1usize
                         )
                     })
             });
@@ -335,7 +345,7 @@ impl crate::System::Data::NewDiffgramGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>),
                         quest_hook::libil2cpp::Void,
@@ -344,7 +354,8 @@ impl crate::System::Data::NewDiffgramGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -361,7 +372,7 @@ impl crate::System::Data::NewDiffgramGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
@@ -373,7 +384,8 @@ impl crate::System::Data::NewDiffgramGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });

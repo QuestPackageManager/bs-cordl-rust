@@ -67,7 +67,7 @@ impl crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -88,7 +88,8 @@ impl crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FilterPasses", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FilterPasses", 3usize
                         )
                     })
             });
@@ -115,7 +116,7 @@ impl crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -139,7 +140,8 @@ impl crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HasHandler", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HasHandler", 4usize
                         )
                     })
             });
@@ -206,7 +208,7 @@ impl crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -226,7 +228,8 @@ impl crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
                         )
                     })
             });
@@ -257,7 +260,7 @@ impl crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -279,7 +282,8 @@ impl crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            6usize
                         )
                     })
             });
@@ -313,7 +317,7 @@ impl crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -328,7 +332,8 @@ impl crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Handlers", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Handlers", 0usize
                         )
                     })
             });
@@ -345,12 +350,13 @@ impl crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsCatchBlockExist")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsCatchBlockExist", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsCatchBlockExist", 0usize
                         )
                     })
             });
@@ -361,12 +367,13 @@ impl crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsFinallyBlockExist")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsFinallyBlockExist", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsFinallyBlockExist", 0usize
                         )
                     })
             });

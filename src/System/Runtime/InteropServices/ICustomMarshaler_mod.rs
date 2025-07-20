@@ -46,7 +46,7 @@ impl crate::System::Runtime::InteropServices::ICustomMarshaler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Void,
@@ -55,7 +55,8 @@ impl crate::System::Runtime::InteropServices::ICustomMarshaler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CleanUpManagedData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CleanUpManagedData", 1usize
                         )
                     })
             });
@@ -71,7 +72,7 @@ impl crate::System::Runtime::InteropServices::ICustomMarshaler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::IntPtr),
                         quest_hook::libil2cpp::Void,
@@ -80,7 +81,8 @@ impl crate::System::Runtime::InteropServices::ICustomMarshaler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CleanUpNativeData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CleanUpNativeData", 1usize
                         )
                     })
             });
@@ -93,12 +95,13 @@ impl crate::System::Runtime::InteropServices::ICustomMarshaler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetNativeDataSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNativeDataSize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNativeDataSize", 0usize
                         )
                     })
             });
@@ -112,7 +115,7 @@ impl crate::System::Runtime::InteropServices::ICustomMarshaler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         crate::System::IntPtr,
@@ -121,7 +124,8 @@ impl crate::System::Runtime::InteropServices::ICustomMarshaler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MarshalManagedToNative", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MarshalManagedToNative", 1usize
                         )
                     })
             });
@@ -139,7 +143,7 @@ impl crate::System::Runtime::InteropServices::ICustomMarshaler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::IntPtr),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -148,7 +152,8 @@ impl crate::System::Runtime::InteropServices::ICustomMarshaler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MarshalNativeToManaged", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MarshalNativeToManaged", 1usize
                         )
                     })
             });

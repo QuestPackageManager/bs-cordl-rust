@@ -63,7 +63,7 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -72,7 +72,8 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CleanInvalidItems", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CleanInvalidItems", 0usize
                         )
                     })
             });
@@ -87,7 +88,7 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UI::ICanvasElement,
@@ -98,7 +99,8 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DisableCanvasElementForRebuild", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DisableCanvasElementForRebuild", 1usize
                         )
                     })
             });
@@ -114,7 +116,7 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UI::ICanvasElement,
@@ -125,7 +127,7 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "InternalDisableCanvasElementForGraphicRebuild", 1usize
                         )
                     })
@@ -142,7 +144,7 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UI::ICanvasElement,
@@ -153,7 +155,7 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "InternalDisableCanvasElementForLayoutRebuild", 1usize
                         )
                     })
@@ -170,7 +172,7 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UI::ICanvasElement,
@@ -181,7 +183,7 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "InternalRegisterCanvasElementForGraphicRebuild", 1usize
                         )
                     })
@@ -196,7 +198,7 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UI::ICanvasElement,
@@ -207,7 +209,7 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "InternalRegisterCanvasElementForLayoutRebuild", 1usize
                         )
                     })
@@ -222,7 +224,7 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UI::ICanvasElement,
@@ -233,7 +235,7 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "InternalUnRegisterCanvasElementForGraphicRebuild", 1usize
                         )
                     })
@@ -250,7 +252,7 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UI::ICanvasElement,
@@ -261,7 +263,7 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "InternalUnRegisterCanvasElementForLayoutRebuild", 1usize
                         )
                     })
@@ -275,12 +277,13 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("IsRebuildingGraphics")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsRebuildingGraphics", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsRebuildingGraphics", 0usize
                         )
                     })
             });
@@ -291,12 +294,13 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("IsRebuildingLayout")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsRebuildingLayout", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsRebuildingLayout", 0usize
                         )
                     })
             });
@@ -317,7 +321,7 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UI::ICanvasElement,
@@ -328,7 +332,8 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ObjectValidForUpdate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ObjectValidForUpdate", 1usize
                         )
                     })
             });
@@ -341,7 +346,7 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
                         i32,
@@ -350,7 +355,8 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParentCount", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParentCount", 1usize
                         )
                     })
             });
@@ -363,7 +369,7 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -372,7 +378,8 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PerformUpdate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PerformUpdate", 0usize
                         )
                     })
             });
@@ -387,7 +394,7 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UI::ICanvasElement,
@@ -398,8 +405,8 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterCanvasElementForGraphicRebuild",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterCanvasElementForGraphicRebuild", 1usize
                         )
                     })
             });
@@ -414,7 +421,7 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UI::ICanvasElement,
@@ -425,8 +432,8 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterCanvasElementForLayoutRebuild",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterCanvasElementForLayoutRebuild", 1usize
                         )
                     })
             });
@@ -442,7 +449,7 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -458,7 +465,8 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SortLayoutList", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SortLayoutList", 2usize
                         )
                     })
             });
@@ -471,7 +479,7 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UI::ICanvasElement,
@@ -482,8 +490,8 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryRegisterCanvasElementForGraphicRebuild",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryRegisterCanvasElementForGraphicRebuild", 1usize
                         )
                     })
             });
@@ -496,7 +504,7 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UI::ICanvasElement,
@@ -507,8 +515,8 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryRegisterCanvasElementForLayoutRebuild",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryRegisterCanvasElementForLayoutRebuild", 1usize
                         )
                     })
             });
@@ -521,7 +529,7 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UI::ICanvasElement,
@@ -532,7 +540,8 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnRegisterCanvasElementForRebuild", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnRegisterCanvasElementForRebuild", 1usize
                         )
                     })
             });
@@ -547,12 +556,13 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -567,7 +577,7 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -578,7 +588,8 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_instance", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_instance", 0usize
                         )
                     })
             });

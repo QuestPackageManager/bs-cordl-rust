@@ -43,12 +43,13 @@ impl crate::Mono::Globalization::Unicode::NormalizationTableUtil {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("MapIdx")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MapIdx", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "MapIdx",
+                            1usize
                         )
                     })
             });
@@ -59,12 +60,13 @@ impl crate::Mono::Globalization::Unicode::NormalizationTableUtil {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("PropIdx")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PropIdx", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "PropIdx",
+                            1usize
                         )
                     })
             });

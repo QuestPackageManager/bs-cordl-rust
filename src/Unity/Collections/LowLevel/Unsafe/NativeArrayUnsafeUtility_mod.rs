@@ -53,7 +53,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::NativeArrayUnsafeUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -68,7 +68,8 @@ impl crate::Unity::Collections::LowLevel::Unsafe::NativeArrayUnsafeUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertExistingDataToNativeArray", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertExistingDataToNativeArray", 3usize
                         )
                     })
             });
@@ -89,7 +90,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::NativeArrayUnsafeUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::NativeArray_1<T>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -98,7 +99,8 @@ impl crate::Unity::Collections::LowLevel::Unsafe::NativeArrayUnsafeUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetUnsafeBufferPointerWithoutChecks", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetUnsafeBufferPointerWithoutChecks", 1usize
                         )
                     })
             });
@@ -119,7 +121,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::NativeArrayUnsafeUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::NativeArray_1<T>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -128,7 +130,8 @@ impl crate::Unity::Collections::LowLevel::Unsafe::NativeArrayUnsafeUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetUnsafePtr", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetUnsafePtr", 1usize
                         )
                     })
             });
@@ -149,7 +152,7 @@ impl crate::Unity::Collections::LowLevel::Unsafe::NativeArrayUnsafeUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Collections::NativeArray_1<T>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -158,7 +161,8 @@ impl crate::Unity::Collections::LowLevel::Unsafe::NativeArrayUnsafeUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetUnsafeReadOnlyPtr", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetUnsafeReadOnlyPtr", 1usize
                         )
                     })
             });

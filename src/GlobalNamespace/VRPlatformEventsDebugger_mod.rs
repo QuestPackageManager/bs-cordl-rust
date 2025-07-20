@@ -48,12 +48,13 @@ impl crate::GlobalNamespace::VRPlatformEventsDebugger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Dispose", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            0usize
                         )
                     })
             });
@@ -68,7 +69,7 @@ impl crate::GlobalNamespace::VRPlatformEventsDebugger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -77,7 +78,8 @@ impl crate::GlobalNamespace::VRPlatformEventsDebugger {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleHMDMounted", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleHMDMounted", 0usize
                         )
                     })
             });
@@ -92,7 +94,7 @@ impl crate::GlobalNamespace::VRPlatformEventsDebugger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -101,7 +103,8 @@ impl crate::GlobalNamespace::VRPlatformEventsDebugger {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleHMDUnmounted", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleHMDUnmounted", 0usize
                         )
                     })
             });
@@ -116,7 +119,7 @@ impl crate::GlobalNamespace::VRPlatformEventsDebugger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -125,7 +128,8 @@ impl crate::GlobalNamespace::VRPlatformEventsDebugger {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleInputFocusWasCaptured", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleInputFocusWasCaptured", 0usize
                         )
                     })
             });
@@ -140,7 +144,7 @@ impl crate::GlobalNamespace::VRPlatformEventsDebugger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -149,7 +153,8 @@ impl crate::GlobalNamespace::VRPlatformEventsDebugger {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleInputFocusWasReleased", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleInputFocusWasReleased", 0usize
                         )
                     })
             });
@@ -164,7 +169,7 @@ impl crate::GlobalNamespace::VRPlatformEventsDebugger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -173,7 +178,8 @@ impl crate::GlobalNamespace::VRPlatformEventsDebugger {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleVRFocusWasCaptured", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleVRFocusWasCaptured", 0usize
                         )
                     })
             });
@@ -188,7 +194,7 @@ impl crate::GlobalNamespace::VRPlatformEventsDebugger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -197,7 +203,8 @@ impl crate::GlobalNamespace::VRPlatformEventsDebugger {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleVRFocusWasReleased", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleVRFocusWasReleased", 0usize
                         )
                     })
             });
@@ -212,12 +219,13 @@ impl crate::GlobalNamespace::VRPlatformEventsDebugger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Initialize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize", 0usize
                         )
                     })
             });
@@ -239,12 +247,13 @@ impl crate::GlobalNamespace::VRPlatformEventsDebugger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -261,7 +270,7 @@ impl crate::GlobalNamespace::VRPlatformEventsDebugger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -270,7 +279,8 @@ impl crate::GlobalNamespace::VRPlatformEventsDebugger {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_loggerPrefix", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_loggerPrefix", 0usize
                         )
                     })
             });

@@ -47,7 +47,7 @@ impl crate::Zenject::ConventionSelectTypesBinder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -58,7 +58,8 @@ impl crate::Zenject::ConventionSelectTypesBinder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AllAbstractClasses", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AllAbstractClasses", 0usize
                         )
                     })
             });
@@ -75,7 +76,7 @@ impl crate::Zenject::ConventionSelectTypesBinder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -86,7 +87,8 @@ impl crate::Zenject::ConventionSelectTypesBinder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AllClasses", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AllClasses", 0usize
                         )
                     })
             });
@@ -103,7 +105,7 @@ impl crate::Zenject::ConventionSelectTypesBinder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -114,7 +116,8 @@ impl crate::Zenject::ConventionSelectTypesBinder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AllInterfaces", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AllInterfaces", 0usize
                         )
                     })
             });
@@ -131,7 +134,7 @@ impl crate::Zenject::ConventionSelectTypesBinder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -142,7 +145,8 @@ impl crate::Zenject::ConventionSelectTypesBinder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AllNonAbstractClasses", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AllNonAbstractClasses", 0usize
                         )
                     })
             });
@@ -159,7 +163,7 @@ impl crate::Zenject::ConventionSelectTypesBinder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -170,7 +174,8 @@ impl crate::Zenject::ConventionSelectTypesBinder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AllTypes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AllTypes", 0usize
                         )
                     })
             });
@@ -187,7 +192,7 @@ impl crate::Zenject::ConventionSelectTypesBinder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -198,7 +203,8 @@ impl crate::Zenject::ConventionSelectTypesBinder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateNextBinder", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateNextBinder", 0usize
                         )
                     })
             });
@@ -223,7 +229,7 @@ impl crate::Zenject::ConventionSelectTypesBinder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::ConventionBindInfo>),
                         quest_hook::libil2cpp::Void,
@@ -232,7 +238,8 @@ impl crate::Zenject::ConventionSelectTypesBinder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });

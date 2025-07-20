@@ -72,7 +72,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -95,7 +95,8 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Create", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Create",
+                            3usize
                         )
                     })
             });
@@ -125,7 +126,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -153,7 +154,8 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DefaultSelectionCallback", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DefaultSelectionCallback", 4usize
                         )
                     })
             });
@@ -182,7 +184,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -203,7 +205,8 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetInternalValidator", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetInternalValidator", 3usize
                         )
                     })
             });
@@ -222,7 +225,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Mono::Security::Interface::MonoTlsSettings,
@@ -235,7 +238,8 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetValidationCallback", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetValidationCallback", 1usize
                         )
                     })
             });
@@ -257,7 +261,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -274,7 +278,8 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InvokeCallback", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InvokeCallback", 3usize
                         )
                     })
             });
@@ -323,7 +328,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -354,7 +359,8 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SelectClientCertificate", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SelectClientCertificate", 5usize
                         )
                     })
             });
@@ -389,7 +395,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -411,7 +417,8 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ValidateCertificate", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValidateCertificate", 4usize
                         )
                     })
             });
@@ -442,7 +449,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -470,7 +477,8 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ValidateChain", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValidateChain", 6usize
                         )
                     })
             });
@@ -501,7 +509,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -527,7 +535,8 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ValidateChain", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValidateChain", 6usize
                         )
                     })
             });
@@ -553,7 +562,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -576,7 +585,8 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            5usize
                         )
                     })
             });
@@ -597,7 +607,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -608,7 +618,8 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Settings", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Settings", 0usize
                         )
                     })
             });

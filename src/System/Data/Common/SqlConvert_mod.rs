@@ -49,7 +49,7 @@ impl crate::System::Data::Common::SqlConvert {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -65,7 +65,8 @@ impl crate::System::Data::Common::SqlConvert {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ChangeType2", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ChangeType2", 4usize
                         )
                     })
             });
@@ -86,7 +87,7 @@ impl crate::System::Data::Common::SqlConvert {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -101,7 +102,8 @@ impl crate::System::Data::Common::SqlConvert {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ChangeTypeForDefaultValue", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ChangeTypeForDefaultValue", 3usize
                         )
                     })
             });
@@ -121,7 +123,7 @@ impl crate::System::Data::Common::SqlConvert {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -135,7 +137,8 @@ impl crate::System::Data::Common::SqlConvert {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ChangeTypeForXML", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ChangeTypeForXML", 2usize
                         )
                     })
             });
@@ -151,7 +154,7 @@ impl crate::System::Data::Common::SqlConvert {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -165,7 +168,8 @@ impl crate::System::Data::Common::SqlConvert {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertStringToDateTimeOffset", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertStringToDateTimeOffset", 2usize
                         )
                     })
             });
@@ -180,7 +184,7 @@ impl crate::System::Data::Common::SqlConvert {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         crate::System::Data::SqlTypes::SqlBinary,
@@ -189,7 +193,8 @@ impl crate::System::Data::Common::SqlConvert {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertToSqlBinary", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertToSqlBinary", 1usize
                         )
                     })
             });
@@ -204,7 +209,7 @@ impl crate::System::Data::Common::SqlConvert {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         crate::System::Data::SqlTypes::SqlBoolean,
@@ -213,7 +218,8 @@ impl crate::System::Data::Common::SqlConvert {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertToSqlBoolean", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertToSqlBoolean", 1usize
                         )
                     })
             });
@@ -228,7 +234,7 @@ impl crate::System::Data::Common::SqlConvert {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         crate::System::Data::SqlTypes::SqlByte,
@@ -237,7 +243,8 @@ impl crate::System::Data::Common::SqlConvert {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertToSqlByte", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertToSqlByte", 1usize
                         )
                     })
             });
@@ -254,7 +261,7 @@ impl crate::System::Data::Common::SqlConvert {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Gc<
@@ -265,7 +272,8 @@ impl crate::System::Data::Common::SqlConvert {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertToSqlBytes", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertToSqlBytes", 1usize
                         )
                     })
             });
@@ -282,7 +290,7 @@ impl crate::System::Data::Common::SqlConvert {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Gc<
@@ -293,7 +301,8 @@ impl crate::System::Data::Common::SqlConvert {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertToSqlChars", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertToSqlChars", 1usize
                         )
                     })
             });
@@ -308,7 +317,7 @@ impl crate::System::Data::Common::SqlConvert {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         crate::System::Data::SqlTypes::SqlDateTime,
@@ -317,7 +326,8 @@ impl crate::System::Data::Common::SqlConvert {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertToSqlDateTime", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertToSqlDateTime", 1usize
                         )
                     })
             });
@@ -332,7 +342,7 @@ impl crate::System::Data::Common::SqlConvert {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         crate::System::Data::SqlTypes::SqlDecimal,
@@ -341,7 +351,8 @@ impl crate::System::Data::Common::SqlConvert {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertToSqlDecimal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertToSqlDecimal", 1usize
                         )
                     })
             });
@@ -356,7 +367,7 @@ impl crate::System::Data::Common::SqlConvert {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         crate::System::Data::SqlTypes::SqlDouble,
@@ -365,7 +376,8 @@ impl crate::System::Data::Common::SqlConvert {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertToSqlDouble", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertToSqlDouble", 1usize
                         )
                     })
             });
@@ -380,7 +392,7 @@ impl crate::System::Data::Common::SqlConvert {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         crate::System::Data::SqlTypes::SqlGuid,
@@ -389,7 +401,8 @@ impl crate::System::Data::Common::SqlConvert {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertToSqlGuid", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertToSqlGuid", 1usize
                         )
                     })
             });
@@ -404,7 +417,7 @@ impl crate::System::Data::Common::SqlConvert {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         crate::System::Data::SqlTypes::SqlInt16,
@@ -413,7 +426,8 @@ impl crate::System::Data::Common::SqlConvert {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertToSqlInt16", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertToSqlInt16", 1usize
                         )
                     })
             });
@@ -428,7 +442,7 @@ impl crate::System::Data::Common::SqlConvert {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         crate::System::Data::SqlTypes::SqlInt32,
@@ -437,7 +451,8 @@ impl crate::System::Data::Common::SqlConvert {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertToSqlInt32", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertToSqlInt32", 1usize
                         )
                     })
             });
@@ -452,7 +467,7 @@ impl crate::System::Data::Common::SqlConvert {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         crate::System::Data::SqlTypes::SqlInt64,
@@ -461,7 +476,8 @@ impl crate::System::Data::Common::SqlConvert {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertToSqlInt64", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertToSqlInt64", 1usize
                         )
                     })
             });
@@ -476,7 +492,7 @@ impl crate::System::Data::Common::SqlConvert {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         crate::System::Data::SqlTypes::SqlMoney,
@@ -485,7 +501,8 @@ impl crate::System::Data::Common::SqlConvert {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertToSqlMoney", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertToSqlMoney", 1usize
                         )
                     })
             });
@@ -500,7 +517,7 @@ impl crate::System::Data::Common::SqlConvert {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         crate::System::Data::SqlTypes::SqlSingle,
@@ -509,7 +526,8 @@ impl crate::System::Data::Common::SqlConvert {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertToSqlSingle", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertToSqlSingle", 1usize
                         )
                     })
             });
@@ -524,7 +542,7 @@ impl crate::System::Data::Common::SqlConvert {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         crate::System::Data::SqlTypes::SqlString,
@@ -533,7 +551,8 @@ impl crate::System::Data::Common::SqlConvert {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertToSqlString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertToSqlString", 1usize
                         )
                     })
             });

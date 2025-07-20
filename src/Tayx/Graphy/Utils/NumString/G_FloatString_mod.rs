@@ -44,7 +44,7 @@ impl crate::Tayx::Graphy::Utils::NumString::G_FloatString {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -53,7 +53,8 @@ impl crate::Tayx::Graphy::Utils::NumString::G_FloatString {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Dispose", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            0usize
                         )
                     })
             });
@@ -66,12 +67,13 @@ impl crate::Tayx::Graphy::Utils::NumString::G_FloatString {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), f32, 1usize>("FromIndex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FromIndex", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FromIndex", 1usize
                         )
                     })
             });
@@ -85,7 +87,7 @@ impl crate::Tayx::Graphy::Utils::NumString::G_FloatString {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32, f32),
                         quest_hook::libil2cpp::Void,
@@ -94,7 +96,8 @@ impl crate::Tayx::Graphy::Utils::NumString::G_FloatString {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Init", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            2usize
                         )
                     })
             });
@@ -107,12 +110,13 @@ impl crate::Tayx::Graphy::Utils::NumString::G_FloatString {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), f32, 1usize>("ToFloat")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToFloat", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "ToFloat",
+                            1usize
                         )
                     })
             });
@@ -123,12 +127,13 @@ impl crate::Tayx::Graphy::Utils::NumString::G_FloatString {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32), i32, 1usize>("ToIndex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToIndex", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "ToIndex",
+                            1usize
                         )
                     })
             });
@@ -139,12 +144,13 @@ impl crate::Tayx::Graphy::Utils::NumString::G_FloatString {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32), i32, 1usize>("ToInt")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToInt", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "ToInt",
+                            1usize
                         )
                     })
             });
@@ -160,7 +166,7 @@ impl crate::Tayx::Graphy::Utils::NumString::G_FloatString {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             f32,
@@ -174,7 +180,8 @@ impl crate::Tayx::Graphy::Utils::NumString::G_FloatString {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToStringNonAlloc", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToStringNonAlloc", 2usize
                         )
                     })
             });
@@ -191,7 +198,7 @@ impl crate::Tayx::Graphy::Utils::NumString::G_FloatString {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -200,7 +207,8 @@ impl crate::Tayx::Graphy::Utils::NumString::G_FloatString {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToStringNonAlloc", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToStringNonAlloc", 1usize
                         )
                     })
             });
@@ -213,12 +221,13 @@ impl crate::Tayx::Graphy::Utils::NumString::G_FloatString {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_MaxValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_MaxValue", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_MaxValue", 0usize
                         )
                     })
             });
@@ -229,12 +238,13 @@ impl crate::Tayx::Graphy::Utils::NumString::G_FloatString {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_MinValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_MinValue", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_MinValue", 0usize
                         )
                     })
             });

@@ -77,7 +77,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -95,7 +95,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DeclareSignal", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DeclareSignal", 4usize
                         )
                     })
             });
@@ -121,7 +122,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -140,7 +141,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DeclareSignal", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DeclareSignal", 5usize
                         )
                     })
             });
@@ -170,7 +172,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Void,
@@ -179,7 +181,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FireId", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "FireId",
+                            1usize
                         )
                     })
             });
@@ -196,7 +199,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -212,7 +215,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FireId", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "FireId",
+                            2usize
                         )
                     })
             });
@@ -233,7 +237,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -247,7 +251,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FireId", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "FireId",
+                            2usize
                         )
                     })
             });
@@ -266,12 +271,13 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Fire")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Fire", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Fire",
+                            0usize
                         )
                     })
             });
@@ -287,7 +293,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Void,
@@ -296,7 +302,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Fire", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Fire",
+                            1usize
                         )
                     })
             });
@@ -316,7 +323,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (TSignal),
                         quest_hook::libil2cpp::Void,
@@ -325,7 +332,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Fire", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Fire",
+                            1usize
                         )
                     })
             });
@@ -344,7 +352,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Zenject::BindingId, bool),
                         quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration>,
@@ -353,7 +361,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetDeclaration", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDeclaration", 2usize
                         )
                     })
             });
@@ -373,7 +382,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -388,7 +397,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetDeclaration", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDeclaration", 3usize
                         )
                     })
             });
@@ -403,7 +413,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -412,7 +422,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LateDispose", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LateDispose", 0usize
                         )
                     })
             });
@@ -465,7 +476,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -479,7 +490,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SubscribeId", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SubscribeId", 2usize
                         )
                     })
             });
@@ -500,7 +512,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -514,7 +526,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SubscribeId", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SubscribeId", 2usize
                         )
                     })
             });
@@ -536,7 +549,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -557,7 +570,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SubscribeId", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SubscribeId", 3usize
                         )
                     })
             });
@@ -579,7 +593,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::Zenject::BindingId,
@@ -600,7 +614,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SubscribeInternal", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SubscribeInternal", 3usize
                         )
                     })
             });
@@ -621,7 +636,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::Zenject::SignalSubscriptionId,
@@ -639,7 +654,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SubscribeInternal", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SubscribeInternal", 2usize
                         )
                     })
             });
@@ -662,7 +678,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -686,7 +702,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SubscribeInternal", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SubscribeInternal", 4usize
                         )
                     })
             });
@@ -706,7 +723,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -715,7 +732,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Subscribe", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Subscribe", 1usize
                         )
                     })
             });
@@ -735,7 +753,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action_1<TSignal>>),
                         quest_hook::libil2cpp::Void,
@@ -744,7 +762,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Subscribe", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Subscribe", 1usize
                         )
                     })
             });
@@ -765,7 +784,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -783,7 +802,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Subscribe", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Subscribe", 2usize
                         )
                     })
             });
@@ -803,7 +823,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Void,
@@ -812,7 +832,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryFireId", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryFireId", 1usize
                         )
                     })
             });
@@ -829,7 +850,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -845,7 +866,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryFireId", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryFireId", 2usize
                         )
                     })
             });
@@ -866,7 +888,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -880,7 +902,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryFireId", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryFireId", 2usize
                         )
                     })
             });
@@ -899,12 +922,13 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("TryFire")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryFire", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "TryFire",
+                            0usize
                         )
                     })
             });
@@ -920,7 +944,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Void,
@@ -929,7 +953,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryFire", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "TryFire",
+                            1usize
                         )
                     })
             });
@@ -949,7 +974,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (TSignal),
                         quest_hook::libil2cpp::Void,
@@ -958,7 +983,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryFire", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "TryFire",
+                            1usize
                         )
                     })
             });
@@ -979,7 +1005,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -993,7 +1019,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryUnsubscribeId", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryUnsubscribeId", 2usize
                         )
                     })
             });
@@ -1014,7 +1041,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1028,7 +1055,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryUnsubscribeId", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryUnsubscribeId", 2usize
                         )
                     })
             });
@@ -1046,7 +1074,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -1061,7 +1089,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryUnsubscribeId", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryUnsubscribeId", 3usize
                         )
                     })
             });
@@ -1083,7 +1112,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -1104,7 +1133,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryUnsubscribeId", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryUnsubscribeId", 3usize
                         )
                     })
             });
@@ -1124,7 +1154,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -1133,7 +1163,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryUnsubscribe", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryUnsubscribe", 1usize
                         )
                     })
             });
@@ -1153,7 +1184,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action_1<TSignal>>),
                         quest_hook::libil2cpp::Void,
@@ -1162,7 +1193,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryUnsubscribe", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryUnsubscribe", 1usize
                         )
                     })
             });
@@ -1179,7 +1211,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -1191,7 +1223,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryUnsubscribe", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryUnsubscribe", 2usize
                         )
                     })
             });
@@ -1212,7 +1245,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -1230,7 +1263,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryUnsubscribe", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryUnsubscribe", 2usize
                         )
                     })
             });
@@ -1251,7 +1285,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1265,7 +1299,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnsubscribeId", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnsubscribeId", 2usize
                         )
                     })
             });
@@ -1286,7 +1321,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1300,7 +1335,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnsubscribeId", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnsubscribeId", 2usize
                         )
                     })
             });
@@ -1318,7 +1354,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -1333,7 +1369,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnsubscribeId", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnsubscribeId", 3usize
                         )
                     })
             });
@@ -1355,7 +1392,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -1376,7 +1413,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnsubscribeId", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnsubscribeId", 3usize
                         )
                     })
             });
@@ -1394,7 +1432,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::Zenject::BindingId,
@@ -1409,7 +1447,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnsubscribeInternal", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnsubscribeInternal", 3usize
                         )
                     })
             });
@@ -1426,7 +1465,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Zenject::SignalSubscriptionId, bool),
                         quest_hook::libil2cpp::Void,
@@ -1435,7 +1474,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnsubscribeInternal", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnsubscribeInternal", 2usize
                         )
                     })
             });
@@ -1454,7 +1494,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -1472,7 +1512,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnsubscribeInternal", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnsubscribeInternal", 4usize
                         )
                     })
             });
@@ -1493,7 +1534,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -1502,7 +1543,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Unsubscribe", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Unsubscribe", 1usize
                         )
                     })
             });
@@ -1522,7 +1564,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action_1<TSignal>>),
                         quest_hook::libil2cpp::Void,
@@ -1531,7 +1573,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Unsubscribe", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Unsubscribe", 1usize
                         )
                     })
             });
@@ -1548,7 +1591,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -1560,7 +1603,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Unsubscribe", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Unsubscribe", 2usize
                         )
                     })
             });
@@ -1581,7 +1625,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -1599,7 +1643,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Unsubscribe", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Unsubscribe", 2usize
                         )
                     })
             });
@@ -1620,7 +1665,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -1635,7 +1680,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "__zenCreate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "__zenCreate", 1usize
                         )
                     })
             });
@@ -1650,7 +1696,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
@@ -1659,7 +1705,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "__zenCreateInjectTypeInfo", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "__zenCreateInjectTypeInfo", 0usize
                         )
                     })
             });
@@ -1688,7 +1735,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1712,7 +1759,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            6usize
                         )
                     })
             });
@@ -1736,12 +1784,13 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_NumSubscribers")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_NumSubscribers", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_NumSubscribers", 0usize
                         )
                     })
             });
@@ -1756,7 +1805,7 @@ impl crate::Zenject::SignalBus {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::Zenject::SignalBus>,
@@ -1765,7 +1814,8 @@ impl crate::Zenject::SignalBus {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ParentBus", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ParentBus", 0usize
                         )
                     })
             });

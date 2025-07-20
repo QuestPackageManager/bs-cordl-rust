@@ -55,7 +55,7 @@ impl crate::GlobalNamespace::BeatmapLightEventConverterNoConvert {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -77,7 +77,8 @@ impl crate::GlobalNamespace::BeatmapLightEventConverterNoConvert {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertBasicBeatmapEvent", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertBasicBeatmapEvent", 6usize
                         )
                     })
             });
@@ -119,7 +120,7 @@ impl crate::GlobalNamespace::BeatmapLightEventConverterNoConvert {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -147,7 +148,8 @@ impl crate::GlobalNamespace::BeatmapLightEventConverterNoConvert {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertLightColorBeatmapEvent", 12usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertLightColorBeatmapEvent", 12usize
                         )
                     })
             });
@@ -194,7 +196,7 @@ impl crate::GlobalNamespace::BeatmapLightEventConverterNoConvert {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -221,7 +223,8 @@ impl crate::GlobalNamespace::BeatmapLightEventConverterNoConvert {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertLightRotationBeatmapEvent", 11usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertLightRotationBeatmapEvent", 11usize
                         )
                     })
             });
@@ -259,12 +262,13 @@ impl crate::GlobalNamespace::BeatmapLightEventConverterNoConvert {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

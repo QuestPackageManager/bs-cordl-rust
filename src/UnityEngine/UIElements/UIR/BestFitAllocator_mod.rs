@@ -61,7 +61,7 @@ impl crate::UnityEngine::UIElements::UIR::BestFitAllocator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u32),
                         crate::UnityEngine::UIElements::UIR::Alloc,
@@ -70,7 +70,8 @@ impl crate::UnityEngine::UIElements::UIR::BestFitAllocator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Allocate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Allocate", 1usize
                         )
                     })
             });
@@ -90,7 +91,7 @@ impl crate::UnityEngine::UIElements::UIR::BestFitAllocator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u32),
                         quest_hook::libil2cpp::Gc<
@@ -101,7 +102,8 @@ impl crate::UnityEngine::UIElements::UIR::BestFitAllocator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BestFitFindAvailableBlock", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BestFitFindAvailableBlock", 1usize
                         )
                     })
             });
@@ -123,7 +125,7 @@ impl crate::UnityEngine::UIElements::UIR::BestFitAllocator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block,
@@ -136,7 +138,8 @@ impl crate::UnityEngine::UIElements::UIR::BestFitAllocator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CoalesceBlockWithPrevious", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CoalesceBlockWithPrevious", 1usize
                         )
                     })
             });
@@ -152,7 +155,7 @@ impl crate::UnityEngine::UIElements::UIR::BestFitAllocator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UIElements::UIR::Alloc),
                         quest_hook::libil2cpp::Void,
@@ -161,7 +164,8 @@ impl crate::UnityEngine::UIElements::UIR::BestFitAllocator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Free", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Free",
+                            1usize
                         )
                     })
             });
@@ -189,7 +193,7 @@ impl crate::UnityEngine::UIElements::UIR::BestFitAllocator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -203,7 +207,8 @@ impl crate::UnityEngine::UIElements::UIR::BestFitAllocator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SplitBlock", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SplitBlock", 2usize
                         )
                     })
             });
@@ -219,12 +224,13 @@ impl crate::UnityEngine::UIElements::UIR::BestFitAllocator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -237,12 +243,13 @@ impl crate::UnityEngine::UIElements::UIR::BestFitAllocator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u32, 0usize>("get_highWatermark")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_highWatermark", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_highWatermark", 0usize
                         )
                     })
             });
@@ -253,12 +260,13 @@ impl crate::UnityEngine::UIElements::UIR::BestFitAllocator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u32, 0usize>("get_totalSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_totalSize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_totalSize", 0usize
                         )
                     })
             });
@@ -353,12 +361,13 @@ impl crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -371,12 +380,13 @@ impl crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u32, 0usize>("get_size")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_size", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_size", 0usize
                         )
                     })
             });
@@ -453,7 +463,7 @@ impl crate::UnityEngine::UIElements::UIR::BestFitAllocator_BlockPool {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -464,7 +474,8 @@ impl crate::UnityEngine::UIElements::UIR::BestFitAllocator_BlockPool {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateBlock", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateBlock", 0usize
                         )
                     })
             });
@@ -488,7 +499,7 @@ impl crate::UnityEngine::UIElements::UIR::BestFitAllocator_BlockPool {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block,
@@ -499,7 +510,8 @@ impl crate::UnityEngine::UIElements::UIR::BestFitAllocator_BlockPool {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResetBlock", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResetBlock", 1usize
                         )
                     })
             });
@@ -514,12 +526,13 @@ impl crate::UnityEngine::UIElements::UIR::BestFitAllocator_BlockPool {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

@@ -45,7 +45,7 @@ impl crate::UnityEngine::AndroidReflection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::IntPtr,
@@ -59,7 +59,8 @@ impl crate::UnityEngine::AndroidReflection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetConstructorMember", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetConstructorMember", 2usize
                         )
                     })
             });
@@ -74,7 +75,7 @@ impl crate::UnityEngine::AndroidReflection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         crate::System::IntPtr,
@@ -83,7 +84,8 @@ impl crate::UnityEngine::AndroidReflection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetFieldClass", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetFieldClass", 1usize
                         )
                     })
             });
@@ -101,7 +103,7 @@ impl crate::UnityEngine::AndroidReflection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::IntPtr,
@@ -119,7 +121,8 @@ impl crate::UnityEngine::AndroidReflection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetFieldMember", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetFieldMember", 4usize
                         )
                     })
             });
@@ -136,7 +139,7 @@ impl crate::UnityEngine::AndroidReflection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -145,7 +148,8 @@ impl crate::UnityEngine::AndroidReflection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetFieldSignature", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetFieldSignature", 1usize
                         )
                     })
             });
@@ -162,7 +166,7 @@ impl crate::UnityEngine::AndroidReflection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -181,7 +185,8 @@ impl crate::UnityEngine::AndroidReflection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMethodID", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMethodID", 3usize
                         )
                     })
             });
@@ -199,7 +204,7 @@ impl crate::UnityEngine::AndroidReflection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::IntPtr,
@@ -217,7 +222,8 @@ impl crate::UnityEngine::AndroidReflection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMethodMember", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMethodMember", 4usize
                         )
                     })
             });
@@ -234,7 +240,7 @@ impl crate::UnityEngine::AndroidReflection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -253,7 +259,8 @@ impl crate::UnityEngine::AndroidReflection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetStaticMethodID", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetStaticMethodID", 3usize
                         )
                     })
             });
@@ -269,7 +276,7 @@ impl crate::UnityEngine::AndroidReflection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -281,7 +288,8 @@ impl crate::UnityEngine::AndroidReflection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsAssignableFrom", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsAssignableFrom", 2usize
                         )
                     })
             });
@@ -294,7 +302,7 @@ impl crate::UnityEngine::AndroidReflection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         bool,
@@ -303,7 +311,8 @@ impl crate::UnityEngine::AndroidReflection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsPrimitive", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsPrimitive", 1usize
                         )
                     })
             });
@@ -318,7 +327,7 @@ impl crate::UnityEngine::AndroidReflection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::IntPtr,
@@ -331,7 +340,8 @@ impl crate::UnityEngine::AndroidReflection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NewProxyInstance", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NewProxyInstance", 3usize
                         )
                     })
             });
@@ -348,7 +358,7 @@ impl crate::UnityEngine::AndroidReflection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::IntPtr,
@@ -361,7 +371,8 @@ impl crate::UnityEngine::AndroidReflection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetNativeExceptionOnProxy", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetNativeExceptionOnProxy", 3usize
                         )
                     })
             });

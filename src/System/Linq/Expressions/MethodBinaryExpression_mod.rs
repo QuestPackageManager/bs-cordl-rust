@@ -48,7 +48,7 @@ impl crate::System::Linq::Expressions::MethodBinaryExpression {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
@@ -57,7 +57,8 @@ impl crate::System::Linq::Expressions::MethodBinaryExpression {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMethod", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMethod", 0usize
                         )
                     })
             });
@@ -90,7 +91,7 @@ impl crate::System::Linq::Expressions::MethodBinaryExpression {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Linq::Expressions::ExpressionType,
@@ -111,7 +112,8 @@ impl crate::System::Linq::Expressions::MethodBinaryExpression {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            5usize
                         )
                     })
             });

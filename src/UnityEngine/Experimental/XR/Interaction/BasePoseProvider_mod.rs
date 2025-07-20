@@ -50,7 +50,7 @@ impl crate::UnityEngine::Experimental::XR::Interaction::BasePoseProvider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>),
                         crate::UnityEngine::SpatialTracking::PoseDataFlags,
@@ -59,7 +59,8 @@ impl crate::UnityEngine::Experimental::XR::Interaction::BasePoseProvider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPoseFromProvider", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPoseFromProvider", 1usize
                         )
                     })
             });
@@ -82,7 +83,7 @@ impl crate::UnityEngine::Experimental::XR::Interaction::BasePoseProvider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>),
                         bool,
@@ -91,7 +92,8 @@ impl crate::UnityEngine::Experimental::XR::Interaction::BasePoseProvider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGetPoseFromProvider", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetPoseFromProvider", 1usize
                         )
                     })
             });
@@ -104,12 +106,13 @@ impl crate::UnityEngine::Experimental::XR::Interaction::BasePoseProvider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

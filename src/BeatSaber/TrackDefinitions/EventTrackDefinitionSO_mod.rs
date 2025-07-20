@@ -62,12 +62,13 @@ impl crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -84,7 +85,7 @@ impl crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformationType,
@@ -93,7 +94,8 @@ impl crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_dataTransformation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_dataTransformation", 0usize
                         )
                     })
             });
@@ -110,7 +112,7 @@ impl crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType,
@@ -119,7 +121,8 @@ impl crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_markerType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_markerType", 0usize
                         )
                     })
             });
@@ -132,12 +135,13 @@ impl crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_needsFiltering")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_needsFiltering", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_needsFiltering", 0usize
                         )
                     })
             });
@@ -148,12 +152,13 @@ impl crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_visible")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_visible", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_visible", 0usize
                         )
                     })
             });

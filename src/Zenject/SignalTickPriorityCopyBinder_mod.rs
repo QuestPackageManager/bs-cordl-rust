@@ -62,7 +62,7 @@ impl crate::Zenject::SignalTickPriorityCopyBinder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<crate::Zenject::SignalCopyBinder>,
@@ -71,7 +71,8 @@ impl crate::Zenject::SignalTickPriorityCopyBinder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WithTickPriority", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WithTickPriority", 1usize
                         )
                     })
             });
@@ -89,7 +90,7 @@ impl crate::Zenject::SignalTickPriorityCopyBinder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Zenject::SignalDeclarationBindInfo,
@@ -100,7 +101,8 @@ impl crate::Zenject::SignalTickPriorityCopyBinder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -117,7 +119,7 @@ impl crate::Zenject::SignalTickPriorityCopyBinder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -128,7 +130,8 @@ impl crate::Zenject::SignalTickPriorityCopyBinder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SignalBindInfo", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SignalBindInfo", 0usize
                         )
                     })
             });
@@ -144,7 +147,7 @@ impl crate::Zenject::SignalTickPriorityCopyBinder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Zenject::SignalDeclarationBindInfo,
@@ -155,7 +158,8 @@ impl crate::Zenject::SignalTickPriorityCopyBinder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_SignalBindInfo", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_SignalBindInfo", 1usize
                         )
                     })
             });

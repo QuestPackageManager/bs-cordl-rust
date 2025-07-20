@@ -57,7 +57,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::RsaBlindingEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Math::BigInteger,
@@ -70,7 +70,8 @@ impl crate::Org::BouncyCastle::Crypto::Engines::RsaBlindingEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BlindMessage", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BlindMessage", 1usize
                         )
                     })
             });
@@ -83,12 +84,13 @@ impl crate::Org::BouncyCastle::Crypto::Engines::RsaBlindingEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetInputBlockSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetInputBlockSize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetInputBlockSize", 0usize
                         )
                     })
             });
@@ -99,12 +101,13 @@ impl crate::Org::BouncyCastle::Crypto::Engines::RsaBlindingEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetOutputBlockSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetOutputBlockSize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetOutputBlockSize", 0usize
                         )
                     })
             });
@@ -121,7 +124,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::RsaBlindingEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             bool,
@@ -135,7 +138,8 @@ impl crate::Org::BouncyCastle::Crypto::Engines::RsaBlindingEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Init", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            2usize
                         )
                     })
             });
@@ -171,7 +175,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::RsaBlindingEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -188,7 +192,8 @@ impl crate::Org::BouncyCastle::Crypto::Engines::RsaBlindingEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessBlock", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessBlock", 3usize
                         )
                     })
             });
@@ -206,7 +211,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::RsaBlindingEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Math::BigInteger,
@@ -219,7 +224,8 @@ impl crate::Org::BouncyCastle::Crypto::Engines::RsaBlindingEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnblindMessage", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnblindMessage", 1usize
                         )
                     })
             });
@@ -234,12 +240,13 @@ impl crate::Org::BouncyCastle::Crypto::Engines::RsaBlindingEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -255,7 +262,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::RsaBlindingEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Crypto::IRsa,
@@ -266,7 +273,8 @@ impl crate::Org::BouncyCastle::Crypto::Engines::RsaBlindingEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -283,7 +291,7 @@ impl crate::Org::BouncyCastle::Crypto::Engines::RsaBlindingEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -292,7 +300,8 @@ impl crate::Org::BouncyCastle::Crypto::Engines::RsaBlindingEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AlgorithmName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AlgorithmName", 0usize
                         )
                     })
             });

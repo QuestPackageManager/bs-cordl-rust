@@ -60,7 +60,7 @@ impl crate::GlobalNamespace::PlatformInstaller {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -69,7 +69,8 @@ impl crate::GlobalNamespace::PlatformInstaller {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindAchievementsHandler", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindAchievementsHandler", 0usize
                         )
                     })
             });
@@ -84,7 +85,7 @@ impl crate::GlobalNamespace::PlatformInstaller {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -93,7 +94,8 @@ impl crate::GlobalNamespace::PlatformInstaller {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindAdditionalContentModel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindAdditionalContentModel", 0usize
                         )
                     })
             });
@@ -108,7 +110,7 @@ impl crate::GlobalNamespace::PlatformInstaller {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -117,7 +119,8 @@ impl crate::GlobalNamespace::PlatformInstaller {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindAnalyticsModel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindAnalyticsModel", 0usize
                         )
                     })
             });
@@ -132,7 +135,7 @@ impl crate::GlobalNamespace::PlatformInstaller {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -141,7 +144,8 @@ impl crate::GlobalNamespace::PlatformInstaller {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindBeatmapDataAssetFileModel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindBeatmapDataAssetFileModel", 0usize
                         )
                     })
             });
@@ -156,7 +160,7 @@ impl crate::GlobalNamespace::PlatformInstaller {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -165,8 +169,8 @@ impl crate::GlobalNamespace::PlatformInstaller {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindMockPlatformAdditionalContentModel",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindMockPlatformAdditionalContentModel", 0usize
                         )
                     })
             });
@@ -181,7 +185,7 @@ impl crate::GlobalNamespace::PlatformInstaller {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -190,7 +194,8 @@ impl crate::GlobalNamespace::PlatformInstaller {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindPSPlusHandler", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindPSPlusHandler", 0usize
                         )
                     })
             });
@@ -205,7 +210,7 @@ impl crate::GlobalNamespace::PlatformInstaller {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -214,7 +219,8 @@ impl crate::GlobalNamespace::PlatformInstaller {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindPlatformUserModel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindPlatformUserModel", 0usize
                         )
                     })
             });
@@ -229,7 +235,7 @@ impl crate::GlobalNamespace::PlatformInstaller {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -238,7 +244,8 @@ impl crate::GlobalNamespace::PlatformInstaller {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstallBindings", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstallBindings", 0usize
                         )
                     })
             });
@@ -276,7 +283,7 @@ impl crate::GlobalNamespace::PlatformInstaller {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -292,7 +299,8 @@ impl crate::GlobalNamespace::PlatformInstaller {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });

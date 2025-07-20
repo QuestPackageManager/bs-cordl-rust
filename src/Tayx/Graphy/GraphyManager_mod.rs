@@ -115,7 +115,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::Key),
                         bool,
@@ -124,7 +124,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckFor1KeyPress", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckFor1KeyPress", 1usize
                         )
                     })
             });
@@ -139,7 +140,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Key,
@@ -151,7 +152,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckFor2KeyPress", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckFor2KeyPress", 2usize
                         )
                     })
             });
@@ -167,7 +169,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::InputSystem::Key,
@@ -180,7 +182,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckFor3KeyPress", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckFor3KeyPress", 3usize
                         )
                     })
             });
@@ -195,7 +198,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -204,7 +207,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckForHotkeyPresses", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckForHotkeyPresses", 0usize
                         )
                     })
             });
@@ -219,12 +223,13 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Disable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Disable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Disable",
+                            0usize
                         )
                     })
             });
@@ -239,12 +244,13 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Enable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Enable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Enable",
+                            0usize
                         )
                     })
             });
@@ -259,12 +265,13 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Init")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Init", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            0usize
                         )
                     })
             });
@@ -287,7 +294,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -296,7 +303,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnApplicationFocus", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnApplicationFocus", 1usize
                         )
                     })
             });
@@ -311,12 +319,13 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDestroy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDestroy", 0usize
                         )
                     })
             });
@@ -331,7 +340,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -340,7 +349,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RefreshAllParameters", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RefreshAllParameters", 0usize
                         )
                     })
             });
@@ -357,7 +367,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::Tayx::Graphy::GraphyManager_ModuleType,
@@ -369,7 +379,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetModuleMode", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetModuleMode", 2usize
                         )
                     })
             });
@@ -386,7 +397,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::Tayx::Graphy::GraphyManager_ModuleType,
@@ -398,7 +409,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetModulePosition", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetModulePosition", 2usize
                         )
                     })
             });
@@ -414,7 +426,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Tayx::Graphy::GraphyManager_ModulePreset),
                         quest_hook::libil2cpp::Void,
@@ -423,7 +435,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetPreset", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetPreset", 1usize
                         )
                     })
             });
@@ -438,12 +451,13 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Start", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Start",
+                            0usize
                         )
                     })
             });
@@ -458,7 +472,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -467,7 +481,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToggleActive", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToggleActive", 0usize
                         )
                     })
             });
@@ -482,7 +497,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -491,7 +506,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToggleModes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToggleModes", 0usize
                         )
                     })
             });
@@ -506,12 +522,13 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Update")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Update", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Update",
+                            0usize
                         )
                     })
             });
@@ -526,7 +543,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -535,7 +552,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateAllParameters", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateAllParameters", 0usize
                         )
                     })
             });
@@ -550,12 +568,13 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -572,7 +591,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Tayx::Graphy::GraphyManager_ModulePosition,
@@ -581,7 +600,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AdvancedModulePosition", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AdvancedModulePosition", 0usize
                         )
                     })
             });
@@ -596,7 +616,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Tayx::Graphy::GraphyManager_ModuleState,
@@ -605,7 +625,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AdvancedModuleState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AdvancedModuleState", 0usize
                         )
                     })
             });
@@ -618,12 +639,13 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_AllocatedRam")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AllocatedRam", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AllocatedRam", 0usize
                         )
                     })
             });
@@ -636,7 +658,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Color,
@@ -645,7 +667,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AllocatedRamColor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AllocatedRamColor", 0usize
                         )
                     })
             });
@@ -660,7 +683,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Color,
@@ -669,7 +692,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AudioGraphColor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AudioGraphColor", 0usize
                         )
                     })
             });
@@ -682,12 +706,13 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_AudioGraphResolution")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AudioGraphResolution", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AudioGraphResolution", 0usize
                         )
                     })
             });
@@ -702,7 +727,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioListener>,
@@ -711,7 +736,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AudioListener", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AudioListener", 0usize
                         )
                     })
             });
@@ -726,7 +752,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Tayx::Graphy::GraphyManager_ModuleState,
@@ -735,7 +761,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AudioModuleState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AudioModuleState", 0usize
                         )
                     })
             });
@@ -748,12 +775,13 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_AudioTextUpdateRate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AudioTextUpdateRate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AudioTextUpdateRate", 0usize
                         )
                     })
             });
@@ -764,12 +792,13 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_AverageFPS")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AverageFPS", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AverageFPS", 0usize
                         )
                     })
             });
@@ -780,12 +809,13 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_Background")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Background", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Background", 0usize
                         )
                     })
             });
@@ -798,7 +828,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Color,
@@ -807,7 +837,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_BackgroundColor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_BackgroundColor", 0usize
                         )
                     })
             });
@@ -822,7 +853,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Color,
@@ -831,7 +862,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CautionFPSColor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CautionFPSColor", 0usize
                         )
                     })
             });
@@ -844,12 +876,13 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_CautionFPSThreshold")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CautionFPSThreshold", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CautionFPSThreshold", 0usize
                         )
                     })
             });
@@ -862,7 +895,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Color,
@@ -871,7 +904,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CriticalFPSColor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CriticalFPSColor", 0usize
                         )
                     })
             });
@@ -884,12 +918,13 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_CurrentFPS")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CurrentFPS", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CurrentFPS", 0usize
                         )
                     })
             });
@@ -900,12 +935,13 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_EnableOnStartup")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_EnableOnStartup", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_EnableOnStartup", 0usize
                         )
                     })
             });
@@ -918,7 +954,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::FFTWindow,
@@ -927,7 +963,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_FftWindow", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_FftWindow", 0usize
                         )
                     })
             });
@@ -944,7 +981,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Tayx::Graphy::GraphyManager_LookForAudioListener,
@@ -953,7 +990,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_FindAudioListenerInCameraIfNull", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_FindAudioListenerInCameraIfNull", 0usize
                         )
                     })
             });
@@ -966,12 +1004,13 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_FpsGraphResolution")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_FpsGraphResolution", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_FpsGraphResolution", 0usize
                         )
                     })
             });
@@ -984,7 +1023,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Tayx::Graphy::GraphyManager_ModuleState,
@@ -993,7 +1032,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_FpsModuleState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_FpsModuleState", 0usize
                         )
                     })
             });
@@ -1006,12 +1046,13 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_FpsTextUpdateRate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_FpsTextUpdateRate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_FpsTextUpdateRate", 0usize
                         )
                     })
             });
@@ -1024,7 +1065,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Color,
@@ -1033,7 +1074,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_GoodFPSColor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_GoodFPSColor", 0usize
                         )
                     })
             });
@@ -1046,12 +1088,13 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_GoodFPSThreshold")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_GoodFPSThreshold", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_GoodFPSThreshold", 0usize
                         )
                     })
             });
@@ -1066,7 +1109,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Tayx::Graphy::GraphyManager_ModulePosition,
@@ -1075,7 +1118,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_GraphModulePosition", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_GraphModulePosition", 0usize
                         )
                     })
             });
@@ -1090,7 +1134,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Tayx::Graphy::GraphyManager_Mode,
@@ -1099,7 +1143,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_GraphyMode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_GraphyMode", 0usize
                         )
                     })
             });
@@ -1112,12 +1157,13 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_KeepAlive")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_KeepAlive", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_KeepAlive", 0usize
                         )
                     })
             });
@@ -1128,12 +1174,13 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_MaxDB")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_MaxDB", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_MaxDB", 0usize
                         )
                     })
             });
@@ -1144,12 +1191,13 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_MaxFPS")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_MaxFPS", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_MaxFPS", 0usize
                         )
                     })
             });
@@ -1160,12 +1208,13 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_MinFPS")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_MinFPS", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_MinFPS", 0usize
                         )
                     })
             });
@@ -1176,12 +1225,13 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_MonoRam")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_MonoRam", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_MonoRam", 0usize
                         )
                     })
             });
@@ -1194,7 +1244,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Color,
@@ -1203,7 +1253,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_MonoRamColor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_MonoRamColor", 0usize
                         )
                     })
             });
@@ -1216,12 +1267,13 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_RamGraphResolution")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_RamGraphResolution", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_RamGraphResolution", 0usize
                         )
                     })
             });
@@ -1234,7 +1286,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Tayx::Graphy::GraphyManager_ModuleState,
@@ -1243,7 +1295,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_RamModuleState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_RamModuleState", 0usize
                         )
                     })
             });
@@ -1256,12 +1309,13 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_RamTextUpdateRate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_RamTextUpdateRate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_RamTextUpdateRate", 0usize
                         )
                     })
             });
@@ -1272,12 +1326,13 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_ReservedRam")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ReservedRam", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ReservedRam", 0usize
                         )
                     })
             });
@@ -1290,7 +1345,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Color,
@@ -1299,7 +1354,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ReservedRamColor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ReservedRamColor", 0usize
                         )
                     })
             });
@@ -1316,7 +1372,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1327,7 +1383,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Spectrum", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Spectrum", 0usize
                         )
                     })
             });
@@ -1340,12 +1397,13 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_SpectrumSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SpectrumSize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SpectrumSize", 0usize
                         )
                     })
             });
@@ -1359,7 +1417,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Tayx::Graphy::GraphyManager_ModulePosition),
                         quest_hook::libil2cpp::Void,
@@ -1368,7 +1426,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_AdvancedModulePosition", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_AdvancedModulePosition", 1usize
                         )
                     })
             });
@@ -1384,7 +1443,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Tayx::Graphy::GraphyManager_ModuleState),
                         quest_hook::libil2cpp::Void,
@@ -1393,7 +1452,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_AdvancedModuleState", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_AdvancedModuleState", 1usize
                         )
                     })
             });
@@ -1409,7 +1469,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Color),
                         quest_hook::libil2cpp::Void,
@@ -1418,7 +1478,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_AllocatedRamColor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_AllocatedRamColor", 1usize
                         )
                     })
             });
@@ -1434,7 +1495,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Color),
                         quest_hook::libil2cpp::Void,
@@ -1443,7 +1504,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_AudioGraphColor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_AudioGraphColor", 1usize
                         )
                     })
             });
@@ -1459,7 +1521,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -1468,7 +1530,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_AudioGraphResolution", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_AudioGraphResolution", 1usize
                         )
                     })
             });
@@ -1484,7 +1547,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioListener>),
                         quest_hook::libil2cpp::Void,
@@ -1493,7 +1556,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_AudioListener", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_AudioListener", 1usize
                         )
                     })
             });
@@ -1509,7 +1573,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Tayx::Graphy::GraphyManager_ModuleState),
                         quest_hook::libil2cpp::Void,
@@ -1518,7 +1582,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_AudioModuleState", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_AudioModuleState", 1usize
                         )
                     })
             });
@@ -1534,7 +1599,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -1543,7 +1608,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_AudioTextUpdateRate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_AudioTextUpdateRate", 1usize
                         )
                     })
             });
@@ -1559,7 +1625,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -1568,7 +1634,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Background", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Background", 1usize
                         )
                     })
             });
@@ -1584,7 +1651,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Color),
                         quest_hook::libil2cpp::Void,
@@ -1593,7 +1660,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_BackgroundColor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_BackgroundColor", 1usize
                         )
                     })
             });
@@ -1609,7 +1677,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Color),
                         quest_hook::libil2cpp::Void,
@@ -1618,7 +1686,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_CautionFPSColor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_CautionFPSColor", 1usize
                         )
                     })
             });
@@ -1634,7 +1703,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -1643,7 +1712,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_CautionFPSThreshold", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_CautionFPSThreshold", 1usize
                         )
                     })
             });
@@ -1659,7 +1729,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Color),
                         quest_hook::libil2cpp::Void,
@@ -1668,7 +1738,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_CriticalFPSColor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_CriticalFPSColor", 1usize
                         )
                     })
             });
@@ -1684,7 +1755,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::FFTWindow),
                         quest_hook::libil2cpp::Void,
@@ -1693,7 +1764,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_FftWindow", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_FftWindow", 1usize
                         )
                     })
             });
@@ -1709,7 +1781,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Tayx::Graphy::GraphyManager_LookForAudioListener),
                         quest_hook::libil2cpp::Void,
@@ -1718,7 +1790,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_FindAudioListenerInCameraIfNull", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_FindAudioListenerInCameraIfNull", 1usize
                         )
                     })
             });
@@ -1734,7 +1807,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -1743,7 +1816,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_FpsGraphResolution", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_FpsGraphResolution", 1usize
                         )
                     })
             });
@@ -1759,7 +1833,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Tayx::Graphy::GraphyManager_ModuleState),
                         quest_hook::libil2cpp::Void,
@@ -1768,7 +1842,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_FpsModuleState", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_FpsModuleState", 1usize
                         )
                     })
             });
@@ -1784,7 +1859,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -1793,7 +1868,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_FpsTextUpdateRate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_FpsTextUpdateRate", 1usize
                         )
                     })
             });
@@ -1809,7 +1885,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Color),
                         quest_hook::libil2cpp::Void,
@@ -1818,7 +1894,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_GoodFPSColor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_GoodFPSColor", 1usize
                         )
                     })
             });
@@ -1834,7 +1911,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -1843,7 +1920,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_GoodFPSThreshold", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_GoodFPSThreshold", 1usize
                         )
                     })
             });
@@ -1859,7 +1937,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Tayx::Graphy::GraphyManager_ModulePosition),
                         quest_hook::libil2cpp::Void,
@@ -1868,7 +1946,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_GraphModulePosition", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_GraphModulePosition", 1usize
                         )
                     })
             });
@@ -1884,7 +1963,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Tayx::Graphy::GraphyManager_Mode),
                         quest_hook::libil2cpp::Void,
@@ -1893,7 +1972,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_GraphyMode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_GraphyMode", 1usize
                         )
                     })
             });
@@ -1909,7 +1989,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Color),
                         quest_hook::libil2cpp::Void,
@@ -1918,7 +1998,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_MonoRamColor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_MonoRamColor", 1usize
                         )
                     })
             });
@@ -1934,7 +2015,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -1943,7 +2024,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_RamGraphResolution", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_RamGraphResolution", 1usize
                         )
                     })
             });
@@ -1959,7 +2041,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Tayx::Graphy::GraphyManager_ModuleState),
                         quest_hook::libil2cpp::Void,
@@ -1968,7 +2050,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_RamModuleState", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_RamModuleState", 1usize
                         )
                     })
             });
@@ -1984,7 +2067,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -1993,7 +2076,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_RamTextUpdateRate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_RamTextUpdateRate", 1usize
                         )
                     })
             });
@@ -2009,7 +2093,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Color),
                         quest_hook::libil2cpp::Void,
@@ -2018,7 +2102,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_ReservedRamColor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_ReservedRamColor", 1usize
                         )
                     })
             });
@@ -2034,7 +2119,7 @@ impl crate::Tayx::Graphy::GraphyManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -2043,7 +2128,8 @@ impl crate::Tayx::Graphy::GraphyManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_SpectrumSize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_SpectrumSize", 1usize
                         )
                     })
             });

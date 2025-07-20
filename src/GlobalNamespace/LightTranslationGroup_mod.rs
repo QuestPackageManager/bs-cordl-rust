@@ -76,12 +76,13 @@ impl crate::GlobalNamespace::LightTranslationGroup {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("__Validate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "__Validate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "__Validate", 0usize
                         )
                     })
             });
@@ -94,12 +95,13 @@ impl crate::GlobalNamespace::LightTranslationGroup {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -114,7 +116,7 @@ impl crate::GlobalNamespace::LightTranslationGroup {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector2,
@@ -123,7 +125,8 @@ impl crate::GlobalNamespace::LightTranslationGroup {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xDistributionLimits", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xDistributionLimits", 0usize
                         )
                     })
             });
@@ -138,7 +141,7 @@ impl crate::GlobalNamespace::LightTranslationGroup {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector2,
@@ -147,7 +150,8 @@ impl crate::GlobalNamespace::LightTranslationGroup {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xTranslationLimits", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xTranslationLimits", 0usize
                         )
                     })
             });
@@ -162,7 +166,7 @@ impl crate::GlobalNamespace::LightTranslationGroup {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector2,
@@ -171,7 +175,8 @@ impl crate::GlobalNamespace::LightTranslationGroup {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yDistributionLimits", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yDistributionLimits", 0usize
                         )
                     })
             });
@@ -186,7 +191,7 @@ impl crate::GlobalNamespace::LightTranslationGroup {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector2,
@@ -195,7 +200,8 @@ impl crate::GlobalNamespace::LightTranslationGroup {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yTranslationLimits", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yTranslationLimits", 0usize
                         )
                     })
             });
@@ -210,7 +216,7 @@ impl crate::GlobalNamespace::LightTranslationGroup {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector2,
@@ -219,7 +225,8 @@ impl crate::GlobalNamespace::LightTranslationGroup {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zDistributionLimits", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zDistributionLimits", 0usize
                         )
                     })
             });
@@ -234,7 +241,7 @@ impl crate::GlobalNamespace::LightTranslationGroup {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector2,
@@ -243,7 +250,8 @@ impl crate::GlobalNamespace::LightTranslationGroup {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zTranslationLimits", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zTranslationLimits", 0usize
                         )
                     })
             });

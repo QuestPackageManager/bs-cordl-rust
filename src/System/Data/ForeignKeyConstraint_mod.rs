@@ -65,7 +65,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -79,7 +79,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CanBeRemovedFromCollection", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CanBeRemovedFromCollection", 2usize
                         )
                     })
             });
@@ -92,12 +93,13 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("CanEnableConstraint")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CanEnableConstraint", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CanEnableConstraint", 0usize
                         )
                     })
             });
@@ -111,7 +113,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>),
                         quest_hook::libil2cpp::Void,
@@ -120,7 +122,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CascadeCommit", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CascadeCommit", 1usize
                         )
                     })
             });
@@ -136,7 +139,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>),
                         quest_hook::libil2cpp::Void,
@@ -145,7 +148,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CascadeDelete", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CascadeDelete", 1usize
                         )
                     })
             });
@@ -161,7 +165,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>),
                         quest_hook::libil2cpp::Void,
@@ -170,7 +174,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CascadeRollback", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CascadeRollback", 1usize
                         )
                     })
             });
@@ -186,7 +191,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>),
                         quest_hook::libil2cpp::Void,
@@ -195,7 +200,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CascadeUpdate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CascadeUpdate", 1usize
                         )
                     })
             });
@@ -211,7 +217,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Data::ConstraintCollection,
@@ -222,7 +228,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckCanAddToCollection", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckCanAddToCollection", 1usize
                         )
                     })
             });
@@ -238,7 +245,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>),
                         quest_hook::libil2cpp::Void,
@@ -247,7 +254,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckCanClearParentTable", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckCanClearParentTable", 1usize
                         )
                     })
             });
@@ -263,7 +271,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>),
                         quest_hook::libil2cpp::Void,
@@ -272,7 +280,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckCanRemoveParentRow", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckCanRemoveParentRow", 1usize
                         )
                     })
             });
@@ -289,7 +298,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
@@ -301,7 +310,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckCascade", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckCascade", 2usize
                         )
                     })
             });
@@ -318,7 +328,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
@@ -330,7 +340,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckConstraint", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckConstraint", 2usize
                         )
                     })
             });
@@ -345,12 +356,13 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("CheckState")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckState", 0usize
                         )
                     })
             });
@@ -368,7 +380,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>),
                         quest_hook::libil2cpp::Gc<crate::System::Data::Constraint>,
@@ -377,7 +389,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Clone", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Clone",
+                            1usize
                         )
                     })
             });
@@ -396,7 +409,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>, bool),
                         quest_hook::libil2cpp::Gc<crate::System::Data::Constraint>,
@@ -405,7 +418,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Clone", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Clone",
+                            2usize
                         )
                     })
             });
@@ -423,7 +437,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>),
                         quest_hook::libil2cpp::Gc<
@@ -434,7 +448,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Clone", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Clone",
+                            1usize
                         )
                     })
             });
@@ -450,7 +465,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>),
                         bool,
@@ -459,7 +474,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ContainsColumn", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ContainsColumn", 1usize
                         )
                     })
             });
@@ -483,7 +499,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -506,7 +522,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Create", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Create",
+                            3usize
                         )
                     })
             });
@@ -522,7 +539,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         bool,
@@ -531,7 +548,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Equals", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            1usize
                         )
                     })
             });
@@ -546,7 +564,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>,
@@ -555,7 +573,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FindParentRelation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindParentRelation", 0usize
                         )
                     })
             });
@@ -568,12 +587,13 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHashCode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHashCode", 0usize
                         )
                     })
             });
@@ -584,12 +604,13 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsConstraintViolated")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsConstraintViolated", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsConstraintViolated", 0usize
                         )
                     })
             });
@@ -607,7 +628,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -622,7 +643,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsKeyNull", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsKeyNull", 1usize
                         )
                     })
             });
@@ -706,7 +728,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -715,7 +737,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NonVirtualCheckState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NonVirtualCheckState", 0usize
                         )
                     })
             });
@@ -740,7 +763,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -760,7 +783,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -786,7 +810,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -809,7 +833,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -839,7 +864,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -872,7 +897,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            7usize
                         )
                     })
             });
@@ -899,7 +925,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Data::AcceptRejectRule,
@@ -908,7 +934,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AcceptRejectRule", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AcceptRejectRule", 0usize
                         )
                     })
             });
@@ -929,7 +956,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -944,7 +971,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ChildColumnNames", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ChildColumnNames", 0usize
                         )
                     })
             });
@@ -961,7 +989,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Data::DataKey,
@@ -970,7 +998,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ChildKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ChildKey", 0usize
                         )
                     })
             });
@@ -991,7 +1020,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1004,7 +1033,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Columns", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Columns", 0usize
                         )
                     })
             });
@@ -1021,7 +1051,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Data::Rule,
@@ -1030,7 +1060,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_DeleteRule", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_DeleteRule", 0usize
                         )
                     })
             });
@@ -1051,7 +1082,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1066,7 +1097,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ParentColumnNames", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ParentColumnNames", 0usize
                         )
                     })
             });
@@ -1083,7 +1115,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Data::DataKey,
@@ -1092,7 +1124,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ParentKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ParentKey", 0usize
                         )
                     })
             });
@@ -1113,7 +1146,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1126,7 +1159,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_RelatedColumns", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_RelatedColumns", 0usize
                         )
                     })
             });
@@ -1149,7 +1183,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1162,7 +1196,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_RelatedColumnsReference", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_RelatedColumnsReference", 0usize
                         )
                     })
             });
@@ -1181,7 +1216,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
@@ -1190,7 +1225,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_RelatedTable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_RelatedTable", 0usize
                         )
                     })
             });
@@ -1207,7 +1243,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
@@ -1216,7 +1252,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Table", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Table", 0usize
                         )
                     })
             });
@@ -1231,7 +1268,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Data::Rule,
@@ -1240,7 +1277,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_UpdateRule", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_UpdateRule", 0usize
                         )
                     })
             });
@@ -1256,7 +1294,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Data::AcceptRejectRule),
                         quest_hook::libil2cpp::Void,
@@ -1265,7 +1303,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_AcceptRejectRule", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_AcceptRejectRule", 1usize
                         )
                     })
             });
@@ -1281,7 +1320,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Data::Rule),
                         quest_hook::libil2cpp::Void,
@@ -1290,7 +1329,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_DeleteRule", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_DeleteRule", 1usize
                         )
                     })
             });
@@ -1306,7 +1346,7 @@ impl crate::System::Data::ForeignKeyConstraint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Data::Rule),
                         quest_hook::libil2cpp::Void,
@@ -1315,7 +1355,8 @@ impl crate::System::Data::ForeignKeyConstraint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_UpdateRule", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_UpdateRule", 1usize
                         )
                     })
             });

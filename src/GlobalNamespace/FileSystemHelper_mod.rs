@@ -46,7 +46,7 @@ impl crate::GlobalNamespace::FileSystemHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -55,7 +55,8 @@ impl crate::GlobalNamespace::FileSystemHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FindFirstExistedParentPath", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindFirstExistedParentPath", 1usize
                         )
                     })
             });
@@ -72,7 +73,7 @@ impl crate::GlobalNamespace::FileSystemHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Security::AccessControl::FileSystemSecurity,
@@ -83,7 +84,8 @@ impl crate::GlobalNamespace::FileSystemHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HasWritePermission", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HasWritePermission", 1usize
                         )
                     })
             });
@@ -98,7 +100,7 @@ impl crate::GlobalNamespace::FileSystemHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -107,7 +109,8 @@ impl crate::GlobalNamespace::FileSystemHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HasWritePermissionOnDirectory", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HasWritePermissionOnDirectory", 1usize
                         )
                     })
             });
@@ -120,7 +123,7 @@ impl crate::GlobalNamespace::FileSystemHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -129,7 +132,8 @@ impl crate::GlobalNamespace::FileSystemHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HasWritePermissionOnFile", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HasWritePermissionOnFile", 1usize
                         )
                     })
             });
@@ -142,7 +146,7 @@ impl crate::GlobalNamespace::FileSystemHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -151,7 +155,8 @@ impl crate::GlobalNamespace::FileSystemHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsFileWritable", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsFileWritable", 1usize
                         )
                     })
             });

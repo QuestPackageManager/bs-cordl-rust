@@ -73,7 +73,7 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -82,7 +82,8 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FinishSetup", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FinishSetup", 0usize
                         )
                     })
             });
@@ -97,7 +98,7 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -106,7 +107,8 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MakeCurrent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MakeCurrent", 0usize
                         )
                     })
             });
@@ -128,12 +130,13 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnRemoved")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnRemoved", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnRemoved", 0usize
                         )
                     })
             });
@@ -149,7 +152,7 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Color),
                         quest_hook::libil2cpp::Void,
@@ -158,7 +161,8 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetLightBarColor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetLightBarColor", 1usize
                         )
                     })
             });
@@ -173,12 +177,13 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -197,7 +202,7 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -208,7 +213,8 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_L1", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_L1",
+                            0usize
                         )
                     })
             });
@@ -227,7 +233,7 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -238,7 +244,8 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_L2", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_L2",
+                            0usize
                         )
                     })
             });
@@ -257,7 +264,7 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -268,7 +275,8 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_L3", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_L3",
+                            0usize
                         )
                     })
             });
@@ -287,7 +295,7 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -298,7 +306,8 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_R1", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_R1",
+                            0usize
                         )
                     })
             });
@@ -317,7 +326,7 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -328,7 +337,8 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_R2", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_R2",
+                            0usize
                         )
                     })
             });
@@ -347,7 +357,7 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -358,7 +368,8 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_R3", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_R3",
+                            0usize
                         )
                     })
             });
@@ -375,7 +386,7 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -386,7 +397,8 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_current", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_current", 0usize
                         )
                     })
             });
@@ -405,7 +417,7 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -416,7 +428,8 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_optionsButton", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_optionsButton", 0usize
                         )
                     })
             });
@@ -435,7 +448,7 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -446,7 +459,8 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_shareButton", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_shareButton", 0usize
                         )
                     })
             });
@@ -465,7 +479,7 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -476,7 +490,8 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_touchpadButton", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_touchpadButton", 0usize
                         )
                     })
             });
@@ -494,7 +509,7 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -505,7 +520,8 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_L1", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_L1",
+                            1usize
                         )
                     })
             });
@@ -523,7 +539,7 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -534,7 +550,8 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_L2", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_L2",
+                            1usize
                         )
                     })
             });
@@ -552,7 +569,7 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -563,7 +580,8 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_L3", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_L3",
+                            1usize
                         )
                     })
             });
@@ -581,7 +599,7 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -592,7 +610,8 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_R1", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_R1",
+                            1usize
                         )
                     })
             });
@@ -610,7 +629,7 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -621,7 +640,8 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_R2", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_R2",
+                            1usize
                         )
                     })
             });
@@ -639,7 +659,7 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -650,7 +670,8 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_R3", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_R3",
+                            1usize
                         )
                     })
             });
@@ -667,7 +688,7 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::DualShock::DualShockGamepad,
@@ -678,7 +699,8 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_current", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_current", 1usize
                         )
                     })
             });
@@ -696,7 +718,7 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -707,7 +729,8 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_optionsButton", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_optionsButton", 1usize
                         )
                     })
             });
@@ -725,7 +748,7 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -736,7 +759,8 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_shareButton", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_shareButton", 1usize
                         )
                     })
             });
@@ -754,7 +778,7 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -765,7 +789,8 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_touchpadButton", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_touchpadButton", 1usize
                         )
                     })
             });

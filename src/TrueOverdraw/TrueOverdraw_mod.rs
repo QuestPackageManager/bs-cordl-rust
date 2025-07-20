@@ -71,12 +71,13 @@ impl crate::TrueOverdraw::TrueOverdraw {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Disable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Disable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Disable",
+                            0usize
                         )
                     })
             });
@@ -91,12 +92,13 @@ impl crate::TrueOverdraw::TrueOverdraw {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Dispose", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            0usize
                         )
                     })
             });
@@ -111,12 +113,13 @@ impl crate::TrueOverdraw::TrueOverdraw {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Enable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Enable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Enable",
+                            0usize
                         )
                     })
             });
@@ -145,7 +148,7 @@ impl crate::TrueOverdraw::TrueOverdraw {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
@@ -157,7 +160,8 @@ impl crate::TrueOverdraw::TrueOverdraw {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResolveRendererColor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResolveRendererColor", 2usize
                         )
                     })
             });
@@ -174,7 +178,7 @@ impl crate::TrueOverdraw::TrueOverdraw {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32, f32, f32),
                         quest_hook::libil2cpp::Void,
@@ -183,7 +187,8 @@ impl crate::TrueOverdraw::TrueOverdraw {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetGlobalFloats", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetGlobalFloats", 3usize
                         )
                     })
             });
@@ -199,7 +204,7 @@ impl crate::TrueOverdraw::TrueOverdraw {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -211,7 +216,8 @@ impl crate::TrueOverdraw::TrueOverdraw {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetMaterialValues", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetMaterialValues", 2usize
                         )
                     })
             });
@@ -227,7 +233,7 @@ impl crate::TrueOverdraw::TrueOverdraw {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32, f32),
                         quest_hook::libil2cpp::Void,
@@ -236,7 +242,8 @@ impl crate::TrueOverdraw::TrueOverdraw {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetOverdrawValues", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetOverdrawValues", 2usize
                         )
                     })
             });
@@ -251,7 +258,7 @@ impl crate::TrueOverdraw::TrueOverdraw {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -260,7 +267,8 @@ impl crate::TrueOverdraw::TrueOverdraw {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShowEverything", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShowEverything", 0usize
                         )
                     })
             });
@@ -275,7 +283,7 @@ impl crate::TrueOverdraw::TrueOverdraw {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -284,7 +292,8 @@ impl crate::TrueOverdraw::TrueOverdraw {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShowOnlyOpaque", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShowOnlyOpaque", 0usize
                         )
                     })
             });
@@ -299,7 +308,7 @@ impl crate::TrueOverdraw::TrueOverdraw {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -308,7 +317,8 @@ impl crate::TrueOverdraw::TrueOverdraw {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShowOnlyTransparent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShowOnlyTransparent", 0usize
                         )
                     })
             });
@@ -328,7 +338,7 @@ impl crate::TrueOverdraw::TrueOverdraw {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -341,7 +351,8 @@ impl crate::TrueOverdraw::TrueOverdraw {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -356,7 +367,7 @@ impl crate::TrueOverdraw::TrueOverdraw {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::TrueOverdraw::TrueOverdraw_OverdrawType,
@@ -365,7 +376,8 @@ impl crate::TrueOverdraw::TrueOverdraw {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_overdrawType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_overdrawType", 0usize
                         )
                     })
             });
@@ -378,12 +390,13 @@ impl crate::TrueOverdraw::TrueOverdraw {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_renderersLength")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_renderersLength", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_renderersLength", 0usize
                         )
                     })
             });
@@ -397,7 +410,7 @@ impl crate::TrueOverdraw::TrueOverdraw {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::TrueOverdraw::TrueOverdraw_OverdrawType),
                         quest_hook::libil2cpp::Void,
@@ -406,7 +419,8 @@ impl crate::TrueOverdraw::TrueOverdraw {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_overdrawType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_overdrawType", 1usize
                         )
                     })
             });

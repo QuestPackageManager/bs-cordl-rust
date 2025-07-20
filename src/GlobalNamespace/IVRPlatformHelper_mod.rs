@@ -44,7 +44,7 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector2,
@@ -53,7 +53,8 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAnyJoystickMaxAxis", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAnyJoystickMaxAxis", 0usize
                         )
                     })
             });
@@ -66,12 +67,13 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("GetMenuButton")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMenuButton", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMenuButton", 0usize
                         )
                     })
             });
@@ -82,12 +84,13 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("GetMenuButtonDown")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMenuButtonDown", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMenuButtonDown", 0usize
                         )
                     })
             });
@@ -104,7 +107,7 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::XR::XRNode,
@@ -120,7 +123,8 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNodePose", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNodePose", 4usize
                         )
                     })
             });
@@ -136,7 +140,7 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::XR::XRNode),
                         crate::UnityEngine::Pose,
@@ -145,8 +149,8 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetRootPositionOffsetForLegacyNodePose",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetRootPositionOffsetForLegacyNodePose", 1usize
                         )
                     })
             });
@@ -162,7 +166,7 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::XR::XRNode),
                         crate::UnityEngine::Vector2,
@@ -171,7 +175,8 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetThumbstickValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetThumbstickValue", 1usize
                         )
                     })
             });
@@ -187,7 +192,7 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::XR::XRNode),
                         f32,
@@ -196,7 +201,8 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTriggerValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTriggerValue", 1usize
                         )
                     })
             });
@@ -210,7 +216,7 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::XR::XRNode),
                         bool,
@@ -219,7 +225,8 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsAdvancedHapticsSupported", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsAdvancedHapticsSupported", 1usize
                         )
                     })
             });
@@ -232,7 +239,7 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -241,7 +248,8 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RefreshControllersReference", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RefreshControllersReference", 0usize
                         )
                     })
             });
@@ -257,7 +265,7 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::XR::XRNode),
                         quest_hook::libil2cpp::Void,
@@ -266,7 +274,8 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StopHaptics", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StopHaptics", 1usize
                         )
                     })
             });
@@ -285,7 +294,7 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::XR::XRNode, f32, f32, f32),
                         quest_hook::libil2cpp::Void,
@@ -294,7 +303,8 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TriggerHapticPulse", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TriggerHapticPulse", 4usize
                         )
                     })
             });
@@ -312,7 +322,7 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::XR::XRNode,
@@ -325,7 +335,8 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGetLegacyPoseOffsetForNode", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetLegacyPoseOffsetForNode", 3usize
                         )
                     })
             });
@@ -342,7 +353,7 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::XR::XRNode,
@@ -354,7 +365,8 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGetPoseOffsetForNode", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetPoseOffsetForNode", 2usize
                         )
                     })
             });
@@ -370,7 +382,7 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -379,8 +391,8 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_controllersDidChangeReferenceEvent",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_controllersDidChangeReferenceEvent", 1usize
                         )
                     })
             });
@@ -396,7 +408,7 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -405,7 +417,8 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_controllersDidDisconnectEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_controllersDidDisconnectEvent", 1usize
                         )
                     })
             });
@@ -421,7 +434,7 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -430,7 +443,8 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_hmdMountedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_hmdMountedEvent", 1usize
                         )
                     })
             });
@@ -446,7 +460,7 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -455,7 +469,8 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_hmdUnmountedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_hmdUnmountedEvent", 1usize
                         )
                     })
             });
@@ -471,7 +486,7 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -480,7 +495,8 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_inputFocusWasCapturedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_inputFocusWasCapturedEvent", 1usize
                         )
                     })
             });
@@ -496,7 +512,7 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -505,7 +521,8 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_inputFocusWasReleasedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_inputFocusWasReleasedEvent", 1usize
                         )
                     })
             });
@@ -521,7 +538,7 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -530,7 +547,8 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_vrFocusWasCapturedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_vrFocusWasCapturedEvent", 1usize
                         )
                     })
             });
@@ -546,7 +564,7 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -555,7 +573,8 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_vrFocusWasReleasedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_vrFocusWasReleasedEvent", 1usize
                         )
                     })
             });
@@ -573,12 +592,13 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_hasInputFocus")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_hasInputFocus", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_hasInputFocus", 0usize
                         )
                     })
             });
@@ -589,12 +609,13 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_hasVrFocus")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_hasVrFocus", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_hasVrFocus", 0usize
                         )
                     })
             });
@@ -605,12 +626,13 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isAlwaysWireless")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_isAlwaysWireless", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isAlwaysWireless", 0usize
                         )
                     })
             });
@@ -623,7 +645,7 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::VRPlatformSDK,
@@ -632,7 +654,8 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_vrPlatformSDK", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_vrPlatformSDK", 0usize
                         )
                     })
             });
@@ -648,7 +671,7 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -657,8 +680,8 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_controllersDidChangeReferenceEvent",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_controllersDidChangeReferenceEvent", 1usize
                         )
                     })
             });
@@ -674,7 +697,7 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -683,7 +706,8 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_controllersDidDisconnectEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_controllersDidDisconnectEvent", 1usize
                         )
                     })
             });
@@ -699,7 +723,7 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -708,7 +732,8 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_hmdMountedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_hmdMountedEvent", 1usize
                         )
                     })
             });
@@ -724,7 +749,7 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -733,7 +758,8 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_hmdUnmountedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_hmdUnmountedEvent", 1usize
                         )
                     })
             });
@@ -749,7 +775,7 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -758,7 +784,8 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_inputFocusWasCapturedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_inputFocusWasCapturedEvent", 1usize
                         )
                     })
             });
@@ -774,7 +801,7 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -783,7 +810,8 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_inputFocusWasReleasedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_inputFocusWasReleasedEvent", 1usize
                         )
                     })
             });
@@ -799,7 +827,7 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -808,7 +836,8 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_vrFocusWasCapturedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_vrFocusWasCapturedEvent", 1usize
                         )
                     })
             });
@@ -824,7 +853,7 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -833,7 +862,8 @@ impl crate::GlobalNamespace::IVRPlatformHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_vrFocusWasReleasedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_vrFocusWasReleasedEvent", 1usize
                         )
                     })
             });

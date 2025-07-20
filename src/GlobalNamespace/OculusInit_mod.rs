@@ -48,7 +48,7 @@ impl crate::GlobalNamespace::OculusInit {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -57,7 +57,8 @@ impl crate::GlobalNamespace::OculusInit {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckEntitlementsAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckEntitlementsAsync", 0usize
                         )
                     })
             });
@@ -74,7 +75,7 @@ impl crate::GlobalNamespace::OculusInit {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -83,7 +84,8 @@ impl crate::GlobalNamespace::OculusInit {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckUserAgeCategoryAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckUserAgeCategoryAsync", 0usize
                         )
                     })
             });
@@ -104,7 +106,7 @@ impl crate::GlobalNamespace::OculusInit {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -119,7 +121,8 @@ impl crate::GlobalNamespace::OculusInit {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAppVersionAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAppVersionAsync", 0usize
                         )
                     })
             });
@@ -142,7 +145,7 @@ impl crate::GlobalNamespace::OculusInit {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -157,7 +160,8 @@ impl crate::GlobalNamespace::OculusInit {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAppVersionQuestAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAppVersionQuestAsync", 0usize
                         )
                     })
             });
@@ -174,7 +178,7 @@ impl crate::GlobalNamespace::OculusInit {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -183,7 +187,8 @@ impl crate::GlobalNamespace::OculusInit {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitializeCoreAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitializeCoreAsync", 0usize
                         )
                     })
             });
@@ -200,7 +205,7 @@ impl crate::GlobalNamespace::OculusInit {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -211,7 +216,8 @@ impl crate::GlobalNamespace::OculusInit {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitializeInternalAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitializeInternalAsync", 0usize
                         )
                     })
             });
@@ -228,7 +234,7 @@ impl crate::GlobalNamespace::OculusInit {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -237,7 +243,8 @@ impl crate::GlobalNamespace::OculusInit {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitializeOculusAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitializeOculusAsync", 0usize
                         )
                     })
             });
@@ -259,12 +266,13 @@ impl crate::GlobalNamespace::OculusInit {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

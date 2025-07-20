@@ -52,7 +52,7 @@ impl crate::System::IO::EnumerationOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IO::SearchOption),
                         quest_hook::libil2cpp::Gc<crate::System::IO::EnumerationOptions>,
@@ -61,7 +61,8 @@ impl crate::System::IO::EnumerationOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FromSearchOption", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FromSearchOption", 1usize
                         )
                     })
             });
@@ -83,12 +84,13 @@ impl crate::System::IO::EnumerationOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -103,7 +105,7 @@ impl crate::System::IO::EnumerationOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::IO::FileAttributes,
@@ -112,7 +114,8 @@ impl crate::System::IO::EnumerationOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AttributesToSkip", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AttributesToSkip", 0usize
                         )
                     })
             });
@@ -127,7 +130,7 @@ impl crate::System::IO::EnumerationOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::IO::EnumerationOptions>,
@@ -136,7 +139,8 @@ impl crate::System::IO::EnumerationOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Compatible", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Compatible", 0usize
                         )
                     })
             });
@@ -151,7 +155,7 @@ impl crate::System::IO::EnumerationOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::IO::EnumerationOptions>,
@@ -160,7 +164,8 @@ impl crate::System::IO::EnumerationOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CompatibleRecursive", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CompatibleRecursive", 0usize
                         )
                     })
             });
@@ -175,7 +180,7 @@ impl crate::System::IO::EnumerationOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::IO::EnumerationOptions>,
@@ -184,7 +189,8 @@ impl crate::System::IO::EnumerationOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Default", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Default", 0usize
                         )
                     })
             });
@@ -197,12 +203,13 @@ impl crate::System::IO::EnumerationOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IgnoreInaccessible")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IgnoreInaccessible", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IgnoreInaccessible", 0usize
                         )
                     })
             });
@@ -215,7 +222,7 @@ impl crate::System::IO::EnumerationOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::IO::MatchCasing,
@@ -224,7 +231,8 @@ impl crate::System::IO::EnumerationOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_MatchCasing", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_MatchCasing", 0usize
                         )
                     })
             });
@@ -239,7 +247,7 @@ impl crate::System::IO::EnumerationOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::IO::MatchType,
@@ -248,7 +256,8 @@ impl crate::System::IO::EnumerationOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_MatchType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_MatchType", 0usize
                         )
                     })
             });
@@ -261,12 +270,13 @@ impl crate::System::IO::EnumerationOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_RecurseSubdirectories")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_RecurseSubdirectories", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_RecurseSubdirectories", 0usize
                         )
                     })
             });
@@ -279,12 +289,13 @@ impl crate::System::IO::EnumerationOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_ReturnSpecialDirectories")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ReturnSpecialDirectories", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ReturnSpecialDirectories", 0usize
                         )
                     })
             });
@@ -298,7 +309,7 @@ impl crate::System::IO::EnumerationOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::IO::FileAttributes),
                         quest_hook::libil2cpp::Void,
@@ -307,7 +318,8 @@ impl crate::System::IO::EnumerationOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_AttributesToSkip", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_AttributesToSkip", 1usize
                         )
                     })
             });
@@ -323,7 +335,7 @@ impl crate::System::IO::EnumerationOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -332,7 +344,8 @@ impl crate::System::IO::EnumerationOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_IgnoreInaccessible", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_IgnoreInaccessible", 1usize
                         )
                     })
             });
@@ -348,7 +361,7 @@ impl crate::System::IO::EnumerationOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::IO::MatchType),
                         quest_hook::libil2cpp::Void,
@@ -357,7 +370,8 @@ impl crate::System::IO::EnumerationOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_MatchType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_MatchType", 1usize
                         )
                     })
             });
@@ -373,7 +387,7 @@ impl crate::System::IO::EnumerationOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -382,7 +396,8 @@ impl crate::System::IO::EnumerationOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_RecurseSubdirectories", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_RecurseSubdirectories", 1usize
                         )
                     })
             });

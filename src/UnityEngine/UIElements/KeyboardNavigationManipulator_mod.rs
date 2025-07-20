@@ -54,7 +54,7 @@ impl crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::UIElements::KeyboardNavigationOperation,
@@ -68,7 +68,8 @@ impl crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Invoke", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Invoke",
+                            2usize
                         )
                     })
             });
@@ -98,7 +99,7 @@ impl crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::KeyDownEvent,
@@ -109,7 +110,8 @@ impl crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnKeyDown", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnKeyDown", 1usize
                         )
                     })
             });
@@ -127,7 +129,7 @@ impl crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::NavigationCancelEvent,
@@ -138,7 +140,8 @@ impl crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnNavigationCancel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnNavigationCancel", 1usize
                         )
                     })
             });
@@ -156,7 +159,7 @@ impl crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::NavigationMoveEvent,
@@ -167,7 +170,8 @@ impl crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnNavigationMove", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnNavigationMove", 1usize
                         )
                     })
             });
@@ -185,7 +189,7 @@ impl crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::NavigationSubmitEvent,
@@ -196,7 +200,8 @@ impl crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnNavigationSubmit", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnNavigationSubmit", 1usize
                         )
                     })
             });
@@ -211,7 +216,7 @@ impl crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -220,7 +225,8 @@ impl crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterCallbacksOnTarget", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterCallbacksOnTarget", 0usize
                         )
                     })
             });
@@ -235,7 +241,7 @@ impl crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -244,7 +250,8 @@ impl crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnregisterCallbacksFromTarget", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnregisterCallbacksFromTarget", 0usize
                         )
                     })
             });
@@ -263,7 +270,7 @@ impl crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             quest_hook::libil2cpp::Gc<
@@ -276,7 +283,8 @@ impl crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<OnKeyDown>g__GetOperation|4_0", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<OnKeyDown>g__GetOperation|4_0", 1usize
                         )
                     })
             });
@@ -297,7 +305,7 @@ impl crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_2<
@@ -313,7 +321,8 @@ impl crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });

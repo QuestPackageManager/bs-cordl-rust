@@ -49,12 +49,13 @@ impl crate::UnityEngine::Timeline::ActivationTrack {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("CanCompileClips")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CanCompileClips", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CanCompileClips", 0usize
                         )
                     })
             });
@@ -70,7 +71,7 @@ impl crate::UnityEngine::Timeline::ActivationTrack {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Playables::PlayableGraph,
@@ -83,7 +84,8 @@ impl crate::UnityEngine::Timeline::ActivationTrack {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateTrackMixer", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateTrackMixer", 3usize
                         )
                     })
             });
@@ -104,7 +106,7 @@ impl crate::UnityEngine::Timeline::ActivationTrack {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -120,7 +122,8 @@ impl crate::UnityEngine::Timeline::ActivationTrack {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GatherProperties", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GatherProperties", 2usize
                         )
                     })
             });
@@ -143,7 +146,7 @@ impl crate::UnityEngine::Timeline::ActivationTrack {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::Timeline::TimelineClip,
@@ -154,7 +157,8 @@ impl crate::UnityEngine::Timeline::ActivationTrack {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnCreateClip", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnCreateClip", 1usize
                         )
                     })
             });
@@ -169,7 +173,7 @@ impl crate::UnityEngine::Timeline::ActivationTrack {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -178,7 +182,8 @@ impl crate::UnityEngine::Timeline::ActivationTrack {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateTrackMode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateTrackMode", 0usize
                         )
                     })
             });
@@ -193,12 +198,13 @@ impl crate::UnityEngine::Timeline::ActivationTrack {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -215,7 +221,7 @@ impl crate::UnityEngine::Timeline::ActivationTrack {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Timeline::ActivationTrack_PostPlaybackState,
@@ -224,7 +230,8 @@ impl crate::UnityEngine::Timeline::ActivationTrack {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_postPlaybackState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_postPlaybackState", 0usize
                         )
                     })
             });
@@ -240,7 +247,7 @@ impl crate::UnityEngine::Timeline::ActivationTrack {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Timeline::ActivationTrack_PostPlaybackState),
                         quest_hook::libil2cpp::Void,
@@ -249,7 +256,8 @@ impl crate::UnityEngine::Timeline::ActivationTrack {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_postPlaybackState", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_postPlaybackState", 1usize
                         )
                     })
             });

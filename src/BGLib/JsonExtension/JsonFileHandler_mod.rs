@@ -49,7 +49,7 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         T,
@@ -58,7 +58,8 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadFromFile", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadFromFile", 1usize
                         )
                     })
             });
@@ -78,7 +79,7 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -94,7 +95,8 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadFromFile", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadFromFile", 2usize
                         )
                     })
             });
@@ -116,7 +118,7 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
@@ -130,7 +132,8 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadFromText", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadFromText", 2usize
                         )
                     })
             });
@@ -150,7 +153,7 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             T,
@@ -164,7 +167,8 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteCompactWithoutDefault", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteCompactWithoutDefault", 2usize
                         )
                     })
             });
@@ -185,7 +189,7 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             T,
@@ -200,7 +204,8 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteIndentedWithDefault", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteIndentedWithDefault", 3usize
                         )
                     })
             });
@@ -228,7 +233,7 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             T,
@@ -252,7 +257,8 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteToFile", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteToFile", 4usize
                         )
                     })
             });
@@ -280,7 +286,7 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
@@ -302,7 +308,8 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteToText", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteToText", 4usize
                         )
                     })
             });

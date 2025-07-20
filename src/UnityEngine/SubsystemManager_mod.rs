@@ -55,7 +55,7 @@ impl crate::UnityEngine::SubsystemManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -71,7 +71,8 @@ impl crate::UnityEngine::SubsystemManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddSubsystemSubset", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddSubsystemSubset", 2usize
                         )
                     })
             });
@@ -86,7 +87,7 @@ impl crate::UnityEngine::SubsystemManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -95,7 +96,8 @@ impl crate::UnityEngine::SubsystemManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ClearSubsystems", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ClearSubsystems", 0usize
                         )
                     })
             });
@@ -116,7 +118,7 @@ impl crate::UnityEngine::SubsystemManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::List_1<T>,
@@ -127,7 +129,8 @@ impl crate::UnityEngine::SubsystemManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetInstances", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetInstances", 1usize
                         )
                     })
             });
@@ -144,7 +147,7 @@ impl crate::UnityEngine::SubsystemManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         quest_hook::libil2cpp::Gc<
@@ -155,7 +158,8 @@ impl crate::UnityEngine::SubsystemManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetIntegratedSubsystemByPtr", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetIntegratedSubsystemByPtr", 1usize
                         )
                     })
             });
@@ -176,7 +180,7 @@ impl crate::UnityEngine::SubsystemManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::List_1<T>,
@@ -187,7 +191,8 @@ impl crate::UnityEngine::SubsystemManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSubsystemDescriptors", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSubsystemDescriptors", 1usize
                         )
                     })
             });
@@ -208,7 +213,7 @@ impl crate::UnityEngine::SubsystemManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::List_1<T>,
@@ -219,7 +224,8 @@ impl crate::UnityEngine::SubsystemManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSubsystems", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSubsystems", 1usize
                         )
                     })
             });
@@ -235,7 +241,7 @@ impl crate::UnityEngine::SubsystemManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::IntPtr,
@@ -249,7 +255,8 @@ impl crate::UnityEngine::SubsystemManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitializeIntegratedSubsystem", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitializeIntegratedSubsystem", 2usize
                         )
                     })
             });
@@ -264,7 +271,7 @@ impl crate::UnityEngine::SubsystemManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -273,7 +280,8 @@ impl crate::UnityEngine::SubsystemManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReloadSubsystemsCompleted", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReloadSubsystemsCompleted", 0usize
                         )
                     })
             });
@@ -288,7 +296,7 @@ impl crate::UnityEngine::SubsystemManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -297,7 +305,8 @@ impl crate::UnityEngine::SubsystemManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReloadSubsystemsStarted", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReloadSubsystemsStarted", 0usize
                         )
                     })
             });
@@ -312,7 +321,7 @@ impl crate::UnityEngine::SubsystemManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Subsystem>),
                         bool,
@@ -321,7 +330,8 @@ impl crate::UnityEngine::SubsystemManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RemoveDeprecatedSubsystem", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RemoveDeprecatedSubsystem", 1usize
                         )
                     })
             });
@@ -334,7 +344,7 @@ impl crate::UnityEngine::SubsystemManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         quest_hook::libil2cpp::Void,
@@ -343,7 +353,8 @@ impl crate::UnityEngine::SubsystemManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RemoveIntegratedSubsystemByPtr", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RemoveIntegratedSubsystemByPtr", 1usize
                         )
                     })
             });
@@ -360,7 +371,7 @@ impl crate::UnityEngine::SubsystemManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::SubsystemsImplementation::SubsystemWithProvider,
@@ -371,7 +382,8 @@ impl crate::UnityEngine::SubsystemManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RemoveStandaloneSubsystem", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RemoveStandaloneSubsystem", 1usize
                         )
                     })
             });
@@ -384,7 +396,7 @@ impl crate::UnityEngine::SubsystemManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -393,7 +405,8 @@ impl crate::UnityEngine::SubsystemManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StaticConstructScriptingClassMap", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StaticConstructScriptingClassMap", 0usize
                         )
                     })
             });

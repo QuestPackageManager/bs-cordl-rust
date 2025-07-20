@@ -61,7 +61,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::BeatmapDifficultyMask),
                         i32,
@@ -70,7 +70,8 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetIdxForBeatmapDifficultyMask", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetIdxForBeatmapDifficultyMask", 1usize
                         )
                     })
             });
@@ -85,7 +86,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::BeatmapDifficultyMask,
@@ -94,7 +95,8 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSelectedBeatmapDifficultyMask", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSelectedBeatmapDifficultyMask", 0usize
                         )
                     })
             });
@@ -113,7 +115,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -127,7 +129,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "HandleSimpleTextDropdownDidSelectCellWithIdx", 2usize
                         )
                     })
@@ -150,12 +152,13 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDestroy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDestroy", 0usize
                         )
                     })
             });
@@ -171,7 +174,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::BeatmapDifficultyMask),
                         quest_hook::libil2cpp::Void,
@@ -180,7 +183,8 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SelectCellWithBeatmapDifficultyMask", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SelectCellWithBeatmapDifficultyMask", 1usize
                         )
                     })
             });
@@ -195,12 +199,13 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Start", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Start",
+                            0usize
                         )
                     })
             });
@@ -215,12 +220,13 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -236,7 +242,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>),
                         quest_hook::libil2cpp::Void,
@@ -245,7 +251,8 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_didSelectCellWithIdxEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_didSelectCellWithIdxEvent", 1usize
                         )
                     })
             });
@@ -271,7 +278,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -291,7 +298,8 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_beatmapDifficultyData", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_beatmapDifficultyData", 0usize
                         )
                     })
             });
@@ -311,12 +319,13 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_includeAllDifficulties")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_includeAllDifficulties", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_includeAllDifficulties", 0usize
                         )
                     })
             });
@@ -330,7 +339,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>),
                         quest_hook::libil2cpp::Void,
@@ -339,7 +348,8 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_didSelectCellWithIdxEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_didSelectCellWithIdxEvent", 1usize
                         )
                     })
             });
@@ -355,7 +365,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -364,7 +374,8 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_includeAllDifficulties", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_includeAllDifficulties", 1usize
                         )
                     })
             });

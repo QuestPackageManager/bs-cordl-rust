@@ -50,12 +50,13 @@ impl crate::Org::BouncyCastle::Utilities::Integers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("NumberOfLeadingZeros")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NumberOfLeadingZeros", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NumberOfLeadingZeros", 1usize
                         )
                     })
             });
@@ -66,12 +67,13 @@ impl crate::Org::BouncyCastle::Utilities::Integers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("NumberOfTrailingZeros")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NumberOfTrailingZeros", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NumberOfTrailingZeros", 1usize
                         )
                     })
             });
@@ -85,12 +87,13 @@ impl crate::Org::BouncyCastle::Utilities::Integers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, i32), i32, 2usize>("RotateLeft")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RotateLeft", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RotateLeft", 2usize
                         )
                     })
             });
@@ -104,12 +107,13 @@ impl crate::Org::BouncyCastle::Utilities::Integers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32, i32), u32, 2usize>("RotateLeft")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RotateLeft", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RotateLeft", 2usize
                         )
                     })
             });
@@ -123,12 +127,13 @@ impl crate::Org::BouncyCastle::Utilities::Integers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, i32), i32, 2usize>("RotateRight")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RotateRight", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RotateRight", 2usize
                         )
                     })
             });
@@ -142,12 +147,13 @@ impl crate::Org::BouncyCastle::Utilities::Integers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32, i32), u32, 2usize>("RotateRight")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RotateRight", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RotateRight", 2usize
                         )
                     })
             });
@@ -160,12 +166,13 @@ impl crate::Org::BouncyCastle::Utilities::Integers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

@@ -105,7 +105,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Vector3,
@@ -121,7 +121,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BoxCast", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "BoxCast",
+                            4usize
                         )
                     })
             });
@@ -144,7 +145,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Vector3,
@@ -164,7 +165,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BoxCast", 8usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "BoxCast",
+                            8usize
                         )
                     })
             });
@@ -198,7 +200,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Vector3,
@@ -216,7 +218,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BoxCast", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "BoxCast",
+                            4usize
                         )
                     })
             });
@@ -241,7 +244,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Vector3,
@@ -263,7 +266,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BoxCast", 8usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "BoxCast",
+                            8usize
                         )
                     })
             });
@@ -299,7 +303,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Vector3,
@@ -319,7 +323,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CapsuleCast", 8usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CapsuleCast", 8usize
                         )
                     })
             });
@@ -357,7 +362,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Vector3,
@@ -379,7 +384,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CapsuleCast", 8usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CapsuleCast", 8usize
                         )
                     })
             });
@@ -408,7 +414,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         bool,
@@ -417,7 +423,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Equals", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            1usize
                         )
                     })
             });
@@ -431,7 +438,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::PhysicsScene),
                         bool,
@@ -440,7 +447,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Equals", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            1usize
                         )
                     })
             });
@@ -451,12 +459,13 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHashCode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHashCode", 0usize
                         )
                     })
             });
@@ -477,7 +486,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::PhysicsScene,
@@ -498,7 +507,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Internal_BoxCast", 9usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Internal_BoxCast", 9usize
                         )
                     })
             });
@@ -537,7 +547,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::PhysicsScene,
@@ -560,7 +570,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Internal_BoxCastNonAlloc", 9usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Internal_BoxCastNonAlloc", 9usize
                         )
                     })
             });
@@ -599,7 +610,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -626,7 +637,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Internal_BoxCastNonAlloc_Injected", 9usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Internal_BoxCastNonAlloc_Injected", 9usize
                         )
                     })
             });
@@ -663,7 +675,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::PhysicsScene,
@@ -684,7 +696,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Internal_CapsuleCast", 9usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Internal_CapsuleCast", 9usize
                         )
                     })
             });
@@ -723,7 +736,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::PhysicsScene,
@@ -746,7 +759,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Internal_CapsuleCastNonAlloc", 9usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Internal_CapsuleCastNonAlloc", 9usize
                         )
                     })
             });
@@ -785,7 +799,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -810,8 +824,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Internal_CapsuleCastNonAlloc_Injected",
-                            9usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Internal_CapsuleCastNonAlloc_Injected", 9usize
                         )
                     })
             });
@@ -845,7 +859,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::PhysicsScene,
@@ -863,7 +877,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Internal_Raycast", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Internal_Raycast", 6usize
                         )
                     })
             });
@@ -896,7 +911,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::PhysicsScene,
@@ -916,7 +931,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Internal_RaycastNonAlloc", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Internal_RaycastNonAlloc", 6usize
                         )
                     })
             });
@@ -949,7 +965,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -971,7 +987,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Internal_RaycastNonAlloc_Injected", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Internal_RaycastNonAlloc_Injected", 6usize
                         )
                     })
             });
@@ -1001,7 +1018,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::PhysicsScene,
@@ -1016,7 +1033,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Internal_RaycastTest", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Internal_RaycastTest", 5usize
                         )
                     })
             });
@@ -1039,7 +1057,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -1056,7 +1074,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Internal_RaycastTest_Injected", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Internal_RaycastTest_Injected", 5usize
                         )
                     })
             });
@@ -1080,7 +1099,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -1100,7 +1119,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Internal_Raycast_Injected", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Internal_Raycast_Injected", 6usize
                         )
                     })
             });
@@ -1133,7 +1153,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::PhysicsScene,
@@ -1153,7 +1173,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Internal_SphereCast", 8usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Internal_SphereCast", 8usize
                         )
                     })
             });
@@ -1190,7 +1211,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::PhysicsScene,
@@ -1212,7 +1233,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Internal_SphereCastNonAlloc", 8usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Internal_SphereCastNonAlloc", 8usize
                         )
                     })
             });
@@ -1249,7 +1271,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -1273,7 +1295,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Internal_SphereCastNonAlloc_Injected", 8usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Internal_SphereCastNonAlloc_Injected", 8usize
                         )
                     })
             });
@@ -1301,7 +1324,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1310,7 +1333,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InterpolateBodies", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InterpolateBodies", 0usize
                         )
                     })
             });
@@ -1323,12 +1347,13 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsEmpty")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsEmpty", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsEmpty",
+                            0usize
                         )
                     })
             });
@@ -1341,7 +1366,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::PhysicsScene),
                         bool,
@@ -1350,7 +1375,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsEmpty_Internal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsEmpty_Internal", 1usize
                         )
                     })
             });
@@ -1363,7 +1389,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::UnityEngine::PhysicsScene,
@@ -1374,7 +1400,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsEmpty_Internal_Injected", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsEmpty_Internal_Injected", 1usize
                         )
                     })
             });
@@ -1385,12 +1412,13 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsValid")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsValid", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsValid",
+                            0usize
                         )
                     })
             });
@@ -1403,7 +1431,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::PhysicsScene),
                         bool,
@@ -1412,7 +1440,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsValid_Internal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsValid_Internal", 1usize
                         )
                     })
             });
@@ -1425,7 +1454,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::UnityEngine::PhysicsScene,
@@ -1436,7 +1465,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsValid_Internal_Injected", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsValid_Internal_Injected", 1usize
                         )
                     })
             });
@@ -1459,7 +1489,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::PhysicsScene,
@@ -1480,7 +1510,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OverlapBoxNonAlloc_Internal", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OverlapBoxNonAlloc_Internal", 7usize
                         )
                     })
             });
@@ -1517,7 +1548,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -1542,7 +1573,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OverlapBoxNonAlloc_Internal_Injected", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OverlapBoxNonAlloc_Internal_Injected", 7usize
                         )
                     })
             });
@@ -1579,7 +1611,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Vector3,
@@ -1599,7 +1631,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OverlapBox", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OverlapBox", 6usize
                         )
                     })
             });
@@ -1632,7 +1665,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Vector3,
@@ -1649,7 +1682,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OverlapBox", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OverlapBox", 3usize
                         )
                     })
             });
@@ -1674,7 +1708,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Vector3,
@@ -1694,7 +1728,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OverlapCapsule", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OverlapCapsule", 6usize
                         )
                     })
             });
@@ -1723,7 +1758,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::PhysicsScene,
@@ -1744,7 +1779,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OverlapCapsuleNonAlloc_Internal", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OverlapCapsuleNonAlloc_Internal", 7usize
                         )
                     })
             });
@@ -1781,7 +1817,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -1804,8 +1840,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OverlapCapsuleNonAlloc_Internal_Injected",
-                            7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OverlapCapsuleNonAlloc_Internal_Injected", 7usize
                         )
                     })
             });
@@ -1841,7 +1877,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Vector3,
@@ -1860,7 +1896,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OverlapSphere", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OverlapSphere", 5usize
                         )
                     })
             });
@@ -1888,7 +1925,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::PhysicsScene,
@@ -1908,7 +1945,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OverlapSphereNonAlloc_Internal", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OverlapSphereNonAlloc_Internal", 6usize
                         )
                     })
             });
@@ -1943,7 +1981,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -1965,8 +2003,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OverlapSphereNonAlloc_Internal_Injected",
-                            6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OverlapSphereNonAlloc_Internal_Injected", 6usize
                         )
                     })
             });
@@ -2000,7 +2038,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::PhysicsScene,
@@ -2021,7 +2059,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Query_BoxCast", 9usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Query_BoxCast", 9usize
                         )
                     })
             });
@@ -2058,7 +2097,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -2083,7 +2122,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Query_BoxCast_Injected", 9usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Query_BoxCast_Injected", 9usize
                         )
                     })
             });
@@ -2120,7 +2160,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::PhysicsScene,
@@ -2141,7 +2181,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Query_CapsuleCast", 9usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Query_CapsuleCast", 9usize
                         )
                     })
             });
@@ -2178,7 +2219,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -2201,7 +2242,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Query_CapsuleCast_Injected", 9usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Query_CapsuleCast_Injected", 9usize
                         )
                     })
             });
@@ -2237,7 +2279,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::PhysicsScene,
@@ -2257,7 +2299,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Query_SphereCast", 8usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Query_SphereCast", 8usize
                         )
                     })
             });
@@ -2292,7 +2335,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -2314,7 +2357,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Query_SphereCast_Injected", 8usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Query_SphereCast_Injected", 8usize
                         )
                     })
             });
@@ -2348,7 +2392,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Vector3,
@@ -2366,7 +2410,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Raycast", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Raycast",
+                            6usize
                         )
                     })
             });
@@ -2400,7 +2445,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Vector3,
@@ -2420,7 +2465,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Raycast", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Raycast",
+                            6usize
                         )
                     })
             });
@@ -2451,7 +2497,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Vector3,
@@ -2466,7 +2512,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Raycast", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Raycast",
+                            5usize
                         )
                     })
             });
@@ -2485,7 +2532,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -2494,7 +2541,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResetInterpolationPoses", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResetInterpolationPoses", 0usize
                         )
                     })
             });
@@ -2510,7 +2558,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -2519,7 +2567,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Simulate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Simulate", 1usize
                         )
                     })
             });
@@ -2541,7 +2590,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Vector3,
@@ -2560,7 +2609,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SphereCast", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SphereCast", 7usize
                         )
                     })
             });
@@ -2596,7 +2646,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Vector3,
@@ -2617,7 +2667,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SphereCast", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SphereCast", 7usize
                         )
                     })
             });
@@ -2646,7 +2697,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2655,7 +2706,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToString", 0usize
                         )
                     })
             });
@@ -2671,7 +2723,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::PhysicsScene,
@@ -2683,7 +2735,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Equality", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Equality", 2usize
                         )
                     })
             });
@@ -2697,7 +2750,7 @@ impl crate::UnityEngine::PhysicsScene {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::PhysicsScene,
@@ -2709,7 +2762,8 @@ impl crate::UnityEngine::PhysicsScene {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Inequality", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Inequality", 2usize
                         )
                     })
             });

@@ -47,7 +47,7 @@ impl crate::UnityEngine::UIElements::BackgroundPropertyHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::ScaleMode),
                         crate::UnityEngine::UIElements::BackgroundPosition,
@@ -56,7 +56,8 @@ impl crate::UnityEngine::UIElements::BackgroundPropertyHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertScaleModeToBackgroundPosition", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertScaleModeToBackgroundPosition", 1usize
                         )
                     })
             });
@@ -73,7 +74,7 @@ impl crate::UnityEngine::UIElements::BackgroundPropertyHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::ScaleMode),
                         crate::UnityEngine::UIElements::BackgroundRepeat,
@@ -82,7 +83,8 @@ impl crate::UnityEngine::UIElements::BackgroundPropertyHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertScaleModeToBackgroundRepeat", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertScaleModeToBackgroundRepeat", 1usize
                         )
                     })
             });
@@ -97,7 +99,7 @@ impl crate::UnityEngine::UIElements::BackgroundPropertyHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::ScaleMode),
                         crate::UnityEngine::UIElements::BackgroundSize,
@@ -106,7 +108,8 @@ impl crate::UnityEngine::UIElements::BackgroundPropertyHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertScaleModeToBackgroundSize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertScaleModeToBackgroundSize", 1usize
                         )
                     })
             });
@@ -125,7 +128,7 @@ impl crate::UnityEngine::UIElements::BackgroundPropertyHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::UIElements::BackgroundPosition,
@@ -140,7 +143,8 @@ impl crate::UnityEngine::UIElements::BackgroundPropertyHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResolveUnityBackgroundScaleMode", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResolveUnityBackgroundScaleMode", 5usize
                         )
                     })
             });

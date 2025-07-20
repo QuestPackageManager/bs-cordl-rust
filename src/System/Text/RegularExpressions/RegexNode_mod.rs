@@ -62,7 +62,7 @@ impl crate::System::Text::RegularExpressions::RegexNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Text::RegularExpressions::RegexNode,
@@ -73,7 +73,8 @@ impl crate::System::Text::RegularExpressions::RegexNode {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddChild", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddChild", 1usize
                         )
                     })
             });
@@ -91,7 +92,7 @@ impl crate::System::Text::RegularExpressions::RegexNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
@@ -102,7 +103,8 @@ impl crate::System::Text::RegularExpressions::RegexNode {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Child", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Child",
+                            1usize
                         )
                     })
             });
@@ -115,12 +117,13 @@ impl crate::System::Text::RegularExpressions::RegexNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("ChildCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ChildCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ChildCount", 0usize
                         )
                     })
             });
@@ -138,7 +141,7 @@ impl crate::System::Text::RegularExpressions::RegexNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, i32, i32),
                         quest_hook::libil2cpp::Gc<
@@ -149,7 +152,8 @@ impl crate::System::Text::RegularExpressions::RegexNode {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MakeQuantifier", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MakeQuantifier", 3usize
                         )
                     })
             });
@@ -167,7 +171,7 @@ impl crate::System::Text::RegularExpressions::RegexNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -176,7 +180,8 @@ impl crate::System::Text::RegularExpressions::RegexNode {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MakeRep", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "MakeRep",
+                            3usize
                         )
                     })
             });
@@ -248,7 +253,7 @@ impl crate::System::Text::RegularExpressions::RegexNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -259,7 +264,8 @@ impl crate::System::Text::RegularExpressions::RegexNode {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Reduce", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Reduce",
+                            0usize
                         )
                     })
             });
@@ -276,7 +282,7 @@ impl crate::System::Text::RegularExpressions::RegexNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -287,7 +293,8 @@ impl crate::System::Text::RegularExpressions::RegexNode {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReduceAlternation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReduceAlternation", 0usize
                         )
                     })
             });
@@ -304,7 +311,7 @@ impl crate::System::Text::RegularExpressions::RegexNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -315,7 +322,8 @@ impl crate::System::Text::RegularExpressions::RegexNode {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReduceConcatenation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReduceConcatenation", 0usize
                         )
                     })
             });
@@ -332,7 +340,7 @@ impl crate::System::Text::RegularExpressions::RegexNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -343,7 +351,8 @@ impl crate::System::Text::RegularExpressions::RegexNode {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReduceGroup", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReduceGroup", 0usize
                         )
                     })
             });
@@ -360,7 +369,7 @@ impl crate::System::Text::RegularExpressions::RegexNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -371,7 +380,8 @@ impl crate::System::Text::RegularExpressions::RegexNode {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReduceRep", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReduceRep", 0usize
                         )
                     })
             });
@@ -388,7 +398,7 @@ impl crate::System::Text::RegularExpressions::RegexNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -399,7 +409,8 @@ impl crate::System::Text::RegularExpressions::RegexNode {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReduceSet", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReduceSet", 0usize
                         )
                     })
             });
@@ -416,7 +427,7 @@ impl crate::System::Text::RegularExpressions::RegexNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -427,7 +438,8 @@ impl crate::System::Text::RegularExpressions::RegexNode {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReverseLeft", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReverseLeft", 0usize
                         )
                     })
             });
@@ -445,7 +457,7 @@ impl crate::System::Text::RegularExpressions::RegexNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
@@ -456,7 +468,8 @@ impl crate::System::Text::RegularExpressions::RegexNode {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StripEnation", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StripEnation", 1usize
                         )
                     })
             });
@@ -469,12 +482,13 @@ impl crate::System::Text::RegularExpressions::RegexNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("Type")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Type", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Type",
+                            0usize
                         )
                     })
             });
@@ -485,12 +499,13 @@ impl crate::System::Text::RegularExpressions::RegexNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("UseOptionR")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UseOptionR", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UseOptionR", 0usize
                         )
                     })
             });
@@ -506,7 +521,7 @@ impl crate::System::Text::RegularExpressions::RegexNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -521,7 +536,8 @@ impl crate::System::Text::RegularExpressions::RegexNode {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -539,7 +555,7 @@ impl crate::System::Text::RegularExpressions::RegexNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -552,7 +568,8 @@ impl crate::System::Text::RegularExpressions::RegexNode {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -570,7 +587,7 @@ impl crate::System::Text::RegularExpressions::RegexNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -583,7 +600,8 @@ impl crate::System::Text::RegularExpressions::RegexNode {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -600,7 +618,7 @@ impl crate::System::Text::RegularExpressions::RegexNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, crate::System::Text::RegularExpressions::RegexOptions),
                         quest_hook::libil2cpp::Void,
@@ -609,7 +627,8 @@ impl crate::System::Text::RegularExpressions::RegexNode {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -628,7 +647,7 @@ impl crate::System::Text::RegularExpressions::RegexNode {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -642,7 +661,8 @@ impl crate::System::Text::RegularExpressions::RegexNode {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
                         )
                     })
             });

@@ -51,7 +51,7 @@ impl crate::GlobalNamespace::BloomFilterUtil {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             T,
@@ -67,7 +67,8 @@ impl crate::GlobalNamespace::BloomFilterUtil {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddBloomFilterEntry", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddBloomFilterEntry", 4usize
                         )
                     })
             });
@@ -89,7 +90,7 @@ impl crate::GlobalNamespace::BloomFilterUtil {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (T, u32, i32, i32),
                         T,
@@ -98,7 +99,8 @@ impl crate::GlobalNamespace::BloomFilterUtil {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddBloomFilterEntryHash", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddBloomFilterEntryHash", 4usize
                         )
                     })
             });
@@ -120,7 +122,7 @@ impl crate::GlobalNamespace::BloomFilterUtil {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             T,
@@ -136,7 +138,8 @@ impl crate::GlobalNamespace::BloomFilterUtil {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ContainsBloomFilterEntry", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ContainsBloomFilterEntry", 4usize
                         )
                     })
             });
@@ -158,7 +161,7 @@ impl crate::GlobalNamespace::BloomFilterUtil {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (T, u32, i32, i32),
                         bool,
@@ -167,7 +170,8 @@ impl crate::GlobalNamespace::BloomFilterUtil {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ContainsBloomFilterEntryHash", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ContainsBloomFilterEntryHash", 4usize
                         )
                     })
             });
@@ -192,7 +196,7 @@ impl crate::GlobalNamespace::BloomFilterUtil {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -211,7 +215,8 @@ impl crate::GlobalNamespace::BloomFilterUtil {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToBloomFilter", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToBloomFilter", 3usize
                         )
                     })
             });
@@ -234,7 +239,7 @@ impl crate::GlobalNamespace::BloomFilterUtil {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -249,7 +254,8 @@ impl crate::GlobalNamespace::BloomFilterUtil {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToBloomFilter", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToBloomFilter", 3usize
                         )
                     })
             });
@@ -270,7 +276,7 @@ impl crate::GlobalNamespace::BloomFilterUtil {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -285,7 +291,8 @@ impl crate::GlobalNamespace::BloomFilterUtil {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToBloomFilter", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToBloomFilter", 3usize
                         )
                     })
             });

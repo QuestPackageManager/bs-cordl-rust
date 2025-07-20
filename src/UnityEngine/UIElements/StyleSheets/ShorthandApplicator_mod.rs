@@ -52,7 +52,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -68,7 +68,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ApplyBackgroundPosition", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ApplyBackgroundPosition", 2usize
                         )
                     })
             });
@@ -88,7 +89,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -104,7 +105,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ApplyBorderColor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ApplyBorderColor", 2usize
                         )
                     })
             });
@@ -124,7 +126,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -140,7 +142,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ApplyBorderRadius", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ApplyBorderRadius", 2usize
                         )
                     })
             });
@@ -160,7 +163,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -176,7 +179,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ApplyBorderWidth", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ApplyBorderWidth", 2usize
                         )
                     })
             });
@@ -196,7 +200,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -212,7 +216,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ApplyFlex", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ApplyFlex", 2usize
                         )
                     })
             });
@@ -232,7 +237,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -248,7 +253,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ApplyMargin", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ApplyMargin", 2usize
                         )
                     })
             });
@@ -268,7 +274,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -284,7 +290,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ApplyPadding", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ApplyPadding", 2usize
                         )
                     })
             });
@@ -304,7 +311,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -320,7 +327,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ApplyTransition", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ApplyTransition", 2usize
                         )
                     })
             });
@@ -340,7 +348,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -356,7 +364,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ApplyUnityBackgroundScaleMode", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ApplyUnityBackgroundScaleMode", 2usize
                         )
                     })
             });
@@ -376,7 +385,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -392,7 +401,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ApplyUnityTextOutline", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ApplyUnityTextOutline", 2usize
                         )
                     })
             });
@@ -415,7 +425,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -434,7 +444,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CompileBackgroundPosition", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CompileBackgroundPosition", 3usize
                         )
                     })
             });
@@ -459,7 +470,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -484,7 +495,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CompileBorderRadius", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CompileBorderRadius", 5usize
                         )
                     })
             });
@@ -505,7 +517,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -530,7 +542,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CompileBoxArea", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CompileBoxArea", 5usize
                         )
                     })
             });
@@ -551,7 +564,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -568,7 +581,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CompileBoxArea", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CompileBoxArea", 5usize
                         )
                     })
             });
@@ -589,7 +603,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -606,7 +620,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CompileBoxArea", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CompileBoxArea", 5usize
                         )
                     })
             });
@@ -626,7 +641,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -644,7 +659,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CompileFlexShorthand", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CompileFlexShorthand", 4usize
                         )
                     })
             });
@@ -663,7 +679,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -678,7 +694,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CompileTextOutline", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CompileTextOutline", 3usize
                         )
                     })
             });
@@ -723,7 +740,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -764,7 +781,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CompileTransition", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CompileTransition", 5usize
                         )
                     })
             });
@@ -797,7 +815,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -822,7 +840,8 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CompileUnityBackgroundScaleMode", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CompileUnityBackgroundScaleMode", 5usize
                         )
                     })
             });
@@ -852,7 +871,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -868,7 +887,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "<CompileBackgroundPosition>g__SwapKeyword|16_0", 2usize
                         )
                     })

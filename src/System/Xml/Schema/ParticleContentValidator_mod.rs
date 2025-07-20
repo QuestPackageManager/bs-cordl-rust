@@ -56,12 +56,13 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("AddChoice")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddChoice", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddChoice", 0usize
                         )
                     })
             });
@@ -77,7 +78,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::Schema::SyntaxTreeNode,
@@ -88,7 +89,8 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddLeafNode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddLeafNode", 1usize
                         )
                     })
             });
@@ -105,7 +107,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Decimal, crate::System::Decimal),
                         quest_hook::libil2cpp::Void,
@@ -114,7 +116,8 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddLeafRange", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddLeafRange", 2usize
                         )
                     })
             });
@@ -131,7 +134,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -147,7 +150,8 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddName", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "AddName",
+                            2usize
                         )
                     })
             });
@@ -166,7 +170,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -182,7 +186,8 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddNamespaceList", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddNamespaceList", 2usize
                         )
                     })
             });
@@ -197,12 +202,13 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("AddPlus")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddPlus", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "AddPlus",
+                            0usize
                         )
                     })
             });
@@ -217,12 +223,13 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("AddQMark")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddQMark", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddQMark", 0usize
                         )
                     })
             });
@@ -237,7 +244,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -246,7 +253,8 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddSequence", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddSequence", 0usize
                         )
                     })
             });
@@ -261,12 +269,13 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("AddStar")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddStar", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "AddStar",
+                            0usize
                         )
                     })
             });
@@ -294,7 +303,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -321,7 +330,8 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BuildTransitionTable", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BuildTransitionTable", 3usize
                         )
                     })
             });
@@ -355,7 +365,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -386,7 +396,8 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CalculateTotalFollowposForRangeNodes", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CalculateTotalFollowposForRangeNodes", 3usize
                         )
                     })
             });
@@ -406,7 +417,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>),
                         quest_hook::libil2cpp::Void,
@@ -415,7 +426,8 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckCMUPAWithLeafRangeNodes", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckCMUPAWithLeafRangeNodes", 1usize
                         )
                     })
             });
@@ -431,7 +443,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>),
                         quest_hook::libil2cpp::Void,
@@ -440,7 +452,8 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckUniqueParticleAttribution", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckUniqueParticleAttribution", 1usize
                         )
                     })
             });
@@ -461,7 +474,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -481,7 +494,8 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckUniqueParticleAttribution", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckUniqueParticleAttribution", 2usize
                         )
                     })
             });
@@ -496,12 +510,13 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("CloseGroup")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CloseGroup", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CloseGroup", 0usize
                         )
                     })
             });
@@ -517,7 +532,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::Schema::InteriorNode,
@@ -528,7 +543,8 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Closure", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Closure",
+                            1usize
                         )
                     })
             });
@@ -544,7 +560,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::Schema::ValidationState,
@@ -555,7 +571,8 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CompleteValidation", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CompleteValidation", 1usize
                         )
                     })
             });
@@ -569,7 +586,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::XmlQualifiedName,
@@ -580,7 +597,8 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Exists", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Exists",
+                            1usize
                         )
                     })
             });
@@ -596,7 +614,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Gc<
@@ -607,7 +625,8 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Finish", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Finish",
+                            1usize
                         )
                     })
             });
@@ -633,7 +652,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -656,7 +675,8 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetApplicableMinMaxFollowPos", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetApplicableMinMaxFollowPos", 3usize
                         )
                     })
             });
@@ -676,7 +696,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::Schema::ValidationState,
@@ -687,7 +707,8 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitValidation", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitValidation", 1usize
                         )
                     })
             });
@@ -721,12 +742,13 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OpenGroup")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OpenGroup", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OpenGroup", 0usize
                         )
                     })
             });
@@ -741,12 +763,13 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Start", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Start",
+                            0usize
                         )
                     })
             });
@@ -766,7 +789,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -783,7 +806,8 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ValidateElement", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValidateElement", 3usize
                         )
                     })
             });
@@ -799,7 +823,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::Schema::XmlSchemaContentType),
                         quest_hook::libil2cpp::Void,
@@ -808,7 +832,8 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -825,7 +850,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::Schema::XmlSchemaContentType, bool),
                         quest_hook::libil2cpp::Void,
@@ -834,7 +859,8 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });

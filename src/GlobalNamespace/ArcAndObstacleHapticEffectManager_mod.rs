@@ -73,7 +73,7 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::ColorType),
                         quest_hook::libil2cpp::Gc<
@@ -84,7 +84,8 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetState", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetState", 1usize
                         )
                     })
             });
@@ -104,7 +105,7 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::SaberType),
                         quest_hook::libil2cpp::Gc<
@@ -115,7 +116,8 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetState", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetState", 1usize
                         )
                     })
             });
@@ -133,7 +135,7 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::SliderInteractionManager,
@@ -146,7 +148,7 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "HandleSliderInteractionManagerAllSliderWereRemovedFromActiveSliders",
                             1usize
                         )
@@ -167,7 +169,7 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -181,7 +183,7 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "HandleSliderInteractionManagerSliderWasAddedToActiveSliders",
                             2usize
                         )
@@ -203,7 +205,7 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::SaberType),
                         quest_hook::libil2cpp::Void,
@@ -212,7 +214,8 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleSparkleEffectDidEnd", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleSparkleEffectDidEnd", 1usize
                         )
                     })
             });
@@ -228,7 +231,7 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::SaberType),
                         quest_hook::libil2cpp::Void,
@@ -237,7 +240,8 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleSparkleEffectDidStart", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleSparkleEffectDidStart", 1usize
                         )
                     })
             });
@@ -259,12 +263,13 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDestroy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDestroy", 0usize
                         )
                     })
             });
@@ -279,12 +284,13 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Start", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Start",
+                            0usize
                         )
                     })
             });
@@ -299,7 +305,7 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -308,7 +314,8 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryDisableThis", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryDisableThis", 0usize
                         )
                     })
             });
@@ -323,12 +330,13 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Update")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Update", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Update",
+                            0usize
                         )
                     })
             });
@@ -347,7 +355,7 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -361,7 +369,8 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateHaptic", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateHaptic", 2usize
                         )
                     })
             });
@@ -376,12 +385,13 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -463,12 +473,13 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -481,12 +492,13 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_canBeActive")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_canBeActive", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_canBeActive", 0usize
                         )
                     })
             });
@@ -497,12 +509,13 @@ impl crate::GlobalNamespace::ArcAndObstacleHapticEffectManager_EffectState {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isActive")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_isActive", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isActive", 0usize
                         )
                     })
             });

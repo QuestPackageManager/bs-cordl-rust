@@ -47,12 +47,13 @@ impl crate::System::Xml::IDtdParserAdapterV1 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_Namespaces")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Namespaces", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Namespaces", 0usize
                         )
                     })
             });
@@ -63,12 +64,13 @@ impl crate::System::Xml::IDtdParserAdapterV1 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_Normalization")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Normalization", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Normalization", 0usize
                         )
                     })
             });
@@ -79,12 +81,13 @@ impl crate::System::Xml::IDtdParserAdapterV1 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_V1CompatibilityMode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_V1CompatibilityMode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_V1CompatibilityMode", 0usize
                         )
                     })
             });

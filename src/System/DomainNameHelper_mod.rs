@@ -50,7 +50,7 @@ impl crate::System::DomainNameHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -67,7 +67,8 @@ impl crate::System::DomainNameHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IdnEquivalent", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IdnEquivalent", 5usize
                         )
                     })
             });
@@ -96,7 +97,7 @@ impl crate::System::DomainNameHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -117,7 +118,8 @@ impl crate::System::DomainNameHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IdnEquivalent", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IdnEquivalent", 5usize
                         )
                     })
             });
@@ -139,7 +141,7 @@ impl crate::System::DomainNameHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (char, quest_hook::libil2cpp::ByRefMut<bool>),
                         bool,
@@ -148,7 +150,8 @@ impl crate::System::DomainNameHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsASCIILetterOrDigit", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsASCIILetterOrDigit", 2usize
                         )
                     })
             });
@@ -164,7 +167,7 @@ impl crate::System::DomainNameHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -178,7 +181,8 @@ impl crate::System::DomainNameHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsIdnAce", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsIdnAce", 2usize
                         )
                     })
             });
@@ -192,7 +196,7 @@ impl crate::System::DomainNameHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -206,7 +210,8 @@ impl crate::System::DomainNameHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsIdnAce", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsIdnAce", 2usize
                         )
                     })
             });
@@ -223,7 +228,7 @@ impl crate::System::DomainNameHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -240,7 +245,8 @@ impl crate::System::DomainNameHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsValid", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsValid",
+                            5usize
                         )
                     })
             });
@@ -263,7 +269,7 @@ impl crate::System::DomainNameHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -280,7 +286,8 @@ impl crate::System::DomainNameHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsValidByIri", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsValidByIri", 5usize
                         )
                     })
             });
@@ -300,7 +307,7 @@ impl crate::System::DomainNameHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (char, quest_hook::libil2cpp::ByRefMut<bool>),
                         bool,
@@ -309,7 +316,8 @@ impl crate::System::DomainNameHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsValidDomainLabelCharacter", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsValidDomainLabelCharacter", 2usize
                         )
                     })
             });
@@ -329,7 +337,7 @@ impl crate::System::DomainNameHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -345,7 +353,8 @@ impl crate::System::DomainNameHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseCanonicalName", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseCanonicalName", 4usize
                         )
                     })
             });
@@ -366,7 +375,7 @@ impl crate::System::DomainNameHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -383,7 +392,8 @@ impl crate::System::DomainNameHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnicodeEquivalent", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnicodeEquivalent", 5usize
                         )
                     })
             });
@@ -409,7 +419,7 @@ impl crate::System::DomainNameHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -427,7 +437,8 @@ impl crate::System::DomainNameHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnicodeEquivalent", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnicodeEquivalent", 4usize
                         )
                     })
             });

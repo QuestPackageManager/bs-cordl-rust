@@ -98,7 +98,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -169,7 +169,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AccumulateMeshesInfo", 9usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AccumulateMeshesInfo", 9usize
                         )
                     })
             });
@@ -208,7 +209,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<
@@ -229,7 +230,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CombineToNewMeshes", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CombineToNewMeshes", 1usize
                         )
                     })
             });
@@ -256,7 +258,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<
@@ -277,7 +279,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Combine", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Combine",
+                            1usize
                         )
                     })
             });
@@ -307,7 +310,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -333,7 +336,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Combine", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Combine",
+                            2usize
                         )
                     })
             });
@@ -375,7 +379,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -415,7 +419,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateMeshFromSplit", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateMeshFromSplit", 6usize
                         )
                     })
             });
@@ -469,7 +474,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -514,7 +519,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SplitByMaxVertexCount", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SplitByMaxVertexCount", 5usize
                         )
                     })
             });

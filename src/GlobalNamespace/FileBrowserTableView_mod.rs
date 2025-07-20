@@ -66,7 +66,7 @@ impl crate::GlobalNamespace::FileBrowserTableView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::HMUI::TableView>, i32),
                         quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
@@ -75,7 +75,8 @@ impl crate::GlobalNamespace::FileBrowserTableView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CellForIdx", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CellForIdx", 2usize
                         )
                     })
             });
@@ -88,12 +89,13 @@ impl crate::GlobalNamespace::FileBrowserTableView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), f32, 1usize>("CellSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CellSize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CellSize", 1usize
                         )
                     })
             });
@@ -108,7 +110,7 @@ impl crate::GlobalNamespace::FileBrowserTableView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, bool),
                         quest_hook::libil2cpp::Void,
@@ -117,7 +119,8 @@ impl crate::GlobalNamespace::FileBrowserTableView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ClearSelection", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ClearSelection", 2usize
                         )
                     })
             });
@@ -134,7 +137,7 @@ impl crate::GlobalNamespace::FileBrowserTableView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::HMUI::TableView>, i32),
                         quest_hook::libil2cpp::Void,
@@ -143,7 +146,8 @@ impl crate::GlobalNamespace::FileBrowserTableView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleDidSelectRowEvent", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleDidSelectRowEvent", 2usize
                         )
                     })
             });
@@ -163,7 +167,7 @@ impl crate::GlobalNamespace::FileBrowserTableView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -178,7 +182,8 @@ impl crate::GlobalNamespace::FileBrowserTableView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Init", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            1usize
                         )
                     })
             });
@@ -198,12 +203,13 @@ impl crate::GlobalNamespace::FileBrowserTableView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("NumberOfCells")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NumberOfCells", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NumberOfCells", 0usize
                         )
                     })
             });
@@ -217,7 +223,7 @@ impl crate::GlobalNamespace::FileBrowserTableView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -226,7 +232,8 @@ impl crate::GlobalNamespace::FileBrowserTableView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SelectAndScrollRow", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SelectAndScrollRow", 1usize
                         )
                     })
             });
@@ -242,7 +249,7 @@ impl crate::GlobalNamespace::FileBrowserTableView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -251,7 +258,8 @@ impl crate::GlobalNamespace::FileBrowserTableView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SelectAndScrollRowToItemWithPath", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SelectAndScrollRowToItemWithPath", 1usize
                         )
                     })
             });
@@ -269,7 +277,7 @@ impl crate::GlobalNamespace::FileBrowserTableView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -284,7 +292,8 @@ impl crate::GlobalNamespace::FileBrowserTableView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetItems", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetItems", 1usize
                         )
                     })
             });
@@ -299,12 +308,13 @@ impl crate::GlobalNamespace::FileBrowserTableView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -325,7 +335,7 @@ impl crate::GlobalNamespace::FileBrowserTableView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_2<
@@ -343,7 +353,8 @@ impl crate::GlobalNamespace::FileBrowserTableView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_didSelectRow", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_didSelectRow", 1usize
                         )
                     })
             });
@@ -364,7 +375,7 @@ impl crate::GlobalNamespace::FileBrowserTableView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_2<
@@ -382,7 +393,8 @@ impl crate::GlobalNamespace::FileBrowserTableView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_didSelectRow", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_didSelectRow", 1usize
                         )
                     })
             });

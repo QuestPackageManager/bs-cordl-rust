@@ -94,7 +94,7 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>),
                         quest_hook::libil2cpp::Void,
@@ -103,7 +103,8 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BackButtonWasPressed", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BackButtonWasPressed", 1usize
                         )
                     })
             });
@@ -121,7 +122,7 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, bool, bool),
                         quest_hook::libil2cpp::Void,
@@ -130,7 +131,8 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DidActivate", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DidActivate", 3usize
                         )
                     })
             });
@@ -151,7 +153,7 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, bool),
                         quest_hook::libil2cpp::Void,
@@ -160,7 +162,8 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DidDeactivate", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DidDeactivate", 2usize
                         )
                     })
             });
@@ -178,7 +181,7 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::MissionHelpViewController,
@@ -189,8 +192,8 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleMissionHelpViewControllerDidFinish",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleMissionHelpViewControllerDidFinish", 1usize
                         )
                     })
             });
@@ -211,7 +214,7 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -227,7 +230,8 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleMissionLevelSceneDidFinish", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleMissionLevelSceneDidFinish", 2usize
                         )
                     })
             });
@@ -252,7 +256,7 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -268,7 +272,8 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleMissionLevelSceneRestarted", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleMissionLevelSceneRestarted", 2usize
                         )
                     })
             });
@@ -290,7 +295,7 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::MissionResultsViewController,
@@ -301,7 +306,7 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "HandleMissionResultsViewControllerContinueButtonPressed",
                             1usize
                         )
@@ -321,7 +326,7 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::MissionResultsViewController,
@@ -332,7 +337,7 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "HandleMissionResultsViewControllerRetryButtonPressed",
                             1usize
                         )
@@ -352,7 +357,7 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::MissionSelectionNavigationController,
@@ -363,7 +368,7 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "HandleMissionSelectionNavigationControllerDidPressPlayButton",
                             1usize
                         )
@@ -388,7 +393,7 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -397,7 +402,8 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartLevel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartLevel", 1usize
                         )
                     })
             });
@@ -415,7 +421,7 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
@@ -428,7 +434,8 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TopViewControllerWillChange", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TopViewControllerWillChange", 3usize
                         )
                     })
             });
@@ -451,7 +458,7 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -467,7 +474,8 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdatePlayerStatistics", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdatePlayerStatistics", 2usize
                         )
                     })
             });
@@ -482,7 +490,7 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -491,7 +499,7 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "<HandleMissionResultsViewControllerContinueButtonPressed>b__23_0",
                             0usize
                         )
@@ -509,7 +517,7 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -518,7 +526,7 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "<HandleMissionResultsViewControllerContinueButtonPressed>b__23_1",
                             1usize
                         )
@@ -535,12 +543,13 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -562,7 +571,7 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -577,7 +586,8 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_didFinishEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_didFinishEvent", 1usize
                         )
                     })
             });
@@ -599,7 +609,7 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -614,7 +624,8 @@ impl crate::GlobalNamespace::CampaignFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_didFinishEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_didFinishEvent", 1usize
                         )
                     })
             });

@@ -104,12 +104,13 @@ impl crate::UnityEngine::WheelFrictionCurve {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_asymptoteSlip")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_asymptoteSlip", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_asymptoteSlip", 0usize
                         )
                     })
             });
@@ -120,12 +121,13 @@ impl crate::UnityEngine::WheelFrictionCurve {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_asymptoteValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_asymptoteValue", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_asymptoteValue", 0usize
                         )
                     })
             });
@@ -136,12 +138,13 @@ impl crate::UnityEngine::WheelFrictionCurve {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_extremumSlip")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_extremumSlip", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_extremumSlip", 0usize
                         )
                     })
             });
@@ -152,12 +155,13 @@ impl crate::UnityEngine::WheelFrictionCurve {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_extremumValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_extremumValue", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_extremumValue", 0usize
                         )
                     })
             });
@@ -168,12 +172,13 @@ impl crate::UnityEngine::WheelFrictionCurve {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_stiffness")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_stiffness", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_stiffness", 0usize
                         )
                     })
             });
@@ -187,7 +192,7 @@ impl crate::UnityEngine::WheelFrictionCurve {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -196,7 +201,8 @@ impl crate::UnityEngine::WheelFrictionCurve {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_asymptoteSlip", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_asymptoteSlip", 1usize
                         )
                     })
             });
@@ -212,7 +218,7 @@ impl crate::UnityEngine::WheelFrictionCurve {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -221,7 +227,8 @@ impl crate::UnityEngine::WheelFrictionCurve {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_asymptoteValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_asymptoteValue", 1usize
                         )
                     })
             });
@@ -237,7 +244,7 @@ impl crate::UnityEngine::WheelFrictionCurve {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -246,7 +253,8 @@ impl crate::UnityEngine::WheelFrictionCurve {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_extremumSlip", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_extremumSlip", 1usize
                         )
                     })
             });
@@ -262,7 +270,7 @@ impl crate::UnityEngine::WheelFrictionCurve {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -271,7 +279,8 @@ impl crate::UnityEngine::WheelFrictionCurve {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_extremumValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_extremumValue", 1usize
                         )
                     })
             });
@@ -287,7 +296,7 @@ impl crate::UnityEngine::WheelFrictionCurve {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -296,7 +305,8 @@ impl crate::UnityEngine::WheelFrictionCurve {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_stiffness", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_stiffness", 1usize
                         )
                     })
             });

@@ -49,7 +49,7 @@ impl crate::LiteNetLib::NetDebug {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -69,7 +69,8 @@ impl crate::LiteNetLib::NetDebug {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteError", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteError", 2usize
                         )
                     })
             });
@@ -89,7 +90,7 @@ impl crate::LiteNetLib::NetDebug {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -109,7 +110,8 @@ impl crate::LiteNetLib::NetDebug {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteForce", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteForce", 2usize
                         )
                     })
             });
@@ -130,7 +132,7 @@ impl crate::LiteNetLib::NetDebug {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::LiteNetLib::NetLogLevel,
@@ -151,7 +153,8 @@ impl crate::LiteNetLib::NetDebug {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteForce", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteForce", 3usize
                         )
                     })
             });
@@ -172,7 +175,7 @@ impl crate::LiteNetLib::NetDebug {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::LiteNetLib::NetLogLevel,
@@ -193,7 +196,8 @@ impl crate::LiteNetLib::NetDebug {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteLogic", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteLogic", 3usize
                         )
                     })
             });
@@ -213,7 +217,7 @@ impl crate::LiteNetLib::NetDebug {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -233,7 +237,8 @@ impl crate::LiteNetLib::NetDebug {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Write", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Write",
+                            2usize
                         )
                     })
             });
@@ -254,7 +259,7 @@ impl crate::LiteNetLib::NetDebug {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::LiteNetLib::NetLogLevel,
@@ -275,7 +280,8 @@ impl crate::LiteNetLib::NetDebug {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Write", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Write",
+                            3usize
                         )
                     })
             });

@@ -112,7 +112,7 @@ impl crate::GlobalNamespace::AuthenticationToken {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::LiteNetLib::Utils::NetDataReader,
@@ -123,7 +123,8 @@ impl crate::GlobalNamespace::AuthenticationToken {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateFromSerializedData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateFromSerializedData", 1usize
                         )
                     })
             });
@@ -138,7 +139,7 @@ impl crate::GlobalNamespace::AuthenticationToken {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::LiteNetLib::Utils::NetDataReader,
@@ -149,7 +150,8 @@ impl crate::GlobalNamespace::AuthenticationToken {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Deserialize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Deserialize", 1usize
                         )
                     })
             });
@@ -166,7 +168,7 @@ impl crate::GlobalNamespace::AuthenticationToken {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -177,7 +179,8 @@ impl crate::GlobalNamespace::AuthenticationToken {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FromHex", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "FromHex",
+                            1usize
                         )
                     })
             });
@@ -194,7 +197,7 @@ impl crate::GlobalNamespace::AuthenticationToken {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -205,7 +208,8 @@ impl crate::GlobalNamespace::AuthenticationToken {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FromUtf8", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FromUtf8", 1usize
                         )
                     })
             });
@@ -218,12 +222,13 @@ impl crate::GlobalNamespace::AuthenticationToken {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(char), u8, 1usize>("GetHexVal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHexVal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHexVal", 1usize
                         )
                     })
             });
@@ -237,7 +242,7 @@ impl crate::GlobalNamespace::AuthenticationToken {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::LiteNetLib::Utils::NetDataWriter,
@@ -248,7 +253,8 @@ impl crate::GlobalNamespace::AuthenticationToken {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Serialize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Serialize", 1usize
                         )
                     })
             });
@@ -265,7 +271,7 @@ impl crate::GlobalNamespace::AuthenticationToken {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -276,7 +282,8 @@ impl crate::GlobalNamespace::AuthenticationToken {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToHex", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "ToHex",
+                            1usize
                         )
                     })
             });
@@ -293,7 +300,7 @@ impl crate::GlobalNamespace::AuthenticationToken {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -304,7 +311,8 @@ impl crate::GlobalNamespace::AuthenticationToken {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToUtf8", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "ToUtf8",
+                            1usize
                         )
                     })
             });
@@ -323,7 +331,7 @@ impl crate::GlobalNamespace::AuthenticationToken {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::GlobalNamespace::AuthenticationToken_Platform,
@@ -343,7 +351,8 @@ impl crate::GlobalNamespace::AuthenticationToken {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
                         )
                     })
             });

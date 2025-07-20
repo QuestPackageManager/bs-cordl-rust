@@ -44,7 +44,7 @@ impl crate::System::IO::PathInternal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::ReadOnlySpan_1<char>),
                         bool,
@@ -53,7 +53,8 @@ impl crate::System::IO::PathInternal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EndsInDirectorySeparator", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EndsInDirectorySeparator", 1usize
                         )
                     })
             });
@@ -64,12 +65,13 @@ impl crate::System::IO::PathInternal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("GetIsCaseSensitive")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetIsCaseSensitive", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetIsCaseSensitive", 0usize
                         )
                     })
             });
@@ -82,7 +84,7 @@ impl crate::System::IO::PathInternal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::ReadOnlySpan_1<char>),
                         i32,
@@ -91,7 +93,8 @@ impl crate::System::IO::PathInternal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetRootLength", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetRootLength", 1usize
                         )
                     })
             });
@@ -102,12 +105,13 @@ impl crate::System::IO::PathInternal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(char), bool, 1usize>("IsDirectorySeparator")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsDirectorySeparator", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsDirectorySeparator", 1usize
                         )
                     })
             });
@@ -120,7 +124,7 @@ impl crate::System::IO::PathInternal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -129,7 +133,8 @@ impl crate::System::IO::PathInternal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsPartiallyQualified", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsPartiallyQualified", 1usize
                         )
                     })
             });
@@ -142,7 +147,7 @@ impl crate::System::IO::PathInternal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::ReadOnlySpan_1<char>),
                         bool,
@@ -151,7 +156,8 @@ impl crate::System::IO::PathInternal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsRoot", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsRoot",
+                            1usize
                         )
                     })
             });
@@ -164,7 +170,7 @@ impl crate::System::IO::PathInternal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::ReadOnlySpan_1<char>),
                         bool,
@@ -173,7 +179,8 @@ impl crate::System::IO::PathInternal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartsWithDirectorySeparator", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartsWithDirectorySeparator", 1usize
                         )
                     })
             });
@@ -188,7 +195,7 @@ impl crate::System::IO::PathInternal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -197,7 +204,8 @@ impl crate::System::IO::PathInternal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TrimEndingDirectorySeparator", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TrimEndingDirectorySeparator", 1usize
                         )
                     })
             });
@@ -212,7 +220,7 @@ impl crate::System::IO::PathInternal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::ReadOnlySpan_1<char>),
                         crate::System::ReadOnlySpan_1<char>,
@@ -221,7 +229,8 @@ impl crate::System::IO::PathInternal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TrimEndingDirectorySeparator", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TrimEndingDirectorySeparator", 1usize
                         )
                     })
             });
@@ -234,12 +243,13 @@ impl crate::System::IO::PathInternal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_IsCaseSensitive")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsCaseSensitive", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsCaseSensitive", 0usize
                         )
                     })
             });

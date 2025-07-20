@@ -112,12 +112,13 @@ impl crate::UnityEngine::ModifiableContactPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), f32, 1usize>("GetBounciness")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBounciness", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBounciness", 1usize
                         )
                     })
             });
@@ -133,7 +134,7 @@ impl crate::UnityEngine::ModifiableContactPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -142,7 +143,8 @@ impl crate::UnityEngine::ModifiableContactPair {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetContact", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetContact", 1usize
                         )
                     })
             });
@@ -159,7 +161,7 @@ impl crate::UnityEngine::ModifiableContactPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -168,7 +170,8 @@ impl crate::UnityEngine::ModifiableContactPair {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetContactPatch", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetContactPatch", 0usize
                         )
                     })
             });
@@ -181,12 +184,13 @@ impl crate::UnityEngine::ModifiableContactPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), f32, 1usize>("GetDynamicFriction")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetDynamicFriction", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDynamicFriction", 1usize
                         )
                     })
             });
@@ -197,12 +201,13 @@ impl crate::UnityEngine::ModifiableContactPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), u32, 1usize>("GetFaceIndex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetFaceIndex", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetFaceIndex", 1usize
                         )
                     })
             });
@@ -213,12 +218,13 @@ impl crate::UnityEngine::ModifiableContactPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), f32, 1usize>("GetMaxImpulse")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMaxImpulse", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMaxImpulse", 1usize
                         )
                     })
             });
@@ -232,7 +238,7 @@ impl crate::UnityEngine::ModifiableContactPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         crate::UnityEngine::Vector3,
@@ -241,7 +247,8 @@ impl crate::UnityEngine::ModifiableContactPair {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNormal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNormal", 1usize
                         )
                     })
             });
@@ -257,7 +264,7 @@ impl crate::UnityEngine::ModifiableContactPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         crate::UnityEngine::Vector3,
@@ -266,7 +273,8 @@ impl crate::UnityEngine::ModifiableContactPair {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPoint", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPoint", 1usize
                         )
                     })
             });
@@ -279,12 +287,13 @@ impl crate::UnityEngine::ModifiableContactPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), f32, 1usize>("GetSeparation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSeparation", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSeparation", 1usize
                         )
                     })
             });
@@ -295,12 +304,13 @@ impl crate::UnityEngine::ModifiableContactPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), f32, 1usize>("GetStaticFriction")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetStaticFriction", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetStaticFriction", 1usize
                         )
                     })
             });
@@ -314,7 +324,7 @@ impl crate::UnityEngine::ModifiableContactPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         crate::UnityEngine::Vector3,
@@ -323,7 +333,8 @@ impl crate::UnityEngine::ModifiableContactPair {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTargetVelocity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTargetVelocity", 1usize
                         )
                     })
             });
@@ -339,7 +350,7 @@ impl crate::UnityEngine::ModifiableContactPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -348,7 +359,8 @@ impl crate::UnityEngine::ModifiableContactPair {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IgnoreContact", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IgnoreContact", 1usize
                         )
                     })
             });
@@ -365,7 +377,7 @@ impl crate::UnityEngine::ModifiableContactPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, f32),
                         quest_hook::libil2cpp::Void,
@@ -374,7 +386,8 @@ impl crate::UnityEngine::ModifiableContactPair {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetBounciness", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetBounciness", 2usize
                         )
                     })
             });
@@ -391,7 +404,7 @@ impl crate::UnityEngine::ModifiableContactPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, f32),
                         quest_hook::libil2cpp::Void,
@@ -400,7 +413,8 @@ impl crate::UnityEngine::ModifiableContactPair {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetDynamicFriction", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetDynamicFriction", 2usize
                         )
                     })
             });
@@ -417,7 +431,7 @@ impl crate::UnityEngine::ModifiableContactPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, f32),
                         quest_hook::libil2cpp::Void,
@@ -426,7 +440,8 @@ impl crate::UnityEngine::ModifiableContactPair {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetMaxImpulse", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetMaxImpulse", 2usize
                         )
                     })
             });
@@ -443,7 +458,7 @@ impl crate::UnityEngine::ModifiableContactPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, crate::UnityEngine::Vector3),
                         quest_hook::libil2cpp::Void,
@@ -452,7 +467,8 @@ impl crate::UnityEngine::ModifiableContactPair {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetNormal", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetNormal", 2usize
                         )
                     })
             });
@@ -469,7 +485,7 @@ impl crate::UnityEngine::ModifiableContactPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, crate::UnityEngine::Vector3),
                         quest_hook::libil2cpp::Void,
@@ -478,7 +494,8 @@ impl crate::UnityEngine::ModifiableContactPair {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetPoint", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetPoint", 2usize
                         )
                     })
             });
@@ -495,7 +512,7 @@ impl crate::UnityEngine::ModifiableContactPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, f32),
                         quest_hook::libil2cpp::Void,
@@ -504,7 +521,8 @@ impl crate::UnityEngine::ModifiableContactPair {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetSeparation", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetSeparation", 2usize
                         )
                     })
             });
@@ -521,7 +539,7 @@ impl crate::UnityEngine::ModifiableContactPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, f32),
                         quest_hook::libil2cpp::Void,
@@ -530,7 +548,8 @@ impl crate::UnityEngine::ModifiableContactPair {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetStaticFriction", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetStaticFriction", 2usize
                         )
                     })
             });
@@ -547,7 +566,7 @@ impl crate::UnityEngine::ModifiableContactPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, crate::UnityEngine::Vector3),
                         quest_hook::libil2cpp::Void,
@@ -556,7 +575,8 @@ impl crate::UnityEngine::ModifiableContactPair {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetTargetVelocity", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetTargetVelocity", 2usize
                         )
                     })
             });
@@ -571,7 +591,7 @@ impl crate::UnityEngine::ModifiableContactPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector3,
@@ -580,7 +600,8 @@ impl crate::UnityEngine::ModifiableContactPair {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_bodyAngularVelocity", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_bodyAngularVelocity", 0usize
                         )
                     })
             });
@@ -593,12 +614,13 @@ impl crate::UnityEngine::ModifiableContactPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_bodyInstanceID")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_bodyInstanceID", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_bodyInstanceID", 0usize
                         )
                     })
             });
@@ -611,7 +633,7 @@ impl crate::UnityEngine::ModifiableContactPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector3,
@@ -620,7 +642,8 @@ impl crate::UnityEngine::ModifiableContactPair {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_bodyVelocity", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_bodyVelocity", 0usize
                         )
                     })
             });
@@ -633,12 +656,13 @@ impl crate::UnityEngine::ModifiableContactPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_colliderInstanceID")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_colliderInstanceID", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_colliderInstanceID", 0usize
                         )
                     })
             });
@@ -649,12 +673,13 @@ impl crate::UnityEngine::ModifiableContactPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_contactCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_contactCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_contactCount", 0usize
                         )
                     })
             });
@@ -667,7 +692,7 @@ impl crate::UnityEngine::ModifiableContactPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::ModifiableMassProperties,
@@ -676,7 +701,8 @@ impl crate::UnityEngine::ModifiableContactPair {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_massProperties", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_massProperties", 0usize
                         )
                     })
             });
@@ -691,7 +717,7 @@ impl crate::UnityEngine::ModifiableContactPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector3,
@@ -700,7 +726,8 @@ impl crate::UnityEngine::ModifiableContactPair {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_otherBodyAngularVelocity", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_otherBodyAngularVelocity", 0usize
                         )
                     })
             });
@@ -713,12 +740,13 @@ impl crate::UnityEngine::ModifiableContactPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_otherBodyInstanceID")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_otherBodyInstanceID", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_otherBodyInstanceID", 0usize
                         )
                     })
             });
@@ -731,7 +759,7 @@ impl crate::UnityEngine::ModifiableContactPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector3,
@@ -740,7 +768,8 @@ impl crate::UnityEngine::ModifiableContactPair {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_otherBodyVelocity", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_otherBodyVelocity", 0usize
                         )
                     })
             });
@@ -753,12 +782,13 @@ impl crate::UnityEngine::ModifiableContactPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_otherColliderInstanceID")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_otherColliderInstanceID", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_otherColliderInstanceID", 0usize
                         )
                     })
             });
@@ -772,7 +802,7 @@ impl crate::UnityEngine::ModifiableContactPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::ModifiableMassProperties),
                         quest_hook::libil2cpp::Void,
@@ -781,7 +811,8 @@ impl crate::UnityEngine::ModifiableContactPair {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_massProperties", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_massProperties", 1usize
                         )
                     })
             });

@@ -48,7 +48,7 @@ impl crate::Internal::Cryptography::OidLookup {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -63,7 +63,8 @@ impl crate::Internal::Cryptography::OidLookup {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NativeFriendlyNameToOid", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NativeFriendlyNameToOid", 3usize
                         )
                     })
             });
@@ -84,7 +85,7 @@ impl crate::Internal::Cryptography::OidLookup {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -99,7 +100,8 @@ impl crate::Internal::Cryptography::OidLookup {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NativeOidToFriendlyName", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NativeOidToFriendlyName", 3usize
                         )
                     })
             });
@@ -116,7 +118,7 @@ impl crate::Internal::Cryptography::OidLookup {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::Security::Cryptography::OidGroup),
                         bool,
@@ -125,7 +127,8 @@ impl crate::Internal::Cryptography::OidLookup {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShouldUseCache", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShouldUseCache", 1usize
                         )
                     })
             });
@@ -142,7 +145,7 @@ impl crate::Internal::Cryptography::OidLookup {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -157,7 +160,8 @@ impl crate::Internal::Cryptography::OidLookup {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToFriendlyName", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToFriendlyName", 3usize
                         )
                     })
             });
@@ -178,7 +182,7 @@ impl crate::Internal::Cryptography::OidLookup {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -193,7 +197,8 @@ impl crate::Internal::Cryptography::OidLookup {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToOid", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "ToOid",
+                            3usize
                         )
                     })
             });

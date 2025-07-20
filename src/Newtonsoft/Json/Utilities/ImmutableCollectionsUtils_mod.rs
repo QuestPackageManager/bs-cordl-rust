@@ -82,7 +82,7 @@ impl crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -106,7 +106,8 @@ impl crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryBuildImmutableForArrayContract", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryBuildImmutableForArrayContract", 4usize
                         )
                     })
             });
@@ -142,7 +143,7 @@ impl crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -167,8 +168,8 @@ impl crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryBuildImmutableForDictionaryContract",
-                            5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryBuildImmutableForDictionaryContract", 5usize
                         )
                     })
             });
@@ -280,7 +281,7 @@ impl crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils_ImmutableColl
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -299,7 +300,8 @@ impl crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils_ImmutableColl
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -320,7 +322,7 @@ impl crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils_ImmutableColl
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -329,7 +331,8 @@ impl crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils_ImmutableColl
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_BuilderTypeName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_BuilderTypeName", 0usize
                         )
                     })
             });
@@ -346,7 +349,7 @@ impl crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils_ImmutableColl
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -355,7 +358,8 @@ impl crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils_ImmutableColl
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ContractTypeName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ContractTypeName", 0usize
                         )
                     })
             });
@@ -372,7 +376,7 @@ impl crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils_ImmutableColl
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -381,7 +385,8 @@ impl crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils_ImmutableColl
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CreatedTypeName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CreatedTypeName", 0usize
                         )
                     })
             });
@@ -397,7 +402,7 @@ impl crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils_ImmutableColl
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -406,7 +411,8 @@ impl crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils_ImmutableColl
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_BuilderTypeName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_BuilderTypeName", 1usize
                         )
                     })
             });
@@ -422,7 +428,7 @@ impl crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils_ImmutableColl
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -431,7 +437,8 @@ impl crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils_ImmutableColl
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_ContractTypeName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_ContractTypeName", 1usize
                         )
                     })
             });
@@ -447,7 +454,7 @@ impl crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils_ImmutableColl
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -456,7 +463,8 @@ impl crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils_ImmutableColl
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_CreatedTypeName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_CreatedTypeName", 1usize
                         )
                     })
             });

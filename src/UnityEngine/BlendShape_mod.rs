@@ -102,12 +102,13 @@ impl crate::UnityEngine::BlendShape {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u32, 0usize>("get_firstVertex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_firstVertex", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_firstVertex", 0usize
                         )
                     })
             });
@@ -118,12 +119,13 @@ impl crate::UnityEngine::BlendShape {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u32, 0usize>("get_vertexCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_vertexCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_vertexCount", 0usize
                         )
                     })
             });

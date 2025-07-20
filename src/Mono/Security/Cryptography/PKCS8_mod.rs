@@ -106,7 +106,7 @@ impl crate::Mono::Security::Cryptography::PKCS8_EncryptedPrivateKeyInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -117,7 +117,8 @@ impl crate::Mono::Security::Cryptography::PKCS8_EncryptedPrivateKeyInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Decode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Decode",
+                            1usize
                         )
                     })
             });
@@ -148,12 +149,13 @@ impl crate::Mono::Security::Cryptography::PKCS8_EncryptedPrivateKeyInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -169,7 +171,7 @@ impl crate::Mono::Security::Cryptography::PKCS8_EncryptedPrivateKeyInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -180,7 +182,8 @@ impl crate::Mono::Security::Cryptography::PKCS8_EncryptedPrivateKeyInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -197,7 +200,7 @@ impl crate::Mono::Security::Cryptography::PKCS8_EncryptedPrivateKeyInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -206,7 +209,8 @@ impl crate::Mono::Security::Cryptography::PKCS8_EncryptedPrivateKeyInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Algorithm", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Algorithm", 0usize
                         )
                     })
             });
@@ -223,7 +227,7 @@ impl crate::Mono::Security::Cryptography::PKCS8_EncryptedPrivateKeyInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -234,7 +238,8 @@ impl crate::Mono::Security::Cryptography::PKCS8_EncryptedPrivateKeyInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_EncryptedData", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_EncryptedData", 0usize
                         )
                     })
             });
@@ -247,12 +252,13 @@ impl crate::Mono::Security::Cryptography::PKCS8_EncryptedPrivateKeyInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_IterationCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IterationCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IterationCount", 0usize
                         )
                     })
             });
@@ -267,7 +273,7 @@ impl crate::Mono::Security::Cryptography::PKCS8_EncryptedPrivateKeyInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -278,7 +284,8 @@ impl crate::Mono::Security::Cryptography::PKCS8_EncryptedPrivateKeyInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Salt", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Salt", 0usize
                         )
                     })
             });
@@ -350,7 +357,7 @@ impl crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -361,7 +368,8 @@ impl crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Decode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Decode",
+                            1usize
                         )
                     })
             });
@@ -379,7 +387,7 @@ impl crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -395,7 +403,8 @@ impl crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DecodeDSA", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DecodeDSA", 2usize
                         )
                     })
             });
@@ -412,7 +421,7 @@ impl crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -425,7 +434,8 @@ impl crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DecodeRSA", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DecodeRSA", 1usize
                         )
                     })
             });
@@ -444,7 +454,7 @@ impl crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Security::Cryptography::AsymmetricAlgorithm,
@@ -457,7 +467,8 @@ impl crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Encode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Encode",
+                            1usize
                         )
                     })
             });
@@ -474,7 +485,7 @@ impl crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Security::Cryptography::DSA,
@@ -487,7 +498,8 @@ impl crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Encode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Encode",
+                            1usize
                         )
                     })
             });
@@ -504,7 +516,7 @@ impl crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Security::Cryptography::RSA,
@@ -517,7 +529,8 @@ impl crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Encode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Encode",
+                            1usize
                         )
                     })
             });
@@ -551,7 +564,7 @@ impl crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -567,7 +580,8 @@ impl crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Normalize", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Normalize", 2usize
                         )
                     })
             });
@@ -584,7 +598,7 @@ impl crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -597,7 +611,8 @@ impl crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RemoveLeadingZero", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RemoveLeadingZero", 1usize
                         )
                     })
             });
@@ -612,12 +627,13 @@ impl crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -633,7 +649,7 @@ impl crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -644,7 +660,8 @@ impl crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -661,7 +678,7 @@ impl crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -670,7 +687,8 @@ impl crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Algorithm", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Algorithm", 0usize
                         )
                     })
             });
@@ -687,7 +705,7 @@ impl crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -698,7 +716,8 @@ impl crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_PrivateKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_PrivateKey", 0usize
                         )
                     })
             });

@@ -63,7 +63,7 @@ impl crate::GlobalNamespace::PlaybackRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -72,7 +72,8 @@ impl crate::GlobalNamespace::PlaybackRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateClipQuad", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateClipQuad", 0usize
                         )
                     })
             });
@@ -89,7 +90,7 @@ impl crate::GlobalNamespace::PlaybackRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -98,7 +99,8 @@ impl crate::GlobalNamespace::PlaybackRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateTextures", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateTextures", 2usize
                         )
                     })
             });
@@ -111,12 +113,13 @@ impl crate::GlobalNamespace::PlaybackRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("GetDistanceToHMD")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetDistanceToHMD", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDistanceToHMD", 0usize
                         )
                     })
             });
@@ -133,7 +136,7 @@ impl crate::GlobalNamespace::PlaybackRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -147,7 +150,8 @@ impl crate::GlobalNamespace::PlaybackRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitCamera", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitCamera", 2usize
                         )
                     })
             });
@@ -162,12 +166,13 @@ impl crate::GlobalNamespace::PlaybackRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("LateUpdate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LateUpdate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LateUpdate", 0usize
                         )
                     })
             });
@@ -189,7 +194,7 @@ impl crate::GlobalNamespace::PlaybackRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -198,7 +203,8 @@ impl crate::GlobalNamespace::PlaybackRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OrientClipQuad", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OrientClipQuad", 0usize
                         )
                     })
             });
@@ -216,7 +222,7 @@ impl crate::GlobalNamespace::PlaybackRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
@@ -227,7 +233,8 @@ impl crate::GlobalNamespace::PlaybackRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RenderBackground", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RenderBackground", 1usize
                         )
                     })
             });
@@ -245,7 +252,7 @@ impl crate::GlobalNamespace::PlaybackRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
@@ -256,7 +263,8 @@ impl crate::GlobalNamespace::PlaybackRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RenderForeground", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RenderForeground", 1usize
                         )
                     })
             });
@@ -285,7 +293,7 @@ impl crate::GlobalNamespace::PlaybackRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -309,7 +317,8 @@ impl crate::GlobalNamespace::PlaybackRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Setup", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Setup",
+                            6usize
                         )
                     })
             });
@@ -335,12 +344,13 @@ impl crate::GlobalNamespace::PlaybackRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -356,7 +366,7 @@ impl crate::GlobalNamespace::PlaybackRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -365,7 +375,8 @@ impl crate::GlobalNamespace::PlaybackRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_texturesReadyEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_texturesReadyEvent", 1usize
                         )
                     })
             });
@@ -388,7 +399,7 @@ impl crate::GlobalNamespace::PlaybackRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -403,7 +414,8 @@ impl crate::GlobalNamespace::PlaybackRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_screenshots", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_screenshots", 0usize
                         )
                     })
             });
@@ -423,7 +435,7 @@ impl crate::GlobalNamespace::PlaybackRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -432,7 +444,8 @@ impl crate::GlobalNamespace::PlaybackRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_texturesReadyEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_texturesReadyEvent", 1usize
                         )
                     })
             });
@@ -508,7 +521,7 @@ impl crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -517,7 +530,8 @@ impl crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateTexture", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateTexture", 2usize
                         )
                     })
             });
@@ -548,7 +562,7 @@ impl crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -564,7 +578,8 @@ impl crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
                         )
                     })
             });
@@ -580,7 +595,7 @@ impl crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Color,
@@ -589,7 +604,8 @@ impl crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_backgroundColor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_backgroundColor", 0usize
                         )
                     })
             });
@@ -604,7 +620,7 @@ impl crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::LayerMask,
@@ -613,7 +629,8 @@ impl crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_layerMask", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_layerMask", 0usize
                         )
                     })
             });
@@ -630,7 +647,7 @@ impl crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -639,7 +656,8 @@ impl crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_name", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_name", 0usize
                         )
                     })
             });
@@ -656,7 +674,7 @@ impl crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -665,7 +683,8 @@ impl crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_path", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_path", 0usize
                         )
                     })
             });
@@ -682,7 +701,7 @@ impl crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
@@ -691,7 +710,8 @@ impl crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_texture", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_texture", 0usize
                         )
                     })
             });
@@ -708,7 +728,7 @@ impl crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type,
@@ -717,7 +737,8 @@ impl crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_type", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_type", 0usize
                         )
                     })
             });
@@ -733,7 +754,7 @@ impl crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -742,7 +763,8 @@ impl crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_path", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_path", 1usize
                         )
                     })
             });

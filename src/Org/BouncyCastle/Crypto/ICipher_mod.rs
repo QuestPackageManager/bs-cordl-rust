@@ -45,12 +45,13 @@ impl crate::Org::BouncyCastle::Crypto::ICipher {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("GetMaxOutputSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMaxOutputSize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMaxOutputSize", 1usize
                         )
                     })
             });
@@ -64,12 +65,13 @@ impl crate::Org::BouncyCastle::Crypto::ICipher {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("GetUpdateOutputSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetUpdateOutputSize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetUpdateOutputSize", 1usize
                         )
                     })
             });
@@ -89,7 +91,7 @@ impl crate::Org::BouncyCastle::Crypto::ICipher {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -98,7 +100,8 @@ impl crate::Org::BouncyCastle::Crypto::ICipher {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Stream", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Stream", 0usize
                         )
                     })
             });

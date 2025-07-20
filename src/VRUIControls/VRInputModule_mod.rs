@@ -76,7 +76,7 @@ impl crate::VRUIControls::VRInputModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -85,7 +85,8 @@ impl crate::VRUIControls::VRInputModule {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ClearSelection", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ClearSelection", 0usize
                         )
                     })
             });
@@ -104,7 +105,7 @@ impl crate::VRUIControls::VRInputModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -118,7 +119,8 @@ impl crate::VRUIControls::VRInputModule {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DeselectIfSelectionChanged", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DeselectIfSelectionChanged", 2usize
                         )
                     })
             });
@@ -136,7 +138,7 @@ impl crate::VRUIControls::VRInputModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
@@ -147,7 +149,8 @@ impl crate::VRUIControls::VRInputModule {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLastPointerEventData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLastPointerEventData", 1usize
                         )
                     })
             });
@@ -165,7 +168,7 @@ impl crate::VRUIControls::VRInputModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<crate::VRUIControls::MouseState>,
@@ -174,7 +177,8 @@ impl crate::VRUIControls::VRInputModule {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMousePointerEventData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMousePointerEventData", 1usize
                         )
                     })
             });
@@ -194,7 +198,7 @@ impl crate::VRUIControls::VRInputModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -211,7 +215,8 @@ impl crate::VRUIControls::VRInputModule {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPointerData", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPointerData", 3usize
                         )
                     })
             });
@@ -230,7 +235,7 @@ impl crate::VRUIControls::VRInputModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -244,7 +249,8 @@ impl crate::VRUIControls::VRInputModule {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandlePointerExitAndEnter", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandlePointerExitAndEnter", 2usize
                         )
                     })
             });
@@ -260,12 +266,13 @@ impl crate::VRUIControls::VRInputModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), bool, 1usize>("IsPointerOverGameObject")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsPointerOverGameObject", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsPointerOverGameObject", 1usize
                         )
                     })
             });
@@ -285,12 +292,13 @@ impl crate::VRUIControls::VRInputModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDisable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDisable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDisable", 0usize
                         )
                     })
             });
@@ -305,12 +313,13 @@ impl crate::VRUIControls::VRInputModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Process")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Process", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Process",
+                            0usize
                         )
                     })
             });
@@ -328,7 +337,7 @@ impl crate::VRUIControls::VRInputModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::EventSystems::PointerEventData,
@@ -339,7 +348,8 @@ impl crate::VRUIControls::VRInputModule {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessDrag", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessDrag", 1usize
                         )
                     })
             });
@@ -355,7 +365,7 @@ impl crate::VRUIControls::VRInputModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::VRUIControls::MouseButtonEventData,
@@ -366,7 +376,8 @@ impl crate::VRUIControls::VRInputModule {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessMousePress", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessMousePress", 1usize
                         )
                     })
             });
@@ -384,7 +395,7 @@ impl crate::VRUIControls::VRInputModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::EventSystems::PointerEventData,
@@ -395,7 +406,8 @@ impl crate::VRUIControls::VRInputModule {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessMove", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessMove", 1usize
                         )
                     })
             });
@@ -411,7 +423,7 @@ impl crate::VRUIControls::VRInputModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::EventSystems::RaycastResult,
@@ -423,7 +435,8 @@ impl crate::VRUIControls::VRInputModule {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RaycastComparer", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RaycastComparer", 2usize
                         )
                     })
             });
@@ -436,12 +449,13 @@ impl crate::VRUIControls::VRInputModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("SendUpdateEventToSelectedObject")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SendUpdateEventToSelectedObject", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SendUpdateEventToSelectedObject", 0usize
                         )
                     })
             });
@@ -458,7 +472,7 @@ impl crate::VRUIControls::VRInputModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Vector2,
@@ -472,7 +486,8 @@ impl crate::VRUIControls::VRInputModule {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShouldStartDrag", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShouldStartDrag", 4usize
                         )
                     })
             });
@@ -493,7 +508,7 @@ impl crate::VRUIControls::VRInputModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -502,7 +517,8 @@ impl crate::VRUIControls::VRInputModule {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToString", 0usize
                         )
                     })
             });
@@ -517,12 +533,13 @@ impl crate::VRUIControls::VRInputModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -542,7 +559,7 @@ impl crate::VRUIControls::VRInputModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -555,7 +572,8 @@ impl crate::VRUIControls::VRInputModule {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_onProcessMousePressEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_onProcessMousePressEvent", 1usize
                         )
                     })
             });
@@ -577,7 +595,7 @@ impl crate::VRUIControls::VRInputModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -592,7 +610,8 @@ impl crate::VRUIControls::VRInputModule {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_pointerDidClickEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_pointerDidClickEvent", 1usize
                         )
                     })
             });
@@ -605,12 +624,13 @@ impl crate::VRUIControls::VRInputModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_useMouseForPressInput")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_useMouseForPressInput", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_useMouseForPressInput", 0usize
                         )
                     })
             });
@@ -625,7 +645,7 @@ impl crate::VRUIControls::VRInputModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::VRUIControls::VRPointer>,
@@ -634,7 +654,8 @@ impl crate::VRUIControls::VRInputModule {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_vrPointer", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_vrPointer", 0usize
                         )
                     })
             });
@@ -654,7 +675,7 @@ impl crate::VRUIControls::VRInputModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -667,7 +688,8 @@ impl crate::VRUIControls::VRInputModule {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_onProcessMousePressEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_onProcessMousePressEvent", 1usize
                         )
                     })
             });
@@ -689,7 +711,7 @@ impl crate::VRUIControls::VRInputModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -704,7 +726,8 @@ impl crate::VRUIControls::VRInputModule {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_pointerDidClickEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_pointerDidClickEvent", 1usize
                         )
                     })
             });
@@ -720,7 +743,7 @@ impl crate::VRUIControls::VRInputModule {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -729,7 +752,8 @@ impl crate::VRUIControls::VRInputModule {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_useMouseForPressInput", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_useMouseForPressInput", 1usize
                         )
                     })
             });

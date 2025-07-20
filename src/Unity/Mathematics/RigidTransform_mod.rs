@@ -107,7 +107,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::float3, f32),
                         crate::Unity::Mathematics::RigidTransform,
@@ -116,7 +116,8 @@ impl crate::Unity::Mathematics::RigidTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AxisAngle", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AxisAngle", 2usize
                         )
                     })
             });
@@ -132,7 +133,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         bool,
@@ -141,7 +142,8 @@ impl crate::Unity::Mathematics::RigidTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Equals", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            1usize
                         )
                     })
             });
@@ -155,7 +157,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::RigidTransform),
                         bool,
@@ -164,7 +166,8 @@ impl crate::Unity::Mathematics::RigidTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Equals", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            1usize
                         )
                     })
             });
@@ -179,7 +182,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32, f32, f32),
                         crate::Unity::Mathematics::RigidTransform,
@@ -188,7 +191,8 @@ impl crate::Unity::Mathematics::RigidTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EulerXYZ", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EulerXYZ", 3usize
                         )
                     })
             });
@@ -203,7 +207,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::float3),
                         crate::Unity::Mathematics::RigidTransform,
@@ -212,7 +216,8 @@ impl crate::Unity::Mathematics::RigidTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EulerXYZ", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EulerXYZ", 1usize
                         )
                     })
             });
@@ -229,7 +234,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32, f32, f32),
                         crate::Unity::Mathematics::RigidTransform,
@@ -238,7 +243,8 @@ impl crate::Unity::Mathematics::RigidTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EulerXZY", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EulerXZY", 3usize
                         )
                     })
             });
@@ -253,7 +259,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::float3),
                         crate::Unity::Mathematics::RigidTransform,
@@ -262,7 +268,8 @@ impl crate::Unity::Mathematics::RigidTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EulerXZY", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EulerXZY", 1usize
                         )
                     })
             });
@@ -279,7 +286,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32, f32, f32),
                         crate::Unity::Mathematics::RigidTransform,
@@ -288,7 +295,8 @@ impl crate::Unity::Mathematics::RigidTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EulerYXZ", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EulerYXZ", 3usize
                         )
                     })
             });
@@ -303,7 +311,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::float3),
                         crate::Unity::Mathematics::RigidTransform,
@@ -312,7 +320,8 @@ impl crate::Unity::Mathematics::RigidTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EulerYXZ", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EulerYXZ", 1usize
                         )
                     })
             });
@@ -329,7 +338,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32, f32, f32),
                         crate::Unity::Mathematics::RigidTransform,
@@ -338,7 +347,8 @@ impl crate::Unity::Mathematics::RigidTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EulerYZX", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EulerYZX", 3usize
                         )
                     })
             });
@@ -353,7 +363,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::float3),
                         crate::Unity::Mathematics::RigidTransform,
@@ -362,7 +372,8 @@ impl crate::Unity::Mathematics::RigidTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EulerYZX", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EulerYZX", 1usize
                         )
                     })
             });
@@ -379,7 +390,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32, f32, f32),
                         crate::Unity::Mathematics::RigidTransform,
@@ -388,7 +399,8 @@ impl crate::Unity::Mathematics::RigidTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EulerZXY", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EulerZXY", 3usize
                         )
                     })
             });
@@ -403,7 +415,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::float3),
                         crate::Unity::Mathematics::RigidTransform,
@@ -412,7 +424,8 @@ impl crate::Unity::Mathematics::RigidTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EulerZXY", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EulerZXY", 1usize
                         )
                     })
             });
@@ -429,7 +442,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32, f32, f32),
                         crate::Unity::Mathematics::RigidTransform,
@@ -438,7 +451,8 @@ impl crate::Unity::Mathematics::RigidTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EulerZYX", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EulerZYX", 3usize
                         )
                     })
             });
@@ -453,7 +467,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::float3),
                         crate::Unity::Mathematics::RigidTransform,
@@ -462,7 +476,8 @@ impl crate::Unity::Mathematics::RigidTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EulerZYX", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EulerZYX", 1usize
                         )
                     })
             });
@@ -480,7 +495,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32, f32, f32, crate::Unity::Mathematics::math_RotationOrder),
                         crate::Unity::Mathematics::RigidTransform,
@@ -489,7 +504,8 @@ impl crate::Unity::Mathematics::RigidTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Euler", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Euler",
+                            4usize
                         )
                     })
             });
@@ -505,7 +521,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Unity::Mathematics::float3,
@@ -517,7 +533,8 @@ impl crate::Unity::Mathematics::RigidTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Euler", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Euler",
+                            2usize
                         )
                     })
             });
@@ -530,12 +547,13 @@ impl crate::Unity::Mathematics::RigidTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHashCode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHashCode", 0usize
                         )
                     })
             });
@@ -548,7 +566,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32),
                         crate::Unity::Mathematics::RigidTransform,
@@ -557,7 +575,8 @@ impl crate::Unity::Mathematics::RigidTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RotateX", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "RotateX",
+                            1usize
                         )
                     })
             });
@@ -572,7 +591,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32),
                         crate::Unity::Mathematics::RigidTransform,
@@ -581,7 +600,8 @@ impl crate::Unity::Mathematics::RigidTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RotateY", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "RotateY",
+                            1usize
                         )
                     })
             });
@@ -596,7 +616,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32),
                         crate::Unity::Mathematics::RigidTransform,
@@ -605,7 +625,8 @@ impl crate::Unity::Mathematics::RigidTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RotateZ", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "RotateZ",
+                            1usize
                         )
                     })
             });
@@ -622,7 +643,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -631,7 +652,8 @@ impl crate::Unity::Mathematics::RigidTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToString", 0usize
                         )
                     })
             });
@@ -650,7 +672,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -664,7 +686,8 @@ impl crate::Unity::Mathematics::RigidTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToString", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToString", 2usize
                         )
                     })
             });
@@ -679,7 +702,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::float3),
                         crate::Unity::Mathematics::RigidTransform,
@@ -688,7 +711,8 @@ impl crate::Unity::Mathematics::RigidTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Translate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Translate", 1usize
                         )
                     })
             });
@@ -705,7 +729,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::Unity::Mathematics::float3x3,
@@ -717,7 +741,8 @@ impl crate::Unity::Mathematics::RigidTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -733,7 +758,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::float4x4),
                         quest_hook::libil2cpp::Void,
@@ -742,7 +767,8 @@ impl crate::Unity::Mathematics::RigidTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -759,7 +785,7 @@ impl crate::Unity::Mathematics::RigidTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::Unity::Mathematics::quaternion,
@@ -771,7 +797,8 @@ impl crate::Unity::Mathematics::RigidTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });

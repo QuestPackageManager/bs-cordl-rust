@@ -51,7 +51,7 @@ impl crate::Zenject::TypeAnalyzer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
@@ -60,7 +60,8 @@ impl crate::Zenject::TypeAnalyzer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateTypeInfoFromReflection", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateTypeInfoFromReflection", 1usize
                         )
                     })
             });
@@ -77,7 +78,7 @@ impl crate::Zenject::TypeAnalyzer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
@@ -86,7 +87,8 @@ impl crate::Zenject::TypeAnalyzer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetInfoInternal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetInfoInternal", 1usize
                         )
                     })
             });
@@ -105,7 +107,7 @@ impl crate::Zenject::TypeAnalyzer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
@@ -114,7 +116,8 @@ impl crate::Zenject::TypeAnalyzer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetInfo", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetInfo",
+                            0usize
                         )
                     })
             });
@@ -131,7 +134,7 @@ impl crate::Zenject::TypeAnalyzer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
@@ -140,7 +143,8 @@ impl crate::Zenject::TypeAnalyzer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetInfo", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetInfo",
+                            1usize
                         )
                     })
             });
@@ -157,12 +161,13 @@ impl crate::Zenject::TypeAnalyzer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("HasInfo")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HasInfo", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "HasInfo",
+                            0usize
                         )
                     })
             });
@@ -175,7 +180,7 @@ impl crate::Zenject::TypeAnalyzer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         bool,
@@ -184,7 +189,8 @@ impl crate::Zenject::TypeAnalyzer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HasInfo", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "HasInfo",
+                            1usize
                         )
                     })
             });
@@ -197,7 +203,7 @@ impl crate::Zenject::TypeAnalyzer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         bool,
@@ -206,7 +212,8 @@ impl crate::Zenject::TypeAnalyzer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsStaticType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsStaticType", 1usize
                         )
                     })
             });
@@ -219,7 +226,7 @@ impl crate::Zenject::TypeAnalyzer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         bool,
@@ -228,7 +235,8 @@ impl crate::Zenject::TypeAnalyzer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShouldAllowDuringValidationInternal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShouldAllowDuringValidationInternal", 1usize
                         )
                     })
             });
@@ -243,7 +251,7 @@ impl crate::Zenject::TypeAnalyzer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         bool,
@@ -252,7 +260,8 @@ impl crate::Zenject::TypeAnalyzer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShouldAllowDuringValidation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShouldAllowDuringValidation", 0usize
                         )
                     })
             });
@@ -265,7 +274,7 @@ impl crate::Zenject::TypeAnalyzer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         bool,
@@ -274,7 +283,8 @@ impl crate::Zenject::TypeAnalyzer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShouldAllowDuringValidation", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShouldAllowDuringValidation", 1usize
                         )
                     })
             });
@@ -287,7 +297,7 @@ impl crate::Zenject::TypeAnalyzer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         bool,
@@ -296,7 +306,8 @@ impl crate::Zenject::TypeAnalyzer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShouldSkipTypeAnalysis", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShouldSkipTypeAnalysis", 1usize
                         )
                     })
             });
@@ -313,7 +324,7 @@ impl crate::Zenject::TypeAnalyzer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
@@ -322,7 +333,8 @@ impl crate::Zenject::TypeAnalyzer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGetInfo", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetInfo", 0usize
                         )
                     })
             });
@@ -339,7 +351,7 @@ impl crate::Zenject::TypeAnalyzer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
@@ -348,7 +360,8 @@ impl crate::Zenject::TypeAnalyzer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGetInfo", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetInfo", 1usize
                         )
                     })
             });
@@ -363,7 +376,7 @@ impl crate::Zenject::TypeAnalyzer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::Zenject::ReflectionBakingCoverageModes,
@@ -372,7 +385,8 @@ impl crate::Zenject::TypeAnalyzer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ReflectionBakingCoverageMode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ReflectionBakingCoverageMode", 0usize
                         )
                     })
             });
@@ -387,7 +401,7 @@ impl crate::Zenject::TypeAnalyzer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Zenject::ReflectionBakingCoverageModes),
                         quest_hook::libil2cpp::Void,
@@ -396,7 +410,8 @@ impl crate::Zenject::TypeAnalyzer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_ReflectionBakingCoverageMode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_ReflectionBakingCoverageMode", 1usize
                         )
                     })
             });

@@ -46,7 +46,7 @@ impl crate::BGLib::Polyglot::LanguageExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::BGLib::Polyglot::Language),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -55,7 +55,8 @@ impl crate::BGLib::Polyglot::LanguageExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToCultureInfoName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToCultureInfoName", 1usize
                         )
                     })
             });
@@ -70,7 +71,7 @@ impl crate::BGLib::Polyglot::LanguageExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         crate::BGLib::Polyglot::Language,
@@ -79,7 +80,8 @@ impl crate::BGLib::Polyglot::LanguageExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToLanguage", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToLanguage", 1usize
                         )
                     })
             });
@@ -95,7 +97,7 @@ impl crate::BGLib::Polyglot::LanguageExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::SystemLanguage, bool),
                         crate::BGLib::Polyglot::Language,
@@ -104,7 +106,8 @@ impl crate::BGLib::Polyglot::LanguageExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToLanguage", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToLanguage", 2usize
                         )
                     })
             });
@@ -121,7 +124,7 @@ impl crate::BGLib::Polyglot::LanguageExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::BGLib::Polyglot::Language),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -130,7 +133,8 @@ impl crate::BGLib::Polyglot::LanguageExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToSerializedName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToSerializedName", 1usize
                         )
                     })
             });

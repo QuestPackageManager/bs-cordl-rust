@@ -69,7 +69,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesP
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle),
                         quest_hook::libil2cpp::Void,
@@ -78,7 +78,8 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesP
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Provide", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Provide",
+                            1usize
                         )
                     })
             });
@@ -97,7 +98,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesP
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -113,7 +114,8 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesP
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Release", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Release",
+                            2usize
                         )
                     })
             });
@@ -128,12 +130,13 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesP
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -219,7 +222,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesP
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>),
                         quest_hook::libil2cpp::Void,
@@ -228,7 +231,8 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesP
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AsyncOperationCompleted", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AsyncOperationCompleted", 1usize
                         )
                     })
             });
@@ -248,12 +252,13 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesP
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("PercentComplete")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PercentComplete", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PercentComplete", 0usize
                         )
                     })
             });
@@ -267,7 +272,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesP
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle),
                         quest_hook::libil2cpp::Void,
@@ -276,7 +281,8 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesP
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Start", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Start",
+                            1usize
                         )
                     })
             });
@@ -289,12 +295,13 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesP
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("WaitForCompletionHandler")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WaitForCompletionHandler", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WaitForCompletionHandler", 0usize
                         )
                     })
             });
@@ -307,12 +314,13 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesP
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

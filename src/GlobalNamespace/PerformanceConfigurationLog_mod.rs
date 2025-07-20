@@ -58,7 +58,7 @@ impl crate::GlobalNamespace::PerformanceConfigurationLog {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -84,7 +84,8 @@ impl crate::GlobalNamespace::PerformanceConfigurationLog {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Create", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Create",
+                            6usize
                         )
                     })
             });
@@ -105,7 +106,7 @@ impl crate::GlobalNamespace::PerformanceConfigurationLog {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>),
                         quest_hook::libil2cpp::Void,
@@ -114,7 +115,8 @@ impl crate::GlobalNamespace::PerformanceConfigurationLog {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LogApplicationInfo", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LogApplicationInfo", 1usize
                         )
                     })
             });
@@ -129,7 +131,7 @@ impl crate::GlobalNamespace::PerformanceConfigurationLog {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>),
                         quest_hook::libil2cpp::Void,
@@ -138,7 +140,8 @@ impl crate::GlobalNamespace::PerformanceConfigurationLog {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LogApplicationState", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LogApplicationState", 1usize
                         )
                     })
             });
@@ -156,7 +159,7 @@ impl crate::GlobalNamespace::PerformanceConfigurationLog {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -172,7 +175,8 @@ impl crate::GlobalNamespace::PerformanceConfigurationLog {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LogDynamicStates", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LogDynamicStates", 2usize
                         )
                     })
             });
@@ -194,7 +198,7 @@ impl crate::GlobalNamespace::PerformanceConfigurationLog {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -214,7 +218,8 @@ impl crate::GlobalNamespace::PerformanceConfigurationLog {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LogEntry", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LogEntry", 4usize
                         )
                     })
             });
@@ -230,7 +235,7 @@ impl crate::GlobalNamespace::PerformanceConfigurationLog {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -244,7 +249,8 @@ impl crate::GlobalNamespace::PerformanceConfigurationLog {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LogLevelSettings", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LogLevelSettings", 2usize
                         )
                     })
             });
@@ -259,7 +265,7 @@ impl crate::GlobalNamespace::PerformanceConfigurationLog {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>),
                         quest_hook::libil2cpp::Void,
@@ -268,7 +274,8 @@ impl crate::GlobalNamespace::PerformanceConfigurationLog {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LogOculusXrInfo", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LogOculusXrInfo", 1usize
                         )
                     })
             });
@@ -283,7 +290,7 @@ impl crate::GlobalNamespace::PerformanceConfigurationLog {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>),
                         quest_hook::libil2cpp::Void,
@@ -292,7 +299,8 @@ impl crate::GlobalNamespace::PerformanceConfigurationLog {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LogOpenXrInfo", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LogOpenXrInfo", 1usize
                         )
                     })
             });
@@ -307,7 +315,7 @@ impl crate::GlobalNamespace::PerformanceConfigurationLog {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>),
                         quest_hook::libil2cpp::Void,
@@ -316,7 +324,8 @@ impl crate::GlobalNamespace::PerformanceConfigurationLog {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LogOvrInfo", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LogOvrInfo", 1usize
                         )
                     })
             });
@@ -334,7 +343,7 @@ impl crate::GlobalNamespace::PerformanceConfigurationLog {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -350,7 +359,8 @@ impl crate::GlobalNamespace::PerformanceConfigurationLog {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LogPlayerSettings", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LogPlayerSettings", 2usize
                         )
                     })
             });
@@ -369,7 +379,7 @@ impl crate::GlobalNamespace::PerformanceConfigurationLog {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -388,7 +398,8 @@ impl crate::GlobalNamespace::PerformanceConfigurationLog {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LogSettings", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LogSettings", 3usize
                         )
                     })
             });
@@ -403,7 +414,7 @@ impl crate::GlobalNamespace::PerformanceConfigurationLog {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>),
                         quest_hook::libil2cpp::Void,
@@ -412,7 +423,8 @@ impl crate::GlobalNamespace::PerformanceConfigurationLog {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LogSystemInfo", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LogSystemInfo", 1usize
                         )
                     })
             });
@@ -427,7 +439,7 @@ impl crate::GlobalNamespace::PerformanceConfigurationLog {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>),
                         quest_hook::libil2cpp::Void,
@@ -436,7 +448,8 @@ impl crate::GlobalNamespace::PerformanceConfigurationLog {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LogXrInfo", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LogXrInfo", 1usize
                         )
                     })
             });

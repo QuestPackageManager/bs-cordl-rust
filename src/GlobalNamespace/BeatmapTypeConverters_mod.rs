@@ -45,7 +45,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::BeatmapSaveDataCommon::BeatmapEventType),
                         crate::GlobalNamespace::BasicBeatmapEventType,
@@ -54,7 +54,8 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertBasicBeatmapEventType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertBasicBeatmapEventType", 1usize
                         )
                     })
             });
@@ -71,7 +72,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::BeatmapSaveDataCommon::DistributionParamType),
                         crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
@@ -80,7 +81,8 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertDistributionParamType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertDistributionParamType", 1usize
                         )
                     })
             });
@@ -95,7 +97,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::BeatmapSaveDataCommon::EaseType),
                         crate::GlobalNamespace::EaseType,
@@ -104,7 +106,8 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertEaseType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertEaseType", 1usize
                         )
                     })
             });
@@ -119,7 +122,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::BeatmapSaveDataCommon::EnvironmentColorType),
                         crate::GlobalNamespace::EnvironmentColorType,
@@ -128,7 +131,8 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertEnvironmentColorType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertEnvironmentColorType", 1usize
                         )
                     })
             });
@@ -143,7 +147,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::BeatmapSaveDataCommon::Axis),
                         crate::GlobalNamespace::LightAxis,
@@ -152,7 +156,8 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertLightAxis", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertLightAxis", 1usize
                         )
                     })
             });
@@ -167,7 +172,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::BeatmapSaveDataCommon::RotationDirection),
                         crate::GlobalNamespace::LightRotationDirection,
@@ -176,7 +181,8 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertLightRotationDirection", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertLightRotationDirection", 1usize
                         )
                     })
             });
@@ -191,7 +197,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::BeatmapSaveDataVersion2_6_0AndEarlier::ColorType),
                         crate::GlobalNamespace::ColorType,
@@ -200,7 +206,8 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertNoteColorType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertNoteColorType", 1usize
                         )
                     })
             });
@@ -215,7 +222,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::BeatmapSaveDataCommon::NoteColorType),
                         crate::GlobalNamespace::ColorType,
@@ -224,7 +231,8 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertNoteColorType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertNoteColorType", 1usize
                         )
                     })
             });
@@ -239,7 +247,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::BeatmapSaveDataCommon::NoteCutDirection),
                         crate::GlobalNamespace::NoteCutDirection,
@@ -248,7 +256,8 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertNoteCutDirection", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertNoteCutDirection", 1usize
                         )
                     })
             });
@@ -263,7 +272,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::BeatmapSaveDataCommon::NoteLineLayer),
                         crate::GlobalNamespace::NoteLineLayer,
@@ -272,7 +281,8 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertNoteLineLayer", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertNoteLineLayer", 1usize
                         )
                     })
             });
@@ -287,7 +297,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         crate::GlobalNamespace::NoteLineLayer,
@@ -296,7 +306,8 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertNoteLineLayer", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertNoteLineLayer", 1usize
                         )
                     })
             });
@@ -311,7 +322,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::BeatmapSaveDataCommon::OffsetDirection),
                         crate::GlobalNamespace::OffsetDirection,
@@ -320,7 +331,8 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertOffsetDirection", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertOffsetDirection", 1usize
                         )
                     })
             });
@@ -335,7 +347,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::BeatmapSaveDataVersion3::SliderType),
                         crate::GlobalNamespace::SliderData_Type,
@@ -344,7 +356,8 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertSliderDataType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertSliderDataType", 1usize
                         )
                     })
             });
@@ -359,7 +372,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::BeatmapSaveDataCommon::SliderMidAnchorMode),
                         crate::GlobalNamespace::SliderMidAnchorMode,
@@ -368,7 +381,8 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertSliderMidAnchorMode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertSliderMidAnchorMode", 1usize
                         )
                     })
             });
@@ -383,7 +397,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::BeatmapSaveDataVersion3::TransitionType),
                         crate::GlobalNamespace::EaseType,
@@ -392,7 +406,8 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertTransitionTypeToEaseType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertTransitionTypeToEaseType", 1usize
                         )
                     })
             });
@@ -407,7 +422,7 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::BeatmapSaveDataVersion3::TransitionType),
                         bool,
@@ -416,7 +431,8 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertTransitionTypeToExtension", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertTransitionTypeToExtension", 1usize
                         )
                     })
             });

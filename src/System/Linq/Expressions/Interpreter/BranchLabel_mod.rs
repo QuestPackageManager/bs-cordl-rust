@@ -56,7 +56,7 @@ impl crate::System::Linq::Expressions::Interpreter::BranchLabel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -70,7 +70,8 @@ impl crate::System::Linq::Expressions::Interpreter::BranchLabel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddBranch", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddBranch", 2usize
                         )
                     })
             });
@@ -89,7 +90,7 @@ impl crate::System::Linq::Expressions::Interpreter::BranchLabel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -103,7 +104,8 @@ impl crate::System::Linq::Expressions::Interpreter::BranchLabel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FixupBranch", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FixupBranch", 2usize
                         )
                     })
             });
@@ -121,7 +123,7 @@ impl crate::System::Linq::Expressions::Interpreter::BranchLabel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Linq::Expressions::Interpreter::InstructionList,
@@ -132,7 +134,8 @@ impl crate::System::Linq::Expressions::Interpreter::BranchLabel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Mark", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Mark",
+                            1usize
                         )
                     })
             });
@@ -156,7 +159,7 @@ impl crate::System::Linq::Expressions::Interpreter::BranchLabel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Linq::Expressions::Interpreter::RuntimeLabel,
@@ -165,7 +168,8 @@ impl crate::System::Linq::Expressions::Interpreter::BranchLabel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToRuntimeLabel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToRuntimeLabel", 0usize
                         )
                     })
             });
@@ -180,12 +184,13 @@ impl crate::System::Linq::Expressions::Interpreter::BranchLabel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -198,12 +203,13 @@ impl crate::System::Linq::Expressions::Interpreter::BranchLabel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_HasRuntimeLabel")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_HasRuntimeLabel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_HasRuntimeLabel", 0usize
                         )
                     })
             });
@@ -214,12 +220,13 @@ impl crate::System::Linq::Expressions::Interpreter::BranchLabel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_LabelIndex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_LabelIndex", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_LabelIndex", 0usize
                         )
                     })
             });
@@ -230,12 +237,13 @@ impl crate::System::Linq::Expressions::Interpreter::BranchLabel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_TargetIndex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_TargetIndex", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_TargetIndex", 0usize
                         )
                     })
             });
@@ -249,7 +257,7 @@ impl crate::System::Linq::Expressions::Interpreter::BranchLabel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -258,7 +266,8 @@ impl crate::System::Linq::Expressions::Interpreter::BranchLabel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_LabelIndex", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_LabelIndex", 1usize
                         )
                     })
             });

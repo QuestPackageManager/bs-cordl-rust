@@ -70,7 +70,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
@@ -82,7 +82,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddColumnProperties", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddColumnProperties", 2usize
                         )
                     })
             });
@@ -98,7 +99,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -112,7 +113,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddExtendedProperties", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddExtendedProperties", 2usize
                         )
                     })
             });
@@ -129,7 +131,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -144,7 +146,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddExtendedProperties", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddExtendedProperties", 3usize
                         )
                     })
             });
@@ -162,7 +165,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -177,7 +180,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddXdoProperties", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddXdoProperties", 3usize
                         )
                     })
             });
@@ -196,7 +200,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -214,7 +218,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddXdoProperty", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddXdoProperty", 4usize
                         )
                     })
             });
@@ -233,7 +238,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
@@ -251,7 +256,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AppendChildWithoutRef", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AppendChildWithoutRef", 4usize
                         )
                     })
             });
@@ -266,7 +272,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>),
                         bool,
@@ -275,7 +281,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AutoGenerated", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AutoGenerated", 1usize
                         )
                     })
             });
@@ -288,7 +295,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>),
                         bool,
@@ -297,7 +304,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AutoGenerated", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AutoGenerated", 1usize
                         )
                     })
             });
@@ -311,7 +319,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Data::ForeignKeyConstraint,
@@ -322,7 +330,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AutoGenerated", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AutoGenerated", 1usize
                         )
                     })
             });
@@ -336,7 +345,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -350,7 +359,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AutoGenerated", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AutoGenerated", 2usize
                         )
                     })
             });
@@ -365,7 +375,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Data::UniqueConstraint,
@@ -376,7 +386,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AutoGenerated", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AutoGenerated", 1usize
                         )
                     })
             });
@@ -390,7 +401,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>),
                         quest_hook::libil2cpp::Void,
@@ -399,7 +410,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateRelations", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateRelations", 1usize
                         )
                     })
             });
@@ -415,7 +427,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>),
                         quest_hook::libil2cpp::Void,
@@ -424,7 +436,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateTablesHierarchy", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateTablesHierarchy", 1usize
                         )
                     })
             });
@@ -445,7 +458,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -458,7 +471,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateToplevelTables", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateToplevelTables", 0usize
                         )
                     })
             });
@@ -480,7 +494,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocument>,
@@ -493,7 +507,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FillDataSetElement", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FillDataSetElement", 3usize
                         )
                     })
             });
@@ -511,7 +526,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
@@ -525,7 +540,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FindSimpleType", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindSimpleType", 2usize
                         )
                     })
             });
@@ -543,7 +559,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -552,7 +568,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FindTargetNamespace", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindTargetNamespace", 1usize
                         )
                     })
             });
@@ -571,7 +588,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
@@ -585,7 +602,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FindTypeNode", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindTypeNode", 2usize
                         )
                     })
             });
@@ -601,7 +619,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::ArrayList,
@@ -612,7 +630,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenerateConstraintNames", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateConstraintNames", 1usize
                         )
                     })
             });
@@ -628,7 +647,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>),
                         quest_hook::libil2cpp::Void,
@@ -637,7 +656,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenerateConstraintNames", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateConstraintNames", 1usize
                         )
                     })
             });
@@ -654,7 +674,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
@@ -666,7 +686,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenerateConstraintNames", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateConstraintNames", 2usize
                         )
                     })
             });
@@ -684,7 +705,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
@@ -693,7 +714,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSchema", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSchema", 1usize
                         )
                     })
             });
@@ -714,7 +736,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
@@ -728,7 +750,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleColumn", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleColumn", 4usize
                         )
                     })
             });
@@ -747,7 +770,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
@@ -761,7 +784,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleColumnType", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleColumnType", 4usize
                         )
                     })
             });
@@ -780,7 +804,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>,
@@ -792,7 +816,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleRelation", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleRelation", 2usize
                         )
                     })
             });
@@ -812,7 +837,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
@@ -825,7 +850,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleTable", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleTable", 3usize
                         )
                     })
             });
@@ -846,7 +872,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
@@ -860,7 +886,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleTable", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleTable", 4usize
                         )
                     })
             });
@@ -876,7 +903,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>),
                         bool,
@@ -885,7 +912,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HasMixedColumns", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HasMixedColumns", 1usize
                         )
                     })
             });
@@ -899,7 +927,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>),
                         bool,
@@ -908,7 +936,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HaveExtendedProperties", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HaveExtendedProperties", 1usize
                         )
                     })
             });
@@ -922,7 +951,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         bool,
@@ -931,7 +960,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsAutoGenerated", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsAutoGenerated", 1usize
                         )
                     })
             });
@@ -956,7 +986,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
@@ -969,7 +999,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Save", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Save",
+                            3usize
                         )
                     })
             });
@@ -988,7 +1019,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
@@ -1002,7 +1033,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Save", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Save",
+                            4usize
                         )
                     })
             });
@@ -1027,7 +1059,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
@@ -1049,7 +1081,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Save", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Save",
+                            5usize
                         )
                     })
             });
@@ -1070,7 +1103,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
@@ -1082,7 +1115,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Save", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Save",
+                            2usize
                         )
                     })
             });
@@ -1099,7 +1133,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
@@ -1111,7 +1145,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Save", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Save",
+                            2usize
                         )
                     })
             });
@@ -1130,7 +1165,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocument>,
@@ -1142,7 +1177,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SchemaTree", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SchemaTree", 2usize
                         )
                     })
             });
@@ -1162,7 +1198,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocument>,
@@ -1177,7 +1213,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SchemaTree", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SchemaTree", 5usize
                         )
                     })
             });
@@ -1194,7 +1231,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
@@ -1206,7 +1243,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetMSDataAttribute", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetMSDataAttribute", 2usize
                         )
                     })
             });
@@ -1222,7 +1260,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>),
                         quest_hook::libil2cpp::Void,
@@ -1231,7 +1269,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetPath", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetPath",
+                            1usize
                         )
                     })
             });
@@ -1247,7 +1286,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::ArrayList,
@@ -1258,7 +1297,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetupAutoGenerated", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetupAutoGenerated", 1usize
                         )
                     })
             });
@@ -1274,7 +1314,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>),
                         quest_hook::libil2cpp::Void,
@@ -1283,7 +1323,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetupAutoGenerated", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetupAutoGenerated", 1usize
                         )
                     })
             });
@@ -1299,7 +1340,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>),
                         quest_hook::libil2cpp::Void,
@@ -1308,7 +1349,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetupAutoGenerated", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetupAutoGenerated", 1usize
                         )
                     })
             });
@@ -1325,7 +1367,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::Data::AcceptRejectRule),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1334,7 +1376,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TranslateAcceptRejectRule", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TranslateAcceptRejectRule", 1usize
                         )
                     })
             });
@@ -1351,7 +1394,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::Data::Rule),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1360,7 +1403,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TranslateRule", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TranslateRule", 1usize
                         )
                     })
             });
@@ -1375,7 +1419,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Void,
@@ -1384,7 +1428,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ValidateColumnMapping", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValidateColumnMapping", 1usize
                         )
                     })
             });
@@ -1402,7 +1447,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocument>,
@@ -1417,7 +1462,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteSchemaRoot", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteSchemaRoot", 3usize
                         )
                     })
             });
@@ -1434,7 +1480,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1443,7 +1489,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "XmlDataTypeName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "XmlDataTypeName", 1usize
                         )
                     })
             });
@@ -1458,7 +1505,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Data::PropertyCollection,
@@ -1469,7 +1516,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "_PropsNotEmpty", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "_PropsNotEmpty", 1usize
                         )
                     })
             });
@@ -1483,7 +1531,7 @@ impl crate::System::Data::XmlTreeGen {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Data::SchemaFormat),
                         quest_hook::libil2cpp::Void,
@@ -1492,7 +1540,8 @@ impl crate::System::Data::XmlTreeGen {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });

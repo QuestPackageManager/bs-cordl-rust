@@ -64,7 +64,7 @@ impl crate::System::Net::EndPointListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -85,7 +85,8 @@ impl crate::System::Net::EndPointListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Accept", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Accept",
+                            3usize
                         )
                     })
             });
@@ -102,7 +103,7 @@ impl crate::System::Net::EndPointListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -116,7 +117,8 @@ impl crate::System::Net::EndPointListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddPrefix", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddPrefix", 2usize
                         )
                     })
             });
@@ -133,7 +135,7 @@ impl crate::System::Net::EndPointListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -147,7 +149,8 @@ impl crate::System::Net::EndPointListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddSpecial", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddSpecial", 2usize
                         )
                     })
             });
@@ -163,7 +166,7 @@ impl crate::System::Net::EndPointListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Net::HttpListenerContext,
@@ -174,7 +177,8 @@ impl crate::System::Net::EndPointListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindContext", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindContext", 1usize
                         )
                     })
             });
@@ -187,7 +191,7 @@ impl crate::System::Net::EndPointListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -196,7 +200,8 @@ impl crate::System::Net::EndPointListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckIfRemove", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckIfRemove", 0usize
                         )
                     })
             });
@@ -211,12 +216,13 @@ impl crate::System::Net::EndPointListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Close")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Close", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Close",
+                            0usize
                         )
                     })
             });
@@ -239,7 +245,7 @@ impl crate::System::Net::EndPointListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -263,7 +269,8 @@ impl crate::System::Net::EndPointListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MatchFromList", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MatchFromList", 4usize
                         )
                     })
             });
@@ -291,7 +298,7 @@ impl crate::System::Net::EndPointListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -307,7 +314,8 @@ impl crate::System::Net::EndPointListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnAccept", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnAccept", 2usize
                         )
                     })
             });
@@ -324,7 +332,7 @@ impl crate::System::Net::EndPointListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Net::Sockets::SocketAsyncEventArgs,
@@ -335,7 +343,8 @@ impl crate::System::Net::EndPointListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessAccept", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessAccept", 1usize
                         )
                     })
             });
@@ -351,7 +360,7 @@ impl crate::System::Net::EndPointListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Net::HttpConnection>),
                         quest_hook::libil2cpp::Void,
@@ -360,7 +369,8 @@ impl crate::System::Net::EndPointListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RemoveConnection", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RemoveConnection", 1usize
                         )
                     })
             });
@@ -377,7 +387,7 @@ impl crate::System::Net::EndPointListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -391,7 +401,8 @@ impl crate::System::Net::EndPointListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RemovePrefix", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RemovePrefix", 2usize
                         )
                     })
             });
@@ -408,7 +419,7 @@ impl crate::System::Net::EndPointListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -422,7 +433,8 @@ impl crate::System::Net::EndPointListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RemoveSpecial", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RemoveSpecial", 2usize
                         )
                     })
             });
@@ -443,7 +455,7 @@ impl crate::System::Net::EndPointListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Uri>,
@@ -459,7 +471,8 @@ impl crate::System::Net::EndPointListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SearchListener", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SearchListener", 2usize
                         )
                     })
             });
@@ -475,7 +488,7 @@ impl crate::System::Net::EndPointListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Net::HttpListenerContext,
@@ -486,7 +499,8 @@ impl crate::System::Net::EndPointListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnbindContext", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnbindContext", 1usize
                         )
                     })
             });
@@ -505,7 +519,7 @@ impl crate::System::Net::EndPointListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
@@ -519,7 +533,8 @@ impl crate::System::Net::EndPointListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
                         )
                     })
             });
@@ -536,7 +551,7 @@ impl crate::System::Net::EndPointListener {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
@@ -545,7 +560,8 @@ impl crate::System::Net::EndPointListener {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Listener", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Listener", 0usize
                         )
                     })
             });

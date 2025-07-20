@@ -55,7 +55,7 @@ impl crate::Newtonsoft::Json::Utilities::DynamicUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Dynamic::IDynamicMetaObjectProvider,
@@ -72,7 +72,8 @@ impl crate::Newtonsoft::Json::Utilities::DynamicUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetDynamicMemberNames", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDynamicMemberNames", 1usize
                         )
                     })
             });
@@ -147,7 +148,7 @@ impl crate::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -156,7 +157,8 @@ impl crate::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateMemberCalls", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateMemberCalls", 0usize
                         )
                     })
             });
@@ -173,7 +175,7 @@ impl crate::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<i32>,
@@ -184,7 +186,8 @@ impl crate::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateSharpArgumentInfoArray", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateSharpArgumentInfoArray", 1usize
                         )
                     })
             });
@@ -204,7 +207,7 @@ impl crate::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -220,7 +223,8 @@ impl crate::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMember", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMember", 2usize
                         )
                     })
             });
@@ -233,7 +237,7 @@ impl crate::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -242,7 +246,8 @@ impl crate::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Init", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            0usize
                         )
                     })
             });
@@ -262,7 +267,7 @@ impl crate::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -278,7 +283,8 @@ impl crate::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetMember", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetMember", 2usize
                         )
                     })
             });

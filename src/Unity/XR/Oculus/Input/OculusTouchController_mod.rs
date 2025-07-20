@@ -108,7 +108,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -117,7 +117,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FinishSetup", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FinishSetup", 0usize
                         )
                     })
             });
@@ -139,12 +140,13 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -163,7 +165,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -174,7 +176,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_deviceAcceleration", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_deviceAcceleration", 0usize
                         )
                     })
             });
@@ -193,7 +196,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -204,7 +207,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_deviceAngularAcceleration", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_deviceAngularAcceleration", 0usize
                         )
                     })
             });
@@ -223,7 +227,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -234,7 +238,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_deviceAngularVelocity", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_deviceAngularVelocity", 0usize
                         )
                     })
             });
@@ -253,7 +258,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -264,7 +269,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_devicePosition", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_devicePosition", 0usize
                         )
                     })
             });
@@ -283,7 +289,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -294,7 +300,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_deviceRotation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_deviceRotation", 0usize
                         )
                     })
             });
@@ -313,7 +320,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -324,7 +331,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_deviceVelocity", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_deviceVelocity", 0usize
                         )
                     })
             });
@@ -341,7 +349,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -352,7 +360,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_grip", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_grip", 0usize
                         )
                     })
             });
@@ -371,7 +380,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -382,7 +391,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_gripPressed", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_gripPressed", 0usize
                         )
                     })
             });
@@ -401,7 +411,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -412,7 +422,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_isTracked", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isTracked", 0usize
                         )
                     })
             });
@@ -431,7 +442,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -442,7 +453,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_primaryButton", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_primaryButton", 0usize
                         )
                     })
             });
@@ -461,7 +473,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -472,7 +484,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_primaryTouched", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_primaryTouched", 0usize
                         )
                     })
             });
@@ -491,7 +504,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -502,7 +515,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_secondaryButton", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_secondaryButton", 0usize
                         )
                     })
             });
@@ -521,7 +535,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -532,7 +546,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_secondaryTouched", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_secondaryTouched", 0usize
                         )
                     })
             });
@@ -551,7 +566,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -562,7 +577,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_start", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_start", 0usize
                         )
                     })
             });
@@ -581,7 +597,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -592,7 +608,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_thumbstick", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_thumbstick", 0usize
                         )
                     })
             });
@@ -611,7 +628,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -622,7 +639,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_thumbstickClicked", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_thumbstickClicked", 0usize
                         )
                     })
             });
@@ -641,7 +659,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -652,7 +670,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_thumbstickTouched", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_thumbstickTouched", 0usize
                         )
                     })
             });
@@ -671,7 +690,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -682,7 +701,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_trackingState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_trackingState", 0usize
                         )
                     })
             });
@@ -699,7 +719,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -710,7 +730,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_trigger", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_trigger", 0usize
                         )
                     })
             });
@@ -729,7 +750,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -740,7 +761,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_triggerPressed", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_triggerPressed", 0usize
                         )
                     })
             });
@@ -757,7 +779,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -768,7 +790,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_triggerTouched", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_triggerTouched", 0usize
                         )
                     })
             });
@@ -786,7 +809,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -797,7 +820,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_deviceAcceleration", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_deviceAcceleration", 1usize
                         )
                     })
             });
@@ -815,7 +839,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -826,7 +850,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_deviceAngularAcceleration", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_deviceAngularAcceleration", 1usize
                         )
                     })
             });
@@ -844,7 +869,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -855,7 +880,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_deviceAngularVelocity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_deviceAngularVelocity", 1usize
                         )
                     })
             });
@@ -873,7 +899,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -884,7 +910,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_devicePosition", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_devicePosition", 1usize
                         )
                     })
             });
@@ -902,7 +929,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::QuaternionControl,
@@ -913,7 +940,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_deviceRotation", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_deviceRotation", 1usize
                         )
                     })
             });
@@ -931,7 +959,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -942,7 +970,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_deviceVelocity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_deviceVelocity", 1usize
                         )
                     })
             });
@@ -960,7 +989,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::AxisControl,
@@ -971,7 +1000,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_grip", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_grip", 1usize
                         )
                     })
             });
@@ -989,7 +1019,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -1000,7 +1030,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_gripPressed", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_gripPressed", 1usize
                         )
                     })
             });
@@ -1018,7 +1049,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -1029,7 +1060,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_isTracked", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_isTracked", 1usize
                         )
                     })
             });
@@ -1047,7 +1079,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -1058,7 +1090,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_primaryButton", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_primaryButton", 1usize
                         )
                     })
             });
@@ -1076,7 +1109,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -1087,7 +1120,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_primaryTouched", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_primaryTouched", 1usize
                         )
                     })
             });
@@ -1105,7 +1139,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -1116,7 +1150,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_secondaryButton", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_secondaryButton", 1usize
                         )
                     })
             });
@@ -1134,7 +1169,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -1145,7 +1180,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_secondaryTouched", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_secondaryTouched", 1usize
                         )
                     })
             });
@@ -1163,7 +1199,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -1174,7 +1210,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_start", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_start", 1usize
                         )
                     })
             });
@@ -1192,7 +1229,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::Vector2Control,
@@ -1203,7 +1240,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_thumbstick", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_thumbstick", 1usize
                         )
                     })
             });
@@ -1221,7 +1259,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -1232,7 +1270,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_thumbstickClicked", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_thumbstickClicked", 1usize
                         )
                     })
             });
@@ -1250,7 +1289,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -1261,7 +1300,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_thumbstickTouched", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_thumbstickTouched", 1usize
                         )
                     })
             });
@@ -1279,7 +1319,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::IntegerControl,
@@ -1290,7 +1330,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_trackingState", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_trackingState", 1usize
                         )
                     })
             });
@@ -1308,7 +1349,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::AxisControl,
@@ -1319,7 +1360,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_trigger", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_trigger", 1usize
                         )
                     })
             });
@@ -1337,7 +1379,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -1348,7 +1390,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_triggerPressed", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_triggerPressed", 1usize
                         )
                     })
             });
@@ -1366,7 +1409,7 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::AxisControl,
@@ -1377,7 +1420,8 @@ impl crate::Unity::XR::Oculus::Input::OculusTouchController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_triggerTouched", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_triggerTouched", 1usize
                         )
                     })
             });

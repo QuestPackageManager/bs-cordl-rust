@@ -51,7 +51,7 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::HexEncoder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -67,7 +67,8 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::HexEncoder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Decode", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Decode",
+                            4usize
                         )
                     })
             });
@@ -87,7 +88,7 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::HexEncoder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -104,7 +105,8 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::HexEncoder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DecodeStrict", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DecodeStrict", 3usize
                         )
                     })
             });
@@ -121,7 +123,7 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::HexEncoder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -135,7 +137,8 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::HexEncoder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DecodeString", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DecodeString", 2usize
                         )
                     })
             });
@@ -155,7 +158,7 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::HexEncoder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -174,7 +177,8 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::HexEncoder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Encode", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Encode",
+                            5usize
                         )
                     })
             });
@@ -193,7 +197,7 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::HexEncoder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -209,7 +213,8 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::HexEncoder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Encode", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Encode",
+                            4usize
                         )
                     })
             });
@@ -222,12 +227,13 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::HexEncoder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(char), bool, 1usize>("Ignore")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Ignore", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Ignore",
+                            1usize
                         )
                     })
             });
@@ -240,7 +246,7 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::HexEncoder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -249,7 +255,8 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::HexEncoder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitialiseDecodingTable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitialiseDecodingTable", 0usize
                         )
                     })
             });
@@ -271,12 +278,13 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::HexEncoder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

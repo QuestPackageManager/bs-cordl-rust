@@ -45,7 +45,7 @@ impl crate::Mono::Net::Security::MonoTlsProviderFactory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -56,7 +56,8 @@ impl crate::Mono::Net::Security::MonoTlsProviderFactory {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateDefaultProviderImpl", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateDefaultProviderImpl", 0usize
                         )
                     })
             });
@@ -71,7 +72,7 @@ impl crate::Mono::Net::Security::MonoTlsProviderFactory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -82,7 +83,8 @@ impl crate::Mono::Net::Security::MonoTlsProviderFactory {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetProvider", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetProvider", 0usize
                         )
                     })
             });
@@ -97,7 +99,7 @@ impl crate::Mono::Net::Security::MonoTlsProviderFactory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -108,7 +110,8 @@ impl crate::Mono::Net::Security::MonoTlsProviderFactory {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetProviderInternal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetProviderInternal", 0usize
                         )
                     })
             });
@@ -123,7 +126,7 @@ impl crate::Mono::Net::Security::MonoTlsProviderFactory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -132,7 +135,8 @@ impl crate::Mono::Net::Security::MonoTlsProviderFactory {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitializeInternal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitializeInternal", 0usize
                         )
                     })
             });
@@ -147,7 +151,7 @@ impl crate::Mono::Net::Security::MonoTlsProviderFactory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -156,7 +160,8 @@ impl crate::Mono::Net::Security::MonoTlsProviderFactory {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitializeProviderRegistration", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitializeProviderRegistration", 0usize
                         )
                     })
             });
@@ -174,7 +179,7 @@ impl crate::Mono::Net::Security::MonoTlsProviderFactory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -190,7 +195,8 @@ impl crate::Mono::Net::Security::MonoTlsProviderFactory {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LookupProvider", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LookupProvider", 2usize
                         )
                     })
             });
@@ -205,7 +211,7 @@ impl crate::Mono::Net::Security::MonoTlsProviderFactory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -214,7 +220,8 @@ impl crate::Mono::Net::Security::MonoTlsProviderFactory {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PopulateProviders", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PopulateProviders", 0usize
                         )
                     })
             });
@@ -229,7 +236,7 @@ impl crate::Mono::Net::Security::MonoTlsProviderFactory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -238,7 +245,8 @@ impl crate::Mono::Net::Security::MonoTlsProviderFactory {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PopulateUnityProviders", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PopulateUnityProviders", 0usize
                         )
                     })
             });

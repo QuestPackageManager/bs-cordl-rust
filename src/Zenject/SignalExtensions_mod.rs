@@ -50,7 +50,7 @@ impl crate::Zenject::SignalExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>),
                         quest_hook::libil2cpp::Gc<
@@ -61,7 +61,8 @@ impl crate::Zenject::SignalExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindSignal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindSignal", 1usize
                         )
                     })
             });
@@ -79,7 +80,7 @@ impl crate::Zenject::SignalExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
@@ -93,8 +94,8 @@ impl crate::Zenject::SignalExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateDefaultSignalDeclarationBindInfo",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateDefaultSignalDeclarationBindInfo", 2usize
                         )
                     })
             });
@@ -117,7 +118,7 @@ impl crate::Zenject::SignalExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>),
                         quest_hook::libil2cpp::Gc<
@@ -128,7 +129,8 @@ impl crate::Zenject::SignalExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DeclareSignal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DeclareSignal", 1usize
                         )
                     })
             });

@@ -62,7 +62,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -76,7 +76,8 @@ impl crate::System::IO::Compression::DeflateStreamNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckResult", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckResult", 2usize
                         )
                     })
             });
@@ -91,7 +92,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         i32,
@@ -100,7 +101,8 @@ impl crate::System::IO::Compression::DeflateStreamNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CloseZStream", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CloseZStream", 1usize
                         )
                     })
             });
@@ -117,7 +119,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -132,7 +134,8 @@ impl crate::System::IO::Compression::DeflateStreamNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Create", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Create",
+                            3usize
                         )
                     })
             });
@@ -156,7 +159,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::IO::Compression::CompressionMode,
@@ -174,7 +177,8 @@ impl crate::System::IO::Compression::DeflateStreamNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateZStream", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateZStream", 4usize
                         )
                     })
             });
@@ -190,7 +194,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -199,7 +203,8 @@ impl crate::System::IO::Compression::DeflateStreamNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Dispose", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            1usize
                         )
                     })
             });
@@ -214,12 +219,13 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Finalize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Finalize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Finalize", 0usize
                         )
                     })
             });
@@ -234,12 +240,13 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Flush")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Flush", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Flush",
+                            0usize
                         )
                     })
             });
@@ -256,7 +263,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::IO::Compression::DeflateStreamNative_SafeDeflateStreamHandle,
@@ -267,7 +274,8 @@ impl crate::System::IO::Compression::DeflateStreamNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Flush", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Flush",
+                            1usize
                         )
                     })
             });
@@ -291,7 +299,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -306,7 +314,8 @@ impl crate::System::IO::Compression::DeflateStreamNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadZStream", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadZStream", 3usize
                         )
                     })
             });
@@ -323,7 +332,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::IntPtr, i32),
                         i32,
@@ -332,7 +341,8 @@ impl crate::System::IO::Compression::DeflateStreamNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadZStream", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadZStream", 2usize
                         )
                     })
             });
@@ -349,7 +359,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, i32, crate::System::IntPtr),
                         i32,
@@ -358,7 +368,8 @@ impl crate::System::IO::Compression::DeflateStreamNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnmanagedRead", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnmanagedRead", 3usize
                         )
                     })
             });
@@ -375,7 +386,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::IntPtr, i32),
                         i32,
@@ -384,7 +395,8 @@ impl crate::System::IO::Compression::DeflateStreamNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnmanagedRead", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnmanagedRead", 2usize
                         )
                     })
             });
@@ -401,7 +413,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, i32, crate::System::IntPtr),
                         i32,
@@ -410,7 +422,8 @@ impl crate::System::IO::Compression::DeflateStreamNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnmanagedWrite", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnmanagedWrite", 3usize
                         )
                     })
             });
@@ -427,7 +440,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::IntPtr, i32),
                         i32,
@@ -436,7 +449,8 @@ impl crate::System::IO::Compression::DeflateStreamNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnmanagedWrite", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnmanagedWrite", 2usize
                         )
                     })
             });
@@ -455,7 +469,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -470,7 +484,8 @@ impl crate::System::IO::Compression::DeflateStreamNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteZStream", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteZStream", 3usize
                         )
                     })
             });
@@ -487,7 +502,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::IntPtr, i32),
                         quest_hook::libil2cpp::Void,
@@ -496,7 +511,8 @@ impl crate::System::IO::Compression::DeflateStreamNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteZStream", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteZStream", 2usize
                         )
                     })
             });
@@ -511,12 +527,13 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -590,12 +607,13 @@ impl crate::System::IO::Compression::DeflateStreamNative_SafeDeflateStreamHandle
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("ReleaseHandle")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReleaseHandle", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReleaseHandle", 0usize
                         )
                     })
             });
@@ -608,12 +626,13 @@ impl crate::System::IO::Compression::DeflateStreamNative_SafeDeflateStreamHandle
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -626,12 +645,13 @@ impl crate::System::IO::Compression::DeflateStreamNative_SafeDeflateStreamHandle
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsInvalid")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsInvalid", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsInvalid", 0usize
                         )
                     })
             });
@@ -701,7 +721,7 @@ impl crate::System::IO::Compression::DeflateStreamNative_UnmanagedReadOrWrite {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::IntPtr, i32, crate::System::IntPtr),
                         i32,
@@ -710,7 +730,8 @@ impl crate::System::IO::Compression::DeflateStreamNative_UnmanagedReadOrWrite {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Invoke", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Invoke",
+                            3usize
                         )
                     })
             });
@@ -737,7 +758,7 @@ impl crate::System::IO::Compression::DeflateStreamNative_UnmanagedReadOrWrite {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -751,7 +772,8 @@ impl crate::System::IO::Compression::DeflateStreamNative_UnmanagedReadOrWrite {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });

@@ -55,7 +55,7 @@ impl crate::Org::BouncyCastle::OpenSsl::MiscPemGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Gc<
@@ -66,7 +66,8 @@ impl crate::Org::BouncyCastle::OpenSsl::MiscPemGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreatePemObject", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreatePemObject", 1usize
                         )
                     })
             });
@@ -90,7 +91,7 @@ impl crate::Org::BouncyCastle::OpenSsl::MiscPemGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -114,7 +115,8 @@ impl crate::Org::BouncyCastle::OpenSsl::MiscPemGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreatePemObject", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreatePemObject", 4usize
                         )
                     })
             });
@@ -136,7 +138,7 @@ impl crate::Org::BouncyCastle::OpenSsl::MiscPemGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -156,7 +158,8 @@ impl crate::Org::BouncyCastle::OpenSsl::MiscPemGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EncodePrivateKey", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EncodePrivateKey", 2usize
                         )
                     })
             });
@@ -175,7 +178,7 @@ impl crate::Org::BouncyCastle::OpenSsl::MiscPemGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -186,7 +189,8 @@ impl crate::Org::BouncyCastle::OpenSsl::MiscPemGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Generate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Generate", 0usize
                         )
                     })
             });
@@ -225,7 +229,7 @@ impl crate::Org::BouncyCastle::OpenSsl::MiscPemGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Void,
@@ -234,7 +238,8 @@ impl crate::Org::BouncyCastle::OpenSsl::MiscPemGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -255,7 +260,7 @@ impl crate::Org::BouncyCastle::OpenSsl::MiscPemGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -277,7 +282,8 @@ impl crate::Org::BouncyCastle::OpenSsl::MiscPemGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
                         )
                     })
             });

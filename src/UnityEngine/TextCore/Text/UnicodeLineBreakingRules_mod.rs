@@ -60,7 +60,7 @@ impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>),
                         quest_hook::libil2cpp::Gc<
@@ -71,7 +71,8 @@ impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCharacters", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCharacters", 1usize
                         )
                     })
             });
@@ -86,7 +87,7 @@ impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -95,7 +96,8 @@ impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadLineBreakingRules", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadLineBreakingRules", 0usize
                         )
                     })
             });
@@ -112,7 +114,7 @@ impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
@@ -124,7 +126,8 @@ impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadLineBreakingRules", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadLineBreakingRules", 2usize
                         )
                     })
             });
@@ -146,12 +149,13 @@ impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -168,7 +172,7 @@ impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
@@ -177,7 +181,8 @@ impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_followingCharacters", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_followingCharacters", 0usize
                         )
                     })
             });
@@ -194,7 +199,7 @@ impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -205,7 +210,8 @@ impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_followingCharactersLookup", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_followingCharactersLookup", 0usize
                         )
                     })
             });
@@ -222,7 +228,7 @@ impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
@@ -231,7 +237,8 @@ impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_leadingCharacters", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_leadingCharacters", 0usize
                         )
                     })
             });
@@ -248,7 +255,7 @@ impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -259,7 +266,8 @@ impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_leadingCharactersLookup", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_leadingCharactersLookup", 0usize
                         )
                     })
             });
@@ -274,7 +282,7 @@ impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         bool,
@@ -283,7 +291,8 @@ impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_useModernHangulLineBreakingRules", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_useModernHangulLineBreakingRules", 0usize
                         )
                     })
             });

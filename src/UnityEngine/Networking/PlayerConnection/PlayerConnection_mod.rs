@@ -56,7 +56,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Guid, i32),
                         bool,
@@ -65,7 +65,8 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BlockUntilRecvMsg", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BlockUntilRecvMsg", 2usize
                         )
                     })
             });
@@ -80,7 +81,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -89,7 +90,8 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConnectedCallbackInternal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConnectedCallbackInternal", 1usize
                         )
                     })
             });
@@ -106,7 +108,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -117,7 +119,8 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateInstance", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateInstance", 0usize
                         )
                     })
             });
@@ -132,7 +135,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -141,7 +144,8 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DisconnectAll", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DisconnectAll", 0usize
                         )
                     })
             });
@@ -156,7 +160,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -165,7 +169,8 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DisconnectedCallback", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DisconnectedCallback", 1usize
                         )
                     })
             });
@@ -182,7 +187,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -193,7 +198,8 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetConnectionNativeApi", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetConnectionNativeApi", 0usize
                         )
                     })
             });
@@ -211,7 +217,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::IntPtr,
@@ -227,7 +233,8 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MessageCallbackInternal", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MessageCallbackInternal", 4usize
                         )
                     })
             });
@@ -249,12 +256,13 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnEnable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnEnable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnEnable", 0usize
                         )
                     })
             });
@@ -277,7 +285,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Guid,
@@ -295,7 +303,8 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Register", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Register", 2usize
                         )
                     })
             });
@@ -313,7 +322,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::Events::UnityAction_1<i32>,
@@ -324,7 +333,8 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterConnection", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterConnection", 1usize
                         )
                     })
             });
@@ -342,7 +352,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::Events::UnityAction_1<i32>,
@@ -353,7 +363,8 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterDisconnection", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterDisconnection", 1usize
                         )
                     })
             });
@@ -370,7 +381,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Guid,
@@ -384,7 +395,8 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Send", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Send",
+                            2usize
                         )
                     })
             });
@@ -401,7 +413,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Guid,
@@ -415,7 +427,8 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TrySend", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "TrySend",
+                            2usize
                         )
                     })
             });
@@ -438,7 +451,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Guid,
@@ -456,7 +469,8 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Unregister", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Unregister", 2usize
                         )
                     })
             });
@@ -474,7 +488,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::Events::UnityAction_1<i32>,
@@ -485,7 +499,8 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnregisterConnection", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnregisterConnection", 1usize
                         )
                     })
             });
@@ -503,7 +518,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::Events::UnityAction_1<i32>,
@@ -514,7 +529,8 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnregisterDisconnection", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnregisterDisconnection", 1usize
                         )
                     })
             });
@@ -529,12 +545,13 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -551,7 +568,7 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -562,7 +579,8 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_instance", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_instance", 0usize
                         )
                     })
             });
@@ -575,12 +593,13 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isConnected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_isConnected", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isConnected", 0usize
                         )
                     })
             });

@@ -62,7 +62,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
@@ -76,8 +76,8 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddPercentEncodedOctetToRawOctetsList",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddPercentEncodedOctetToRawOctetsList", 2usize
                         )
                     })
             });
@@ -94,7 +94,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -103,7 +103,8 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddSlashToAsteriskOnlyPath", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddSlashToAsteriskOnlyPath", 1usize
                         )
                     })
             });
@@ -121,7 +122,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -137,7 +138,8 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AppendOctetsPercentEncoded", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AppendOctetsPercentEncoded", 2usize
                         )
                     })
             });
@@ -153,7 +155,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -162,8 +164,8 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AppendUnicodeCodePointValuePercentEncoded",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AppendUnicodeCodePointValuePercentEncoded", 1usize
                         )
                     })
             });
@@ -176,7 +178,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Uri>,
@@ -185,7 +187,8 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Build", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Build",
+                            0usize
                         )
                     })
             });
@@ -200,7 +203,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -209,7 +212,8 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BuildRequestUriUsingCookedPath", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BuildRequestUriUsingCookedPath", 0usize
                         )
                     })
             });
@@ -224,7 +228,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -233,7 +237,8 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BuildRequestUriUsingRawPath", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BuildRequestUriUsingRawPath", 0usize
                         )
                     })
             });
@@ -251,7 +256,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>),
                         crate::System::Net::HttpListenerRequestUriBuilder_ParsingResult,
@@ -260,7 +265,8 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BuildRequestUriUsingRawPath", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BuildRequestUriUsingRawPath", 1usize
                         )
                     })
             });
@@ -276,7 +282,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>),
                         bool,
@@ -285,7 +291,8 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EmptyDecodeAndAppendRawOctetsList", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EmptyDecodeAndAppendRawOctetsList", 1usize
                         )
                     })
             });
@@ -300,7 +307,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::Net::HttpListenerRequestUriBuilder_EncodingType),
                         quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
@@ -309,7 +316,8 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetEncoding", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetEncoding", 1usize
                         )
                     })
             });
@@ -328,7 +336,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<u8>,
@@ -339,7 +347,8 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetOctetsAsString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetOctetsAsString", 1usize
                         )
                     })
             });
@@ -356,7 +365,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -365,7 +374,8 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPath", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetPath",
+                            1usize
                         )
                     })
             });
@@ -384,7 +394,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -409,7 +419,8 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetRequestUri", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetRequestUri", 5usize
                         )
                     })
             });
@@ -441,7 +452,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -464,7 +475,8 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LogWarning", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LogWarning", 3usize
                         )
                     })
             });
@@ -498,7 +510,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>),
                         crate::System::Net::HttpListenerRequestUriBuilder_ParsingResult,
@@ -507,7 +519,8 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseRawPath", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseRawPath", 1usize
                         )
                     })
             });
@@ -527,7 +540,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -552,7 +565,8 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            5usize
                         )
                     })
             });

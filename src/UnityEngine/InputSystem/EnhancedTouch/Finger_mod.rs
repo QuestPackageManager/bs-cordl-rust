@@ -57,7 +57,7 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u32),
                         crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
@@ -66,7 +66,8 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FindTouch", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindTouch", 1usize
                         )
                     })
             });
@@ -84,7 +85,7 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::EnhancedTouch::Touch),
                         crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory,
@@ -93,7 +94,8 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTouchHistory", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTouchHistory", 1usize
                         )
                     })
             });
@@ -120,7 +122,7 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record),
                         quest_hook::libil2cpp::Void,
@@ -129,7 +131,8 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnTouchRecorded", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnTouchRecorded", 1usize
                         )
                     })
             });
@@ -148,7 +151,7 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -163,7 +166,8 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShouldRecordTouch", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShouldRecordTouch", 3usize
                         )
                     })
             });
@@ -181,7 +185,7 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -196,7 +200,8 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -213,7 +218,7 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
@@ -222,7 +227,8 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_currentTouch", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_currentTouch", 0usize
                         )
                     })
             });
@@ -235,12 +241,13 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_index")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_index", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_index", 0usize
                         )
                     })
             });
@@ -251,12 +258,13 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isActive")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_isActive", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isActive", 0usize
                         )
                     })
             });
@@ -271,7 +279,7 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
@@ -280,7 +288,8 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_lastTouch", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_lastTouch", 0usize
                         )
                     })
             });
@@ -297,7 +306,7 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -308,7 +317,8 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_screen", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_screen", 0usize
                         )
                     })
             });
@@ -323,7 +333,7 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector2,
@@ -332,7 +342,8 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_screenPosition", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_screenPosition", 0usize
                         )
                     })
             });
@@ -349,7 +360,7 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::InputSystem::EnhancedTouch::TouchHistory,
@@ -358,7 +369,8 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_touchHistory", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_touchHistory", 0usize
                         )
                     })
             });

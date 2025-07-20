@@ -54,7 +54,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams,
@@ -66,7 +66,8 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MakeBorder", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MakeBorder", 2usize
                         )
                     })
             });
@@ -87,7 +88,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -104,7 +105,8 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MakeBorder_Injected", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MakeBorder_Injected", 3usize
                         )
                     })
             });
@@ -122,7 +124,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams,
@@ -134,7 +136,8 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MakeSolidRect", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MakeSolidRect", 2usize
                         )
                     })
             });
@@ -155,7 +158,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -172,7 +175,8 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MakeSolidRect_Injected", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MakeSolidRect_Injected", 3usize
                         )
                     })
             });
@@ -190,7 +194,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams,
@@ -202,7 +206,8 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MakeTexturedRect", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MakeTexturedRect", 2usize
                         )
                     })
             });
@@ -223,7 +228,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -240,7 +245,8 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MakeTexturedRect_Injected", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MakeTexturedRect_Injected", 3usize
                         )
                     })
             });
@@ -267,7 +273,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -292,7 +298,8 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MakeVectorGraphics9SliceBackground", 9usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MakeVectorGraphics9SliceBackground", 9usize
                         )
                     })
             });
@@ -336,7 +343,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -366,8 +373,8 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MakeVectorGraphics9SliceBackground_Injected",
-                            10usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MakeVectorGraphics9SliceBackground_Injected", 10usize
                         )
                     })
             });
@@ -412,7 +419,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -440,7 +447,8 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MakeVectorGraphicsStretchBackground", 12usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MakeVectorGraphicsStretchBackground", 12usize
                         )
                     })
             });
@@ -490,7 +498,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -523,7 +531,7 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "MakeVectorGraphicsStretchBackground_Injected", 13usize
                         )
                     })

@@ -50,7 +50,7 @@ impl crate::GlobalNamespace::BeatmapDataLoaderUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -66,7 +66,8 @@ impl crate::GlobalNamespace::BeatmapDataLoaderUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetEnvironmentKeywords", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetEnvironmentKeywords", 2usize
                         )
                     })
             });
@@ -87,7 +88,7 @@ impl crate::GlobalNamespace::BeatmapDataLoaderUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::IEnvironmentInfo,
@@ -100,7 +101,8 @@ impl crate::GlobalNamespace::BeatmapDataLoaderUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetEnvironmentLightGroups", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetEnvironmentLightGroups", 1usize
                         )
                     })
             });

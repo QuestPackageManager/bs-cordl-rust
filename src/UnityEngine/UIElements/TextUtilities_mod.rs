@@ -48,7 +48,7 @@ impl crate::UnityEngine::UIElements::TextUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -64,8 +64,8 @@ impl crate::UnityEngine::UIElements::TextUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertPixelUnitsToTextCoreRelativeUnits",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertPixelUnitsToTextCoreRelativeUnits", 2usize
                         )
                     })
             });
@@ -80,7 +80,7 @@ impl crate::UnityEngine::UIElements::TextUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::VisualElement,
@@ -93,7 +93,8 @@ impl crate::UnityEngine::UIElements::TextUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetFontAsset", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetFontAsset", 1usize
                         )
                     })
             });
@@ -110,7 +111,7 @@ impl crate::UnityEngine::UIElements::TextUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::VisualElement,
@@ -121,7 +122,8 @@ impl crate::UnityEngine::UIElements::TextUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTextCoreSettingsForElement", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTextCoreSettingsForElement", 1usize
                         )
                     })
             });
@@ -138,7 +140,7 @@ impl crate::UnityEngine::UIElements::TextUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::VisualElement,
@@ -151,7 +153,8 @@ impl crate::UnityEngine::UIElements::TextUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTextSettingsFrom", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTextSettingsFrom", 1usize
                         )
                     })
             });
@@ -166,7 +169,7 @@ impl crate::UnityEngine::UIElements::TextUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::VisualElement,
@@ -177,7 +180,8 @@ impl crate::UnityEngine::UIElements::TextUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsFontAssigned", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsFontAssigned", 1usize
                         )
                     })
             });
@@ -195,7 +199,7 @@ impl crate::UnityEngine::UIElements::TextUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -215,7 +219,8 @@ impl crate::UnityEngine::UIElements::TextUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MeasureVisualElementTextSize", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MeasureVisualElementTextSize", 6usize
                         )
                     })
             });

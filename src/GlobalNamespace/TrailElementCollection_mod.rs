@@ -58,7 +58,7 @@ impl crate::GlobalNamespace::TrailElementCollection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TrailElement>,
@@ -67,7 +67,8 @@ impl crate::GlobalNamespace::TrailElementCollection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetElement", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetElement", 1usize
                         )
                     })
             });
@@ -85,7 +86,7 @@ impl crate::GlobalNamespace::TrailElementCollection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector3, crate::UnityEngine::Vector3, f32),
                         quest_hook::libil2cpp::Void,
@@ -94,7 +95,8 @@ impl crate::GlobalNamespace::TrailElementCollection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitSnapshots", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitSnapshots", 3usize
                         )
                     })
             });
@@ -120,7 +122,7 @@ impl crate::GlobalNamespace::TrailElementCollection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             f32,
@@ -137,7 +139,8 @@ impl crate::GlobalNamespace::TrailElementCollection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Interpolate", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Interpolate", 5usize
                         )
                     })
             });
@@ -152,7 +155,7 @@ impl crate::GlobalNamespace::TrailElementCollection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -161,7 +164,8 @@ impl crate::GlobalNamespace::TrailElementCollection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MoveTailToHead", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MoveTailToHead", 0usize
                         )
                     })
             });
@@ -194,7 +198,7 @@ impl crate::GlobalNamespace::TrailElementCollection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector3, crate::UnityEngine::Vector3, f32),
                         quest_hook::libil2cpp::Void,
@@ -203,7 +207,8 @@ impl crate::GlobalNamespace::TrailElementCollection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetHeadData", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetHeadData", 3usize
                         )
                     })
             });
@@ -218,7 +223,7 @@ impl crate::GlobalNamespace::TrailElementCollection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -227,7 +232,8 @@ impl crate::GlobalNamespace::TrailElementCollection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateDistances", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateDistances", 0usize
                         )
                     })
             });
@@ -246,7 +252,7 @@ impl crate::GlobalNamespace::TrailElementCollection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             f32,
@@ -260,7 +266,8 @@ impl crate::GlobalNamespace::TrailElementCollection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateLerpState", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateLerpState", 2usize
                         )
                     })
             });
@@ -279,7 +286,7 @@ impl crate::GlobalNamespace::TrailElementCollection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -293,7 +300,8 @@ impl crate::GlobalNamespace::TrailElementCollection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
                         )
                     })
             });

@@ -55,12 +55,13 @@ impl crate::Mono::Net::Security::MonoSslAuthenticationOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -75,12 +76,13 @@ impl crate::Mono::Net::Security::MonoSslAuthenticationOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_ClientCertificateRequired")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ClientCertificateRequired", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ClientCertificateRequired", 0usize
                         )
                     })
             });
@@ -97,7 +99,7 @@ impl crate::Mono::Net::Security::MonoSslAuthenticationOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -108,7 +110,8 @@ impl crate::Mono::Net::Security::MonoSslAuthenticationOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ClientCertificates", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ClientCertificates", 0usize
                         )
                     })
             });
@@ -125,7 +128,7 @@ impl crate::Mono::Net::Security::MonoSslAuthenticationOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Security::Authentication::SslProtocols,
@@ -134,7 +137,8 @@ impl crate::Mono::Net::Security::MonoSslAuthenticationOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_EnabledSslProtocols", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_EnabledSslProtocols", 0usize
                         )
                     })
             });
@@ -153,7 +157,7 @@ impl crate::Mono::Net::Security::MonoSslAuthenticationOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -164,7 +168,8 @@ impl crate::Mono::Net::Security::MonoSslAuthenticationOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ServerCertSelectionDelegate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ServerCertSelectionDelegate", 0usize
                         )
                     })
             });
@@ -183,7 +188,7 @@ impl crate::Mono::Net::Security::MonoSslAuthenticationOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -194,7 +199,8 @@ impl crate::Mono::Net::Security::MonoSslAuthenticationOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ServerCertificate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ServerCertificate", 0usize
                         )
                     })
             });
@@ -207,12 +213,13 @@ impl crate::Mono::Net::Security::MonoSslAuthenticationOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_ServerMode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ServerMode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ServerMode", 0usize
                         )
                     })
             });
@@ -227,7 +234,7 @@ impl crate::Mono::Net::Security::MonoSslAuthenticationOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -236,7 +243,8 @@ impl crate::Mono::Net::Security::MonoSslAuthenticationOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_TargetHost", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_TargetHost", 0usize
                         )
                     })
             });
@@ -252,7 +260,7 @@ impl crate::Mono::Net::Security::MonoSslAuthenticationOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Security::Cryptography::X509Certificates::X509RevocationMode),
                         quest_hook::libil2cpp::Void,
@@ -261,7 +269,8 @@ impl crate::Mono::Net::Security::MonoSslAuthenticationOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_CertificateRevocationCheckMode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_CertificateRevocationCheckMode", 1usize
                         )
                     })
             });
@@ -277,7 +286,7 @@ impl crate::Mono::Net::Security::MonoSslAuthenticationOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -286,7 +295,8 @@ impl crate::Mono::Net::Security::MonoSslAuthenticationOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_ClientCertificateRequired", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_ClientCertificateRequired", 1usize
                         )
                     })
             });
@@ -304,7 +314,7 @@ impl crate::Mono::Net::Security::MonoSslAuthenticationOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
@@ -315,7 +325,8 @@ impl crate::Mono::Net::Security::MonoSslAuthenticationOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_ClientCertificates", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_ClientCertificates", 1usize
                         )
                     })
             });
@@ -331,7 +342,7 @@ impl crate::Mono::Net::Security::MonoSslAuthenticationOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Security::Authentication::SslProtocols),
                         quest_hook::libil2cpp::Void,
@@ -340,7 +351,8 @@ impl crate::Mono::Net::Security::MonoSslAuthenticationOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_EnabledSslProtocols", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_EnabledSslProtocols", 1usize
                         )
                     })
             });
@@ -356,7 +368,7 @@ impl crate::Mono::Net::Security::MonoSslAuthenticationOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Net::Security::EncryptionPolicy),
                         quest_hook::libil2cpp::Void,
@@ -365,7 +377,8 @@ impl crate::Mono::Net::Security::MonoSslAuthenticationOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_EncryptionPolicy", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_EncryptionPolicy", 1usize
                         )
                     })
             });
@@ -383,7 +396,7 @@ impl crate::Mono::Net::Security::MonoSslAuthenticationOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Security::Cryptography::X509Certificates::X509Certificate,
@@ -394,7 +407,8 @@ impl crate::Mono::Net::Security::MonoSslAuthenticationOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_ServerCertificate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_ServerCertificate", 1usize
                         )
                     })
             });
@@ -410,7 +424,7 @@ impl crate::Mono::Net::Security::MonoSslAuthenticationOptions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -419,7 +433,8 @@ impl crate::Mono::Net::Security::MonoSslAuthenticationOptions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_TargetHost", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_TargetHost", 1usize
                         )
                     })
             });

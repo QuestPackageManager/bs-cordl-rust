@@ -44,12 +44,13 @@ impl crate::UnityEngine::SceneManagement::SceneManagerAPIInternal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("GetNumScenesInBuildSettings")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNumScenesInBuildSettings", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNumScenesInBuildSettings", 0usize
                         )
                     })
             });
@@ -67,7 +68,7 @@ impl crate::UnityEngine::SceneManagement::SceneManagerAPIInternal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -83,7 +84,8 @@ impl crate::UnityEngine::SceneManagement::SceneManagerAPIInternal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadSceneAsyncNameIndexInternal", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadSceneAsyncNameIndexInternal", 4usize
                         )
                     })
             });
@@ -109,7 +111,7 @@ impl crate::UnityEngine::SceneManagement::SceneManagerAPIInternal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -127,8 +129,8 @@ impl crate::UnityEngine::SceneManagement::SceneManagerAPIInternal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadSceneAsyncNameIndexInternal_Injected",
-                            4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadSceneAsyncNameIndexInternal_Injected", 4usize
                         )
                     })
             });

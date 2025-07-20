@@ -50,7 +50,7 @@ impl crate::HMUI::ViewControllerTransitionHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>),
                         quest_hook::libil2cpp::Gc<
@@ -61,7 +61,8 @@ impl crate::HMUI::ViewControllerTransitionHelpers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AnimationCoroutine", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AnimationCoroutine", 1usize
                         )
                     })
             });
@@ -81,7 +82,7 @@ impl crate::HMUI::ViewControllerTransitionHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
@@ -97,7 +98,8 @@ impl crate::HMUI::ViewControllerTransitionHelpers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoDismissTransition", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoDismissTransition", 4usize
                         )
                     })
             });
@@ -127,7 +129,7 @@ impl crate::HMUI::ViewControllerTransitionHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
@@ -142,7 +144,8 @@ impl crate::HMUI::ViewControllerTransitionHelpers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoHorizontalTransition", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoHorizontalTransition", 3usize
                         )
                     })
             });
@@ -172,7 +175,7 @@ impl crate::HMUI::ViewControllerTransitionHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
@@ -188,7 +191,8 @@ impl crate::HMUI::ViewControllerTransitionHelpers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoPresentTransition", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoPresentTransition", 4usize
                         )
                     })
             });
@@ -218,7 +222,7 @@ impl crate::HMUI::ViewControllerTransitionHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
@@ -233,7 +237,8 @@ impl crate::HMUI::ViewControllerTransitionHelpers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoVerticalTransition", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoVerticalTransition", 3usize
                         )
                     })
             });
@@ -259,7 +264,7 @@ impl crate::HMUI::ViewControllerTransitionHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
@@ -271,7 +276,8 @@ impl crate::HMUI::ViewControllerTransitionHelpers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ImmediateTransition", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ImmediateTransition", 2usize
                         )
                     })
             });
@@ -297,12 +303,13 @@ impl crate::HMUI::ViewControllerTransitionHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

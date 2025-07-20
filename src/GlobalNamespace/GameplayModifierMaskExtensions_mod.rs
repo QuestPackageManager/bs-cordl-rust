@@ -46,7 +46,7 @@ impl crate::GlobalNamespace::GameplayModifierMaskExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::GameplayModifierMask,
@@ -58,7 +58,8 @@ impl crate::GlobalNamespace::GameplayModifierMaskExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Contains", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Contains", 2usize
                         )
                     })
             });
@@ -72,7 +73,7 @@ impl crate::GlobalNamespace::GameplayModifierMaskExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::GameplayModifierMask,
@@ -84,7 +85,8 @@ impl crate::GlobalNamespace::GameplayModifierMaskExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DifferenceFrom", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DifferenceFrom", 2usize
                         )
                     })
             });
@@ -99,7 +101,7 @@ impl crate::GlobalNamespace::GameplayModifierMaskExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::GameplayModifiers,
@@ -110,7 +112,8 @@ impl crate::GlobalNamespace::GameplayModifierMaskExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToGameplayModifierMask", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToGameplayModifierMask", 1usize
                         )
                     })
             });
@@ -127,7 +130,7 @@ impl crate::GlobalNamespace::GameplayModifierMaskExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::GameplayModifierMask),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -136,7 +139,8 @@ impl crate::GlobalNamespace::GameplayModifierMaskExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToHexString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToHexString", 1usize
                         )
                     })
             });
@@ -153,7 +157,7 @@ impl crate::GlobalNamespace::GameplayModifierMaskExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::GameplayModifiers,
@@ -164,7 +168,8 @@ impl crate::GlobalNamespace::GameplayModifierMaskExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToMask", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "ToMask",
+                            1usize
                         )
                     })
             });
@@ -181,7 +186,7 @@ impl crate::GlobalNamespace::GameplayModifierMaskExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::GameplayModifierMask),
                         quest_hook::libil2cpp::Gc<
@@ -192,7 +197,8 @@ impl crate::GlobalNamespace::GameplayModifierMaskExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToModifiers", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToModifiers", 1usize
                         )
                     })
             });

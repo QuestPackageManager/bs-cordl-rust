@@ -60,7 +60,7 @@ impl crate::UnityEngine::AnimatorOverrideController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IList_1<
@@ -78,7 +78,8 @@ impl crate::UnityEngine::AnimatorOverrideController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ApplyOverrides", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ApplyOverrides", 1usize
                         )
                     })
             });
@@ -98,7 +99,7 @@ impl crate::UnityEngine::AnimatorOverrideController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -114,7 +115,8 @@ impl crate::UnityEngine::AnimatorOverrideController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Internal_Create", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Internal_Create", 2usize
                         )
                     })
             });
@@ -142,7 +144,7 @@ impl crate::UnityEngine::AnimatorOverrideController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::AnimatorOverrideController,
@@ -153,7 +155,8 @@ impl crate::UnityEngine::AnimatorOverrideController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnInvalidateOverrideController", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnInvalidateOverrideController", 1usize
                         )
                     })
             });
@@ -168,7 +171,7 @@ impl crate::UnityEngine::AnimatorOverrideController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -177,7 +180,8 @@ impl crate::UnityEngine::AnimatorOverrideController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SendNotification", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SendNotification", 0usize
                         )
                     })
             });
@@ -195,7 +199,7 @@ impl crate::UnityEngine::AnimatorOverrideController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
@@ -208,7 +212,8 @@ impl crate::UnityEngine::AnimatorOverrideController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetClip", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetClip",
+                            3usize
                         )
                     })
             });
@@ -226,7 +231,7 @@ impl crate::UnityEngine::AnimatorOverrideController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::RuntimeAnimatorController,
@@ -237,7 +242,8 @@ impl crate::UnityEngine::AnimatorOverrideController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -316,12 +322,13 @@ impl crate::UnityEngine::AnimatorOverrideController_OnOverrideControllerDirtyCal
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Invoke")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Invoke", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Invoke",
+                            0usize
                         )
                     })
             });
@@ -348,7 +355,7 @@ impl crate::UnityEngine::AnimatorOverrideController_OnOverrideControllerDirtyCal
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -362,7 +369,8 @@ impl crate::UnityEngine::AnimatorOverrideController_OnOverrideControllerDirtyCal
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });

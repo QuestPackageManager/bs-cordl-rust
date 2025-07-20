@@ -44,7 +44,7 @@ impl crate::System::Net::ExceptionHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -55,7 +55,8 @@ impl crate::System::Net::ExceptionHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_MethodNotImplementedException", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_MethodNotImplementedException", 0usize
                         )
                     })
             });
@@ -70,7 +71,7 @@ impl crate::System::Net::ExceptionHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -81,7 +82,8 @@ impl crate::System::Net::ExceptionHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_PropertyNotImplementedException", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_PropertyNotImplementedException", 0usize
                         )
                     })
             });
@@ -96,7 +98,7 @@ impl crate::System::Net::ExceptionHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::NotSupportedException>,
@@ -105,7 +107,8 @@ impl crate::System::Net::ExceptionHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_PropertyNotSupportedException", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_PropertyNotSupportedException", 0usize
                         )
                     })
             });
@@ -120,7 +123,7 @@ impl crate::System::Net::ExceptionHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Net::WebException>,
@@ -129,7 +132,8 @@ impl crate::System::Net::ExceptionHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_RequestAbortedException", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_RequestAbortedException", 0usize
                         )
                     })
             });
@@ -144,7 +148,7 @@ impl crate::System::Net::ExceptionHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Net::WebException>,
@@ -153,7 +157,8 @@ impl crate::System::Net::ExceptionHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_TimeoutException", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_TimeoutException", 0usize
                         )
                     })
             });

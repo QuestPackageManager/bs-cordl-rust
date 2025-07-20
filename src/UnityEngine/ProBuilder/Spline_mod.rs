@@ -56,7 +56,7 @@ impl crate::UnityEngine::ProBuilder::Spline {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -85,7 +85,8 @@ impl crate::UnityEngine::ProBuilder::Spline {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Extrude", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Extrude",
+                            7usize
                         )
                     })
             });
@@ -123,7 +124,7 @@ impl crate::UnityEngine::ProBuilder::Spline {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -145,7 +146,8 @@ impl crate::UnityEngine::ProBuilder::Spline {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Extrude", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Extrude",
+                            6usize
                         )
                     })
             });
@@ -178,7 +180,7 @@ impl crate::UnityEngine::ProBuilder::Spline {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -203,7 +205,8 @@ impl crate::UnityEngine::ProBuilder::Spline {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Extrude", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Extrude",
+                            7usize
                         )
                     })
             });
@@ -235,7 +238,7 @@ impl crate::UnityEngine::ProBuilder::Spline {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -261,7 +264,8 @@ impl crate::UnityEngine::ProBuilder::Spline {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetControlPoints", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetControlPoints", 4usize
                         )
                     })
             });
@@ -287,7 +291,7 @@ impl crate::UnityEngine::ProBuilder::Spline {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -305,7 +309,8 @@ impl crate::UnityEngine::ProBuilder::Spline {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetRingRotation", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetRingRotation", 4usize
                         )
                     })
             });
@@ -327,7 +332,7 @@ impl crate::UnityEngine::ProBuilder::Spline {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::Quaternion,
@@ -345,7 +350,8 @@ impl crate::UnityEngine::ProBuilder::Spline {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VertexRing", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VertexRing", 4usize
                         )
                     })
             });

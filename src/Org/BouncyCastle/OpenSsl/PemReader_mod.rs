@@ -50,7 +50,7 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -61,7 +61,8 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCurveParameters", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCurveParameters", 1usize
                         )
                     })
             });
@@ -104,7 +105,7 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject,
@@ -117,7 +118,8 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadAttributeCertificate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadAttributeCertificate", 1usize
                         )
                     })
             });
@@ -137,7 +139,7 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject,
@@ -150,7 +152,8 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadCertificate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadCertificate", 1usize
                         )
                     })
             });
@@ -172,7 +175,7 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject,
@@ -185,7 +188,8 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadCertificateRequest", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadCertificateRequest", 1usize
                         )
                     })
             });
@@ -205,7 +209,7 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject,
@@ -218,7 +222,8 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadCrl", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "ReadCrl",
+                            1usize
                         )
                     })
             });
@@ -235,7 +240,7 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -244,7 +249,8 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadObject", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadObject", 0usize
                         )
                     })
             });
@@ -264,7 +270,7 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject,
@@ -277,7 +283,8 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadPkcs7", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadPkcs7", 1usize
                         )
                     })
             });
@@ -297,7 +304,7 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject,
@@ -308,7 +315,8 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadPrivateKey", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadPrivateKey", 1usize
                         )
                     })
             });
@@ -330,7 +338,7 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject,
@@ -343,7 +351,8 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadPublicKey", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadPublicKey", 1usize
                         )
                     })
             });
@@ -365,7 +374,7 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject,
@@ -378,7 +387,8 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadRsaPublicKey", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadRsaPublicKey", 1usize
                         )
                     })
             });
@@ -397,7 +407,7 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
@@ -411,7 +421,8 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -427,7 +438,7 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>),
                         quest_hook::libil2cpp::Void,
@@ -436,7 +447,8 @@ impl crate::Org::BouncyCastle::OpenSsl::PemReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });

@@ -50,7 +50,7 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -69,7 +69,8 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateEdgeBillboardMesh", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateEdgeBillboardMesh", 3usize
                         )
                     })
             });
@@ -85,7 +86,7 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -99,7 +100,8 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateEdgeBillboardMesh", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateEdgeBillboardMesh", 2usize
                         )
                     })
             });
@@ -118,7 +120,7 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -137,7 +139,8 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateEdgeMesh", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateEdgeMesh", 3usize
                         )
                     })
             });
@@ -153,7 +156,7 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -167,7 +170,8 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateEdgeMesh", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateEdgeMesh", 2usize
                         )
                     })
             });
@@ -183,7 +187,7 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -197,7 +201,8 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateFaceMesh", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateFaceMesh", 2usize
                         )
                     })
             });
@@ -218,7 +223,7 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -239,7 +244,8 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateFaceMeshFromFaces", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateFaceMeshFromFaces", 3usize
                         )
                     })
             });
@@ -260,7 +266,7 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -279,7 +285,8 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreatePointBillboardMesh", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreatePointBillboardMesh", 3usize
                         )
                     })
             });
@@ -297,7 +304,7 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -313,7 +320,8 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreatePointBillboardMesh", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreatePointBillboardMesh", 2usize
                         )
                     })
             });
@@ -334,7 +342,7 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -353,7 +361,8 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreatePointMesh", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreatePointMesh", 3usize
                         )
                     })
             });
@@ -372,7 +381,7 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -389,7 +398,8 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateVertexMesh", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateVertexMesh", 3usize
                         )
                     })
             });
@@ -405,7 +415,7 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -419,7 +429,8 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateVertexMesh", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateVertexMesh", 2usize
                         )
                     })
             });

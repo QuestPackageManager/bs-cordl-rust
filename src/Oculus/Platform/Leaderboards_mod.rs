@@ -52,7 +52,7 @@ impl crate::Oculus::Platform::Leaderboards {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -67,7 +67,8 @@ impl crate::Oculus::Platform::Leaderboards {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Get", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Get",
+                            1usize
                         )
                     })
             });
@@ -97,7 +98,7 @@ impl crate::Oculus::Platform::Leaderboards {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -119,7 +120,8 @@ impl crate::Oculus::Platform::Leaderboards {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetEntries", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetEntries", 4usize
                         )
                     })
             });
@@ -150,7 +152,7 @@ impl crate::Oculus::Platform::Leaderboards {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -171,7 +173,8 @@ impl crate::Oculus::Platform::Leaderboards {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetEntriesAfterRank", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetEntriesAfterRank", 3usize
                         )
                     })
             });
@@ -201,7 +204,7 @@ impl crate::Oculus::Platform::Leaderboards {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -225,7 +228,8 @@ impl crate::Oculus::Platform::Leaderboards {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetEntriesByIds", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetEntriesByIds", 4usize
                         )
                     })
             });
@@ -256,7 +260,7 @@ impl crate::Oculus::Platform::Leaderboards {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Oculus::Platform::Models::LeaderboardEntryList,
@@ -273,7 +277,8 @@ impl crate::Oculus::Platform::Leaderboards {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNextEntries", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNextEntries", 1usize
                         )
                     })
             });
@@ -300,7 +305,7 @@ impl crate::Oculus::Platform::Leaderboards {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Oculus::Platform::Models::LeaderboardList,
@@ -317,7 +322,8 @@ impl crate::Oculus::Platform::Leaderboards {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNextLeaderboardListPage", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNextLeaderboardListPage", 1usize
                         )
                     })
             });
@@ -346,7 +352,7 @@ impl crate::Oculus::Platform::Leaderboards {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Oculus::Platform::Models::LeaderboardEntryList,
@@ -363,7 +369,8 @@ impl crate::Oculus::Platform::Leaderboards {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPreviousEntries", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPreviousEntries", 1usize
                         )
                     })
             });
@@ -387,7 +394,7 @@ impl crate::Oculus::Platform::Leaderboards {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -407,7 +414,8 @@ impl crate::Oculus::Platform::Leaderboards {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteEntry", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteEntry", 4usize
                         )
                     })
             });
@@ -431,7 +439,7 @@ impl crate::Oculus::Platform::Leaderboards {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -452,7 +460,8 @@ impl crate::Oculus::Platform::Leaderboards {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteEntryWithSupplementaryMetric", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteEntryWithSupplementaryMetric", 5usize
                         )
                     })
             });

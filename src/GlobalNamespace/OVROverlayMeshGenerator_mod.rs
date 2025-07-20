@@ -72,12 +72,13 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Awake", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Awake",
+                            0usize
                         )
                     })
             });
@@ -106,7 +107,7 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -135,7 +136,8 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BuildCube", 9usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BuildCube", 9usize
                         )
                     })
             });
@@ -175,7 +177,7 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -201,7 +203,8 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BuildHemicylinder", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BuildHemicylinder", 6usize
                         )
                     })
             });
@@ -225,7 +228,7 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -249,7 +252,8 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BuildQuad", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BuildQuad", 4usize
                         )
                     })
             });
@@ -280,7 +284,7 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -311,7 +315,8 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BuildSphere", 11usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BuildSphere", 11usize
                         )
                     })
             });
@@ -355,7 +360,7 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -383,7 +388,8 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenerateMesh", 8usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateMesh", 8usize
                         )
                     })
             });
@@ -404,7 +410,7 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Rect, crate::UnityEngine::Rect),
                         crate::UnityEngine::Rect,
@@ -413,7 +419,8 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBoundingRect", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBoundingRect", 2usize
                         )
                     })
             });
@@ -430,7 +437,7 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVROverlayMeshGenerator_CubeFace,
@@ -443,7 +450,8 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCubeUV", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCubeUV", 3usize
                         )
                     })
             });
@@ -460,7 +468,7 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVROverlayMeshGenerator_CubeFace,
@@ -473,7 +481,8 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCubeVert", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCubeVert", 3usize
                         )
                     })
             });
@@ -490,7 +499,7 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32, f32, f32),
                         crate::UnityEngine::Vector2,
@@ -499,7 +508,8 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSphereUV", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSphereUV", 3usize
                         )
                     })
             });
@@ -515,7 +525,7 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32, f32),
                         crate::UnityEngine::Vector3,
@@ -524,7 +534,8 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSphereVert", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSphereVert", 2usize
                         )
                     })
             });
@@ -546,12 +557,13 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDisable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDisable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDisable", 0usize
                         )
                     })
             });
@@ -566,12 +578,13 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnEnable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnEnable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnEnable", 0usize
                         )
                     })
             });
@@ -587,7 +600,7 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVROverlay>),
                         quest_hook::libil2cpp::Void,
@@ -596,7 +609,8 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetOverlay", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetOverlay", 1usize
                         )
                     })
             });
@@ -611,12 +625,13 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Update")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Update", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Update",
+                            0usize
                         )
                     })
             });
@@ -636,7 +651,7 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::GlobalNamespace::OVROverlay_OverlayShape,
@@ -651,7 +666,8 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateMesh", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateMesh", 5usize
                         )
                     })
             });
@@ -666,12 +682,13 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

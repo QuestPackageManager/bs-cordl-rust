@@ -85,7 +85,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
@@ -100,7 +100,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AbbrevEraNames", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AbbrevEraNames", 1usize
                         )
                     })
             });
@@ -124,7 +125,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
@@ -139,7 +140,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AbbreviatedDayNames", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AbbreviatedDayNames", 1usize
                         )
                     })
             });
@@ -163,7 +165,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
@@ -178,7 +180,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AbbreviatedEnglishEraNames", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AbbreviatedEnglishEraNames", 1usize
                         )
                     })
             });
@@ -202,7 +205,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
@@ -217,7 +220,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AbbreviatedGenitiveMonthNames", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AbbreviatedGenitiveMonthNames", 1usize
                         )
                     })
             });
@@ -241,7 +245,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
@@ -256,7 +260,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AbbreviatedMonthNames", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AbbreviatedMonthNames", 1usize
                         )
                     })
             });
@@ -276,7 +281,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -285,7 +290,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DateSeparator", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DateSeparator", 1usize
                         )
                     })
             });
@@ -307,7 +313,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
@@ -322,7 +328,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DayNames", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DayNames", 1usize
                         )
                     })
             });
@@ -346,7 +353,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
@@ -361,7 +368,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EraNames", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EraNames", 1usize
                         )
                     })
             });
@@ -385,7 +393,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
@@ -400,7 +408,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenitiveMonthNames", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenitiveMonthNames", 1usize
                         )
                     })
             });
@@ -420,7 +429,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
@@ -431,7 +440,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCalendar", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCalendar", 1usize
                         )
                     })
             });
@@ -450,7 +460,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -463,7 +473,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCalendarIds", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCalendarIds", 0usize
                         )
                     })
             });
@@ -481,7 +492,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -497,7 +508,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCultureData", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCultureData", 2usize
                         )
                     })
             });
@@ -525,7 +537,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -555,7 +567,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCultureData", 12usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCultureData", 12usize
                         )
                     })
             });
@@ -591,7 +604,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -600,7 +613,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetDateSeparator", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDateSeparator", 1usize
                         )
                     })
             });
@@ -616,7 +630,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Globalization::NumberFormatInfo,
@@ -627,7 +641,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNFIValues", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNFIValues", 1usize
                         )
                     })
             });
@@ -645,7 +660,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -661,7 +676,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSeparator", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSeparator", 2usize
                         )
                     })
             });
@@ -678,7 +694,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -695,7 +711,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IndexOfTimePart", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IndexOfTimePart", 3usize
                         )
                     })
             });
@@ -717,7 +734,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
@@ -732,7 +749,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LeapYearMonthNames", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LeapYearMonthNames", 1usize
                         )
                     })
             });
@@ -756,7 +774,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
@@ -771,7 +789,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LongDates", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LongDates", 1usize
                         )
                     })
             });
@@ -791,7 +810,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -800,7 +819,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MonthDay", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MonthDay", 1usize
                         )
                     })
             });
@@ -822,7 +842,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
@@ -837,7 +857,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MonthNames", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MonthNames", 1usize
                         )
                     })
             });
@@ -865,7 +886,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -874,7 +895,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReescapeWin32String", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReescapeWin32String", 1usize
                         )
                     })
             });
@@ -899,7 +921,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -920,7 +942,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReescapeWin32Strings", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReescapeWin32Strings", 1usize
                         )
                     })
             });
@@ -944,7 +967,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
@@ -959,7 +982,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShortDates", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShortDates", 1usize
                         )
                     })
             });
@@ -980,7 +1004,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -995,7 +1019,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnescapeNlsString", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnescapeNlsString", 3usize
                         )
                     })
             });
@@ -1017,7 +1042,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
@@ -1032,7 +1057,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YearMonths", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YearMonths", 1usize
                         )
                     })
             });
@@ -1050,7 +1076,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -1059,7 +1085,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -1078,7 +1105,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32),
                         quest_hook::libil2cpp::Gc<
@@ -1089,7 +1116,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "create_group_sizes_array", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "create_group_sizes_array", 2usize
                         )
                     })
             });
@@ -1105,7 +1133,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -1114,7 +1142,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "fill_culture_data", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "fill_culture_data", 1usize
                         )
                     })
             });
@@ -1134,7 +1163,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -1148,7 +1177,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "fill_number_data", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "fill_number_data", 2usize
                         )
                     })
             });
@@ -1165,7 +1195,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1176,7 +1206,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CalendarIds", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CalendarIds", 0usize
                         )
                     })
             });
@@ -1193,7 +1224,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1202,7 +1233,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CultureName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CultureName", 0usize
                         )
                     })
             });
@@ -1215,12 +1247,13 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_IFIRSTDAYOFWEEK")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IFIRSTDAYOFWEEK", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IFIRSTDAYOFWEEK", 0usize
                         )
                     })
             });
@@ -1231,12 +1264,13 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_IFIRSTWEEKOFYEAR")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IFIRSTWEEKOFYEAR", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IFIRSTWEEKOFYEAR", 0usize
                         )
                     })
             });
@@ -1249,7 +1283,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1260,7 +1294,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Invariant", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Invariant", 0usize
                         )
                     })
             });
@@ -1273,12 +1308,13 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsInvariantCulture")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsInvariantCulture", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsInvariantCulture", 0usize
                         )
                     })
             });
@@ -1297,7 +1333,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1312,7 +1348,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_LongTimes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_LongTimes", 0usize
                         )
                     })
             });
@@ -1331,7 +1368,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1340,7 +1377,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SAM1159", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SAM1159", 0usize
                         )
                     })
             });
@@ -1357,7 +1395,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1366,7 +1404,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SCOMPAREINFO", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SCOMPAREINFO", 0usize
                         )
                     })
             });
@@ -1383,7 +1422,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1392,7 +1431,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SISO639LANGNAME", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SISO639LANGNAME", 0usize
                         )
                     })
             });
@@ -1409,7 +1449,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1418,7 +1458,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SPM2359", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SPM2359", 0usize
                         )
                     })
             });
@@ -1435,7 +1476,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1444,7 +1485,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_STEXTINFO", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_STEXTINFO", 0usize
                         )
                     })
             });
@@ -1465,7 +1507,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1480,7 +1522,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ShortTimes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ShortTimes", 0usize
                         )
                     })
             });
@@ -1499,7 +1542,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1508,7 +1551,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_TimeSeparator", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_TimeSeparator", 0usize
                         )
                     })
             });
@@ -1521,12 +1565,13 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_UseUserOverride")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_UseUserOverride", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_UseUserOverride", 0usize
                         )
                     })
             });
@@ -1542,7 +1587,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1556,7 +1601,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "idx2string", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "idx2string", 2usize
                         )
                     })
             });
@@ -1571,7 +1617,7 @@ impl crate::System::Globalization::CultureData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         i32,
@@ -1580,7 +1626,8 @@ impl crate::System::Globalization::CultureData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "strlen", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "strlen",
+                            1usize
                         )
                     })
             });

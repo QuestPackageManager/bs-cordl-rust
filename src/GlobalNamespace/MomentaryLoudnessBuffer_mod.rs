@@ -49,7 +49,7 @@ impl crate::GlobalNamespace::MomentaryLoudnessBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -58,7 +58,8 @@ impl crate::GlobalNamespace::MomentaryLoudnessBuffer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddSample", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddSample", 1usize
                         )
                     })
             });
@@ -97,7 +98,7 @@ impl crate::GlobalNamespace::MomentaryLoudnessBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32, f32, i32),
                         quest_hook::libil2cpp::Void,
@@ -106,7 +107,8 @@ impl crate::GlobalNamespace::MomentaryLoudnessBuffer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
                         )
                     })
             });
@@ -132,7 +134,7 @@ impl crate::GlobalNamespace::MomentaryLoudnessBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -143,7 +145,8 @@ impl crate::GlobalNamespace::MomentaryLoudnessBuffer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_buffer", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_buffer", 0usize
                         )
                     })
             });
@@ -158,12 +161,13 @@ impl crate::GlobalNamespace::MomentaryLoudnessBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isNextReadingIntervalReady")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_isNextReadingIntervalReady", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isNextReadingIntervalReady", 0usize
                         )
                     })
             });

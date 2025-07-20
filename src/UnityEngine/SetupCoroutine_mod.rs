@@ -48,7 +48,7 @@ impl crate::UnityEngine::SetupCoroutine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -67,7 +67,8 @@ impl crate::UnityEngine::SetupCoroutine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InvokeMember", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InvokeMember", 3usize
                         )
                     })
             });
@@ -83,7 +84,7 @@ impl crate::UnityEngine::SetupCoroutine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -97,7 +98,8 @@ impl crate::UnityEngine::SetupCoroutine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InvokeMoveNext", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InvokeMoveNext", 2usize
                         )
                     })
             });

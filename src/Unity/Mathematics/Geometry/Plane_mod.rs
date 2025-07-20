@@ -106,7 +106,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -115,7 +115,8 @@ impl crate::Unity::Mathematics::Geometry::Plane {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckPlaneIsNormalized", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckPlaneIsNormalized", 0usize
                         )
                     })
             });
@@ -131,7 +132,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::float3, f32),
                         crate::Unity::Mathematics::Geometry::Plane,
@@ -140,7 +141,8 @@ impl crate::Unity::Mathematics::Geometry::Plane {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateFromUnitNormalAndDistance", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateFromUnitNormalAndDistance", 2usize
                         )
                     })
             });
@@ -156,7 +158,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Unity::Mathematics::float3,
@@ -168,7 +170,8 @@ impl crate::Unity::Mathematics::Geometry::Plane {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateFromUnitNormalAndPointInPlane", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateFromUnitNormalAndPointInPlane", 2usize
                         )
                     })
             });
@@ -183,7 +186,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::Geometry::Plane),
                         crate::Unity::Mathematics::Geometry::Plane,
@@ -192,7 +195,8 @@ impl crate::Unity::Mathematics::Geometry::Plane {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Normalize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Normalize", 1usize
                         )
                     })
             });
@@ -207,7 +211,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::float4),
                         crate::Unity::Mathematics::float4,
@@ -216,7 +220,8 @@ impl crate::Unity::Mathematics::Geometry::Plane {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Normalize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Normalize", 1usize
                         )
                     })
             });
@@ -232,7 +237,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::float3),
                         crate::Unity::Mathematics::float3,
@@ -241,7 +246,8 @@ impl crate::Unity::Mathematics::Geometry::Plane {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Projection", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Projection", 1usize
                         )
                     })
             });
@@ -257,7 +263,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::float3),
                         f32,
@@ -266,7 +272,8 @@ impl crate::Unity::Mathematics::Geometry::Plane {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SignedDistanceToPoint", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SignedDistanceToPoint", 1usize
                         )
                     })
             });
@@ -283,7 +290,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32, f32, f32, f32),
                         quest_hook::libil2cpp::Void,
@@ -292,7 +299,8 @@ impl crate::Unity::Mathematics::Geometry::Plane {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
                         )
                     })
             });
@@ -313,7 +321,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::float3, f32),
                         quest_hook::libil2cpp::Void,
@@ -322,7 +330,8 @@ impl crate::Unity::Mathematics::Geometry::Plane {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -339,7 +348,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::Unity::Mathematics::float3,
@@ -351,7 +360,8 @@ impl crate::Unity::Mathematics::Geometry::Plane {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -369,7 +379,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::Unity::Mathematics::float3,
@@ -382,7 +392,8 @@ impl crate::Unity::Mathematics::Geometry::Plane {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -396,12 +407,13 @@ impl crate::Unity::Mathematics::Geometry::Plane {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_Distance")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Distance", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Distance", 0usize
                         )
                     })
             });
@@ -414,7 +426,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::Geometry::Plane,
@@ -423,7 +435,8 @@ impl crate::Unity::Mathematics::Geometry::Plane {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Flipped", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Flipped", 0usize
                         )
                     })
             });
@@ -438,7 +451,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::float3,
@@ -447,7 +460,8 @@ impl crate::Unity::Mathematics::Geometry::Plane {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Normal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Normal", 0usize
                         )
                     })
             });
@@ -462,7 +476,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::Geometry::Plane),
                         crate::Unity::Mathematics::float4,
@@ -471,7 +485,8 @@ impl crate::Unity::Mathematics::Geometry::Plane {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Implicit", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Implicit", 1usize
                         )
                     })
             });
@@ -487,7 +502,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -496,7 +511,8 @@ impl crate::Unity::Mathematics::Geometry::Plane {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Distance", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Distance", 1usize
                         )
                     })
             });
@@ -512,7 +528,7 @@ impl crate::Unity::Mathematics::Geometry::Plane {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::float3),
                         quest_hook::libil2cpp::Void,
@@ -521,7 +537,8 @@ impl crate::Unity::Mathematics::Geometry::Plane {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Normal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Normal", 1usize
                         )
                     })
             });

@@ -105,7 +105,7 @@ impl crate::BeatSaber::RecPlay::PoseOffsets {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::BeatSaber::RecPlay::PlayerPose,
@@ -116,7 +116,8 @@ impl crate::BeatSaber::RecPlay::PoseOffsets {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Adjust", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Adjust",
+                            1usize
                         )
                     })
             });

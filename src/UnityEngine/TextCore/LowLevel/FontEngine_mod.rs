@@ -54,7 +54,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -74,7 +74,8 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenericListToMarshallingArray", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenericListToMarshallingArray", 2usize
                         )
                     })
             });
@@ -89,7 +90,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::UnityEngine::TextCore::FaceInfo,
@@ -98,7 +99,8 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetFaceInfo", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetFaceInfo", 0usize
                         )
                     })
             });
@@ -113,7 +115,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::UnityEngine::TextCore::FaceInfo,
@@ -124,7 +126,8 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetFaceInfo_Internal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetFaceInfo_Internal", 1usize
                         )
                     })
             });
@@ -135,12 +138,13 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32), u32, 1usize>("GetGlyphIndex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetGlyphIndex", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetGlyphIndex", 1usize
                         )
                     })
             });
@@ -162,7 +166,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -180,7 +184,8 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetGlyphPairAdjustmentRecords", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetGlyphPairAdjustmentRecords", 2usize
                         )
                     })
             });
@@ -203,7 +208,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u32>,
@@ -218,7 +223,8 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetGlyphPairAdjustmentTable", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetGlyphPairAdjustmentTable", 1usize
                         )
                     })
             });
@@ -241,7 +247,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             quest_hook::libil2cpp::Gc<
@@ -256,7 +262,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "GetPairAdjustmentRecordsFromMarshallingArray", 1usize
                         )
                     })
@@ -272,7 +278,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::UnityEngine::TextCore::LowLevel::FontEngineError,
@@ -281,7 +287,8 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitializeFontEngine", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitializeFontEngine", 0usize
                         )
                     })
             });
@@ -294,7 +301,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         i32,
@@ -303,7 +310,8 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitializeFontEngine_Internal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitializeFontEngine_Internal", 0usize
                         )
                     })
             });
@@ -319,7 +327,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>, i32),
                         crate::UnityEngine::TextCore::LowLevel::FontEngineError,
@@ -328,7 +336,8 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadFontFace", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadFontFace", 2usize
                         )
                     })
             });
@@ -347,7 +356,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>, i32, i32),
                         crate::UnityEngine::TextCore::LowLevel::FontEngineError,
@@ -356,7 +365,8 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadFontFace", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadFontFace", 3usize
                         )
                     })
             });
@@ -375,7 +385,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -392,7 +402,8 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadFontFace", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadFontFace", 3usize
                         )
                     })
             });
@@ -411,7 +422,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -426,7 +437,8 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadFontFace", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadFontFace", 3usize
                         )
                     })
             });
@@ -443,7 +455,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -458,7 +470,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "LoadFontFace_With_Size_And_FaceIndex_Internal", 3usize
                         )
                     })
@@ -475,7 +487,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>, i32),
                         i32,
@@ -484,8 +496,8 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadFontFace_With_Size_FromFont_Internal",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadFontFace_With_Size_FromFont_Internal", 2usize
                         )
                     })
             });
@@ -502,7 +514,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>, i32, i32),
                         i32,
@@ -511,7 +523,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "LoadFontFace_With_Size_and_FaceIndex_FromFont_Internal",
                             3usize
                         )
@@ -530,7 +542,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -547,7 +559,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "LoadFontFace_With_Size_by_FamilyName_and_StyleName_Internal",
                             3usize
                         )
@@ -565,7 +577,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -579,7 +591,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "PopulatePairAdjustmentRecordMarshallingArray_from_KernTable",
                             2usize
                         )
@@ -596,7 +608,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>),
                         quest_hook::libil2cpp::Void,
@@ -605,7 +617,8 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResetAtlasTexture", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResetAtlasTexture", 1usize
                         )
                     })
             });
@@ -627,7 +640,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -643,7 +656,8 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetMarshallingArraySize", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetMarshallingArraySize", 2usize
                         )
                     })
             });
@@ -658,7 +672,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -667,7 +681,8 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetTextureUploadMode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetTextureUploadMode", 1usize
                         )
                     })
             });
@@ -699,7 +714,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u32,
@@ -729,7 +744,8 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryAddGlyphToTexture", 8usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryAddGlyphToTexture", 8usize
                         )
                     })
             });
@@ -780,7 +796,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u32,
@@ -814,7 +830,8 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryAddGlyphToTexture_Internal", 10usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryAddGlyphToTexture_Internal", 10usize
                         )
                     })
             });
@@ -867,7 +884,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -903,7 +920,8 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryAddGlyphsToTexture", 8usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryAddGlyphsToTexture", 8usize
                         )
                     })
             });
@@ -959,7 +977,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1000,7 +1018,8 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryAddGlyphsToTexture_Internal", 11usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryAddGlyphsToTexture_Internal", 11usize
                         )
                     })
             });
@@ -1035,7 +1054,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u32,
@@ -1052,7 +1071,8 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGetGlyphWithIndexValue", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetGlyphWithIndexValue", 3usize
                         )
                     })
             });
@@ -1071,7 +1091,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u32,
@@ -1086,7 +1106,8 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGetGlyphWithIndexValue_Internal", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetGlyphWithIndexValue_Internal", 3usize
                         )
                     })
             });
@@ -1105,7 +1126,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u32,
@@ -1122,7 +1143,8 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGetGlyphWithUnicodeValue", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetGlyphWithUnicodeValue", 3usize
                         )
                     })
             });
@@ -1141,7 +1163,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u32,
@@ -1156,7 +1178,8 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGetGlyphWithUnicodeValue_Internal", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetGlyphWithUnicodeValue_Internal", 3usize
                         )
                     })
             });
@@ -1175,7 +1198,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1194,7 +1217,8 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGetSystemFontReference", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetSystemFontReference", 3usize
                         )
                     })
             });
@@ -1213,7 +1237,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1232,7 +1256,8 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGetSystemFontReference_Internal", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetSystemFontReference_Internal", 3usize
                         )
                     })
             });

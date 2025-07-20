@@ -55,12 +55,13 @@ impl crate::Newtonsoft::Json::Linq::JsonMergeSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -77,7 +78,7 @@ impl crate::Newtonsoft::Json::Linq::JsonMergeSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Newtonsoft::Json::Linq::MergeArrayHandling,
@@ -86,7 +87,8 @@ impl crate::Newtonsoft::Json::Linq::JsonMergeSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_MergeArrayHandling", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_MergeArrayHandling", 0usize
                         )
                     })
             });
@@ -103,7 +105,7 @@ impl crate::Newtonsoft::Json::Linq::JsonMergeSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Newtonsoft::Json::Linq::MergeNullValueHandling,
@@ -112,7 +114,8 @@ impl crate::Newtonsoft::Json::Linq::JsonMergeSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_MergeNullValueHandling", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_MergeNullValueHandling", 0usize
                         )
                     })
             });
@@ -127,7 +130,7 @@ impl crate::Newtonsoft::Json::Linq::JsonMergeSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::StringComparison,
@@ -136,7 +139,8 @@ impl crate::Newtonsoft::Json::Linq::JsonMergeSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_PropertyNameComparison", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_PropertyNameComparison", 0usize
                         )
                     })
             });
@@ -152,7 +156,7 @@ impl crate::Newtonsoft::Json::Linq::JsonMergeSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Newtonsoft::Json::Linq::MergeArrayHandling),
                         quest_hook::libil2cpp::Void,
@@ -161,7 +165,8 @@ impl crate::Newtonsoft::Json::Linq::JsonMergeSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_MergeArrayHandling", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_MergeArrayHandling", 1usize
                         )
                     })
             });
@@ -177,7 +182,7 @@ impl crate::Newtonsoft::Json::Linq::JsonMergeSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Newtonsoft::Json::Linq::MergeNullValueHandling),
                         quest_hook::libil2cpp::Void,
@@ -186,7 +191,8 @@ impl crate::Newtonsoft::Json::Linq::JsonMergeSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_MergeNullValueHandling", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_MergeNullValueHandling", 1usize
                         )
                     })
             });
@@ -202,7 +208,7 @@ impl crate::Newtonsoft::Json::Linq::JsonMergeSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::StringComparison),
                         quest_hook::libil2cpp::Void,
@@ -211,7 +217,8 @@ impl crate::Newtonsoft::Json::Linq::JsonMergeSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_PropertyNameComparison", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_PropertyNameComparison", 1usize
                         )
                     })
             });

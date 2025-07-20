@@ -47,7 +47,7 @@ impl crate::OVR::OpenVR::OpenVRInterop {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRef<
@@ -65,7 +65,8 @@ impl crate::OVR::OpenVR::OpenVRInterop {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetGenericInterface", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetGenericInterface", 2usize
                         )
                     })
             });
@@ -78,12 +79,13 @@ impl crate::OVR::OpenVR::OpenVRInterop {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), u32, 0usize>("GetInitToken")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetInitToken", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetInitToken", 0usize
                         )
                     })
             });
@@ -96,7 +98,7 @@ impl crate::OVR::OpenVR::OpenVRInterop {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::OVR::OpenVR::EVRInitError),
                         crate::System::IntPtr,
@@ -105,7 +107,8 @@ impl crate::OVR::OpenVR::OpenVRInterop {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetStringForHmdError", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetStringForHmdError", 1usize
                         )
                     })
             });
@@ -121,7 +124,7 @@ impl crate::OVR::OpenVR::OpenVRInterop {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -135,7 +138,8 @@ impl crate::OVR::OpenVR::OpenVRInterop {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitInternal", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitInternal", 2usize
                         )
                     })
             });
@@ -154,7 +158,7 @@ impl crate::OVR::OpenVR::OpenVRInterop {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -173,7 +177,8 @@ impl crate::OVR::OpenVR::OpenVRInterop {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitInternal2", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitInternal2", 3usize
                         )
                     })
             });
@@ -186,12 +191,13 @@ impl crate::OVR::OpenVR::OpenVRInterop {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("IsHmdPresent")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsHmdPresent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsHmdPresent", 0usize
                         )
                     })
             });
@@ -206,7 +212,7 @@ impl crate::OVR::OpenVR::OpenVRInterop {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRef<
                             quest_hook::libil2cpp::Gc<
@@ -219,7 +225,8 @@ impl crate::OVR::OpenVR::OpenVRInterop {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsInterfaceVersionValid", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsInterfaceVersionValid", 1usize
                         )
                     })
             });
@@ -232,12 +239,13 @@ impl crate::OVR::OpenVR::OpenVRInterop {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("IsRuntimeInstalled")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsRuntimeInstalled", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsRuntimeInstalled", 0usize
                         )
                     })
             });
@@ -257,7 +265,7 @@ impl crate::OVR::OpenVR::OpenVRInterop {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -266,7 +274,8 @@ impl crate::OVR::OpenVR::OpenVRInterop {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShutdownInternal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShutdownInternal", 0usize
                         )
                     })
             });
@@ -281,12 +290,13 @@ impl crate::OVR::OpenVR::OpenVRInterop {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

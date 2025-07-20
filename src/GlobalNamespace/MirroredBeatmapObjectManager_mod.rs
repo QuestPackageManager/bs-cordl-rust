@@ -113,12 +113,13 @@ impl crate::GlobalNamespace::MirroredBeatmapObjectManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Finalize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Finalize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Finalize", 0usize
                         )
                     })
             });
@@ -134,7 +135,7 @@ impl crate::GlobalNamespace::MirroredBeatmapObjectManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -143,7 +144,8 @@ impl crate::GlobalNamespace::MirroredBeatmapObjectManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleDidHideAllBeatmapObjects", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleDidHideAllBeatmapObjects", 1usize
                         )
                     })
             });
@@ -159,7 +161,7 @@ impl crate::GlobalNamespace::MirroredBeatmapObjectManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::NoteController,
@@ -170,7 +172,8 @@ impl crate::GlobalNamespace::MirroredBeatmapObjectManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleNoteWasDespawned", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleNoteWasDespawned", 1usize
                         )
                     })
             });
@@ -186,7 +189,7 @@ impl crate::GlobalNamespace::MirroredBeatmapObjectManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::NoteController,
@@ -197,7 +200,8 @@ impl crate::GlobalNamespace::MirroredBeatmapObjectManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleNoteWasSpawned", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleNoteWasSpawned", 1usize
                         )
                     })
             });
@@ -215,7 +219,7 @@ impl crate::GlobalNamespace::MirroredBeatmapObjectManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::ObstacleController,
@@ -226,7 +230,8 @@ impl crate::GlobalNamespace::MirroredBeatmapObjectManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleObstacleWasDespawned", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleObstacleWasDespawned", 1usize
                         )
                     })
             });
@@ -244,7 +249,7 @@ impl crate::GlobalNamespace::MirroredBeatmapObjectManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::ObstacleController,
@@ -255,7 +260,8 @@ impl crate::GlobalNamespace::MirroredBeatmapObjectManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleObstacleWasSpawned", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleObstacleWasSpawned", 1usize
                         )
                     })
             });
@@ -273,7 +279,7 @@ impl crate::GlobalNamespace::MirroredBeatmapObjectManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::SliderController,
@@ -284,7 +290,8 @@ impl crate::GlobalNamespace::MirroredBeatmapObjectManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleSliderWasDespawned", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleSliderWasDespawned", 1usize
                         )
                     })
             });
@@ -302,7 +309,7 @@ impl crate::GlobalNamespace::MirroredBeatmapObjectManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::SliderController,
@@ -313,7 +320,8 @@ impl crate::GlobalNamespace::MirroredBeatmapObjectManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleSliderWasSpawned", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleSliderWasSpawned", 1usize
                         )
                     })
             });
@@ -349,7 +357,7 @@ impl crate::GlobalNamespace::MirroredBeatmapObjectManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -380,7 +388,8 @@ impl crate::GlobalNamespace::MirroredBeatmapObjectManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Init", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            7usize
                         )
                     })
             });
@@ -407,7 +416,7 @@ impl crate::GlobalNamespace::MirroredBeatmapObjectManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -416,7 +425,8 @@ impl crate::GlobalNamespace::MirroredBeatmapObjectManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InvalidateGameNotePools", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InvalidateGameNotePools", 0usize
                         )
                     })
             });
@@ -438,12 +448,13 @@ impl crate::GlobalNamespace::MirroredBeatmapObjectManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

@@ -46,7 +46,7 @@ impl crate::UnityEngine::ImageConversion {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>),
                         quest_hook::libil2cpp::Gc<
@@ -57,7 +57,8 @@ impl crate::UnityEngine::ImageConversion {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EncodeToEXR", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EncodeToEXR", 1usize
                         )
                     })
             });
@@ -75,7 +76,7 @@ impl crate::UnityEngine::ImageConversion {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
@@ -89,7 +90,8 @@ impl crate::UnityEngine::ImageConversion {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EncodeToEXR", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EncodeToEXR", 2usize
                         )
                     })
             });
@@ -106,7 +108,7 @@ impl crate::UnityEngine::ImageConversion {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>),
                         quest_hook::libil2cpp::Gc<
@@ -117,7 +119,8 @@ impl crate::UnityEngine::ImageConversion {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EncodeToJPG", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EncodeToJPG", 1usize
                         )
                     })
             });
@@ -135,7 +138,7 @@ impl crate::UnityEngine::ImageConversion {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>, i32),
                         quest_hook::libil2cpp::Gc<
@@ -146,7 +149,8 @@ impl crate::UnityEngine::ImageConversion {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EncodeToJPG", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EncodeToJPG", 2usize
                         )
                     })
             });
@@ -163,7 +167,7 @@ impl crate::UnityEngine::ImageConversion {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>),
                         quest_hook::libil2cpp::Gc<
@@ -174,7 +178,8 @@ impl crate::UnityEngine::ImageConversion {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EncodeToPNG", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EncodeToPNG", 1usize
                         )
                     })
             });
@@ -191,7 +196,7 @@ impl crate::UnityEngine::ImageConversion {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>),
                         quest_hook::libil2cpp::Gc<
@@ -202,7 +207,8 @@ impl crate::UnityEngine::ImageConversion {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EncodeToTGA", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EncodeToTGA", 1usize
                         )
                     })
             });
@@ -218,7 +224,7 @@ impl crate::UnityEngine::ImageConversion {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
@@ -232,7 +238,8 @@ impl crate::UnityEngine::ImageConversion {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadImage", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadImage", 2usize
                         )
                     })
             });
@@ -247,7 +254,7 @@ impl crate::UnityEngine::ImageConversion {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
@@ -262,7 +269,8 @@ impl crate::UnityEngine::ImageConversion {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadImage", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadImage", 3usize
                         )
                     })
             });

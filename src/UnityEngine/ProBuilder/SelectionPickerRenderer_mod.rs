@@ -76,7 +76,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -101,7 +101,8 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BuildEdgeMesh", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BuildEdgeMesh", 3usize
                         )
                     })
             });
@@ -130,7 +131,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -155,7 +156,8 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BuildVertexMesh", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BuildVertexMesh", 3usize
                         )
                     })
             });
@@ -170,7 +172,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Color32),
                         u32,
@@ -179,7 +181,8 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DecodeRGBA", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DecodeRGBA", 1usize
                         )
                     })
             });
@@ -192,7 +195,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u32),
                         crate::UnityEngine::Color32,
@@ -201,7 +204,8 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EncodeRGBA", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EncodeRGBA", 1usize
                         )
                     })
             });
@@ -248,7 +252,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -293,7 +297,8 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenerateEdgePickingObjects", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateEdgePickingObjects", 5usize
                         )
                     })
             });
@@ -335,7 +340,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -371,7 +376,8 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenerateFacePickingObjects", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateFacePickingObjects", 2usize
                         )
                     })
             });
@@ -420,7 +426,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -465,7 +471,8 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenerateVertexPickingObjects", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateVertexPickingObjects", 5usize
                         )
                     })
             });
@@ -506,7 +513,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -539,7 +546,8 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PickEdgesInRect", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PickEdgesInRect", 6usize
                         )
                     })
             });
@@ -597,7 +605,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -631,7 +639,8 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PickFacesInRect", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PickFacesInRect", 5usize
                         )
                     })
             });
@@ -687,7 +696,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -718,7 +727,8 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PickVerticesInRect", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PickVerticesInRect", 6usize
                         )
                     })
             });
@@ -775,7 +785,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -810,7 +820,8 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RenderSelectionPickerTexture", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RenderSelectionPickerTexture", 5usize
                         )
                     })
             });
@@ -848,7 +859,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -882,7 +893,8 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RenderSelectionPickerTexture", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RenderSelectionPickerTexture", 6usize
                         )
                     })
             });
@@ -924,7 +936,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -958,7 +970,8 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RenderSelectionPickerTexture", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RenderSelectionPickerTexture", 6usize
                         )
                     })
             });
@@ -975,12 +988,13 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("ShouldUseHDRP")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShouldUseHDRP", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShouldUseHDRP", 0usize
                         )
                     })
             });
@@ -995,7 +1009,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1006,7 +1020,8 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_pickerRenderer", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_pickerRenderer", 0usize
                         )
                     })
             });
@@ -1021,7 +1036,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::UnityEngine::RenderTextureFormat,
@@ -1030,7 +1045,8 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_renderTextureFormat", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_renderTextureFormat", 0usize
                         )
                     })
             });
@@ -1045,7 +1061,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::UnityEngine::TextureFormat,
@@ -1054,7 +1070,8 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_textureFormat", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_textureFormat", 0usize
                         )
                     })
             });
@@ -1140,7 +1157,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRen
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -1157,7 +1174,8 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRen
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RenderLookupTexture", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RenderLookupTexture", 5usize
                         )
                     })
             });
@@ -1257,7 +1275,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRend
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -1274,7 +1292,8 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRend
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RenderLookupTexture", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RenderLookupTexture", 5usize
                         )
                     })
             });
@@ -1289,12 +1308,13 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRend
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -1415,7 +1435,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRend
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -1432,7 +1452,8 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRend
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RenderLookupTexture", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RenderLookupTexture", 5usize
                         )
                     })
             });
@@ -1447,12 +1468,13 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRend
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

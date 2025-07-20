@@ -59,7 +59,7 @@ impl crate::GlobalNamespace::FadeInOutController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             f32,
@@ -79,7 +79,8 @@ impl crate::GlobalNamespace::FadeInOutController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Fade", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Fade",
+                            6usize
                         )
                     })
             });
@@ -107,12 +108,13 @@ impl crate::GlobalNamespace::FadeInOutController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("FadeIn")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FadeIn", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "FadeIn",
+                            0usize
                         )
                     })
             });
@@ -128,7 +130,7 @@ impl crate::GlobalNamespace::FadeInOutController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -137,7 +139,8 @@ impl crate::GlobalNamespace::FadeInOutController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FadeIn", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "FadeIn",
+                            1usize
                         )
                     })
             });
@@ -153,12 +156,13 @@ impl crate::GlobalNamespace::FadeInOutController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>("FadeIn")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FadeIn", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "FadeIn",
+                            1usize
                         )
                     })
             });
@@ -175,7 +179,7 @@ impl crate::GlobalNamespace::FadeInOutController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32, quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -184,7 +188,8 @@ impl crate::GlobalNamespace::FadeInOutController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FadeIn", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "FadeIn",
+                            2usize
                         )
                     })
             });
@@ -199,7 +204,7 @@ impl crate::GlobalNamespace::FadeInOutController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -208,7 +213,8 @@ impl crate::GlobalNamespace::FadeInOutController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FadeOutInstant", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FadeOutInstant", 0usize
                         )
                     })
             });
@@ -223,12 +229,13 @@ impl crate::GlobalNamespace::FadeInOutController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("FadeOut")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FadeOut", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "FadeOut",
+                            0usize
                         )
                     })
             });
@@ -244,7 +251,7 @@ impl crate::GlobalNamespace::FadeInOutController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -253,7 +260,8 @@ impl crate::GlobalNamespace::FadeInOutController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FadeOut", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "FadeOut",
+                            1usize
                         )
                     })
             });
@@ -269,12 +277,13 @@ impl crate::GlobalNamespace::FadeInOutController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>("FadeOut")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FadeOut", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "FadeOut",
+                            1usize
                         )
                     })
             });
@@ -291,7 +300,7 @@ impl crate::GlobalNamespace::FadeInOutController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32, quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -300,7 +309,8 @@ impl crate::GlobalNamespace::FadeInOutController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FadeOut", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "FadeOut",
+                            2usize
                         )
                     })
             });
@@ -322,12 +332,13 @@ impl crate::GlobalNamespace::FadeInOutController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -340,12 +351,13 @@ impl crate::GlobalNamespace::FadeInOutController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_inTransition")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_inTransition", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_inTransition", 0usize
                         )
                     })
             });
@@ -359,7 +371,7 @@ impl crate::GlobalNamespace::FadeInOutController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -368,7 +380,8 @@ impl crate::GlobalNamespace::FadeInOutController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_inTransition", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_inTransition", 1usize
                         )
                     })
             });

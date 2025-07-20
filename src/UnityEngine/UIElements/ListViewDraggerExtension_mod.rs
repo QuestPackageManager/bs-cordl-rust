@@ -50,7 +50,7 @@ impl crate::UnityEngine::UIElements::ListViewDraggerExtension {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -66,7 +66,8 @@ impl crate::UnityEngine::UIElements::ListViewDraggerExtension {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetRecycledItemFromId", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetRecycledItemFromId", 2usize
                         )
                     })
             });
@@ -86,7 +87,7 @@ impl crate::UnityEngine::UIElements::ListViewDraggerExtension {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -102,7 +103,8 @@ impl crate::UnityEngine::UIElements::ListViewDraggerExtension {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetRecycledItemFromIndex", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetRecycledItemFromIndex", 2usize
                         )
                     })
             });

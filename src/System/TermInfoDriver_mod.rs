@@ -87,7 +87,7 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::TermInfoStrings),
                         quest_hook::libil2cpp::Void,
@@ -96,7 +96,8 @@ impl crate::System::TermInfoDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddStringMapping", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddStringMapping", 1usize
                         )
                     })
             });
@@ -112,7 +113,7 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -121,7 +122,8 @@ impl crate::System::TermInfoDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddToBuffer", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddToBuffer", 1usize
                         )
                     })
             });
@@ -136,7 +138,7 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -145,7 +147,8 @@ impl crate::System::TermInfoDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AdjustBuffer", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AdjustBuffer", 0usize
                         )
                     })
             });
@@ -160,7 +163,7 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -169,7 +172,8 @@ impl crate::System::TermInfoDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckWindowDimensions", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckWindowDimensions", 0usize
                         )
                     })
             });
@@ -186,7 +190,7 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, bool),
                         crate::System::ConsoleKeyInfo,
@@ -195,7 +199,8 @@ impl crate::System::TermInfoDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateKeyInfoFromInt", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateKeyInfoFromInt", 2usize
                         )
                     })
             });
@@ -210,7 +215,7 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -219,7 +224,8 @@ impl crate::System::TermInfoDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateKeyMap", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateKeyMap", 0usize
                         )
                     })
             });
@@ -235,7 +241,7 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::ConsoleKeyInfo),
                         quest_hook::libil2cpp::Void,
@@ -244,7 +250,8 @@ impl crate::System::TermInfoDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Echo", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Echo",
+                            1usize
                         )
                     })
             });
@@ -259,12 +266,13 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("EchoFlush")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EchoFlush", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EchoFlush", 0usize
                         )
                     })
             });
@@ -279,7 +287,7 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -288,7 +296,8 @@ impl crate::System::TermInfoDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCursorPosition", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCursorPosition", 0usize
                         )
                     })
             });
@@ -306,7 +315,7 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -315,7 +324,8 @@ impl crate::System::TermInfoDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetKeyFromBuffer", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetKeyFromBuffer", 1usize
                         )
                     })
             });
@@ -330,12 +340,13 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("IncrementX")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IncrementX", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IncrementX", 0usize
                         )
                     })
             });
@@ -350,12 +361,13 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Init")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Init", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            0usize
                         )
                     })
             });
@@ -370,12 +382,13 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("InitKeys")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitKeys", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitKeys", 0usize
                         )
                     })
             });
@@ -388,12 +401,13 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("InputPending")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InputPending", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InputPending", 0usize
                         )
                     })
             });
@@ -407,7 +421,7 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::ConsoleKeyInfo),
                         bool,
@@ -416,7 +430,8 @@ impl crate::System::TermInfoDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsSpecialKey", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsSpecialKey", 1usize
                         )
                     })
             });
@@ -430,12 +445,13 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(char), bool, 1usize>("IsSpecialKey")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsSpecialKey", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsSpecialKey", 1usize
                         )
                     })
             });
@@ -458,7 +474,7 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (char),
                         quest_hook::libil2cpp::Void,
@@ -467,7 +483,8 @@ impl crate::System::TermInfoDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "QueueEcho", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "QueueEcho", 1usize
                         )
                     })
             });
@@ -487,7 +504,7 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -504,7 +521,8 @@ impl crate::System::TermInfoDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Read", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Read",
+                            3usize
                         )
                     })
             });
@@ -520,7 +538,7 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         crate::System::ConsoleKeyInfo,
@@ -529,7 +547,8 @@ impl crate::System::TermInfoDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadKey", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "ReadKey",
+                            1usize
                         )
                     })
             });
@@ -545,7 +564,7 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<bool>),
                         crate::System::ConsoleKeyInfo,
@@ -554,7 +573,8 @@ impl crate::System::TermInfoDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadKeyInternal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadKeyInternal", 1usize
                         )
                     })
             });
@@ -571,7 +591,7 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -580,7 +600,8 @@ impl crate::System::TermInfoDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadLine", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadLine", 0usize
                         )
                     })
             });
@@ -597,7 +618,7 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -606,7 +627,8 @@ impl crate::System::TermInfoDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadToEnd", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadToEnd", 0usize
                         )
                     })
             });
@@ -624,7 +646,7 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -633,7 +655,8 @@ impl crate::System::TermInfoDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadUntilConditionInternal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadUntilConditionInternal", 1usize
                         )
                     })
             });
@@ -650,7 +673,7 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -659,7 +682,8 @@ impl crate::System::TermInfoDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SearchTerminfo", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SearchTerminfo", 1usize
                         )
                     })
             });
@@ -676,7 +700,7 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -685,7 +709,8 @@ impl crate::System::TermInfoDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetCursorPosition", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetCursorPosition", 2usize
                         )
                     })
             });
@@ -703,7 +728,7 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -719,7 +744,8 @@ impl crate::System::TermInfoDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryTermInfoDir", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryTermInfoDir", 2usize
                         )
                     })
             });
@@ -735,7 +761,7 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -744,7 +770,8 @@ impl crate::System::TermInfoDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteConsole", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteConsole", 1usize
                         )
                     })
             });
@@ -760,7 +787,7 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::ConsoleKeyInfo),
                         quest_hook::libil2cpp::Void,
@@ -769,7 +796,8 @@ impl crate::System::TermInfoDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteSpecialKey", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteSpecialKey", 1usize
                         )
                     })
             });
@@ -785,7 +813,7 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (char),
                         quest_hook::libil2cpp::Void,
@@ -794,7 +822,8 @@ impl crate::System::TermInfoDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteSpecialKey", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteSpecialKey", 1usize
                         )
                     })
             });
@@ -810,7 +839,7 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -819,7 +848,8 @@ impl crate::System::TermInfoDriver {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -832,12 +862,13 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_Initialized")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Initialized", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Initialized", 0usize
                         )
                     })
             });
@@ -848,12 +879,13 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_WindowHeight")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_WindowHeight", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_WindowHeight", 0usize
                         )
                     })
             });
@@ -864,12 +896,13 @@ impl crate::System::TermInfoDriver {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_WindowWidth")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_WindowWidth", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_WindowWidth", 0usize
                         )
                     })
             });

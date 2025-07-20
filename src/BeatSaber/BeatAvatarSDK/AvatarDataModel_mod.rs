@@ -63,7 +63,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -74,7 +74,8 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateDefaultAvatarData", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateDefaultAvatarData", 0usize
                         )
                     })
             });
@@ -91,7 +92,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -102,7 +103,8 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateRandomAvatarData", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateRandomAvatarData", 0usize
                         )
                     })
             });
@@ -119,7 +121,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -128,7 +130,8 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DeleteAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DeleteAsync", 0usize
                         )
                     })
             });
@@ -145,7 +148,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -156,7 +159,8 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DeleteAsyncInternal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DeleteAsyncInternal", 0usize
                         )
                     })
             });
@@ -171,12 +175,13 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Init")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Init", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            0usize
                         )
                     })
             });
@@ -194,7 +199,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::BeatSaber::BeatAvatarSDK::AvatarSaveData,
@@ -205,7 +210,8 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Load", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Load",
+                            1usize
                         )
                     })
             });
@@ -222,7 +228,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -231,7 +237,8 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadAsync", 0usize
                         )
                     })
             });
@@ -250,7 +257,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::BeatSaber::BeatAvatarSDK::AvatarSaveData,
@@ -263,7 +270,8 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadFromCurrentVersion", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadFromCurrentVersion", 1usize
                         )
                     })
             });
@@ -286,7 +294,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::IFileStorage,
@@ -303,7 +311,8 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadFromSaveDataAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadFromSaveDataAsync", 1usize
                         )
                     })
             });
@@ -324,7 +333,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -335,7 +344,8 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadInternalAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadInternalAsync", 0usize
                         )
                     })
             });
@@ -357,7 +367,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -366,7 +376,8 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReportAvatarChanged", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReportAvatarChanged", 0usize
                         )
                     })
             });
@@ -383,7 +394,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -394,7 +405,8 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RequestIsAvatarCreatedAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RequestIsAvatarCreatedAsync", 0usize
                         )
                     })
             });
@@ -411,7 +423,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -420,7 +432,8 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SaveAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SaveAsync", 0usize
                         )
                     })
             });
@@ -437,7 +450,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -448,7 +461,8 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SaveInternalAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SaveInternalAsync", 0usize
                         )
                     })
             });
@@ -463,12 +477,13 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -488,7 +503,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -503,7 +518,8 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_didChangeAvatarDataEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_didChangeAvatarDataEvent", 1usize
                         )
                     })
             });
@@ -520,7 +536,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -531,7 +547,8 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_avatarData", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_avatarData", 0usize
                         )
                     })
             });
@@ -551,7 +568,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -566,7 +583,8 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_didChangeAvatarDataEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_didChangeAvatarDataEvent", 1usize
                         )
                     })
             });
@@ -582,7 +600,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::BeatSaber::BeatAvatarSDK::AvatarData,
@@ -593,7 +611,8 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_avatarData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_avatarData", 1usize
                         )
                     })
             });

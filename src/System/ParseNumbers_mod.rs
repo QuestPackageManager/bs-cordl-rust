@@ -45,7 +45,7 @@ impl crate::System::ParseNumbers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::ReadOnlySpan_1<char>,
@@ -57,7 +57,8 @@ impl crate::System::ParseNumbers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EatWhiteSpace", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EatWhiteSpace", 2usize
                         )
                     })
             });
@@ -75,7 +76,7 @@ impl crate::System::ParseNumbers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -89,7 +90,8 @@ impl crate::System::ParseNumbers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GrabInts", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GrabInts", 4usize
                         )
                     })
             });
@@ -107,7 +109,7 @@ impl crate::System::ParseNumbers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -121,7 +123,8 @@ impl crate::System::ParseNumbers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GrabLongs", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GrabLongs", 4usize
                         )
                     })
             });
@@ -142,7 +145,7 @@ impl crate::System::ParseNumbers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, i32, i32, char, i32),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -151,7 +154,8 @@ impl crate::System::ParseNumbers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IntToString", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IntToString", 5usize
                         )
                     })
             });
@@ -170,7 +174,7 @@ impl crate::System::ParseNumbers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (char, i32, quest_hook::libil2cpp::ByRefMut<i32>),
                         bool,
@@ -179,7 +183,8 @@ impl crate::System::ParseNumbers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsDigit", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsDigit",
+                            3usize
                         )
                     })
             });
@@ -200,7 +205,7 @@ impl crate::System::ParseNumbers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i64, i32, i32, char, i32),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -209,7 +214,8 @@ impl crate::System::ParseNumbers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LongToString", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LongToString", 5usize
                         )
                     })
             });
@@ -229,7 +235,7 @@ impl crate::System::ParseNumbers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::ReadOnlySpan_1<char>,
@@ -243,7 +249,8 @@ impl crate::System::ParseNumbers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StringToInt", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StringToInt", 4usize
                         )
                     })
             });
@@ -260,7 +267,7 @@ impl crate::System::ParseNumbers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::ReadOnlySpan_1<char>, i32, i32),
                         i32,
@@ -269,7 +276,8 @@ impl crate::System::ParseNumbers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StringToInt", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StringToInt", 3usize
                         )
                     })
             });
@@ -287,7 +295,7 @@ impl crate::System::ParseNumbers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::ReadOnlySpan_1<char>,
@@ -301,7 +309,8 @@ impl crate::System::ParseNumbers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StringToLong", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StringToLong", 4usize
                         )
                     })
             });
@@ -318,7 +327,7 @@ impl crate::System::ParseNumbers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::ReadOnlySpan_1<char>, i32, i32),
                         i64,
@@ -327,7 +336,8 @@ impl crate::System::ParseNumbers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StringToLong", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StringToLong", 3usize
                         )
                     })
             });
@@ -342,7 +352,7 @@ impl crate::System::ParseNumbers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -351,7 +361,8 @@ impl crate::System::ParseNumbers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ThrowOverflowInt32Exception", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ThrowOverflowInt32Exception", 0usize
                         )
                     })
             });
@@ -366,7 +377,7 @@ impl crate::System::ParseNumbers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -375,7 +386,8 @@ impl crate::System::ParseNumbers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ThrowOverflowInt64Exception", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ThrowOverflowInt64Exception", 0usize
                         )
                     })
             });
@@ -390,7 +402,7 @@ impl crate::System::ParseNumbers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -399,7 +411,8 @@ impl crate::System::ParseNumbers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ThrowOverflowUInt32Exception", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ThrowOverflowUInt32Exception", 0usize
                         )
                     })
             });
@@ -414,7 +427,7 @@ impl crate::System::ParseNumbers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -423,7 +436,8 @@ impl crate::System::ParseNumbers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ThrowOverflowUInt64Exception", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ThrowOverflowUInt64Exception", 0usize
                         )
                     })
             });

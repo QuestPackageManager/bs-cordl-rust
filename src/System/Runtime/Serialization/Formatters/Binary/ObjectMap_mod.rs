@@ -96,7 +96,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -122,7 +122,8 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateObjectInfo", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateObjectInfo", 2usize
                         )
                     })
             });
@@ -169,7 +170,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -216,7 +217,8 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Create", 9usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Create",
+                            9usize
                         )
                     })
             });
@@ -264,7 +266,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -294,7 +296,8 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Create", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Create",
+                            6usize
                         )
                     })
             });
@@ -426,7 +429,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -471,7 +474,8 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 9usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            9usize
                         )
                     })
             });
@@ -514,7 +518,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -542,7 +546,8 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            6usize
                         )
                     })
             });

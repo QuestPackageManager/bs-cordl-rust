@@ -121,7 +121,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -130,7 +130,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AdjustScrollers", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AdjustScrollers", 0usize
                         )
                     })
             });
@@ -145,7 +146,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -154,7 +155,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ApplyScrollInertia", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ApplyScrollInertia", 0usize
                         )
                     })
             });
@@ -170,7 +172,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector2),
                         bool,
@@ -179,7 +181,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ApplyTouchScrolling", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ApplyTouchScrolling", 1usize
                         )
                     })
             });
@@ -199,7 +202,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32, f32, f32, f32, f32, f32),
                         f32,
@@ -208,7 +211,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ComputeElasticOffset", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ComputeElasticOffset", 6usize
                         )
                     })
             });
@@ -234,7 +238,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -243,7 +247,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ComputeInitialSpringBackVelocity", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ComputeInitialSpringBackVelocity", 0usize
                         )
                     })
             });
@@ -261,7 +266,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector2),
                         crate::UnityEngine::UIElements::ScrollView_TouchScrollingResult,
@@ -270,7 +275,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ComputeTouchScrolling", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ComputeTouchScrolling", 1usize
                         )
                     })
             });
@@ -285,7 +291,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -294,7 +300,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExecuteElasticSpringAnimation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExecuteElasticSpringAnimation", 0usize
                         )
                     })
             });
@@ -313,12 +320,13 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f32, f32, f32, f32), f32, 4usize>("GetDeltaDistance")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetDeltaDistance", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDeltaDistance", 4usize
                         )
                     })
             });
@@ -338,7 +346,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::VisualElement,
@@ -349,7 +357,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetXDeltaOffset", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetXDeltaOffset", 1usize
                         )
                     })
             });
@@ -363,7 +372,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::VisualElement,
@@ -374,7 +383,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetYDeltaOffset", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetYDeltaOffset", 1usize
                         )
                     })
             });
@@ -388,7 +398,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector2),
                         quest_hook::libil2cpp::Void,
@@ -397,7 +407,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitTouchScrolling", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitTouchScrolling", 1usize
                         )
                     })
             });
@@ -431,7 +442,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::AttachToPanelEvent,
@@ -442,7 +453,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnAttachToPanel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnAttachToPanel", 1usize
                         )
                     })
             });
@@ -460,7 +472,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::DetachFromPanelEvent,
@@ -471,7 +483,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDetachFromPanel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDetachFromPanel", 1usize
                         )
                     })
             });
@@ -489,7 +502,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::GeometryChangedEvent,
@@ -500,7 +513,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnGeometryChanged", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnGeometryChanged", 1usize
                         )
                     })
             });
@@ -518,7 +532,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::GeometryChangedEvent,
@@ -529,7 +543,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnHorizontalScrollDragElementChanged", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnHorizontalScrollDragElementChanged", 1usize
                         )
                     })
             });
@@ -547,7 +562,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::PointerCancelEvent,
@@ -558,7 +573,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnPointerCancel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnPointerCancel", 1usize
                         )
                     })
             });
@@ -576,7 +592,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::PointerCaptureEvent,
@@ -587,7 +603,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnPointerCapture", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnPointerCapture", 1usize
                         )
                     })
             });
@@ -605,7 +622,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::PointerCaptureOutEvent,
@@ -616,7 +633,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnPointerCaptureOut", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnPointerCaptureOut", 1usize
                         )
                     })
             });
@@ -632,7 +650,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::PointerDownEvent,
@@ -643,7 +661,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnPointerDown", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnPointerDown", 1usize
                         )
                     })
             });
@@ -659,7 +678,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::PointerMoveEvent,
@@ -670,7 +689,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnPointerMove", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnPointerMove", 1usize
                         )
                     })
             });
@@ -686,7 +706,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::PointerUpEvent,
@@ -697,7 +717,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnPointerUp", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnPointerUp", 1usize
                         )
                     })
             });
@@ -715,7 +736,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::CustomStyleResolvedEvent,
@@ -726,7 +747,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnRootCustomStyleResolved", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnRootCustomStyleResolved", 1usize
                         )
                     })
             });
@@ -742,7 +764,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::PointerUpEvent,
@@ -753,7 +775,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnRootPointerUp", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnRootPointerUp", 1usize
                         )
                     })
             });
@@ -769,7 +792,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::WheelEvent,
@@ -780,7 +803,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnScrollWheel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnScrollWheel", 1usize
                         )
                     })
             });
@@ -798,7 +822,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::GeometryChangedEvent,
@@ -809,7 +833,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnScrollersGeometryChanged", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnScrollersGeometryChanged", 1usize
                         )
                     })
             });
@@ -827,7 +852,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::GeometryChangedEvent,
@@ -838,7 +863,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnVerticalScrollDragElementChanged", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnVerticalScrollDragElementChanged", 1usize
                         )
                     })
             });
@@ -853,7 +879,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -862,7 +888,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PostPointerUpAnimation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PostPointerUpAnimation", 0usize
                         )
                     })
             });
@@ -877,7 +904,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -886,7 +913,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadSingleLineHeight", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadSingleLineHeight", 0usize
                         )
                     })
             });
@@ -903,7 +931,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -917,7 +945,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReleaseScrolling", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReleaseScrolling", 2usize
                         )
                     })
             });
@@ -932,7 +961,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -941,7 +970,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResetLayoutPass", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResetLayoutPass", 0usize
                         )
                     })
             });
@@ -956,7 +986,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -965,7 +995,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScheduleResetLayoutPass", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScheduleResetLayoutPass", 0usize
                         )
                     })
             });
@@ -981,7 +1012,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::VisualElement,
@@ -992,7 +1023,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScrollTo", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScrollTo", 1usize
                         )
                     })
             });
@@ -1008,7 +1040,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UIElements::ScrollViewMode),
                         quest_hook::libil2cpp::Void,
@@ -1017,7 +1049,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetScrollViewMode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetScrollViewMode", 1usize
                         )
                     })
             });
@@ -1032,12 +1065,13 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SpringBack")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SpringBack", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SpringBack", 0usize
                         )
                     })
             });
@@ -1052,7 +1086,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1061,7 +1095,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateContentViewTransform", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateContentViewTransform", 0usize
                         )
                     })
             });
@@ -1076,7 +1111,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1085,7 +1120,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateElasticBehaviour", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateElasticBehaviour", 0usize
                         )
                     })
             });
@@ -1100,7 +1136,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1109,7 +1145,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateHorizontalSliderPageSize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateHorizontalSliderPageSize", 0usize
                         )
                     })
             });
@@ -1126,7 +1163,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, bool),
                         quest_hook::libil2cpp::Void,
@@ -1135,7 +1172,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateScrollers", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateScrollers", 2usize
                         )
                     })
             });
@@ -1150,7 +1188,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1159,7 +1197,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateVerticalSliderPageSize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateVerticalSliderPageSize", 0usize
                         )
                     })
             });
@@ -1175,7 +1214,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -1184,7 +1223,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<.ctor>b__126_0", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<.ctor>b__126_0", 1usize
                         )
                     })
             });
@@ -1200,7 +1240,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -1209,7 +1249,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<.ctor>b__126_1", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<.ctor>b__126_1", 1usize
                         )
                     })
             });
@@ -1224,12 +1265,13 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -1245,7 +1287,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UIElements::ScrollViewMode),
                         quest_hook::libil2cpp::Void,
@@ -1254,7 +1296,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -1271,7 +1314,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1282,7 +1325,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_contentContainer", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_contentContainer", 0usize
                         )
                     })
             });
@@ -1299,7 +1343,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1310,7 +1354,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_contentViewport", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_contentViewport", 0usize
                         )
                     })
             });
@@ -1323,12 +1368,13 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_elasticity")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_elasticity", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_elasticity", 0usize
                         )
                     })
             });
@@ -1339,12 +1385,13 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_hasInertia")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_hasInertia", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_hasInertia", 0usize
                         )
                     })
             });
@@ -1359,7 +1406,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1370,7 +1417,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_horizontalScroller", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_horizontalScroller", 0usize
                         )
                     })
             });
@@ -1387,7 +1435,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::UIElements::ScrollerVisibility,
@@ -1396,7 +1444,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_horizontalScrollerVisibility", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_horizontalScrollerVisibility", 0usize
                         )
                     })
             });
@@ -1411,12 +1460,13 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isHorizontalScrollDisplayed")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_isHorizontalScrollDisplayed", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isHorizontalScrollDisplayed", 0usize
                         )
                     })
             });
@@ -1429,12 +1479,13 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isVerticalScrollDisplayed")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_isVerticalScrollDisplayed", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isVerticalScrollDisplayed", 0usize
                         )
                     })
             });
@@ -1447,7 +1498,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::UIElements::ScrollViewMode,
@@ -1456,7 +1507,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_mode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_mode", 0usize
                         )
                     })
             });
@@ -1469,12 +1521,13 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_mouseWheelScrollSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_mouseWheelScrollSize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_mouseWheelScrollSize", 0usize
                         )
                     })
             });
@@ -1485,12 +1538,13 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_needsHorizontal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_needsHorizontal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_needsHorizontal", 0usize
                         )
                     })
             });
@@ -1501,12 +1555,13 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_needsVertical")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_needsVertical", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_needsVertical", 0usize
                         )
                     })
             });
@@ -1521,7 +1576,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind,
@@ -1530,7 +1585,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_nestedInteractionKind", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_nestedInteractionKind", 0usize
                         )
                     })
             });
@@ -1543,12 +1599,13 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_scrollDecelerationRate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_scrollDecelerationRate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_scrollDecelerationRate", 0usize
                         )
                     })
             });
@@ -1561,7 +1618,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector2,
@@ -1570,7 +1627,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_scrollOffset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_scrollOffset", 0usize
                         )
                     })
             });
@@ -1583,12 +1641,13 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_scrollableHeight")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_scrollableHeight", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_scrollableHeight", 0usize
                         )
                     })
             });
@@ -1599,12 +1658,13 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_scrollableWidth")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_scrollableWidth", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_scrollableWidth", 0usize
                         )
                     })
             });
@@ -1619,7 +1679,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior,
@@ -1628,7 +1688,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_touchScrollBehavior", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_touchScrollBehavior", 0usize
                         )
                     })
             });
@@ -1645,7 +1706,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1656,7 +1717,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_verticalScroller", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_verticalScroller", 0usize
                         )
                     })
             });
@@ -1673,7 +1735,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::UIElements::ScrollerVisibility,
@@ -1682,7 +1744,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_verticalScrollerVisibility", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_verticalScrollerVisibility", 0usize
                         )
                     })
             });
@@ -1698,7 +1761,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i64),
                         quest_hook::libil2cpp::Void,
@@ -1707,7 +1770,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_elasticAnimationIntervalMs", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_elasticAnimationIntervalMs", 1usize
                         )
                     })
             });
@@ -1723,7 +1787,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -1732,7 +1796,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_elasticity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_elasticity", 1usize
                         )
                     })
             });
@@ -1748,7 +1813,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -1757,7 +1822,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_horizontalPageSize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_horizontalPageSize", 1usize
                         )
                     })
             });
@@ -1773,7 +1839,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UIElements::ScrollerVisibility),
                         quest_hook::libil2cpp::Void,
@@ -1782,7 +1848,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_horizontalScrollerVisibility", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_horizontalScrollerVisibility", 1usize
                         )
                     })
             });
@@ -1798,7 +1865,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UIElements::ScrollViewMode),
                         quest_hook::libil2cpp::Void,
@@ -1807,7 +1874,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_mode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_mode", 1usize
                         )
                     })
             });
@@ -1823,7 +1891,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -1832,7 +1900,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_mouseWheelScrollSize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_mouseWheelScrollSize", 1usize
                         )
                     })
             });
@@ -1848,7 +1917,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind),
                         quest_hook::libil2cpp::Void,
@@ -1857,7 +1926,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_nestedInteractionKind", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_nestedInteractionKind", 1usize
                         )
                     })
             });
@@ -1873,7 +1943,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -1882,7 +1952,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_scrollDecelerationRate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_scrollDecelerationRate", 1usize
                         )
                     })
             });
@@ -1898,7 +1969,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector2),
                         quest_hook::libil2cpp::Void,
@@ -1907,7 +1978,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_scrollOffset", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_scrollOffset", 1usize
                         )
                     })
             });
@@ -1923,7 +1995,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -1932,7 +2004,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_showHorizontal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_showHorizontal", 1usize
                         )
                     })
             });
@@ -1948,7 +2021,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -1957,7 +2030,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_showVertical", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_showVertical", 1usize
                         )
                     })
             });
@@ -1973,7 +2047,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior),
                         quest_hook::libil2cpp::Void,
@@ -1982,7 +2056,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_touchScrollBehavior", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_touchScrollBehavior", 1usize
                         )
                     })
             });
@@ -1998,7 +2073,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -2007,7 +2082,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_verticalPageSize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_verticalPageSize", 1usize
                         )
                     })
             });
@@ -2023,7 +2099,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UIElements::ScrollerVisibility),
                         quest_hook::libil2cpp::Void,
@@ -2032,7 +2108,8 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_verticalScrollerVisibility", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_verticalScrollerVisibility", 1usize
                         )
                     })
             });
@@ -2390,12 +2467,13 @@ impl crate::UnityEngine::UIElements::ScrollView_UxmlFactory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -2514,7 +2592,7 @@ impl crate::UnityEngine::UIElements::ScrollView_UxmlTraits {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2531,7 +2609,8 @@ impl crate::UnityEngine::UIElements::ScrollView_UxmlTraits {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Init", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            3usize
                         )
                     })
             });
@@ -2553,12 +2632,13 @@ impl crate::UnityEngine::UIElements::ScrollView_UxmlTraits {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

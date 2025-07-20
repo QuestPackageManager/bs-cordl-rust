@@ -63,7 +63,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Color, crate::UnityEngine::Color),
                         quest_hook::libil2cpp::Void,
@@ -72,7 +72,8 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetColors", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetColors", 2usize
                         )
                     })
             });
@@ -87,7 +88,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -96,7 +97,8 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetDisabledState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetDisabledState", 0usize
                         )
                     })
             });
@@ -111,7 +113,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -120,7 +122,8 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetHighlightedState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetHighlightedState", 0usize
                         )
                     })
             });
@@ -135,7 +138,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -144,7 +147,8 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetNormalState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetNormalState", 0usize
                         )
                     })
             });
@@ -159,7 +163,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -168,7 +172,8 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetPressedState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetPressedState", 0usize
                         )
                     })
             });
@@ -183,7 +188,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -192,7 +197,8 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetSelectedAndHighlightedState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetSelectedAndHighlightedState", 0usize
                         )
                     })
             });
@@ -207,7 +213,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -216,7 +222,8 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetSelectedState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetSelectedState", 0usize
                         )
                     })
             });
@@ -243,7 +250,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Color,
@@ -265,7 +272,8 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartTween", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartTween", 6usize
                         )
                     })
             });
@@ -296,7 +304,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Color,
@@ -311,7 +319,8 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartTweens", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartTweens", 3usize
                         )
                     })
             });
@@ -326,7 +335,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -335,7 +344,8 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StopCurrentTransitionAnimation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StopCurrentTransitionAnimation", 0usize
                         )
                     })
             });
@@ -353,7 +363,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::TransitionTimingSO,
@@ -364,7 +374,8 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TransitionToDisabledState", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TransitionToDisabledState", 1usize
                         )
                     })
             });
@@ -382,7 +393,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::TransitionTimingSO,
@@ -393,7 +404,8 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TransitionToHighlightedState", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TransitionToHighlightedState", 1usize
                         )
                     })
             });
@@ -411,7 +423,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::TransitionTimingSO,
@@ -422,7 +434,8 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TransitionToNormalState", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TransitionToNormalState", 1usize
                         )
                     })
             });
@@ -440,7 +453,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::TransitionTimingSO,
@@ -451,7 +464,8 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TransitionToPressedState", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TransitionToPressedState", 1usize
                         )
                     })
             });
@@ -469,7 +483,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::TransitionTimingSO,
@@ -480,8 +494,8 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TransitionToSelectedAndHighlightedState",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TransitionToSelectedAndHighlightedState", 1usize
                         )
                     })
             });
@@ -499,7 +513,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::TransitionTimingSO,
@@ -510,7 +524,8 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TransitionToSelectedState", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TransitionToSelectedState", 1usize
                         )
                     })
             });
@@ -526,7 +541,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Color),
                         quest_hook::libil2cpp::Void,
@@ -535,7 +550,8 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<StartTweens>b__18_2", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<StartTweens>b__18_2", 1usize
                         )
                     })
             });
@@ -551,7 +567,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Color),
                         quest_hook::libil2cpp::Void,
@@ -560,7 +576,8 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<StartTweens>b__18_3", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<StartTweens>b__18_3", 1usize
                         )
                     })
             });
@@ -575,7 +592,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -584,8 +601,8 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<StartTweens>g__Color1CompleteAction|18_0",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<StartTweens>g__Color1CompleteAction|18_0", 0usize
                         )
                     })
             });
@@ -600,7 +617,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -609,8 +626,8 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<StartTweens>g__Color2CompleteAction|18_1",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<StartTweens>g__Color2CompleteAction|18_1", 0usize
                         )
                     })
             });
@@ -625,12 +642,13 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -647,7 +665,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -658,7 +676,8 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_transition", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_transition", 0usize
                         )
                     })
             });

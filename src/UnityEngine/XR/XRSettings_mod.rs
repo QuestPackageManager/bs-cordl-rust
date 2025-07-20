@@ -46,7 +46,7 @@ impl crate::UnityEngine::XR::XRSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::UnityEngine::Rendering::TextureDimension,
@@ -55,7 +55,8 @@ impl crate::UnityEngine::XR::XRSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_deviceEyeTextureDimension", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_deviceEyeTextureDimension", 0usize
                         )
                     })
             });
@@ -68,12 +69,13 @@ impl crate::UnityEngine::XR::XRSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_enabled")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_enabled", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_enabled", 0usize
                         )
                     })
             });
@@ -84,12 +86,13 @@ impl crate::UnityEngine::XR::XRSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("get_eyeTextureHeight")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_eyeTextureHeight", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_eyeTextureHeight", 0usize
                         )
                     })
             });
@@ -100,7 +103,7 @@ impl crate::UnityEngine::XR::XRSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         f32,
@@ -109,7 +112,8 @@ impl crate::UnityEngine::XR::XRSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_eyeTextureResolutionScale", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_eyeTextureResolutionScale", 0usize
                         )
                     })
             });
@@ -120,12 +124,13 @@ impl crate::UnityEngine::XR::XRSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("get_eyeTextureWidth")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_eyeTextureWidth", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_eyeTextureWidth", 0usize
                         )
                     })
             });
@@ -136,12 +141,13 @@ impl crate::UnityEngine::XR::XRSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_isDeviceActive")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_isDeviceActive", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isDeviceActive", 0usize
                         )
                     })
             });
@@ -154,7 +160,7 @@ impl crate::UnityEngine::XR::XRSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -163,7 +169,8 @@ impl crate::UnityEngine::XR::XRSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_loadedDeviceName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_loadedDeviceName", 0usize
                         )
                     })
             });
@@ -176,12 +183,13 @@ impl crate::UnityEngine::XR::XRSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_occlusionMaskScale")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_occlusionMaskScale", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_occlusionMaskScale", 0usize
                         )
                     })
             });
@@ -192,12 +200,13 @@ impl crate::UnityEngine::XR::XRSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_renderViewportScale")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_renderViewportScale", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_renderViewportScale", 0usize
                         )
                     })
             });
@@ -208,7 +217,7 @@ impl crate::UnityEngine::XR::XRSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         f32,
@@ -217,7 +226,8 @@ impl crate::UnityEngine::XR::XRSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_renderViewportScaleInternal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_renderViewportScaleInternal", 0usize
                         )
                     })
             });
@@ -228,12 +238,13 @@ impl crate::UnityEngine::XR::XRSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_showDeviceView")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_showDeviceView", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_showDeviceView", 0usize
                         )
                     })
             });
@@ -246,7 +257,7 @@ impl crate::UnityEngine::XR::XRSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::UnityEngine::XR::XRSettings_StereoRenderingMode,
@@ -255,7 +266,8 @@ impl crate::UnityEngine::XR::XRSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_stereoRenderingMode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_stereoRenderingMode", 0usize
                         )
                     })
             });
@@ -268,12 +280,13 @@ impl crate::UnityEngine::XR::XRSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_useOcclusionMesh")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_useOcclusionMesh", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_useOcclusionMesh", 0usize
                         )
                     })
             });
@@ -286,7 +299,7 @@ impl crate::UnityEngine::XR::XRSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -295,7 +308,8 @@ impl crate::UnityEngine::XR::XRSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_eyeTextureResolutionScale", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_eyeTextureResolutionScale", 1usize
                         )
                     })
             });
@@ -310,7 +324,7 @@ impl crate::UnityEngine::XR::XRSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -319,7 +333,8 @@ impl crate::UnityEngine::XR::XRSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_renderViewportScale", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_renderViewportScale", 1usize
                         )
                     })
             });
@@ -334,7 +349,7 @@ impl crate::UnityEngine::XR::XRSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -343,7 +358,8 @@ impl crate::UnityEngine::XR::XRSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_renderViewportScaleInternal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_renderViewportScaleInternal", 1usize
                         )
                     })
             });
@@ -358,7 +374,7 @@ impl crate::UnityEngine::XR::XRSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -367,7 +383,8 @@ impl crate::UnityEngine::XR::XRSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_showDeviceView", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_showDeviceView", 1usize
                         )
                     })
             });

@@ -51,7 +51,7 @@ impl crate::GlobalNamespace::IStandaloneMonobehavior {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -65,7 +65,8 @@ impl crate::GlobalNamespace::IStandaloneMonobehavior {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RunAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RunAsync", 2usize
                         )
                     })
             });
@@ -80,12 +81,13 @@ impl crate::GlobalNamespace::IStandaloneMonobehavior {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Stop")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Stop", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Stop",
+                            0usize
                         )
                     })
             });
@@ -101,7 +103,7 @@ impl crate::GlobalNamespace::IStandaloneMonobehavior {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -110,7 +112,8 @@ impl crate::GlobalNamespace::IStandaloneMonobehavior {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WhenReady", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WhenReady", 1usize
                         )
                     })
             });
@@ -132,7 +135,7 @@ impl crate::GlobalNamespace::IStandaloneMonobehavior {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Func_1<
@@ -147,7 +150,8 @@ impl crate::GlobalNamespace::IStandaloneMonobehavior {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WhenReadyAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WhenReadyAsync", 1usize
                         )
                     })
             });

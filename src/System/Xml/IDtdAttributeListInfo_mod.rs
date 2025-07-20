@@ -48,7 +48,7 @@ impl crate::System::Xml::IDtdAttributeListInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -64,7 +64,8 @@ impl crate::System::Xml::IDtdAttributeListInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LookupAttribute", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LookupAttribute", 2usize
                         )
                     })
             });
@@ -85,7 +86,7 @@ impl crate::System::Xml::IDtdAttributeListInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -100,7 +101,8 @@ impl crate::System::Xml::IDtdAttributeListInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LookupDefaultAttributes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LookupDefaultAttributes", 0usize
                         )
                     })
             });
@@ -120,12 +122,13 @@ impl crate::System::Xml::IDtdAttributeListInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_HasNonCDataAttributes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_HasNonCDataAttributes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_HasNonCDataAttributes", 0usize
                         )
                     })
             });

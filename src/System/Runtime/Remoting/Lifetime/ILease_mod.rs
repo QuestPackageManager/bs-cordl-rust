@@ -46,7 +46,7 @@ impl crate::System::Runtime::Remoting::Lifetime::ILease {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::TimeSpan),
                         crate::System::TimeSpan,
@@ -55,7 +55,8 @@ impl crate::System::Runtime::Remoting::Lifetime::ILease {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Renew", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Renew",
+                            1usize
                         )
                     })
             });
@@ -75,7 +76,7 @@ impl crate::System::Runtime::Remoting::Lifetime::ILease {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::TimeSpan,
@@ -84,7 +85,8 @@ impl crate::System::Runtime::Remoting::Lifetime::ILease {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CurrentLeaseTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CurrentLeaseTime", 0usize
                         )
                     })
             });
@@ -101,7 +103,7 @@ impl crate::System::Runtime::Remoting::Lifetime::ILease {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Runtime::Remoting::Lifetime::LeaseState,
@@ -110,7 +112,8 @@ impl crate::System::Runtime::Remoting::Lifetime::ILease {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CurrentState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CurrentState", 0usize
                         )
                     })
             });
@@ -125,7 +128,7 @@ impl crate::System::Runtime::Remoting::Lifetime::ILease {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::TimeSpan,
@@ -134,7 +137,8 @@ impl crate::System::Runtime::Remoting::Lifetime::ILease {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_RenewOnCallTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_RenewOnCallTime", 0usize
                         )
                     })
             });

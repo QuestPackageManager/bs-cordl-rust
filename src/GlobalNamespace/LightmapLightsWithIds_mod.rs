@@ -63,7 +63,7 @@ impl crate::GlobalNamespace::LightmapLightsWithIds {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -78,7 +78,8 @@ impl crate::GlobalNamespace::LightmapLightsWithIds {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLightWithIds", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLightWithIds", 0usize
                         )
                     })
             });
@@ -104,7 +105,7 @@ impl crate::GlobalNamespace::LightmapLightsWithIds {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -113,7 +114,8 @@ impl crate::GlobalNamespace::LightmapLightsWithIds {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessNewColorData", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessNewColorData", 0usize
                         )
                     })
             });
@@ -128,12 +130,13 @@ impl crate::GlobalNamespace::LightmapLightsWithIds {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -146,12 +149,13 @@ impl crate::GlobalNamespace::LightmapLightsWithIds {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_maxTotalIntensity")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_maxTotalIntensity", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_maxTotalIntensity", 0usize
                         )
                     })
             });
@@ -165,7 +169,7 @@ impl crate::GlobalNamespace::LightmapLightsWithIds {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -174,7 +178,8 @@ impl crate::GlobalNamespace::LightmapLightsWithIds {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_maxTotalIntensity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_maxTotalIntensity", 1usize
                         )
                     })
             });
@@ -258,7 +263,7 @@ impl crate::GlobalNamespace::LightmapLightsWithIds_LightIntensitiesWithId {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Color, crate::UnityEngine::Color),
                         quest_hook::libil2cpp::Void,
@@ -267,7 +272,8 @@ impl crate::GlobalNamespace::LightmapLightsWithIds_LightIntensitiesWithId {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetDataToShaders", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetDataToShaders", 2usize
                         )
                     })
             });
@@ -282,12 +288,13 @@ impl crate::GlobalNamespace::LightmapLightsWithIds_LightIntensitiesWithId {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -302,7 +309,7 @@ impl crate::GlobalNamespace::LightmapLightsWithIds_LightIntensitiesWithId {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::LightConstants_BakeId,
@@ -311,7 +318,8 @@ impl crate::GlobalNamespace::LightmapLightsWithIds_LightIntensitiesWithId {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_bakeId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_bakeId", 0usize
                         )
                     })
             });
@@ -324,12 +332,13 @@ impl crate::GlobalNamespace::LightmapLightsWithIds_LightIntensitiesWithId {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_intensity")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_intensity", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_intensity", 0usize
                         )
                     })
             });
@@ -340,12 +349,13 @@ impl crate::GlobalNamespace::LightmapLightsWithIds_LightIntensitiesWithId {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_weight")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_weight", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_weight", 0usize
                         )
                     })
             });
@@ -359,7 +369,7 @@ impl crate::GlobalNamespace::LightmapLightsWithIds_LightIntensitiesWithId {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -368,7 +378,8 @@ impl crate::GlobalNamespace::LightmapLightsWithIds_LightIntensitiesWithId {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_intensity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_intensity", 1usize
                         )
                     })
             });
@@ -384,7 +395,7 @@ impl crate::GlobalNamespace::LightmapLightsWithIds_LightIntensitiesWithId {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -393,7 +404,8 @@ impl crate::GlobalNamespace::LightmapLightsWithIds_LightIntensitiesWithId {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_weight", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_weight", 1usize
                         )
                     })
             });

@@ -47,7 +47,7 @@ impl crate::System::Globalization::EncodingTable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -61,7 +61,8 @@ impl crate::System::Globalization::EncodingTable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ENC", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "ENC",
+                            2usize
                         )
                     })
             });
@@ -78,7 +79,7 @@ impl crate::System::Globalization::EncodingTable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
@@ -89,7 +90,8 @@ impl crate::System::Globalization::EncodingTable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCodePageDataItem", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCodePageDataItem", 1usize
                         )
                     })
             });
@@ -104,7 +106,7 @@ impl crate::System::Globalization::EncodingTable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         i32,
@@ -113,7 +115,8 @@ impl crate::System::Globalization::EncodingTable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCodePageFromName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCodePageFromName", 1usize
                         )
                     })
             });
@@ -124,12 +127,13 @@ impl crate::System::Globalization::EncodingTable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("GetNumEncodingItems")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNumEncodingItems", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNumEncodingItems", 0usize
                         )
                     })
             });
@@ -147,7 +151,7 @@ impl crate::System::Globalization::EncodingTable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u16,
@@ -163,7 +167,8 @@ impl crate::System::Globalization::EncodingTable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MapCodePageDataItem", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MapCodePageDataItem", 4usize
                         )
                     })
             });
@@ -178,7 +183,7 @@ impl crate::System::Globalization::EncodingTable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         i32,
@@ -187,7 +192,8 @@ impl crate::System::Globalization::EncodingTable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "internalGetCodePageFromName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "internalGetCodePageFromName", 1usize
                         )
                     })
             });

@@ -109,7 +109,7 @@ impl crate::TMPro::TMP_LinkInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -118,7 +118,8 @@ impl crate::TMPro::TMP_LinkInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLinkID", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLinkID", 0usize
                         )
                     })
             });
@@ -135,7 +136,7 @@ impl crate::TMPro::TMP_LinkInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -144,7 +145,8 @@ impl crate::TMPro::TMP_LinkInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLinkText", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLinkText", 0usize
                         )
                     })
             });
@@ -162,7 +164,7 @@ impl crate::TMPro::TMP_LinkInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -177,7 +179,8 @@ impl crate::TMPro::TMP_LinkInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetLinkID", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetLinkID", 3usize
                         )
                     })
             });

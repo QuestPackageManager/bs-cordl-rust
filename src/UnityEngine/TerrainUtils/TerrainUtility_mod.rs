@@ -43,7 +43,7 @@ impl crate::UnityEngine::TerrainUtils::TerrainUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -52,7 +52,8 @@ impl crate::UnityEngine::TerrainUtils::TerrainUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AutoConnect", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AutoConnect", 0usize
                         )
                     })
             });
@@ -67,7 +68,7 @@ impl crate::UnityEngine::TerrainUtils::TerrainUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -76,7 +77,8 @@ impl crate::UnityEngine::TerrainUtils::TerrainUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ClearConnectivity", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ClearConnectivity", 0usize
                         )
                     })
             });
@@ -98,7 +100,7 @@ impl crate::UnityEngine::TerrainUtils::TerrainUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Gc<
@@ -114,7 +116,8 @@ impl crate::UnityEngine::TerrainUtils::TerrainUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CollectTerrains", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CollectTerrains", 1usize
                         )
                     })
             });
@@ -130,12 +133,13 @@ impl crate::UnityEngine::TerrainUtils::TerrainUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("ValidTerrainsExist")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ValidTerrainsExist", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValidTerrainsExist", 0usize
                         )
                     })
             });

@@ -61,7 +61,7 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -72,7 +72,8 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPlayerSpecificSettingsForUserId", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPlayerSpecificSettingsForUserId", 1usize
                         )
                     })
             });
@@ -107,7 +108,7 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable,
@@ -118,7 +119,8 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SaveFromNetSerializable", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SaveFromNetSerializable", 1usize
                         )
                     })
             });
@@ -139,7 +141,7 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -155,7 +157,8 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -178,7 +181,7 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -189,7 +192,8 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_localPlayerSpecificSettings", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_localPlayerSpecificSettings", 0usize
                         )
                     })
             });
@@ -210,7 +214,7 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -225,7 +229,8 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_playersAtGameStart", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_playersAtGameStart", 0usize
                         )
                     })
             });
@@ -246,7 +251,7 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -257,8 +262,8 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_playersAtGameStartNetSerializable",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_playersAtGameStartNetSerializable", 0usize
                         )
                     })
             });
@@ -276,7 +281,7 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
@@ -287,7 +292,8 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_localPlayerSpecificSettings", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_localPlayerSpecificSettings", 1usize
                         )
                     })
             });
@@ -305,7 +311,7 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable,
@@ -316,8 +322,8 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_playersAtGameStartNetSerializable",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_playersAtGameStartNetSerializable", 1usize
                         )
                     })
             });

@@ -50,7 +50,7 @@ impl crate::System::Threading::Volatile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<bool>),
                         bool,
@@ -59,7 +59,8 @@ impl crate::System::Threading::Volatile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Read", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Read",
+                            1usize
                         )
                     })
             });
@@ -72,7 +73,7 @@ impl crate::System::Threading::Volatile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<i32>),
                         i32,
@@ -81,7 +82,8 @@ impl crate::System::Threading::Volatile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Read", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Read",
+                            1usize
                         )
                     })
             });
@@ -98,7 +100,7 @@ impl crate::System::Threading::Volatile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<T>),
                         T,
@@ -107,7 +109,8 @@ impl crate::System::Threading::Volatile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Read", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Read",
+                            1usize
                         )
                     })
             });
@@ -125,7 +128,7 @@ impl crate::System::Threading::Volatile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<T>, T),
                         quest_hook::libil2cpp::Void,
@@ -134,7 +137,8 @@ impl crate::System::Threading::Volatile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Write", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Write",
+                            2usize
                         )
                     })
             });
@@ -150,7 +154,7 @@ impl crate::System::Threading::Volatile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<bool>, bool),
                         quest_hook::libil2cpp::Void,
@@ -159,7 +163,8 @@ impl crate::System::Threading::Volatile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Write", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Write",
+                            2usize
                         )
                     })
             });
@@ -175,7 +180,7 @@ impl crate::System::Threading::Volatile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<i32>, i32),
                         quest_hook::libil2cpp::Void,
@@ -184,7 +189,8 @@ impl crate::System::Threading::Volatile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Write", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Write",
+                            2usize
                         )
                     })
             });

@@ -94,12 +94,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RandomObjectPicker_
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), T, 0usize>("PickRandomObject")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PickRandomObject", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PickRandomObject", 0usize
                         )
                     })
             });
@@ -118,7 +119,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RandomObjectPicker_
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -132,7 +133,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RandomObjectPicker_
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -153,7 +155,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RandomObjectPicker_
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (T, f32),
                         quest_hook::libil2cpp::Void,
@@ -162,7 +164,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RandomObjectPicker_
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });

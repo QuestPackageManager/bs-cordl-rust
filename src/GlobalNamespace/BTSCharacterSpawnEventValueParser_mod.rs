@@ -49,12 +49,13 @@ impl crate::GlobalNamespace::BTSCharacterSpawnEventValueParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("GetAnimationId")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAnimationId", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAnimationId", 1usize
                         )
                     })
             });
@@ -65,7 +66,7 @@ impl crate::GlobalNamespace::BTSCharacterSpawnEventValueParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         bool,
@@ -74,7 +75,8 @@ impl crate::GlobalNamespace::BTSCharacterSpawnEventValueParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetIsAlternativeMaterial", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetIsAlternativeMaterial", 1usize
                         )
                     })
             });
@@ -85,12 +87,13 @@ impl crate::GlobalNamespace::BTSCharacterSpawnEventValueParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("GetPrefabId")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPrefabId", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPrefabId", 1usize
                         )
                     })
             });
@@ -105,7 +108,7 @@ impl crate::GlobalNamespace::BTSCharacterSpawnEventValueParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, i32, bool),
                         i32,
@@ -114,7 +117,8 @@ impl crate::GlobalNamespace::BTSCharacterSpawnEventValueParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MergeValuesIntoOneInt", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MergeValuesIntoOneInt", 3usize
                         )
                     })
             });

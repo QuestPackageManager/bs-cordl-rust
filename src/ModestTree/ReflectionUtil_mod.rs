@@ -49,7 +49,7 @@ impl crate::ModestTree::ReflectionUtil {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -67,7 +67,8 @@ impl crate::ModestTree::ReflectionUtil {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateArray", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateArray", 2usize
                         )
                     })
             });
@@ -89,7 +90,7 @@ impl crate::ModestTree::ReflectionUtil {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -107,7 +108,8 @@ impl crate::ModestTree::ReflectionUtil {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateGenericList", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateGenericList", 2usize
                         )
                     })
             });
@@ -124,7 +126,7 @@ impl crate::ModestTree::ReflectionUtil {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -133,7 +135,8 @@ impl crate::ModestTree::ReflectionUtil {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToDebugString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToDebugString", 1usize
                         )
                     })
             });
@@ -154,7 +157,7 @@ impl crate::ModestTree::ReflectionUtil {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action_1<TParam1>>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -163,7 +166,8 @@ impl crate::ModestTree::ReflectionUtil {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToDebugString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToDebugString", 1usize
                         )
                     })
             });
@@ -186,7 +190,7 @@ impl crate::ModestTree::ReflectionUtil {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_2<TParam1, TParam2>,
@@ -197,7 +201,8 @@ impl crate::ModestTree::ReflectionUtil {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToDebugString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToDebugString", 1usize
                         )
                     })
             });
@@ -224,7 +229,7 @@ impl crate::ModestTree::ReflectionUtil {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_3<TParam1, TParam2, TParam3>,
@@ -235,7 +240,8 @@ impl crate::ModestTree::ReflectionUtil {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToDebugString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToDebugString", 1usize
                         )
                     })
             });
@@ -264,7 +270,7 @@ impl crate::ModestTree::ReflectionUtil {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_4<TParam1, TParam2, TParam3, TParam4>,
@@ -275,7 +281,8 @@ impl crate::ModestTree::ReflectionUtil {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToDebugString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToDebugString", 1usize
                         )
                     })
             });
@@ -306,7 +313,7 @@ impl crate::ModestTree::ReflectionUtil {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_5<
@@ -323,7 +330,8 @@ impl crate::ModestTree::ReflectionUtil {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToDebugString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToDebugString", 1usize
                         )
                     })
             });
@@ -363,7 +371,7 @@ impl crate::ModestTree::ReflectionUtil {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_6<
@@ -381,7 +389,8 @@ impl crate::ModestTree::ReflectionUtil {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToDebugString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToDebugString", 1usize
                         )
                     })
             });
@@ -402,7 +411,7 @@ impl crate::ModestTree::ReflectionUtil {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Func_1<TParam1>>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -411,7 +420,8 @@ impl crate::ModestTree::ReflectionUtil {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToDebugString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToDebugString", 1usize
                         )
                     })
             });
@@ -434,7 +444,7 @@ impl crate::ModestTree::ReflectionUtil {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Func_2<TParam1, TParam2>,
@@ -445,7 +455,8 @@ impl crate::ModestTree::ReflectionUtil {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToDebugString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToDebugString", 1usize
                         )
                     })
             });
@@ -470,7 +481,7 @@ impl crate::ModestTree::ReflectionUtil {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Func_3<TParam1, TParam2, TParam3>,
@@ -481,7 +492,8 @@ impl crate::ModestTree::ReflectionUtil {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToDebugString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToDebugString", 1usize
                         )
                     })
             });
@@ -510,7 +522,7 @@ impl crate::ModestTree::ReflectionUtil {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Func_4<TParam1, TParam2, TParam3, TParam4>,
@@ -521,7 +533,8 @@ impl crate::ModestTree::ReflectionUtil {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToDebugString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToDebugString", 1usize
                         )
                     })
             });
@@ -538,7 +551,7 @@ impl crate::ModestTree::ReflectionUtil {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Reflection::MethodInfo,
@@ -549,7 +562,8 @@ impl crate::ModestTree::ReflectionUtil {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToDebugString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToDebugString", 1usize
                         )
                     })
             });

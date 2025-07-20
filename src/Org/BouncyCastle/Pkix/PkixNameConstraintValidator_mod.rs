@@ -84,7 +84,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Asn1::X509::GeneralSubtree,
@@ -95,7 +95,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddExcludedSubtree", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddExcludedSubtree", 1usize
                         )
                     })
             });
@@ -111,7 +112,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Asn1::Asn1Sequence,
@@ -122,7 +123,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckExcludedDN", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckExcludedDN", 1usize
                         )
                     })
             });
@@ -143,7 +145,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -159,7 +161,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckExcludedDirectory", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckExcludedDirectory", 2usize
                         )
                     })
             });
@@ -178,7 +181,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -194,7 +197,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckExcludedDns", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckExcludedDns", 2usize
                         )
                     })
             });
@@ -213,7 +217,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -229,7 +233,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckExcludedEmail", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckExcludedEmail", 2usize
                         )
                     })
             });
@@ -248,7 +253,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -264,7 +269,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckExcludedIP", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckExcludedIP", 2usize
                         )
                     })
             });
@@ -283,7 +289,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -299,7 +305,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckExcludedOtherName", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckExcludedOtherName", 2usize
                         )
                     })
             });
@@ -318,7 +325,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -334,7 +341,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckExcludedUri", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckExcludedUri", 2usize
                         )
                     })
             });
@@ -350,7 +358,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Asn1::Asn1Sequence,
@@ -361,7 +369,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckPermittedDN", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckPermittedDN", 1usize
                         )
                     })
             });
@@ -382,7 +391,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -398,7 +407,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckPermittedDirectory", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckPermittedDirectory", 2usize
                         )
                     })
             });
@@ -417,7 +427,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -433,7 +443,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckPermittedDns", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckPermittedDns", 2usize
                         )
                     })
             });
@@ -452,7 +463,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -468,7 +479,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckPermittedEmail", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckPermittedEmail", 2usize
                         )
                     })
             });
@@ -487,7 +499,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -503,7 +515,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckPermittedIP", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckPermittedIP", 2usize
                         )
                     })
             });
@@ -522,7 +535,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -538,7 +551,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckPermittedOtherName", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckPermittedOtherName", 2usize
                         )
                     })
             });
@@ -557,7 +571,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -573,7 +587,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckPermittedUri", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckPermittedUri", 2usize
                         )
                     })
             });
@@ -590,7 +605,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -606,7 +621,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CollectionsAreEqual", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CollectionsAreEqual", 2usize
                         )
                     })
             });
@@ -622,7 +638,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -638,7 +654,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CompareTo", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CompareTo", 2usize
                         )
                     })
             });
@@ -652,7 +669,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         bool,
@@ -661,7 +678,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Equals", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            1usize
                         )
                     })
             });
@@ -676,7 +694,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -685,7 +703,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExtractHostFromURL", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExtractHostFromURL", 1usize
                         )
                     })
             });
@@ -710,7 +729,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -732,7 +751,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExtractIPsAndSubnetMasks", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExtractIPsAndSubnetMasks", 2usize
                         )
                     })
             });
@@ -754,7 +774,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Asn1::X509::GeneralName,
@@ -765,7 +785,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExtractNameAsString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExtractNameAsString", 1usize
                         )
                     })
             });
@@ -778,12 +799,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHashCode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHashCode", 0usize
                         )
                     })
             });
@@ -794,12 +816,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("HashCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HashCode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HashCode", 0usize
                         )
                     })
             });
@@ -813,7 +836,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::ICollection,
@@ -824,7 +847,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HashCollection", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HashCollection", 1usize
                         )
                     })
             });
@@ -845,7 +869,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -863,7 +887,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IntersectDN", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IntersectDN", 2usize
                         )
                     })
             });
@@ -886,7 +911,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -904,7 +929,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IntersectDns", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IntersectDns", 2usize
                         )
                     })
             });
@@ -927,7 +953,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -945,7 +971,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IntersectEmail", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IntersectEmail", 2usize
                         )
                     })
             });
@@ -965,7 +992,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -984,7 +1011,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IntersectEmail", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IntersectEmail", 3usize
                         )
                     })
             });
@@ -1000,7 +1028,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -1009,7 +1037,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IntersectEmptyPermittedSubtree", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IntersectEmptyPermittedSubtree", 1usize
                         )
                     })
             });
@@ -1032,7 +1061,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1050,7 +1079,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IntersectIP", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IntersectIP", 2usize
                         )
                     })
             });
@@ -1071,7 +1101,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1089,7 +1119,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IntersectIPRange", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IntersectIPRange", 2usize
                         )
                     })
             });
@@ -1112,7 +1143,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1130,7 +1161,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IntersectOtherName", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IntersectOtherName", 2usize
                         )
                     })
             });
@@ -1154,7 +1186,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1173,7 +1205,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IntersectOtherName", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IntersectOtherName", 3usize
                         )
                     })
             });
@@ -1191,7 +1224,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Asn1::Asn1Sequence,
@@ -1202,7 +1235,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IntersectPermittedSubtree", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IntersectPermittedSubtree", 1usize
                         )
                     })
             });
@@ -1225,7 +1259,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1243,7 +1277,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IntersectUri", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IntersectUri", 2usize
                         )
                     })
             });
@@ -1263,7 +1298,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1282,7 +1317,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IntersectUri", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IntersectUri", 3usize
                         )
                     })
             });
@@ -1301,7 +1337,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1319,7 +1355,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IpWithSubnetMask", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IpWithSubnetMask", 2usize
                         )
                     })
             });
@@ -1340,7 +1377,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1356,7 +1393,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsDirectoryConstrained", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsDirectoryConstrained", 2usize
                         )
                     })
             });
@@ -1375,7 +1413,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1391,7 +1429,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsDnsConstrained", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsDnsConstrained", 2usize
                         )
                     })
             });
@@ -1408,7 +1447,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1424,7 +1463,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsDnsConstrained", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsDnsConstrained", 2usize
                         )
                     })
             });
@@ -1443,7 +1483,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1459,7 +1499,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsEmailConstrained", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsEmailConstrained", 2usize
                         )
                     })
             });
@@ -1476,7 +1517,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1492,7 +1533,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsEmailConstrained", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsEmailConstrained", 2usize
                         )
                     })
             });
@@ -1511,7 +1553,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1527,7 +1569,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsIPConstrained", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsIPConstrained", 2usize
                         )
                     })
             });
@@ -1544,7 +1587,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1560,7 +1603,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsIPConstrained", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsIPConstrained", 2usize
                         )
                     })
             });
@@ -1581,7 +1625,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1597,7 +1641,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsOtherNameConstrained", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsOtherNameConstrained", 2usize
                         )
                     })
             });
@@ -1618,7 +1663,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1634,7 +1679,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsOtherNameConstrained", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsOtherNameConstrained", 2usize
                         )
                     })
             });
@@ -1653,7 +1699,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1669,7 +1715,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsUriConstrained", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsUriConstrained", 2usize
                         )
                     })
             });
@@ -1686,7 +1733,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1702,7 +1749,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsUriConstrained", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsUriConstrained", 2usize
                         )
                     })
             });
@@ -1720,7 +1768,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1738,7 +1786,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Max", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Max",
+                            2usize
                         )
                     })
             });
@@ -1756,7 +1805,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1774,7 +1823,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Min", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Min",
+                            2usize
                         )
                     })
             });
@@ -1799,7 +1849,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1827,7 +1877,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MinMaxIPs", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MinMaxIPs", 4usize
                         )
                     })
             });
@@ -1856,7 +1907,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1874,7 +1925,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Or", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Or",
+                            2usize
                         )
                     })
             });
@@ -1891,7 +1943,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1907,7 +1959,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SpecialEquals", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SpecialEquals", 2usize
                         )
                     })
             });
@@ -1923,7 +1976,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -1934,7 +1987,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StringifyIP", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StringifyIP", 1usize
                         )
                     })
             });
@@ -1954,7 +2008,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Utilities::Collections::ISet,
@@ -1965,7 +2019,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StringifyIPCollection", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StringifyIPCollection", 1usize
                         )
                     })
             });
@@ -1985,7 +2040,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Utilities::Collections::ISet,
@@ -1996,7 +2051,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StringifyOtherNameCollection", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StringifyOtherNameCollection", 1usize
                         )
                     })
             });
@@ -2013,7 +2069,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2022,7 +2078,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToString", 0usize
                         )
                     })
             });
@@ -2043,7 +2100,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2061,7 +2118,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnionDN", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "UnionDN",
+                            2usize
                         )
                     })
             });
@@ -2082,7 +2140,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2100,7 +2158,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnionDns", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnionDns", 2usize
                         )
                     })
             });
@@ -2121,7 +2180,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2139,7 +2198,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnionEmail", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnionEmail", 2usize
                         )
                     })
             });
@@ -2159,7 +2219,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2178,7 +2238,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnionEmail", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnionEmail", 3usize
                         )
                     })
             });
@@ -2199,7 +2260,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2217,7 +2278,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnionIP", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "UnionIP",
+                            2usize
                         )
                     })
             });
@@ -2238,7 +2300,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2256,7 +2318,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnionIPRange", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnionIPRange", 2usize
                         )
                     })
             });
@@ -2279,7 +2342,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2297,7 +2360,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnionOtherName", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnionOtherName", 2usize
                         )
                     })
             });
@@ -2318,7 +2382,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2336,7 +2400,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnionUri", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnionUri", 2usize
                         )
                     })
             });
@@ -2352,7 +2417,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2368,7 +2433,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WithinDNSubtree", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WithinDNSubtree", 2usize
                         )
                     })
             });
@@ -2383,7 +2449,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2399,7 +2465,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WithinDomain", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WithinDomain", 2usize
                         )
                     })
             });
@@ -2414,12 +2481,13 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -2437,7 +2505,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Asn1::X509::GeneralName,
@@ -2448,7 +2516,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "checkExcluded", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "checkExcluded", 1usize
                         )
                     })
             });
@@ -2466,7 +2535,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Asn1::X509::GeneralName,
@@ -2477,7 +2546,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "checkPermitted", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "checkPermitted", 1usize
                         )
                     })
             });
@@ -2497,7 +2567,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2516,7 +2586,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "unionURI", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "unionURI", 3usize
                         )
                     })
             });

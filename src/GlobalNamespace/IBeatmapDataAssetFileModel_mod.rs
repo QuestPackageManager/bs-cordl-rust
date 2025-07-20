@@ -54,7 +54,7 @@ impl crate::GlobalNamespace::IBeatmapDataAssetFileModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -73,8 +73,8 @@ impl crate::GlobalNamespace::IBeatmapDataAssetFileModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAssetBundleFileForBeatmapLevelAsync",
-                            3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAssetBundleFileForBeatmapLevelAsync", 3usize
                         )
                     })
             });
@@ -102,7 +102,7 @@ impl crate::GlobalNamespace::IBeatmapDataAssetFileModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -119,7 +119,7 @@ impl crate::GlobalNamespace::IBeatmapDataAssetFileModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "TryDeleteAssetBundleFileForBeatmapLevelAsync", 3usize
                         )
                     })
@@ -144,7 +144,7 @@ impl crate::GlobalNamespace::IBeatmapDataAssetFileModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -157,8 +157,8 @@ impl crate::GlobalNamespace::IBeatmapDataAssetFileModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_levelDataAssetDownloadUpdateEvent",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_levelDataAssetDownloadUpdateEvent", 1usize
                         )
                     })
             });
@@ -181,7 +181,7 @@ impl crate::GlobalNamespace::IBeatmapDataAssetFileModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -194,8 +194,8 @@ impl crate::GlobalNamespace::IBeatmapDataAssetFileModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_levelDataAssetDownloadUpdateEvent",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_levelDataAssetDownloadUpdateEvent", 1usize
                         )
                     })
             });

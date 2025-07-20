@@ -61,7 +61,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -80,7 +80,8 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddKekRecipient", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddKekRecipient", 3usize
                         )
                     })
             });
@@ -102,7 +103,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -121,7 +122,8 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddKekRecipient", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddKekRecipient", 3usize
                         )
                     })
             });
@@ -149,7 +151,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -174,7 +176,8 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddKeyAgreementRecipient", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddKeyAgreementRecipient", 5usize
                         )
                     })
             });
@@ -212,7 +215,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -237,7 +240,8 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddKeyAgreementRecipients", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddKeyAgreementRecipients", 5usize
                         )
                     })
             });
@@ -266,7 +270,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -282,7 +286,8 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddKeyTransRecipient", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddKeyTransRecipient", 2usize
                         )
                     })
             });
@@ -298,7 +303,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::X509::X509Certificate,
@@ -309,7 +314,8 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddKeyTransRecipient", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddKeyTransRecipient", 1usize
                         )
                     })
             });
@@ -326,7 +332,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -342,7 +348,8 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddPasswordRecipient", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddPasswordRecipient", 2usize
                         )
                     })
             });
@@ -360,7 +367,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Cms::RecipientInfoGenerator,
@@ -371,7 +378,8 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddRecipientInfoGenerator", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddRecipientInfoGenerator", 1usize
                         )
                     })
             });
@@ -390,7 +398,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -408,7 +416,8 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenerateAsn1Parameters", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateAsn1Parameters", 2usize
                         )
                     })
             });
@@ -439,7 +448,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -465,7 +474,8 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAlgorithmIdentifier", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAlgorithmIdentifier", 4usize
                         )
                     })
             });
@@ -504,12 +514,13 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -527,7 +538,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Security::SecureRandom,
@@ -538,7 +549,8 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -557,7 +569,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -568,7 +580,8 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_UnprotectedAttributeGenerator", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_UnprotectedAttributeGenerator", 0usize
                         )
                     })
             });
@@ -586,7 +599,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
@@ -597,7 +610,8 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_UnprotectedAttributeGenerator", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_UnprotectedAttributeGenerator", 1usize
                         )
                     })
             });

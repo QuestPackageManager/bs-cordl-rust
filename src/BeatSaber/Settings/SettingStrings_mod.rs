@@ -50,7 +50,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -67,7 +67,8 @@ impl crate::BeatSaber::Settings::SettingStrings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AppendProperty", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AppendProperty", 3usize
                         )
                     })
             });
@@ -86,7 +87,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -107,7 +108,8 @@ impl crate::BeatSaber::Settings::SettingStrings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Decode", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Decode",
+                            3usize
                         )
                     })
             });
@@ -123,7 +125,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -137,7 +139,8 @@ impl crate::BeatSaber::Settings::SettingStrings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Encode", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Encode",
+                            2usize
                         )
                     })
             });
@@ -152,7 +155,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::ReadOnlySpan_1<char>),
                         bool,
@@ -161,7 +164,8 @@ impl crate::BeatSaber::Settings::SettingStrings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsPureWhiteSpace", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsPureWhiteSpace", 1usize
                         )
                     })
             });
@@ -179,7 +183,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::ReadOnlySpan_1<char>,
@@ -197,7 +201,8 @@ impl crate::BeatSaber::Settings::SettingStrings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadBool", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadBool", 4usize
                         )
                     })
             });
@@ -221,7 +226,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::ReadOnlySpan_1<char>,
@@ -239,7 +244,8 @@ impl crate::BeatSaber::Settings::SettingStrings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadEnum", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadEnum", 4usize
                         )
                     })
             });
@@ -259,7 +265,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::ReadOnlySpan_1<char>,
@@ -277,7 +283,8 @@ impl crate::BeatSaber::Settings::SettingStrings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadFloat", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadFloat", 4usize
                         )
                     })
             });
@@ -297,7 +304,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::ReadOnlySpan_1<char>,
@@ -315,7 +322,8 @@ impl crate::BeatSaber::Settings::SettingStrings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadInt", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "ReadInt",
+                            4usize
                         )
                     })
             });
@@ -334,7 +342,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -355,7 +363,8 @@ impl crate::BeatSaber::Settings::SettingStrings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadProperties", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadProperties", 3usize
                         )
                     })
             });
@@ -375,7 +384,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -395,7 +404,8 @@ impl crate::BeatSaber::Settings::SettingStrings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadProperty", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadProperty", 4usize
                         )
                     })
             });
@@ -414,7 +424,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -433,7 +443,8 @@ impl crate::BeatSaber::Settings::SettingStrings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadPropertyLine", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadPropertyLine", 3usize
                         )
                     })
             });
@@ -455,7 +466,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::ReadOnlySpan_1<char>,
@@ -477,7 +488,8 @@ impl crate::BeatSaber::Settings::SettingStrings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadString", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadString", 4usize
                         )
                     })
             });
@@ -493,7 +505,7 @@ impl crate::BeatSaber::Settings::SettingStrings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -507,7 +519,8 @@ impl crate::BeatSaber::Settings::SettingStrings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteProperties", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteProperties", 2usize
                         )
                     })
             });

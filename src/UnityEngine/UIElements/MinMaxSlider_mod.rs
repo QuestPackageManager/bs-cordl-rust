@@ -75,7 +75,7 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector2),
                         crate::UnityEngine::Vector2,
@@ -84,7 +84,8 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ClampValues", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ClampValues", 1usize
                         )
                     })
             });
@@ -101,7 +102,7 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32, f32),
                         quest_hook::libil2cpp::Void,
@@ -110,7 +111,8 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ComputeValueFromDraggingThumb", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ComputeValueFromDraggingThumb", 2usize
                         )
                     })
             });
@@ -126,12 +128,13 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f32), f32, 1usize>("ComputeValueFromPosition")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ComputeValueFromPosition", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ComputeValueFromPosition", 1usize
                         )
                     })
             });
@@ -147,7 +150,7 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::EventBase,
@@ -158,7 +161,8 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExecuteDefaultAction", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExecuteDefaultAction", 1usize
                         )
                     })
             });
@@ -193,7 +197,7 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -202,7 +206,8 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterEditingCallbacks", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterEditingCallbacks", 0usize
                         )
                     })
             });
@@ -217,7 +222,7 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -226,7 +231,8 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetSliderValueFromClick", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetSliderValueFromClick", 0usize
                         )
                     })
             });
@@ -241,7 +247,7 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -250,7 +256,8 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetSliderValueFromDrag", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetSliderValueFromDrag", 0usize
                         )
                     })
             });
@@ -266,7 +273,7 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector2),
                         quest_hook::libil2cpp::Void,
@@ -275,7 +282,8 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetValueWithoutNotify", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetValueWithoutNotify", 1usize
                         )
                     })
             });
@@ -293,12 +301,13 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f32, f32, f32), f32, 3usize>("SliderLerpUnclamped")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SliderLerpUnclamped", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SliderLerpUnclamped", 3usize
                         )
                     })
             });
@@ -316,12 +325,13 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f32, f32, f32), f32, 3usize>("SliderNormalizeValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SliderNormalizeValue", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SliderNormalizeValue", 3usize
                         )
                     })
             });
@@ -336,7 +346,7 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -345,7 +355,8 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnregisterEditingCallbacks", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnregisterEditingCallbacks", 0usize
                         )
                     })
             });
@@ -360,7 +371,7 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -369,7 +380,8 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateDragElementPosition", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateDragElementPosition", 0usize
                         )
                     })
             });
@@ -387,7 +399,7 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::GeometryChangedEvent,
@@ -398,7 +410,8 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateDragElementPosition", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateDragElementPosition", 1usize
                         )
                     })
             });
@@ -413,7 +426,7 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -422,7 +435,8 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateDragThumbsRect", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateDragThumbsRect", 0usize
                         )
                     })
             });
@@ -437,7 +451,7 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -446,7 +460,8 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateMixedValueContent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateMixedValueContent", 0usize
                         )
                     })
             });
@@ -461,12 +476,13 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -486,7 +502,7 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -503,7 +519,8 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            5usize
                         )
                     })
             });
@@ -521,7 +538,7 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -532,7 +549,8 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_clampedDragger", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_clampedDragger", 0usize
                         )
                     })
             });
@@ -549,7 +567,7 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -560,7 +578,8 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_dragElement", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_dragElement", 0usize
                         )
                     })
             });
@@ -577,7 +596,7 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -588,7 +607,8 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_dragMaxThumb", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_dragMaxThumb", 0usize
                         )
                     })
             });
@@ -605,7 +625,7 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -616,7 +636,8 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_dragMinThumb", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_dragMinThumb", 0usize
                         )
                     })
             });
@@ -629,12 +650,13 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_highLimit")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_highLimit", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_highLimit", 0usize
                         )
                     })
             });
@@ -645,12 +667,13 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_lowLimit")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_lowLimit", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_lowLimit", 0usize
                         )
                     })
             });
@@ -661,12 +684,13 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_maxValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_maxValue", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_maxValue", 0usize
                         )
                     })
             });
@@ -677,12 +701,13 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_minValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_minValue", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_minValue", 0usize
                         )
                     })
             });
@@ -695,12 +720,13 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::UnityEngine::Vector2, 0usize>("get_value")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_value", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_value", 0usize
                         )
                     })
             });
@@ -718,7 +744,7 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::ClampedDragger_1<f32>,
@@ -729,7 +755,8 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_clampedDragger", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_clampedDragger", 1usize
                         )
                     })
             });
@@ -745,7 +772,7 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::VisualElement,
@@ -756,7 +783,8 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_dragElement", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_dragElement", 1usize
                         )
                     })
             });
@@ -772,7 +800,7 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::VisualElement,
@@ -783,7 +811,8 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_dragMaxThumb", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_dragMaxThumb", 1usize
                         )
                     })
             });
@@ -799,7 +828,7 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::VisualElement,
@@ -810,7 +839,8 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_dragMinThumb", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_dragMinThumb", 1usize
                         )
                     })
             });
@@ -826,7 +856,7 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -835,7 +865,8 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_highLimit", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_highLimit", 1usize
                         )
                     })
             });
@@ -851,7 +882,7 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -860,7 +891,8 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_lowLimit", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_lowLimit", 1usize
                         )
                     })
             });
@@ -876,7 +908,7 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -885,7 +917,8 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_maxValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_maxValue", 1usize
                         )
                     })
             });
@@ -901,7 +934,7 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -910,7 +943,8 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_minValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_minValue", 1usize
                         )
                     })
             });
@@ -926,7 +960,7 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector2),
                         quest_hook::libil2cpp::Void,
@@ -935,7 +969,8 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_value", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_value", 1usize
                         )
                     })
             });
@@ -1112,12 +1147,13 @@ impl crate::UnityEngine::UIElements::MinMaxSlider_UxmlFactory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -1203,7 +1239,7 @@ impl crate::UnityEngine::UIElements::MinMaxSlider_UxmlTraits {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1220,7 +1256,8 @@ impl crate::UnityEngine::UIElements::MinMaxSlider_UxmlTraits {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Init", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            3usize
                         )
                     })
             });
@@ -1242,12 +1279,13 @@ impl crate::UnityEngine::UIElements::MinMaxSlider_UxmlTraits {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

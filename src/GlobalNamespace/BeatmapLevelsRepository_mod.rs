@@ -70,7 +70,7 @@ impl crate::GlobalNamespace::BeatmapLevelsRepository {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -86,7 +86,8 @@ impl crate::GlobalNamespace::BeatmapLevelsRepository {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddBeatmapLevel", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddBeatmapLevel", 2usize
                         )
                     })
             });
@@ -104,7 +105,7 @@ impl crate::GlobalNamespace::BeatmapLevelsRepository {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
@@ -113,7 +114,8 @@ impl crate::GlobalNamespace::BeatmapLevelsRepository {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBeatmapLevelById", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBeatmapLevelById", 1usize
                         )
                     })
             });
@@ -131,7 +133,7 @@ impl crate::GlobalNamespace::BeatmapLevelsRepository {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -142,7 +144,8 @@ impl crate::GlobalNamespace::BeatmapLevelsRepository {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBeatmapLevelPackByBeatmapLevelId", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBeatmapLevelPackByBeatmapLevelId", 1usize
                         )
                     })
             });
@@ -160,7 +163,7 @@ impl crate::GlobalNamespace::BeatmapLevelsRepository {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -171,7 +174,8 @@ impl crate::GlobalNamespace::BeatmapLevelsRepository {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBeatmapLevelPackByPackId", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBeatmapLevelPackByPackId", 1usize
                         )
                     })
             });
@@ -203,7 +207,7 @@ impl crate::GlobalNamespace::BeatmapLevelsRepository {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -221,7 +225,8 @@ impl crate::GlobalNamespace::BeatmapLevelsRepository {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGetBeatmapLevelById", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetBeatmapLevelById", 2usize
                         )
                     })
             });
@@ -241,7 +246,7 @@ impl crate::GlobalNamespace::BeatmapLevelsRepository {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<
@@ -256,7 +261,8 @@ impl crate::GlobalNamespace::BeatmapLevelsRepository {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -277,7 +283,7 @@ impl crate::GlobalNamespace::BeatmapLevelsRepository {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -292,7 +298,8 @@ impl crate::GlobalNamespace::BeatmapLevelsRepository {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_beatmapLevelPacks", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_beatmapLevelPacks", 0usize
                         )
                     })
             });

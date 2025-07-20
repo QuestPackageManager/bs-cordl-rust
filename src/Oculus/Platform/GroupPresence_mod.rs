@@ -44,7 +44,7 @@ impl crate::Oculus::Platform::GroupPresence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
@@ -53,7 +53,8 @@ impl crate::Oculus::Platform::GroupPresence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Clear", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Clear",
+                            0usize
                         )
                     })
             });
@@ -74,7 +75,7 @@ impl crate::Oculus::Platform::GroupPresence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Oculus::Platform::InviteOptions,
@@ -91,7 +92,8 @@ impl crate::Oculus::Platform::GroupPresence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetInvitableUsers", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetInvitableUsers", 1usize
                         )
                     })
             });
@@ -118,7 +120,7 @@ impl crate::Oculus::Platform::GroupPresence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Oculus::Platform::Models::ApplicationInviteList,
@@ -135,7 +137,8 @@ impl crate::Oculus::Platform::GroupPresence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNextApplicationInviteListPage", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNextApplicationInviteListPage", 1usize
                         )
                     })
             });
@@ -160,7 +163,7 @@ impl crate::Oculus::Platform::GroupPresence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -175,7 +178,8 @@ impl crate::Oculus::Platform::GroupPresence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSentInvites", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSentInvites", 0usize
                         )
                     })
             });
@@ -202,7 +206,7 @@ impl crate::Oculus::Platform::GroupPresence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Oculus::Platform::InviteOptions,
@@ -219,7 +223,8 @@ impl crate::Oculus::Platform::GroupPresence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LaunchInvitePanel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LaunchInvitePanel", 1usize
                         )
                     })
             });
@@ -242,7 +247,7 @@ impl crate::Oculus::Platform::GroupPresence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Oculus::Platform::MultiplayerErrorOptions,
@@ -253,7 +258,8 @@ impl crate::Oculus::Platform::GroupPresence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LaunchMultiplayerErrorDialog", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LaunchMultiplayerErrorDialog", 1usize
                         )
                     })
             });
@@ -280,7 +286,7 @@ impl crate::Oculus::Platform::GroupPresence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -305,7 +311,8 @@ impl crate::Oculus::Platform::GroupPresence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LaunchRejoinDialog", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LaunchRejoinDialog", 3usize
                         )
                     })
             });
@@ -332,7 +339,7 @@ impl crate::Oculus::Platform::GroupPresence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Oculus::Platform::RosterOptions,
@@ -343,7 +350,8 @@ impl crate::Oculus::Platform::GroupPresence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LaunchRosterPanel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LaunchRosterPanel", 1usize
                         )
                     })
             });
@@ -366,7 +374,7 @@ impl crate::Oculus::Platform::GroupPresence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u64>,
@@ -383,7 +391,8 @@ impl crate::Oculus::Platform::GroupPresence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SendInvites", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SendInvites", 1usize
                         )
                     })
             });
@@ -406,7 +415,7 @@ impl crate::Oculus::Platform::GroupPresence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Oculus::Platform::GroupPresenceOptions,
@@ -417,7 +426,8 @@ impl crate::Oculus::Platform::GroupPresence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Set", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Set",
+                            1usize
                         )
                     })
             });
@@ -434,7 +444,7 @@ impl crate::Oculus::Platform::GroupPresence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
@@ -443,7 +453,8 @@ impl crate::Oculus::Platform::GroupPresence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetDeeplinkMessageOverride", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetDeeplinkMessageOverride", 1usize
                         )
                     })
             });
@@ -460,7 +471,7 @@ impl crate::Oculus::Platform::GroupPresence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
@@ -469,7 +480,8 @@ impl crate::Oculus::Platform::GroupPresence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetDestination", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetDestination", 1usize
                         )
                     })
             });
@@ -490,7 +502,7 @@ impl crate::Oculus::Platform::GroupPresence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Oculus::Platform::Message_1_Callback<
@@ -505,8 +517,8 @@ impl crate::Oculus::Platform::GroupPresence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetInvitationsSentNotificationCallback",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetInvitationsSentNotificationCallback", 1usize
                         )
                     })
             });
@@ -523,7 +535,7 @@ impl crate::Oculus::Platform::GroupPresence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
@@ -532,7 +544,8 @@ impl crate::Oculus::Platform::GroupPresence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetIsJoinable", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetIsJoinable", 1usize
                         )
                     })
             });
@@ -553,7 +566,7 @@ impl crate::Oculus::Platform::GroupPresence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Oculus::Platform::Message_1_Callback<
@@ -568,8 +581,8 @@ impl crate::Oculus::Platform::GroupPresence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetJoinIntentReceivedNotificationCallback",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetJoinIntentReceivedNotificationCallback", 1usize
                         )
                     })
             });
@@ -590,7 +603,7 @@ impl crate::Oculus::Platform::GroupPresence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Oculus::Platform::Message_1_Callback<
@@ -605,8 +618,8 @@ impl crate::Oculus::Platform::GroupPresence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetLeaveIntentReceivedNotificationCallback",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetLeaveIntentReceivedNotificationCallback", 1usize
                         )
                     })
             });
@@ -623,7 +636,7 @@ impl crate::Oculus::Platform::GroupPresence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
@@ -632,7 +645,8 @@ impl crate::Oculus::Platform::GroupPresence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetLobbySession", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetLobbySession", 1usize
                         )
                     })
             });
@@ -649,7 +663,7 @@ impl crate::Oculus::Platform::GroupPresence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
@@ -658,7 +672,8 @@ impl crate::Oculus::Platform::GroupPresence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetMatchSession", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetMatchSession", 1usize
                         )
                     })
             });

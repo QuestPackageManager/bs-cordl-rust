@@ -50,7 +50,7 @@ impl crate::System::Linq::Expressions::DebugInfoExpression {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -61,7 +61,8 @@ impl crate::System::Linq::Expressions::DebugInfoExpression {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Document", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Document", 0usize
                         )
                     })
             });
@@ -74,12 +75,13 @@ impl crate::System::Linq::Expressions::DebugInfoExpression {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_EndLine")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_EndLine", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_EndLine", 0usize
                         )
                     })
             });
@@ -90,12 +92,13 @@ impl crate::System::Linq::Expressions::DebugInfoExpression {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsClear")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsClear", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsClear", 0usize
                         )
                     })
             });
@@ -106,12 +109,13 @@ impl crate::System::Linq::Expressions::DebugInfoExpression {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_StartLine")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_StartLine", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_StartLine", 0usize
                         )
                     })
             });

@@ -53,7 +53,7 @@ impl crate::System::Net::Http::IMonoHttpClientHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -73,7 +73,8 @@ impl crate::System::Net::Http::IMonoHttpClientHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SendAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SendAsync", 2usize
                         )
                     })
             });
@@ -91,7 +92,7 @@ impl crate::System::Net::Http::IMonoHttpClientHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::TimeSpan),
                         quest_hook::libil2cpp::Void,
@@ -100,7 +101,8 @@ impl crate::System::Net::Http::IMonoHttpClientHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetWebRequestTimeout", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetWebRequestTimeout", 1usize
                         )
                     })
             });
@@ -124,7 +126,7 @@ impl crate::System::Net::Http::IMonoHttpClientHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -135,7 +137,8 @@ impl crate::System::Net::Http::IMonoHttpClientHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SslOptions", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SslOptions", 0usize
                         )
                     })
             });
@@ -153,7 +156,7 @@ impl crate::System::Net::Http::IMonoHttpClientHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Net::Security::SslClientAuthenticationOptions,
@@ -164,7 +167,8 @@ impl crate::System::Net::Http::IMonoHttpClientHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_SslOptions", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_SslOptions", 1usize
                         )
                     })
             });

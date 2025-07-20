@@ -46,7 +46,7 @@ impl crate::UnityEngine::Physics2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Ray, f32, i32),
                         crate::UnityEngine::RaycastHit2D,
@@ -55,7 +55,8 @@ impl crate::UnityEngine::Physics2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetRayIntersection", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetRayIntersection", 3usize
                         )
                     })
             });
@@ -78,7 +79,7 @@ impl crate::UnityEngine::Physics2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::PhysicsScene2D,
@@ -97,7 +98,8 @@ impl crate::UnityEngine::Physics2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetRayIntersectionAll_Internal", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetRayIntersectionAll_Internal", 5usize
                         )
                     })
             });
@@ -128,7 +130,7 @@ impl crate::UnityEngine::Physics2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -149,8 +151,8 @@ impl crate::UnityEngine::Physics2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetRayIntersectionAll_Internal_Injected",
-                            5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetRayIntersectionAll_Internal_Injected", 5usize
                         )
                     })
             });
@@ -175,7 +177,7 @@ impl crate::UnityEngine::Physics2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Ray),
                         quest_hook::libil2cpp::Gc<
@@ -188,7 +190,8 @@ impl crate::UnityEngine::Physics2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetRayIntersectionAll", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetRayIntersectionAll", 1usize
                         )
                     })
             });
@@ -208,7 +211,7 @@ impl crate::UnityEngine::Physics2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Ray, f32),
                         quest_hook::libil2cpp::Gc<
@@ -221,7 +224,8 @@ impl crate::UnityEngine::Physics2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetRayIntersectionAll", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetRayIntersectionAll", 2usize
                         )
                     })
             });
@@ -242,7 +246,7 @@ impl crate::UnityEngine::Physics2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Ray, f32, i32),
                         quest_hook::libil2cpp::Gc<
@@ -255,7 +259,8 @@ impl crate::UnityEngine::Physics2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetRayIntersectionAll", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetRayIntersectionAll", 3usize
                         )
                     })
             });
@@ -273,7 +278,7 @@ impl crate::UnityEngine::Physics2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::Ray,
@@ -289,7 +294,8 @@ impl crate::UnityEngine::Physics2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetRayIntersectionNonAlloc", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetRayIntersectionNonAlloc", 2usize
                         )
                     })
             });
@@ -306,7 +312,7 @@ impl crate::UnityEngine::Physics2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::Ray,
@@ -323,7 +329,8 @@ impl crate::UnityEngine::Physics2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetRayIntersectionNonAlloc", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetRayIntersectionNonAlloc", 3usize
                         )
                     })
             });
@@ -343,7 +350,7 @@ impl crate::UnityEngine::Physics2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::Ray,
@@ -361,7 +368,8 @@ impl crate::UnityEngine::Physics2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetRayIntersectionNonAlloc", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetRayIntersectionNonAlloc", 4usize
                         )
                     })
             });
@@ -381,7 +389,7 @@ impl crate::UnityEngine::Physics2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::Vector2,
@@ -399,7 +407,8 @@ impl crate::UnityEngine::Physics2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Raycast", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Raycast",
+                            4usize
                         )
                     })
             });
@@ -420,7 +429,7 @@ impl crate::UnityEngine::Physics2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::Vector2,
@@ -439,7 +448,8 @@ impl crate::UnityEngine::Physics2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Raycast", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Raycast",
+                            5usize
                         )
                     })
             });
@@ -464,7 +474,7 @@ impl crate::UnityEngine::Physics2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::Vector2,
@@ -483,7 +493,8 @@ impl crate::UnityEngine::Physics2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Raycast", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Raycast",
+                            5usize
                         )
                     })
             });
@@ -503,7 +514,7 @@ impl crate::UnityEngine::Physics2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Vector2, crate::UnityEngine::Vector2),
                         crate::UnityEngine::RaycastHit2D,
@@ -512,7 +523,8 @@ impl crate::UnityEngine::Physics2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Raycast", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Raycast",
+                            2usize
                         )
                     })
             });
@@ -529,7 +541,7 @@ impl crate::UnityEngine::Physics2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Vector2, crate::UnityEngine::Vector2, f32),
                         crate::UnityEngine::RaycastHit2D,
@@ -538,7 +550,8 @@ impl crate::UnityEngine::Physics2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Raycast", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Raycast",
+                            3usize
                         )
                     })
             });
@@ -556,7 +569,7 @@ impl crate::UnityEngine::Physics2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::Vector2,
@@ -570,7 +583,8 @@ impl crate::UnityEngine::Physics2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Raycast", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Raycast",
+                            4usize
                         )
                     })
             });
@@ -589,7 +603,7 @@ impl crate::UnityEngine::Physics2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::Vector2,
@@ -604,7 +618,8 @@ impl crate::UnityEngine::Physics2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Raycast", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Raycast",
+                            5usize
                         )
                     })
             });
@@ -628,7 +643,7 @@ impl crate::UnityEngine::Physics2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::Vector2,
@@ -644,7 +659,8 @@ impl crate::UnityEngine::Physics2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Raycast", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Raycast",
+                            6usize
                         )
                     })
             });
@@ -663,7 +679,7 @@ impl crate::UnityEngine::Physics2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::UnityEngine::PhysicsScene2D,
@@ -672,7 +688,8 @@ impl crate::UnityEngine::Physics2D {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_defaultPhysicsScene", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_defaultPhysicsScene", 0usize
                         )
                     })
             });
@@ -685,12 +702,13 @@ impl crate::UnityEngine::Physics2D {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_queriesHitTriggers")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_queriesHitTriggers", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_queriesHitTriggers", 0usize
                         )
                     })
             });

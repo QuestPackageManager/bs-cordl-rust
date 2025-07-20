@@ -56,7 +56,7 @@ impl crate::UnityEngine::UI::ToggleGroup {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -69,7 +69,8 @@ impl crate::UnityEngine::UI::ToggleGroup {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ActiveToggles", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ActiveToggles", 0usize
                         )
                     })
             });
@@ -84,12 +85,13 @@ impl crate::UnityEngine::UI::ToggleGroup {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("AnyTogglesOn")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AnyTogglesOn", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AnyTogglesOn", 0usize
                         )
                     })
             });
@@ -102,7 +104,7 @@ impl crate::UnityEngine::UI::ToggleGroup {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -111,7 +113,8 @@ impl crate::UnityEngine::UI::ToggleGroup {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnsureValidState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnsureValidState", 0usize
                         )
                     })
             });
@@ -128,7 +131,7 @@ impl crate::UnityEngine::UI::ToggleGroup {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
@@ -137,7 +140,8 @@ impl crate::UnityEngine::UI::ToggleGroup {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetFirstActiveToggle", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetFirstActiveToggle", 0usize
                         )
                     })
             });
@@ -161,7 +165,7 @@ impl crate::UnityEngine::UI::ToggleGroup {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
@@ -173,7 +177,8 @@ impl crate::UnityEngine::UI::ToggleGroup {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NotifyToggleOn", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NotifyToggleOn", 2usize
                         )
                     })
             });
@@ -188,12 +193,13 @@ impl crate::UnityEngine::UI::ToggleGroup {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnEnable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnEnable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnEnable", 0usize
                         )
                     })
             });
@@ -209,7 +215,7 @@ impl crate::UnityEngine::UI::ToggleGroup {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>),
                         quest_hook::libil2cpp::Void,
@@ -218,7 +224,8 @@ impl crate::UnityEngine::UI::ToggleGroup {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterToggle", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterToggle", 1usize
                         )
                     })
             });
@@ -234,7 +241,7 @@ impl crate::UnityEngine::UI::ToggleGroup {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -243,7 +250,8 @@ impl crate::UnityEngine::UI::ToggleGroup {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetAllTogglesOff", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetAllTogglesOff", 1usize
                         )
                     })
             });
@@ -258,12 +266,13 @@ impl crate::UnityEngine::UI::ToggleGroup {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Start", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Start",
+                            0usize
                         )
                     })
             });
@@ -279,7 +288,7 @@ impl crate::UnityEngine::UI::ToggleGroup {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>),
                         quest_hook::libil2cpp::Void,
@@ -288,7 +297,8 @@ impl crate::UnityEngine::UI::ToggleGroup {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnregisterToggle", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnregisterToggle", 1usize
                         )
                     })
             });
@@ -304,7 +314,7 @@ impl crate::UnityEngine::UI::ToggleGroup {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>),
                         quest_hook::libil2cpp::Void,
@@ -313,7 +323,8 @@ impl crate::UnityEngine::UI::ToggleGroup {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ValidateToggleIsInGroup", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValidateToggleIsInGroup", 1usize
                         )
                     })
             });
@@ -328,12 +339,13 @@ impl crate::UnityEngine::UI::ToggleGroup {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -346,12 +358,13 @@ impl crate::UnityEngine::UI::ToggleGroup {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_allowSwitchOff")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_allowSwitchOff", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_allowSwitchOff", 0usize
                         )
                     })
             });
@@ -365,7 +378,7 @@ impl crate::UnityEngine::UI::ToggleGroup {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -374,7 +387,8 @@ impl crate::UnityEngine::UI::ToggleGroup {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_allowSwitchOff", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_allowSwitchOff", 1usize
                         )
                     })
             });

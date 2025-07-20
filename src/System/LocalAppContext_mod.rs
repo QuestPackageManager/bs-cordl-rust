@@ -45,7 +45,7 @@ impl crate::System::LocalAppContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -59,7 +59,8 @@ impl crate::System::LocalAppContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCachedSwitchValue", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCachedSwitchValue", 2usize
                         )
                     })
             });
@@ -75,7 +76,7 @@ impl crate::System::LocalAppContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -89,7 +90,8 @@ impl crate::System::LocalAppContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCachedSwitchValueInternal", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCachedSwitchValueInternal", 2usize
                         )
                     })
             });
@@ -102,12 +104,13 @@ impl crate::System::LocalAppContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_DisableCaching")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_DisableCaching", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_DisableCaching", 0usize
                         )
                     })
             });

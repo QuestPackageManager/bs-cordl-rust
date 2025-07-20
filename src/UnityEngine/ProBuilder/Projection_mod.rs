@@ -49,7 +49,7 @@ impl crate::UnityEngine::ProBuilder::Projection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -67,7 +67,8 @@ impl crate::UnityEngine::ProBuilder::Projection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FindBestPlane", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindBestPlane", 2usize
                         )
                     })
             });
@@ -83,7 +84,7 @@ impl crate::UnityEngine::ProBuilder::Projection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -97,7 +98,8 @@ impl crate::UnityEngine::ProBuilder::Projection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FindBestPlane", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindBestPlane", 2usize
                         )
                     })
             });
@@ -112,7 +114,7 @@ impl crate::UnityEngine::ProBuilder::Projection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::ProBuilder::ProjectionAxis),
                         crate::UnityEngine::Vector3,
@@ -121,7 +123,8 @@ impl crate::UnityEngine::ProBuilder::Projection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTangentToAxis", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTangentToAxis", 1usize
                         )
                     })
             });
@@ -145,7 +148,7 @@ impl crate::UnityEngine::ProBuilder::Projection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -167,7 +170,8 @@ impl crate::UnityEngine::ProBuilder::Projection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PlanarProject", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PlanarProject", 2usize
                         )
                     })
             });
@@ -192,7 +196,7 @@ impl crate::UnityEngine::ProBuilder::Projection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -215,7 +219,8 @@ impl crate::UnityEngine::ProBuilder::Projection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PlanarProject", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PlanarProject", 3usize
                         )
                     })
             });
@@ -239,7 +244,7 @@ impl crate::UnityEngine::ProBuilder::Projection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -263,7 +268,8 @@ impl crate::UnityEngine::ProBuilder::Projection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PlanarProject", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PlanarProject", 4usize
                         )
                     })
             });
@@ -280,7 +286,7 @@ impl crate::UnityEngine::ProBuilder::Projection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -297,7 +303,8 @@ impl crate::UnityEngine::ProBuilder::Projection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PlanarProject", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PlanarProject", 3usize
                         )
                     })
             });
@@ -314,7 +321,7 @@ impl crate::UnityEngine::ProBuilder::Projection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -329,7 +336,8 @@ impl crate::UnityEngine::ProBuilder::Projection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PlanarProject", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PlanarProject", 3usize
                         )
                     })
             });
@@ -344,7 +352,7 @@ impl crate::UnityEngine::ProBuilder::Projection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::ProBuilder::ProjectionAxis),
                         crate::UnityEngine::Vector3,
@@ -353,7 +361,8 @@ impl crate::UnityEngine::ProBuilder::Projection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProjectionAxisToVector", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProjectionAxisToVector", 1usize
                         )
                     })
             });
@@ -375,7 +384,7 @@ impl crate::UnityEngine::ProBuilder::Projection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -395,7 +404,8 @@ impl crate::UnityEngine::ProBuilder::Projection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Sort", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Sort",
+                            2usize
                         )
                     })
             });
@@ -419,7 +429,7 @@ impl crate::UnityEngine::ProBuilder::Projection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -441,7 +451,8 @@ impl crate::UnityEngine::ProBuilder::Projection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SphericalProject", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SphericalProject", 2usize
                         )
                     })
             });
@@ -456,7 +467,7 @@ impl crate::UnityEngine::ProBuilder::Projection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Vector3),
                         crate::UnityEngine::ProBuilder::ProjectionAxis,
@@ -465,7 +476,8 @@ impl crate::UnityEngine::ProBuilder::Projection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VectorToProjectionAxis", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VectorToProjectionAxis", 1usize
                         )
                     })
             });

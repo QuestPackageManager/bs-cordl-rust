@@ -46,7 +46,7 @@ impl crate::UnityEngine::UIElements::UIR::JobProcessor {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, i32),
                         crate::Unity::Jobs::JobHandle,
@@ -55,7 +55,8 @@ impl crate::UnityEngine::UIElements::UIR::JobProcessor {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScheduleConvertMeshJobs", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScheduleConvertMeshJobs", 2usize
                         )
                     })
             });
@@ -72,7 +73,7 @@ impl crate::UnityEngine::UIElements::UIR::JobProcessor {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::IntPtr,
@@ -87,7 +88,8 @@ impl crate::UnityEngine::UIElements::UIR::JobProcessor {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScheduleConvertMeshJobs_Injected", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScheduleConvertMeshJobs_Injected", 3usize
                         )
                     })
             });
@@ -103,7 +105,7 @@ impl crate::UnityEngine::UIElements::UIR::JobProcessor {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, i32),
                         crate::Unity::Jobs::JobHandle,
@@ -112,7 +114,8 @@ impl crate::UnityEngine::UIElements::UIR::JobProcessor {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScheduleCopyClosingMeshJobs", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScheduleCopyClosingMeshJobs", 2usize
                         )
                     })
             });
@@ -129,7 +132,7 @@ impl crate::UnityEngine::UIElements::UIR::JobProcessor {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::IntPtr,
@@ -144,7 +147,8 @@ impl crate::UnityEngine::UIElements::UIR::JobProcessor {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScheduleCopyClosingMeshJobs_Injected", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScheduleCopyClosingMeshJobs_Injected", 3usize
                         )
                     })
             });
@@ -160,7 +164,7 @@ impl crate::UnityEngine::UIElements::UIR::JobProcessor {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, i32),
                         crate::Unity::Jobs::JobHandle,
@@ -169,7 +173,8 @@ impl crate::UnityEngine::UIElements::UIR::JobProcessor {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScheduleNudgeJobs", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScheduleNudgeJobs", 2usize
                         )
                     })
             });
@@ -186,7 +191,7 @@ impl crate::UnityEngine::UIElements::UIR::JobProcessor {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::IntPtr,
@@ -201,7 +206,8 @@ impl crate::UnityEngine::UIElements::UIR::JobProcessor {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScheduleNudgeJobs_Injected", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScheduleNudgeJobs_Injected", 3usize
                         )
                     })
             });

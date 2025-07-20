@@ -64,7 +64,7 @@ impl crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         f32,
@@ -73,7 +73,8 @@ impl crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetJumpOffsetYAtJumpStartSongTime", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetJumpOffsetYAtJumpStartSongTime", 1usize
                         )
                     })
             });
@@ -88,7 +89,7 @@ impl crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -97,7 +98,8 @@ impl crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ManualUpdate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ManualUpdate", 0usize
                         )
                     })
             });
@@ -148,7 +150,7 @@ impl crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -168,7 +170,8 @@ impl crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
                         )
                     })
             });
@@ -309,7 +312,7 @@ impl crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator_BufferData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32, f32),
                         quest_hook::libil2cpp::Void,
@@ -318,7 +321,8 @@ impl crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator_BufferData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });

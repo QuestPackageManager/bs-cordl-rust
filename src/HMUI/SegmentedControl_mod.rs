@@ -97,7 +97,7 @@ impl crate::HMUI::SegmentedControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -106,7 +106,8 @@ impl crate::HMUI::SegmentedControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateCells", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateCells", 0usize
                         )
                     })
             });
@@ -126,7 +127,7 @@ impl crate::HMUI::SegmentedControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>),
                         T,
@@ -135,7 +136,8 @@ impl crate::HMUI::SegmentedControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetReusableCell", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetReusableCell", 1usize
                         )
                     })
             });
@@ -151,7 +153,7 @@ impl crate::HMUI::SegmentedControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
@@ -166,7 +168,8 @@ impl crate::HMUI::SegmentedControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleCellSelectionDidChange", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleCellSelectionDidChange", 3usize
                         )
                     })
             });
@@ -182,7 +185,7 @@ impl crate::HMUI::SegmentedControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>),
                         quest_hook::libil2cpp::Void,
@@ -191,7 +194,8 @@ impl crate::HMUI::SegmentedControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleNonInteractableCellWasPressed", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleNonInteractableCellWasPressed", 1usize
                         )
                     })
             });
@@ -213,12 +217,13 @@ impl crate::HMUI::SegmentedControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ReloadData")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReloadData", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReloadData", 0usize
                         )
                     })
             });
@@ -234,7 +239,7 @@ impl crate::HMUI::SegmentedControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -243,7 +248,8 @@ impl crate::HMUI::SegmentedControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SelectCellWithNumber", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SelectCellWithNumber", 1usize
                         )
                     })
             });
@@ -260,7 +266,7 @@ impl crate::HMUI::SegmentedControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>),
                         quest_hook::libil2cpp::Void,
@@ -269,7 +275,8 @@ impl crate::HMUI::SegmentedControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetCallbackForCell", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetCallbackForCell", 2usize
                         )
                     })
             });
@@ -284,12 +291,13 @@ impl crate::HMUI::SegmentedControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -310,7 +318,7 @@ impl crate::HMUI::SegmentedControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_2<
@@ -324,7 +332,8 @@ impl crate::HMUI::SegmentedControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_didPressNonInteractableCellEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_didPressNonInteractableCellEvent", 1usize
                         )
                     })
             });
@@ -345,7 +354,7 @@ impl crate::HMUI::SegmentedControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_2<
@@ -359,7 +368,8 @@ impl crate::HMUI::SegmentedControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_didSelectCellEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_didSelectCellEvent", 1usize
                         )
                     })
             });
@@ -380,7 +390,7 @@ impl crate::HMUI::SegmentedControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -393,7 +403,8 @@ impl crate::HMUI::SegmentedControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_cells", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_cells", 0usize
                         )
                     })
             });
@@ -412,7 +423,7 @@ impl crate::HMUI::SegmentedControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -423,7 +434,8 @@ impl crate::HMUI::SegmentedControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_dataSource", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_dataSource", 0usize
                         )
                     })
             });
@@ -436,12 +448,13 @@ impl crate::HMUI::SegmentedControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_selectedCellNumber")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_selectedCellNumber", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_selectedCellNumber", 0usize
                         )
                     })
             });
@@ -460,7 +473,7 @@ impl crate::HMUI::SegmentedControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_2<
@@ -474,8 +487,8 @@ impl crate::HMUI::SegmentedControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_didPressNonInteractableCellEvent",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_didPressNonInteractableCellEvent", 1usize
                         )
                     })
             });
@@ -496,7 +509,7 @@ impl crate::HMUI::SegmentedControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_2<
@@ -510,7 +523,8 @@ impl crate::HMUI::SegmentedControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_didSelectCellEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_didSelectCellEvent", 1usize
                         )
                     })
             });
@@ -526,7 +540,7 @@ impl crate::HMUI::SegmentedControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::HMUI::SegmentedControl_IDataSource,
@@ -537,7 +551,8 @@ impl crate::HMUI::SegmentedControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_dataSource", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_dataSource", 1usize
                         )
                     })
             });
@@ -605,7 +620,7 @@ impl crate::HMUI::SegmentedControl_IDataSource {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControlCell>,
@@ -614,7 +629,8 @@ impl crate::HMUI::SegmentedControl_IDataSource {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CellForCellNumber", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CellForCellNumber", 1usize
                         )
                     })
             });
@@ -627,12 +643,13 @@ impl crate::HMUI::SegmentedControl_IDataSource {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("NumberOfCells")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NumberOfCells", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NumberOfCells", 0usize
                         )
                     })
             });

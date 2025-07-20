@@ -61,7 +61,7 @@ impl crate::UnityEngine::EventSystems::AxisEventData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::EventSystems::EventSystem,
@@ -72,7 +72,8 @@ impl crate::UnityEngine::EventSystems::AxisEventData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -87,7 +88,7 @@ impl crate::UnityEngine::EventSystems::AxisEventData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::EventSystems::MoveDirection,
@@ -96,7 +97,8 @@ impl crate::UnityEngine::EventSystems::AxisEventData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_moveDir", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_moveDir", 0usize
                         )
                     })
             });
@@ -111,7 +113,7 @@ impl crate::UnityEngine::EventSystems::AxisEventData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector2,
@@ -120,7 +122,8 @@ impl crate::UnityEngine::EventSystems::AxisEventData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_moveVector", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_moveVector", 0usize
                         )
                     })
             });
@@ -136,7 +139,7 @@ impl crate::UnityEngine::EventSystems::AxisEventData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::EventSystems::MoveDirection),
                         quest_hook::libil2cpp::Void,
@@ -145,7 +148,8 @@ impl crate::UnityEngine::EventSystems::AxisEventData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_moveDir", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_moveDir", 1usize
                         )
                     })
             });
@@ -161,7 +165,7 @@ impl crate::UnityEngine::EventSystems::AxisEventData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector2),
                         quest_hook::libil2cpp::Void,
@@ -170,7 +174,8 @@ impl crate::UnityEngine::EventSystems::AxisEventData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_moveVector", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_moveVector", 1usize
                         )
                     })
             });

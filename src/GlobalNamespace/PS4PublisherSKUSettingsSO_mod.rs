@@ -66,12 +66,13 @@ impl crate::GlobalNamespace::PS4PublisherSKUSettingsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -86,7 +87,7 @@ impl crate::GlobalNamespace::PS4PublisherSKUSettingsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::PS4ApplicationCategory,
@@ -95,7 +96,8 @@ impl crate::GlobalNamespace::PS4PublisherSKUSettingsSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_applicationCategory", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_applicationCategory", 0usize
                         )
                     })
             });
@@ -114,7 +116,7 @@ impl crate::GlobalNamespace::PS4PublisherSKUSettingsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -125,7 +127,8 @@ impl crate::GlobalNamespace::PS4PublisherSKUSettingsSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_buildVersion", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_buildVersion", 0usize
                         )
                     })
             });
@@ -138,12 +141,13 @@ impl crate::GlobalNamespace::PS4PublisherSKUSettingsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_defaultAgeRestriction")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_defaultAgeRestriction", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_defaultAgeRestriction", 0usize
                         )
                     })
             });
@@ -160,7 +164,7 @@ impl crate::GlobalNamespace::PS4PublisherSKUSettingsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -171,7 +175,8 @@ impl crate::GlobalNamespace::PS4PublisherSKUSettingsSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_latestBuildVersion", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_latestBuildVersion", 0usize
                         )
                     })
             });
@@ -188,7 +193,7 @@ impl crate::GlobalNamespace::PS4PublisherSKUSettingsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -197,7 +202,8 @@ impl crate::GlobalNamespace::PS4PublisherSKUSettingsSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_npTitleFilenamePath", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_npTitleFilenamePath", 0usize
                         )
                     })
             });
@@ -210,12 +216,13 @@ impl crate::GlobalNamespace::PS4PublisherSKUSettingsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_parentalLockLevel")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_parentalLockLevel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_parentalLockLevel", 0usize
                         )
                     })
             });
@@ -289,7 +296,7 @@ impl crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion,
@@ -300,7 +307,8 @@ impl crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CopyValueFrom", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CopyValueFrom", 1usize
                         )
                     })
             });
@@ -315,7 +323,7 @@ impl crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -324,7 +332,8 @@ impl crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IncreaseAppVersion", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IncreaseAppVersion", 0usize
                         )
                     })
             });
@@ -346,12 +355,13 @@ impl crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -368,7 +378,7 @@ impl crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SonyVersion>,
@@ -377,7 +387,8 @@ impl crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_applicationVersion", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_applicationVersion", 0usize
                         )
                     })
             });
@@ -394,7 +405,7 @@ impl crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SonyVersion>,
@@ -403,7 +414,8 @@ impl crate::GlobalNamespace::PS4PublisherSKUSettingsSO_PS4BuildVersion {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_masterVersion", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_masterVersion", 0usize
                         )
                     })
             });

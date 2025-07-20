@@ -85,12 +85,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Timeline::IntervalTree_
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(T), quest_hook::libil2cpp::Void, 1usize>("Add")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Add", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Add",
+                            1usize
                         )
                     })
             });
@@ -107,12 +108,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Timeline::IntervalTree_
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Clear", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Clear",
+                            0usize
                         )
                     })
             });
@@ -135,7 +137,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Timeline::IntervalTree_
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i64,
@@ -149,7 +151,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Timeline::IntervalTree_
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IntersectsWith", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IntersectsWith", 2usize
                         )
                     })
             });
@@ -173,7 +176,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Timeline::IntervalTree_
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i64,
@@ -188,7 +191,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Timeline::IntervalTree_
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IntersectsWithRange", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IntersectsWithRange", 3usize
                         )
                     })
             });
@@ -223,7 +227,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Timeline::IntervalTree_
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Timeline::IntervalTreeNode,
@@ -238,7 +242,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Timeline::IntervalTree_
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Query", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Query",
+                            3usize
                         )
                     })
             });
@@ -263,7 +268,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Timeline::IntervalTree_
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Timeline::IntervalTreeNode,
@@ -279,7 +284,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Timeline::IntervalTree_
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "QueryRange", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "QueryRange", 4usize
                         )
                     })
             });
@@ -298,12 +304,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Timeline::IntervalTree_
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Rebuild")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Rebuild", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Rebuild",
+                            0usize
                         )
                     })
             });
@@ -324,12 +331,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Timeline::IntervalTree_
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, i32), i32, 2usize>("Rebuild")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Rebuild", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Rebuild",
+                            2usize
                         )
                     })
             });
@@ -346,7 +354,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Timeline::IntervalTree_
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -355,7 +363,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Timeline::IntervalTree_
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateIntervals", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateIntervals", 0usize
                         )
                     })
             });
@@ -372,12 +381,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Timeline::IntervalTree_
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -394,12 +404,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Timeline::IntervalTree_
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_dirty")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_dirty", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_dirty", 0usize
                         )
                     })
             });
@@ -417,7 +428,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Timeline::IntervalTree_
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -426,7 +437,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Timeline::IntervalTree_
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_dirty", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_dirty", 1usize
                         )
                     })
             });

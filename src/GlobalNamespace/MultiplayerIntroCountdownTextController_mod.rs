@@ -60,7 +60,7 @@ impl crate::GlobalNamespace::MultiplayerIntroCountdownTextController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -69,7 +69,8 @@ impl crate::GlobalNamespace::MultiplayerIntroCountdownTextController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetDistances", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetDistances", 1usize
                         )
                     })
             });
@@ -85,7 +86,7 @@ impl crate::GlobalNamespace::MultiplayerIntroCountdownTextController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -94,7 +95,8 @@ impl crate::GlobalNamespace::MultiplayerIntroCountdownTextController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetText", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetText",
+                            1usize
                         )
                     })
             });
@@ -109,12 +111,13 @@ impl crate::GlobalNamespace::MultiplayerIntroCountdownTextController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -127,12 +130,13 @@ impl crate::GlobalNamespace::MultiplayerIntroCountdownTextController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_alpha")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_alpha", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_alpha", 0usize
                         )
                     })
             });
@@ -143,12 +147,13 @@ impl crate::GlobalNamespace::MultiplayerIntroCountdownTextController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_fontSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_fontSize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_fontSize", 0usize
                         )
                     })
             });
@@ -162,7 +167,7 @@ impl crate::GlobalNamespace::MultiplayerIntroCountdownTextController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -171,7 +176,8 @@ impl crate::GlobalNamespace::MultiplayerIntroCountdownTextController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_alpha", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_alpha", 1usize
                         )
                     })
             });
@@ -187,7 +193,7 @@ impl crate::GlobalNamespace::MultiplayerIntroCountdownTextController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -196,7 +202,8 @@ impl crate::GlobalNamespace::MultiplayerIntroCountdownTextController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_fontSize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_fontSize", 1usize
                         )
                     })
             });
@@ -212,7 +219,7 @@ impl crate::GlobalNamespace::MultiplayerIntroCountdownTextController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -221,7 +228,8 @@ impl crate::GlobalNamespace::MultiplayerIntroCountdownTextController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_hide", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_hide", 1usize
                         )
                     })
             });

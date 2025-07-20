@@ -86,7 +86,7 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::LevelCompletionResults,
@@ -97,7 +97,8 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Finish", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Finish",
+                            1usize
                         )
                     })
             });
@@ -117,7 +118,7 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -134,7 +135,8 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitAndSetupScenes", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitAndSetupScenes", 3usize
                         )
                     })
             });
@@ -160,7 +162,7 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -177,7 +179,8 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitColorInfo", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitColorInfo", 3usize
                         )
                     })
             });
@@ -206,7 +209,7 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -222,7 +225,8 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitEnvironmentInfo", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitEnvironmentInfo", 2usize
                         )
                     })
             });
@@ -287,7 +291,7 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -351,7 +355,8 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Init", 20usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            20usize
                         )
                     })
             });
@@ -437,7 +442,7 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -501,7 +506,8 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Init", 20usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            20usize
                         )
                     })
             });
@@ -548,12 +554,13 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -576,7 +583,7 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_2<
@@ -594,7 +601,8 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_didFinishEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_didFinishEvent", 1usize
                         )
                     })
             });
@@ -609,7 +617,7 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::BeatmapKey,
@@ -618,7 +626,8 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_beatmapKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_beatmapKey", 0usize
                         )
                     })
             });
@@ -635,7 +644,7 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
@@ -644,7 +653,8 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_beatmapLevel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_beatmapLevel", 0usize
                         )
                     })
             });
@@ -661,7 +671,7 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
@@ -670,7 +680,8 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_colorScheme", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_colorScheme", 0usize
                         )
                     })
             });
@@ -687,7 +698,7 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -696,7 +707,8 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_gameMode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_gameMode", 0usize
                         )
                     })
             });
@@ -713,7 +725,7 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -724,7 +736,8 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_gameplayModifiers", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_gameplayModifiers", 0usize
                         )
                     })
             });
@@ -741,7 +754,7 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -752,7 +765,8 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_originalEnvironmentInfo", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_originalEnvironmentInfo", 0usize
                         )
                     })
             });
@@ -769,7 +783,7 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -780,7 +794,8 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_practiceSettings", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_practiceSettings", 0usize
                         )
                     })
             });
@@ -797,7 +812,7 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -808,7 +823,8 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_targetEnvironmentInfo", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_targetEnvironmentInfo", 0usize
                         )
                     })
             });
@@ -823,12 +839,13 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_usingOverrideColorScheme")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_usingOverrideColorScheme", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_usingOverrideColorScheme", 0usize
                         )
                     })
             });
@@ -841,12 +858,13 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_usingOverrideEnvironment")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_usingOverrideEnvironment", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_usingOverrideEnvironment", 0usize
                         )
                     })
             });
@@ -867,7 +885,7 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_2<
@@ -885,7 +903,8 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_didFinishEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_didFinishEvent", 1usize
                         )
                     })
             });
@@ -901,7 +920,7 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::BeatmapKey),
                         quest_hook::libil2cpp::Void,
@@ -910,7 +929,8 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_beatmapKey", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_beatmapKey", 1usize
                         )
                     })
             });
@@ -926,7 +946,7 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::BeatmapLevel,
@@ -937,7 +957,8 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_beatmapLevel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_beatmapLevel", 1usize
                         )
                     })
             });
@@ -953,7 +974,7 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>),
                         quest_hook::libil2cpp::Void,
@@ -962,7 +983,8 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_colorScheme", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_colorScheme", 1usize
                         )
                     })
             });
@@ -978,7 +1000,7 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -987,7 +1009,8 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_gameMode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_gameMode", 1usize
                         )
                     })
             });
@@ -1003,7 +1026,7 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::GameplayModifiers,
@@ -1014,7 +1037,8 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_gameplayModifiers", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_gameplayModifiers", 1usize
                         )
                     })
             });
@@ -1030,7 +1054,7 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::EnvironmentInfoSO,
@@ -1041,7 +1065,8 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_originalEnvironmentInfo", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_originalEnvironmentInfo", 1usize
                         )
                     })
             });
@@ -1057,7 +1082,7 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::PracticeSettings,
@@ -1068,7 +1093,8 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_practiceSettings", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_practiceSettings", 1usize
                         )
                     })
             });
@@ -1084,7 +1110,7 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::EnvironmentInfoSO,
@@ -1095,7 +1121,8 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_targetEnvironmentInfo", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_targetEnvironmentInfo", 1usize
                         )
                     })
             });
@@ -1111,7 +1138,7 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -1120,7 +1147,8 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_usingOverrideColorScheme", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_usingOverrideColorScheme", 1usize
                         )
                     })
             });
@@ -1136,7 +1164,7 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -1145,7 +1173,8 @@ impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_usingOverrideEnvironment", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_usingOverrideEnvironment", 1usize
                         )
                     })
             });

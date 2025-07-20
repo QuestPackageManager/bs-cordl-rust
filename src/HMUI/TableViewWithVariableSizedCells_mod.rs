@@ -50,12 +50,13 @@ impl crate::HMUI::TableViewWithVariableSizedCells {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), f32, 1usize>("GetCellPosition")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCellPosition", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCellPosition", 1usize
                         )
                     })
             });
@@ -66,12 +67,13 @@ impl crate::HMUI::TableViewWithVariableSizedCells {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), f32, 1usize>("GetCellSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCellSize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCellSize", 1usize
                         )
                     })
             });
@@ -82,12 +84,13 @@ impl crate::HMUI::TableViewWithVariableSizedCells {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetMaxVisibleIdx")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMaxVisibleIdx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMaxVisibleIdx", 0usize
                         )
                     })
             });
@@ -98,12 +101,13 @@ impl crate::HMUI::TableViewWithVariableSizedCells {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetMinVisibleIdx")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMinVisibleIdx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMinVisibleIdx", 0usize
                         )
                     })
             });
@@ -123,7 +127,7 @@ impl crate::HMUI::TableViewWithVariableSizedCells {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -132,7 +136,8 @@ impl crate::HMUI::TableViewWithVariableSizedCells {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateCachedData", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateCachedData", 0usize
                         )
                     })
             });
@@ -147,12 +152,13 @@ impl crate::HMUI::TableViewWithVariableSizedCells {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -165,12 +171,13 @@ impl crate::HMUI::TableViewWithVariableSizedCells {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_contentSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_contentSize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_contentSize", 0usize
                         )
                     })
             });

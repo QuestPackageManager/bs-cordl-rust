@@ -44,7 +44,7 @@ impl crate::System::Threading::NativeEventCalls {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         quest_hook::libil2cpp::Void,
@@ -53,7 +53,8 @@ impl crate::System::Threading::NativeEventCalls {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CloseEvent_internal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CloseEvent_internal", 1usize
                         )
                     })
             });
@@ -72,7 +73,7 @@ impl crate::System::Threading::NativeEventCalls {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             bool,
@@ -89,7 +90,8 @@ impl crate::System::Threading::NativeEventCalls {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateEvent_icall", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateEvent_icall", 5usize
                         )
                     })
             });
@@ -107,7 +109,7 @@ impl crate::System::Threading::NativeEventCalls {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             bool,
@@ -123,7 +125,8 @@ impl crate::System::Threading::NativeEventCalls {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateEvent_internal", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateEvent_internal", 4usize
                         )
                     })
             });
@@ -140,7 +143,7 @@ impl crate::System::Threading::NativeEventCalls {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Microsoft::Win32::SafeHandles::SafeWaitHandle,
@@ -151,7 +154,8 @@ impl crate::System::Threading::NativeEventCalls {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResetEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResetEvent", 1usize
                         )
                     })
             });
@@ -164,7 +168,7 @@ impl crate::System::Threading::NativeEventCalls {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         bool,
@@ -173,7 +177,8 @@ impl crate::System::Threading::NativeEventCalls {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResetEvent_internal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResetEvent_internal", 1usize
                         )
                     })
             });
@@ -188,7 +193,7 @@ impl crate::System::Threading::NativeEventCalls {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Microsoft::Win32::SafeHandles::SafeWaitHandle,
@@ -199,7 +204,8 @@ impl crate::System::Threading::NativeEventCalls {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetEvent", 1usize
                         )
                     })
             });
@@ -212,7 +218,7 @@ impl crate::System::Threading::NativeEventCalls {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         bool,
@@ -221,7 +227,8 @@ impl crate::System::Threading::NativeEventCalls {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetEvent_internal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetEvent_internal", 1usize
                         )
                     })
             });

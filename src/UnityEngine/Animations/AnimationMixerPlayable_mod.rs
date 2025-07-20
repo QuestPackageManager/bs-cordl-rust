@@ -110,7 +110,7 @@ impl crate::UnityEngine::Animations::AnimationMixerPlayable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Playables::PlayableGraph, i32),
                         crate::UnityEngine::Animations::AnimationMixerPlayable,
@@ -119,7 +119,8 @@ impl crate::UnityEngine::Animations::AnimationMixerPlayable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Create", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Create",
+                            2usize
                         )
                     })
             });
@@ -135,7 +136,7 @@ impl crate::UnityEngine::Animations::AnimationMixerPlayable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Playables::PlayableGraph, i32),
                         crate::UnityEngine::Playables::PlayableHandle,
@@ -144,7 +145,8 @@ impl crate::UnityEngine::Animations::AnimationMixerPlayable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateHandle", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateHandle", 2usize
                         )
                     })
             });
@@ -162,7 +164,7 @@ impl crate::UnityEngine::Animations::AnimationMixerPlayable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::Playables::PlayableGraph,
@@ -176,7 +178,8 @@ impl crate::UnityEngine::Animations::AnimationMixerPlayable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateHandleInternal", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateHandleInternal", 2usize
                         )
                     })
             });
@@ -194,7 +197,7 @@ impl crate::UnityEngine::Animations::AnimationMixerPlayable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -210,7 +213,8 @@ impl crate::UnityEngine::Animations::AnimationMixerPlayable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateHandleInternal_Injected", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateHandleInternal_Injected", 2usize
                         )
                     })
             });
@@ -224,7 +228,7 @@ impl crate::UnityEngine::Animations::AnimationMixerPlayable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Animations::AnimationMixerPlayable),
                         bool,
@@ -233,7 +237,8 @@ impl crate::UnityEngine::Animations::AnimationMixerPlayable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Equals", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            1usize
                         )
                     })
             });
@@ -246,7 +251,7 @@ impl crate::UnityEngine::Animations::AnimationMixerPlayable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Playables::PlayableHandle,
@@ -255,7 +260,8 @@ impl crate::UnityEngine::Animations::AnimationMixerPlayable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHandle", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHandle", 0usize
                         )
                     })
             });
@@ -271,7 +277,7 @@ impl crate::UnityEngine::Animations::AnimationMixerPlayable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Playables::PlayableHandle),
                         quest_hook::libil2cpp::Void,
@@ -280,7 +286,8 @@ impl crate::UnityEngine::Animations::AnimationMixerPlayable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -295,7 +302,7 @@ impl crate::UnityEngine::Animations::AnimationMixerPlayable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Animations::AnimationMixerPlayable),
                         crate::UnityEngine::Playables::Playable,
@@ -304,7 +311,8 @@ impl crate::UnityEngine::Animations::AnimationMixerPlayable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Implicit", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Implicit", 1usize
                         )
                     })
             });

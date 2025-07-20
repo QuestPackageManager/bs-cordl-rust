@@ -52,7 +52,7 @@ impl crate::System::ComponentModel::ReferenceConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -66,7 +66,8 @@ impl crate::System::ComponentModel::ReferenceConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CanConvertFrom", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CanConvertFrom", 2usize
                         )
                     })
             });
@@ -88,7 +89,7 @@ impl crate::System::ComponentModel::ReferenceConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -107,7 +108,8 @@ impl crate::System::ComponentModel::ReferenceConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertFrom", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertFrom", 3usize
                         )
                     })
             });
@@ -130,7 +132,7 @@ impl crate::System::ComponentModel::ReferenceConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -150,7 +152,8 @@ impl crate::System::ComponentModel::ReferenceConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertTo", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertTo", 4usize
                         )
                     })
             });
@@ -174,7 +177,7 @@ impl crate::System::ComponentModel::ReferenceConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::ComponentModel::ITypeDescriptorContext,
@@ -187,7 +190,8 @@ impl crate::System::ComponentModel::ReferenceConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetStandardValues", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetStandardValues", 1usize
                         )
                     })
             });
@@ -205,7 +209,7 @@ impl crate::System::ComponentModel::ReferenceConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::ComponentModel::ITypeDescriptorContext,
@@ -216,7 +220,8 @@ impl crate::System::ComponentModel::ReferenceConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetStandardValuesExclusive", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetStandardValuesExclusive", 1usize
                         )
                     })
             });
@@ -232,7 +237,7 @@ impl crate::System::ComponentModel::ReferenceConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::ComponentModel::ITypeDescriptorContext,
@@ -243,7 +248,8 @@ impl crate::System::ComponentModel::ReferenceConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetStandardValuesSupported", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetStandardValuesSupported", 1usize
                         )
                     })
             });
@@ -260,7 +266,7 @@ impl crate::System::ComponentModel::ReferenceConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -276,7 +282,8 @@ impl crate::System::ComponentModel::ReferenceConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsValueAllowed", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsValueAllowed", 2usize
                         )
                     })
             });
@@ -301,7 +308,7 @@ impl crate::System::ComponentModel::ReferenceConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Void,
@@ -310,7 +317,8 @@ impl crate::System::ComponentModel::ReferenceConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -384,7 +392,7 @@ impl crate::System::ComponentModel::ReferenceConverter_ReferenceComparer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -400,7 +408,8 @@ impl crate::System::ComponentModel::ReferenceConverter_ReferenceComparer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Compare", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Compare",
+                            2usize
                         )
                     })
             });
@@ -427,7 +436,7 @@ impl crate::System::ComponentModel::ReferenceConverter_ReferenceComparer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::ComponentModel::ReferenceConverter,
@@ -438,7 +447,8 @@ impl crate::System::ComponentModel::ReferenceConverter_ReferenceComparer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });

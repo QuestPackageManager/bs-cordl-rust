@@ -52,7 +52,7 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -61,7 +61,8 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ForceStopPlaying", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ForceStopPlaying", 0usize
                         )
                     })
             });
@@ -77,7 +78,7 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::XR::XRNode),
                         f32,
@@ -86,7 +87,8 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPanForNode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPanForNode", 1usize
                         )
                     })
             });
@@ -106,7 +108,7 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -123,7 +125,8 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleContinuousAudioCoroutine", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleContinuousAudioCoroutine", 1usize
                         )
                     })
             });
@@ -145,7 +148,7 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -162,7 +165,8 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleOneShotPlayEndCoroutine", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleOneShotPlayEndCoroutine", 1usize
                         )
                     })
             });
@@ -177,12 +181,13 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Initialize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize", 0usize
                         )
                     })
             });
@@ -213,7 +218,7 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::XR::XRNode,
@@ -234,7 +239,8 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PlayHapticsPreset", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PlayHapticsPreset", 3usize
                         )
                     })
             });
@@ -249,12 +255,13 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Reset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Reset",
+                            0usize
                         )
                     })
             });
@@ -269,7 +276,7 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -278,7 +285,8 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RestartHaptic", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RestartHaptic", 0usize
                         )
                     })
             });
@@ -293,7 +301,7 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -302,7 +310,8 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TriggerContinuousHaptic", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TriggerContinuousHaptic", 0usize
                         )
                     })
             });
@@ -318,7 +327,7 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -327,7 +336,8 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateFadeVolume", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateFadeVolume", 1usize
                         )
                     })
             });
@@ -342,7 +352,7 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         bool,
@@ -351,8 +361,8 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<HandleOneShotPlayEndCoroutine>b__11_0",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<HandleOneShotPlayEndCoroutine>b__11_0", 0usize
                         )
                     })
             });
@@ -365,12 +375,13 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -449,7 +460,7 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer_Pool {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::HapticsAudioClipPlayer,
@@ -460,7 +471,8 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer_Pool {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnCreated", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnCreated", 1usize
                         )
                     })
             });
@@ -476,7 +488,7 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer_Pool {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::HapticsAudioClipPlayer,
@@ -487,7 +499,8 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer_Pool {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDespawned", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDespawned", 1usize
                         )
                     })
             });
@@ -503,7 +516,7 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer_Pool {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::HapticsAudioClipPlayer,
@@ -514,7 +527,8 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer_Pool {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDestroyed", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDestroyed", 1usize
                         )
                     })
             });
@@ -532,7 +546,7 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer_Pool {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::HapticsAudioClipPlayer,
@@ -543,7 +557,8 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer_Pool {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Reinitialize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Reinitialize", 1usize
                         )
                     })
             });
@@ -558,12 +573,13 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer_Pool {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

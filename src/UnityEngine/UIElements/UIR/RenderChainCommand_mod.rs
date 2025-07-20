@@ -70,7 +70,7 @@ impl crate::UnityEngine::UIElements::UIR::RenderChainCommand {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
@@ -83,7 +83,8 @@ impl crate::UnityEngine::UIElements::UIR::RenderChainCommand {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Blit", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Blit",
+                            3usize
                         )
                     })
             });
@@ -99,7 +100,7 @@ impl crate::UnityEngine::UIElements::UIR::RenderChainCommand {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Rect, crate::UnityEngine::Rect),
                         crate::UnityEngine::Rect,
@@ -108,7 +109,8 @@ impl crate::UnityEngine::UIElements::UIR::RenderChainCommand {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CombineScissorRects", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CombineScissorRects", 2usize
                         )
                     })
             });
@@ -130,7 +132,7 @@ impl crate::UnityEngine::UIElements::UIR::RenderChainCommand {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -147,7 +149,8 @@ impl crate::UnityEngine::UIElements::UIR::RenderChainCommand {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExecuteNonDrawMesh", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExecuteNonDrawMesh", 3usize
                         )
                     })
             });
@@ -174,7 +177,7 @@ impl crate::UnityEngine::UIElements::UIR::RenderChainCommand {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Rect, f32),
                         crate::UnityEngine::RectInt,
@@ -183,7 +186,8 @@ impl crate::UnityEngine::UIElements::UIR::RenderChainCommand {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RectPointsToPixelsAndFlipYAxis", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RectPointsToPixelsAndFlipYAxis", 2usize
                         )
                     })
             });
@@ -198,12 +202,13 @@ impl crate::UnityEngine::UIElements::UIR::RenderChainCommand {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Reset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Reset",
+                            0usize
                         )
                     })
             });
@@ -218,12 +223,13 @@ impl crate::UnityEngine::UIElements::UIR::RenderChainCommand {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

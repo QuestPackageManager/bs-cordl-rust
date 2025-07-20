@@ -52,7 +52,7 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -66,7 +66,8 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Call", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Call",
+                            2usize
                         )
                     })
             });
@@ -88,7 +89,7 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -102,7 +103,8 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CallOnce", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CallOnce", 2usize
                         )
                     })
             });
@@ -131,7 +133,7 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::IObservable_1<
@@ -148,7 +150,8 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ForDevice", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ForDevice", 1usize
                         )
                     })
             });
@@ -176,7 +179,7 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -198,7 +201,8 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ForDevice", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ForDevice", 2usize
                         )
                     })
             });
@@ -224,7 +228,7 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -240,7 +244,8 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Select", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Select",
+                            2usize
                         )
                     })
             });
@@ -271,7 +276,7 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -292,7 +297,8 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SelectMany", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SelectMany", 2usize
                         )
                     })
             });
@@ -314,7 +320,7 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -328,7 +334,8 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Take", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Take",
+                            2usize
                         )
                     })
             });
@@ -350,7 +357,7 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -366,7 +373,8 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Where", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Where",
+                            2usize
                         )
                     })
             });

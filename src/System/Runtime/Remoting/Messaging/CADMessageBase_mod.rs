@@ -65,7 +65,7 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::ArrayList,
@@ -78,7 +78,8 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLogicalCallContext", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLogicalCallContext", 1usize
                         )
                     })
             });
@@ -95,7 +96,7 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
@@ -104,7 +105,8 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMethod", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMethod", 0usize
                         )
                     })
             });
@@ -126,7 +128,7 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -144,7 +146,8 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSignature", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSignature", 2usize
                         )
                     })
             });
@@ -161,7 +164,7 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         bool,
@@ -170,7 +173,8 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsPossibleToIgnoreMarshal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsPossibleToIgnoreMarshal", 1usize
                         )
                     })
             });
@@ -189,7 +193,7 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -207,7 +211,8 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MarshalArgument", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MarshalArgument", 2usize
                         )
                     })
             });
@@ -236,7 +241,7 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -264,7 +269,8 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MarshalArguments", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MarshalArguments", 2usize
                         )
                     })
             });
@@ -284,7 +290,7 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -302,7 +308,8 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MarshalProperties", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MarshalProperties", 2usize
                         )
                     })
             });
@@ -332,7 +339,7 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -350,7 +357,8 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SaveLogicalCallContext", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SaveLogicalCallContext", 2usize
                         )
                     })
             });
@@ -369,7 +377,7 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -385,7 +393,8 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnmarshalArgument", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnmarshalArgument", 2usize
                         )
                     })
             });
@@ -412,7 +421,7 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -438,7 +447,8 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnmarshalArguments", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnmarshalArguments", 2usize
                         )
                     })
             });
@@ -457,7 +467,7 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -474,7 +484,8 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnmarshalProperties", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnmarshalProperties", 3usize
                         )
                     })
             });
@@ -492,7 +503,7 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Runtime::Remoting::Messaging::IMethodMessage,
@@ -503,7 +514,8 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });

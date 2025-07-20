@@ -49,7 +49,7 @@ impl crate::GlobalNamespace::CubemapHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
@@ -58,7 +58,8 @@ impl crate::GlobalNamespace::CubemapHelpers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Create2DTextureFromCubemap", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Create2DTextureFromCubemap", 1usize
                         )
                     })
             });
@@ -76,7 +77,7 @@ impl crate::GlobalNamespace::CubemapHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
@@ -88,7 +89,8 @@ impl crate::GlobalNamespace::CubemapHelpers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateDownsampledCubemap", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateDownsampledCubemap", 2usize
                         )
                     })
             });
@@ -104,7 +106,7 @@ impl crate::GlobalNamespace::CubemapHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
@@ -116,7 +118,8 @@ impl crate::GlobalNamespace::CubemapHelpers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Downsample", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Downsample", 2usize
                         )
                     })
             });
@@ -132,7 +135,7 @@ impl crate::GlobalNamespace::CubemapHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
@@ -144,7 +147,8 @@ impl crate::GlobalNamespace::CubemapHelpers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DrawCubemapFace", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DrawCubemapFace", 2usize
                         )
                     })
             });
@@ -159,7 +163,7 @@ impl crate::GlobalNamespace::CubemapHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -168,7 +172,8 @@ impl crate::GlobalNamespace::CubemapHelpers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_cubemapHelpersMaterial", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_cubemapHelpersMaterial", 0usize
                         )
                     })
             });

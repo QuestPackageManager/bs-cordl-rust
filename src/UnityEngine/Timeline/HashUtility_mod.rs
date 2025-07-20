@@ -44,7 +44,7 @@ impl crate::UnityEngine::Timeline::HashUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<i32>,
@@ -55,7 +55,8 @@ impl crate::UnityEngine::Timeline::HashUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CombineHash", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CombineHash", 1usize
                         )
                     })
             });
@@ -69,12 +70,13 @@ impl crate::UnityEngine::Timeline::HashUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, i32), i32, 2usize>("CombineHash")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CombineHash", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CombineHash", 2usize
                         )
                     })
             });
@@ -89,12 +91,13 @@ impl crate::UnityEngine::Timeline::HashUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, i32, i32), i32, 3usize>("CombineHash")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CombineHash", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CombineHash", 3usize
                         )
                     })
             });
@@ -110,7 +113,7 @@ impl crate::UnityEngine::Timeline::HashUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, i32, i32, i32),
                         i32,
@@ -119,7 +122,8 @@ impl crate::UnityEngine::Timeline::HashUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CombineHash", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CombineHash", 4usize
                         )
                     })
             });
@@ -136,7 +140,7 @@ impl crate::UnityEngine::Timeline::HashUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, i32, i32, i32, i32),
                         i32,
@@ -145,7 +149,8 @@ impl crate::UnityEngine::Timeline::HashUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CombineHash", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CombineHash", 5usize
                         )
                     })
             });
@@ -165,7 +170,7 @@ impl crate::UnityEngine::Timeline::HashUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, i32, i32, i32, i32, i32),
                         i32,
@@ -174,7 +179,8 @@ impl crate::UnityEngine::Timeline::HashUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CombineHash", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CombineHash", 6usize
                         )
                     })
             });
@@ -195,7 +201,7 @@ impl crate::UnityEngine::Timeline::HashUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, i32, i32, i32, i32, i32, i32),
                         i32,
@@ -204,7 +210,8 @@ impl crate::UnityEngine::Timeline::HashUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CombineHash", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CombineHash", 7usize
                         )
                     })
             });

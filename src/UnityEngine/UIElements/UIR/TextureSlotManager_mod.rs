@@ -62,7 +62,7 @@ impl crate::UnityEngine::UIElements::UIR::TextureSlotManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::UIElements::TextureId,
@@ -78,7 +78,8 @@ impl crate::UnityEngine::UIElements::UIR::TextureSlotManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Bind", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Bind",
+                            4usize
                         )
                     })
             });
@@ -91,12 +92,13 @@ impl crate::UnityEngine::UIElements::UIR::TextureSlotManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("FindOldestSlot")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FindOldestSlot", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindOldestSlot", 0usize
                         )
                     })
             });
@@ -110,7 +112,7 @@ impl crate::UnityEngine::UIElements::UIR::TextureSlotManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UIElements::TextureId),
                         i32,
@@ -119,7 +121,8 @@ impl crate::UnityEngine::UIElements::UIR::TextureSlotManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IndexOf", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "IndexOf",
+                            1usize
                         )
                     })
             });
@@ -133,7 +136,7 @@ impl crate::UnityEngine::UIElements::UIR::TextureSlotManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -142,7 +145,8 @@ impl crate::UnityEngine::UIElements::UIR::TextureSlotManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MarkUsed", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MarkUsed", 1usize
                         )
                     })
             });
@@ -164,12 +168,13 @@ impl crate::UnityEngine::UIElements::UIR::TextureSlotManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Reset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Reset",
+                            0usize
                         )
                     })
             });
@@ -189,7 +194,7 @@ impl crate::UnityEngine::UIElements::UIR::TextureSlotManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, crate::UnityEngine::UIElements::TextureId, i32, i32, f32),
                         quest_hook::libil2cpp::Void,
@@ -198,7 +203,8 @@ impl crate::UnityEngine::UIElements::UIR::TextureSlotManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetGpuData", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetGpuData", 5usize
                         )
                     })
             });
@@ -217,7 +223,7 @@ impl crate::UnityEngine::UIElements::UIR::TextureSlotManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -226,7 +232,8 @@ impl crate::UnityEngine::UIElements::UIR::TextureSlotManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartNewBatch", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartNewBatch", 0usize
                         )
                     })
             });
@@ -241,12 +248,13 @@ impl crate::UnityEngine::UIElements::UIR::TextureSlotManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -259,12 +267,13 @@ impl crate::UnityEngine::UIElements::UIR::TextureSlotManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_FreeSlots")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_FreeSlots", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_FreeSlots", 0usize
                         )
                     })
             });
@@ -278,7 +287,7 @@ impl crate::UnityEngine::UIElements::UIR::TextureSlotManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -287,7 +296,8 @@ impl crate::UnityEngine::UIElements::UIR::TextureSlotManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_FreeSlots", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_FreeSlots", 1usize
                         )
                     })
             });

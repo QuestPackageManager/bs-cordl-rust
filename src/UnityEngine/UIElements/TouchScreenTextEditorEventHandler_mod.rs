@@ -52,7 +52,7 @@ impl crate::UnityEngine::UIElements::TouchScreenTextEditorEventHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -61,7 +61,8 @@ impl crate::UnityEngine::UIElements::TouchScreenTextEditorEventHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CloseTouchScreenKeyboard", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CloseTouchScreenKeyboard", 0usize
                         )
                     })
             });
@@ -76,7 +77,7 @@ impl crate::UnityEngine::UIElements::TouchScreenTextEditorEventHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -85,7 +86,8 @@ impl crate::UnityEngine::UIElements::TouchScreenTextEditorEventHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoPollTouchScreenKeyboard", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoPollTouchScreenKeyboard", 0usize
                         )
                     })
             });
@@ -101,7 +103,7 @@ impl crate::UnityEngine::UIElements::TouchScreenTextEditorEventHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::EventBase,
@@ -112,7 +114,8 @@ impl crate::UnityEngine::UIElements::TouchScreenTextEditorEventHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExecuteDefaultActionAtTarget", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExecuteDefaultActionAtTarget", 1usize
                         )
                     })
             });
@@ -141,7 +144,7 @@ impl crate::UnityEngine::UIElements::TouchScreenTextEditorEventHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -150,7 +153,8 @@ impl crate::UnityEngine::UIElements::TouchScreenTextEditorEventHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnFocusInEvent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnFocusInEvent", 0usize
                         )
                     })
             });
@@ -166,7 +170,7 @@ impl crate::UnityEngine::UIElements::TouchScreenTextEditorEventHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::FocusOutEvent,
@@ -177,7 +181,8 @@ impl crate::UnityEngine::UIElements::TouchScreenTextEditorEventHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnFocusOutEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnFocusOutEvent", 1usize
                         )
                     })
             });
@@ -192,7 +197,7 @@ impl crate::UnityEngine::UIElements::TouchScreenTextEditorEventHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -201,7 +206,8 @@ impl crate::UnityEngine::UIElements::TouchScreenTextEditorEventHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnPointerDownEvent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnPointerDownEvent", 0usize
                         )
                     })
             });
@@ -217,7 +223,7 @@ impl crate::UnityEngine::UIElements::TouchScreenTextEditorEventHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::PointerUpEvent,
@@ -228,7 +234,8 @@ impl crate::UnityEngine::UIElements::TouchScreenTextEditorEventHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnPointerUpEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnPointerUpEvent", 1usize
                         )
                     })
             });
@@ -243,7 +250,7 @@ impl crate::UnityEngine::UIElements::TouchScreenTextEditorEventHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -252,7 +259,8 @@ impl crate::UnityEngine::UIElements::TouchScreenTextEditorEventHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OpenTouchScreenKeyboard", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OpenTouchScreenKeyboard", 0usize
                         )
                     })
             });
@@ -267,7 +275,7 @@ impl crate::UnityEngine::UIElements::TouchScreenTextEditorEventHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -276,7 +284,8 @@ impl crate::UnityEngine::UIElements::TouchScreenTextEditorEventHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PollTouchScreenKeyboard", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PollTouchScreenKeyboard", 0usize
                         )
                     })
             });
@@ -291,7 +300,7 @@ impl crate::UnityEngine::UIElements::TouchScreenTextEditorEventHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -300,7 +309,8 @@ impl crate::UnityEngine::UIElements::TouchScreenTextEditorEventHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateStringPositionFromKeyboard", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateStringPositionFromKeyboard", 0usize
                         )
                     })
             });
@@ -321,7 +331,7 @@ impl crate::UnityEngine::UIElements::TouchScreenTextEditorEventHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -337,7 +347,8 @@ impl crate::UnityEngine::UIElements::TouchScreenTextEditorEventHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });

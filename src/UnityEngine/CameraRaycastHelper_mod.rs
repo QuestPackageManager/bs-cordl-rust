@@ -49,7 +49,7 @@ impl crate::UnityEngine::CameraRaycastHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -63,7 +63,8 @@ impl crate::UnityEngine::CameraRaycastHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RaycastTry", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RaycastTry", 4usize
                         )
                     })
             });
@@ -83,7 +84,7 @@ impl crate::UnityEngine::CameraRaycastHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -97,7 +98,8 @@ impl crate::UnityEngine::CameraRaycastHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RaycastTry2D", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RaycastTry2D", 4usize
                         )
                     })
             });
@@ -117,7 +119,7 @@ impl crate::UnityEngine::CameraRaycastHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -131,7 +133,8 @@ impl crate::UnityEngine::CameraRaycastHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RaycastTry2D_Injected", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RaycastTry2D_Injected", 4usize
                         )
                     })
             });
@@ -151,7 +154,7 @@ impl crate::UnityEngine::CameraRaycastHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -165,7 +168,8 @@ impl crate::UnityEngine::CameraRaycastHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RaycastTry_Injected", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RaycastTry_Injected", 4usize
                         )
                     })
             });

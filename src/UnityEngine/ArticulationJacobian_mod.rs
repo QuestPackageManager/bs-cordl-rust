@@ -111,7 +111,7 @@ impl crate::UnityEngine::ArticulationJacobian {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -120,7 +120,8 @@ impl crate::UnityEngine::ArticulationJacobian {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -137,12 +138,13 @@ impl crate::UnityEngine::ArticulationJacobian {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, i32), f32, 2usize>("get_Item")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Item", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Item", 2usize
                         )
                     })
             });
@@ -153,12 +155,13 @@ impl crate::UnityEngine::ArticulationJacobian {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_columns")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_columns", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_columns", 0usize
                         )
                     })
             });
@@ -173,7 +176,7 @@ impl crate::UnityEngine::ArticulationJacobian {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -184,7 +187,8 @@ impl crate::UnityEngine::ArticulationJacobian {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_elements", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_elements", 0usize
                         )
                     })
             });
@@ -197,12 +201,13 @@ impl crate::UnityEngine::ArticulationJacobian {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_rows")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rows", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rows", 0usize
                         )
                     })
             });
@@ -218,7 +223,7 @@ impl crate::UnityEngine::ArticulationJacobian {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32, f32),
                         quest_hook::libil2cpp::Void,
@@ -227,7 +232,8 @@ impl crate::UnityEngine::ArticulationJacobian {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Item", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Item", 3usize
                         )
                     })
             });
@@ -243,7 +249,7 @@ impl crate::UnityEngine::ArticulationJacobian {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -252,7 +258,8 @@ impl crate::UnityEngine::ArticulationJacobian {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_columns", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_columns", 1usize
                         )
                     })
             });
@@ -270,7 +277,7 @@ impl crate::UnityEngine::ArticulationJacobian {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::List_1<f32>,
@@ -281,7 +288,8 @@ impl crate::UnityEngine::ArticulationJacobian {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_elements", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_elements", 1usize
                         )
                     })
             });
@@ -297,7 +305,7 @@ impl crate::UnityEngine::ArticulationJacobian {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -306,7 +314,8 @@ impl crate::UnityEngine::ArticulationJacobian {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_rows", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_rows", 1usize
                         )
                     })
             });

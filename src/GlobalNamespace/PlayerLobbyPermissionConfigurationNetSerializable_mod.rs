@@ -54,7 +54,7 @@ impl crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::LiteNetLib::Utils::NetDataReader,
@@ -65,7 +65,8 @@ impl crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Deserialize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Deserialize", 1usize
                         )
                     })
             });
@@ -90,7 +91,7 @@ impl crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -110,7 +111,8 @@ impl crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Init", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            6usize
                         )
                     })
             });
@@ -147,7 +149,7 @@ impl crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -158,7 +160,8 @@ impl crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Obtain", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Obtain",
+                            0usize
                         )
                     })
             });
@@ -174,7 +177,7 @@ impl crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::LiteNetLib::Utils::NetDataWriter,
@@ -185,7 +188,8 @@ impl crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Serialize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Serialize", 1usize
                         )
                     })
             });
@@ -200,12 +204,13 @@ impl crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -218,12 +223,13 @@ impl crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_hasInvitePermission")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_hasInvitePermission", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_hasInvitePermission", 0usize
                         )
                     })
             });
@@ -234,12 +240,13 @@ impl crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_hasKickVotePermission")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_hasKickVotePermission", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_hasKickVotePermission", 0usize
                         )
                     })
             });
@@ -252,7 +259,7 @@ impl crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         bool,
@@ -261,7 +268,8 @@ impl crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_hasRecommendBeatmapsPermission", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_hasRecommendBeatmapsPermission", 0usize
                         )
                     })
             });
@@ -274,7 +282,7 @@ impl crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         bool,
@@ -283,8 +291,8 @@ impl crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_hasRecommendGameplayModifiersPermission",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_hasRecommendGameplayModifiersPermission", 0usize
                         )
                     })
             });
@@ -295,12 +303,13 @@ impl crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isServerOwner")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_isServerOwner", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isServerOwner", 0usize
                         )
                     })
             });
@@ -315,7 +324,7 @@ impl crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -324,7 +333,8 @@ impl crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_userId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_userId", 0usize
                         )
                     })
             });

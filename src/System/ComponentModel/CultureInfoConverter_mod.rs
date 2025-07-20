@@ -57,7 +57,7 @@ impl crate::System::ComponentModel::CultureInfoConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -71,7 +71,8 @@ impl crate::System::ComponentModel::CultureInfoConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CanConvertFrom", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CanConvertFrom", 2usize
                         )
                     })
             });
@@ -90,7 +91,7 @@ impl crate::System::ComponentModel::CultureInfoConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -104,7 +105,8 @@ impl crate::System::ComponentModel::CultureInfoConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CanConvertTo", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CanConvertTo", 2usize
                         )
                     })
             });
@@ -126,7 +128,7 @@ impl crate::System::ComponentModel::CultureInfoConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -145,7 +147,8 @@ impl crate::System::ComponentModel::CultureInfoConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertFrom", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertFrom", 3usize
                         )
                     })
             });
@@ -168,7 +171,7 @@ impl crate::System::ComponentModel::CultureInfoConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -188,7 +191,8 @@ impl crate::System::ComponentModel::CultureInfoConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertTo", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertTo", 4usize
                         )
                     })
             });
@@ -208,7 +212,7 @@ impl crate::System::ComponentModel::CultureInfoConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Globalization::CultureInfo,
@@ -219,7 +223,8 @@ impl crate::System::ComponentModel::CultureInfoConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCultureName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCultureName", 1usize
                         )
                     })
             });
@@ -241,7 +246,7 @@ impl crate::System::ComponentModel::CultureInfoConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::ComponentModel::ITypeDescriptorContext,
@@ -254,7 +259,8 @@ impl crate::System::ComponentModel::CultureInfoConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetStandardValues", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetStandardValues", 1usize
                         )
                     })
             });
@@ -272,7 +278,7 @@ impl crate::System::ComponentModel::CultureInfoConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::ComponentModel::ITypeDescriptorContext,
@@ -283,7 +289,8 @@ impl crate::System::ComponentModel::CultureInfoConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetStandardValuesExclusive", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetStandardValuesExclusive", 1usize
                         )
                     })
             });
@@ -299,7 +306,7 @@ impl crate::System::ComponentModel::CultureInfoConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::ComponentModel::ITypeDescriptorContext,
@@ -310,7 +317,8 @@ impl crate::System::ComponentModel::CultureInfoConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetStandardValuesSupported", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetStandardValuesSupported", 1usize
                         )
                     })
             });
@@ -330,12 +338,13 @@ impl crate::System::ComponentModel::CultureInfoConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -352,7 +361,7 @@ impl crate::System::ComponentModel::CultureInfoConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -361,7 +370,8 @@ impl crate::System::ComponentModel::CultureInfoConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_DefaultCultureString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_DefaultCultureString", 0usize
                         )
                     })
             });
@@ -435,7 +445,7 @@ impl crate::System::ComponentModel::CultureInfoConverter_CultureComparer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -451,7 +461,8 @@ impl crate::System::ComponentModel::CultureInfoConverter_CultureComparer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Compare", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Compare",
+                            2usize
                         )
                     })
             });
@@ -478,7 +489,7 @@ impl crate::System::ComponentModel::CultureInfoConverter_CultureComparer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::ComponentModel::CultureInfoConverter,
@@ -489,7 +500,8 @@ impl crate::System::ComponentModel::CultureInfoConverter_CultureComparer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -577,7 +589,7 @@ impl crate::System::ComponentModel::CultureInfoConverter_CultureInfoMapper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -595,7 +607,8 @@ impl crate::System::ComponentModel::CultureInfoConverter_CultureInfoMapper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateMap", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateMap", 0usize
                         )
                     })
             });
@@ -617,7 +630,7 @@ impl crate::System::ComponentModel::CultureInfoConverter_CultureInfoMapper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -626,7 +639,8 @@ impl crate::System::ComponentModel::CultureInfoConverter_CultureInfoMapper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCultureInfoName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCultureInfoName", 1usize
                         )
                     })
             });

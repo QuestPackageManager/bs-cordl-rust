@@ -71,7 +71,7 @@ impl crate::GlobalNamespace::LightBakingPersistentSettingsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -80,7 +80,8 @@ impl crate::GlobalNamespace::LightBakingPersistentSettingsSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ApplySettings", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ApplySettings", 0usize
                         )
                     })
             });
@@ -102,12 +103,13 @@ impl crate::GlobalNamespace::LightBakingPersistentSettingsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -124,7 +126,7 @@ impl crate::GlobalNamespace::LightBakingPersistentSettingsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -135,7 +137,8 @@ impl crate::GlobalNamespace::LightBakingPersistentSettingsSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_bakedLightDataLoaderPrefab", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_bakedLightDataLoaderPrefab", 0usize
                         )
                     })
             });
@@ -154,7 +157,7 @@ impl crate::GlobalNamespace::LightBakingPersistentSettingsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -165,7 +168,8 @@ impl crate::GlobalNamespace::LightBakingPersistentSettingsSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_bakedLightEditorColors", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_bakedLightEditorColors", 0usize
                         )
                     })
             });
@@ -182,7 +186,7 @@ impl crate::GlobalNamespace::LightBakingPersistentSettingsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -193,7 +197,8 @@ impl crate::GlobalNamespace::LightBakingPersistentSettingsSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_bakedReflectionProbePrefab", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_bakedReflectionProbePrefab", 0usize
                         )
                     })
             });
@@ -206,12 +211,13 @@ impl crate::GlobalNamespace::LightBakingPersistentSettingsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_colorFromSchemeAlpha")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_colorFromSchemeAlpha", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_colorFromSchemeAlpha", 0usize
                         )
                     })
             });
@@ -226,7 +232,7 @@ impl crate::GlobalNamespace::LightBakingPersistentSettingsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -235,7 +241,7 @@ impl crate::GlobalNamespace::LightBakingPersistentSettingsSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "get_defaultDepthOnlyWriteMaterialForFakeMirror", 0usize
                         )
                     })
@@ -253,7 +259,7 @@ impl crate::GlobalNamespace::LightBakingPersistentSettingsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -264,7 +270,8 @@ impl crate::GlobalNamespace::LightBakingPersistentSettingsSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_fakeMirrorObjectsInstallerPrefab", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_fakeMirrorObjectsInstallerPrefab", 0usize
                         )
                     })
             });
@@ -281,7 +288,7 @@ impl crate::GlobalNamespace::LightBakingPersistentSettingsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -292,7 +299,8 @@ impl crate::GlobalNamespace::LightBakingPersistentSettingsSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_fakeMirrorSettingsPrefab", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_fakeMirrorSettingsPrefab", 0usize
                         )
                     })
             });
@@ -309,7 +317,7 @@ impl crate::GlobalNamespace::LightBakingPersistentSettingsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -320,7 +328,8 @@ impl crate::GlobalNamespace::LightBakingPersistentSettingsSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_lightmapLightsWithIds", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_lightmapLightsWithIds", 0usize
                         )
                     })
             });
@@ -333,12 +342,13 @@ impl crate::GlobalNamespace::LightBakingPersistentSettingsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_reflectionsCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_reflectionsCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_reflectionsCount", 0usize
                         )
                     })
             });
@@ -352,7 +362,7 @@ impl crate::GlobalNamespace::LightBakingPersistentSettingsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -361,7 +371,8 @@ impl crate::GlobalNamespace::LightBakingPersistentSettingsSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_colorFromSchemeAlpha", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_colorFromSchemeAlpha", 1usize
                         )
                     })
             });
@@ -377,7 +388,7 @@ impl crate::GlobalNamespace::LightBakingPersistentSettingsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -386,7 +397,8 @@ impl crate::GlobalNamespace::LightBakingPersistentSettingsSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_reflectionsCount", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_reflectionsCount", 1usize
                         )
                     })
             });

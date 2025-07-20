@@ -56,7 +56,7 @@ impl crate::SFB::IStandaloneFileBrowser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -84,7 +84,8 @@ impl crate::SFB::IStandaloneFileBrowser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OpenFilePanel", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OpenFilePanel", 4usize
                         )
                     })
             });
@@ -118,7 +119,7 @@ impl crate::SFB::IStandaloneFileBrowser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -151,7 +152,8 @@ impl crate::SFB::IStandaloneFileBrowser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OpenFilePanelAsync", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OpenFilePanelAsync", 5usize
                         )
                     })
             });
@@ -176,7 +178,7 @@ impl crate::SFB::IStandaloneFileBrowser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -199,7 +201,8 @@ impl crate::SFB::IStandaloneFileBrowser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OpenFolderPanel", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OpenFolderPanel", 3usize
                         )
                     })
             });
@@ -228,7 +231,7 @@ impl crate::SFB::IStandaloneFileBrowser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -256,7 +259,8 @@ impl crate::SFB::IStandaloneFileBrowser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OpenFolderPanelAsync", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OpenFolderPanelAsync", 4usize
                         )
                     })
             });
@@ -279,7 +283,7 @@ impl crate::SFB::IStandaloneFileBrowser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -303,7 +307,8 @@ impl crate::SFB::IStandaloneFileBrowser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SaveFilePanel", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SaveFilePanel", 4usize
                         )
                     })
             });
@@ -331,7 +336,7 @@ impl crate::SFB::IStandaloneFileBrowser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -362,7 +367,8 @@ impl crate::SFB::IStandaloneFileBrowser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SaveFilePanelAsync", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SaveFilePanelAsync", 5usize
                         )
                     })
             });

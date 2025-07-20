@@ -48,7 +48,7 @@ impl crate::TMPro::TMP_MaterialManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
                         quest_hook::libil2cpp::Void,
@@ -57,7 +57,8 @@ impl crate::TMPro::TMP_MaterialManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddFallbackMaterialReference", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddFallbackMaterialReference", 1usize
                         )
                     })
             });
@@ -74,7 +75,7 @@ impl crate::TMPro::TMP_MaterialManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -87,7 +88,8 @@ impl crate::TMPro::TMP_MaterialManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddMaskingMaterial", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddMaskingMaterial", 3usize
                         )
                     })
             });
@@ -102,7 +104,7 @@ impl crate::TMPro::TMP_MaterialManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -111,7 +113,8 @@ impl crate::TMPro::TMP_MaterialManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CleanupFallbackMaterials", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CleanupFallbackMaterials", 0usize
                         )
                     })
             });
@@ -126,7 +129,7 @@ impl crate::TMPro::TMP_MaterialManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -135,7 +138,8 @@ impl crate::TMPro::TMP_MaterialManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ClearMaterials", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ClearMaterials", 0usize
                         )
                     })
             });
@@ -151,7 +155,7 @@ impl crate::TMPro::TMP_MaterialManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -163,7 +167,8 @@ impl crate::TMPro::TMP_MaterialManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CopyMaterialPresetProperties", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CopyMaterialPresetProperties", 2usize
                         )
                     })
             });
@@ -180,7 +185,7 @@ impl crate::TMPro::TMP_MaterialManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -189,7 +194,8 @@ impl crate::TMPro::TMP_MaterialManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FindRootSortOverrideCanvas", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindRootSortOverrideCanvas", 1usize
                         )
                     })
             });
@@ -206,7 +212,7 @@ impl crate::TMPro::TMP_MaterialManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -215,7 +221,8 @@ impl crate::TMPro::TMP_MaterialManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBaseMaterial", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBaseMaterial", 1usize
                         )
                     })
             });
@@ -233,7 +240,7 @@ impl crate::TMPro::TMP_MaterialManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -245,7 +252,8 @@ impl crate::TMPro::TMP_MaterialManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetFallbackMaterial", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetFallbackMaterial", 2usize
                         )
                     })
             });
@@ -264,7 +272,7 @@ impl crate::TMPro::TMP_MaterialManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
@@ -277,7 +285,8 @@ impl crate::TMPro::TMP_MaterialManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetFallbackMaterial", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetFallbackMaterial", 3usize
                         )
                     })
             });
@@ -295,7 +304,7 @@ impl crate::TMPro::TMP_MaterialManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -309,7 +318,8 @@ impl crate::TMPro::TMP_MaterialManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMaterialForRendering", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMaterialForRendering", 2usize
                         )
                     })
             });
@@ -324,7 +334,7 @@ impl crate::TMPro::TMP_MaterialManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
                         i32,
@@ -333,7 +343,8 @@ impl crate::TMPro::TMP_MaterialManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetStencilID", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetStencilID", 1usize
                         )
                     })
             });
@@ -349,7 +360,7 @@ impl crate::TMPro::TMP_MaterialManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>, i32),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -358,7 +369,8 @@ impl crate::TMPro::TMP_MaterialManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetStencilMaterial", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetStencilMaterial", 2usize
                         )
                     })
             });
@@ -371,7 +383,7 @@ impl crate::TMPro::TMP_MaterialManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -380,7 +392,8 @@ impl crate::TMPro::TMP_MaterialManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnPreRender", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnPreRender", 0usize
                         )
                     })
             });
@@ -395,7 +408,7 @@ impl crate::TMPro::TMP_MaterialManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
                         quest_hook::libil2cpp::Void,
@@ -404,7 +417,8 @@ impl crate::TMPro::TMP_MaterialManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReleaseBaseMaterial", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReleaseBaseMaterial", 1usize
                         )
                     })
             });
@@ -419,7 +433,7 @@ impl crate::TMPro::TMP_MaterialManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
                         quest_hook::libil2cpp::Void,
@@ -428,7 +442,8 @@ impl crate::TMPro::TMP_MaterialManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReleaseFallbackMaterial", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReleaseFallbackMaterial", 1usize
                         )
                     })
             });
@@ -443,7 +458,7 @@ impl crate::TMPro::TMP_MaterialManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
                         quest_hook::libil2cpp::Void,
@@ -452,7 +467,8 @@ impl crate::TMPro::TMP_MaterialManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReleaseStencilMaterial", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReleaseStencilMaterial", 1usize
                         )
                     })
             });
@@ -467,7 +483,7 @@ impl crate::TMPro::TMP_MaterialManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
                         quest_hook::libil2cpp::Void,
@@ -476,7 +492,8 @@ impl crate::TMPro::TMP_MaterialManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RemoveFallbackMaterialReference", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RemoveFallbackMaterialReference", 1usize
                         )
                     })
             });
@@ -491,7 +508,7 @@ impl crate::TMPro::TMP_MaterialManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
                         quest_hook::libil2cpp::Void,
@@ -500,7 +517,8 @@ impl crate::TMPro::TMP_MaterialManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RemoveStencilMaterial", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RemoveStencilMaterial", 1usize
                         )
                     })
             });
@@ -518,7 +536,7 @@ impl crate::TMPro::TMP_MaterialManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>, i32),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -527,7 +545,8 @@ impl crate::TMPro::TMP_MaterialManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetStencil", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetStencil", 2usize
                         )
                     })
             });
@@ -605,12 +624,13 @@ impl crate::TMPro::TMP_MaterialManager_FallbackMaterial {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -688,12 +708,13 @@ impl crate::TMPro::TMP_MaterialManager_MaskingMaterial {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

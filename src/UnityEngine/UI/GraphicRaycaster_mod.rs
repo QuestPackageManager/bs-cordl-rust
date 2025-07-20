@@ -75,7 +75,7 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
@@ -98,7 +98,8 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Raycast", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Raycast",
+                            5usize
                         )
                     })
             });
@@ -125,7 +126,7 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -143,7 +144,8 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Raycast", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Raycast",
+                            2usize
                         )
                     })
             });
@@ -158,12 +160,13 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -178,7 +181,7 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::LayerMask,
@@ -187,7 +190,8 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_blockingMask", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_blockingMask", 0usize
                         )
                     })
             });
@@ -204,7 +208,7 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::UI::GraphicRaycaster_BlockingObjects,
@@ -213,7 +217,8 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_blockingObjects", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_blockingObjects", 0usize
                         )
                     })
             });
@@ -230,7 +235,7 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
@@ -239,7 +244,8 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_canvas", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_canvas", 0usize
                         )
                     })
             });
@@ -256,7 +262,7 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -265,7 +271,8 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_eventCamera", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_eventCamera", 0usize
                         )
                     })
             });
@@ -278,12 +285,13 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_ignoreReversedGraphics")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ignoreReversedGraphics", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ignoreReversedGraphics", 0usize
                         )
                     })
             });
@@ -294,12 +302,13 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_renderOrderPriority")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_renderOrderPriority", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_renderOrderPriority", 0usize
                         )
                     })
             });
@@ -310,12 +319,13 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_sortOrderPriority")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_sortOrderPriority", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_sortOrderPriority", 0usize
                         )
                     })
             });
@@ -329,7 +339,7 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::LayerMask),
                         quest_hook::libil2cpp::Void,
@@ -338,7 +348,8 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_blockingMask", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_blockingMask", 1usize
                         )
                     })
             });
@@ -354,7 +365,7 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UI::GraphicRaycaster_BlockingObjects),
                         quest_hook::libil2cpp::Void,
@@ -363,7 +374,8 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_blockingObjects", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_blockingObjects", 1usize
                         )
                     })
             });
@@ -379,7 +391,7 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -388,7 +400,8 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_ignoreReversedGraphics", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_ignoreReversedGraphics", 1usize
                         )
                     })
             });

@@ -65,12 +65,13 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u8), i32, 1usize>("BytesInSequence")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BytesInSequence", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BytesInSequence", 1usize
                         )
                     })
             });
@@ -83,12 +84,13 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Close")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Close", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Close",
+                            0usize
                         )
                     })
             });
@@ -103,7 +105,7 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -112,7 +114,8 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnsureBuffers", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnsureBuffers", 0usize
                         )
                     })
             });
@@ -128,12 +131,13 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("GetLastFullCharStop")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLastFullCharStop", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLastFullCharStop", 1usize
                         )
                     })
             });
@@ -149,7 +153,7 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -158,7 +162,8 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetString", 1usize
                         )
                     })
             });
@@ -174,7 +179,7 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -183,7 +188,8 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MovePosition", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MovePosition", 1usize
                         )
                     })
             });
@@ -238,12 +244,13 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("PopContext")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PopContext", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PopContext", 0usize
                         )
                     })
             });
@@ -261,7 +268,7 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Newtonsoft::Json::Bson::BsonReader_ContainerContext,
@@ -272,7 +279,8 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PushContext", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PushContext", 1usize
                         )
                     })
             });
@@ -285,12 +293,13 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("Read")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Read", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Read",
+                            0usize
                         )
                     })
             });
@@ -308,7 +317,7 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::Newtonsoft::Json::Bson::BsonBinaryType,
@@ -321,7 +330,8 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadBinary", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadBinary", 1usize
                         )
                     })
             });
@@ -334,12 +344,13 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u8, 0usize>("ReadByte")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadByte", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadByte", 0usize
                         )
                     })
             });
@@ -355,7 +366,7 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
@@ -366,7 +377,8 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadBytes", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadBytes", 1usize
                         )
                     })
             });
@@ -379,12 +391,13 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("ReadCodeWScope")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadCodeWScope", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadCodeWScope", 0usize
                         )
                     })
             });
@@ -395,12 +408,13 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f64, 0usize>("ReadDouble")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadDouble", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadDouble", 0usize
                         )
                     })
             });
@@ -415,7 +429,7 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -424,7 +438,8 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadElement", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadElement", 0usize
                         )
                     })
             });
@@ -437,12 +452,13 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("ReadInt32")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadInt32", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadInt32", 0usize
                         )
                     })
             });
@@ -453,12 +469,13 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i64, 0usize>("ReadInt64")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadInt64", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadInt64", 0usize
                         )
                     })
             });
@@ -473,7 +490,7 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -482,7 +499,8 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadLengthString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadLengthString", 0usize
                         )
                     })
             });
@@ -495,12 +513,13 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("ReadNormal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadNormal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadNormal", 0usize
                         )
                     })
             });
@@ -511,12 +530,13 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("ReadReference")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadReference", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadReference", 0usize
                         )
                     })
             });
@@ -531,7 +551,7 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -540,7 +560,8 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadString", 0usize
                         )
                     })
             });
@@ -555,7 +576,7 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Newtonsoft::Json::Bson::BsonType,
@@ -564,7 +585,8 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadType", 0usize
                         )
                     })
             });
@@ -580,7 +602,7 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Newtonsoft::Json::Bson::BsonType),
                         quest_hook::libil2cpp::Void,
@@ -589,7 +611,8 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadType", 1usize
                         )
                     })
             });
@@ -605,7 +628,7 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>),
                         quest_hook::libil2cpp::Void,
@@ -614,7 +637,8 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -632,7 +656,7 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
@@ -645,7 +669,8 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -665,7 +690,7 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                         quest_hook::libil2cpp::Void,
@@ -674,7 +699,8 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -692,7 +718,7 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -705,7 +731,8 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -724,7 +751,7 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::DateTimeKind,
@@ -733,7 +760,8 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_DateTimeKindHandling", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_DateTimeKindHandling", 0usize
                         )
                     })
             });
@@ -748,12 +776,13 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_JsonNet35BinaryCompatibility")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_JsonNet35BinaryCompatibility", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_JsonNet35BinaryCompatibility", 0usize
                         )
                     })
             });
@@ -764,12 +793,13 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_ReadRootValueAsArray")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ReadRootValueAsArray", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ReadRootValueAsArray", 0usize
                         )
                     })
             });
@@ -783,7 +813,7 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::DateTimeKind),
                         quest_hook::libil2cpp::Void,
@@ -792,7 +822,8 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_DateTimeKindHandling", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_DateTimeKindHandling", 1usize
                         )
                     })
             });
@@ -808,7 +839,7 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -817,7 +848,8 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_JsonNet35BinaryCompatibility", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_JsonNet35BinaryCompatibility", 1usize
                         )
                     })
             });
@@ -833,7 +865,7 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -842,7 +874,8 @@ impl crate::Newtonsoft::Json::Bson::BsonReader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_ReadRootValueAsArray", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_ReadRootValueAsArray", 1usize
                         )
                     })
             });
@@ -1020,7 +1053,7 @@ impl crate::Newtonsoft::Json::Bson::BsonReader_ContainerContext {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Newtonsoft::Json::Bson::BsonType),
                         quest_hook::libil2cpp::Void,
@@ -1029,7 +1062,8 @@ impl crate::Newtonsoft::Json::Bson::BsonReader_ContainerContext {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });

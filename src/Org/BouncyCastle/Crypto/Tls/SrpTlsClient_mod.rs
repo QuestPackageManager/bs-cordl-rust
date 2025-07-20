@@ -53,7 +53,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SrpTlsClient {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
@@ -64,7 +64,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SrpTlsClient {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateSrpKeyExchange", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateSrpKeyExchange", 1usize
                         )
                     })
             });
@@ -83,7 +84,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SrpTlsClient {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -94,7 +95,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SrpTlsClient {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAuthentication", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAuthentication", 0usize
                         )
                     })
             });
@@ -111,7 +113,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SrpTlsClient {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -122,7 +124,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SrpTlsClient {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCipherSuites", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCipherSuites", 0usize
                         )
                     })
             });
@@ -139,7 +142,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SrpTlsClient {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -150,7 +153,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SrpTlsClient {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetClientExtensions", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetClientExtensions", 0usize
                         )
                     })
             });
@@ -167,7 +171,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SrpTlsClient {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -178,7 +182,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SrpTlsClient {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetKeyExchange", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetKeyExchange", 0usize
                         )
                     })
             });
@@ -235,7 +240,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SrpTlsClient {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::IDictionary,
@@ -246,7 +251,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SrpTlsClient {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessServerExtensions", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessServerExtensions", 1usize
                         )
                     })
             });
@@ -263,7 +269,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SrpTlsClient {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -279,7 +285,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SrpTlsClient {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -299,7 +306,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SrpTlsClient {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -318,7 +325,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SrpTlsClient {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -341,7 +349,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SrpTlsClient {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -363,7 +371,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SrpTlsClient {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
                         )
                     })
             });
@@ -382,12 +391,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SrpTlsClient {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_RequireSrpServerExtension")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_RequireSrpServerExtension", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_RequireSrpServerExtension", 0usize
                         )
                     })
             });

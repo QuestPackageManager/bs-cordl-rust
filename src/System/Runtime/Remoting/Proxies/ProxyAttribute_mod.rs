@@ -48,7 +48,7 @@ impl crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>,
@@ -57,7 +57,8 @@ impl crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateInstance", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateInstance", 1usize
                         )
                     })
             });
@@ -80,7 +81,7 @@ impl crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -102,7 +103,8 @@ impl crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateProxy", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateProxy", 4usize
                         )
                     })
             });
@@ -126,7 +128,7 @@ impl crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Runtime::Remoting::Activation::IConstructionCallMessage,
@@ -137,7 +139,8 @@ impl crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPropertiesForNewContext", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPropertiesForNewContext", 1usize
                         )
                     })
             });
@@ -158,7 +161,7 @@ impl crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -174,7 +177,8 @@ impl crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsContextOK", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsContextOK", 2usize
                         )
                     })
             });

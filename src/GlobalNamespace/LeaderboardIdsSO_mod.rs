@@ -59,7 +59,7 @@ impl crate::GlobalNamespace::LeaderboardIdsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -75,7 +75,8 @@ impl crate::GlobalNamespace::LeaderboardIdsSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Add", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Add",
+                            2usize
                         )
                     })
             });
@@ -96,7 +97,7 @@ impl crate::GlobalNamespace::LeaderboardIdsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -111,8 +112,8 @@ impl crate::GlobalNamespace::LeaderboardIdsSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ILeaderboardIdContainer.get_leaderboardIds",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ILeaderboardIdContainer.get_leaderboardIds", 0usize
                         )
                     })
             });
@@ -136,12 +137,13 @@ impl crate::GlobalNamespace::LeaderboardIdsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -164,7 +166,7 @@ impl crate::GlobalNamespace::LeaderboardIdsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -179,7 +181,8 @@ impl crate::GlobalNamespace::LeaderboardIdsSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_leaderboardIds", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_leaderboardIds", 0usize
                         )
                     })
             });
@@ -205,7 +208,7 @@ impl crate::GlobalNamespace::LeaderboardIdsSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<
@@ -220,7 +223,8 @@ impl crate::GlobalNamespace::LeaderboardIdsSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_leaderboardIds", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_leaderboardIds", 1usize
                         )
                     })
             });
@@ -326,7 +330,7 @@ impl crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -342,7 +346,8 @@ impl crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -359,7 +364,7 @@ impl crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -368,7 +373,8 @@ impl crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_difficultyBeatmapId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_difficultyBeatmapId", 0usize
                         )
                     })
             });
@@ -385,7 +391,7 @@ impl crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -394,7 +400,8 @@ impl crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_platformLeaderboardId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_platformLeaderboardId", 0usize
                         )
                     })
             });

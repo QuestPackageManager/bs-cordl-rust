@@ -44,7 +44,7 @@ impl crate::Microsoft::Win32::NativeMethods {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         bool,
@@ -53,7 +53,8 @@ impl crate::Microsoft::Win32::NativeMethods {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CloseProcess", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CloseProcess", 1usize
                         )
                     })
             });
@@ -76,7 +77,7 @@ impl crate::Microsoft::Win32::NativeMethods {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::Runtime::InteropServices::HandleRef,
@@ -97,7 +98,8 @@ impl crate::Microsoft::Win32::NativeMethods {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DuplicateHandle", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DuplicateHandle", 7usize
                         )
                     })
             });
@@ -122,7 +124,7 @@ impl crate::Microsoft::Win32::NativeMethods {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::System::IntPtr,
@@ -131,7 +133,8 @@ impl crate::Microsoft::Win32::NativeMethods {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCurrentProcess", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCurrentProcess", 0usize
                         )
                     })
             });
@@ -144,12 +147,13 @@ impl crate::Microsoft::Win32::NativeMethods {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("GetCurrentProcessId")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCurrentProcessId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCurrentProcessId", 0usize
                         )
                     })
             });
@@ -163,7 +167,7 @@ impl crate::Microsoft::Win32::NativeMethods {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, quest_hook::libil2cpp::ByRefMut<i32>),
                         bool,
@@ -172,7 +176,8 @@ impl crate::Microsoft::Win32::NativeMethods {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetExitCodeProcess", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetExitCodeProcess", 2usize
                         )
                     })
             });
@@ -190,7 +195,7 @@ impl crate::Microsoft::Win32::NativeMethods {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -204,7 +209,8 @@ impl crate::Microsoft::Win32::NativeMethods {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetExitCodeProcess", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetExitCodeProcess", 2usize
                         )
                     })
             });
@@ -223,7 +229,7 @@ impl crate::Microsoft::Win32::NativeMethods {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::IntPtr,
@@ -238,7 +244,8 @@ impl crate::Microsoft::Win32::NativeMethods {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetProcessTimes", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetProcessTimes", 5usize
                         )
                     })
             });
@@ -259,7 +266,7 @@ impl crate::Microsoft::Win32::NativeMethods {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -276,7 +283,8 @@ impl crate::Microsoft::Win32::NativeMethods {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetProcessTimes", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetProcessTimes", 5usize
                         )
                     })
             });

@@ -47,7 +47,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Experimental::Rendering::GraphicsFormat),
                         bool,
@@ -56,7 +56,8 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CanDecompressFormat", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CanDecompressFormat", 1usize
                         )
                     })
             });
@@ -70,7 +71,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
@@ -82,7 +83,8 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CanDecompressFormat", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CanDecompressFormat", 2usize
                         )
                     })
             });
@@ -97,7 +99,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Experimental::Rendering::GraphicsFormat),
                         i32,
@@ -106,7 +108,8 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetDepthBits", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDepthBits", 1usize
                         )
                     })
             });
@@ -121,7 +124,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
@@ -130,8 +133,8 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetDepthStencilFormatFromBitsLegacy_Native",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDepthStencilFormatFromBitsLegacy_Native", 1usize
                         )
                     })
             });
@@ -148,7 +151,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
@@ -157,7 +160,8 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetDepthStencilFormat", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDepthStencilFormat", 1usize
                         )
                     })
             });
@@ -175,7 +179,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, i32),
                         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
@@ -184,7 +188,8 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetDepthStencilFormat", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDepthStencilFormat", 2usize
                         )
                     })
             });
@@ -202,7 +207,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::RenderTextureFormat, bool),
                         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
@@ -211,7 +216,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "GetGraphicsFormat_Native_RenderTextureFormat", 2usize
                         )
                     })
@@ -230,7 +235,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::TextureFormat, bool),
                         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
@@ -239,8 +244,8 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetGraphicsFormat_Native_TextureFormat",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetGraphicsFormat_Native_TextureFormat", 2usize
                         )
                     })
             });
@@ -258,7 +263,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::RenderTextureFormat,
@@ -270,7 +275,8 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetGraphicsFormat", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetGraphicsFormat", 2usize
                         )
                     })
             });
@@ -288,7 +294,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::RenderTextureFormat, bool),
                         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
@@ -297,7 +303,8 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetGraphicsFormat", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetGraphicsFormat", 2usize
                         )
                     })
             });
@@ -315,7 +322,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::TextureFormat, bool),
                         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
@@ -324,7 +331,8 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetGraphicsFormat", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetGraphicsFormat", 2usize
                         )
                     })
             });
@@ -341,7 +349,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Experimental::Rendering::GraphicsFormat),
                         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
@@ -350,7 +358,8 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLinearFormat", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLinearFormat", 1usize
                         )
                     })
             });
@@ -365,7 +374,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Experimental::Rendering::GraphicsFormat),
                         crate::UnityEngine::RenderTextureFormat,
@@ -374,7 +383,8 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetRenderTextureFormat", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetRenderTextureFormat", 1usize
                         )
                     })
             });
@@ -391,7 +401,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Experimental::Rendering::GraphicsFormat),
                         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
@@ -400,7 +410,8 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSRGBFormat", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSRGBFormat", 1usize
                         )
                     })
             });
@@ -415,7 +426,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::TextureFormat),
                         bool,
@@ -424,7 +435,8 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsCompressedFormat", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsCompressedFormat", 1usize
                         )
                     })
             });
@@ -437,7 +449,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::TextureFormat),
                         bool,
@@ -446,8 +458,8 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsCompressedFormat_Native_TextureFormat",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsCompressedFormat_Native_TextureFormat", 1usize
                         )
                     })
             });
@@ -460,7 +472,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::TextureFormat),
                         bool,
@@ -469,7 +481,8 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsCrunchFormat", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsCrunchFormat", 1usize
                         )
                     })
             });
@@ -482,7 +495,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Experimental::Rendering::GraphicsFormat),
                         bool,
@@ -491,7 +504,8 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsDepthStencilFormat", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsDepthStencilFormat", 1usize
                         )
                     })
             });
@@ -504,7 +518,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Experimental::Rendering::GraphicsFormat),
                         bool,
@@ -513,7 +527,8 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsPVRTCFormat", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsPVRTCFormat", 1usize
                         )
                     })
             });
@@ -526,7 +541,7 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Experimental::Rendering::GraphicsFormat),
                         bool,
@@ -535,7 +550,8 @@ impl crate::UnityEngine::Experimental::Rendering::GraphicsFormatUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsSRGBFormat", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsSRGBFormat", 1usize
                         )
                     })
             });

@@ -46,7 +46,7 @@ impl crate::Org::BouncyCastle::Utilities::Net::IPAddress {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -60,7 +60,8 @@ impl crate::Org::BouncyCastle::Utilities::Net::IPAddress {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsMaskValue", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsMaskValue", 2usize
                         )
                     })
             });
@@ -75,7 +76,7 @@ impl crate::Org::BouncyCastle::Utilities::Net::IPAddress {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -84,7 +85,8 @@ impl crate::Org::BouncyCastle::Utilities::Net::IPAddress {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsValid", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsValid",
+                            1usize
                         )
                     })
             });
@@ -97,7 +99,7 @@ impl crate::Org::BouncyCastle::Utilities::Net::IPAddress {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -106,7 +108,8 @@ impl crate::Org::BouncyCastle::Utilities::Net::IPAddress {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsValidIPv4", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsValidIPv4", 1usize
                         )
                     })
             });
@@ -119,7 +122,7 @@ impl crate::Org::BouncyCastle::Utilities::Net::IPAddress {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -128,7 +131,8 @@ impl crate::Org::BouncyCastle::Utilities::Net::IPAddress {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsValidIPv4WithNetmask", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsValidIPv4WithNetmask", 1usize
                         )
                     })
             });
@@ -141,7 +145,7 @@ impl crate::Org::BouncyCastle::Utilities::Net::IPAddress {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -150,7 +154,8 @@ impl crate::Org::BouncyCastle::Utilities::Net::IPAddress {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsValidIPv6", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsValidIPv6", 1usize
                         )
                     })
             });
@@ -163,7 +168,7 @@ impl crate::Org::BouncyCastle::Utilities::Net::IPAddress {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -172,7 +177,8 @@ impl crate::Org::BouncyCastle::Utilities::Net::IPAddress {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsValidIPv6WithNetmask", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsValidIPv6WithNetmask", 1usize
                         )
                     })
             });
@@ -185,7 +191,7 @@ impl crate::Org::BouncyCastle::Utilities::Net::IPAddress {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -194,7 +200,8 @@ impl crate::Org::BouncyCastle::Utilities::Net::IPAddress {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsValidWithNetMask", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsValidWithNetMask", 1usize
                         )
                     })
             });
@@ -214,12 +221,13 @@ impl crate::Org::BouncyCastle::Utilities::Net::IPAddress {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -234,7 +242,7 @@ impl crate::Org::BouncyCastle::Utilities::Net::IPAddress {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -243,7 +251,8 @@ impl crate::Org::BouncyCastle::Utilities::Net::IPAddress {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "unsafeIsValidIPv4", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "unsafeIsValidIPv4", 1usize
                         )
                     })
             });
@@ -256,7 +265,7 @@ impl crate::Org::BouncyCastle::Utilities::Net::IPAddress {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -265,7 +274,8 @@ impl crate::Org::BouncyCastle::Utilities::Net::IPAddress {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "unsafeIsValidIPv6", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "unsafeIsValidIPv6", 1usize
                         )
                     })
             });

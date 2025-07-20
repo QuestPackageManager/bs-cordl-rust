@@ -111,7 +111,7 @@ impl crate::UnityEngine::XR::XRNodeState {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>),
                         bool,
@@ -120,7 +120,8 @@ impl crate::UnityEngine::XR::XRNodeState {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGetAcceleration", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetAcceleration", 1usize
                         )
                     })
             });
@@ -136,7 +137,7 @@ impl crate::UnityEngine::XR::XRNodeState {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>),
                         bool,
@@ -145,7 +146,8 @@ impl crate::UnityEngine::XR::XRNodeState {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGetAngularAcceleration", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetAngularAcceleration", 1usize
                         )
                     })
             });
@@ -161,7 +163,7 @@ impl crate::UnityEngine::XR::XRNodeState {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>),
                         bool,
@@ -170,7 +172,8 @@ impl crate::UnityEngine::XR::XRNodeState {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGetAngularVelocity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetAngularVelocity", 1usize
                         )
                     })
             });
@@ -186,7 +189,7 @@ impl crate::UnityEngine::XR::XRNodeState {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>),
                         bool,
@@ -195,7 +198,8 @@ impl crate::UnityEngine::XR::XRNodeState {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGetPosition", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetPosition", 1usize
                         )
                     })
             });
@@ -209,7 +213,7 @@ impl crate::UnityEngine::XR::XRNodeState {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::UnityEngine::Quaternion,
@@ -220,7 +224,8 @@ impl crate::UnityEngine::XR::XRNodeState {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGetRotation", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetRotation", 1usize
                         )
                     })
             });
@@ -234,7 +239,7 @@ impl crate::UnityEngine::XR::XRNodeState {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>),
                         bool,
@@ -243,7 +248,8 @@ impl crate::UnityEngine::XR::XRNodeState {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGetVelocity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetVelocity", 1usize
                         )
                     })
             });
@@ -259,7 +265,7 @@ impl crate::UnityEngine::XR::XRNodeState {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Quaternion,
@@ -274,7 +280,8 @@ impl crate::UnityEngine::XR::XRNodeState {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGet", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "TryGet",
+                            3usize
                         )
                     })
             });
@@ -292,7 +299,7 @@ impl crate::UnityEngine::XR::XRNodeState {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Vector3,
@@ -305,7 +312,8 @@ impl crate::UnityEngine::XR::XRNodeState {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGet", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "TryGet",
+                            3usize
                         )
                     })
             });
@@ -320,7 +328,7 @@ impl crate::UnityEngine::XR::XRNodeState {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::XR::XRNode,
@@ -329,7 +337,8 @@ impl crate::UnityEngine::XR::XRNodeState {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_nodeType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_nodeType", 0usize
                         )
                     })
             });
@@ -345,7 +354,7 @@ impl crate::UnityEngine::XR::XRNodeState {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::XR::XRNode),
                         quest_hook::libil2cpp::Void,
@@ -354,7 +363,8 @@ impl crate::UnityEngine::XR::XRNodeState {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_nodeType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_nodeType", 1usize
                         )
                     })
             });
@@ -370,7 +380,7 @@ impl crate::UnityEngine::XR::XRNodeState {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -379,7 +389,8 @@ impl crate::UnityEngine::XR::XRNodeState {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_tracked", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_tracked", 1usize
                         )
                     })
             });
@@ -395,7 +406,7 @@ impl crate::UnityEngine::XR::XRNodeState {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u64),
                         quest_hook::libil2cpp::Void,
@@ -404,7 +415,8 @@ impl crate::UnityEngine::XR::XRNodeState {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_uniqueID", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_uniqueID", 1usize
                         )
                     })
             });

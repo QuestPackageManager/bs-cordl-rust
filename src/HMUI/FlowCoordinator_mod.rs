@@ -93,7 +93,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, bool, bool),
                         quest_hook::libil2cpp::Void,
@@ -102,7 +102,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Activate", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Activate", 3usize
                         )
                     })
             });
@@ -122,7 +123,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>),
                         quest_hook::libil2cpp::Void,
@@ -131,7 +132,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BackButtonWasPressed", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BackButtonWasPressed", 1usize
                         )
                     })
             });
@@ -144,12 +146,13 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("CanPressBackButton")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CanPressBackButton", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CanPressBackButton", 0usize
                         )
                     })
             });
@@ -164,7 +167,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, bool),
                         quest_hook::libil2cpp::Void,
@@ -173,7 +176,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Deactivate", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Deactivate", 2usize
                         )
                     })
             });
@@ -191,7 +195,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, bool, bool),
                         quest_hook::libil2cpp::Void,
@@ -200,7 +204,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DidActivate", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DidActivate", 3usize
                         )
                     })
             });
@@ -221,7 +226,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, bool),
                         quest_hook::libil2cpp::Void,
@@ -230,7 +235,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DidDeactivate", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DidDeactivate", 2usize
                         )
                     })
             });
@@ -248,7 +254,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -257,8 +263,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DismissChildFlowCoordinatorsRecursively",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DismissChildFlowCoordinatorsRecursively", 1usize
                         )
                     })
             });
@@ -276,7 +282,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -285,8 +291,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DismissChildViewControllersRecursively",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DismissChildViewControllersRecursively", 1usize
                         )
                     })
             });
@@ -305,7 +311,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
@@ -319,7 +325,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DismissFlowCoordinator", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DismissFlowCoordinator", 4usize
                         )
                     })
             });
@@ -344,7 +351,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
@@ -358,7 +365,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DismissViewController", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DismissViewController", 4usize
                         )
                     })
             });
@@ -379,7 +387,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -388,8 +396,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleScreenSystemBackButtonWasPressed",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleScreenSystemBackButtonWasPressed", 0usize
                         )
                     })
             });
@@ -404,7 +412,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -413,7 +421,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitialViewControllerWasPresented", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitialViewControllerWasPresented", 0usize
                         )
                     })
             });
@@ -429,7 +438,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>),
                         bool,
@@ -438,7 +447,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsFlowCoordinatorInHierarchy", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsFlowCoordinatorInHierarchy", 1usize
                         )
                     })
             });
@@ -453,7 +463,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -462,7 +472,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Log", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Log",
+                            1usize
                         )
                     })
             });
@@ -489,7 +500,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::HMUI::NavigationController>,
@@ -502,8 +513,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PopViewControllerFromNavigationController",
-                            3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PopViewControllerFromNavigationController", 3usize
                         )
                     })
             });
@@ -528,7 +539,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::HMUI::NavigationController>,
@@ -542,8 +553,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PopViewControllersFromNavigationController",
-                            4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PopViewControllersFromNavigationController", 4usize
                         )
                     })
             });
@@ -572,7 +583,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
@@ -587,7 +598,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PresentFlowCoordinator", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PresentFlowCoordinator", 5usize
                         )
                     })
             });
@@ -614,7 +626,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -628,7 +640,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PresentTitle", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PresentTitle", 2usize
                         )
                     })
             });
@@ -647,7 +660,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
@@ -661,7 +674,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PresentViewController", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PresentViewController", 4usize
                         )
                     })
             });
@@ -689,7 +703,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
@@ -704,7 +718,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProvideInitialViewControllers", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProvideInitialViewControllers", 5usize
                         )
                     })
             });
@@ -735,7 +750,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::HMUI::NavigationController>,
@@ -749,8 +764,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PushViewControllerToNavigationController",
-                            4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PushViewControllerToNavigationController", 4usize
                         )
                     })
             });
@@ -773,7 +788,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
@@ -787,7 +802,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReplaceChildFlowCoordinator", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReplaceChildFlowCoordinator", 4usize
                         )
                     })
             });
@@ -810,7 +826,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
@@ -824,7 +840,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReplaceTopViewController", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReplaceTopViewController", 4usize
                         )
                     })
             });
@@ -851,7 +868,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
@@ -867,7 +884,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReplaceTopViewController", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReplaceTopViewController", 6usize
                         )
                     })
             });
@@ -895,7 +913,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
@@ -907,7 +925,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetBottomScreenViewController", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetBottomScreenViewController", 2usize
                         )
                     })
             });
@@ -923,7 +942,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -932,7 +951,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetGlobalUserInteraction", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetGlobalUserInteraction", 1usize
                         )
                     })
             });
@@ -949,7 +969,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
@@ -961,7 +981,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetLeftScreenViewController", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetLeftScreenViewController", 2usize
                         )
                     })
             });
@@ -978,7 +999,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
@@ -990,7 +1011,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetRightScreenViewController", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetRightScreenViewController", 2usize
                         )
                     })
             });
@@ -1007,7 +1029,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1021,7 +1043,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetTitle", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetTitle", 2usize
                         )
                     })
             });
@@ -1038,7 +1061,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
@@ -1050,7 +1073,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetTopScreenViewController", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetTopScreenViewController", 2usize
                         )
                     })
             });
@@ -1069,7 +1093,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::HMUI::NavigationController>,
@@ -1081,8 +1105,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetViewControllerToNavigationController",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetViewControllerToNavigationController", 2usize
                         )
                     })
             });
@@ -1105,7 +1129,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::HMUI::NavigationController>,
@@ -1121,8 +1145,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetViewControllersToNavigationController",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetViewControllersToNavigationController", 2usize
                         )
                     })
             });
@@ -1140,7 +1164,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
@@ -1153,7 +1177,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TopViewControllerWillChange", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TopViewControllerWillChange", 3usize
                         )
                     })
             });
@@ -1172,7 +1197,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1181,7 +1206,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TransitionDidFinish", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TransitionDidFinish", 0usize
                         )
                     })
             });
@@ -1196,7 +1222,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1205,7 +1231,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TransitionDidStart", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TransitionDidStart", 0usize
                         )
                     })
             });
@@ -1222,7 +1249,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
@@ -1231,7 +1258,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "YoungestChildFlowCoordinatorOrSelf", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "YoungestChildFlowCoordinatorOrSelf", 0usize
                         )
                     })
             });
@@ -1246,7 +1274,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1255,7 +1283,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "__ExternalActivate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "__ExternalActivate", 0usize
                         )
                     })
             });
@@ -1270,7 +1299,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1279,7 +1308,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "__ExternalDeactivate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "__ExternalDeactivate", 0usize
                         )
                     })
             });
@@ -1295,7 +1325,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::HMUI::ScreenSystem>),
                         quest_hook::libil2cpp::Void,
@@ -1304,7 +1334,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "__StartOnScreenSystem", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "__StartOnScreenSystem", 1usize
                         )
                     })
             });
@@ -1319,12 +1350,13 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -1341,7 +1373,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
@@ -1350,7 +1382,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_childFlowCoordinator", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_childFlowCoordinator", 0usize
                         )
                     })
             });
@@ -1363,12 +1396,13 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isActivated")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_isActivated", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isActivated", 0usize
                         )
                     })
             });
@@ -1379,12 +1413,13 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isInTransition")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_isInTransition", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isInTransition", 0usize
                         )
                     })
             });
@@ -1399,7 +1434,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
@@ -1408,7 +1443,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rightScreenViewController", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rightScreenViewController", 0usize
                         )
                     })
             });
@@ -1421,12 +1457,13 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_showBackButton")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_showBackButton", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_showBackButton", 0usize
                         )
                     })
             });
@@ -1441,7 +1478,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1450,7 +1487,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_title", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_title", 0usize
                         )
                     })
             });
@@ -1467,7 +1505,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
@@ -1476,7 +1514,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_topViewController", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_topViewController", 0usize
                         )
                     })
             });
@@ -1492,7 +1531,7 @@ impl crate::HMUI::FlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -1501,7 +1540,8 @@ impl crate::HMUI::FlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_showBackButton", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_showBackButton", 1usize
                         )
                     })
             });

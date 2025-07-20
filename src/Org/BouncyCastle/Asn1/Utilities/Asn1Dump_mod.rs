@@ -50,7 +50,7 @@ impl crate::Org::BouncyCastle::Asn1::Utilities::Asn1Dump {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -68,7 +68,8 @@ impl crate::Org::BouncyCastle::Asn1::Utilities::Asn1Dump {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AsString", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AsString", 4usize
                         )
                     })
             });
@@ -85,7 +86,7 @@ impl crate::Org::BouncyCastle::Asn1::Utilities::Asn1Dump {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Asn1::Asn1Encodable,
@@ -96,7 +97,8 @@ impl crate::Org::BouncyCastle::Asn1::Utilities::Asn1Dump {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DumpAsString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DumpAsString", 1usize
                         )
                     })
             });
@@ -114,7 +116,7 @@ impl crate::Org::BouncyCastle::Asn1::Utilities::Asn1Dump {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -128,7 +130,8 @@ impl crate::Org::BouncyCastle::Asn1::Utilities::Asn1Dump {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DumpAsString", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DumpAsString", 2usize
                         )
                     })
             });
@@ -145,7 +148,7 @@ impl crate::Org::BouncyCastle::Asn1::Utilities::Asn1Dump {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -154,7 +157,8 @@ impl crate::Org::BouncyCastle::Asn1::Utilities::Asn1Dump {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DumpAsString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DumpAsString", 1usize
                         )
                     })
             });
@@ -176,12 +180,13 @@ impl crate::Org::BouncyCastle::Asn1::Utilities::Asn1Dump {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -200,7 +205,7 @@ impl crate::Org::BouncyCastle::Asn1::Utilities::Asn1Dump {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -215,7 +220,8 @@ impl crate::Org::BouncyCastle::Asn1::Utilities::Asn1Dump {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "calculateAscString", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "calculateAscString", 3usize
                         )
                     })
             });
@@ -233,7 +239,7 @@ impl crate::Org::BouncyCastle::Asn1::Utilities::Asn1Dump {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -249,7 +255,8 @@ impl crate::Org::BouncyCastle::Asn1::Utilities::Asn1Dump {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "dumpBinaryDataAsString", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "dumpBinaryDataAsString", 2usize
                         )
                     })
             });
@@ -271,7 +278,7 @@ impl crate::Org::BouncyCastle::Asn1::Utilities::Asn1Dump {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -291,7 +298,8 @@ impl crate::Org::BouncyCastle::Asn1::Utilities::Asn1Dump {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "outputApplicationSpecific", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "outputApplicationSpecific", 4usize
                         )
                     })
             });

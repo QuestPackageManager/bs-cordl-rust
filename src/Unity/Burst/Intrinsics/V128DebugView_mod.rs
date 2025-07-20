@@ -56,7 +56,7 @@ impl crate::Unity::Burst::Intrinsics::V128DebugView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Burst::Intrinsics::v128),
                         quest_hook::libil2cpp::Void,
@@ -65,7 +65,8 @@ impl crate::Unity::Burst::Intrinsics::V128DebugView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -82,7 +83,7 @@ impl crate::Unity::Burst::Intrinsics::V128DebugView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -93,7 +94,8 @@ impl crate::Unity::Burst::Intrinsics::V128DebugView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Byte", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Byte", 0usize
                         )
                     })
             });
@@ -110,7 +112,7 @@ impl crate::Unity::Burst::Intrinsics::V128DebugView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -121,7 +123,8 @@ impl crate::Unity::Burst::Intrinsics::V128DebugView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Double", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Double", 0usize
                         )
                     })
             });
@@ -138,7 +141,7 @@ impl crate::Unity::Burst::Intrinsics::V128DebugView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -149,7 +152,8 @@ impl crate::Unity::Burst::Intrinsics::V128DebugView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Float", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Float", 0usize
                         )
                     })
             });
@@ -166,7 +170,7 @@ impl crate::Unity::Burst::Intrinsics::V128DebugView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -177,7 +181,8 @@ impl crate::Unity::Burst::Intrinsics::V128DebugView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SByte", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SByte", 0usize
                         )
                     })
             });
@@ -194,7 +199,7 @@ impl crate::Unity::Burst::Intrinsics::V128DebugView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -205,7 +210,8 @@ impl crate::Unity::Burst::Intrinsics::V128DebugView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SInt", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SInt", 0usize
                         )
                     })
             });
@@ -222,7 +228,7 @@ impl crate::Unity::Burst::Intrinsics::V128DebugView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -233,7 +239,8 @@ impl crate::Unity::Burst::Intrinsics::V128DebugView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SLong", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SLong", 0usize
                         )
                     })
             });
@@ -250,7 +257,7 @@ impl crate::Unity::Burst::Intrinsics::V128DebugView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -261,7 +268,8 @@ impl crate::Unity::Burst::Intrinsics::V128DebugView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SShort", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SShort", 0usize
                         )
                     })
             });
@@ -278,7 +286,7 @@ impl crate::Unity::Burst::Intrinsics::V128DebugView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -289,7 +297,8 @@ impl crate::Unity::Burst::Intrinsics::V128DebugView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_UInt", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_UInt", 0usize
                         )
                     })
             });
@@ -306,7 +315,7 @@ impl crate::Unity::Burst::Intrinsics::V128DebugView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -317,7 +326,8 @@ impl crate::Unity::Burst::Intrinsics::V128DebugView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ULong", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ULong", 0usize
                         )
                     })
             });
@@ -334,7 +344,7 @@ impl crate::Unity::Burst::Intrinsics::V128DebugView {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -345,7 +355,8 @@ impl crate::Unity::Burst::Intrinsics::V128DebugView {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_UShort", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_UShort", 0usize
                         )
                     })
             });

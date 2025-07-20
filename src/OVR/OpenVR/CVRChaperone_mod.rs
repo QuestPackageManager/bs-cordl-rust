@@ -43,12 +43,13 @@ impl crate::OVR::OpenVR::CVRChaperone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("AreBoundsVisible")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AreBoundsVisible", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AreBoundsVisible", 0usize
                         )
                     })
             });
@@ -62,7 +63,7 @@ impl crate::OVR::OpenVR::CVRChaperone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -71,7 +72,8 @@ impl crate::OVR::OpenVR::CVRChaperone {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ForceBoundsVisible", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ForceBoundsVisible", 1usize
                         )
                     })
             });
@@ -94,7 +96,7 @@ impl crate::OVR::OpenVR::CVRChaperone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -112,7 +114,8 @@ impl crate::OVR::OpenVR::CVRChaperone {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBoundsColor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBoundsColor", 4usize
                         )
                     })
             });
@@ -136,7 +139,7 @@ impl crate::OVR::OpenVR::CVRChaperone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::OVR::OpenVR::ChaperoneCalibrationState,
@@ -145,7 +148,8 @@ impl crate::OVR::OpenVR::CVRChaperone {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCalibrationState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCalibrationState", 0usize
                         )
                     })
             });
@@ -161,7 +165,7 @@ impl crate::OVR::OpenVR::CVRChaperone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdQuad_t>),
                         bool,
@@ -170,7 +174,8 @@ impl crate::OVR::OpenVR::CVRChaperone {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPlayAreaRect", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPlayAreaRect", 1usize
                         )
                     })
             });
@@ -185,7 +190,7 @@ impl crate::OVR::OpenVR::CVRChaperone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<f32>,
@@ -197,7 +202,8 @@ impl crate::OVR::OpenVR::CVRChaperone {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPlayAreaSize", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPlayAreaSize", 2usize
                         )
                     })
             });
@@ -221,12 +227,13 @@ impl crate::OVR::OpenVR::CVRChaperone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ReloadInfo")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReloadInfo", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReloadInfo", 0usize
                         )
                     })
             });
@@ -242,7 +249,7 @@ impl crate::OVR::OpenVR::CVRChaperone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::OVR::OpenVR::HmdColor_t),
                         quest_hook::libil2cpp::Void,
@@ -251,7 +258,8 @@ impl crate::OVR::OpenVR::CVRChaperone {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetSceneColor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetSceneColor", 1usize
                         )
                     })
             });
@@ -267,7 +275,7 @@ impl crate::OVR::OpenVR::CVRChaperone {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::IntPtr),
                         quest_hook::libil2cpp::Void,
@@ -276,7 +284,8 @@ impl crate::OVR::OpenVR::CVRChaperone {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });

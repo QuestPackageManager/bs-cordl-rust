@@ -66,7 +66,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Newtonsoft::Json::Linq::JToken,
@@ -79,7 +79,8 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BuildSchema", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BuildSchema", 1usize
                         )
                     })
             });
@@ -94,7 +95,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         crate::Newtonsoft::Json::Schema::JsonSchemaType,
@@ -103,7 +104,8 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MapType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "MapType",
+                            1usize
                         )
                     })
             });
@@ -120,7 +122,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Newtonsoft::Json::Schema::JsonSchemaType),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -129,7 +131,8 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MapType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "MapType",
+                            1usize
                         )
                     })
             });
@@ -157,7 +160,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -168,7 +171,8 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Pop", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Pop",
+                            0usize
                         )
                     })
             });
@@ -184,7 +188,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Newtonsoft::Json::Linq::JToken,
@@ -195,7 +199,8 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessAdditionalItems", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessAdditionalItems", 1usize
                         )
                     })
             });
@@ -211,7 +216,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Newtonsoft::Json::Linq::JToken,
@@ -222,7 +227,8 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessAdditionalProperties", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessAdditionalProperties", 1usize
                         )
                     })
             });
@@ -238,7 +244,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Newtonsoft::Json::Linq::JToken,
@@ -249,7 +255,8 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessEnum", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessEnum", 1usize
                         )
                     })
             });
@@ -265,7 +272,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Newtonsoft::Json::Linq::JToken,
@@ -276,7 +283,8 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessExtends", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessExtends", 1usize
                         )
                     })
             });
@@ -292,7 +300,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Newtonsoft::Json::Linq::JToken,
@@ -303,7 +311,8 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessItems", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessItems", 1usize
                         )
                     })
             });
@@ -326,7 +335,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Newtonsoft::Json::Linq::JToken,
@@ -346,7 +355,8 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessProperties", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessProperties", 1usize
                         )
                     })
             });
@@ -365,7 +375,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Newtonsoft::Json::Linq::JObject,
@@ -376,7 +386,8 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessSchemaProperties", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessSchemaProperties", 1usize
                         )
                     })
             });
@@ -394,7 +405,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Newtonsoft::Json::Linq::JToken,
@@ -407,7 +418,8 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessType", 1usize
                         )
                     })
             });
@@ -423,7 +435,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Newtonsoft::Json::Schema::JsonSchema,
@@ -434,7 +446,8 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Push", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Push",
+                            1usize
                         )
                     })
             });
@@ -452,7 +465,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>),
                         quest_hook::libil2cpp::Gc<
@@ -463,7 +476,8 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Read", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Read",
+                            1usize
                         )
                     })
             });
@@ -481,7 +495,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Newtonsoft::Json::Schema::JsonSchema,
@@ -494,7 +508,8 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResolveReferences", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResolveReferences", 1usize
                         )
                     })
             });
@@ -512,7 +527,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -521,7 +536,8 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnescapeReference", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnescapeReference", 1usize
                         )
                     })
             });
@@ -539,7 +555,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Newtonsoft::Json::Schema::JsonSchemaResolver,
@@ -550,7 +566,8 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -567,7 +584,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -578,7 +595,8 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CurrentSchema", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CurrentSchema", 0usize
                         )
                     })
             });

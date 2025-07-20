@@ -132,12 +132,13 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationPar
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(TObject), TObject, 1usize>("Instantiate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Instantiate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Instantiate", 1usize
                         )
                     })
             });
@@ -152,7 +153,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationPar
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>, bool),
                         quest_hook::libil2cpp::Void,
@@ -161,7 +162,8 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationPar
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -179,7 +181,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationPar
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Vector3,
@@ -192,7 +194,8 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationPar
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -207,12 +210,13 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationPar
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_InstantiateInWorldPosition")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_InstantiateInWorldPosition", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_InstantiateInWorldPosition", 0usize
                         )
                     })
             });
@@ -227,7 +231,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationPar
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -236,7 +240,8 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationPar
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Parent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Parent", 0usize
                         )
                     })
             });
@@ -251,7 +256,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationPar
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector3,
@@ -260,7 +265,8 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationPar
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Position", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Position", 0usize
                         )
                     })
             });
@@ -275,7 +281,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationPar
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Quaternion,
@@ -284,7 +290,8 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationPar
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Rotation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Rotation", 0usize
                         )
                     })
             });
@@ -297,12 +304,13 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationPar
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_SetPositionRotation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SetPositionRotation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SetPositionRotation", 0usize
                         )
                     })
             });

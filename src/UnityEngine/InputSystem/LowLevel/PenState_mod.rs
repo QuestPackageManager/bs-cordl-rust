@@ -111,7 +111,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::PenState {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::InputSystem::PenButton, bool),
                         crate::UnityEngine::InputSystem::LowLevel::PenState,
@@ -120,7 +120,8 @@ impl crate::UnityEngine::InputSystem::LowLevel::PenState {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WithButton", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WithButton", 2usize
                         )
                     })
             });
@@ -135,7 +136,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::PenState {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::UnityEngine::InputSystem::Utilities::FourCC,
@@ -144,7 +145,8 @@ impl crate::UnityEngine::InputSystem::LowLevel::PenState {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Format", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Format", 0usize
                         )
                     })
             });
@@ -161,7 +163,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::PenState {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::InputSystem::Utilities::FourCC,
@@ -170,7 +172,8 @@ impl crate::UnityEngine::InputSystem::LowLevel::PenState {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_format", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_format", 0usize
                         )
                     })
             });

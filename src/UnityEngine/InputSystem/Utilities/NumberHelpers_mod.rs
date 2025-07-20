@@ -46,12 +46,13 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, i32), i32, 2usize>("AlignToMultipleOf")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AlignToMultipleOf", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AlignToMultipleOf", 2usize
                         )
                     })
             });
@@ -67,12 +68,13 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i64, i64), i64, 2usize>("AlignToMultipleOf")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AlignToMultipleOf", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AlignToMultipleOf", 2usize
                         )
                     })
             });
@@ -88,12 +90,13 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32, u32), u32, 2usize>("AlignToMultipleOf")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AlignToMultipleOf", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AlignToMultipleOf", 2usize
                         )
                     })
             });
@@ -106,12 +109,13 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f64, f64), bool, 2usize>("Approximately")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Approximately", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Approximately", 2usize
                         )
                     })
             });
@@ -126,7 +130,7 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, i32, i32),
                         f32,
@@ -135,7 +139,8 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IntToNormalizedFloat", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IntToNormalizedFloat", 3usize
                         )
                     })
             });
@@ -152,7 +157,7 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32, i32, i32),
                         i32,
@@ -161,7 +166,8 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NormalizedFloatToInt", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NormalizedFloatToInt", 3usize
                         )
                     })
             });
@@ -178,7 +184,7 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32, u32, u32),
                         u32,
@@ -187,7 +193,8 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NormalizedFloatToUInt", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NormalizedFloatToUInt", 3usize
                         )
                     })
             });
@@ -204,7 +211,7 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u32, u32, u32),
                         u32,
@@ -213,8 +220,8 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RemapUIntBitsToNormalizeFloatToUIntBits",
-                            3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RemapUIntBitsToNormalizeFloatToUIntBits", 3usize
                         )
                     })
             });
@@ -231,7 +238,7 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u32, u32, u32),
                         f32,
@@ -240,7 +247,8 @@ impl crate::UnityEngine::InputSystem::Utilities::NumberHelpers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UIntToNormalizedFloat", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UIntToNormalizedFloat", 3usize
                         )
                     })
             });

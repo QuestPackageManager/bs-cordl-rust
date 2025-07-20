@@ -91,7 +91,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::BeatmapSaveDataVersion3::EventBoxGro
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             f32,
@@ -106,7 +106,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::BeatmapSaveDataVersion3::EventBoxGro
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -131,7 +132,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::BeatmapSaveDataVersion3::EventBoxGro
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -146,7 +147,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::BeatmapSaveDataVersion3::EventBoxGro
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_baseEventBoxes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_baseEventBoxes", 0usize
                         )
                     })
             });
@@ -171,7 +173,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::BeatmapSaveDataVersion3::EventBoxGro
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -182,7 +184,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::BeatmapSaveDataVersion3::EventBoxGro
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_eventBoxes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_eventBoxes", 0usize
                         )
                     })
             });

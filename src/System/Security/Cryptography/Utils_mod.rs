@@ -45,7 +45,7 @@ impl crate::System::Security::Cryptography::Utils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -56,7 +56,8 @@ impl crate::System::Security::Cryptography::Utils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertByteArrayToInt", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertByteArrayToInt", 1usize
                         )
                     })
             });
@@ -71,7 +72,7 @@ impl crate::System::Security::Cryptography::Utils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
@@ -82,7 +83,8 @@ impl crate::System::Security::Cryptography::Utils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertIntToByteArray", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertIntToByteArray", 1usize
                         )
                     })
             });
@@ -99,7 +101,7 @@ impl crate::System::Security::Cryptography::Utils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -116,7 +118,8 @@ impl crate::System::Security::Cryptography::Utils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DWORDFromBigEndian", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DWORDFromBigEndian", 3usize
                         )
                     })
             });
@@ -133,7 +136,7 @@ impl crate::System::Security::Cryptography::Utils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -150,7 +153,8 @@ impl crate::System::Security::Cryptography::Utils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DWORDFromLittleEndian", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DWORDFromLittleEndian", 3usize
                         )
                     })
             });
@@ -167,7 +171,7 @@ impl crate::System::Security::Cryptography::Utils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -184,7 +188,8 @@ impl crate::System::Security::Cryptography::Utils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DWORDToBigEndian", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DWORDToBigEndian", 3usize
                         )
                     })
             });
@@ -201,7 +206,7 @@ impl crate::System::Security::Cryptography::Utils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -218,7 +223,8 @@ impl crate::System::Security::Cryptography::Utils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DWORDToLittleEndian", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DWORDToLittleEndian", 3usize
                         )
                     })
             });
@@ -235,7 +241,7 @@ impl crate::System::Security::Cryptography::Utils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -244,7 +250,8 @@ impl crate::System::Security::Cryptography::Utils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DiscardWhiteSpaces", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DiscardWhiteSpaces", 1usize
                         )
                     })
             });
@@ -263,7 +270,7 @@ impl crate::System::Security::Cryptography::Utils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -278,7 +285,8 @@ impl crate::System::Security::Cryptography::Utils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DiscardWhiteSpaces", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DiscardWhiteSpaces", 3usize
                         )
                     })
             });
@@ -297,7 +305,7 @@ impl crate::System::Security::Cryptography::Utils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -310,7 +318,8 @@ impl crate::System::Security::Cryptography::Utils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FixupKeyParity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FixupKeyParity", 1usize
                         )
                     })
             });
@@ -327,7 +336,7 @@ impl crate::System::Security::Cryptography::Utils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
@@ -338,7 +347,8 @@ impl crate::System::Security::Cryptography::Utils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenerateRandom", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateRandom", 1usize
                         )
                     })
             });
@@ -354,12 +364,13 @@ impl crate::System::Security::Cryptography::Utils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, i32), bool, 2usize>("HasAlgorithm")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HasAlgorithm", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HasAlgorithm", 2usize
                         )
                     })
             });
@@ -376,7 +387,7 @@ impl crate::System::Security::Cryptography::Utils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -393,7 +404,8 @@ impl crate::System::Security::Cryptography::Utils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "QuadWordFromBigEndian", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "QuadWordFromBigEndian", 3usize
                         )
                     })
             });
@@ -410,7 +422,7 @@ impl crate::System::Security::Cryptography::Utils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -427,7 +439,8 @@ impl crate::System::Security::Cryptography::Utils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "QuadWordToBigEndian", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "QuadWordToBigEndian", 3usize
                         )
                     })
             });
@@ -440,12 +453,13 @@ impl crate::System::Security::Cryptography::Utils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("_ProduceLegacyHmacValues")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "_ProduceLegacyHmacValues", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "_ProduceLegacyHmacValues", 0usize
                         )
                     })
             });
@@ -460,7 +474,7 @@ impl crate::System::Security::Cryptography::Utils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -471,7 +485,8 @@ impl crate::System::Security::Cryptography::Utils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_StaticRandomNumberGenerator", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_StaticRandomNumberGenerator", 0usize
                         )
                     })
             });

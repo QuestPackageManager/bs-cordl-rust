@@ -50,7 +50,7 @@ impl crate::GlobalNamespace::IBeatmapObjectSpawner {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
@@ -65,7 +65,8 @@ impl crate::GlobalNamespace::IBeatmapObjectSpawner {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessNoteData", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessNoteData", 3usize
                         )
                     })
             });
@@ -88,7 +89,7 @@ impl crate::GlobalNamespace::IBeatmapObjectSpawner {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -104,7 +105,8 @@ impl crate::GlobalNamespace::IBeatmapObjectSpawner {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessObstacleData", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessObstacleData", 2usize
                         )
                     })
             });
@@ -123,7 +125,7 @@ impl crate::GlobalNamespace::IBeatmapObjectSpawner {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -139,7 +141,8 @@ impl crate::GlobalNamespace::IBeatmapObjectSpawner {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessSliderData", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessSliderData", 2usize
                         )
                     })
             });

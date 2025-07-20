@@ -112,7 +112,7 @@ impl crate::Unity::Profiling::DebugScreenCapture {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -121,7 +121,8 @@ impl crate::Unity::Profiling::DebugScreenCapture {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Height", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Height", 1usize
                         )
                     })
             });
@@ -137,7 +138,7 @@ impl crate::Unity::Profiling::DebugScreenCapture {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::TextureFormat),
                         quest_hook::libil2cpp::Void,
@@ -146,7 +147,8 @@ impl crate::Unity::Profiling::DebugScreenCapture {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_ImageFormat", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_ImageFormat", 1usize
                         )
                     })
             });
@@ -162,7 +164,7 @@ impl crate::Unity::Profiling::DebugScreenCapture {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Collections::NativeArray_1<u8>),
                         quest_hook::libil2cpp::Void,
@@ -171,7 +173,8 @@ impl crate::Unity::Profiling::DebugScreenCapture {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_RawImageDataReference", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_RawImageDataReference", 1usize
                         )
                     })
             });
@@ -187,7 +190,7 @@ impl crate::Unity::Profiling::DebugScreenCapture {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -196,7 +199,8 @@ impl crate::Unity::Profiling::DebugScreenCapture {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Width", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Width", 1usize
                         )
                     })
             });

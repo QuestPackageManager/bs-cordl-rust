@@ -101,7 +101,7 @@ impl crate::UnityEngine::Android::Permission {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaObject>,
@@ -110,7 +110,8 @@ impl crate::UnityEngine::Android::Permission {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetUnityPermissions", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetUnityPermissions", 0usize
                         )
                     })
             });
@@ -125,7 +126,7 @@ impl crate::UnityEngine::Android::Permission {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -134,7 +135,8 @@ impl crate::UnityEngine::Android::Permission {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HasUserAuthorizedPermission", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HasUserAuthorizedPermission", 1usize
                         )
                     })
             });
@@ -150,7 +152,7 @@ impl crate::UnityEngine::Android::Permission {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -166,7 +168,8 @@ impl crate::UnityEngine::Android::Permission {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RequestUserPermission", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RequestUserPermission", 2usize
                         )
                     })
             });
@@ -188,7 +191,7 @@ impl crate::UnityEngine::Android::Permission {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -208,7 +211,8 @@ impl crate::UnityEngine::Android::Permission {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RequestUserPermissions", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RequestUserPermissions", 2usize
                         )
                     })
             });

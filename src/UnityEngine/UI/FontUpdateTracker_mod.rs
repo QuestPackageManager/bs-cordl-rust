@@ -44,7 +44,7 @@ impl crate::UnityEngine::UI::FontUpdateTracker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>),
                         quest_hook::libil2cpp::Void,
@@ -53,7 +53,8 @@ impl crate::UnityEngine::UI::FontUpdateTracker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RebuildForFont", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RebuildForFont", 1usize
                         )
                     })
             });
@@ -68,7 +69,7 @@ impl crate::UnityEngine::UI::FontUpdateTracker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>),
                         quest_hook::libil2cpp::Void,
@@ -77,7 +78,8 @@ impl crate::UnityEngine::UI::FontUpdateTracker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TrackText", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TrackText", 1usize
                         )
                     })
             });
@@ -92,7 +94,7 @@ impl crate::UnityEngine::UI::FontUpdateTracker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>),
                         quest_hook::libil2cpp::Void,
@@ -101,7 +103,8 @@ impl crate::UnityEngine::UI::FontUpdateTracker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UntrackText", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UntrackText", 1usize
                         )
                     })
             });

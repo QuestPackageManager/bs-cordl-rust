@@ -54,7 +54,7 @@ impl crate::UnityEngine::UIElements::UIR::AllocMeshData_MeshBuilder_Allocator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             u32,
@@ -71,7 +71,8 @@ impl crate::UnityEngine::UIElements::UIR::AllocMeshData_MeshBuilder_Allocator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Invoke", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Invoke",
+                            3usize
                         )
                     })
             });
@@ -100,7 +101,7 @@ impl crate::UnityEngine::UIElements::UIR::AllocMeshData_MeshBuilder_Allocator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -114,7 +115,8 @@ impl crate::UnityEngine::UIElements::UIR::AllocMeshData_MeshBuilder_Allocator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -187,7 +189,7 @@ impl crate::UnityEngine::UIElements::UIR::MeshBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::TextCore::Text::MeshInfo,
@@ -202,7 +204,8 @@ impl crate::UnityEngine::UIElements::UIR::MeshBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertTextVertexToUIRVertex", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertTextVertexToUIRVertex", 5usize
                         )
                     })
             });
@@ -218,12 +221,13 @@ impl crate::UnityEngine::UIElements::UIR::MeshBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, bool), i32, 2usize>("LimitTextVertices")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LimitTextVertices", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LimitTextVertices", 2usize
                         )
                     })
             });
@@ -242,7 +246,7 @@ impl crate::UnityEngine::UIElements::UIR::MeshBuilder {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::TextCore::Text::MeshInfo,
@@ -257,7 +261,8 @@ impl crate::UnityEngine::UIElements::UIR::MeshBuilder {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MakeText", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MakeText", 5usize
                         )
                     })
             });
@@ -403,7 +408,7 @@ impl crate::UnityEngine::UIElements::UIR::MeshBuilder_AllocMeshData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u32, u32),
                         quest_hook::libil2cpp::Gc<
@@ -414,7 +419,8 @@ impl crate::UnityEngine::UIElements::UIR::MeshBuilder_AllocMeshData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Allocate", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Allocate", 2usize
                         )
                     })
             });

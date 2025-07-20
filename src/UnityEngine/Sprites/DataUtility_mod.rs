@@ -44,7 +44,7 @@ impl crate::UnityEngine::Sprites::DataUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>),
                         crate::UnityEngine::Vector4,
@@ -53,7 +53,8 @@ impl crate::UnityEngine::Sprites::DataUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetInnerUV", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetInnerUV", 1usize
                         )
                     })
             });
@@ -68,7 +69,7 @@ impl crate::UnityEngine::Sprites::DataUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>),
                         crate::UnityEngine::Vector2,
@@ -77,7 +78,8 @@ impl crate::UnityEngine::Sprites::DataUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMinSize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMinSize", 1usize
                         )
                     })
             });
@@ -92,7 +94,7 @@ impl crate::UnityEngine::Sprites::DataUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>),
                         crate::UnityEngine::Vector4,
@@ -101,7 +103,8 @@ impl crate::UnityEngine::Sprites::DataUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetOuterUV", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetOuterUV", 1usize
                         )
                     })
             });
@@ -116,7 +119,7 @@ impl crate::UnityEngine::Sprites::DataUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>),
                         crate::UnityEngine::Vector4,
@@ -125,7 +128,8 @@ impl crate::UnityEngine::Sprites::DataUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPadding", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPadding", 1usize
                         )
                     })
             });

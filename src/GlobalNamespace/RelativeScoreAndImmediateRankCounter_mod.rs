@@ -62,7 +62,7 @@ impl crate::GlobalNamespace::RelativeScoreAndImmediateRankCounter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -71,7 +71,8 @@ impl crate::GlobalNamespace::RelativeScoreAndImmediateRankCounter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleScoreDidChange", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleScoreDidChange", 2usize
                         )
                     })
             });
@@ -93,12 +94,13 @@ impl crate::GlobalNamespace::RelativeScoreAndImmediateRankCounter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDestroy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDestroy", 0usize
                         )
                     })
             });
@@ -113,12 +115,13 @@ impl crate::GlobalNamespace::RelativeScoreAndImmediateRankCounter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Start", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Start",
+                            0usize
                         )
                     })
             });
@@ -137,7 +140,7 @@ impl crate::GlobalNamespace::RelativeScoreAndImmediateRankCounter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32, i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -146,7 +149,8 @@ impl crate::GlobalNamespace::RelativeScoreAndImmediateRankCounter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateRelativeScoreAndImmediateRank", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateRelativeScoreAndImmediateRank", 4usize
                         )
                     })
             });
@@ -165,12 +169,13 @@ impl crate::GlobalNamespace::RelativeScoreAndImmediateRankCounter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -186,7 +191,7 @@ impl crate::GlobalNamespace::RelativeScoreAndImmediateRankCounter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -195,7 +200,7 @@ impl crate::GlobalNamespace::RelativeScoreAndImmediateRankCounter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "add_relativeScoreOrImmediateRankDidChangeEvent", 1usize
                         )
                     })
@@ -211,7 +216,7 @@ impl crate::GlobalNamespace::RelativeScoreAndImmediateRankCounter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::RankModel_Rank,
@@ -220,7 +225,8 @@ impl crate::GlobalNamespace::RelativeScoreAndImmediateRankCounter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_immediateRank", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_immediateRank", 0usize
                         )
                     })
             });
@@ -233,12 +239,13 @@ impl crate::GlobalNamespace::RelativeScoreAndImmediateRankCounter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_relativeScore")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_relativeScore", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_relativeScore", 0usize
                         )
                     })
             });
@@ -252,7 +259,7 @@ impl crate::GlobalNamespace::RelativeScoreAndImmediateRankCounter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -261,7 +268,7 @@ impl crate::GlobalNamespace::RelativeScoreAndImmediateRankCounter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "remove_relativeScoreOrImmediateRankDidChangeEvent", 1usize
                         )
                     })
@@ -278,7 +285,7 @@ impl crate::GlobalNamespace::RelativeScoreAndImmediateRankCounter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::RankModel_Rank),
                         quest_hook::libil2cpp::Void,
@@ -287,7 +294,8 @@ impl crate::GlobalNamespace::RelativeScoreAndImmediateRankCounter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_immediateRank", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_immediateRank", 1usize
                         )
                     })
             });
@@ -303,7 +311,7 @@ impl crate::GlobalNamespace::RelativeScoreAndImmediateRankCounter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -312,7 +320,8 @@ impl crate::GlobalNamespace::RelativeScoreAndImmediateRankCounter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_relativeScore", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_relativeScore", 1usize
                         )
                     })
             });

@@ -49,7 +49,7 @@ impl crate::GlobalNamespace::WaypointData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -60,7 +60,8 @@ impl crate::GlobalNamespace::WaypointData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCopy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetCopy",
+                            0usize
                         )
                     })
             });
@@ -76,12 +77,13 @@ impl crate::GlobalNamespace::WaypointData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("Mirror")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Mirror", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Mirror",
+                            1usize
                         )
                     })
             });
@@ -96,7 +98,7 @@ impl crate::GlobalNamespace::WaypointData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -105,7 +107,8 @@ impl crate::GlobalNamespace::WaypointData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MirrorTransformOffsetDirection", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MirrorTransformOffsetDirection", 0usize
                         )
                     })
             });
@@ -143,7 +146,7 @@ impl crate::GlobalNamespace::WaypointData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             f32,
@@ -159,7 +162,8 @@ impl crate::GlobalNamespace::WaypointData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            6usize
                         )
                     })
             });
@@ -176,12 +180,13 @@ impl crate::GlobalNamespace::WaypointData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_lineIndex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_lineIndex", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_lineIndex", 0usize
                         )
                     })
             });
@@ -194,7 +199,7 @@ impl crate::GlobalNamespace::WaypointData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::NoteLineLayer,
@@ -203,7 +208,8 @@ impl crate::GlobalNamespace::WaypointData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_lineLayer", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_lineLayer", 0usize
                         )
                     })
             });
@@ -218,7 +224,7 @@ impl crate::GlobalNamespace::WaypointData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::OffsetDirection,
@@ -227,7 +233,8 @@ impl crate::GlobalNamespace::WaypointData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_offsetDirection", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_offsetDirection", 0usize
                         )
                     })
             });
@@ -243,7 +250,7 @@ impl crate::GlobalNamespace::WaypointData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -252,7 +259,8 @@ impl crate::GlobalNamespace::WaypointData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_lineIndex", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_lineIndex", 1usize
                         )
                     })
             });
@@ -268,7 +276,7 @@ impl crate::GlobalNamespace::WaypointData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::NoteLineLayer),
                         quest_hook::libil2cpp::Void,
@@ -277,7 +285,8 @@ impl crate::GlobalNamespace::WaypointData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_lineLayer", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_lineLayer", 1usize
                         )
                     })
             });
@@ -293,7 +302,7 @@ impl crate::GlobalNamespace::WaypointData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::OffsetDirection),
                         quest_hook::libil2cpp::Void,
@@ -302,7 +311,8 @@ impl crate::GlobalNamespace::WaypointData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_offsetDirection", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_offsetDirection", 1usize
                         )
                     })
             });

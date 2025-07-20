@@ -54,7 +54,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         bool,
@@ -63,7 +63,8 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Equals", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            1usize
                         )
                     })
             });
@@ -74,12 +75,13 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHashCode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHashCode", 0usize
                         )
                     })
             });
@@ -128,7 +130,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -147,7 +149,8 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ValidateValue", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValidateValue", 3usize
                         )
                     })
             });
@@ -174,7 +177,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -208,7 +211,8 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 8usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            8usize
                         )
                     })
             });
@@ -230,7 +234,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Asn1::Pkcs::RsaPrivateKeyStructure,
@@ -241,7 +245,8 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -258,7 +263,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -269,7 +274,8 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_DP", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_DP",
+                            0usize
                         )
                     })
             });
@@ -286,7 +292,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -297,7 +303,8 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_DQ", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_DQ",
+                            0usize
                         )
                     })
             });
@@ -314,7 +321,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -325,7 +332,8 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_P", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_P",
+                            0usize
                         )
                     })
             });
@@ -342,7 +350,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -353,7 +361,8 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_PublicExponent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_PublicExponent", 0usize
                         )
                     })
             });
@@ -370,7 +379,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -381,7 +390,8 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Q", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_Q",
+                            0usize
                         )
                     })
             });
@@ -398,7 +408,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -409,7 +419,8 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_QInv", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_QInv", 0usize
                         )
                     })
             });

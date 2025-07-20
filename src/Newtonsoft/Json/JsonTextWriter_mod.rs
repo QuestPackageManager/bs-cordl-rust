@@ -66,12 +66,13 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Close")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Close", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Close",
+                            0usize
                         )
                     })
             });
@@ -89,7 +90,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -98,7 +99,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CloseAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CloseAsync", 1usize
                         )
                     })
             });
@@ -113,7 +115,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -122,7 +124,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CloseBufferAndWriter", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CloseBufferAndWriter", 0usize
                         )
                     })
             });
@@ -139,7 +142,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -148,7 +151,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CloseBufferAndWriterAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CloseBufferAndWriterAsync", 0usize
                         )
                     })
             });
@@ -166,7 +170,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -175,7 +179,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoCloseAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoCloseAsync", 1usize
                         )
                     })
             });
@@ -193,7 +198,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -202,7 +207,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoFlushAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoFlushAsync", 1usize
                         )
                     })
             });
@@ -221,7 +227,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -235,7 +241,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteCommentAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteCommentAsync", 2usize
                         )
                     })
             });
@@ -254,7 +261,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::Newtonsoft::Json::JsonToken,
@@ -266,7 +273,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteEndAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteEndAsync", 2usize
                         )
                     })
             });
@@ -284,7 +292,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -293,7 +301,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteIndentAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteIndentAsync", 1usize
                         )
                     })
             });
@@ -311,7 +320,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -320,7 +329,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteIndentSpaceAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteIndentSpaceAsync", 1usize
                         )
                     })
             });
@@ -338,7 +348,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -347,7 +357,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteNullAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteNullAsync", 1usize
                         )
                     })
             });
@@ -366,7 +377,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -380,7 +391,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWritePropertyNameAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWritePropertyNameAsync", 2usize
                         )
                     })
             });
@@ -400,7 +412,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -415,7 +427,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWritePropertyNameAsync", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWritePropertyNameAsync", 3usize
                         )
                     })
             });
@@ -435,7 +448,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -452,7 +465,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWritePropertyNameAsync", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWritePropertyNameAsync", 3usize
                         )
                     })
             });
@@ -471,7 +485,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -485,7 +499,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteRawAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteRawAsync", 2usize
                         )
                     })
             });
@@ -504,7 +519,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -518,7 +533,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteRawValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteRawValueAsync", 2usize
                         )
                     })
             });
@@ -538,7 +554,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -555,7 +571,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteRawValueAsync", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteRawValueAsync", 3usize
                         )
                     })
             });
@@ -573,7 +590,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -582,7 +599,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteStartArrayAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteStartArrayAsync", 1usize
                         )
                     })
             });
@@ -601,7 +619,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -615,7 +633,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteStartArrayAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteStartArrayAsync", 2usize
                         )
                     })
             });
@@ -634,7 +653,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -648,7 +667,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteStartConstructorAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteStartConstructorAsync", 2usize
                         )
                     })
             });
@@ -666,7 +686,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -675,7 +695,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteStartObjectAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteStartObjectAsync", 1usize
                         )
                     })
             });
@@ -694,7 +715,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -708,7 +729,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteStartObjectAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteStartObjectAsync", 2usize
                         )
                     })
             });
@@ -726,7 +748,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -735,7 +757,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteUndefinedAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteUndefinedAsync", 1usize
                         )
                     })
             });
@@ -754,7 +777,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -768,7 +791,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteUndefinedAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteUndefinedAsync", 2usize
                         )
                     })
             });
@@ -787,7 +811,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::DateTimeOffset,
@@ -799,7 +823,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteValueAsync", 2usize
                         )
                     })
             });
@@ -818,7 +843,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::DateTime,
@@ -830,7 +855,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteValueAsync", 2usize
                         )
                     })
             });
@@ -849,7 +875,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Decimal,
@@ -861,7 +887,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteValueAsync", 2usize
                         )
                     })
             });
@@ -880,7 +907,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Guid,
@@ -892,7 +919,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteValueAsync", 2usize
                         )
                     })
             });
@@ -911,7 +939,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -925,7 +953,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteValueAsync", 2usize
                         )
                     })
             });
@@ -944,7 +973,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Nullable_1<bool>,
@@ -956,7 +985,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteValueAsync", 2usize
                         )
                     })
             });
@@ -975,7 +1005,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Nullable_1<crate::System::Decimal>,
@@ -987,7 +1017,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteValueAsync", 2usize
                         )
                     })
             });
@@ -1006,7 +1037,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Nullable_1<crate::System::Guid>,
@@ -1018,7 +1049,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteValueAsync", 2usize
                         )
                     })
             });
@@ -1037,7 +1069,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Nullable_1<i32>,
@@ -1049,7 +1081,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteValueAsync", 2usize
                         )
                     })
             });
@@ -1068,7 +1101,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Nullable_1<i64>,
@@ -1080,7 +1113,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteValueAsync", 2usize
                         )
                     })
             });
@@ -1099,7 +1133,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Nullable_1<i8>,
@@ -1111,7 +1145,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteValueAsync", 2usize
                         )
                     })
             });
@@ -1130,7 +1165,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Nullable_1<i16>,
@@ -1142,7 +1177,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteValueAsync", 2usize
                         )
                     })
             });
@@ -1161,7 +1197,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Nullable_1<u8>,
@@ -1173,7 +1209,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteValueAsync", 2usize
                         )
                     })
             });
@@ -1192,7 +1229,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Nullable_1<crate::System::TimeSpan>,
@@ -1204,7 +1241,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteValueAsync", 2usize
                         )
                     })
             });
@@ -1223,7 +1261,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Nullable_1<u32>,
@@ -1235,7 +1273,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteValueAsync", 2usize
                         )
                     })
             });
@@ -1254,7 +1293,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Nullable_1<u64>,
@@ -1266,7 +1305,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteValueAsync", 2usize
                         )
                     })
             });
@@ -1285,7 +1325,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Nullable_1<u16>,
@@ -1297,7 +1337,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteValueAsync", 2usize
                         )
                     })
             });
@@ -1316,7 +1357,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Nullable_1<char>,
@@ -1328,7 +1369,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteValueAsync", 2usize
                         )
                     })
             });
@@ -1347,7 +1389,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Nullable_1<crate::System::DateTime>,
@@ -1359,7 +1401,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteValueAsync", 2usize
                         )
                     })
             });
@@ -1378,7 +1421,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Nullable_1<crate::System::DateTimeOffset>,
@@ -1390,7 +1433,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteValueAsync", 2usize
                         )
                     })
             });
@@ -1410,7 +1454,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1427,7 +1471,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteValueAsync", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteValueAsync", 3usize
                         )
                     })
             });
@@ -1446,7 +1491,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::TimeSpan,
@@ -1458,7 +1503,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteValueAsync", 2usize
                         )
                     })
             });
@@ -1477,7 +1523,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -1486,7 +1532,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteValueAsync", 2usize
                         )
                     })
             });
@@ -1505,7 +1552,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (char, crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -1514,7 +1561,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteValueAsync", 2usize
                         )
                     })
             });
@@ -1532,7 +1580,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -1541,7 +1589,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteValueDelimiterAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteValueDelimiterAsync", 1usize
                         )
                     })
             });
@@ -1560,7 +1609,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1574,7 +1623,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteWhitespaceAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteWhitespaceAsync", 2usize
                         )
                     })
             });
@@ -1589,7 +1639,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1598,7 +1648,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnsureWriteBuffer", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnsureWriteBuffer", 0usize
                         )
                     })
             });
@@ -1617,7 +1668,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32),
                         quest_hook::libil2cpp::Gc<
@@ -1628,7 +1679,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnsureWriteBuffer", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnsureWriteBuffer", 2usize
                         )
                     })
             });
@@ -1643,12 +1695,13 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Flush")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Flush", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Flush",
+                            0usize
                         )
                     })
             });
@@ -1666,7 +1719,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -1675,7 +1728,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FlushAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FlushAsync", 1usize
                         )
                     })
             });
@@ -1699,7 +1753,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1708,7 +1762,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnStringEscapeHandlingChanged", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnStringEscapeHandlingChanged", 0usize
                         )
                     })
             });
@@ -1721,12 +1776,13 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("SetIndentChars")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetIndentChars", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetIndentChars", 0usize
                         )
                     })
             });
@@ -1739,7 +1795,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1748,7 +1804,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateCharEscapeFlags", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateCharEscapeFlags", 0usize
                         )
                     })
             });
@@ -1764,7 +1821,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -1773,7 +1830,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteComment", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteComment", 1usize
                         )
                     })
             });
@@ -1792,7 +1850,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1806,7 +1864,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteCommentAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteCommentAsync", 2usize
                         )
                     })
             });
@@ -1826,7 +1885,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u64, bool, crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -1835,7 +1894,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteDigitsAsync", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteDigitsAsync", 3usize
                         )
                     })
             });
@@ -1853,7 +1913,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Newtonsoft::Json::JsonToken),
                         quest_hook::libil2cpp::Void,
@@ -1862,7 +1922,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteEnd", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteEnd", 1usize
                         )
                     })
             });
@@ -1880,7 +1941,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -1889,7 +1950,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteEndArrayAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteEndArrayAsync", 1usize
                         )
                     })
             });
@@ -1907,7 +1969,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -1916,7 +1978,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteEndAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteEndAsync", 1usize
                         )
                     })
             });
@@ -1935,7 +1998,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::Newtonsoft::Json::JsonToken,
@@ -1947,7 +2010,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteEndAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteEndAsync", 2usize
                         )
                     })
             });
@@ -1965,7 +2029,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -1974,7 +2038,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteEndConstructorAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteEndConstructorAsync", 1usize
                         )
                     })
             });
@@ -1992,7 +2057,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -2001,7 +2066,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteEndObjectAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteEndObjectAsync", 1usize
                         )
                     })
             });
@@ -2018,7 +2084,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2032,7 +2098,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteEscapedString", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteEscapedString", 2usize
                         )
                     })
             });
@@ -2052,7 +2119,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2067,7 +2134,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteEscapedStringAsync", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteEscapedStringAsync", 3usize
                         )
                     })
             });
@@ -2082,7 +2150,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -2091,7 +2159,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteIndent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteIndent", 0usize
                         )
                     })
             });
@@ -2109,7 +2178,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -2118,7 +2187,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteIndentAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteIndentAsync", 1usize
                         )
                     })
             });
@@ -2138,7 +2208,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32, crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -2147,7 +2217,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteIndentAsync", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteIndentAsync", 3usize
                         )
                     })
             });
@@ -2168,7 +2239,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -2177,7 +2248,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteIndentSpace", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteIndentSpace", 0usize
                         )
                     })
             });
@@ -2195,7 +2267,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -2204,7 +2276,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteIndentSpaceAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteIndentSpaceAsync", 1usize
                         )
                     })
             });
@@ -2225,7 +2298,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2241,7 +2314,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteIntegerValueAsync", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteIntegerValueAsync", 4usize
                         )
                     })
             });
@@ -2262,7 +2336,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i64, crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -2271,7 +2345,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteIntegerValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteIntegerValueAsync", 2usize
                         )
                     })
             });
@@ -2290,7 +2365,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u64, crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -2299,7 +2374,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteIntegerValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteIntegerValueAsync", 2usize
                         )
                     })
             });
@@ -2319,7 +2395,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u64, bool, crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -2328,7 +2404,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteIntegerValueAsync", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteIntegerValueAsync", 3usize
                         )
                     })
             });
@@ -2346,7 +2423,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -2355,7 +2432,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteIntegerValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteIntegerValue", 1usize
                         )
                     })
             });
@@ -2371,7 +2449,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i64),
                         quest_hook::libil2cpp::Void,
@@ -2380,7 +2458,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteIntegerValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteIntegerValue", 1usize
                         )
                     })
             });
@@ -2397,7 +2476,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u32, bool),
                         quest_hook::libil2cpp::Void,
@@ -2406,7 +2485,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteIntegerValue", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteIntegerValue", 2usize
                         )
                     })
             });
@@ -2423,7 +2503,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u64, bool),
                         quest_hook::libil2cpp::Void,
@@ -2432,7 +2512,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteIntegerValue", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteIntegerValue", 2usize
                         )
                     })
             });
@@ -2447,12 +2528,13 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("WriteNull")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteNull", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteNull", 0usize
                         )
                     })
             });
@@ -2470,7 +2552,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -2479,7 +2561,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteNullAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteNullAsync", 1usize
                         )
                     })
             });
@@ -2496,12 +2579,13 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u32, bool), i32, 2usize>("WriteNumberToBuffer")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteNumberToBuffer", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteNumberToBuffer", 2usize
                         )
                     })
             });
@@ -2518,12 +2602,13 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u64, bool), i32, 2usize>("WriteNumberToBuffer")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteNumberToBuffer", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteNumberToBuffer", 2usize
                         )
                     })
             });
@@ -2542,7 +2627,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2556,7 +2641,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WritePropertyNameAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WritePropertyNameAsync", 2usize
                         )
                     })
             });
@@ -2576,7 +2662,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2591,7 +2677,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WritePropertyNameAsync", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WritePropertyNameAsync", 3usize
                         )
                     })
             });
@@ -2607,7 +2694,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -2616,7 +2703,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WritePropertyName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WritePropertyName", 1usize
                         )
                     })
             });
@@ -2633,7 +2721,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2647,7 +2735,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WritePropertyName", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WritePropertyName", 2usize
                         )
                     })
             });
@@ -2663,7 +2752,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -2672,7 +2761,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteRaw", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteRaw", 1usize
                         )
                     })
             });
@@ -2691,7 +2781,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2705,7 +2795,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteRawAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteRawAsync", 2usize
                         )
                     })
             });
@@ -2724,7 +2815,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2738,7 +2829,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteRawValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteRawValueAsync", 2usize
                         )
                     })
             });
@@ -2753,7 +2845,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -2762,7 +2854,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteStartArray", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteStartArray", 0usize
                         )
                     })
             });
@@ -2780,7 +2873,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -2789,7 +2882,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteStartArrayAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteStartArrayAsync", 1usize
                         )
                     })
             });
@@ -2805,7 +2899,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -2814,7 +2908,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteStartConstructor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteStartConstructor", 1usize
                         )
                     })
             });
@@ -2833,7 +2928,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -2847,7 +2942,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteStartConstructorAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteStartConstructorAsync", 2usize
                         )
                     })
             });
@@ -2862,7 +2958,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -2871,7 +2967,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteStartObject", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteStartObject", 0usize
                         )
                     })
             });
@@ -2889,7 +2986,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -2898,7 +2995,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteStartObjectAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteStartObjectAsync", 1usize
                         )
                     })
             });
@@ -2913,7 +3011,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -2922,7 +3020,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteUndefined", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteUndefined", 0usize
                         )
                     })
             });
@@ -2940,7 +3039,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -2949,7 +3048,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteUndefinedAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteUndefinedAsync", 1usize
                         )
                     })
             });
@@ -2968,7 +3068,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Numerics::BigInteger,
@@ -2980,7 +3080,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -2999,7 +3100,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::DateTimeOffset,
@@ -3011,7 +3112,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -3030,7 +3132,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::DateTime,
@@ -3042,7 +3144,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -3061,7 +3164,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Decimal,
@@ -3073,7 +3176,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -3092,7 +3196,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Guid,
@@ -3104,7 +3208,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -3123,7 +3228,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -3137,7 +3242,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -3156,7 +3262,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -3170,7 +3276,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -3189,7 +3296,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -3203,7 +3310,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -3222,7 +3330,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Nullable_1<bool>,
@@ -3234,7 +3342,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -3253,7 +3362,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Nullable_1<crate::System::DateTimeOffset>,
@@ -3265,7 +3374,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -3284,7 +3394,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Nullable_1<crate::System::Decimal>,
@@ -3296,7 +3406,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -3315,7 +3426,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Nullable_1<f64>,
@@ -3327,7 +3438,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -3346,7 +3458,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Nullable_1<f32>,
@@ -3358,7 +3470,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -3377,7 +3490,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Nullable_1<crate::System::Guid>,
@@ -3389,7 +3502,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -3408,7 +3522,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Nullable_1<i32>,
@@ -3420,7 +3534,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -3439,7 +3554,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Nullable_1<i64>,
@@ -3451,7 +3566,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -3470,7 +3586,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Nullable_1<i8>,
@@ -3482,7 +3598,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -3501,7 +3618,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Nullable_1<u8>,
@@ -3513,7 +3630,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -3532,7 +3650,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Nullable_1<i16>,
@@ -3544,7 +3662,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -3563,7 +3682,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Nullable_1<crate::System::TimeSpan>,
@@ -3575,7 +3694,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -3594,7 +3714,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Nullable_1<u32>,
@@ -3606,7 +3726,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -3625,7 +3746,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Nullable_1<u64>,
@@ -3637,7 +3758,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -3656,7 +3778,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Nullable_1<u16>,
@@ -3668,7 +3790,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -3687,7 +3810,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Nullable_1<char>,
@@ -3699,7 +3822,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -3718,7 +3842,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Nullable_1<crate::System::DateTime>,
@@ -3730,7 +3854,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -3749,7 +3874,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::TimeSpan,
@@ -3761,7 +3886,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -3780,7 +3906,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Uri>,
@@ -3792,7 +3918,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -3811,7 +3938,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -3820,7 +3947,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -3839,7 +3967,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (char, crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -3848,7 +3976,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -3867,7 +3996,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32, crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -3876,7 +4005,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -3896,7 +4026,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32, bool, crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -3905,7 +4035,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 3usize
                         )
                     })
             });
@@ -3926,7 +4057,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f64, crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -3935,7 +4066,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -3955,7 +4087,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f64, bool, crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -3964,7 +4096,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 3usize
                         )
                     })
             });
@@ -3985,7 +4118,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i16, crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -3994,7 +4127,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -4013,7 +4147,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -4022,7 +4156,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -4041,7 +4176,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i64, crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -4050,7 +4185,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -4069,7 +4205,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i8, crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -4078,7 +4214,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -4097,7 +4234,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u16, crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -4106,7 +4243,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -4125,7 +4263,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u32, crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -4134,7 +4272,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -4153,7 +4292,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u64, crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -4162,7 +4301,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -4181,7 +4321,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u8, crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -4190,7 +4330,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueAsync", 2usize
                         )
                     })
             });
@@ -4205,7 +4346,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -4214,7 +4355,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueDelimiter", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueDelimiter", 0usize
                         )
                     })
             });
@@ -4232,7 +4374,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -4241,7 +4383,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueDelimiterAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueDelimiterAsync", 1usize
                         )
                     })
             });
@@ -4258,7 +4401,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -4272,7 +4415,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueInternal", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueInternal", 2usize
                         )
                     })
             });
@@ -4292,7 +4436,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::Newtonsoft::Json::JsonToken,
@@ -4307,7 +4451,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueInternalAsync", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueInternalAsync", 3usize
                         )
                     })
             });
@@ -4327,7 +4472,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -4344,7 +4489,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueInternalAsync", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueInternalAsync", 3usize
                         )
                     })
             });
@@ -4363,7 +4509,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -4377,7 +4523,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueNonNullAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueNonNullAsync", 2usize
                         )
                     })
             });
@@ -4397,7 +4544,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -4412,7 +4559,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueNotNullAsync", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueNotNullAsync", 3usize
                         )
                     })
             });
@@ -4431,7 +4579,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Uri>,
@@ -4443,7 +4591,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueNotNullAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueNotNullAsync", 2usize
                         )
                     })
             });
@@ -4459,7 +4608,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::DateTime),
                         i32,
@@ -4468,7 +4617,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueToBuffer", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueToBuffer", 1usize
                         )
                     })
             });
@@ -4482,7 +4632,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::DateTimeOffset),
                         i32,
@@ -4491,7 +4641,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValueToBuffer", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValueToBuffer", 1usize
                         )
                     })
             });
@@ -4505,7 +4656,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::DateTime),
                         quest_hook::libil2cpp::Void,
@@ -4514,7 +4665,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValue", 1usize
                         )
                     })
             });
@@ -4530,7 +4682,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::DateTimeOffset),
                         quest_hook::libil2cpp::Void,
@@ -4539,7 +4691,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValue", 1usize
                         )
                     })
             });
@@ -4555,7 +4708,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Decimal),
                         quest_hook::libil2cpp::Void,
@@ -4564,7 +4717,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValue", 1usize
                         )
                     })
             });
@@ -4580,7 +4734,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Guid),
                         quest_hook::libil2cpp::Void,
@@ -4589,7 +4743,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValue", 1usize
                         )
                     })
             });
@@ -4605,7 +4760,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -4616,7 +4771,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValue", 1usize
                         )
                     })
             });
@@ -4632,7 +4788,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Void,
@@ -4641,7 +4797,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValue", 1usize
                         )
                     })
             });
@@ -4657,7 +4814,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -4666,7 +4823,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValue", 1usize
                         )
                     })
             });
@@ -4682,7 +4840,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Nullable_1<f32>),
                         quest_hook::libil2cpp::Void,
@@ -4691,7 +4849,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValue", 1usize
                         )
                     })
             });
@@ -4707,7 +4866,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Nullable_1<f64>),
                         quest_hook::libil2cpp::Void,
@@ -4716,7 +4875,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValue", 1usize
                         )
                     })
             });
@@ -4732,7 +4892,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::TimeSpan),
                         quest_hook::libil2cpp::Void,
@@ -4741,7 +4901,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValue", 1usize
                         )
                     })
             });
@@ -4757,7 +4918,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Uri>),
                         quest_hook::libil2cpp::Void,
@@ -4766,7 +4927,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValue", 1usize
                         )
                     })
             });
@@ -4782,7 +4944,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -4791,7 +4953,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValue", 1usize
                         )
                     })
             });
@@ -4807,7 +4970,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (char),
                         quest_hook::libil2cpp::Void,
@@ -4816,7 +4979,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValue", 1usize
                         )
                     })
             });
@@ -4832,7 +4996,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -4841,7 +5005,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValue", 1usize
                         )
                     })
             });
@@ -4857,7 +5022,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f64),
                         quest_hook::libil2cpp::Void,
@@ -4866,7 +5031,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValue", 1usize
                         )
                     })
             });
@@ -4882,7 +5048,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i16),
                         quest_hook::libil2cpp::Void,
@@ -4891,7 +5057,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValue", 1usize
                         )
                     })
             });
@@ -4907,7 +5074,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -4916,7 +5083,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValue", 1usize
                         )
                     })
             });
@@ -4932,7 +5100,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i64),
                         quest_hook::libil2cpp::Void,
@@ -4941,7 +5109,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValue", 1usize
                         )
                     })
             });
@@ -4957,7 +5126,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i8),
                         quest_hook::libil2cpp::Void,
@@ -4966,7 +5135,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValue", 1usize
                         )
                     })
             });
@@ -4982,7 +5152,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u16),
                         quest_hook::libil2cpp::Void,
@@ -4991,7 +5161,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValue", 1usize
                         )
                     })
             });
@@ -5007,7 +5178,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u32),
                         quest_hook::libil2cpp::Void,
@@ -5016,7 +5187,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValue", 1usize
                         )
                     })
             });
@@ -5032,7 +5204,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u64),
                         quest_hook::libil2cpp::Void,
@@ -5041,7 +5213,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValue", 1usize
                         )
                     })
             });
@@ -5057,7 +5230,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u8),
                         quest_hook::libil2cpp::Void,
@@ -5066,7 +5239,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteValue", 1usize
                         )
                     })
             });
@@ -5082,7 +5256,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -5091,7 +5265,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteWhitespace", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteWhitespace", 1usize
                         )
                     })
             });
@@ -5110,7 +5285,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -5124,7 +5299,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteWhitespaceAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteWhitespaceAsync", 2usize
                         )
                     })
             });
@@ -5140,7 +5316,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>),
                         quest_hook::libil2cpp::Void,
@@ -5149,7 +5325,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -5166,7 +5343,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -5177,7 +5354,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ArrayPool", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ArrayPool", 0usize
                         )
                     })
             });
@@ -5194,7 +5372,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -5205,7 +5383,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Base64Encoder", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Base64Encoder", 0usize
                         )
                     })
             });
@@ -5218,12 +5397,13 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), char, 0usize>("get_IndentChar")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IndentChar", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IndentChar", 0usize
                         )
                     })
             });
@@ -5234,12 +5414,13 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_Indentation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Indentation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Indentation", 0usize
                         )
                     })
             });
@@ -5250,12 +5431,13 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), char, 0usize>("get_QuoteChar")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_QuoteChar", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_QuoteChar", 0usize
                         )
                     })
             });
@@ -5266,12 +5448,13 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_QuoteName")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_QuoteName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_QuoteName", 0usize
                         )
                     })
             });
@@ -5285,7 +5468,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Newtonsoft::Json::IArrayPool_1<char>,
@@ -5296,7 +5479,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_ArrayPool", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_ArrayPool", 1usize
                         )
                     })
             });
@@ -5312,7 +5496,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (char),
                         quest_hook::libil2cpp::Void,
@@ -5321,7 +5505,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_IndentChar", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_IndentChar", 1usize
                         )
                     })
             });
@@ -5337,7 +5522,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -5346,7 +5531,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Indentation", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Indentation", 1usize
                         )
                     })
             });
@@ -5362,7 +5548,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (char),
                         quest_hook::libil2cpp::Void,
@@ -5371,7 +5557,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_QuoteChar", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_QuoteChar", 1usize
                         )
                     })
             });
@@ -5387,7 +5574,7 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -5396,7 +5583,8 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_QuoteName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_QuoteName", 1usize
                         )
                     })
             });

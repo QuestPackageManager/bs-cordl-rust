@@ -112,7 +112,7 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u32, u32, u32),
                         quest_hook::libil2cpp::Void,
@@ -121,7 +121,8 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -134,12 +135,13 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u32, 0usize>("get_frequencyHz")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_frequencyHz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_frequencyHz", 0usize
                         )
                     })
             });
@@ -150,12 +152,13 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u32, 0usize>("get_maxBufferSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_maxBufferSize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_maxBufferSize", 0usize
                         )
                     })
             });
@@ -166,12 +169,13 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), u32, 0usize>("get_numChannels")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_numChannels", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_numChannels", 0usize
                         )
                     })
             });
@@ -185,7 +189,7 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u32),
                         quest_hook::libil2cpp::Void,
@@ -194,7 +198,8 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_frequencyHz", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_frequencyHz", 1usize
                         )
                     })
             });
@@ -210,7 +215,7 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u32),
                         quest_hook::libil2cpp::Void,
@@ -219,7 +224,8 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_maxBufferSize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_maxBufferSize", 1usize
                         )
                     })
             });
@@ -235,7 +241,7 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u32),
                         quest_hook::libil2cpp::Void,
@@ -244,7 +250,8 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_numChannels", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_numChannels", 1usize
                         )
                     })
             });

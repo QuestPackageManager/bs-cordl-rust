@@ -70,7 +70,7 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -79,7 +79,8 @@ impl crate::System::Net::FtpControlStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AbortConnect", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AbortConnect", 0usize
                         )
                     })
             });
@@ -94,7 +95,7 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
                         quest_hook::libil2cpp::Void,
@@ -103,7 +104,8 @@ impl crate::System::Net::FtpControlStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AcceptCallback", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AcceptCallback", 1usize
                         )
                     })
             });
@@ -127,7 +129,7 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest>),
                         quest_hook::libil2cpp::Gc<
@@ -142,7 +144,8 @@ impl crate::System::Net::FtpControlStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BuildCommandsList", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BuildCommandsList", 1usize
                         )
                     })
             });
@@ -164,7 +167,7 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -179,7 +182,8 @@ impl crate::System::Net::FtpControlStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckValid", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckValid", 3usize
                         )
                     })
             });
@@ -194,12 +198,13 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ClearState")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ClearState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ClearState", 0usize
                         )
                     })
             });
@@ -214,7 +219,7 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
                         quest_hook::libil2cpp::Void,
@@ -223,7 +228,8 @@ impl crate::System::Net::FtpControlStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConnectCallback", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConnectCallback", 1usize
                         )
                     })
             });
@@ -242,7 +248,7 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Net::FtpWebRequest>,
@@ -256,7 +262,8 @@ impl crate::System::Net::FtpControlStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateFtpDataSocket", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateFtpDataSocket", 2usize
                         )
                     })
             });
@@ -272,7 +279,7 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Net::FtpWebRequest>),
                         quest_hook::libil2cpp::Void,
@@ -281,7 +288,8 @@ impl crate::System::Net::FtpControlStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateFtpListenerSocket", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateFtpListenerSocket", 1usize
                         )
                     })
             });
@@ -300,7 +308,7 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>, i32),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -309,7 +317,8 @@ impl crate::System::Net::FtpControlStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FormatAddress", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FormatAddress", 2usize
                         )
                     })
             });
@@ -328,7 +337,7 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>, i32),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -337,7 +346,8 @@ impl crate::System::Net::FtpControlStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FormatAddressV6", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FormatAddressV6", 2usize
                         )
                     })
             });
@@ -356,7 +366,7 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -372,7 +382,8 @@ impl crate::System::Net::FtpControlStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FormatFtpCommand", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FormatFtpCommand", 2usize
                         )
                     })
             });
@@ -388,7 +399,7 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         i64,
@@ -397,7 +408,8 @@ impl crate::System::Net::FtpControlStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetContentLengthFrom213Response", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetContentLengthFrom213Response", 1usize
                         )
                     })
             });
@@ -413,7 +425,7 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         crate::System::DateTime,
@@ -422,7 +434,8 @@ impl crate::System::Net::FtpControlStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLastModifiedFrom213Response", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLastModifiedFrom213Response", 1usize
                         )
                     })
             });
@@ -440,7 +453,7 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -449,7 +462,8 @@ impl crate::System::Net::FtpControlStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLoginDirectory", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLoginDirectory", 1usize
                         )
                     })
             });
@@ -474,7 +488,7 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::Net::FtpControlStream_GetPathOption,
@@ -501,7 +515,8 @@ impl crate::System::Net::FtpControlStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPathInfo", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPathInfo", 5usize
                         )
                     })
             });
@@ -519,7 +534,7 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Net::FtpWebRequest>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -528,7 +543,8 @@ impl crate::System::Net::FtpControlStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPortCommandLine", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPortCommandLine", 1usize
                         )
                     })
             });
@@ -544,7 +560,7 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         i32,
@@ -553,7 +569,8 @@ impl crate::System::Net::FtpControlStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPortV4", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPortV4", 1usize
                         )
                     })
             });
@@ -569,7 +586,7 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         i32,
@@ -578,7 +595,8 @@ impl crate::System::Net::FtpControlStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPortV6", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPortV6", 1usize
                         )
                     })
             });
@@ -593,7 +611,7 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Net::TriState,
@@ -602,7 +620,8 @@ impl crate::System::Net::FtpControlStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsFtpDataStreamWriteable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsFtpDataStreamWriteable", 0usize
                         )
                     })
             });
@@ -636,7 +655,7 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -656,7 +675,8 @@ impl crate::System::Net::FtpControlStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PipelineCallback", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PipelineCallback", 4usize
                         )
                     })
             });
@@ -682,7 +702,7 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -703,7 +723,8 @@ impl crate::System::Net::FtpControlStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "QueueOrCreateDataConection", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "QueueOrCreateDataConection", 5usize
                         )
                     })
             });
@@ -727,7 +748,7 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -738,7 +759,8 @@ impl crate::System::Net::FtpControlStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "QueueOrCreateFtpDataStream", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "QueueOrCreateFtpDataStream", 1usize
                         )
                     })
             });
@@ -753,7 +775,7 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
                         quest_hook::libil2cpp::Void,
@@ -762,7 +784,8 @@ impl crate::System::Net::FtpControlStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SSLHandshakeCallback", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SSLHandshakeCallback", 1usize
                         )
                     })
             });
@@ -778,7 +801,7 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -787,7 +810,8 @@ impl crate::System::Net::FtpControlStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryUpdateContentLength", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryUpdateContentLength", 1usize
                         )
                     })
             });
@@ -804,7 +828,7 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -818,7 +842,8 @@ impl crate::System::Net::FtpControlStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryUpdateResponseUri", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryUpdateResponseUri", 2usize
                         )
                     })
             });
@@ -834,7 +859,7 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Net::Sockets::TcpClient,
@@ -845,7 +870,8 @@ impl crate::System::Net::FtpControlStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -862,7 +888,7 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -871,7 +897,8 @@ impl crate::System::Net::FtpControlStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_BannerMessage", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_BannerMessage", 0usize
                         )
                     })
             });
@@ -884,12 +911,13 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i64, 0usize>("get_ContentLength")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ContentLength", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ContentLength", 0usize
                         )
                     })
             });
@@ -904,7 +932,7 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Net::NetworkCredential>,
@@ -913,7 +941,8 @@ impl crate::System::Net::FtpControlStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Credentials", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Credentials", 0usize
                         )
                     })
             });
@@ -930,7 +959,7 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -939,7 +968,8 @@ impl crate::System::Net::FtpControlStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ExitMessage", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ExitMessage", 0usize
                         )
                     })
             });
@@ -954,7 +984,7 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::DateTime,
@@ -963,7 +993,8 @@ impl crate::System::Net::FtpControlStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_LastModified", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_LastModified", 0usize
                         )
                     })
             });
@@ -978,7 +1009,7 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Uri>,
@@ -987,7 +1018,8 @@ impl crate::System::Net::FtpControlStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ResponseUri", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ResponseUri", 0usize
                         )
                     })
             });
@@ -1004,7 +1036,7 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1013,7 +1045,8 @@ impl crate::System::Net::FtpControlStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_WelcomeMessage", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_WelcomeMessage", 0usize
                         )
                     })
             });
@@ -1029,7 +1062,7 @@ impl crate::System::Net::FtpControlStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Net::NetworkCredential,
@@ -1040,7 +1073,8 @@ impl crate::System::Net::FtpControlStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Credentials", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Credentials", 1usize
                         )
                     })
             });

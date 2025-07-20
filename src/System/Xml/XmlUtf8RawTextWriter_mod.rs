@@ -69,7 +69,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -78,7 +78,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AmpEntity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AmpEntity", 1usize
                         )
                     })
             });
@@ -95,7 +96,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -104,7 +105,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CarriageReturnEntity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CarriageReturnEntity", 1usize
                         )
                     })
             });
@@ -122,7 +124,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -136,7 +138,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CharEntity", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CharEntity", 2usize
                         )
                     })
             });
@@ -157,7 +160,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -180,7 +183,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CharToUTF8", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CharToUTF8", 3usize
                         )
                     })
             });
@@ -195,12 +199,13 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Close")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Close", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Close",
+                            0usize
                         )
                     })
             });
@@ -222,7 +227,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -245,7 +250,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EncodeChar", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EncodeChar", 3usize
                         )
                     })
             });
@@ -263,7 +269,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -277,7 +283,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EncodeMultibyteUTF8", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EncodeMultibyteUTF8", 2usize
                         )
                     })
             });
@@ -296,7 +303,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -315,7 +322,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EncodeSurrogate", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EncodeSurrogate", 3usize
                         )
                     })
             });
@@ -330,12 +338,13 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Flush")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Flush", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Flush",
+                            0usize
                         )
                     })
             });
@@ -350,7 +359,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -359,7 +368,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FlushBuffer", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FlushBuffer", 0usize
                         )
                     })
             });
@@ -374,7 +384,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -383,7 +393,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FlushEncoder", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FlushEncoder", 0usize
                         )
                     })
             });
@@ -400,7 +411,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -409,7 +420,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GtEntity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GtEntity", 1usize
                         )
                     })
             });
@@ -429,7 +441,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -444,7 +456,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InvalidXmlChar", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InvalidXmlChar", 3usize
                         )
                     })
             });
@@ -457,12 +470,13 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u8), bool, 1usize>("IsSurrogateByte")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsSurrogateByte", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsSurrogateByte", 1usize
                         )
                     })
             });
@@ -477,7 +491,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -486,7 +500,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LineFeedEntity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LineFeedEntity", 1usize
                         )
                     })
             });
@@ -503,7 +518,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -512,7 +527,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LtEntity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LtEntity", 1usize
                         )
                     })
             });
@@ -548,7 +564,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -557,7 +573,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "QuoteEntity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "QuoteEntity", 1usize
                         )
                     })
             });
@@ -574,7 +591,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -583,7 +600,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RawEndCData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RawEndCData", 1usize
                         )
                     })
             });
@@ -600,7 +618,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -609,7 +627,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RawStartCData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RawStartCData", 1usize
                         )
                     })
             });
@@ -626,7 +645,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -642,7 +661,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RawText", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "RawText",
+                            2usize
                         )
                     })
             });
@@ -658,7 +678,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -667,7 +687,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RawText", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "RawText",
+                            1usize
                         )
                     })
             });
@@ -682,7 +703,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -691,7 +712,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartElementContent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartElementContent", 0usize
                         )
                     })
             });
@@ -708,7 +730,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -717,7 +739,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TabEntity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TabEntity", 1usize
                         )
                     })
             });
@@ -735,7 +758,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -752,7 +775,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ValidateContentChars", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValidateContentChars", 3usize
                         )
                     })
             });
@@ -769,7 +793,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -785,7 +809,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteAttributeTextBlock", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteAttributeTextBlock", 2usize
                         )
                     })
             });
@@ -801,7 +826,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -810,7 +835,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteCData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteCData", 1usize
                         )
                     })
             });
@@ -826,7 +852,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -835,7 +861,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteCDataSection", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteCDataSection", 1usize
                         )
                     })
             });
@@ -851,7 +878,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (char),
                         quest_hook::libil2cpp::Void,
@@ -860,7 +887,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteCharEntity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteCharEntity", 1usize
                         )
                     })
             });
@@ -878,7 +906,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -893,7 +921,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteChars", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteChars", 3usize
                         )
                     })
             });
@@ -909,7 +938,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -918,7 +947,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteComment", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteComment", 1usize
                         )
                     })
             });
@@ -935,7 +965,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -949,7 +979,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteCommentOrPi", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteCommentOrPi", 2usize
                         )
                     })
             });
@@ -968,7 +999,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -990,7 +1021,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteDocType", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteDocType", 4usize
                         )
                     })
             });
@@ -1007,7 +1039,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1023,7 +1055,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteElementTextBlock", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteElementTextBlock", 2usize
                         )
                     })
             });
@@ -1038,7 +1071,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1047,7 +1080,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteEndAttribute", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteEndAttribute", 0usize
                         )
                     })
             });
@@ -1065,7 +1099,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1084,7 +1118,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteEndElement", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteEndElement", 3usize
                         )
                     })
             });
@@ -1099,7 +1134,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -1108,7 +1143,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteEndNamespaceDeclaration", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteEndNamespaceDeclaration", 0usize
                         )
                     })
             });
@@ -1124,7 +1160,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -1133,7 +1169,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteEntityRef", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteEntityRef", 1usize
                         )
                     })
             });
@@ -1151,7 +1188,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1170,7 +1207,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteFullEndElement", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteFullEndElement", 3usize
                         )
                     })
             });
@@ -1187,7 +1225,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1203,7 +1241,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteNamespaceDeclaration", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteNamespaceDeclaration", 2usize
                         )
                     })
             });
@@ -1221,7 +1260,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -1230,7 +1269,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteNewLine", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteNewLine", 1usize
                         )
                     })
             });
@@ -1247,7 +1287,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1263,7 +1303,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteProcessingInstruction", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteProcessingInstruction", 2usize
                         )
                     })
             });
@@ -1280,7 +1321,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1296,7 +1337,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteRawWithCharChecking", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteRawWithCharChecking", 2usize
                         )
                     })
             });
@@ -1314,7 +1356,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1329,7 +1371,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteRaw", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteRaw", 3usize
                         )
                     })
             });
@@ -1345,7 +1388,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -1354,7 +1397,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteRaw", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteRaw", 1usize
                         )
                     })
             });
@@ -1372,7 +1416,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1391,7 +1435,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteStartAttribute", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteStartAttribute", 3usize
                         )
                     })
             });
@@ -1409,7 +1454,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1428,7 +1473,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteStartElement", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteStartElement", 3usize
                         )
                     })
             });
@@ -1444,7 +1490,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -1453,7 +1499,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteStartNamespaceDeclaration", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteStartNamespaceDeclaration", 1usize
                         )
                     })
             });
@@ -1469,7 +1516,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -1478,7 +1525,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteString", 1usize
                         )
                     })
             });
@@ -1495,7 +1543,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (char, char),
                         quest_hook::libil2cpp::Void,
@@ -1504,7 +1552,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteSurrogateCharEntity", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteSurrogateCharEntity", 2usize
                         )
                     })
             });
@@ -1520,7 +1569,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -1529,7 +1578,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteWhitespace", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteWhitespace", 1usize
                         )
                     })
             });
@@ -1545,7 +1595,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -1554,7 +1604,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteXmlDeclaration", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteXmlDeclaration", 1usize
                         )
                     })
             });
@@ -1570,7 +1621,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Xml::XmlStandalone),
                         quest_hook::libil2cpp::Void,
@@ -1579,7 +1630,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteXmlDeclaration", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteXmlDeclaration", 1usize
                         )
                     })
             });
@@ -1596,7 +1648,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -1610,7 +1662,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -1626,7 +1679,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::XmlWriterSettings,
@@ -1637,7 +1690,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -1652,7 +1706,7 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         bool,
@@ -1661,8 +1715,8 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SupportsNamespaceDeclarationInChunks",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SupportsNamespaceDeclarationInChunks", 0usize
                         )
                     })
             });

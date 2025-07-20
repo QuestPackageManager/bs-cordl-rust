@@ -75,7 +75,7 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -91,7 +91,8 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAverageLatencies", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAverageLatencies", 0usize
                         )
                     })
             });
@@ -111,7 +112,7 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -120,7 +121,8 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAwsGameLiftRegionEndpoint", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAwsGameLiftRegionEndpoint", 1usize
                         )
                     })
             });
@@ -152,7 +154,7 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -183,7 +185,8 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetGameLiftPlayerSessionInfo", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetGameLiftPlayerSessionInfo", 7usize
                         )
                     })
             });
@@ -227,7 +230,7 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -246,7 +249,8 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetXPlatformAccessToken", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetXPlatformAccessToken", 3usize
                         )
                     })
             });
@@ -281,7 +285,7 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -290,7 +294,8 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PingAllAwsGameLiftRegions", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PingAllAwsGameLiftRegions", 0usize
                         )
                     })
             });
@@ -315,7 +320,7 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -333,7 +338,8 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PingRegionAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PingRegionAsync", 1usize
                         )
                     })
             });
@@ -353,12 +359,13 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("PollUpdate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PollUpdate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PollUpdate", 0usize
                         )
                     })
             });
@@ -383,7 +390,7 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -401,7 +408,8 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<PingAllAwsGameLiftRegions>b__16_0", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<PingAllAwsGameLiftRegions>b__16_0", 1usize
                         )
                     })
             });
@@ -425,7 +433,7 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -441,7 +449,8 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });

@@ -54,7 +54,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -70,7 +70,8 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AdjustBackgroundSizeForBorders", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AdjustBackgroundSizeForBorders", 2usize
                         )
                     })
             });
@@ -86,7 +87,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::Vector2,
@@ -98,7 +99,8 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertBorderRadiusPercentToPoints", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertBorderRadiusPercentToPoints", 2usize
                         )
                     })
             });
@@ -117,7 +119,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -134,7 +136,8 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetVisualElementRadii", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetVisualElementRadii", 5usize
                         )
                     })
             });
@@ -153,7 +156,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -167,7 +170,8 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Rectangle", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Rectangle", 2usize
                         )
                     })
             });
@@ -185,7 +189,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -201,7 +205,8 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Text", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Text",
+                            2usize
                         )
                     })
             });
@@ -350,7 +355,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_BorderParams {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams,
@@ -359,7 +364,8 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_BorderParams {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToNativeParams", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToNativeParams", 0usize
                         )
                     })
             });
@@ -514,7 +520,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::Rect,
@@ -531,7 +537,8 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AdjustSpriteUVsForScaleMode", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AdjustSpriteUVsForScaleMode", 7usize
                         )
                     })
             });
@@ -563,7 +570,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::Rect,
@@ -579,7 +586,8 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AdjustUVsForScaleMode", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AdjustUVsForScaleMode", 6usize
                         )
                     })
             });
@@ -595,7 +603,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::Rect,
@@ -607,7 +615,8 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ApplyPackingRotation", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ApplyPackingRotation", 2usize
                         )
                     })
             });
@@ -622,7 +631,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>),
                         crate::UnityEngine::Rect,
@@ -631,7 +640,8 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ComputeGeomRect", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ComputeGeomRect", 1usize
                         )
                     })
             });
@@ -646,7 +656,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>),
                         crate::UnityEngine::Rect,
@@ -655,7 +665,8 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ComputeUVRect", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ComputeUVRect", 1usize
                         )
                     })
             });
@@ -668,12 +679,13 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f32), bool, 1usize>("HasRadius")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HasRadius", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HasRadius", 1usize
                         )
                     })
             });
@@ -684,12 +696,13 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f32), bool, 1usize>("HasSlices")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HasSlices", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HasSlices", 1usize
                         )
                     })
             });
@@ -711,7 +724,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::Rect,
@@ -729,7 +742,8 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MakeSprite", 8usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MakeSprite", 8usize
                         )
                     })
             });
@@ -763,7 +777,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::Rect,
@@ -778,7 +792,8 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MakeTextured", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MakeTextured", 5usize
                         )
                     })
             });
@@ -801,7 +816,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::Rect,
@@ -818,7 +833,8 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MakeVectorTextured", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MakeVectorTextured", 5usize
                         )
                     })
             });
@@ -835,7 +851,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Rect, crate::UnityEngine::Rect),
                         crate::UnityEngine::Rect,
@@ -844,7 +860,8 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RectIntersection", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RectIntersection", 2usize
                         )
                     })
             });
@@ -862,7 +879,7 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Rect),
                         crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams,
@@ -871,7 +888,8 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToNativeParams", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToNativeParams", 1usize
                         )
                     })
             });

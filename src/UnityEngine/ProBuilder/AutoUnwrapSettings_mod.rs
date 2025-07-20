@@ -119,12 +119,13 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Reset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Reset",
+                            0usize
                         )
                     })
             });
@@ -141,7 +142,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -150,7 +151,8 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToString", 0usize
                         )
                     })
             });
@@ -166,7 +168,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::ProBuilder::AutoUnwrapSettings),
                         quest_hook::libil2cpp::Void,
@@ -175,7 +177,8 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -192,7 +195,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Anchor,
@@ -201,7 +204,8 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_anchor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_anchor", 0usize
                         )
                     })
             });
@@ -216,7 +220,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
@@ -225,7 +229,8 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_defaultAutoUnwrapSettings", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_defaultAutoUnwrapSettings", 0usize
                         )
                     })
             });
@@ -242,7 +247,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Fill,
@@ -251,7 +256,8 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_fill", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_fill", 0usize
                         )
                     })
             });
@@ -266,7 +272,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
@@ -275,7 +281,8 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_fit", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_fit",
+                            0usize
                         )
                     })
             });
@@ -288,12 +295,13 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_flipU")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_flipU", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_flipU", 0usize
                         )
                     })
             });
@@ -304,12 +312,13 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_flipV")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_flipV", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_flipV", 0usize
                         )
                     })
             });
@@ -322,12 +331,13 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::UnityEngine::Vector2, 0usize>("get_offset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_offset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_offset", 0usize
                         )
                     })
             });
@@ -340,12 +350,13 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_rotation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rotation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rotation", 0usize
                         )
                     })
             });
@@ -358,12 +369,13 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::UnityEngine::Vector2, 0usize>("get_scale")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_scale", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_scale", 0usize
                         )
                     })
             });
@@ -378,7 +390,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
@@ -387,7 +399,8 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_stretch", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_stretch", 0usize
                         )
                     })
             });
@@ -400,12 +413,13 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_swapUV")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_swapUV", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_swapUV", 0usize
                         )
                     })
             });
@@ -418,7 +432,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
@@ -427,7 +441,8 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_tile", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_tile", 0usize
                         )
                     })
             });
@@ -440,12 +455,13 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_useWorldSpace")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_useWorldSpace", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_useWorldSpace", 0usize
                         )
                     })
             });
@@ -459,7 +475,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Anchor),
                         quest_hook::libil2cpp::Void,
@@ -468,7 +484,8 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_anchor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_anchor", 1usize
                         )
                     })
             });
@@ -484,7 +501,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Fill),
                         quest_hook::libil2cpp::Void,
@@ -493,7 +510,8 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_fill", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_fill", 1usize
                         )
                     })
             });
@@ -509,7 +527,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -518,7 +536,8 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_flipU", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_flipU", 1usize
                         )
                     })
             });
@@ -534,7 +553,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -543,7 +562,8 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_flipV", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_flipV", 1usize
                         )
                     })
             });
@@ -559,7 +579,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector2),
                         quest_hook::libil2cpp::Void,
@@ -568,7 +588,8 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_offset", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_offset", 1usize
                         )
                     })
             });
@@ -584,7 +605,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -593,7 +614,8 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_rotation", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_rotation", 1usize
                         )
                     })
             });
@@ -609,7 +631,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector2),
                         quest_hook::libil2cpp::Void,
@@ -618,7 +640,8 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_scale", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_scale", 1usize
                         )
                     })
             });
@@ -634,7 +657,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -643,7 +666,8 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_swapUV", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_swapUV", 1usize
                         )
                     })
             });
@@ -659,7 +683,7 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -668,7 +692,8 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_useWorldSpace", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_useWorldSpace", 1usize
                         )
                     })
             });

@@ -43,12 +43,13 @@ impl crate::System::Buffers::Text::FormattingHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32), i32, 1usize>("CountDigits")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CountDigits", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CountDigits", 1usize
                         )
                     })
             });
@@ -59,12 +60,13 @@ impl crate::System::Buffers::Text::FormattingHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64), i32, 1usize>("CountDigits")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CountDigits", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CountDigits", 1usize
                         )
                     })
             });
@@ -75,12 +77,13 @@ impl crate::System::Buffers::Text::FormattingHelpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64), i32, 1usize>("CountHexDigits")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CountHexDigits", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CountHexDigits", 1usize
                         )
                     })
             });

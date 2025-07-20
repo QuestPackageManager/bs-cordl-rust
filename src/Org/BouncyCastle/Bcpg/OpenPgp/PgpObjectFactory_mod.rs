@@ -50,7 +50,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpObjectFactory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
@@ -59,7 +59,8 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpObjectFactory {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AllPgpObjects", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AllPgpObjects", 0usize
                         )
                     })
             });
@@ -77,7 +78,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpObjectFactory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
@@ -86,7 +87,8 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpObjectFactory {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FilterPgpObjects", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FilterPgpObjects", 1usize
                         )
                     })
             });
@@ -121,7 +123,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpObjectFactory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -130,7 +132,8 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpObjectFactory {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NextObject", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NextObject", 0usize
                         )
                     })
             });
@@ -147,7 +150,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpObjectFactory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -158,7 +161,8 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpObjectFactory {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NextPgpObject", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NextPgpObject", 0usize
                         )
                     })
             });
@@ -174,7 +178,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpObjectFactory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -185,7 +189,8 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpObjectFactory {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -201,7 +206,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpObjectFactory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                         quest_hook::libil2cpp::Void,
@@ -210,7 +215,8 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpObjectFactory {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });

@@ -82,7 +82,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParamete
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             bool,
@@ -99,7 +99,8 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParamete
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -122,7 +123,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParamete
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -133,7 +134,8 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParamete
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_EphemeralPrivateKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_EphemeralPrivateKey", 0usize
                         )
                     })
             });
@@ -150,7 +152,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParamete
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -161,7 +163,8 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParamete
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_EphemeralPublicPoint", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_EphemeralPublicPoint", 0usize
                         )
                     })
             });
@@ -174,12 +177,13 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParamete
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsInitiator")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsInitiator", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsInitiator", 0usize
                         )
                     })
             });
@@ -196,7 +200,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParamete
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -207,7 +211,8 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParamete
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_StaticPrivateKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_StaticPrivateKey", 0usize
                         )
                     })
             });
@@ -224,7 +229,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParamete
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -235,7 +240,8 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::SM2KeyExchangePrivateParamete
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_StaticPublicPoint", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_StaticPublicPoint", 0usize
                         )
                     })
             });

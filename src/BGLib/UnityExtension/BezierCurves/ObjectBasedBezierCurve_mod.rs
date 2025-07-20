@@ -57,7 +57,7 @@ impl crate::BGLib::UnityExtension::BezierCurves::ObjectBasedBezierCurve {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::BGLib::UnityExtension::BezierCurves::CurveData,
@@ -66,7 +66,8 @@ impl crate::BGLib::UnityExtension::BezierCurves::ObjectBasedBezierCurve {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBezierCurveData", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBezierCurveData", 0usize
                         )
                     })
             });
@@ -89,7 +90,7 @@ impl crate::BGLib::UnityExtension::BezierCurves::ObjectBasedBezierCurve {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::BGLib::UnityExtension::BezierCurves::CurveData),
                         quest_hook::libil2cpp::Void,
@@ -98,7 +99,8 @@ impl crate::BGLib::UnityExtension::BezierCurves::ObjectBasedBezierCurve {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetBezierCurveData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetBezierCurveData", 1usize
                         )
                     })
             });
@@ -113,12 +115,13 @@ impl crate::BGLib::UnityExtension::BezierCurves::ObjectBasedBezierCurve {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -131,12 +134,13 @@ impl crate::BGLib::UnityExtension::BezierCurves::ObjectBasedBezierCurve {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isReady")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_isReady", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isReady", 0usize
                         )
                     })
             });

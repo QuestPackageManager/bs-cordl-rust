@@ -41,51 +41,29 @@ for crate::System::Collections::Concurrent::CDSCollectionETWBCLProvider {
 }
 #[cfg(feature = "System+Collections+Concurrent+CDSCollectionETWBCLProvider")]
 impl crate::System::Collections::Concurrent::CDSCollectionETWBCLProvider {
-    pub fn ConcurrentBag_TryPeekSteals(
+    pub fn ConcurrentDictionary_AcquiringAllLocks(
         &mut self,
+        numOfBuckets: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (),
+                        (i32),
                         quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ConcurrentBag_TryPeekSteals")
+                        1usize,
+                    >("ConcurrentDictionary_AcquiringAllLocks")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConcurrentBag_TryPeekSteals", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConcurrentDictionary_AcquiringAllLocks", 1usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ConcurrentBag_TryTakeSteals(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                Self::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("ConcurrentBag_TryTakeSteals")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConcurrentBag_TryTakeSteals", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            method.invoke_unchecked(self, ())?
+            method.invoke_unchecked(self, (numOfBuckets))?
         };
         Ok(__cordl_ret.into())
     }
@@ -102,12 +80,13 @@ impl crate::System::Collections::Concurrent::CDSCollectionETWBCLProvider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

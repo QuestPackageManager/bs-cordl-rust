@@ -122,7 +122,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>, i32),
                         quest_hook::libil2cpp::Gc<crate::Zenject::CopyNonLazyBinder>,
@@ -131,7 +131,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindDisposableExecutionOrder", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindDisposableExecutionOrder", 2usize
                         )
                     })
             });
@@ -153,7 +154,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<crate::Zenject::CopyNonLazyBinder>,
@@ -162,7 +163,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindDisposableExecutionOrder", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindDisposableExecutionOrder", 1usize
                         )
                     })
             });
@@ -179,7 +181,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>, i32),
                         quest_hook::libil2cpp::Void,
@@ -188,7 +190,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindExecutionOrder", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindExecutionOrder", 2usize
                         )
                     })
             });
@@ -208,7 +211,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -217,7 +220,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindExecutionOrder", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindExecutionOrder", 1usize
                         )
                     })
             });
@@ -242,7 +246,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -253,7 +257,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindFactoryCustomInterface", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindFactoryCustomInterface", 0usize
                         )
                     })
             });
@@ -287,7 +292,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -298,7 +303,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindFactoryCustomInterface", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindFactoryCustomInterface", 0usize
                         )
                     })
             });
@@ -335,7 +341,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -350,7 +356,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindFactoryCustomInterface", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindFactoryCustomInterface", 0usize
                         )
                     })
             });
@@ -395,7 +402,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -411,7 +418,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindFactoryCustomInterface", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindFactoryCustomInterface", 0usize
                         )
                     })
             });
@@ -465,7 +473,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -482,7 +490,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindFactoryCustomInterface", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindFactoryCustomInterface", 0usize
                         )
                     })
             });
@@ -541,7 +550,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -559,7 +568,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindFactoryCustomInterface", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindFactoryCustomInterface", 0usize
                         )
                     })
             });
@@ -623,7 +633,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -642,7 +652,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindFactoryCustomInterface", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindFactoryCustomInterface", 0usize
                         )
                     })
             });
@@ -723,7 +734,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -746,7 +757,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindFactoryCustomInterface", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindFactoryCustomInterface", 0usize
                         )
                     })
             });
@@ -783,7 +795,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -794,7 +806,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindFactoryInternal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindFactoryInternal", 0usize
                         )
                     })
             });
@@ -823,7 +836,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -834,7 +847,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindFactoryInternal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindFactoryInternal", 0usize
                         )
                     })
             });
@@ -871,7 +885,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -886,7 +900,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindFactoryInternal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindFactoryInternal", 0usize
                         )
                     })
             });
@@ -931,7 +946,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -947,7 +962,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindFactoryInternal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindFactoryInternal", 0usize
                         )
                     })
             });
@@ -1001,7 +1017,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1018,7 +1034,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindFactoryInternal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindFactoryInternal", 0usize
                         )
                     })
             });
@@ -1077,7 +1094,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1095,7 +1112,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindFactoryInternal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindFactoryInternal", 0usize
                         )
                     })
             });
@@ -1159,7 +1177,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1178,7 +1196,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindFactoryInternal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindFactoryInternal", 0usize
                         )
                     })
             });
@@ -1259,7 +1278,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1282,7 +1301,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindFactoryInternal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindFactoryInternal", 0usize
                         )
                     })
             });
@@ -1317,7 +1337,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1328,7 +1348,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindFactory", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindFactory", 0usize
                         )
                     })
             });
@@ -1355,7 +1376,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1366,7 +1387,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindFactory", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindFactory", 0usize
                         )
                     })
             });
@@ -1395,7 +1417,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1410,7 +1432,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindFactory", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindFactory", 0usize
                         )
                     })
             });
@@ -1446,7 +1469,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1462,7 +1485,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindFactory", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindFactory", 0usize
                         )
                     })
             });
@@ -1506,7 +1530,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1523,7 +1547,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindFactory", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindFactory", 0usize
                         )
                     })
             });
@@ -1579,7 +1604,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1597,7 +1622,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindFactory", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindFactory", 0usize
                         )
                     })
             });
@@ -1658,7 +1684,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1677,7 +1703,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindFactory", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindFactory", 0usize
                         )
                     })
             });
@@ -1755,7 +1782,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1778,7 +1805,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindFactory", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindFactory", 0usize
                         )
                     })
             });
@@ -1809,7 +1837,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>, i32),
                         quest_hook::libil2cpp::Gc<crate::Zenject::CopyNonLazyBinder>,
@@ -1818,7 +1846,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindFixedTickableExecutionOrder", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindFixedTickableExecutionOrder", 2usize
                         )
                     })
             });
@@ -1840,7 +1869,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<crate::Zenject::CopyNonLazyBinder>,
@@ -1849,7 +1878,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindFixedTickableExecutionOrder", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindFixedTickableExecutionOrder", 1usize
                         )
                     })
             });
@@ -1870,7 +1900,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1881,7 +1911,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindIFactory", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindIFactory", 0usize
                         )
                     })
             });
@@ -1906,7 +1937,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1917,7 +1948,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindIFactory", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindIFactory", 0usize
                         )
                     })
             });
@@ -1944,7 +1976,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1959,7 +1991,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindIFactory", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindIFactory", 0usize
                         )
                     })
             });
@@ -1993,7 +2026,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2009,7 +2042,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindIFactory", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindIFactory", 0usize
                         )
                     })
             });
@@ -2051,7 +2085,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2068,7 +2102,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindIFactory", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindIFactory", 0usize
                         )
                     })
             });
@@ -2114,7 +2149,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2132,7 +2167,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindIFactory", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindIFactory", 0usize
                         )
                     })
             });
@@ -2190,7 +2226,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2209,7 +2245,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindIFactory", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindIFactory", 0usize
                         )
                     })
             });
@@ -2284,7 +2321,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2307,7 +2344,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindIFactory", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindIFactory", 0usize
                         )
                     })
             });
@@ -2338,7 +2376,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>, i32),
                         quest_hook::libil2cpp::Gc<crate::Zenject::CopyNonLazyBinder>,
@@ -2347,7 +2385,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindInitializableExecutionOrder", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindInitializableExecutionOrder", 2usize
                         )
                     })
             });
@@ -2369,7 +2408,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<crate::Zenject::CopyNonLazyBinder>,
@@ -2378,7 +2417,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindInitializableExecutionOrder", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindInitializableExecutionOrder", 1usize
                         )
                     })
             });
@@ -2402,7 +2442,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (TContract),
                         quest_hook::libil2cpp::Gc<
@@ -2413,7 +2453,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindInstance", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindInstance", 1usize
                         )
                     })
             });
@@ -2433,7 +2474,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -2448,7 +2489,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindInstances", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindInstances", 1usize
                         )
                     })
             });
@@ -2469,7 +2511,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::Zenject::FromBinderNonGeneric>,
@@ -2478,7 +2520,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindInterfacesAndSelfTo", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindInterfacesAndSelfTo", 0usize
                         )
                     })
             });
@@ -2496,7 +2539,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<crate::Zenject::FromBinderNonGeneric>,
@@ -2505,7 +2548,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindInterfacesAndSelfTo", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindInterfacesAndSelfTo", 1usize
                         )
                     })
             });
@@ -2526,7 +2570,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::Zenject::FromBinderNonGeneric>,
@@ -2535,7 +2579,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindInterfacesTo", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindInterfacesTo", 0usize
                         )
                     })
             });
@@ -2553,7 +2598,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<crate::Zenject::FromBinderNonGeneric>,
@@ -2562,7 +2607,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindInterfacesTo", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindInterfacesTo", 1usize
                         )
                     })
             });
@@ -2581,7 +2627,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
@@ -2595,7 +2641,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindInternal", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindInternal", 2usize
                         )
                     })
             });
@@ -2614,7 +2661,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>, i32),
                         quest_hook::libil2cpp::Gc<crate::Zenject::CopyNonLazyBinder>,
@@ -2623,7 +2670,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindLateDisposableExecutionOrder", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindLateDisposableExecutionOrder", 2usize
                         )
                     })
             });
@@ -2645,7 +2693,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<crate::Zenject::CopyNonLazyBinder>,
@@ -2654,7 +2702,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindLateDisposableExecutionOrder", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindLateDisposableExecutionOrder", 1usize
                         )
                     })
             });
@@ -2673,7 +2722,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>, i32),
                         quest_hook::libil2cpp::Gc<crate::Zenject::CopyNonLazyBinder>,
@@ -2682,7 +2731,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindLateTickableExecutionOrder", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindLateTickableExecutionOrder", 2usize
                         )
                     })
             });
@@ -2704,7 +2754,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<crate::Zenject::CopyNonLazyBinder>,
@@ -2713,7 +2763,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindLateTickableExecutionOrder", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindLateTickableExecutionOrder", 1usize
                         )
                     })
             });
@@ -2741,7 +2792,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Gc<
@@ -2754,7 +2805,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindMemoryPoolCustomInterface", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindMemoryPoolCustomInterface", 1usize
                         )
                     })
             });
@@ -2787,7 +2839,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, quest_hook::libil2cpp::Gc<crate::Zenject::BindStatement>),
                         quest_hook::libil2cpp::Gc<
@@ -2800,8 +2852,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindMemoryPoolCustomInterfaceInternal",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindMemoryPoolCustomInterfaceInternal", 2usize
                         )
                     })
             });
@@ -2833,7 +2885,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Gc<
@@ -2846,7 +2898,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindMemoryPoolCustomInterfaceNoFlush", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindMemoryPoolCustomInterfaceNoFlush", 1usize
                         )
                     })
             });
@@ -2869,7 +2922,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2882,7 +2935,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindMemoryPool", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindMemoryPool", 0usize
                         )
                     })
             });
@@ -2907,7 +2961,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2920,7 +2974,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindMemoryPool", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindMemoryPool", 0usize
                         )
                     })
             });
@@ -2941,7 +2996,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -2952,7 +3007,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindNoFlush", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindNoFlush", 0usize
                         )
                     })
             });
@@ -2971,7 +3027,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>, i32),
                         quest_hook::libil2cpp::Gc<crate::Zenject::CopyNonLazyBinder>,
@@ -2980,7 +3036,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindPoolableExecutionOrder", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindPoolableExecutionOrder", 2usize
                         )
                     })
             });
@@ -3002,7 +3059,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<crate::Zenject::CopyNonLazyBinder>,
@@ -3011,7 +3068,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindPoolableExecutionOrder", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindPoolableExecutionOrder", 1usize
                         )
                     })
             });
@@ -3030,7 +3088,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>, i32),
                         quest_hook::libil2cpp::Gc<crate::Zenject::CopyNonLazyBinder>,
@@ -3039,7 +3097,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindTickableExecutionOrder", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindTickableExecutionOrder", 2usize
                         )
                     })
             });
@@ -3061,7 +3120,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<crate::Zenject::CopyNonLazyBinder>,
@@ -3070,7 +3129,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindTickableExecutionOrder", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindTickableExecutionOrder", 1usize
                         )
                     })
             });
@@ -3091,7 +3151,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3102,7 +3162,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Bind", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Bind",
+                            0usize
                         )
                     })
             });
@@ -3124,7 +3185,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -3141,7 +3202,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Bind", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Bind",
+                            1usize
                         )
                     })
             });
@@ -3163,7 +3225,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::BindStatement>),
                         quest_hook::libil2cpp::Gc<
@@ -3174,7 +3236,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Bind", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Bind",
+                            1usize
                         )
                     })
             });
@@ -3196,7 +3259,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<
@@ -3211,7 +3274,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Bind", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Bind",
+                            1usize
                         )
                     })
             });
@@ -3233,7 +3297,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -3248,7 +3312,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Bind", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Bind",
+                            1usize
                         )
                     })
             });
@@ -3274,7 +3339,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -3299,7 +3364,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CallInjectMethodsTopDown", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CallInjectMethodsTopDown", 7usize
                         )
                     })
             });
@@ -3327,7 +3393,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>),
                         quest_hook::libil2cpp::Void,
@@ -3336,7 +3402,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckForInstallWarning", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckForInstallWarning", 1usize
                         )
                     })
             });
@@ -3359,7 +3426,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -3375,7 +3442,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateAndParentPrefab", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateAndParentPrefab", 4usize
                         )
                     })
             });
@@ -3402,7 +3470,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -3420,7 +3488,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateAndParentPrefabResource", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateAndParentPrefabResource", 4usize
                         )
                     })
             });
@@ -3445,7 +3514,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -3459,7 +3528,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateEmptyGameObject", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateEmptyGameObject", 2usize
                         )
                     })
             });
@@ -3477,7 +3547,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -3486,7 +3556,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateEmptyGameObject", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateEmptyGameObject", 1usize
                         )
                     })
             });
@@ -3504,7 +3575,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -3513,7 +3584,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateLazyBinding", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateLazyBinding", 1usize
                         )
                     })
             });
@@ -3530,7 +3602,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
@@ -3539,7 +3611,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateSubContainer", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateSubContainer", 0usize
                         )
                     })
             });
@@ -3557,7 +3630,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
@@ -3566,7 +3639,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateSubContainer", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateSubContainer", 1usize
                         )
                     })
             });
@@ -3584,7 +3658,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -3593,7 +3667,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateTransformGroup", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateTransformGroup", 1usize
                         )
                     })
             });
@@ -3616,7 +3691,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3627,7 +3702,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Decorate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Decorate", 0usize
                         )
                     })
             });
@@ -3643,7 +3719,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::BindStatement>),
                         quest_hook::libil2cpp::Void,
@@ -3652,7 +3728,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FinalizeBinding", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FinalizeBinding", 1usize
                         )
                     })
             });
@@ -3673,7 +3750,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3686,7 +3763,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FlattenInheritanceChain", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FlattenInheritanceChain", 0usize
                         )
                     })
             });
@@ -3703,7 +3781,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -3712,7 +3790,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FlushBindings", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FlushBindings", 0usize
                         )
                     })
             });
@@ -3727,7 +3806,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -3736,7 +3815,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FlushValidationQueue", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FlushValidationQueue", 0usize
                         )
                     })
             });
@@ -3752,7 +3832,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>),
                         i32,
@@ -3761,7 +3841,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetContainerHeirarchyDistance", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetContainerHeirarchyDistance", 1usize
                         )
                     })
             });
@@ -3776,7 +3857,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>, i32),
                         crate::System::Nullable_1<i32>,
@@ -3785,7 +3866,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetContainerHeirarchyDistance", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetContainerHeirarchyDistance", 2usize
                         )
                     })
             });
@@ -3807,7 +3889,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
@@ -3826,7 +3908,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetDecoratedInstances", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDecoratedInstances", 3usize
                         )
                     })
             });
@@ -3851,7 +3934,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3864,7 +3947,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetDependencyContracts", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDependencyContracts", 0usize
                         )
                     })
             });
@@ -3888,7 +3972,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<
@@ -3901,7 +3985,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetDependencyContracts", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDependencyContracts", 1usize
                         )
                     })
             });
@@ -3924,7 +4009,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::Zenject::BindingId,
@@ -3942,7 +4027,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLocalProviders", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLocalProviders", 2usize
                         )
                     })
             });
@@ -3960,7 +4046,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -3969,7 +4055,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPrefabAsGameObject", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPrefabAsGameObject", 1usize
                         )
                     })
             });
@@ -3990,7 +4077,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
@@ -4008,7 +4095,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetProviderMatches", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetProviderMatches", 2usize
                         )
                     })
             });
@@ -4030,7 +4118,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::Zenject::BindingId,
@@ -4049,7 +4137,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetProvidersForContract", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetProvidersForContract", 3usize
                         )
                     })
             });
@@ -4070,7 +4159,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -4084,7 +4173,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTransformGroup", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTransformGroup", 2usize
                         )
                     })
             });
@@ -4104,7 +4194,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         bool,
@@ -4113,7 +4203,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HasBindingId", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HasBindingId", 1usize
                         )
                     })
             });
@@ -4128,7 +4219,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -4142,7 +4233,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HasBindingId", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HasBindingId", 2usize
                         )
                     })
             });
@@ -4160,7 +4252,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -4175,7 +4267,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HasBindingId", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HasBindingId", 3usize
                         )
                     })
             });
@@ -4192,12 +4285,13 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("HasBinding")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HasBinding", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HasBinding", 0usize
                         )
                     })
             });
@@ -4211,7 +4305,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>),
                         bool,
@@ -4220,7 +4314,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HasBinding", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HasBinding", 1usize
                         )
                     })
             });
@@ -4234,7 +4329,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         bool,
@@ -4243,7 +4338,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HasBinding", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HasBinding", 1usize
                         )
                     })
             });
@@ -4267,7 +4363,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -4290,7 +4386,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InjectExplicitInternal", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InjectExplicitInternal", 5usize
                         )
                     })
             });
@@ -4313,7 +4410,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -4331,7 +4428,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InjectExplicit", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InjectExplicit", 2usize
                         )
                     })
             });
@@ -4355,7 +4453,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -4378,7 +4476,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InjectExplicit", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InjectExplicit", 5usize
                         )
                     })
             });
@@ -4398,7 +4497,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
                         quest_hook::libil2cpp::Void,
@@ -4407,7 +4506,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InjectGameObject", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InjectGameObject", 1usize
                         )
                     })
             });
@@ -4433,7 +4533,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -4454,7 +4554,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InjectGameObjectForComponentExplicit", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InjectGameObjectForComponentExplicit", 5usize
                         )
                     })
             });
@@ -4478,7 +4579,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
                         T,
@@ -4487,7 +4588,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InjectGameObjectForComponent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InjectGameObjectForComponent", 1usize
                         )
                     })
             });
@@ -4510,7 +4612,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -4528,7 +4630,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InjectGameObjectForComponent", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InjectGameObjectForComponent", 2usize
                         )
                     })
             });
@@ -4552,7 +4655,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -4571,7 +4674,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InjectGameObjectForComponent", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InjectGameObjectForComponent", 3usize
                         )
                     })
             });
@@ -4599,7 +4703,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -4624,7 +4728,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InjectMembersTopDown", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InjectMembersTopDown", 7usize
                         )
                     })
             });
@@ -4657,7 +4762,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -4677,7 +4782,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Inject", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Inject",
+                            2usize
                         )
                     })
             });
@@ -4693,7 +4799,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Void,
@@ -4702,7 +4808,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Inject", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Inject",
+                            1usize
                         )
                     })
             });
@@ -4717,7 +4824,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -4726,7 +4833,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstallDefaultBindings", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstallDefaultBindings", 0usize
                         )
                     })
             });
@@ -4745,12 +4853,13 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Install")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Install", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Install",
+                            0usize
                         )
                     })
             });
@@ -4774,7 +4883,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -4789,7 +4898,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Install", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Install",
+                            1usize
                         )
                     })
             });
@@ -4811,7 +4921,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -4828,7 +4938,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiateComponentExplicit", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateComponentExplicit", 3usize
                         )
                     })
             });
@@ -4847,12 +4958,13 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), T, 0usize>("InstantiateComponentOnNewGameObject")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiateComponentOnNewGameObject", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateComponentOnNewGameObject", 0usize
                         )
                     })
             });
@@ -4874,7 +4986,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<
@@ -4889,7 +5001,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiateComponentOnNewGameObject", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateComponentOnNewGameObject", 1usize
                         )
                     })
             });
@@ -4907,7 +5020,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         T,
@@ -4916,7 +5029,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiateComponentOnNewGameObject", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateComponentOnNewGameObject", 1usize
                         )
                     })
             });
@@ -4939,7 +5053,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -4959,7 +5073,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiateComponentOnNewGameObject", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateComponentOnNewGameObject", 2usize
                         )
                     })
             });
@@ -4979,7 +5094,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
                         TContract,
@@ -4988,7 +5103,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiateComponent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateComponent", 1usize
                         )
                     })
             });
@@ -5013,7 +5129,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -5031,7 +5147,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiateComponent", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateComponent", 2usize
                         )
                     })
             });
@@ -5050,7 +5167,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -5062,7 +5179,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiateComponent", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateComponent", 2usize
                         )
                     })
             });
@@ -5086,7 +5204,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -5105,7 +5223,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiateComponent", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateComponent", 3usize
                         )
                     })
             });
@@ -5127,7 +5246,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::List_1<
@@ -5140,7 +5259,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiateExplicit", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateExplicit", 1usize
                         )
                     })
             });
@@ -5159,7 +5279,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -5175,7 +5295,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiateExplicit", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateExplicit", 2usize
                         )
                     })
             });
@@ -5201,7 +5322,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -5222,7 +5343,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiateExplicit", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateExplicit", 5usize
                         )
                     })
             });
@@ -5254,7 +5376,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -5275,7 +5397,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiateInternal", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateInternal", 5usize
                         )
                     })
             });
@@ -5306,7 +5429,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -5326,8 +5449,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabForComponentExplicit",
-                            4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabForComponentExplicit", 4usize
                         )
                     })
             });
@@ -5362,7 +5485,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -5386,8 +5509,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabForComponentExplicit",
-                            6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabForComponentExplicit", 6usize
                         )
                     })
             });
@@ -5422,7 +5545,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -5439,8 +5562,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabForComponentExplicit",
-                            3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabForComponentExplicit", 3usize
                         )
                     })
             });
@@ -5462,7 +5585,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>),
                         T,
@@ -5471,7 +5594,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabForComponent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabForComponent", 1usize
                         )
                     })
             });
@@ -5494,7 +5618,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -5512,7 +5636,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabForComponent", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabForComponent", 2usize
                         )
                     })
             });
@@ -5533,7 +5658,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -5545,7 +5670,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabForComponent", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabForComponent", 2usize
                         )
                     })
             });
@@ -5571,7 +5697,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -5590,7 +5716,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabForComponent", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabForComponent", 3usize
                         )
                     })
             });
@@ -5613,7 +5740,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -5627,7 +5754,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabForComponent", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabForComponent", 4usize
                         )
                     })
             });
@@ -5657,7 +5785,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -5678,7 +5806,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabForComponent", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabForComponent", 5usize
                         )
                     })
             });
@@ -5709,7 +5838,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -5731,7 +5860,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabForComponent", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabForComponent", 4usize
                         )
                     })
             });
@@ -5759,7 +5889,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -5779,7 +5909,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabForComponent", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabForComponent", 4usize
                         )
                     })
             });
@@ -5810,7 +5941,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -5832,7 +5963,7 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "InstantiatePrefabResourceForComponentExplicit", 4usize
                         )
                     })
@@ -5868,7 +5999,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -5894,7 +6025,7 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "InstantiatePrefabResourceForComponentExplicit", 6usize
                         )
                     })
@@ -5928,7 +6059,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         T,
@@ -5937,8 +6068,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabResourceForComponent",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabResourceForComponent", 1usize
                         )
                     })
             });
@@ -5961,7 +6092,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -5981,8 +6112,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabResourceForComponent",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabResourceForComponent", 2usize
                         )
                     })
             });
@@ -6003,7 +6134,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -6017,8 +6148,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabResourceForComponent",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabResourceForComponent", 2usize
                         )
                     })
             });
@@ -6046,7 +6177,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -6067,8 +6198,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabResourceForComponent",
-                            3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabResourceForComponent", 3usize
                         )
                     })
             });
@@ -6093,7 +6224,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -6109,8 +6240,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabResourceForComponent",
-                            4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabResourceForComponent", 4usize
                         )
                     })
             });
@@ -6144,7 +6275,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -6167,8 +6298,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabResourceForComponent",
-                            5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabResourceForComponent", 5usize
                         )
                     })
             });
@@ -6197,7 +6328,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -6219,8 +6350,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabResourceForComponent",
-                            4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabResourceForComponent", 4usize
                         )
                     })
             });
@@ -6247,7 +6378,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -6263,7 +6394,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabResource", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabResource", 2usize
                         )
                     })
             });
@@ -6281,7 +6413,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -6290,7 +6422,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabResource", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabResource", 1usize
                         )
                     })
             });
@@ -6309,7 +6442,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -6323,7 +6456,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabResource", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabResource", 2usize
                         )
                     })
             });
@@ -6344,7 +6478,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -6360,7 +6494,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabResource", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabResource", 4usize
                         )
                     })
             });
@@ -6385,7 +6520,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -6399,7 +6534,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefab", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefab", 2usize
                         )
                     })
             });
@@ -6417,7 +6553,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -6426,7 +6562,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefab", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefab", 1usize
                         )
                     })
             });
@@ -6445,7 +6582,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -6457,7 +6594,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefab", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefab", 2usize
                         )
                     })
             });
@@ -6478,7 +6616,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -6492,7 +6630,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefab", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefab", 4usize
                         )
                     })
             });
@@ -6514,7 +6653,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -6533,8 +6672,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiateScriptableObjectResourceExplicit",
-                            3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateScriptableObjectResourceExplicit", 3usize
                         )
                     })
             });
@@ -6557,7 +6696,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         T,
@@ -6566,7 +6705,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiateScriptableObjectResource", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateScriptableObjectResource", 1usize
                         )
                     })
             });
@@ -6589,7 +6729,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -6609,7 +6749,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiateScriptableObjectResource", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateScriptableObjectResource", 2usize
                         )
                     })
             });
@@ -6628,7 +6769,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -6642,7 +6783,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiateScriptableObjectResource", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateScriptableObjectResource", 2usize
                         )
                     })
             });
@@ -6668,7 +6810,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -6689,7 +6831,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiateScriptableObjectResource", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateScriptableObjectResource", 3usize
                         )
                     })
             });
@@ -6709,12 +6852,13 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), T, 0usize>("Instantiate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Instantiate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Instantiate", 0usize
                         )
                     })
             });
@@ -6736,7 +6880,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<
@@ -6751,7 +6895,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Instantiate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Instantiate", 1usize
                         )
                     })
             });
@@ -6767,7 +6912,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -6776,7 +6921,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Instantiate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Instantiate", 1usize
                         )
                     })
             });
@@ -6799,7 +6945,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -6817,7 +6963,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Instantiate", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Instantiate", 2usize
                         )
                     })
             });
@@ -6834,12 +6981,13 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(T), T, 1usize>("LazyInject")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LazyInject", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LazyInject", 1usize
                         )
                     })
             });
@@ -6915,7 +7063,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Void,
@@ -6924,7 +7072,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "QueueForInject", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "QueueForInject", 1usize
                         )
                     })
             });
@@ -6940,7 +7089,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::IValidatable>),
                         quest_hook::libil2cpp::Void,
@@ -6949,7 +7098,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "QueueForValidate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "QueueForValidate", 1usize
                         )
                     })
             });
@@ -6971,7 +7121,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Gc<
@@ -6982,7 +7132,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RebindId", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RebindId", 1usize
                         )
                     })
             });
@@ -7001,7 +7152,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -7017,7 +7168,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RebindId", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RebindId", 2usize
                         )
                     })
             });
@@ -7038,7 +7190,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -7049,7 +7201,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Rebind", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Rebind",
+                            0usize
                         )
                     })
             });
@@ -7067,7 +7220,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<
@@ -7078,7 +7231,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Rebind", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Rebind",
+                            1usize
                         )
                     })
             });
@@ -7097,7 +7251,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::Zenject::BindingId,
@@ -7111,7 +7265,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterProvider", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterProvider", 4usize
                         )
                     })
             });
@@ -7132,7 +7287,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -7143,7 +7298,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResolveAll", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResolveAll", 0usize
                         )
                     })
             });
@@ -7161,7 +7317,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>),
                         quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
@@ -7170,7 +7326,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResolveAll", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResolveAll", 1usize
                         )
                     })
             });
@@ -7191,7 +7348,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
@@ -7209,7 +7366,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResolveAll", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResolveAll", 2usize
                         )
                     })
             });
@@ -7227,7 +7385,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
@@ -7236,7 +7394,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResolveAll", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResolveAll", 1usize
                         )
                     })
             });
@@ -7251,7 +7410,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -7260,7 +7419,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResolveDependencyRoots", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResolveDependencyRoots", 0usize
                         )
                     })
             });
@@ -7282,7 +7442,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Gc<
@@ -7293,7 +7453,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResolveIdAll", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResolveIdAll", 1usize
                         )
                     })
             });
@@ -7312,7 +7473,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -7326,7 +7487,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResolveIdAll", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResolveIdAll", 2usize
                         )
                     })
             });
@@ -7346,7 +7508,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         TContract,
@@ -7355,7 +7517,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResolveId", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResolveId", 1usize
                         )
                     })
             });
@@ -7374,7 +7537,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -7388,7 +7551,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResolveId", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResolveId", 2usize
                         )
                     })
             });
@@ -7403,7 +7567,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -7412,7 +7576,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResolveRoots", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResolveRoots", 0usize
                         )
                     })
             });
@@ -7434,7 +7599,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>),
                         quest_hook::libil2cpp::Gc<
@@ -7447,7 +7612,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResolveTypeAll", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResolveTypeAll", 1usize
                         )
                     })
             });
@@ -7471,7 +7637,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<
@@ -7484,7 +7650,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResolveTypeAll", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResolveTypeAll", 1usize
                         )
                     })
             });
@@ -7509,7 +7676,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -7527,7 +7694,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResolveTypeAll", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResolveTypeAll", 2usize
                         )
                     })
             });
@@ -7548,7 +7716,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -7557,7 +7725,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResolveType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResolveType", 0usize
                         )
                     })
             });
@@ -7573,7 +7742,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>),
                         quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -7582,7 +7751,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResolveType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResolveType", 1usize
                         )
                     })
             });
@@ -7598,7 +7768,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -7607,7 +7777,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResolveType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResolveType", 1usize
                         )
                     })
             });
@@ -7624,12 +7795,13 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), TContract, 0usize>("Resolve")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Resolve", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Resolve",
+                            0usize
                         )
                     })
             });
@@ -7645,7 +7817,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Zenject::BindingId),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -7654,7 +7826,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Resolve", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Resolve",
+                            1usize
                         )
                     })
             });
@@ -7672,7 +7845,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -7681,7 +7854,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Resolve", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Resolve",
+                            1usize
                         )
                     })
             });
@@ -7699,7 +7873,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -7708,7 +7882,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Resolve", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Resolve",
+                            1usize
                         )
                     })
             });
@@ -7732,7 +7907,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -7753,7 +7928,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SafeGetInstances", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SafeGetInstances", 3usize
                         )
                     })
             });
@@ -7770,7 +7946,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::Zenject::BindStatement>,
@@ -7782,7 +7958,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShouldInheritBinding", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShouldInheritBinding", 2usize
                         )
                     })
             });
@@ -7800,7 +7977,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Gc<crate::Zenject::BindStatement>,
@@ -7809,7 +7986,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartBinding", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartBinding", 1usize
                         )
                     })
             });
@@ -7827,7 +8005,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<
@@ -7838,7 +8016,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGetDecoratorProvider", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetDecoratorProvider", 1usize
                         )
                     })
             });
@@ -7856,7 +8035,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>),
                         quest_hook::libil2cpp::Gc<
@@ -7867,7 +8046,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGetUniqueProvider", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetUniqueProvider", 1usize
                         )
                     })
             });
@@ -7887,7 +8067,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         TContract,
@@ -7896,7 +8076,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryResolveId", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryResolveId", 1usize
                         )
                     })
             });
@@ -7915,7 +8096,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -7929,7 +8110,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryResolveId", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryResolveId", 2usize
                         )
                     })
             });
@@ -7946,12 +8128,13 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), TContract, 0usize>("TryResolve")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryResolve", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryResolve", 0usize
                         )
                     })
             });
@@ -7967,7 +8150,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -7976,7 +8159,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryResolve", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryResolve", 1usize
                         )
                     })
             });
@@ -7991,12 +8175,13 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("UnbindAll")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnbindAll", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnbindAll", 0usize
                         )
                     })
             });
@@ -8016,7 +8201,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         bool,
@@ -8025,7 +8210,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnbindId", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnbindId", 1usize
                         )
                     })
             });
@@ -8045,7 +8231,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         bool,
@@ -8054,7 +8240,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnbindId", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnbindId", 1usize
                         )
                     })
             });
@@ -8069,7 +8256,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -8083,7 +8270,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnbindId", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnbindId", 2usize
                         )
                     })
             });
@@ -8101,7 +8289,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -8116,7 +8304,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnbindId", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnbindId", 3usize
                         )
                     })
             });
@@ -8135,7 +8324,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -8144,7 +8333,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnbindInterfacesTo", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnbindInterfacesTo", 0usize
                         )
                     })
             });
@@ -8160,7 +8350,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Void,
@@ -8169,7 +8359,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnbindInterfacesTo", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnbindInterfacesTo", 1usize
                         )
                     })
             });
@@ -8186,12 +8377,13 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("Unbind")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Unbind", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Unbind",
+                            0usize
                         )
                     })
             });
@@ -8210,12 +8402,13 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("Unbind")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Unbind", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Unbind",
+                            0usize
                         )
                     })
             });
@@ -8229,7 +8422,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         bool,
@@ -8238,7 +8431,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Unbind", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Unbind",
+                            1usize
                         )
                     })
             });
@@ -8255,7 +8449,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -8267,7 +8461,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Unbind", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Unbind",
+                            2usize
                         )
                     })
             });
@@ -8282,7 +8477,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -8291,7 +8486,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ValidateFullResolve", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValidateFullResolve", 0usize
                         )
                     })
             });
@@ -8306,12 +8502,13 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -8327,7 +8524,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>),
                         quest_hook::libil2cpp::Void,
@@ -8336,7 +8533,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -8353,7 +8551,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>, bool),
                         quest_hook::libil2cpp::Void,
@@ -8362,7 +8560,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -8382,7 +8581,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<
@@ -8395,7 +8594,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -8416,7 +8616,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -8432,7 +8632,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -8448,12 +8649,13 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -8472,7 +8674,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -8485,7 +8687,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AllContracts", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AllContracts", 0usize
                         )
                     })
             });
@@ -8506,7 +8709,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -8519,7 +8722,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AllProviders", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AllProviders", 0usize
                         )
                     })
             });
@@ -8542,7 +8746,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -8555,7 +8759,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AncestorContainers", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AncestorContainers", 0usize
                         )
                     })
             });
@@ -8570,12 +8775,13 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_AssertOnNewGameObjects")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AssertOnNewGameObjects", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AssertOnNewGameObjects", 0usize
                         )
                     })
             });
@@ -8588,12 +8794,13 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_ChecksForCircularDependencies")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ChecksForCircularDependencies", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ChecksForCircularDependencies", 0usize
                         )
                     })
             });
@@ -8608,7 +8815,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -8617,7 +8824,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ContextTransform", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ContextTransform", 0usize
                         )
                     })
             });
@@ -8634,7 +8842,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -8643,7 +8851,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_DefaultParent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_DefaultParent", 0usize
                         )
                     })
             });
@@ -8660,7 +8869,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -8669,7 +8878,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_InheritedDefaultParent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_InheritedDefaultParent", 0usize
                         )
                     })
             });
@@ -8682,12 +8892,13 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsInstalling")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsInstalling", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsInstalling", 0usize
                         )
                     })
             });
@@ -8698,12 +8909,13 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsValidating")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsValidating", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsValidating", 0usize
                         )
                     })
             });
@@ -8722,7 +8934,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -8735,7 +8947,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ParentContainers", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ParentContainers", 0usize
                         )
                     })
             });
@@ -8754,7 +8967,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::Zenject::ZenjectSettings>,
@@ -8763,7 +8976,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Settings", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Settings", 0usize
                         )
                     })
             });
@@ -8780,7 +8994,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -8791,7 +9005,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SingletonMarkRegistry", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SingletonMarkRegistry", 0usize
                         )
                     })
             });
@@ -8807,7 +9022,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -8816,7 +9031,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_AssertOnNewGameObjects", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_AssertOnNewGameObjects", 1usize
                         )
                     })
             });
@@ -8832,7 +9048,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
                         quest_hook::libil2cpp::Void,
@@ -8841,7 +9057,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_DefaultParent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_DefaultParent", 1usize
                         )
                     })
             });
@@ -8857,7 +9074,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -8866,7 +9083,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_IsInstalling", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_IsInstalling", 1usize
                         )
                     })
             });
@@ -8882,7 +9100,7 @@ impl crate::Zenject::DiContainer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::ZenjectSettings>),
                         quest_hook::libil2cpp::Void,
@@ -8891,7 +9109,8 @@ impl crate::Zenject::DiContainer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Settings", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Settings", 1usize
                         )
                     })
             });
@@ -8990,7 +9209,7 @@ impl crate::Zenject::DiContainer_ProviderInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -9005,7 +9224,8 @@ impl crate::Zenject::DiContainer_ProviderInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "__zenCreate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "__zenCreate", 1usize
                         )
                     })
             });
@@ -9020,7 +9240,7 @@ impl crate::Zenject::DiContainer_ProviderInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
@@ -9029,7 +9249,8 @@ impl crate::Zenject::DiContainer_ProviderInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "__zenCreateInjectTypeInfo", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "__zenCreateInjectTypeInfo", 0usize
                         )
                     })
             });
@@ -9048,7 +9269,7 @@ impl crate::Zenject::DiContainer_ProviderInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
@@ -9062,7 +9283,8 @@ impl crate::Zenject::DiContainer_ProviderInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
                         )
                     })
             });

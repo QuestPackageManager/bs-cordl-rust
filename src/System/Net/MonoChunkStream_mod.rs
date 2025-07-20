@@ -53,7 +53,7 @@ impl crate::System::Net::MonoChunkStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -62,7 +62,8 @@ impl crate::System::Net::MonoChunkStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FinishReading", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FinishReading", 1usize
                         )
                     })
             });
@@ -94,7 +95,7 @@ impl crate::System::Net::MonoChunkStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -112,7 +113,8 @@ impl crate::System::Net::MonoChunkStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessReadAsync", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessReadAsync", 4usize
                         )
                     })
             });
@@ -133,7 +135,7 @@ impl crate::System::Net::MonoChunkStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -142,7 +144,8 @@ impl crate::System::Net::MonoChunkStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ThrowExpectingChunkTrailer", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ThrowExpectingChunkTrailer", 0usize
                         )
                     })
             });
@@ -160,7 +163,7 @@ impl crate::System::Net::MonoChunkStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -169,7 +172,8 @@ impl crate::System::Net::MonoChunkStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<>n__0", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "<>n__0",
+                            1usize
                         )
                     })
             });
@@ -187,7 +191,7 @@ impl crate::System::Net::MonoChunkStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
@@ -202,7 +206,8 @@ impl crate::System::Net::MonoChunkStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -219,7 +224,7 @@ impl crate::System::Net::MonoChunkStream {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Net::MonoChunkParser>,
@@ -228,7 +233,8 @@ impl crate::System::Net::MonoChunkStream {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Decoder", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Decoder", 0usize
                         )
                     })
             });

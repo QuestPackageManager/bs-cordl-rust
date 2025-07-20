@@ -77,7 +77,7 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocatorInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -96,7 +96,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocatorInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateContent", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateContent", 3usize
                         )
                     })
             });
@@ -118,7 +119,7 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocatorInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -137,7 +138,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocatorInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -150,12 +152,13 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocatorInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_CanUpdateContent")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CanUpdateContent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CanUpdateContent", 0usize
                         )
                     })
             });
@@ -172,7 +175,7 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocatorInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -183,7 +186,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocatorInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CatalogLocation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CatalogLocation", 0usize
                         )
                     })
             });
@@ -196,12 +200,13 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocatorInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_ContentUpdateAvailable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ContentUpdateAvailable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ContentUpdateAvailable", 0usize
                         )
                     })
             });
@@ -218,7 +223,7 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocatorInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -229,7 +234,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocatorInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_HashLocation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_HashLocation", 0usize
                         )
                     })
             });
@@ -246,7 +252,7 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocatorInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -255,7 +261,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocatorInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_LocalHash", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_LocalHash", 0usize
                         )
                     })
             });
@@ -274,7 +281,7 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocatorInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -285,7 +292,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocatorInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Locator", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Locator", 0usize
                         )
                     })
             });
@@ -303,7 +311,7 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocatorInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
@@ -314,7 +322,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocatorInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_CatalogLocation", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_CatalogLocation", 1usize
                         )
                     })
             });
@@ -330,7 +339,7 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocatorInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -339,7 +348,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocatorInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_ContentUpdateAvailable", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_ContentUpdateAvailable", 1usize
                         )
                     })
             });
@@ -355,7 +365,7 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocatorInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -364,7 +374,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocatorInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_LocalHash", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_LocalHash", 1usize
                         )
                     })
             });
@@ -382,7 +393,7 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocatorInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
@@ -393,7 +404,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocatorInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Locator", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Locator", 1usize
                         )
                     })
             });

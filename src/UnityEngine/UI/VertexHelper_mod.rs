@@ -75,7 +75,7 @@ impl crate::UnityEngine::UI::VertexHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -84,7 +84,8 @@ impl crate::UnityEngine::UI::VertexHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddTriangle", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddTriangle", 3usize
                         )
                     })
             });
@@ -102,7 +103,7 @@ impl crate::UnityEngine::UI::VertexHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -115,7 +116,8 @@ impl crate::UnityEngine::UI::VertexHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddUIVertexQuad", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddUIVertexQuad", 1usize
                         )
                     })
             });
@@ -136,7 +138,7 @@ impl crate::UnityEngine::UI::VertexHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -154,7 +156,8 @@ impl crate::UnityEngine::UI::VertexHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddUIVertexStream", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddUIVertexStream", 2usize
                         )
                     })
             });
@@ -172,7 +175,7 @@ impl crate::UnityEngine::UI::VertexHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::List_1<
@@ -185,7 +188,8 @@ impl crate::UnityEngine::UI::VertexHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddUIVertexTriangleStream", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddUIVertexTriangleStream", 1usize
                         )
                     })
             });
@@ -201,7 +205,7 @@ impl crate::UnityEngine::UI::VertexHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UIVertex),
                         quest_hook::libil2cpp::Void,
@@ -210,7 +214,8 @@ impl crate::UnityEngine::UI::VertexHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddVert", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "AddVert",
+                            1usize
                         )
                     })
             });
@@ -228,7 +233,7 @@ impl crate::UnityEngine::UI::VertexHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Vector3,
@@ -241,7 +246,8 @@ impl crate::UnityEngine::UI::VertexHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddVert", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "AddVert",
+                            3usize
                         )
                     })
             });
@@ -262,7 +268,7 @@ impl crate::UnityEngine::UI::VertexHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Vector3,
@@ -278,7 +284,8 @@ impl crate::UnityEngine::UI::VertexHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddVert", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "AddVert",
+                            6usize
                         )
                     })
             });
@@ -301,7 +308,7 @@ impl crate::UnityEngine::UI::VertexHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Vector3,
@@ -319,7 +326,8 @@ impl crate::UnityEngine::UI::VertexHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddVert", 8usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "AddVert",
+                            8usize
                         )
                     })
             });
@@ -338,12 +346,13 @@ impl crate::UnityEngine::UI::VertexHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Clear", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Clear",
+                            0usize
                         )
                     })
             });
@@ -358,12 +367,13 @@ impl crate::UnityEngine::UI::VertexHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Dispose", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            0usize
                         )
                     })
             });
@@ -379,7 +389,7 @@ impl crate::UnityEngine::UI::VertexHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>),
                         quest_hook::libil2cpp::Void,
@@ -388,7 +398,8 @@ impl crate::UnityEngine::UI::VertexHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FillMesh", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FillMesh", 1usize
                         )
                     })
             });
@@ -406,7 +417,7 @@ impl crate::UnityEngine::UI::VertexHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::List_1<
@@ -419,7 +430,8 @@ impl crate::UnityEngine::UI::VertexHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetUIVertexStream", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetUIVertexStream", 1usize
                         )
                     })
             });
@@ -434,7 +446,7 @@ impl crate::UnityEngine::UI::VertexHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -443,7 +455,8 @@ impl crate::UnityEngine::UI::VertexHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitializeListIfRequired", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitializeListIfRequired", 0usize
                         )
                     })
             });
@@ -476,7 +489,7 @@ impl crate::UnityEngine::UI::VertexHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -490,7 +503,8 @@ impl crate::UnityEngine::UI::VertexHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PopulateUIVertex", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PopulateUIVertex", 2usize
                         )
                     })
             });
@@ -507,7 +521,7 @@ impl crate::UnityEngine::UI::VertexHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UIVertex, i32),
                         quest_hook::libil2cpp::Void,
@@ -516,7 +530,8 @@ impl crate::UnityEngine::UI::VertexHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetUIVertex", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetUIVertex", 2usize
                         )
                     })
             });
@@ -531,12 +546,13 @@ impl crate::UnityEngine::UI::VertexHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -552,7 +568,7 @@ impl crate::UnityEngine::UI::VertexHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>),
                         quest_hook::libil2cpp::Void,
@@ -561,7 +577,8 @@ impl crate::UnityEngine::UI::VertexHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -574,12 +591,13 @@ impl crate::UnityEngine::UI::VertexHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_currentIndexCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_currentIndexCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_currentIndexCount", 0usize
                         )
                     })
             });
@@ -590,12 +608,13 @@ impl crate::UnityEngine::UI::VertexHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_currentVertCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_currentVertCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_currentVertCount", 0usize
                         )
                     })
             });

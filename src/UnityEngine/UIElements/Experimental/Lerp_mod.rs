@@ -47,7 +47,7 @@ impl crate::UnityEngine::UIElements::Experimental::Lerp {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Color, crate::UnityEngine::Color, f32),
                         crate::UnityEngine::Color,
@@ -56,7 +56,8 @@ impl crate::UnityEngine::UIElements::Experimental::Lerp {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Interpolate", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Interpolate", 3usize
                         )
                     })
             });
@@ -75,7 +76,7 @@ impl crate::UnityEngine::UIElements::Experimental::Lerp {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::UIElements::Experimental::StyleValues,
@@ -88,7 +89,8 @@ impl crate::UnityEngine::UIElements::Experimental::Lerp {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Interpolate", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Interpolate", 3usize
                         )
                     })
             });
@@ -105,12 +107,13 @@ impl crate::UnityEngine::UIElements::Experimental::Lerp {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32, f32, f32), f32, 3usize>("Interpolate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Interpolate", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Interpolate", 3usize
                         )
                     })
             });

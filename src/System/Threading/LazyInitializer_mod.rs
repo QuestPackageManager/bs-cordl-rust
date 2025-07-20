@@ -48,7 +48,7 @@ impl crate::System::Threading::LazyInitializer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<T>),
                         T,
@@ -57,7 +57,8 @@ impl crate::System::Threading::LazyInitializer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnsureInitializedCore", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnsureInitializedCore", 1usize
                         )
                     })
             });
@@ -79,7 +80,7 @@ impl crate::System::Threading::LazyInitializer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<T>,
@@ -97,7 +98,8 @@ impl crate::System::Threading::LazyInitializer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnsureInitializedCore", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnsureInitializedCore", 4usize
                         )
                     })
             });
@@ -120,7 +122,7 @@ impl crate::System::Threading::LazyInitializer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<T>,
@@ -137,7 +139,8 @@ impl crate::System::Threading::LazyInitializer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnsureInitializedCore", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnsureInitializedCore", 3usize
                         )
                     })
             });
@@ -157,7 +160,7 @@ impl crate::System::Threading::LazyInitializer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<T>,
@@ -169,7 +172,8 @@ impl crate::System::Threading::LazyInitializer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnsureInitializedCore", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnsureInitializedCore", 2usize
                         )
                     })
             });
@@ -188,7 +192,7 @@ impl crate::System::Threading::LazyInitializer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<T>),
                         T,
@@ -197,7 +201,8 @@ impl crate::System::Threading::LazyInitializer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnsureInitialized", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnsureInitialized", 1usize
                         )
                     })
             });
@@ -219,7 +224,7 @@ impl crate::System::Threading::LazyInitializer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<T>,
@@ -237,7 +242,8 @@ impl crate::System::Threading::LazyInitializer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnsureInitialized", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnsureInitialized", 4usize
                         )
                     })
             });
@@ -260,7 +266,7 @@ impl crate::System::Threading::LazyInitializer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<T>,
@@ -277,7 +283,8 @@ impl crate::System::Threading::LazyInitializer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnsureInitialized", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnsureInitialized", 3usize
                         )
                     })
             });
@@ -297,7 +304,7 @@ impl crate::System::Threading::LazyInitializer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<T>,
@@ -309,7 +316,8 @@ impl crate::System::Threading::LazyInitializer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnsureInitialized", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnsureInitialized", 2usize
                         )
                     })
             });
@@ -328,7 +336,7 @@ impl crate::System::Threading::LazyInitializer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             quest_hook::libil2cpp::Gc<
@@ -341,7 +349,8 @@ impl crate::System::Threading::LazyInitializer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnsureLockInitialized", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnsureLockInitialized", 1usize
                         )
                     })
             });

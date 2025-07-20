@@ -52,7 +52,7 @@ impl crate::Org::BouncyCastle::Utilities::IO::Pem::PemWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject,
@@ -63,7 +63,8 @@ impl crate::Org::BouncyCastle::Utilities::IO::Pem::PemWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetOutputSize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetOutputSize", 1usize
                         )
                     })
             });
@@ -86,7 +87,7 @@ impl crate::Org::BouncyCastle::Utilities::IO::Pem::PemWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -97,7 +98,8 @@ impl crate::Org::BouncyCastle::Utilities::IO::Pem::PemWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteEncoded", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteEncoded", 1usize
                         )
                     })
             });
@@ -115,7 +117,7 @@ impl crate::Org::BouncyCastle::Utilities::IO::Pem::PemWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Utilities::IO::Pem::PemObjectGenerator,
@@ -126,7 +128,8 @@ impl crate::Org::BouncyCastle::Utilities::IO::Pem::PemWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteObject", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteObject", 1usize
                         )
                     })
             });
@@ -142,7 +145,7 @@ impl crate::Org::BouncyCastle::Utilities::IO::Pem::PemWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -151,7 +154,8 @@ impl crate::Org::BouncyCastle::Utilities::IO::Pem::PemWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WritePostEncapsulationBoundary", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WritePostEncapsulationBoundary", 1usize
                         )
                     })
             });
@@ -167,7 +171,7 @@ impl crate::Org::BouncyCastle::Utilities::IO::Pem::PemWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -176,7 +180,8 @@ impl crate::Org::BouncyCastle::Utilities::IO::Pem::PemWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WritePreEncapsulationBoundary", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WritePreEncapsulationBoundary", 1usize
                         )
                     })
             });
@@ -192,7 +197,7 @@ impl crate::Org::BouncyCastle::Utilities::IO::Pem::PemWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>),
                         quest_hook::libil2cpp::Void,
@@ -201,7 +206,8 @@ impl crate::Org::BouncyCastle::Utilities::IO::Pem::PemWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -218,7 +224,7 @@ impl crate::Org::BouncyCastle::Utilities::IO::Pem::PemWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
@@ -227,7 +233,8 @@ impl crate::Org::BouncyCastle::Utilities::IO::Pem::PemWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Writer", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Writer", 0usize
                         )
                     })
             });

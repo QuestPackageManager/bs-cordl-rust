@@ -45,7 +45,7 @@ impl crate::UnityEngine::IPlayerEditorConnectionNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -54,7 +54,8 @@ impl crate::UnityEngine::IPlayerEditorConnectionNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DisconnectAll", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DisconnectAll", 0usize
                         )
                     })
             });
@@ -69,12 +70,13 @@ impl crate::UnityEngine::IPlayerEditorConnectionNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Initialize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize", 0usize
                         )
                     })
             });
@@ -87,12 +89,13 @@ impl crate::UnityEngine::IPlayerEditorConnectionNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsConnected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsConnected", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsConnected", 0usize
                         )
                     })
             });
@@ -105,12 +108,13 @@ impl crate::UnityEngine::IPlayerEditorConnectionNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Poll")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Poll", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Poll",
+                            0usize
                         )
                     })
             });
@@ -126,7 +130,7 @@ impl crate::UnityEngine::IPlayerEditorConnectionNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Guid),
                         quest_hook::libil2cpp::Void,
@@ -135,7 +139,8 @@ impl crate::UnityEngine::IPlayerEditorConnectionNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterInternal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterInternal", 1usize
                         )
                     })
             });
@@ -153,7 +158,7 @@ impl crate::UnityEngine::IPlayerEditorConnectionNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Guid,
@@ -168,7 +173,8 @@ impl crate::UnityEngine::IPlayerEditorConnectionNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SendMessage", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SendMessage", 3usize
                         )
                     })
             });
@@ -186,7 +192,7 @@ impl crate::UnityEngine::IPlayerEditorConnectionNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Guid,
@@ -201,7 +207,8 @@ impl crate::UnityEngine::IPlayerEditorConnectionNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TrySendMessage", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TrySendMessage", 3usize
                         )
                     })
             });
@@ -217,7 +224,7 @@ impl crate::UnityEngine::IPlayerEditorConnectionNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Guid),
                         quest_hook::libil2cpp::Void,
@@ -226,7 +233,8 @@ impl crate::UnityEngine::IPlayerEditorConnectionNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnregisterInternal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnregisterInternal", 1usize
                         )
                     })
             });

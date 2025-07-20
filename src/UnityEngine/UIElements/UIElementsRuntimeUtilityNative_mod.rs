@@ -46,7 +46,7 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtilityNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -55,7 +55,8 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtilityNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterPlayerloopCallback", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterPlayerloopCallback", 0usize
                         )
                     })
             });
@@ -70,7 +71,7 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtilityNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -79,7 +80,8 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtilityNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RepaintOffscreenPanels", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RepaintOffscreenPanels", 0usize
                         )
                     })
             });
@@ -94,7 +96,7 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtilityNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -103,7 +105,8 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtilityNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RepaintOverlayPanels", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RepaintOverlayPanels", 0usize
                         )
                     })
             });
@@ -118,7 +121,7 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtilityNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -127,7 +130,8 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtilityNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnregisterPlayerloopCallback", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnregisterPlayerloopCallback", 0usize
                         )
                     })
             });
@@ -142,7 +146,7 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtilityNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -151,7 +155,8 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtilityNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateRuntimePanels", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateRuntimePanels", 0usize
                         )
                     })
             });
@@ -166,7 +171,7 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtilityNative {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -175,7 +180,8 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtilityNative {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VisualElementCreation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VisualElementCreation", 0usize
                         )
                     })
             });

@@ -63,7 +63,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -88,7 +88,8 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CopyWithNewPassword", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CopyWithNewPassword", 5usize
                         )
                     })
             });
@@ -110,7 +111,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                         quest_hook::libil2cpp::Void,
@@ -119,7 +120,8 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Encode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Encode",
+                            1usize
                         )
                     })
             });
@@ -136,7 +138,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -147,7 +149,8 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetEncoded", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetEncoded", 0usize
                         )
                     })
             });
@@ -164,7 +167,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -175,7 +178,8 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetExtraPublicKeys", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetExtraPublicKeys", 0usize
                         )
                     })
             });
@@ -192,7 +196,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -203,7 +207,8 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPublicKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPublicKey", 0usize
                         )
                     })
             });
@@ -220,7 +225,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -231,7 +236,8 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSecretKey", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSecretKey", 0usize
                         )
                     })
             });
@@ -249,7 +255,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i64),
                         quest_hook::libil2cpp::Gc<
@@ -260,7 +266,8 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSecretKey", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSecretKey", 1usize
                         )
                     })
             });
@@ -277,7 +284,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -288,7 +295,8 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSecretKeys", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSecretKeys", 0usize
                         )
                     })
             });
@@ -312,7 +320,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -330,7 +338,8 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InsertSecretKey", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InsertSecretKey", 2usize
                         )
                     })
             });
@@ -391,7 +400,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -409,7 +418,8 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RemoveSecretKey", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RemoveSecretKey", 2usize
                         )
                     })
             });
@@ -433,7 +443,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -451,7 +461,8 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReplacePublicKeys", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReplacePublicKeys", 2usize
                         )
                     })
             });
@@ -467,7 +478,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Collections::IList>),
                         quest_hook::libil2cpp::Void,
@@ -476,7 +487,8 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -493,7 +505,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
@@ -505,7 +517,8 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -521,7 +534,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -532,7 +545,8 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -548,7 +562,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
                         quest_hook::libil2cpp::Void,
@@ -557,7 +571,8 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });

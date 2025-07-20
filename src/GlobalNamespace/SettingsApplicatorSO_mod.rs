@@ -74,7 +74,7 @@ impl crate::GlobalNamespace::SettingsApplicatorSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::BeatSaber::Settings::Settings,
@@ -85,7 +85,8 @@ impl crate::GlobalNamespace::SettingsApplicatorSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ApplyGameSettings", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ApplyGameSettings", 1usize
                         )
                     })
             });
@@ -102,7 +103,7 @@ impl crate::GlobalNamespace::SettingsApplicatorSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -116,7 +117,8 @@ impl crate::GlobalNamespace::SettingsApplicatorSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ApplyGraphicSettings", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ApplyGraphicSettings", 2usize
                         )
                     })
             });
@@ -134,7 +136,7 @@ impl crate::GlobalNamespace::SettingsApplicatorSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::BeatSaber::Settings::WindowSettings,
@@ -145,7 +147,8 @@ impl crate::GlobalNamespace::SettingsApplicatorSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ApplyWindowSettings", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ApplyWindowSettings", 1usize
                         )
                     })
             });
@@ -167,7 +170,7 @@ impl crate::GlobalNamespace::SettingsApplicatorSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -176,7 +179,8 @@ impl crate::GlobalNamespace::SettingsApplicatorSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NotifyRoomTransformOffsetWasUpdated", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NotifyRoomTransformOffsetWasUpdated", 0usize
                         )
                     })
             });
@@ -191,12 +195,13 @@ impl crate::GlobalNamespace::SettingsApplicatorSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -212,7 +217,7 @@ impl crate::GlobalNamespace::SettingsApplicatorSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -221,8 +226,8 @@ impl crate::GlobalNamespace::SettingsApplicatorSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_roomTransformOffsetDidUpdateEvent",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_roomTransformOffsetDidUpdateEvent", 1usize
                         )
                     })
             });
@@ -238,7 +243,7 @@ impl crate::GlobalNamespace::SettingsApplicatorSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -247,8 +252,8 @@ impl crate::GlobalNamespace::SettingsApplicatorSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_roomTransformOffsetDidUpdateEvent",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_roomTransformOffsetDidUpdateEvent", 1usize
                         )
                     })
             });

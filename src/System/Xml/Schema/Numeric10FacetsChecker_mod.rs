@@ -54,7 +54,7 @@ impl crate::System::Xml::Schema::Numeric10FacetsChecker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Decimal, i32, i32, bool, bool),
                         quest_hook::libil2cpp::Gc<crate::System::Exception>,
@@ -63,7 +63,8 @@ impl crate::System::Xml::Schema::Numeric10FacetsChecker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckTotalAndFractionDigits", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckTotalAndFractionDigits", 5usize
                         )
                     })
             });
@@ -88,7 +89,7 @@ impl crate::System::Xml::Schema::Numeric10FacetsChecker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Decimal,
@@ -102,7 +103,8 @@ impl crate::System::Xml::Schema::Numeric10FacetsChecker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckValueFacets", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckValueFacets", 2usize
                         )
                     })
             });
@@ -123,7 +125,7 @@ impl crate::System::Xml::Schema::Numeric10FacetsChecker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -139,7 +141,8 @@ impl crate::System::Xml::Schema::Numeric10FacetsChecker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckValueFacets", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckValueFacets", 2usize
                         )
                     })
             });
@@ -160,7 +163,7 @@ impl crate::System::Xml::Schema::Numeric10FacetsChecker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i16,
@@ -174,7 +177,8 @@ impl crate::System::Xml::Schema::Numeric10FacetsChecker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckValueFacets", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckValueFacets", 2usize
                         )
                     })
             });
@@ -195,7 +199,7 @@ impl crate::System::Xml::Schema::Numeric10FacetsChecker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -209,7 +213,8 @@ impl crate::System::Xml::Schema::Numeric10FacetsChecker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckValueFacets", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckValueFacets", 2usize
                         )
                     })
             });
@@ -230,7 +235,7 @@ impl crate::System::Xml::Schema::Numeric10FacetsChecker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i64,
@@ -244,7 +249,8 @@ impl crate::System::Xml::Schema::Numeric10FacetsChecker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckValueFacets", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckValueFacets", 2usize
                         )
                     })
             });
@@ -264,7 +270,7 @@ impl crate::System::Xml::Schema::Numeric10FacetsChecker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Decimal,
@@ -281,7 +287,8 @@ impl crate::System::Xml::Schema::Numeric10FacetsChecker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MatchEnumeration", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MatchEnumeration", 3usize
                         )
                     })
             });
@@ -301,7 +308,7 @@ impl crate::System::Xml::Schema::Numeric10FacetsChecker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -320,7 +327,8 @@ impl crate::System::Xml::Schema::Numeric10FacetsChecker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MatchEnumeration", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MatchEnumeration", 3usize
                         )
                     })
             });
@@ -347,7 +355,7 @@ impl crate::System::Xml::Schema::Numeric10FacetsChecker {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Decimal, crate::System::Decimal),
                         quest_hook::libil2cpp::Void,
@@ -356,7 +364,8 @@ impl crate::System::Xml::Schema::Numeric10FacetsChecker {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });

@@ -51,7 +51,7 @@ impl crate::System::Runtime::CompilerServices::AsyncTaskCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (TResult),
                         quest_hook::libil2cpp::Gc<
@@ -62,7 +62,8 @@ impl crate::System::Runtime::CompilerServices::AsyncTaskCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateCacheableTask", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateCacheableTask", 1usize
                         )
                     })
             });
@@ -81,7 +82,7 @@ impl crate::System::Runtime::CompilerServices::AsyncTaskCache {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -96,7 +97,8 @@ impl crate::System::Runtime::CompilerServices::AsyncTaskCache {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateInt32Tasks", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateInt32Tasks", 0usize
                         )
                     })
             });

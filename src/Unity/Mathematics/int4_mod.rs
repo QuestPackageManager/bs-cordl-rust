@@ -107,7 +107,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         bool,
@@ -116,7 +116,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Equals", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            1usize
                         )
                     })
             });
@@ -130,7 +131,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int4),
                         bool,
@@ -139,7 +140,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Equals", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            1usize
                         )
                     })
             });
@@ -150,12 +152,13 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHashCode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHashCode", 0usize
                         )
                     })
             });
@@ -170,7 +173,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -179,7 +182,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToString", 0usize
                         )
                     })
             });
@@ -198,7 +202,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -212,7 +216,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToString", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToString", 2usize
                         )
                     })
             });
@@ -228,12 +233,13 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -249,7 +255,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::bool4),
                         quest_hook::libil2cpp::Void,
@@ -258,7 +264,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -274,7 +281,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::double4),
                         quest_hook::libil2cpp::Void,
@@ -283,7 +290,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -299,12 +307,13 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -320,12 +329,13 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f64), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -341,7 +351,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::float4),
                         quest_hook::libil2cpp::Void,
@@ -350,7 +360,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -366,12 +377,13 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -390,7 +402,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32, i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -399,7 +411,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
                         )
                     })
             });
@@ -417,7 +430,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32, crate::Unity::Mathematics::int2),
                         quest_hook::libil2cpp::Void,
@@ -426,7 +439,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -444,7 +458,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, crate::Unity::Mathematics::int2, i32),
                         quest_hook::libil2cpp::Void,
@@ -453,7 +467,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -470,7 +485,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, crate::Unity::Mathematics::int3),
                         quest_hook::libil2cpp::Void,
@@ -479,7 +494,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -497,7 +513,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int2, i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -506,7 +522,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -523,7 +540,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::Unity::Mathematics::int2,
@@ -535,7 +552,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -552,7 +570,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int3, i32),
                         quest_hook::libil2cpp::Void,
@@ -561,7 +579,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -577,7 +596,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int4),
                         quest_hook::libil2cpp::Void,
@@ -586,7 +605,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -602,12 +622,13 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(u32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -623,7 +644,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::uint4),
                         quest_hook::libil2cpp::Void,
@@ -632,7 +653,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -645,12 +667,13 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("get_Item")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Item", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Item", 1usize
                         )
                     })
             });
@@ -663,12 +686,13 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::Unity::Mathematics::int2, 0usize>("get_ww")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ww", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_ww",
+                            0usize
                         )
                     })
             });
@@ -683,7 +707,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -692,7 +716,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_www", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_www",
+                            0usize
                         )
                     })
             });
@@ -707,7 +732,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -716,7 +741,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wwww", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wwww", 0usize
                         )
                     })
             });
@@ -731,7 +757,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -740,7 +766,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wwwx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wwwx", 0usize
                         )
                     })
             });
@@ -755,7 +782,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -764,7 +791,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wwwy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wwwy", 0usize
                         )
                     })
             });
@@ -779,7 +807,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -788,7 +816,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wwwz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wwwz", 0usize
                         )
                     })
             });
@@ -803,7 +832,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -812,7 +841,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wwx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_wwx",
+                            0usize
                         )
                     })
             });
@@ -827,7 +857,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -836,7 +866,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wwxw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wwxw", 0usize
                         )
                     })
             });
@@ -851,7 +882,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -860,7 +891,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wwxx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wwxx", 0usize
                         )
                     })
             });
@@ -875,7 +907,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -884,7 +916,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wwxy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wwxy", 0usize
                         )
                     })
             });
@@ -899,7 +932,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -908,7 +941,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wwxz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wwxz", 0usize
                         )
                     })
             });
@@ -923,7 +957,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -932,7 +966,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wwy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_wwy",
+                            0usize
                         )
                     })
             });
@@ -947,7 +982,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -956,7 +991,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wwyw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wwyw", 0usize
                         )
                     })
             });
@@ -971,7 +1007,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -980,7 +1016,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wwyx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wwyx", 0usize
                         )
                     })
             });
@@ -995,7 +1032,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -1004,7 +1041,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wwyy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wwyy", 0usize
                         )
                     })
             });
@@ -1019,7 +1057,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -1028,7 +1066,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wwyz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wwyz", 0usize
                         )
                     })
             });
@@ -1043,7 +1082,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -1052,7 +1091,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wwz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_wwz",
+                            0usize
                         )
                     })
             });
@@ -1067,7 +1107,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -1076,7 +1116,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wwzw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wwzw", 0usize
                         )
                     })
             });
@@ -1091,7 +1132,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -1100,7 +1141,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wwzx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wwzx", 0usize
                         )
                     })
             });
@@ -1115,7 +1157,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -1124,7 +1166,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wwzy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wwzy", 0usize
                         )
                     })
             });
@@ -1139,7 +1182,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -1148,7 +1191,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wwzz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wwzz", 0usize
                         )
                     })
             });
@@ -1163,12 +1207,13 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::Unity::Mathematics::int2, 0usize>("get_wx")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_wx",
+                            0usize
                         )
                     })
             });
@@ -1183,7 +1228,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -1192,7 +1237,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wxw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_wxw",
+                            0usize
                         )
                     })
             });
@@ -1207,7 +1253,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -1216,7 +1262,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wxww", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wxww", 0usize
                         )
                     })
             });
@@ -1231,7 +1278,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -1240,7 +1287,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wxwx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wxwx", 0usize
                         )
                     })
             });
@@ -1255,7 +1303,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -1264,7 +1312,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wxwy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wxwy", 0usize
                         )
                     })
             });
@@ -1279,7 +1328,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -1288,7 +1337,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wxwz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wxwz", 0usize
                         )
                     })
             });
@@ -1303,7 +1353,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -1312,7 +1362,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wxx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_wxx",
+                            0usize
                         )
                     })
             });
@@ -1327,7 +1378,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -1336,7 +1387,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wxxw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wxxw", 0usize
                         )
                     })
             });
@@ -1351,7 +1403,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -1360,7 +1412,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wxxx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wxxx", 0usize
                         )
                     })
             });
@@ -1375,7 +1428,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -1384,7 +1437,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wxxy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wxxy", 0usize
                         )
                     })
             });
@@ -1399,7 +1453,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -1408,7 +1462,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wxxz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wxxz", 0usize
                         )
                     })
             });
@@ -1423,7 +1478,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -1432,7 +1487,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wxy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_wxy",
+                            0usize
                         )
                     })
             });
@@ -1447,7 +1503,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -1456,7 +1512,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wxyw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wxyw", 0usize
                         )
                     })
             });
@@ -1471,7 +1528,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -1480,7 +1537,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wxyx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wxyx", 0usize
                         )
                     })
             });
@@ -1495,7 +1553,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -1504,7 +1562,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wxyy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wxyy", 0usize
                         )
                     })
             });
@@ -1519,7 +1578,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -1528,7 +1587,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wxyz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wxyz", 0usize
                         )
                     })
             });
@@ -1543,7 +1603,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -1552,7 +1612,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wxz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_wxz",
+                            0usize
                         )
                     })
             });
@@ -1567,7 +1628,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -1576,7 +1637,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wxzw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wxzw", 0usize
                         )
                     })
             });
@@ -1591,7 +1653,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -1600,7 +1662,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wxzx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wxzx", 0usize
                         )
                     })
             });
@@ -1615,7 +1678,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -1624,7 +1687,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wxzy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wxzy", 0usize
                         )
                     })
             });
@@ -1639,7 +1703,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -1648,7 +1712,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wxzz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wxzz", 0usize
                         )
                     })
             });
@@ -1663,12 +1728,13 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::Unity::Mathematics::int2, 0usize>("get_wy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_wy",
+                            0usize
                         )
                     })
             });
@@ -1683,7 +1749,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -1692,7 +1758,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wyw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_wyw",
+                            0usize
                         )
                     })
             });
@@ -1707,7 +1774,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -1716,7 +1783,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wyww", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wyww", 0usize
                         )
                     })
             });
@@ -1731,7 +1799,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -1740,7 +1808,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wywx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wywx", 0usize
                         )
                     })
             });
@@ -1755,7 +1824,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -1764,7 +1833,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wywy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wywy", 0usize
                         )
                     })
             });
@@ -1779,7 +1849,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -1788,7 +1858,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wywz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wywz", 0usize
                         )
                     })
             });
@@ -1803,7 +1874,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -1812,7 +1883,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wyx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_wyx",
+                            0usize
                         )
                     })
             });
@@ -1827,7 +1899,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -1836,7 +1908,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wyxw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wyxw", 0usize
                         )
                     })
             });
@@ -1851,7 +1924,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -1860,7 +1933,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wyxx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wyxx", 0usize
                         )
                     })
             });
@@ -1875,7 +1949,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -1884,7 +1958,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wyxy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wyxy", 0usize
                         )
                     })
             });
@@ -1899,7 +1974,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -1908,7 +1983,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wyxz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wyxz", 0usize
                         )
                     })
             });
@@ -1923,7 +1999,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -1932,7 +2008,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wyy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_wyy",
+                            0usize
                         )
                     })
             });
@@ -1947,7 +2024,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -1956,7 +2033,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wyyw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wyyw", 0usize
                         )
                     })
             });
@@ -1971,7 +2049,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -1980,7 +2058,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wyyx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wyyx", 0usize
                         )
                     })
             });
@@ -1995,7 +2074,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -2004,7 +2083,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wyyy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wyyy", 0usize
                         )
                     })
             });
@@ -2019,7 +2099,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -2028,7 +2108,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wyyz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wyyz", 0usize
                         )
                     })
             });
@@ -2043,7 +2124,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -2052,7 +2133,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wyz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_wyz",
+                            0usize
                         )
                     })
             });
@@ -2067,7 +2149,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -2076,7 +2158,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wyzw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wyzw", 0usize
                         )
                     })
             });
@@ -2091,7 +2174,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -2100,7 +2183,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wyzx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wyzx", 0usize
                         )
                     })
             });
@@ -2115,7 +2199,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -2124,7 +2208,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wyzy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wyzy", 0usize
                         )
                     })
             });
@@ -2139,7 +2224,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -2148,7 +2233,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wyzz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wyzz", 0usize
                         )
                     })
             });
@@ -2163,12 +2249,13 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::Unity::Mathematics::int2, 0usize>("get_wz")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_wz",
+                            0usize
                         )
                     })
             });
@@ -2183,7 +2270,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -2192,7 +2279,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wzw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_wzw",
+                            0usize
                         )
                     })
             });
@@ -2207,7 +2295,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -2216,7 +2304,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wzww", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wzww", 0usize
                         )
                     })
             });
@@ -2231,7 +2320,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -2240,7 +2329,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wzwx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wzwx", 0usize
                         )
                     })
             });
@@ -2255,7 +2345,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -2264,7 +2354,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wzwy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wzwy", 0usize
                         )
                     })
             });
@@ -2279,7 +2370,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -2288,7 +2379,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wzwz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wzwz", 0usize
                         )
                     })
             });
@@ -2303,7 +2395,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -2312,7 +2404,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wzx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_wzx",
+                            0usize
                         )
                     })
             });
@@ -2327,7 +2420,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -2336,7 +2429,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wzxw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wzxw", 0usize
                         )
                     })
             });
@@ -2351,7 +2445,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -2360,7 +2454,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wzxx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wzxx", 0usize
                         )
                     })
             });
@@ -2375,7 +2470,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -2384,7 +2479,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wzxy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wzxy", 0usize
                         )
                     })
             });
@@ -2399,7 +2495,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -2408,7 +2504,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wzxz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wzxz", 0usize
                         )
                     })
             });
@@ -2423,7 +2520,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -2432,7 +2529,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wzy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_wzy",
+                            0usize
                         )
                     })
             });
@@ -2447,7 +2545,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -2456,7 +2554,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wzyw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wzyw", 0usize
                         )
                     })
             });
@@ -2471,7 +2570,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -2480,7 +2579,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wzyx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wzyx", 0usize
                         )
                     })
             });
@@ -2495,7 +2595,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -2504,7 +2604,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wzyy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wzyy", 0usize
                         )
                     })
             });
@@ -2519,7 +2620,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -2528,7 +2629,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wzyz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wzyz", 0usize
                         )
                     })
             });
@@ -2543,7 +2645,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -2552,7 +2654,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wzz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_wzz",
+                            0usize
                         )
                     })
             });
@@ -2567,7 +2670,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -2576,7 +2679,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wzzw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wzzw", 0usize
                         )
                     })
             });
@@ -2591,7 +2695,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -2600,7 +2704,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wzzx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wzzx", 0usize
                         )
                     })
             });
@@ -2615,7 +2720,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -2624,7 +2729,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wzzy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wzzy", 0usize
                         )
                     })
             });
@@ -2639,7 +2745,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -2648,7 +2754,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wzzz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wzzz", 0usize
                         )
                     })
             });
@@ -2663,12 +2770,13 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::Unity::Mathematics::int2, 0usize>("get_xw")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_xw",
+                            0usize
                         )
                     })
             });
@@ -2683,7 +2791,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -2692,7 +2800,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xww", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_xww",
+                            0usize
                         )
                     })
             });
@@ -2707,7 +2816,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -2716,7 +2825,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xwww", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xwww", 0usize
                         )
                     })
             });
@@ -2731,7 +2841,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -2740,7 +2850,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xwwx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xwwx", 0usize
                         )
                     })
             });
@@ -2755,7 +2866,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -2764,7 +2875,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xwwy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xwwy", 0usize
                         )
                     })
             });
@@ -2779,7 +2891,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -2788,7 +2900,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xwwz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xwwz", 0usize
                         )
                     })
             });
@@ -2803,7 +2916,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -2812,7 +2925,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xwx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_xwx",
+                            0usize
                         )
                     })
             });
@@ -2827,7 +2941,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -2836,7 +2950,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xwxw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xwxw", 0usize
                         )
                     })
             });
@@ -2851,7 +2966,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -2860,7 +2975,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xwxx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xwxx", 0usize
                         )
                     })
             });
@@ -2875,7 +2991,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -2884,7 +3000,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xwxy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xwxy", 0usize
                         )
                     })
             });
@@ -2899,7 +3016,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -2908,7 +3025,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xwxz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xwxz", 0usize
                         )
                     })
             });
@@ -2923,7 +3041,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -2932,7 +3050,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xwy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_xwy",
+                            0usize
                         )
                     })
             });
@@ -2947,7 +3066,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -2956,7 +3075,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xwyw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xwyw", 0usize
                         )
                     })
             });
@@ -2971,7 +3091,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -2980,7 +3100,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xwyx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xwyx", 0usize
                         )
                     })
             });
@@ -2995,7 +3116,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -3004,7 +3125,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xwyy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xwyy", 0usize
                         )
                     })
             });
@@ -3019,7 +3141,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -3028,7 +3150,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xwyz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xwyz", 0usize
                         )
                     })
             });
@@ -3043,7 +3166,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -3052,7 +3175,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xwz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_xwz",
+                            0usize
                         )
                     })
             });
@@ -3067,7 +3191,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -3076,7 +3200,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xwzw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xwzw", 0usize
                         )
                     })
             });
@@ -3091,7 +3216,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -3100,7 +3225,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xwzx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xwzx", 0usize
                         )
                     })
             });
@@ -3115,7 +3241,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -3124,7 +3250,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xwzy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xwzy", 0usize
                         )
                     })
             });
@@ -3139,7 +3266,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -3148,7 +3275,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xwzz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xwzz", 0usize
                         )
                     })
             });
@@ -3163,12 +3291,13 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::Unity::Mathematics::int2, 0usize>("get_xx")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_xx",
+                            0usize
                         )
                     })
             });
@@ -3183,7 +3312,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -3192,7 +3321,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xxw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_xxw",
+                            0usize
                         )
                     })
             });
@@ -3207,7 +3337,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -3216,7 +3346,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xxww", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xxww", 0usize
                         )
                     })
             });
@@ -3231,7 +3362,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -3240,7 +3371,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xxwx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xxwx", 0usize
                         )
                     })
             });
@@ -3255,7 +3387,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -3264,7 +3396,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xxwy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xxwy", 0usize
                         )
                     })
             });
@@ -3279,7 +3412,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -3288,7 +3421,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xxwz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xxwz", 0usize
                         )
                     })
             });
@@ -3303,7 +3437,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -3312,7 +3446,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xxx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_xxx",
+                            0usize
                         )
                     })
             });
@@ -3327,7 +3462,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -3336,7 +3471,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xxxw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xxxw", 0usize
                         )
                     })
             });
@@ -3351,7 +3487,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -3360,7 +3496,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xxxx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xxxx", 0usize
                         )
                     })
             });
@@ -3375,7 +3512,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -3384,7 +3521,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xxxy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xxxy", 0usize
                         )
                     })
             });
@@ -3399,7 +3537,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -3408,7 +3546,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xxxz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xxxz", 0usize
                         )
                     })
             });
@@ -3423,7 +3562,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -3432,7 +3571,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xxy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_xxy",
+                            0usize
                         )
                     })
             });
@@ -3447,7 +3587,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -3456,7 +3596,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xxyw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xxyw", 0usize
                         )
                     })
             });
@@ -3471,7 +3612,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -3480,7 +3621,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xxyx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xxyx", 0usize
                         )
                     })
             });
@@ -3495,7 +3637,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -3504,7 +3646,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xxyy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xxyy", 0usize
                         )
                     })
             });
@@ -3519,7 +3662,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -3528,7 +3671,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xxyz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xxyz", 0usize
                         )
                     })
             });
@@ -3543,7 +3687,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -3552,7 +3696,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xxz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_xxz",
+                            0usize
                         )
                     })
             });
@@ -3567,7 +3712,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -3576,7 +3721,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xxzw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xxzw", 0usize
                         )
                     })
             });
@@ -3591,7 +3737,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -3600,7 +3746,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xxzx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xxzx", 0usize
                         )
                     })
             });
@@ -3615,7 +3762,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -3624,7 +3771,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xxzy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xxzy", 0usize
                         )
                     })
             });
@@ -3639,7 +3787,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -3648,7 +3796,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xxzz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xxzz", 0usize
                         )
                     })
             });
@@ -3663,12 +3812,13 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::Unity::Mathematics::int2, 0usize>("get_xy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_xy",
+                            0usize
                         )
                     })
             });
@@ -3683,7 +3833,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -3692,7 +3842,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xyw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_xyw",
+                            0usize
                         )
                     })
             });
@@ -3707,7 +3858,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -3716,7 +3867,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xyww", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xyww", 0usize
                         )
                     })
             });
@@ -3731,7 +3883,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -3740,7 +3892,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xywx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xywx", 0usize
                         )
                     })
             });
@@ -3755,7 +3908,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -3764,7 +3917,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xywy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xywy", 0usize
                         )
                     })
             });
@@ -3779,7 +3933,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -3788,7 +3942,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xywz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xywz", 0usize
                         )
                     })
             });
@@ -3803,7 +3958,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -3812,7 +3967,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xyx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_xyx",
+                            0usize
                         )
                     })
             });
@@ -3827,7 +3983,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -3836,7 +3992,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xyxw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xyxw", 0usize
                         )
                     })
             });
@@ -3851,7 +4008,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -3860,7 +4017,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xyxx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xyxx", 0usize
                         )
                     })
             });
@@ -3875,7 +4033,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -3884,7 +4042,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xyxy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xyxy", 0usize
                         )
                     })
             });
@@ -3899,7 +4058,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -3908,7 +4067,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xyxz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xyxz", 0usize
                         )
                     })
             });
@@ -3923,7 +4083,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -3932,7 +4092,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xyy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_xyy",
+                            0usize
                         )
                     })
             });
@@ -3947,7 +4108,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -3956,7 +4117,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xyyw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xyyw", 0usize
                         )
                     })
             });
@@ -3971,7 +4133,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -3980,7 +4142,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xyyx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xyyx", 0usize
                         )
                     })
             });
@@ -3995,7 +4158,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -4004,7 +4167,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xyyy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xyyy", 0usize
                         )
                     })
             });
@@ -4019,7 +4183,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -4028,7 +4192,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xyyz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xyyz", 0usize
                         )
                     })
             });
@@ -4043,7 +4208,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -4052,7 +4217,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xyz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_xyz",
+                            0usize
                         )
                     })
             });
@@ -4067,7 +4233,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -4076,7 +4242,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xyzw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xyzw", 0usize
                         )
                     })
             });
@@ -4091,7 +4258,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -4100,7 +4267,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xyzx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xyzx", 0usize
                         )
                     })
             });
@@ -4115,7 +4283,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -4124,7 +4292,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xyzy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xyzy", 0usize
                         )
                     })
             });
@@ -4139,7 +4308,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -4148,7 +4317,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xyzz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xyzz", 0usize
                         )
                     })
             });
@@ -4163,12 +4333,13 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::Unity::Mathematics::int2, 0usize>("get_xz")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_xz",
+                            0usize
                         )
                     })
             });
@@ -4183,7 +4354,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -4192,7 +4363,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xzw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_xzw",
+                            0usize
                         )
                     })
             });
@@ -4207,7 +4379,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -4216,7 +4388,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xzww", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xzww", 0usize
                         )
                     })
             });
@@ -4231,7 +4404,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -4240,7 +4413,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xzwx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xzwx", 0usize
                         )
                     })
             });
@@ -4255,7 +4429,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -4264,7 +4438,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xzwy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xzwy", 0usize
                         )
                     })
             });
@@ -4279,7 +4454,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -4288,7 +4463,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xzwz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xzwz", 0usize
                         )
                     })
             });
@@ -4303,7 +4479,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -4312,7 +4488,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xzx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_xzx",
+                            0usize
                         )
                     })
             });
@@ -4327,7 +4504,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -4336,7 +4513,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xzxw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xzxw", 0usize
                         )
                     })
             });
@@ -4351,7 +4529,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -4360,7 +4538,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xzxx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xzxx", 0usize
                         )
                     })
             });
@@ -4375,7 +4554,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -4384,7 +4563,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xzxy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xzxy", 0usize
                         )
                     })
             });
@@ -4399,7 +4579,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -4408,7 +4588,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xzxz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xzxz", 0usize
                         )
                     })
             });
@@ -4423,7 +4604,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -4432,7 +4613,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xzy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_xzy",
+                            0usize
                         )
                     })
             });
@@ -4447,7 +4629,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -4456,7 +4638,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xzyw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xzyw", 0usize
                         )
                     })
             });
@@ -4471,7 +4654,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -4480,7 +4663,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xzyx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xzyx", 0usize
                         )
                     })
             });
@@ -4495,7 +4679,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -4504,7 +4688,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xzyy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xzyy", 0usize
                         )
                     })
             });
@@ -4519,7 +4704,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -4528,7 +4713,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xzyz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xzyz", 0usize
                         )
                     })
             });
@@ -4543,7 +4729,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -4552,7 +4738,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xzz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_xzz",
+                            0usize
                         )
                     })
             });
@@ -4567,7 +4754,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -4576,7 +4763,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xzzw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xzzw", 0usize
                         )
                     })
             });
@@ -4591,7 +4779,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -4600,7 +4788,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xzzx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xzzx", 0usize
                         )
                     })
             });
@@ -4615,7 +4804,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -4624,7 +4813,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xzzy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xzzy", 0usize
                         )
                     })
             });
@@ -4639,7 +4829,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -4648,7 +4838,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_xzzz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_xzzz", 0usize
                         )
                     })
             });
@@ -4663,12 +4854,13 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::Unity::Mathematics::int2, 0usize>("get_yw")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_yw",
+                            0usize
                         )
                     })
             });
@@ -4683,7 +4875,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -4692,7 +4884,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yww", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_yww",
+                            0usize
                         )
                     })
             });
@@ -4707,7 +4900,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -4716,7 +4909,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ywww", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ywww", 0usize
                         )
                     })
             });
@@ -4731,7 +4925,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -4740,7 +4934,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ywwx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ywwx", 0usize
                         )
                     })
             });
@@ -4755,7 +4950,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -4764,7 +4959,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ywwy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ywwy", 0usize
                         )
                     })
             });
@@ -4779,7 +4975,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -4788,7 +4984,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ywwz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ywwz", 0usize
                         )
                     })
             });
@@ -4803,7 +5000,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -4812,7 +5009,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ywx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_ywx",
+                            0usize
                         )
                     })
             });
@@ -4827,7 +5025,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -4836,7 +5034,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ywxw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ywxw", 0usize
                         )
                     })
             });
@@ -4851,7 +5050,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -4860,7 +5059,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ywxx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ywxx", 0usize
                         )
                     })
             });
@@ -4875,7 +5075,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -4884,7 +5084,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ywxy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ywxy", 0usize
                         )
                     })
             });
@@ -4899,7 +5100,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -4908,7 +5109,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ywxz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ywxz", 0usize
                         )
                     })
             });
@@ -4923,7 +5125,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -4932,7 +5134,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ywy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_ywy",
+                            0usize
                         )
                     })
             });
@@ -4947,7 +5150,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -4956,7 +5159,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ywyw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ywyw", 0usize
                         )
                     })
             });
@@ -4971,7 +5175,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -4980,7 +5184,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ywyx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ywyx", 0usize
                         )
                     })
             });
@@ -4995,7 +5200,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -5004,7 +5209,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ywyy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ywyy", 0usize
                         )
                     })
             });
@@ -5019,7 +5225,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -5028,7 +5234,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ywyz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ywyz", 0usize
                         )
                     })
             });
@@ -5043,7 +5250,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -5052,7 +5259,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ywz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_ywz",
+                            0usize
                         )
                     })
             });
@@ -5067,7 +5275,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -5076,7 +5284,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ywzw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ywzw", 0usize
                         )
                     })
             });
@@ -5091,7 +5300,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -5100,7 +5309,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ywzx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ywzx", 0usize
                         )
                     })
             });
@@ -5115,7 +5325,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -5124,7 +5334,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ywzy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ywzy", 0usize
                         )
                     })
             });
@@ -5139,7 +5350,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -5148,7 +5359,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ywzz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ywzz", 0usize
                         )
                     })
             });
@@ -5163,12 +5375,13 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::Unity::Mathematics::int2, 0usize>("get_yx")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_yx",
+                            0usize
                         )
                     })
             });
@@ -5183,7 +5396,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -5192,7 +5405,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yxw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_yxw",
+                            0usize
                         )
                     })
             });
@@ -5207,7 +5421,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -5216,7 +5430,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yxww", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yxww", 0usize
                         )
                     })
             });
@@ -5231,7 +5446,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -5240,7 +5455,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yxwx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yxwx", 0usize
                         )
                     })
             });
@@ -5255,7 +5471,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -5264,7 +5480,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yxwy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yxwy", 0usize
                         )
                     })
             });
@@ -5279,7 +5496,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -5288,7 +5505,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yxwz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yxwz", 0usize
                         )
                     })
             });
@@ -5303,7 +5521,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -5312,7 +5530,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yxx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_yxx",
+                            0usize
                         )
                     })
             });
@@ -5327,7 +5546,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -5336,7 +5555,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yxxw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yxxw", 0usize
                         )
                     })
             });
@@ -5351,7 +5571,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -5360,7 +5580,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yxxx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yxxx", 0usize
                         )
                     })
             });
@@ -5375,7 +5596,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -5384,7 +5605,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yxxy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yxxy", 0usize
                         )
                     })
             });
@@ -5399,7 +5621,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -5408,7 +5630,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yxxz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yxxz", 0usize
                         )
                     })
             });
@@ -5423,7 +5646,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -5432,7 +5655,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yxy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_yxy",
+                            0usize
                         )
                     })
             });
@@ -5447,7 +5671,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -5456,7 +5680,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yxyw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yxyw", 0usize
                         )
                     })
             });
@@ -5471,7 +5696,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -5480,7 +5705,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yxyx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yxyx", 0usize
                         )
                     })
             });
@@ -5495,7 +5721,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -5504,7 +5730,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yxyy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yxyy", 0usize
                         )
                     })
             });
@@ -5519,7 +5746,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -5528,7 +5755,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yxyz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yxyz", 0usize
                         )
                     })
             });
@@ -5543,7 +5771,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -5552,7 +5780,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yxz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_yxz",
+                            0usize
                         )
                     })
             });
@@ -5567,7 +5796,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -5576,7 +5805,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yxzw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yxzw", 0usize
                         )
                     })
             });
@@ -5591,7 +5821,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -5600,7 +5830,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yxzx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yxzx", 0usize
                         )
                     })
             });
@@ -5615,7 +5846,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -5624,7 +5855,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yxzy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yxzy", 0usize
                         )
                     })
             });
@@ -5639,7 +5871,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -5648,7 +5880,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yxzz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yxzz", 0usize
                         )
                     })
             });
@@ -5663,12 +5896,13 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::Unity::Mathematics::int2, 0usize>("get_yy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_yy",
+                            0usize
                         )
                     })
             });
@@ -5683,7 +5917,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -5692,7 +5926,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yyw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_yyw",
+                            0usize
                         )
                     })
             });
@@ -5707,7 +5942,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -5716,7 +5951,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yyww", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yyww", 0usize
                         )
                     })
             });
@@ -5731,7 +5967,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -5740,7 +5976,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yywx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yywx", 0usize
                         )
                     })
             });
@@ -5755,7 +5992,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -5764,7 +6001,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yywy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yywy", 0usize
                         )
                     })
             });
@@ -5779,7 +6017,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -5788,7 +6026,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yywz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yywz", 0usize
                         )
                     })
             });
@@ -5803,7 +6042,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -5812,7 +6051,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yyx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_yyx",
+                            0usize
                         )
                     })
             });
@@ -5827,7 +6067,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -5836,7 +6076,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yyxw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yyxw", 0usize
                         )
                     })
             });
@@ -5851,7 +6092,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -5860,7 +6101,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yyxx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yyxx", 0usize
                         )
                     })
             });
@@ -5875,7 +6117,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -5884,7 +6126,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yyxy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yyxy", 0usize
                         )
                     })
             });
@@ -5899,7 +6142,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -5908,7 +6151,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yyxz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yyxz", 0usize
                         )
                     })
             });
@@ -5923,7 +6167,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -5932,7 +6176,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yyy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_yyy",
+                            0usize
                         )
                     })
             });
@@ -5947,7 +6192,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -5956,7 +6201,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yyyw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yyyw", 0usize
                         )
                     })
             });
@@ -5971,7 +6217,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -5980,7 +6226,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yyyx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yyyx", 0usize
                         )
                     })
             });
@@ -5995,7 +6242,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -6004,7 +6251,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yyyy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yyyy", 0usize
                         )
                     })
             });
@@ -6019,7 +6267,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -6028,7 +6276,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yyyz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yyyz", 0usize
                         )
                     })
             });
@@ -6043,7 +6292,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -6052,7 +6301,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yyz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_yyz",
+                            0usize
                         )
                     })
             });
@@ -6067,7 +6317,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -6076,7 +6326,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yyzw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yyzw", 0usize
                         )
                     })
             });
@@ -6091,7 +6342,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -6100,7 +6351,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yyzx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yyzx", 0usize
                         )
                     })
             });
@@ -6115,7 +6367,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -6124,7 +6376,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yyzy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yyzy", 0usize
                         )
                     })
             });
@@ -6139,7 +6392,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -6148,7 +6401,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yyzz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yyzz", 0usize
                         )
                     })
             });
@@ -6163,12 +6417,13 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::Unity::Mathematics::int2, 0usize>("get_yz")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_yz",
+                            0usize
                         )
                     })
             });
@@ -6183,7 +6438,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -6192,7 +6447,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yzw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_yzw",
+                            0usize
                         )
                     })
             });
@@ -6207,7 +6463,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -6216,7 +6472,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yzww", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yzww", 0usize
                         )
                     })
             });
@@ -6231,7 +6488,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -6240,7 +6497,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yzwx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yzwx", 0usize
                         )
                     })
             });
@@ -6255,7 +6513,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -6264,7 +6522,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yzwy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yzwy", 0usize
                         )
                     })
             });
@@ -6279,7 +6538,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -6288,7 +6547,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yzwz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yzwz", 0usize
                         )
                     })
             });
@@ -6303,7 +6563,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -6312,7 +6572,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yzx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_yzx",
+                            0usize
                         )
                     })
             });
@@ -6327,7 +6588,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -6336,7 +6597,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yzxw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yzxw", 0usize
                         )
                     })
             });
@@ -6351,7 +6613,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -6360,7 +6622,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yzxx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yzxx", 0usize
                         )
                     })
             });
@@ -6375,7 +6638,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -6384,7 +6647,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yzxy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yzxy", 0usize
                         )
                     })
             });
@@ -6399,7 +6663,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -6408,7 +6672,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yzxz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yzxz", 0usize
                         )
                     })
             });
@@ -6423,7 +6688,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -6432,7 +6697,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yzy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_yzy",
+                            0usize
                         )
                     })
             });
@@ -6447,7 +6713,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -6456,7 +6722,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yzyw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yzyw", 0usize
                         )
                     })
             });
@@ -6471,7 +6738,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -6480,7 +6747,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yzyx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yzyx", 0usize
                         )
                     })
             });
@@ -6495,7 +6763,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -6504,7 +6772,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yzyy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yzyy", 0usize
                         )
                     })
             });
@@ -6519,7 +6788,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -6528,7 +6797,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yzyz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yzyz", 0usize
                         )
                     })
             });
@@ -6543,7 +6813,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -6552,7 +6822,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yzz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_yzz",
+                            0usize
                         )
                     })
             });
@@ -6567,7 +6838,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -6576,7 +6847,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yzzw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yzzw", 0usize
                         )
                     })
             });
@@ -6591,7 +6863,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -6600,7 +6872,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yzzx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yzzx", 0usize
                         )
                     })
             });
@@ -6615,7 +6888,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -6624,7 +6897,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yzzy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yzzy", 0usize
                         )
                     })
             });
@@ -6639,7 +6913,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -6648,7 +6922,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_yzzz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_yzzz", 0usize
                         )
                     })
             });
@@ -6663,12 +6938,13 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::Unity::Mathematics::int2, 0usize>("get_zw")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_zw",
+                            0usize
                         )
                     })
             });
@@ -6683,7 +6959,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -6692,7 +6968,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zww", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_zww",
+                            0usize
                         )
                     })
             });
@@ -6707,7 +6984,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -6716,7 +6993,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zwww", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zwww", 0usize
                         )
                     })
             });
@@ -6731,7 +7009,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -6740,7 +7018,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zwwx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zwwx", 0usize
                         )
                     })
             });
@@ -6755,7 +7034,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -6764,7 +7043,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zwwy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zwwy", 0usize
                         )
                     })
             });
@@ -6779,7 +7059,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -6788,7 +7068,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zwwz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zwwz", 0usize
                         )
                     })
             });
@@ -6803,7 +7084,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -6812,7 +7093,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zwx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_zwx",
+                            0usize
                         )
                     })
             });
@@ -6827,7 +7109,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -6836,7 +7118,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zwxw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zwxw", 0usize
                         )
                     })
             });
@@ -6851,7 +7134,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -6860,7 +7143,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zwxx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zwxx", 0usize
                         )
                     })
             });
@@ -6875,7 +7159,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -6884,7 +7168,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zwxy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zwxy", 0usize
                         )
                     })
             });
@@ -6899,7 +7184,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -6908,7 +7193,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zwxz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zwxz", 0usize
                         )
                     })
             });
@@ -6923,7 +7209,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -6932,7 +7218,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zwy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_zwy",
+                            0usize
                         )
                     })
             });
@@ -6947,7 +7234,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -6956,7 +7243,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zwyw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zwyw", 0usize
                         )
                     })
             });
@@ -6971,7 +7259,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -6980,7 +7268,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zwyx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zwyx", 0usize
                         )
                     })
             });
@@ -6995,7 +7284,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -7004,7 +7293,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zwyy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zwyy", 0usize
                         )
                     })
             });
@@ -7019,7 +7309,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -7028,7 +7318,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zwyz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zwyz", 0usize
                         )
                     })
             });
@@ -7043,7 +7334,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -7052,7 +7343,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zwz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_zwz",
+                            0usize
                         )
                     })
             });
@@ -7067,7 +7359,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -7076,7 +7368,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zwzw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zwzw", 0usize
                         )
                     })
             });
@@ -7091,7 +7384,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -7100,7 +7393,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zwzx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zwzx", 0usize
                         )
                     })
             });
@@ -7115,7 +7409,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -7124,7 +7418,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zwzy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zwzy", 0usize
                         )
                     })
             });
@@ -7139,7 +7434,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -7148,7 +7443,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zwzz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zwzz", 0usize
                         )
                     })
             });
@@ -7163,12 +7459,13 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::Unity::Mathematics::int2, 0usize>("get_zx")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_zx",
+                            0usize
                         )
                     })
             });
@@ -7183,7 +7480,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -7192,7 +7489,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zxw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_zxw",
+                            0usize
                         )
                     })
             });
@@ -7207,7 +7505,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -7216,7 +7514,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zxww", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zxww", 0usize
                         )
                     })
             });
@@ -7231,7 +7530,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -7240,7 +7539,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zxwx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zxwx", 0usize
                         )
                     })
             });
@@ -7255,7 +7555,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -7264,7 +7564,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zxwy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zxwy", 0usize
                         )
                     })
             });
@@ -7279,7 +7580,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -7288,7 +7589,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zxwz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zxwz", 0usize
                         )
                     })
             });
@@ -7303,7 +7605,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -7312,7 +7614,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zxx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_zxx",
+                            0usize
                         )
                     })
             });
@@ -7327,7 +7630,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -7336,7 +7639,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zxxw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zxxw", 0usize
                         )
                     })
             });
@@ -7351,7 +7655,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -7360,7 +7664,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zxxx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zxxx", 0usize
                         )
                     })
             });
@@ -7375,7 +7680,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -7384,7 +7689,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zxxy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zxxy", 0usize
                         )
                     })
             });
@@ -7399,7 +7705,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -7408,7 +7714,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zxxz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zxxz", 0usize
                         )
                     })
             });
@@ -7423,7 +7730,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -7432,7 +7739,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zxy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_zxy",
+                            0usize
                         )
                     })
             });
@@ -7447,7 +7755,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -7456,7 +7764,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zxyw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zxyw", 0usize
                         )
                     })
             });
@@ -7471,7 +7780,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -7480,7 +7789,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zxyx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zxyx", 0usize
                         )
                     })
             });
@@ -7495,7 +7805,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -7504,7 +7814,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zxyy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zxyy", 0usize
                         )
                     })
             });
@@ -7519,7 +7830,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -7528,7 +7839,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zxyz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zxyz", 0usize
                         )
                     })
             });
@@ -7543,7 +7855,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -7552,7 +7864,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zxz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_zxz",
+                            0usize
                         )
                     })
             });
@@ -7567,7 +7880,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -7576,7 +7889,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zxzw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zxzw", 0usize
                         )
                     })
             });
@@ -7591,7 +7905,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -7600,7 +7914,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zxzx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zxzx", 0usize
                         )
                     })
             });
@@ -7615,7 +7930,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -7624,7 +7939,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zxzy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zxzy", 0usize
                         )
                     })
             });
@@ -7639,7 +7955,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -7648,7 +7964,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zxzz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zxzz", 0usize
                         )
                     })
             });
@@ -7663,12 +7980,13 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::Unity::Mathematics::int2, 0usize>("get_zy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_zy",
+                            0usize
                         )
                     })
             });
@@ -7683,7 +8001,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -7692,7 +8010,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zyw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_zyw",
+                            0usize
                         )
                     })
             });
@@ -7707,7 +8026,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -7716,7 +8035,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zyww", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zyww", 0usize
                         )
                     })
             });
@@ -7731,7 +8051,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -7740,7 +8060,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zywx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zywx", 0usize
                         )
                     })
             });
@@ -7755,7 +8076,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -7764,7 +8085,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zywy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zywy", 0usize
                         )
                     })
             });
@@ -7779,7 +8101,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -7788,7 +8110,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zywz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zywz", 0usize
                         )
                     })
             });
@@ -7803,7 +8126,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -7812,7 +8135,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zyx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_zyx",
+                            0usize
                         )
                     })
             });
@@ -7827,7 +8151,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -7836,7 +8160,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zyxw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zyxw", 0usize
                         )
                     })
             });
@@ -7851,7 +8176,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -7860,7 +8185,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zyxx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zyxx", 0usize
                         )
                     })
             });
@@ -7875,7 +8201,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -7884,7 +8210,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zyxy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zyxy", 0usize
                         )
                     })
             });
@@ -7899,7 +8226,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -7908,7 +8235,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zyxz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zyxz", 0usize
                         )
                     })
             });
@@ -7923,7 +8251,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -7932,7 +8260,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zyy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_zyy",
+                            0usize
                         )
                     })
             });
@@ -7947,7 +8276,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -7956,7 +8285,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zyyw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zyyw", 0usize
                         )
                     })
             });
@@ -7971,7 +8301,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -7980,7 +8310,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zyyx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zyyx", 0usize
                         )
                     })
             });
@@ -7995,7 +8326,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -8004,7 +8335,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zyyy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zyyy", 0usize
                         )
                     })
             });
@@ -8019,7 +8351,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -8028,7 +8360,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zyyz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zyyz", 0usize
                         )
                     })
             });
@@ -8043,7 +8376,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -8052,7 +8385,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zyz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_zyz",
+                            0usize
                         )
                     })
             });
@@ -8067,7 +8401,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -8076,7 +8410,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zyzw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zyzw", 0usize
                         )
                     })
             });
@@ -8091,7 +8426,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -8100,7 +8435,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zyzx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zyzx", 0usize
                         )
                     })
             });
@@ -8115,7 +8451,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -8124,7 +8460,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zyzy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zyzy", 0usize
                         )
                     })
             });
@@ -8139,7 +8476,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -8148,7 +8485,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zyzz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zyzz", 0usize
                         )
                     })
             });
@@ -8163,12 +8501,13 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::Unity::Mathematics::int2, 0usize>("get_zz")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_zz",
+                            0usize
                         )
                     })
             });
@@ -8183,7 +8522,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -8192,7 +8531,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zzw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_zzw",
+                            0usize
                         )
                     })
             });
@@ -8207,7 +8547,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -8216,7 +8556,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zzww", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zzww", 0usize
                         )
                     })
             });
@@ -8231,7 +8572,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -8240,7 +8581,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zzwx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zzwx", 0usize
                         )
                     })
             });
@@ -8255,7 +8597,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -8264,7 +8606,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zzwy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zzwy", 0usize
                         )
                     })
             });
@@ -8279,7 +8622,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -8288,7 +8631,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zzwz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zzwz", 0usize
                         )
                     })
             });
@@ -8303,7 +8647,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -8312,7 +8656,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zzx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_zzx",
+                            0usize
                         )
                     })
             });
@@ -8327,7 +8672,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -8336,7 +8681,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zzxw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zzxw", 0usize
                         )
                     })
             });
@@ -8351,7 +8697,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -8360,7 +8706,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zzxx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zzxx", 0usize
                         )
                     })
             });
@@ -8375,7 +8722,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -8384,7 +8731,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zzxy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zzxy", 0usize
                         )
                     })
             });
@@ -8399,7 +8747,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -8408,7 +8756,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zzxz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zzxz", 0usize
                         )
                     })
             });
@@ -8423,7 +8772,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -8432,7 +8781,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zzy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_zzy",
+                            0usize
                         )
                     })
             });
@@ -8447,7 +8797,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -8456,7 +8806,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zzyw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zzyw", 0usize
                         )
                     })
             });
@@ -8471,7 +8822,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -8480,7 +8831,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zzyx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zzyx", 0usize
                         )
                     })
             });
@@ -8495,7 +8847,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -8504,7 +8856,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zzyy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zzyy", 0usize
                         )
                     })
             });
@@ -8519,7 +8872,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -8528,7 +8881,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zzyz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zzyz", 0usize
                         )
                     })
             });
@@ -8543,7 +8897,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int3,
@@ -8552,7 +8906,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zzz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_zzz",
+                            0usize
                         )
                     })
             });
@@ -8567,7 +8922,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -8576,7 +8931,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zzzw", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zzzw", 0usize
                         )
                     })
             });
@@ -8591,7 +8947,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -8600,7 +8956,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zzzx", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zzzx", 0usize
                         )
                     })
             });
@@ -8615,7 +8972,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -8624,7 +8981,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zzzy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zzzy", 0usize
                         )
                     })
             });
@@ -8639,7 +8997,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Unity::Mathematics::int4,
@@ -8648,7 +9006,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_zzzz", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zzzz", 0usize
                         )
                     })
             });
@@ -8664,7 +9023,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, crate::Unity::Mathematics::int4),
                         crate::Unity::Mathematics::int4,
@@ -8673,7 +9032,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Addition", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Addition", 2usize
                         )
                     })
             });
@@ -8689,7 +9049,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::int4, i32),
                         crate::Unity::Mathematics::int4,
@@ -8698,7 +9058,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Addition", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Addition", 2usize
                         )
                     })
             });
@@ -8714,7 +9075,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Unity::Mathematics::int4,
@@ -8726,7 +9087,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Addition", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Addition", 2usize
                         )
                     })
             });
@@ -8742,7 +9104,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, crate::Unity::Mathematics::int4),
                         crate::Unity::Mathematics::int4,
@@ -8751,7 +9113,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_BitwiseAnd", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_BitwiseAnd", 2usize
                         )
                     })
             });
@@ -8767,7 +9130,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::int4, i32),
                         crate::Unity::Mathematics::int4,
@@ -8776,7 +9139,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_BitwiseAnd", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_BitwiseAnd", 2usize
                         )
                     })
             });
@@ -8792,7 +9156,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Unity::Mathematics::int4,
@@ -8804,7 +9168,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_BitwiseAnd", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_BitwiseAnd", 2usize
                         )
                     })
             });
@@ -8820,7 +9185,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, crate::Unity::Mathematics::int4),
                         crate::Unity::Mathematics::int4,
@@ -8829,7 +9194,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_BitwiseOr", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_BitwiseOr", 2usize
                         )
                     })
             });
@@ -8845,7 +9211,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::int4, i32),
                         crate::Unity::Mathematics::int4,
@@ -8854,7 +9220,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_BitwiseOr", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_BitwiseOr", 2usize
                         )
                     })
             });
@@ -8870,7 +9237,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Unity::Mathematics::int4,
@@ -8882,7 +9249,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_BitwiseOr", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_BitwiseOr", 2usize
                         )
                     })
             });
@@ -8897,7 +9265,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::int4),
                         crate::Unity::Mathematics::int4,
@@ -8906,7 +9274,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Decrement", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Decrement", 1usize
                         )
                     })
             });
@@ -8922,7 +9291,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, crate::Unity::Mathematics::int4),
                         crate::Unity::Mathematics::int4,
@@ -8931,7 +9300,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Division", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Division", 2usize
                         )
                     })
             });
@@ -8947,7 +9317,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::int4, i32),
                         crate::Unity::Mathematics::int4,
@@ -8956,7 +9326,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Division", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Division", 2usize
                         )
                     })
             });
@@ -8972,7 +9343,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Unity::Mathematics::int4,
@@ -8984,7 +9355,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Division", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Division", 2usize
                         )
                     })
             });
@@ -9000,7 +9372,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, crate::Unity::Mathematics::int4),
                         crate::Unity::Mathematics::bool4,
@@ -9009,7 +9381,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Equality", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Equality", 2usize
                         )
                     })
             });
@@ -9025,7 +9398,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::int4, i32),
                         crate::Unity::Mathematics::bool4,
@@ -9034,7 +9407,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Equality", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Equality", 2usize
                         )
                     })
             });
@@ -9050,7 +9424,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Unity::Mathematics::int4,
@@ -9062,7 +9436,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Equality", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Equality", 2usize
                         )
                     })
             });
@@ -9078,7 +9453,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, crate::Unity::Mathematics::int4),
                         crate::Unity::Mathematics::int4,
@@ -9087,7 +9462,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_ExclusiveOr", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_ExclusiveOr", 2usize
                         )
                     })
             });
@@ -9103,7 +9479,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::int4, i32),
                         crate::Unity::Mathematics::int4,
@@ -9112,7 +9488,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_ExclusiveOr", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_ExclusiveOr", 2usize
                         )
                     })
             });
@@ -9128,7 +9505,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Unity::Mathematics::int4,
@@ -9140,7 +9517,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_ExclusiveOr", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_ExclusiveOr", 2usize
                         )
                     })
             });
@@ -9155,7 +9533,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         crate::Unity::Mathematics::int4,
@@ -9164,7 +9542,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Explicit", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Explicit", 1usize
                         )
                     })
             });
@@ -9179,7 +9558,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::bool4),
                         crate::Unity::Mathematics::int4,
@@ -9188,7 +9567,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Explicit", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Explicit", 1usize
                         )
                     })
             });
@@ -9203,7 +9583,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::double4),
                         crate::Unity::Mathematics::int4,
@@ -9212,7 +9592,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Explicit", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Explicit", 1usize
                         )
                     })
             });
@@ -9227,7 +9608,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32),
                         crate::Unity::Mathematics::int4,
@@ -9236,7 +9617,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Explicit", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Explicit", 1usize
                         )
                     })
             });
@@ -9251,7 +9633,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f64),
                         crate::Unity::Mathematics::int4,
@@ -9260,7 +9642,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Explicit", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Explicit", 1usize
                         )
                     })
             });
@@ -9275,7 +9658,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::float4),
                         crate::Unity::Mathematics::int4,
@@ -9284,7 +9667,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Explicit", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Explicit", 1usize
                         )
                     })
             });
@@ -9299,7 +9683,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u32),
                         crate::Unity::Mathematics::int4,
@@ -9308,7 +9692,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Explicit", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Explicit", 1usize
                         )
                     })
             });
@@ -9323,7 +9708,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::uint4),
                         crate::Unity::Mathematics::int4,
@@ -9332,7 +9717,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Explicit", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Explicit", 1usize
                         )
                     })
             });
@@ -9348,7 +9734,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, crate::Unity::Mathematics::int4),
                         crate::Unity::Mathematics::bool4,
@@ -9357,7 +9743,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_GreaterThanOrEqual", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_GreaterThanOrEqual", 2usize
                         )
                     })
             });
@@ -9373,7 +9760,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::int4, i32),
                         crate::Unity::Mathematics::bool4,
@@ -9382,7 +9769,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_GreaterThanOrEqual", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_GreaterThanOrEqual", 2usize
                         )
                     })
             });
@@ -9398,7 +9786,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Unity::Mathematics::int4,
@@ -9410,7 +9798,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_GreaterThanOrEqual", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_GreaterThanOrEqual", 2usize
                         )
                     })
             });
@@ -9426,7 +9815,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, crate::Unity::Mathematics::int4),
                         crate::Unity::Mathematics::bool4,
@@ -9435,7 +9824,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_GreaterThan", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_GreaterThan", 2usize
                         )
                     })
             });
@@ -9451,7 +9841,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::int4, i32),
                         crate::Unity::Mathematics::bool4,
@@ -9460,7 +9850,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_GreaterThan", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_GreaterThan", 2usize
                         )
                     })
             });
@@ -9476,7 +9867,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Unity::Mathematics::int4,
@@ -9488,7 +9879,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_GreaterThan", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_GreaterThan", 2usize
                         )
                     })
             });
@@ -9503,7 +9895,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         crate::Unity::Mathematics::int4,
@@ -9512,7 +9904,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Implicit", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Implicit", 1usize
                         )
                     })
             });
@@ -9527,7 +9920,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::int4),
                         crate::Unity::Mathematics::int4,
@@ -9536,7 +9929,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Increment", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Increment", 1usize
                         )
                     })
             });
@@ -9552,7 +9946,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, crate::Unity::Mathematics::int4),
                         crate::Unity::Mathematics::bool4,
@@ -9561,7 +9955,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Inequality", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Inequality", 2usize
                         )
                     })
             });
@@ -9577,7 +9972,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::int4, i32),
                         crate::Unity::Mathematics::bool4,
@@ -9586,7 +9981,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Inequality", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Inequality", 2usize
                         )
                     })
             });
@@ -9602,7 +9998,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Unity::Mathematics::int4,
@@ -9614,7 +10010,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Inequality", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Inequality", 2usize
                         )
                     })
             });
@@ -9630,7 +10027,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::int4, i32),
                         crate::Unity::Mathematics::int4,
@@ -9639,7 +10036,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_LeftShift", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_LeftShift", 2usize
                         )
                     })
             });
@@ -9655,7 +10053,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, crate::Unity::Mathematics::int4),
                         crate::Unity::Mathematics::bool4,
@@ -9664,7 +10062,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_LessThanOrEqual", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_LessThanOrEqual", 2usize
                         )
                     })
             });
@@ -9680,7 +10079,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::int4, i32),
                         crate::Unity::Mathematics::bool4,
@@ -9689,7 +10088,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_LessThanOrEqual", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_LessThanOrEqual", 2usize
                         )
                     })
             });
@@ -9705,7 +10105,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Unity::Mathematics::int4,
@@ -9717,7 +10117,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_LessThanOrEqual", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_LessThanOrEqual", 2usize
                         )
                     })
             });
@@ -9733,7 +10134,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, crate::Unity::Mathematics::int4),
                         crate::Unity::Mathematics::bool4,
@@ -9742,7 +10143,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_LessThan", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_LessThan", 2usize
                         )
                     })
             });
@@ -9758,7 +10160,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::int4, i32),
                         crate::Unity::Mathematics::bool4,
@@ -9767,7 +10169,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_LessThan", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_LessThan", 2usize
                         )
                     })
             });
@@ -9783,7 +10186,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Unity::Mathematics::int4,
@@ -9795,7 +10198,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_LessThan", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_LessThan", 2usize
                         )
                     })
             });
@@ -9811,7 +10215,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, crate::Unity::Mathematics::int4),
                         crate::Unity::Mathematics::int4,
@@ -9820,7 +10224,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Modulus", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Modulus", 2usize
                         )
                     })
             });
@@ -9836,7 +10241,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::int4, i32),
                         crate::Unity::Mathematics::int4,
@@ -9845,7 +10250,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Modulus", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Modulus", 2usize
                         )
                     })
             });
@@ -9861,7 +10267,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Unity::Mathematics::int4,
@@ -9873,7 +10279,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Modulus", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Modulus", 2usize
                         )
                     })
             });
@@ -9889,7 +10296,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, crate::Unity::Mathematics::int4),
                         crate::Unity::Mathematics::int4,
@@ -9898,7 +10305,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Multiply", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Multiply", 2usize
                         )
                     })
             });
@@ -9914,7 +10322,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::int4, i32),
                         crate::Unity::Mathematics::int4,
@@ -9923,7 +10331,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Multiply", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Multiply", 2usize
                         )
                     })
             });
@@ -9939,7 +10348,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Unity::Mathematics::int4,
@@ -9951,7 +10360,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Multiply", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Multiply", 2usize
                         )
                     })
             });
@@ -9966,7 +10376,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::int4),
                         crate::Unity::Mathematics::int4,
@@ -9975,7 +10385,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_OnesComplement", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_OnesComplement", 1usize
                         )
                     })
             });
@@ -9991,7 +10402,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::int4, i32),
                         crate::Unity::Mathematics::int4,
@@ -10000,7 +10411,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_RightShift", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_RightShift", 2usize
                         )
                     })
             });
@@ -10016,7 +10428,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, crate::Unity::Mathematics::int4),
                         crate::Unity::Mathematics::int4,
@@ -10025,7 +10437,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Subtraction", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Subtraction", 2usize
                         )
                     })
             });
@@ -10041,7 +10454,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::int4, i32),
                         crate::Unity::Mathematics::int4,
@@ -10050,7 +10463,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Subtraction", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Subtraction", 2usize
                         )
                     })
             });
@@ -10066,7 +10480,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Unity::Mathematics::int4,
@@ -10078,7 +10492,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Subtraction", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Subtraction", 2usize
                         )
                     })
             });
@@ -10093,7 +10508,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::int4),
                         crate::Unity::Mathematics::int4,
@@ -10102,7 +10517,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_UnaryNegation", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_UnaryNegation", 1usize
                         )
                     })
             });
@@ -10117,7 +10533,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Unity::Mathematics::int4),
                         crate::Unity::Mathematics::int4,
@@ -10126,7 +10542,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_UnaryPlus", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_UnaryPlus", 1usize
                         )
                     })
             });
@@ -10143,7 +10560,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -10152,7 +10569,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Item", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Item", 2usize
                         )
                     })
             });
@@ -10168,7 +10586,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int2),
                         quest_hook::libil2cpp::Void,
@@ -10177,7 +10595,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_wx", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_wx",
+                            1usize
                         )
                     })
             });
@@ -10193,7 +10612,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int3),
                         quest_hook::libil2cpp::Void,
@@ -10202,7 +10621,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_wxy", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_wxy",
+                            1usize
                         )
                     })
             });
@@ -10218,7 +10638,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int4),
                         quest_hook::libil2cpp::Void,
@@ -10227,7 +10647,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_wxyz", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_wxyz", 1usize
                         )
                     })
             });
@@ -10243,7 +10664,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int3),
                         quest_hook::libil2cpp::Void,
@@ -10252,7 +10673,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_wxz", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_wxz",
+                            1usize
                         )
                     })
             });
@@ -10268,7 +10690,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int4),
                         quest_hook::libil2cpp::Void,
@@ -10277,7 +10699,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_wxzy", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_wxzy", 1usize
                         )
                     })
             });
@@ -10293,7 +10716,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int2),
                         quest_hook::libil2cpp::Void,
@@ -10302,7 +10725,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_wy", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_wy",
+                            1usize
                         )
                     })
             });
@@ -10318,7 +10742,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int3),
                         quest_hook::libil2cpp::Void,
@@ -10327,7 +10751,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_wyx", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_wyx",
+                            1usize
                         )
                     })
             });
@@ -10343,7 +10768,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int4),
                         quest_hook::libil2cpp::Void,
@@ -10352,7 +10777,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_wyxz", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_wyxz", 1usize
                         )
                     })
             });
@@ -10368,7 +10794,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int3),
                         quest_hook::libil2cpp::Void,
@@ -10377,7 +10803,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_wyz", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_wyz",
+                            1usize
                         )
                     })
             });
@@ -10393,7 +10820,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int4),
                         quest_hook::libil2cpp::Void,
@@ -10402,7 +10829,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_wyzx", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_wyzx", 1usize
                         )
                     })
             });
@@ -10418,7 +10846,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int2),
                         quest_hook::libil2cpp::Void,
@@ -10427,7 +10855,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_wz", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_wz",
+                            1usize
                         )
                     })
             });
@@ -10443,7 +10872,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int3),
                         quest_hook::libil2cpp::Void,
@@ -10452,7 +10881,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_wzx", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_wzx",
+                            1usize
                         )
                     })
             });
@@ -10468,7 +10898,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int4),
                         quest_hook::libil2cpp::Void,
@@ -10477,7 +10907,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_wzxy", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_wzxy", 1usize
                         )
                     })
             });
@@ -10493,7 +10924,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int3),
                         quest_hook::libil2cpp::Void,
@@ -10502,7 +10933,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_wzy", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_wzy",
+                            1usize
                         )
                     })
             });
@@ -10518,7 +10950,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int4),
                         quest_hook::libil2cpp::Void,
@@ -10527,7 +10959,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_wzyx", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_wzyx", 1usize
                         )
                     })
             });
@@ -10543,7 +10976,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int2),
                         quest_hook::libil2cpp::Void,
@@ -10552,7 +10985,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_xw", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_xw",
+                            1usize
                         )
                     })
             });
@@ -10568,7 +11002,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int3),
                         quest_hook::libil2cpp::Void,
@@ -10577,7 +11011,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_xwy", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_xwy",
+                            1usize
                         )
                     })
             });
@@ -10593,7 +11028,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int4),
                         quest_hook::libil2cpp::Void,
@@ -10602,7 +11037,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_xwyz", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_xwyz", 1usize
                         )
                     })
             });
@@ -10618,7 +11054,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int3),
                         quest_hook::libil2cpp::Void,
@@ -10627,7 +11063,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_xwz", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_xwz",
+                            1usize
                         )
                     })
             });
@@ -10643,7 +11080,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int4),
                         quest_hook::libil2cpp::Void,
@@ -10652,7 +11089,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_xwzy", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_xwzy", 1usize
                         )
                     })
             });
@@ -10668,7 +11106,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int2),
                         quest_hook::libil2cpp::Void,
@@ -10677,7 +11115,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_xy", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_xy",
+                            1usize
                         )
                     })
             });
@@ -10693,7 +11132,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int3),
                         quest_hook::libil2cpp::Void,
@@ -10702,7 +11141,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_xyw", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_xyw",
+                            1usize
                         )
                     })
             });
@@ -10718,7 +11158,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int4),
                         quest_hook::libil2cpp::Void,
@@ -10727,7 +11167,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_xywz", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_xywz", 1usize
                         )
                     })
             });
@@ -10743,7 +11184,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int3),
                         quest_hook::libil2cpp::Void,
@@ -10752,7 +11193,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_xyz", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_xyz",
+                            1usize
                         )
                     })
             });
@@ -10768,7 +11210,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int4),
                         quest_hook::libil2cpp::Void,
@@ -10777,7 +11219,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_xyzw", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_xyzw", 1usize
                         )
                     })
             });
@@ -10793,7 +11236,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int2),
                         quest_hook::libil2cpp::Void,
@@ -10802,7 +11245,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_xz", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_xz",
+                            1usize
                         )
                     })
             });
@@ -10818,7 +11262,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int3),
                         quest_hook::libil2cpp::Void,
@@ -10827,7 +11271,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_xzw", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_xzw",
+                            1usize
                         )
                     })
             });
@@ -10843,7 +11288,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int4),
                         quest_hook::libil2cpp::Void,
@@ -10852,7 +11297,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_xzwy", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_xzwy", 1usize
                         )
                     })
             });
@@ -10868,7 +11314,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int3),
                         quest_hook::libil2cpp::Void,
@@ -10877,7 +11323,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_xzy", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_xzy",
+                            1usize
                         )
                     })
             });
@@ -10893,7 +11340,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int4),
                         quest_hook::libil2cpp::Void,
@@ -10902,7 +11349,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_xzyw", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_xzyw", 1usize
                         )
                     })
             });
@@ -10918,7 +11366,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int2),
                         quest_hook::libil2cpp::Void,
@@ -10927,7 +11375,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_yw", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_yw",
+                            1usize
                         )
                     })
             });
@@ -10943,7 +11392,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int3),
                         quest_hook::libil2cpp::Void,
@@ -10952,7 +11401,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_ywx", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_ywx",
+                            1usize
                         )
                     })
             });
@@ -10968,7 +11418,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int4),
                         quest_hook::libil2cpp::Void,
@@ -10977,7 +11427,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_ywxz", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_ywxz", 1usize
                         )
                     })
             });
@@ -10993,7 +11444,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int3),
                         quest_hook::libil2cpp::Void,
@@ -11002,7 +11453,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_ywz", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_ywz",
+                            1usize
                         )
                     })
             });
@@ -11018,7 +11470,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int4),
                         quest_hook::libil2cpp::Void,
@@ -11027,7 +11479,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_ywzx", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_ywzx", 1usize
                         )
                     })
             });
@@ -11043,7 +11496,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int2),
                         quest_hook::libil2cpp::Void,
@@ -11052,7 +11505,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_yx", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_yx",
+                            1usize
                         )
                     })
             });
@@ -11068,7 +11522,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int3),
                         quest_hook::libil2cpp::Void,
@@ -11077,7 +11531,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_yxw", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_yxw",
+                            1usize
                         )
                     })
             });
@@ -11093,7 +11548,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int4),
                         quest_hook::libil2cpp::Void,
@@ -11102,7 +11557,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_yxwz", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_yxwz", 1usize
                         )
                     })
             });
@@ -11118,7 +11574,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int3),
                         quest_hook::libil2cpp::Void,
@@ -11127,7 +11583,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_yxz", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_yxz",
+                            1usize
                         )
                     })
             });
@@ -11143,7 +11600,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int4),
                         quest_hook::libil2cpp::Void,
@@ -11152,7 +11609,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_yxzw", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_yxzw", 1usize
                         )
                     })
             });
@@ -11168,7 +11626,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int2),
                         quest_hook::libil2cpp::Void,
@@ -11177,7 +11635,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_yz", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_yz",
+                            1usize
                         )
                     })
             });
@@ -11193,7 +11652,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int3),
                         quest_hook::libil2cpp::Void,
@@ -11202,7 +11661,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_yzw", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_yzw",
+                            1usize
                         )
                     })
             });
@@ -11218,7 +11678,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int4),
                         quest_hook::libil2cpp::Void,
@@ -11227,7 +11687,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_yzwx", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_yzwx", 1usize
                         )
                     })
             });
@@ -11243,7 +11704,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int3),
                         quest_hook::libil2cpp::Void,
@@ -11252,7 +11713,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_yzx", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_yzx",
+                            1usize
                         )
                     })
             });
@@ -11268,7 +11730,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int4),
                         quest_hook::libil2cpp::Void,
@@ -11277,7 +11739,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_yzxw", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_yzxw", 1usize
                         )
                     })
             });
@@ -11293,7 +11756,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int2),
                         quest_hook::libil2cpp::Void,
@@ -11302,7 +11765,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_zw", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_zw",
+                            1usize
                         )
                     })
             });
@@ -11318,7 +11782,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int3),
                         quest_hook::libil2cpp::Void,
@@ -11327,7 +11791,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_zwx", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_zwx",
+                            1usize
                         )
                     })
             });
@@ -11343,7 +11808,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int4),
                         quest_hook::libil2cpp::Void,
@@ -11352,7 +11817,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_zwxy", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_zwxy", 1usize
                         )
                     })
             });
@@ -11368,7 +11834,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int3),
                         quest_hook::libil2cpp::Void,
@@ -11377,7 +11843,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_zwy", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_zwy",
+                            1usize
                         )
                     })
             });
@@ -11393,7 +11860,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int4),
                         quest_hook::libil2cpp::Void,
@@ -11402,7 +11869,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_zwyx", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_zwyx", 1usize
                         )
                     })
             });
@@ -11418,7 +11886,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int2),
                         quest_hook::libil2cpp::Void,
@@ -11427,7 +11895,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_zx", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_zx",
+                            1usize
                         )
                     })
             });
@@ -11443,7 +11912,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int3),
                         quest_hook::libil2cpp::Void,
@@ -11452,7 +11921,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_zxw", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_zxw",
+                            1usize
                         )
                     })
             });
@@ -11468,7 +11938,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int4),
                         quest_hook::libil2cpp::Void,
@@ -11477,7 +11947,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_zxwy", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_zxwy", 1usize
                         )
                     })
             });
@@ -11493,7 +11964,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int3),
                         quest_hook::libil2cpp::Void,
@@ -11502,7 +11973,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_zxy", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_zxy",
+                            1usize
                         )
                     })
             });
@@ -11518,7 +11990,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int4),
                         quest_hook::libil2cpp::Void,
@@ -11527,7 +11999,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_zxyw", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_zxyw", 1usize
                         )
                     })
             });
@@ -11543,7 +12016,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int2),
                         quest_hook::libil2cpp::Void,
@@ -11552,7 +12025,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_zy", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_zy",
+                            1usize
                         )
                     })
             });
@@ -11568,7 +12042,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int3),
                         quest_hook::libil2cpp::Void,
@@ -11577,7 +12051,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_zyw", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_zyw",
+                            1usize
                         )
                     })
             });
@@ -11593,7 +12068,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int4),
                         quest_hook::libil2cpp::Void,
@@ -11602,7 +12077,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_zywx", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_zywx", 1usize
                         )
                     })
             });
@@ -11618,7 +12094,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int3),
                         quest_hook::libil2cpp::Void,
@@ -11627,7 +12103,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_zyx", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_zyx",
+                            1usize
                         )
                     })
             });
@@ -11643,7 +12120,7 @@ impl crate::Unity::Mathematics::int4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int4),
                         quest_hook::libil2cpp::Void,
@@ -11652,7 +12129,8 @@ impl crate::Unity::Mathematics::int4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_zyxw", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_zyxw", 1usize
                         )
                     })
             });
@@ -11751,7 +12229,7 @@ impl crate::Unity::Mathematics::int4_DebuggerProxy {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Unity::Mathematics::int4),
                         quest_hook::libil2cpp::Void,
@@ -11760,7 +12238,8 @@ impl crate::Unity::Mathematics::int4_DebuggerProxy {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });

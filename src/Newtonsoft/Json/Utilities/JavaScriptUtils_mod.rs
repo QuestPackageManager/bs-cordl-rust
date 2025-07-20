@@ -51,7 +51,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -68,7 +68,8 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FirstCharToEscape", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FirstCharToEscape", 3usize
                         )
                     })
             });
@@ -86,7 +87,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::Newtonsoft::Json::StringEscapeHandling, char),
                         quest_hook::libil2cpp::Gc<
@@ -97,7 +98,8 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCharEscapeFlags", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCharEscapeFlags", 2usize
                         )
                     })
             });
@@ -115,7 +117,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -131,7 +133,8 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShouldEscapeJavaScriptString", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShouldEscapeJavaScriptString", 2usize
                         )
                     })
             });
@@ -151,7 +154,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -167,7 +170,8 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToEscapedJavaScriptString", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToEscapedJavaScriptString", 4usize
                         )
                     })
             });
@@ -192,7 +196,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -213,7 +217,8 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGetDateConstructorValue", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetDateConstructorValue", 3usize
                         )
                     })
             });
@@ -232,7 +237,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -251,7 +256,8 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGetDateFromConstructorJson", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetDateFromConstructorJson", 3usize
                         )
                     })
             });
@@ -271,7 +277,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -287,7 +293,8 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteCharAsync", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteCharAsync", 4usize
                         )
                     })
             });
@@ -315,7 +322,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
@@ -341,7 +348,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "WriteDefinitelyEscapedJavaScriptStringWithoutDelimitersAsync",
                             8usize
                         )
@@ -386,7 +393,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
@@ -414,7 +421,8 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteEscapedJavaScriptString", 8usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteEscapedJavaScriptString", 8usize
                         )
                     })
             });
@@ -454,7 +462,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
@@ -481,7 +489,8 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteEscapedJavaScriptStringAsync", 9usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteEscapedJavaScriptStringAsync", 9usize
                         )
                     })
             });
@@ -524,7 +533,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -553,7 +562,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "WriteEscapedJavaScriptStringWithDelimitersAsync", 9usize
                         )
                     })
@@ -596,7 +605,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
@@ -622,7 +631,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "WriteEscapedJavaScriptStringWithDelimitersAsync", 8usize
                         )
                     })
@@ -663,7 +672,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
@@ -688,7 +697,7 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "WriteEscapedJavaScriptStringWithoutDelimitersAsync", 7usize
                         )
                     })

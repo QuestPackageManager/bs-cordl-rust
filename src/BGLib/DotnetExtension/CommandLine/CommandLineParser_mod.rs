@@ -54,7 +54,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -76,7 +76,8 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddParsedOption", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddParsedOption", 3usize
                         )
                     })
             });
@@ -97,7 +98,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<
@@ -110,7 +111,8 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenerateHint", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateHint", 1usize
                         )
                     })
             });
@@ -139,7 +141,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -164,7 +166,8 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GenerateOptionsMap", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GenerateOptionsMap", 2usize
                         )
                     })
             });
@@ -186,7 +189,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -201,7 +204,8 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCommandLineArgs", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCommandLineArgs", 0usize
                         )
                     })
             });
@@ -249,7 +253,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -299,7 +303,8 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseArgs", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseArgs", 6usize
                         )
                     })
             });
@@ -336,7 +341,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -358,7 +363,8 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseCommandLine", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseCommandLine", 2usize
                         )
                     })
             });
@@ -379,7 +385,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -392,7 +398,8 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseEnvironmentCommandLine", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseEnvironmentCommandLine", 1usize
                         )
                     })
             });
@@ -417,7 +424,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<
@@ -434,7 +441,8 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SelectRequiredOptions", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SelectRequiredOptions", 1usize
                         )
                     })
             });

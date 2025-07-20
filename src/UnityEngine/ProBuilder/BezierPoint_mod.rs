@@ -111,7 +111,7 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::ProBuilder::BezierPoint,
@@ -124,7 +124,8 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CubicPosition", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CubicPosition", 3usize
                         )
                     })
             });
@@ -141,7 +142,7 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::ProBuilder::BezierTangentDirection,
@@ -153,7 +154,8 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnforceTangentMode", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnforceTangentMode", 2usize
                         )
                     })
             });
@@ -175,7 +177,7 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -193,7 +195,8 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLookDirection", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLookDirection", 4usize
                         )
                     })
             });
@@ -210,7 +213,7 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::ProBuilder::BezierPoint,
@@ -223,7 +226,8 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "QuadraticPosition", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "QuadraticPosition", 3usize
                         )
                     })
             });
@@ -239,7 +243,7 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector3),
                         quest_hook::libil2cpp::Void,
@@ -248,7 +252,8 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetPosition", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetPosition", 1usize
                         )
                     })
             });
@@ -265,7 +270,7 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Vector3,
@@ -277,7 +282,8 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetTangentIn", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetTangentIn", 2usize
                         )
                     })
             });
@@ -294,7 +300,7 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Vector3,
@@ -306,7 +312,8 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetTangentOut", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetTangentOut", 2usize
                         )
                     })
             });
@@ -325,7 +332,7 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::UnityEngine::Vector3,
@@ -339,7 +346,8 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
                         )
                     })
             });

@@ -53,7 +53,7 @@ impl crate::UnityEngine::InputSystem::Composites::ButtonWithOneModifier {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::UnityEngine::InputSystem::InputBindingCompositeContext,
@@ -64,7 +64,8 @@ impl crate::UnityEngine::InputSystem::Composites::ButtonWithOneModifier {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EvaluateMagnitude", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EvaluateMagnitude", 1usize
                         )
                     })
             });
@@ -80,7 +81,7 @@ impl crate::UnityEngine::InputSystem::Composites::ButtonWithOneModifier {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::UnityEngine::InputSystem::InputBindingCompositeContext,
@@ -91,7 +92,8 @@ impl crate::UnityEngine::InputSystem::Composites::ButtonWithOneModifier {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FinishSetup", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FinishSetup", 1usize
                         )
                     })
             });
@@ -109,7 +111,7 @@ impl crate::UnityEngine::InputSystem::Composites::ButtonWithOneModifier {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::UnityEngine::InputSystem::InputBindingCompositeContext,
@@ -120,7 +122,8 @@ impl crate::UnityEngine::InputSystem::Composites::ButtonWithOneModifier {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ModifierIsPressed", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ModifierIsPressed", 1usize
                         )
                     })
             });
@@ -143,7 +146,7 @@ impl crate::UnityEngine::InputSystem::Composites::ButtonWithOneModifier {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::UnityEngine::InputSystem::InputBindingCompositeContext,
@@ -154,7 +157,8 @@ impl crate::UnityEngine::InputSystem::Composites::ButtonWithOneModifier {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadValue", 1usize
                         )
                     })
             });
@@ -167,12 +171,13 @@ impl crate::UnityEngine::InputSystem::Composites::ButtonWithOneModifier {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

@@ -66,12 +66,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Buffers::MemoryManager_1<T> 
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::System::Span_1<T>, 0usize>("GetSpan")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSpan", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetSpan",
+                            0usize
                         )
                     })
             });
@@ -91,7 +92,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Buffers::MemoryManager_1<T> 
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         crate::System::Buffers::MemoryHandle,
@@ -100,7 +101,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Buffers::MemoryManager_1<T> 
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Pin", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Pin",
+                            1usize
                         )
                     })
             });
@@ -120,7 +122,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Buffers::MemoryManager_1<T> 
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::System::ArraySegment_1<T>,
@@ -131,7 +133,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Buffers::MemoryManager_1<T> 
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryGetArray", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetArray", 1usize
                         )
                     })
             });

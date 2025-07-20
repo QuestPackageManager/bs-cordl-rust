@@ -59,7 +59,7 @@ impl crate::Unity::XR::Oculus::OculusRestarter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -68,7 +68,8 @@ impl crate::Unity::XR::Oculus::OculusRestarter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PauseAndRestart", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PauseAndRestart", 0usize
                         )
                     })
             });
@@ -86,7 +87,7 @@ impl crate::Unity::XR::Oculus::OculusRestarter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Gc<
@@ -97,7 +98,8 @@ impl crate::Unity::XR::Oculus::OculusRestarter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PauseAndRestartCoroutine", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PauseAndRestartCoroutine", 1usize
                         )
                     })
             });
@@ -112,7 +114,7 @@ impl crate::Unity::XR::Oculus::OculusRestarter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -121,7 +123,8 @@ impl crate::Unity::XR::Oculus::OculusRestarter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResetCallbacks", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResetCallbacks", 0usize
                         )
                     })
             });
@@ -139,7 +142,7 @@ impl crate::Unity::XR::Oculus::OculusRestarter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Gc<
@@ -150,7 +153,8 @@ impl crate::Unity::XR::Oculus::OculusRestarter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RestartCoroutine", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RestartCoroutine", 1usize
                         )
                     })
             });
@@ -165,12 +169,13 @@ impl crate::Unity::XR::Oculus::OculusRestarter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -185,7 +190,7 @@ impl crate::Unity::XR::Oculus::OculusRestarter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -196,7 +201,8 @@ impl crate::Unity::XR::Oculus::OculusRestarter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Instance", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Instance", 0usize
                         )
                     })
             });
@@ -209,12 +215,13 @@ impl crate::Unity::XR::Oculus::OculusRestarter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("get_PauseAndRestartAttempts")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_PauseAndRestartAttempts", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_PauseAndRestartAttempts", 0usize
                         )
                     })
             });
@@ -225,7 +232,7 @@ impl crate::Unity::XR::Oculus::OculusRestarter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         f32,
@@ -234,7 +241,8 @@ impl crate::Unity::XR::Oculus::OculusRestarter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_TimeBetweenRestartAttempts", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_TimeBetweenRestartAttempts", 0usize
                         )
                     })
             });
@@ -245,12 +253,13 @@ impl crate::Unity::XR::Oculus::OculusRestarter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isRunning")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_isRunning", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isRunning", 0usize
                         )
                     })
             });
@@ -263,7 +272,7 @@ impl crate::Unity::XR::Oculus::OculusRestarter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -272,7 +281,8 @@ impl crate::Unity::XR::Oculus::OculusRestarter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_TimeBetweenRestartAttempts", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_TimeBetweenRestartAttempts", 1usize
                         )
                     })
             });

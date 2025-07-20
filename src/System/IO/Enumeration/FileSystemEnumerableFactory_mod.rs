@@ -53,7 +53,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -76,7 +76,8 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DirectoryInfos", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DirectoryInfos", 3usize
                         )
                     })
             });
@@ -101,7 +102,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -124,7 +125,8 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FileInfos", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FileInfos", 3usize
                         )
                     })
             });
@@ -149,7 +151,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -172,7 +174,8 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FileSystemInfos", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FileSystemInfos", 3usize
                         )
                     })
             });
@@ -191,7 +194,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -208,7 +211,8 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MatchesPattern", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MatchesPattern", 3usize
                         )
                     })
             });
@@ -229,7 +233,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -252,7 +256,8 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NormalizeInputs", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NormalizeInputs", 3usize
                         )
                     })
             });
@@ -275,7 +280,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -300,7 +305,8 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UserDirectories", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UserDirectories", 3usize
                         )
                     })
             });
@@ -325,7 +331,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -350,7 +356,8 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UserEntries", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UserEntries", 3usize
                         )
                     })
             });
@@ -375,7 +382,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -400,7 +407,8 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UserFiles", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UserFiles", 3usize
                         )
                     })
             });

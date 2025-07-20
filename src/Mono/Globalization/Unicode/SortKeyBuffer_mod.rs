@@ -72,7 +72,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             u8,
@@ -89,7 +89,8 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AppendBufferPrimitive", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AppendBufferPrimitive", 3usize
                         )
                     })
             });
@@ -106,7 +107,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u8, u8),
                         quest_hook::libil2cpp::Void,
@@ -115,7 +116,8 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AppendCJKExtension", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AppendCJKExtension", 2usize
                         )
                     })
             });
@@ -138,7 +140,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u8, u8, u8, u8, bool, u8, bool, bool),
                         quest_hook::libil2cpp::Void,
@@ -147,7 +149,8 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AppendKana", 8usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AppendKana", 8usize
                         )
                     })
             });
@@ -177,7 +180,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u8, u8),
                         quest_hook::libil2cpp::Void,
@@ -186,7 +189,8 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AppendLevel5", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AppendLevel5", 2usize
                         )
                     })
             });
@@ -205,7 +209,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (u8, u8, u8, u8),
                         quest_hook::libil2cpp::Void,
@@ -214,7 +218,8 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AppendNormal", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AppendNormal", 4usize
                         )
                     })
             });
@@ -232,7 +237,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -247,7 +252,8 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetOptimizedLength", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetOptimizedLength", 3usize
                         )
                     })
             });
@@ -264,7 +270,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Globalization::SortKey>,
@@ -273,7 +279,8 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetResult", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetResult", 0usize
                         )
                     })
             });
@@ -290,7 +297,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Globalization::SortKey>,
@@ -299,7 +306,8 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetResultAndReset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetResultAndReset", 0usize
                         )
                     })
             });
@@ -318,7 +326,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Globalization::CompareOptions,
@@ -334,7 +342,8 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize", 4usize
                         )
                     })
             });
@@ -358,12 +367,13 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Reset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Reset",
+                            0usize
                         )
                     })
             });
@@ -379,12 +389,13 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });

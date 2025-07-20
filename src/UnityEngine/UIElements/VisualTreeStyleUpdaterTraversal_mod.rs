@@ -79,7 +79,7 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -93,7 +93,8 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddChangedElement", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddChangedElement", 2usize
                         )
                     })
             });
@@ -114,7 +115,7 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -130,8 +131,8 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CancelAnimationsWithNoTransitionProperty",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CancelAnimationsWithNoTransitionProperty", 2usize
                         )
                     })
             });
@@ -146,12 +147,13 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Clear", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Clear",
+                            0usize
                         )
                     })
             });
@@ -167,7 +169,7 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::VisualElement,
@@ -178,7 +180,8 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ForceUpdateTransitions", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ForceUpdateTransitions", 1usize
                         )
                     })
             });
@@ -203,7 +206,7 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -217,7 +220,8 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnProcessMatchResult", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnProcessMatchResult", 2usize
                         )
                     })
             });
@@ -233,7 +237,7 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -242,7 +246,8 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PrepareTraversal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PrepareTraversal", 1usize
                         )
                     })
             });
@@ -265,7 +270,7 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -283,7 +288,8 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessMatchedRules", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessMatchedRules", 2usize
                         )
                     })
             });
@@ -300,7 +306,7 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -316,7 +322,8 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessMatchedVariables", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessMatchedVariables", 2usize
                         )
                     })
             });
@@ -340,7 +347,7 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -359,7 +366,8 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProcessTransitions", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessTransitions", 3usize
                         )
                     })
             });
@@ -375,7 +383,7 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::VisualElement,
@@ -386,7 +394,8 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PropagateToChildren", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PropagateToChildren", 1usize
                         )
                     })
             });
@@ -402,7 +411,7 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::VisualElement,
@@ -413,7 +422,8 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PropagateToParents", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PropagateToParents", 1usize
                         )
                     })
             });
@@ -429,7 +439,7 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::VisualElement,
@@ -440,7 +450,8 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShouldSkipElement", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShouldSkipElement", 1usize
                         )
                     })
             });
@@ -457,7 +468,7 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -471,7 +482,8 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TraverseRecursive", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TraverseRecursive", 2usize
                         )
                     })
             });
@@ -486,12 +498,13 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -504,12 +517,13 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_currentPixelsPerPoint")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_currentPixelsPerPoint", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_currentPixelsPerPoint", 0usize
                         )
                     })
             });
@@ -523,7 +537,7 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -532,7 +546,8 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_currentPixelsPerPoint", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_currentPixelsPerPoint", 1usize
                         )
                     })
             });

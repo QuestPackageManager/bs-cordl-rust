@@ -54,7 +54,7 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -63,7 +63,8 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ChangeRotation", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ChangeRotation", 1usize
                         )
                     })
             });
@@ -80,7 +81,7 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -91,7 +92,8 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCopy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetCopy",
+                            0usize
                         )
                     })
             });
@@ -108,7 +110,7 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -119,7 +121,8 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetDefault", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDefault", 0usize
                         )
                     })
             });
@@ -166,7 +169,7 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, i32, crate::GlobalNamespace::LightAxis),
                         i32,
@@ -175,7 +178,8 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SubtypeIdentifier", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SubtypeIdentifier", 3usize
                         )
                     })
             });
@@ -199,7 +203,7 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             f32,
@@ -218,7 +222,8 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 9usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            9usize
                         )
                     })
             });
@@ -247,7 +252,7 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::LightAxis,
@@ -256,7 +261,8 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_axis", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_axis", 0usize
                         )
                     })
             });
@@ -271,7 +277,7 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::EaseType,
@@ -280,7 +286,8 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_easeType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_easeType", 0usize
                         )
                     })
             });
@@ -293,12 +300,13 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_elementId")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_elementId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_elementId", 0usize
                         )
                     })
             });
@@ -309,12 +317,13 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_groupId")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_groupId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_groupId", 0usize
                         )
                     })
             });
@@ -325,12 +334,13 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_loopCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_loopCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_loopCount", 0usize
                         )
                     })
             });
@@ -341,12 +351,13 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_rotation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rotation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rotation", 0usize
                         )
                     })
             });
@@ -359,7 +370,7 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::LightRotationDirection,
@@ -368,7 +379,8 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rotationDirection", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rotationDirection", 0usize
                         )
                     })
             });
@@ -381,12 +393,13 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_usePreviousEventValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_usePreviousEventValue", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_usePreviousEventValue", 0usize
                         )
                     })
             });
@@ -400,7 +413,7 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::LightAxis),
                         quest_hook::libil2cpp::Void,
@@ -409,7 +422,8 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_axis", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_axis", 1usize
                         )
                     })
             });
@@ -425,7 +439,7 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::EaseType),
                         quest_hook::libil2cpp::Void,
@@ -434,7 +448,8 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_easeType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_easeType", 1usize
                         )
                     })
             });
@@ -450,7 +465,7 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -459,7 +474,8 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_elementId", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_elementId", 1usize
                         )
                     })
             });
@@ -475,7 +491,7 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -484,7 +500,8 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_groupId", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_groupId", 1usize
                         )
                     })
             });
@@ -500,7 +517,7 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -509,7 +526,8 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_loopCount", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_loopCount", 1usize
                         )
                     })
             });
@@ -525,7 +543,7 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -534,7 +552,8 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_rotation", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_rotation", 1usize
                         )
                     })
             });
@@ -550,7 +569,7 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::LightRotationDirection),
                         quest_hook::libil2cpp::Void,
@@ -559,7 +578,8 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_rotationDirection", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_rotationDirection", 1usize
                         )
                     })
             });
@@ -575,7 +595,7 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -584,7 +604,8 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_usePreviousEventValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_usePreviousEventValue", 1usize
                         )
                     })
             });

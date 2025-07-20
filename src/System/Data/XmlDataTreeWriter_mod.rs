@@ -58,7 +58,7 @@ impl crate::System::Data::XmlDataTreeWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>),
                         quest_hook::libil2cpp::Void,
@@ -67,7 +67,8 @@ impl crate::System::Data::XmlDataTreeWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateTablesHierarchy", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateTablesHierarchy", 1usize
                         )
                     })
             });
@@ -88,7 +89,7 @@ impl crate::System::Data::XmlDataTreeWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -101,7 +102,8 @@ impl crate::System::Data::XmlDataTreeWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateToplevelTables", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateToplevelTables", 0usize
                         )
                     })
             });
@@ -121,7 +123,7 @@ impl crate::System::Data::XmlDataTreeWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>),
                         quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
@@ -130,7 +132,8 @@ impl crate::System::Data::XmlDataTreeWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNestedChildRelations", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNestedChildRelations", 1usize
                         )
                     })
             });
@@ -164,7 +167,7 @@ impl crate::System::Data::XmlDataTreeWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         bool,
@@ -173,7 +176,8 @@ impl crate::System::Data::XmlDataTreeWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PreserveSpace", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PreserveSpace", 1usize
                         )
                     })
             });
@@ -186,7 +190,7 @@ impl crate::System::Data::XmlDataTreeWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>),
                         bool,
@@ -195,7 +199,8 @@ impl crate::System::Data::XmlDataTreeWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RowHasErrors", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RowHasErrors", 1usize
                         )
                     })
             });
@@ -210,7 +215,7 @@ impl crate::System::Data::XmlDataTreeWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>, bool),
                         quest_hook::libil2cpp::Void,
@@ -219,7 +224,8 @@ impl crate::System::Data::XmlDataTreeWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Save", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Save",
+                            2usize
                         )
                     })
             });
@@ -236,7 +242,7 @@ impl crate::System::Data::XmlDataTreeWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
@@ -250,7 +256,8 @@ impl crate::System::Data::XmlDataTreeWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SaveDiffgramData", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SaveDiffgramData", 2usize
                         )
                     })
             });
@@ -267,7 +274,7 @@ impl crate::System::Data::XmlDataTreeWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
@@ -281,7 +288,8 @@ impl crate::System::Data::XmlDataTreeWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "XmlDataRowWriter", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "XmlDataRowWriter", 2usize
                         )
                     })
             });
@@ -297,7 +305,7 @@ impl crate::System::Data::XmlDataTreeWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>),
                         quest_hook::libil2cpp::Void,
@@ -306,7 +314,8 @@ impl crate::System::Data::XmlDataTreeWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -323,7 +332,7 @@ impl crate::System::Data::XmlDataTreeWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
@@ -335,7 +344,8 @@ impl crate::System::Data::XmlDataTreeWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });

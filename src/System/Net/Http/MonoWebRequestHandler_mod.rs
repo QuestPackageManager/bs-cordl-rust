@@ -84,7 +84,7 @@ impl crate::System::Net::Http::MonoWebRequestHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -103,7 +103,8 @@ impl crate::System::Net::Http::MonoWebRequestHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateResponseMessage", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateResponseMessage", 3usize
                         )
                     })
             });
@@ -123,7 +124,7 @@ impl crate::System::Net::Http::MonoWebRequestHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Net::Http::HttpRequestMessage,
@@ -134,7 +135,8 @@ impl crate::System::Net::Http::MonoWebRequestHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateWebRequest", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateWebRequest", 1usize
                         )
                     })
             });
@@ -149,12 +151,13 @@ impl crate::System::Net::Http::MonoWebRequestHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Dispose", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            0usize
                         )
                     })
             });
@@ -170,7 +173,7 @@ impl crate::System::Net::Http::MonoWebRequestHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -179,7 +182,8 @@ impl crate::System::Net::Http::MonoWebRequestHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Dispose", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            1usize
                         )
                     })
             });
@@ -194,7 +198,7 @@ impl crate::System::Net::Http::MonoWebRequestHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -203,7 +207,8 @@ impl crate::System::Net::Http::MonoWebRequestHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnsureModifiability", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnsureModifiability", 0usize
                         )
                     })
             });
@@ -221,7 +226,7 @@ impl crate::System::Net::Http::MonoWebRequestHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Net::Http::Headers::HttpRequestHeaders,
@@ -232,7 +237,8 @@ impl crate::System::Net::Http::MonoWebRequestHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetConnectionKeepAlive", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetConnectionKeepAlive", 1usize
                         )
                     })
             });
@@ -245,7 +251,7 @@ impl crate::System::Net::Http::MonoWebRequestHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Net::Http::HttpMethod,
@@ -256,7 +262,8 @@ impl crate::System::Net::Http::MonoWebRequestHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MethodHasBody", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MethodHasBody", 1usize
                         )
                     })
             });
@@ -284,7 +291,7 @@ impl crate::System::Net::Http::MonoWebRequestHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -304,7 +311,8 @@ impl crate::System::Net::Http::MonoWebRequestHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SendAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SendAsync", 2usize
                         )
                     })
             });
@@ -322,7 +330,7 @@ impl crate::System::Net::Http::MonoWebRequestHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::TimeSpan),
                         quest_hook::libil2cpp::Void,
@@ -331,7 +339,7 @@ impl crate::System::Net::Http::MonoWebRequestHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "System.Net.Http.IMonoHttpClientHandler.SetWebRequestTimeout",
                             1usize
                         )
@@ -364,7 +372,7 @@ impl crate::System::Net::Http::MonoWebRequestHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -392,7 +400,8 @@ impl crate::System::Net::Http::MonoWebRequestHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<CreateWebRequest>b__96_0", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<CreateWebRequest>b__96_0", 4usize
                         )
                     })
             });
@@ -407,12 +416,13 @@ impl crate::System::Net::Http::MonoWebRequestHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -429,7 +439,7 @@ impl crate::System::Net::Http::MonoWebRequestHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Net::CookieContainer>,
@@ -438,7 +448,8 @@ impl crate::System::Net::Http::MonoWebRequestHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CookieContainer", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CookieContainer", 0usize
                         )
                     })
             });
@@ -453,12 +464,13 @@ impl crate::System::Net::Http::MonoWebRequestHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i64, 0usize>("get_MaxRequestContentBufferSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_MaxRequestContentBufferSize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_MaxRequestContentBufferSize", 0usize
                         )
                     })
             });
@@ -475,7 +487,7 @@ impl crate::System::Net::Http::MonoWebRequestHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -486,7 +498,8 @@ impl crate::System::Net::Http::MonoWebRequestHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SslOptions", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SslOptions", 0usize
                         )
                     })
             });
@@ -504,7 +517,7 @@ impl crate::System::Net::Http::MonoWebRequestHandler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Net::Security::SslClientAuthenticationOptions,
@@ -515,7 +528,8 @@ impl crate::System::Net::Http::MonoWebRequestHandler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_SslOptions", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_SslOptions", 1usize
                         )
                     })
             });

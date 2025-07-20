@@ -57,7 +57,7 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -90,7 +90,8 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Compute", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Compute",
+                            7usize
                         )
                     })
             });
@@ -112,7 +113,7 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -130,7 +131,8 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Compute_LM", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Compute_LM", 2usize
                         )
                     })
             });
@@ -148,7 +150,7 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -166,7 +168,8 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Compute_NTLM", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Compute_NTLM", 2usize
                         )
                     })
             });
@@ -183,7 +186,7 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -194,7 +197,8 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Compute_NTLM_Password", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Compute_NTLM_Password", 1usize
                         )
                     })
             });
@@ -216,7 +220,7 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -240,7 +244,8 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Compute_NTLMv2", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Compute_NTLMv2", 4usize
                         )
                     })
             });
@@ -262,7 +267,7 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -288,7 +293,8 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Compute_NTLMv2_Session", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Compute_NTLMv2_Session", 4usize
                         )
                     })
             });
@@ -306,7 +312,7 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -324,7 +330,8 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetResponse", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetResponse", 2usize
                         )
                     })
             });
@@ -342,7 +349,7 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -358,7 +365,8 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PasswordToKey", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PasswordToKey", 2usize
                         )
                     })
             });
@@ -376,7 +384,7 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -392,7 +400,8 @@ impl crate::Mono::Security::Protocol::Ntlm::ChallengeResponse2 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PrepareDESKey", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PrepareDESKey", 2usize
                         )
                     })
             });

@@ -150,12 +150,13 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Awake", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Awake",
+                            0usize
                         )
                     })
             });
@@ -170,7 +171,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -179,7 +180,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckForAnchorsInParent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckForAnchorsInParent", 0usize
                         )
                     })
             });
@@ -194,7 +196,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -203,8 +205,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckForTrackingSpaceChangesAndRaiseEvent",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckForTrackingSpaceChangesAndRaiseEvent", 0usize
                         )
                     })
             });
@@ -219,7 +221,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Matrix4x4,
@@ -228,7 +230,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ComputeTrackReferenceMatrix", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ComputeTrackReferenceMatrix", 0usize
                         )
                     })
             });
@@ -247,7 +250,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -261,7 +264,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConfigureAnchor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConfigureAnchor", 2usize
                         )
                     })
             });
@@ -276,7 +280,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -285,7 +289,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnsureGameObjectIntegrity", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnsureGameObjectIntegrity", 0usize
                         )
                     })
             });
@@ -300,7 +305,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -309,7 +314,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FixedUpdate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FixedUpdate", 0usize
                         )
                     })
             });
@@ -331,7 +337,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -340,7 +346,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnBeforeRenderCallback", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnBeforeRenderCallback", 0usize
                         )
                     })
             });
@@ -355,12 +362,13 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDestroy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDestroy", 0usize
                         )
                     })
             });
@@ -375,7 +383,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -384,7 +392,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RaiseUpdatedAnchorsEvent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RaiseUpdatedAnchorsEvent", 0usize
                         )
                     })
             });
@@ -399,12 +408,13 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Start", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Start",
+                            0usize
                         )
                     })
             });
@@ -419,12 +429,13 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Update")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Update", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Update",
+                            0usize
                         )
                     })
             });
@@ -441,7 +452,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, bool),
                         quest_hook::libil2cpp::Void,
@@ -450,7 +461,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateAnchors", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateAnchors", 2usize
                         )
                     })
             });
@@ -470,7 +482,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
                         quest_hook::libil2cpp::Void,
@@ -479,8 +491,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<CheckForAnchorsInParent>g__Check|105_0",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<CheckForAnchorsInParent>g__Check|105_0", 1usize
                         )
                     })
             });
@@ -495,12 +507,13 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -520,7 +533,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -533,7 +546,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_TrackingSpaceChanged", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_TrackingSpaceChanged", 1usize
                         )
                     })
             });
@@ -553,7 +567,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -568,7 +582,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_UpdatedAnchors", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_UpdatedAnchors", 1usize
                         )
                     })
             });
@@ -585,7 +600,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -594,7 +609,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_centerEyeAnchor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_centerEyeAnchor", 0usize
                         )
                     })
             });
@@ -611,7 +627,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -620,7 +636,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_leftControllerAnchor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_leftControllerAnchor", 0usize
                         )
                     })
             });
@@ -637,7 +654,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -646,7 +663,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_leftControllerInHandAnchor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_leftControllerInHandAnchor", 0usize
                         )
                     })
             });
@@ -663,7 +681,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -672,7 +690,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_leftEyeAnchor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_leftEyeAnchor", 0usize
                         )
                     })
             });
@@ -689,7 +708,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -698,7 +717,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_leftEyeCamera", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_leftEyeCamera", 0usize
                         )
                     })
             });
@@ -715,7 +735,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -724,7 +744,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_leftHandAnchor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_leftHandAnchor", 0usize
                         )
                     })
             });
@@ -741,7 +762,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -750,7 +771,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_leftHandAnchorDetached", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_leftHandAnchorDetached", 0usize
                         )
                     })
             });
@@ -767,7 +789,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -776,7 +798,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_leftHandOnControllerAnchor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_leftHandOnControllerAnchor", 0usize
                         )
                     })
             });
@@ -793,7 +816,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -802,7 +825,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rightControllerAnchor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rightControllerAnchor", 0usize
                         )
                     })
             });
@@ -819,7 +843,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -828,7 +852,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rightControllerInHandAnchor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rightControllerInHandAnchor", 0usize
                         )
                     })
             });
@@ -845,7 +870,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -854,7 +879,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rightEyeAnchor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rightEyeAnchor", 0usize
                         )
                     })
             });
@@ -871,7 +897,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -880,7 +906,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rightEyeCamera", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rightEyeCamera", 0usize
                         )
                     })
             });
@@ -897,7 +924,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -906,7 +933,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rightHandAnchor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rightHandAnchor", 0usize
                         )
                     })
             });
@@ -923,7 +951,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -932,7 +960,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rightHandAnchorDetached", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rightHandAnchorDetached", 0usize
                         )
                     })
             });
@@ -949,7 +978,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -958,7 +987,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rightHandOnControllerAnchor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rightHandOnControllerAnchor", 0usize
                         )
                     })
             });
@@ -975,7 +1005,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -984,7 +1014,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_trackerAnchor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_trackerAnchor", 0usize
                         )
                     })
             });
@@ -1001,7 +1032,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -1010,7 +1041,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_trackingSpace", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_trackingSpace", 0usize
                         )
                     })
             });
@@ -1030,7 +1062,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -1043,7 +1075,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_TrackingSpaceChanged", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_TrackingSpaceChanged", 1usize
                         )
                     })
             });
@@ -1063,7 +1096,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -1078,7 +1111,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_UpdatedAnchors", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_UpdatedAnchors", 1usize
                         )
                     })
             });
@@ -1094,7 +1128,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
                         quest_hook::libil2cpp::Void,
@@ -1103,7 +1137,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_centerEyeAnchor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_centerEyeAnchor", 1usize
                         )
                     })
             });
@@ -1119,7 +1154,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
                         quest_hook::libil2cpp::Void,
@@ -1128,7 +1163,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_leftControllerAnchor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_leftControllerAnchor", 1usize
                         )
                     })
             });
@@ -1144,7 +1180,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
                         quest_hook::libil2cpp::Void,
@@ -1153,7 +1189,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_leftControllerInHandAnchor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_leftControllerInHandAnchor", 1usize
                         )
                     })
             });
@@ -1169,7 +1206,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
                         quest_hook::libil2cpp::Void,
@@ -1178,7 +1215,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_leftEyeAnchor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_leftEyeAnchor", 1usize
                         )
                     })
             });
@@ -1194,7 +1232,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
                         quest_hook::libil2cpp::Void,
@@ -1203,7 +1241,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_leftHandAnchor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_leftHandAnchor", 1usize
                         )
                     })
             });
@@ -1219,7 +1258,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
                         quest_hook::libil2cpp::Void,
@@ -1228,7 +1267,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_leftHandAnchorDetached", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_leftHandAnchorDetached", 1usize
                         )
                     })
             });
@@ -1244,7 +1284,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
                         quest_hook::libil2cpp::Void,
@@ -1253,7 +1293,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_leftHandOnControllerAnchor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_leftHandOnControllerAnchor", 1usize
                         )
                     })
             });
@@ -1269,7 +1310,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
                         quest_hook::libil2cpp::Void,
@@ -1278,7 +1319,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_rightControllerAnchor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_rightControllerAnchor", 1usize
                         )
                     })
             });
@@ -1294,7 +1336,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
                         quest_hook::libil2cpp::Void,
@@ -1303,7 +1345,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_rightControllerInHandAnchor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_rightControllerInHandAnchor", 1usize
                         )
                     })
             });
@@ -1319,7 +1362,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
                         quest_hook::libil2cpp::Void,
@@ -1328,7 +1371,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_rightEyeAnchor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_rightEyeAnchor", 1usize
                         )
                     })
             });
@@ -1344,7 +1388,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
                         quest_hook::libil2cpp::Void,
@@ -1353,7 +1397,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_rightHandAnchor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_rightHandAnchor", 1usize
                         )
                     })
             });
@@ -1369,7 +1414,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
                         quest_hook::libil2cpp::Void,
@@ -1378,7 +1423,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_rightHandAnchorDetached", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_rightHandAnchorDetached", 1usize
                         )
                     })
             });
@@ -1394,7 +1440,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
                         quest_hook::libil2cpp::Void,
@@ -1403,7 +1449,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_rightHandOnControllerAnchor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_rightHandOnControllerAnchor", 1usize
                         )
                     })
             });
@@ -1419,7 +1466,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
                         quest_hook::libil2cpp::Void,
@@ -1428,7 +1475,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_trackerAnchor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_trackerAnchor", 1usize
                         )
                     })
             });
@@ -1444,7 +1492,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
                         quest_hook::libil2cpp::Void,
@@ -1453,7 +1501,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_trackingSpace", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_trackingSpace", 1usize
                         )
                     })
             });

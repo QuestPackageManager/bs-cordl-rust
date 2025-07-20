@@ -52,12 +52,13 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("GetAlphamapResolutionInternal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAlphamapResolutionInternal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAlphamapResolutionInternal", 0usize
                         )
                     })
             });
@@ -76,7 +77,7 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32, i32, i32),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -85,7 +86,8 @@ impl crate::UnityEngine::TerrainData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAlphamaps", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAlphamaps", 4usize
                         )
                     })
             });
@@ -100,7 +102,7 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::TerrainData_BoundaryValueType),
                         i32,
@@ -109,7 +111,8 @@ impl crate::UnityEngine::TerrainData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBoundaryValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBoundaryValue", 1usize
                         )
                     })
             });
@@ -128,7 +131,7 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32, i32, i32),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -137,7 +140,8 @@ impl crate::UnityEngine::TerrainData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHeights", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHeights", 4usize
                         )
                     })
             });
@@ -152,7 +156,7 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainData>),
                         quest_hook::libil2cpp::Void,
@@ -161,7 +165,8 @@ impl crate::UnityEngine::TerrainData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Internal_Create", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Internal_Create", 1usize
                         )
                     })
             });
@@ -182,7 +187,7 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32, i32, i32),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -191,7 +196,8 @@ impl crate::UnityEngine::TerrainData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Internal_GetAlphamaps", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Internal_GetAlphamaps", 4usize
                         )
                     })
             });
@@ -212,7 +218,7 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32, i32, i32),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -221,7 +227,8 @@ impl crate::UnityEngine::TerrainData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Internal_GetHeights", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Internal_GetHeights", 4usize
                         )
                     })
             });
@@ -240,7 +247,7 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -253,7 +260,8 @@ impl crate::UnityEngine::TerrainData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Internal_GetTreeInstances", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Internal_GetTreeInstances", 0usize
                         )
                     })
             });
@@ -273,7 +281,7 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -290,7 +298,8 @@ impl crate::UnityEngine::TerrainData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Internal_SetAlphamaps", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Internal_SetAlphamaps", 5usize
                         )
                     })
             });
@@ -311,7 +320,7 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -329,7 +338,8 @@ impl crate::UnityEngine::TerrainData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Internal_SetDetailLayer", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Internal_SetDetailLayer", 6usize
                         )
                     })
             });
@@ -350,7 +360,7 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -359,7 +369,8 @@ impl crate::UnityEngine::TerrainData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Internal_SetDetailResolution", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Internal_SetDetailResolution", 2usize
                         )
                     })
             });
@@ -379,7 +390,7 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -396,7 +407,8 @@ impl crate::UnityEngine::TerrainData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Internal_SetHeights", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Internal_SetHeights", 5usize
                         )
                     })
             });
@@ -418,7 +430,7 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -427,7 +439,8 @@ impl crate::UnityEngine::TerrainData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RefreshPrototypes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RefreshPrototypes", 0usize
                         )
                     })
             });
@@ -445,7 +458,7 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -460,7 +473,8 @@ impl crate::UnityEngine::TerrainData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetAlphamaps", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetAlphamaps", 3usize
                         )
                     })
             });
@@ -479,7 +493,7 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -495,7 +509,8 @@ impl crate::UnityEngine::TerrainData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetDetailLayer", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetDetailLayer", 4usize
                         )
                     })
             });
@@ -512,7 +527,7 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -521,7 +536,8 @@ impl crate::UnityEngine::TerrainData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetDetailResolution", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetDetailResolution", 2usize
                         )
                     })
             });
@@ -539,7 +555,7 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -554,7 +570,8 @@ impl crate::UnityEngine::TerrainData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetHeights", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetHeights", 3usize
                         )
                     })
             });
@@ -573,7 +590,7 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -589,7 +606,8 @@ impl crate::UnityEngine::TerrainData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetTreeInstances", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetTreeInstances", 2usize
                         )
                     })
             });
@@ -604,12 +622,13 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -624,12 +643,13 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_Internal_alphamapResolution")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Internal_alphamapResolution", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Internal_alphamapResolution", 0usize
                         )
                     })
             });
@@ -640,12 +660,13 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_alphamapHeight")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_alphamapHeight", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_alphamapHeight", 0usize
                         )
                     })
             });
@@ -656,12 +677,13 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_alphamapLayers")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_alphamapLayers", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_alphamapLayers", 0usize
                         )
                     })
             });
@@ -672,12 +694,13 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_alphamapResolution")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_alphamapResolution", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_alphamapResolution", 0usize
                         )
                     })
             });
@@ -688,12 +711,13 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_alphamapWidth")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_alphamapWidth", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_alphamapWidth", 0usize
                         )
                     })
             });
@@ -706,12 +730,13 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_detailResolutionPerPatch")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_detailResolutionPerPatch", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_detailResolutionPerPatch", 0usize
                         )
                     })
             });
@@ -722,12 +747,13 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_heightmapResolution")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_heightmapResolution", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_heightmapResolution", 0usize
                         )
                     })
             });
@@ -740,12 +766,13 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_internalHeightmapResolution")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_internalHeightmapResolution", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_internalHeightmapResolution", 0usize
                         )
                     })
             });
@@ -758,12 +785,13 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::UnityEngine::Vector3, 0usize>("get_size")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_size", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_size", 0usize
                         )
                     })
             });
@@ -779,7 +807,7 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>),
                         quest_hook::libil2cpp::Void,
@@ -788,7 +816,8 @@ impl crate::UnityEngine::TerrainData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_size_Injected", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_size_Injected", 1usize
                         )
                     })
             });
@@ -809,7 +838,7 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -822,7 +851,8 @@ impl crate::UnityEngine::TerrainData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_terrainLayers", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_terrainLayers", 0usize
                         )
                     })
             });
@@ -843,7 +873,7 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -856,7 +886,8 @@ impl crate::UnityEngine::TerrainData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_treeInstances", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_treeInstances", 0usize
                         )
                     })
             });
@@ -877,7 +908,7 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -890,7 +921,8 @@ impl crate::UnityEngine::TerrainData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_treePrototypes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_treePrototypes", 0usize
                         )
                     })
             });
@@ -913,7 +945,7 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -926,7 +958,8 @@ impl crate::UnityEngine::TerrainData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_users", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_users", 0usize
                         )
                     })
             });
@@ -944,7 +977,7 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -953,7 +986,8 @@ impl crate::UnityEngine::TerrainData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Internal_alphamapResolution", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Internal_alphamapResolution", 1usize
                         )
                     })
             });
@@ -969,7 +1003,7 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -978,7 +1012,8 @@ impl crate::UnityEngine::TerrainData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_alphamapResolution", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_alphamapResolution", 1usize
                         )
                     })
             });
@@ -998,7 +1033,7 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -1013,7 +1048,8 @@ impl crate::UnityEngine::TerrainData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_detailPrototypes", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_detailPrototypes", 1usize
                         )
                     })
             });
@@ -1029,7 +1065,7 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -1038,7 +1074,8 @@ impl crate::UnityEngine::TerrainData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_heightmapResolution", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_heightmapResolution", 1usize
                         )
                     })
             });
@@ -1054,7 +1091,7 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -1063,7 +1100,8 @@ impl crate::UnityEngine::TerrainData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_internalHeightmapResolution", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_internalHeightmapResolution", 1usize
                         )
                     })
             });
@@ -1079,7 +1117,7 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector3),
                         quest_hook::libil2cpp::Void,
@@ -1088,7 +1126,8 @@ impl crate::UnityEngine::TerrainData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_size", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_size", 1usize
                         )
                     })
             });
@@ -1104,7 +1143,7 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>),
                         quest_hook::libil2cpp::Void,
@@ -1113,7 +1152,8 @@ impl crate::UnityEngine::TerrainData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_size_Injected", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_size_Injected", 1usize
                         )
                     })
             });
@@ -1133,7 +1173,7 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -1146,7 +1186,8 @@ impl crate::UnityEngine::TerrainData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_terrainLayers", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_terrainLayers", 1usize
                         )
                     })
             });
@@ -1166,7 +1207,7 @@ impl crate::UnityEngine::TerrainData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -1179,7 +1220,8 @@ impl crate::UnityEngine::TerrainData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_treePrototypes", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_treePrototypes", 1usize
                         )
                     })
             });

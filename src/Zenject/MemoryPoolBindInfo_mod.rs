@@ -55,12 +55,13 @@ impl crate::Zenject::MemoryPoolBindInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -75,7 +76,7 @@ impl crate::Zenject::MemoryPoolBindInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Zenject::PoolExpandMethods,
@@ -84,7 +85,8 @@ impl crate::Zenject::MemoryPoolBindInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ExpandMethod", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ExpandMethod", 0usize
                         )
                     })
             });
@@ -97,12 +99,13 @@ impl crate::Zenject::MemoryPoolBindInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_InitialSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_InitialSize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_InitialSize", 0usize
                         )
                     })
             });
@@ -113,12 +116,13 @@ impl crate::Zenject::MemoryPoolBindInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_MaxSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_MaxSize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_MaxSize", 0usize
                         )
                     })
             });
@@ -129,12 +133,13 @@ impl crate::Zenject::MemoryPoolBindInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_ShowExpandWarning")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ShowExpandWarning", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ShowExpandWarning", 0usize
                         )
                     })
             });
@@ -148,7 +153,7 @@ impl crate::Zenject::MemoryPoolBindInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::Zenject::PoolExpandMethods),
                         quest_hook::libil2cpp::Void,
@@ -157,7 +162,8 @@ impl crate::Zenject::MemoryPoolBindInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_ExpandMethod", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_ExpandMethod", 1usize
                         )
                     })
             });
@@ -173,7 +179,7 @@ impl crate::Zenject::MemoryPoolBindInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -182,7 +188,8 @@ impl crate::Zenject::MemoryPoolBindInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_InitialSize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_InitialSize", 1usize
                         )
                     })
             });
@@ -198,7 +205,7 @@ impl crate::Zenject::MemoryPoolBindInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -207,7 +214,8 @@ impl crate::Zenject::MemoryPoolBindInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_MaxSize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_MaxSize", 1usize
                         )
                     })
             });
@@ -223,7 +231,7 @@ impl crate::Zenject::MemoryPoolBindInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -232,7 +240,8 @@ impl crate::Zenject::MemoryPoolBindInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_ShowExpandWarning", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_ShowExpandWarning", 1usize
                         )
                     })
             });

@@ -66,7 +66,7 @@ impl crate::GlobalNamespace::FileSystemFileStorage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -80,7 +80,8 @@ impl crate::GlobalNamespace::FileSystemFileStorage {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DeleteFileAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DeleteFileAsync", 2usize
                         )
                     })
             });
@@ -99,7 +100,7 @@ impl crate::GlobalNamespace::FileSystemFileStorage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -115,7 +116,8 @@ impl crate::GlobalNamespace::FileSystemFileStorage {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FileExistsAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FileExistsAsync", 2usize
                         )
                     })
             });
@@ -132,7 +134,7 @@ impl crate::GlobalNamespace::FileSystemFileStorage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -141,7 +143,8 @@ impl crate::GlobalNamespace::FileSystemFileStorage {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBackupFilePath", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBackupFilePath", 1usize
                         )
                     })
             });
@@ -159,7 +162,7 @@ impl crate::GlobalNamespace::FileSystemFileStorage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -170,7 +173,8 @@ impl crate::GlobalNamespace::FileSystemFileStorage {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCommandQueue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCommandQueue", 1usize
                         )
                     })
             });
@@ -189,7 +193,7 @@ impl crate::GlobalNamespace::FileSystemFileStorage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -203,7 +207,8 @@ impl crate::GlobalNamespace::FileSystemFileStorage {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetFilePath", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetFilePath", 2usize
                         )
                     })
             });
@@ -220,7 +225,7 @@ impl crate::GlobalNamespace::FileSystemFileStorage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -229,7 +234,8 @@ impl crate::GlobalNamespace::FileSystemFileStorage {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTempFilePath", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTempFilePath", 1usize
                         )
                     })
             });
@@ -252,7 +258,7 @@ impl crate::GlobalNamespace::FileSystemFileStorage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -272,7 +278,8 @@ impl crate::GlobalNamespace::FileSystemFileStorage {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadFileAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadFileAsync", 2usize
                         )
                     })
             });
@@ -301,7 +308,7 @@ impl crate::GlobalNamespace::FileSystemFileStorage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -318,7 +325,8 @@ impl crate::GlobalNamespace::FileSystemFileStorage {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SaveFileAsync", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SaveFileAsync", 3usize
                         )
                     })
             });
@@ -335,12 +343,13 @@ impl crate::GlobalNamespace::FileSystemFileStorage {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -424,7 +433,7 @@ impl crate::GlobalNamespace::FileSystemFileStorage_DeleteFileCommand {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -433,7 +442,8 @@ impl crate::GlobalNamespace::FileSystemFileStorage_DeleteFileCommand {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExecuteInternal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExecuteInternal", 0usize
                         )
                     })
             });
@@ -458,7 +468,7 @@ impl crate::GlobalNamespace::FileSystemFileStorage_DeleteFileCommand {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -467,7 +477,8 @@ impl crate::GlobalNamespace::FileSystemFileStorage_DeleteFileCommand {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -535,12 +546,13 @@ impl crate::GlobalNamespace::FileSystemFileStorage_FileExistsCommand {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("ExecuteInternal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExecuteInternal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExecuteInternal", 0usize
                         )
                     })
             });
@@ -563,7 +575,7 @@ impl crate::GlobalNamespace::FileSystemFileStorage_FileExistsCommand {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -572,7 +584,8 @@ impl crate::GlobalNamespace::FileSystemFileStorage_FileExistsCommand {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -647,7 +660,7 @@ impl crate::GlobalNamespace::FileSystemFileStorage_LoadFileCommand {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -656,7 +669,8 @@ impl crate::GlobalNamespace::FileSystemFileStorage_LoadFileCommand {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExecuteInternal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExecuteInternal", 0usize
                         )
                     })
             });
@@ -681,7 +695,7 @@ impl crate::GlobalNamespace::FileSystemFileStorage_LoadFileCommand {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -690,7 +704,8 @@ impl crate::GlobalNamespace::FileSystemFileStorage_LoadFileCommand {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -760,7 +775,7 @@ impl crate::GlobalNamespace::FileSystemFileStorage_SaveFileCommand {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -769,7 +784,8 @@ impl crate::GlobalNamespace::FileSystemFileStorage_SaveFileCommand {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExecuteInternal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExecuteInternal", 0usize
                         )
                     })
             });
@@ -796,7 +812,7 @@ impl crate::GlobalNamespace::FileSystemFileStorage_SaveFileCommand {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -812,7 +828,8 @@ impl crate::GlobalNamespace::FileSystemFileStorage_SaveFileCommand {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });

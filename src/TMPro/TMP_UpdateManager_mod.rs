@@ -76,12 +76,13 @@ impl crate::TMPro::TMP_UpdateManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("DoRebuilds")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoRebuilds", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoRebuilds", 0usize
                         )
                     })
             });
@@ -97,7 +98,7 @@ impl crate::TMPro::TMP_UpdateManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>),
                         quest_hook::libil2cpp::Void,
@@ -106,8 +107,8 @@ impl crate::TMPro::TMP_UpdateManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InternalRegisterTextElementForCullingUpdate",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InternalRegisterTextElementForCullingUpdate", 1usize
                         )
                     })
             });
@@ -123,7 +124,7 @@ impl crate::TMPro::TMP_UpdateManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>),
                         quest_hook::libil2cpp::Void,
@@ -132,7 +133,7 @@ impl crate::TMPro::TMP_UpdateManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "InternalRegisterTextElementForGraphicRebuild", 1usize
                         )
                     })
@@ -149,7 +150,7 @@ impl crate::TMPro::TMP_UpdateManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>),
                         quest_hook::libil2cpp::Void,
@@ -158,8 +159,8 @@ impl crate::TMPro::TMP_UpdateManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InternalRegisterTextElementForLayoutRebuild",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InternalRegisterTextElementForLayoutRebuild", 1usize
                         )
                     })
             });
@@ -175,7 +176,7 @@ impl crate::TMPro::TMP_UpdateManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>),
                         quest_hook::libil2cpp::Void,
@@ -184,7 +185,8 @@ impl crate::TMPro::TMP_UpdateManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InternalRegisterTextObjectForUpdate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InternalRegisterTextObjectForUpdate", 1usize
                         )
                     })
             });
@@ -200,7 +202,7 @@ impl crate::TMPro::TMP_UpdateManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>),
                         quest_hook::libil2cpp::Void,
@@ -209,7 +211,7 @@ impl crate::TMPro::TMP_UpdateManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "InternalUnRegisterTextElementForGraphicRebuild", 1usize
                         )
                     })
@@ -226,7 +228,7 @@ impl crate::TMPro::TMP_UpdateManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>),
                         quest_hook::libil2cpp::Void,
@@ -235,7 +237,7 @@ impl crate::TMPro::TMP_UpdateManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "InternalUnRegisterTextElementForLayoutRebuild", 1usize
                         )
                     })
@@ -252,7 +254,7 @@ impl crate::TMPro::TMP_UpdateManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>),
                         quest_hook::libil2cpp::Void,
@@ -261,8 +263,8 @@ impl crate::TMPro::TMP_UpdateManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InternalUnRegisterTextObjectForUpdate",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InternalUnRegisterTextObjectForUpdate", 1usize
                         )
                     })
             });
@@ -284,7 +286,7 @@ impl crate::TMPro::TMP_UpdateManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -293,7 +295,8 @@ impl crate::TMPro::TMP_UpdateManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnCameraPreCull", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnCameraPreCull", 0usize
                         )
                     })
             });
@@ -308,7 +311,7 @@ impl crate::TMPro::TMP_UpdateManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>),
                         quest_hook::libil2cpp::Void,
@@ -317,7 +320,8 @@ impl crate::TMPro::TMP_UpdateManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterTextElementForCullingUpdate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterTextElementForCullingUpdate", 1usize
                         )
                     })
             });
@@ -332,7 +336,7 @@ impl crate::TMPro::TMP_UpdateManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>),
                         quest_hook::libil2cpp::Void,
@@ -341,7 +345,8 @@ impl crate::TMPro::TMP_UpdateManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterTextElementForGraphicRebuild", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterTextElementForGraphicRebuild", 1usize
                         )
                     })
             });
@@ -356,7 +361,7 @@ impl crate::TMPro::TMP_UpdateManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>),
                         quest_hook::libil2cpp::Void,
@@ -365,7 +370,8 @@ impl crate::TMPro::TMP_UpdateManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterTextElementForLayoutRebuild", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterTextElementForLayoutRebuild", 1usize
                         )
                     })
             });
@@ -380,7 +386,7 @@ impl crate::TMPro::TMP_UpdateManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>),
                         quest_hook::libil2cpp::Void,
@@ -389,7 +395,8 @@ impl crate::TMPro::TMP_UpdateManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterTextObjectForUpdate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterTextObjectForUpdate", 1usize
                         )
                     })
             });
@@ -404,7 +411,7 @@ impl crate::TMPro::TMP_UpdateManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>),
                         quest_hook::libil2cpp::Void,
@@ -413,7 +420,8 @@ impl crate::TMPro::TMP_UpdateManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnRegisterTextElementForRebuild", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnRegisterTextElementForRebuild", 1usize
                         )
                     })
             });
@@ -428,7 +436,7 @@ impl crate::TMPro::TMP_UpdateManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>),
                         quest_hook::libil2cpp::Void,
@@ -437,7 +445,8 @@ impl crate::TMPro::TMP_UpdateManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnRegisterTextObjectForUpdate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnRegisterTextObjectForUpdate", 1usize
                         )
                     })
             });
@@ -452,12 +461,13 @@ impl crate::TMPro::TMP_UpdateManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -472,7 +482,7 @@ impl crate::TMPro::TMP_UpdateManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_UpdateManager>,
@@ -481,7 +491,8 @@ impl crate::TMPro::TMP_UpdateManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_instance", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_instance", 0usize
                         )
                     })
             });

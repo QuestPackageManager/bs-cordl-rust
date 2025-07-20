@@ -71,7 +71,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::IArrayPool_1<T> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
@@ -80,7 +80,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::IArrayPool_1<T> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Rent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Rent",
+                            1usize
                         )
                     })
             });
@@ -100,7 +101,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::IArrayPool_1<T> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<T>,
@@ -111,7 +112,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::IArrayPool_1<T> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Return", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Return",
+                            1usize
                         )
                     })
             });

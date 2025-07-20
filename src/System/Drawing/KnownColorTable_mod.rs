@@ -44,7 +44,7 @@ impl crate::System::Drawing::KnownColorTable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -53,7 +53,8 @@ impl crate::System::Drawing::KnownColorTable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnsureColorNameTable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnsureColorNameTable", 0usize
                         )
                     })
             });
@@ -68,7 +69,7 @@ impl crate::System::Drawing::KnownColorTable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -77,7 +78,8 @@ impl crate::System::Drawing::KnownColorTable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnsureColorTable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnsureColorTable", 0usize
                         )
                     })
             });
@@ -92,7 +94,7 @@ impl crate::System::Drawing::KnownColorTable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -101,7 +103,8 @@ impl crate::System::Drawing::KnownColorTable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitColorNameTable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitColorNameTable", 0usize
                         )
                     })
             });
@@ -116,7 +119,7 @@ impl crate::System::Drawing::KnownColorTable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -125,7 +128,8 @@ impl crate::System::Drawing::KnownColorTable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitColorTable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitColorTable", 0usize
                         )
                     })
             });
@@ -140,7 +144,7 @@ impl crate::System::Drawing::KnownColorTable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::Drawing::KnownColor),
                         i32,
@@ -149,7 +153,8 @@ impl crate::System::Drawing::KnownColorTable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "KnownColorToArgb", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "KnownColorToArgb", 1usize
                         )
                     })
             });
@@ -164,7 +169,7 @@ impl crate::System::Drawing::KnownColorTable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::Drawing::KnownColor),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -173,7 +178,8 @@ impl crate::System::Drawing::KnownColorTable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "KnownColorToName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "KnownColorToName", 1usize
                         )
                     })
             });
@@ -188,7 +194,7 @@ impl crate::System::Drawing::KnownColorTable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<i32>,
@@ -199,7 +205,8 @@ impl crate::System::Drawing::KnownColorTable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateSystemColors", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateSystemColors", 1usize
                         )
                     })
             });

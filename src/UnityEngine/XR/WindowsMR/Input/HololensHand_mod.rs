@@ -57,7 +57,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::HololensHand {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -66,7 +66,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::HololensHand {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FinishSetup", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FinishSetup", 0usize
                         )
                     })
             });
@@ -88,12 +89,13 @@ impl crate::UnityEngine::XR::WindowsMR::Input::HololensHand {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -112,7 +114,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::HololensHand {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -123,7 +125,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::HololensHand {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_airTap", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_airTap", 0usize
                         )
                     })
             });
@@ -142,7 +145,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::HololensHand {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -153,7 +156,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::HololensHand {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_deviceVelocity", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_deviceVelocity", 0usize
                         )
                     })
             });
@@ -172,7 +176,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::HololensHand {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -183,7 +187,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::HololensHand {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_sourceLossMitigationDirection", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_sourceLossMitigationDirection", 0usize
                         )
                     })
             });
@@ -200,7 +205,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::HololensHand {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -211,7 +216,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::HololensHand {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_sourceLossRisk", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_sourceLossRisk", 0usize
                         )
                     })
             });
@@ -229,7 +235,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::HololensHand {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -240,7 +246,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::HololensHand {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_airTap", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_airTap", 1usize
                         )
                     })
             });
@@ -258,7 +265,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::HololensHand {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -269,7 +276,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::HololensHand {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_deviceVelocity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_deviceVelocity", 1usize
                         )
                     })
             });
@@ -287,7 +295,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::HololensHand {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -298,7 +306,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::HololensHand {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_sourceLossMitigationDirection", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_sourceLossMitigationDirection", 1usize
                         )
                     })
             });
@@ -316,7 +325,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::HololensHand {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::AxisControl,
@@ -327,7 +336,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::HololensHand {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_sourceLossRisk", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_sourceLossRisk", 1usize
                         )
                     })
             });

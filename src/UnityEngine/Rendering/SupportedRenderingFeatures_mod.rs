@@ -85,7 +85,7 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         quest_hook::libil2cpp::Void,
@@ -94,7 +94,8 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FallbackLightmapperByRef", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FallbackLightmapperByRef", 1usize
                         )
                     })
             });
@@ -109,7 +110,7 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         quest_hook::libil2cpp::Void,
@@ -118,7 +119,8 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FallbackMixedLightingModeByRef", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FallbackMixedLightingModeByRef", 1usize
                         )
                     })
             });
@@ -133,7 +135,7 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         quest_hook::libil2cpp::Void,
@@ -142,7 +144,8 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsAutoAmbientProbeBakingSupported", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsAutoAmbientProbeBakingSupported", 1usize
                         )
                     })
             });
@@ -157,7 +160,7 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         quest_hook::libil2cpp::Void,
@@ -166,8 +169,8 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsAutoDefaultReflectionProbeBakingSupported",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsAutoDefaultReflectionProbeBakingSupported", 1usize
                         )
                     })
             });
@@ -182,7 +185,7 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::LightmapBakeType),
                         bool,
@@ -191,7 +194,8 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsLightmapBakeTypeSupported", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsLightmapBakeTypeSupported", 1usize
                         )
                     })
             });
@@ -205,7 +209,7 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::LightmapBakeType, crate::System::IntPtr),
                         quest_hook::libil2cpp::Void,
@@ -214,7 +218,8 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsLightmapBakeTypeSupportedByRef", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsLightmapBakeTypeSupportedByRef", 2usize
                         )
                     })
             });
@@ -230,7 +235,7 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, crate::System::IntPtr),
                         quest_hook::libil2cpp::Void,
@@ -239,7 +244,8 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsLightmapperSupportedByRef", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsLightmapperSupportedByRef", 2usize
                         )
                     })
             });
@@ -255,7 +261,7 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::LightmapsMode, crate::System::IntPtr),
                         quest_hook::libil2cpp::Void,
@@ -264,7 +270,8 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsLightmapsModeSupportedByRef", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsLightmapsModeSupportedByRef", 2usize
                         )
                     })
             });
@@ -279,7 +286,7 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::MixedLightingMode),
                         bool,
@@ -288,7 +295,8 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsMixedLightingModeSupported", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsMixedLightingModeSupported", 1usize
                         )
                     })
             });
@@ -302,7 +310,7 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::MixedLightingMode, crate::System::IntPtr),
                         quest_hook::libil2cpp::Void,
@@ -311,7 +319,8 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsMixedLightingModeSupportedByRef", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsMixedLightingModeSupportedByRef", 2usize
                         )
                     })
             });
@@ -326,7 +335,7 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         quest_hook::libil2cpp::Void,
@@ -335,7 +344,8 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsUIOverlayRenderedBySRP", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsUIOverlayRenderedBySRP", 1usize
                         )
                     })
             });
@@ -357,7 +367,7 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         quest_hook::libil2cpp::Void,
@@ -366,7 +376,8 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OverridesLightProbeSystem", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OverridesLightProbeSystem", 1usize
                         )
                     })
             });
@@ -381,12 +392,13 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -403,7 +415,7 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -414,7 +426,8 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_active", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_active", 0usize
                         )
                     })
             });
@@ -427,12 +440,13 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_autoAmbientProbeBaking")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_autoAmbientProbeBaking", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_autoAmbientProbeBaking", 0usize
                         )
                     })
             });
@@ -445,7 +459,7 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         bool,
@@ -454,7 +468,8 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_autoDefaultReflectionProbeBaking", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_autoDefaultReflectionProbeBaking", 0usize
                         )
                     })
             });
@@ -469,7 +484,7 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Rendering::SupportedRenderingFeatures_LightmapMixedBakeModes,
@@ -478,7 +493,8 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_defaultMixedLightingModes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_defaultMixedLightingModes", 0usize
                         )
                     })
             });
@@ -491,12 +507,13 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_enlighten")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_enlighten", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_enlighten", 0usize
                         )
                     })
             });
@@ -507,12 +524,13 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_enlightenLightmapper")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_enlightenLightmapper", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_enlightenLightmapper", 0usize
                         )
                     })
             });
@@ -525,7 +543,7 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::LightmapBakeType,
@@ -534,7 +552,8 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_lightmapBakeTypes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_lightmapBakeTypes", 0usize
                         )
                     })
             });
@@ -549,7 +568,7 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::LightmapsMode,
@@ -558,7 +577,8 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_lightmapsModes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_lightmapsModes", 0usize
                         )
                     })
             });
@@ -575,7 +595,7 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Rendering::SupportedRenderingFeatures_LightmapMixedBakeModes,
@@ -584,7 +604,8 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_mixedLightingModes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_mixedLightingModes", 0usize
                         )
                     })
             });
@@ -599,12 +620,13 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_overridesLightProbeSystem")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_overridesLightProbeSystem", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_overridesLightProbeSystem", 0usize
                         )
                     })
             });
@@ -615,12 +637,13 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_rendersUIOverlay")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rendersUIOverlay", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rendersUIOverlay", 0usize
                         )
                     })
             });
@@ -635,7 +658,7 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::Rendering::SupportedRenderingFeatures,
@@ -646,7 +669,8 @@ impl crate::UnityEngine::Rendering::SupportedRenderingFeatures {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_active", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_active", 1usize
                         )
                     })
             });

@@ -73,7 +73,7 @@ impl crate::GlobalNamespace::BTSCharacterSpawnAnimationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -82,7 +82,8 @@ impl crate::GlobalNamespace::BTSCharacterSpawnAnimationController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EndEarlyAnimation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EndEarlyAnimation", 0usize
                         )
                     })
             });
@@ -100,7 +101,7 @@ impl crate::GlobalNamespace::BTSCharacterSpawnAnimationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::Playables::PlayableDirector,
@@ -111,8 +112,8 @@ impl crate::GlobalNamespace::BTSCharacterSpawnAnimationController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleSpawnCharacterPlayableDirectorStopped",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleSpawnCharacterPlayableDirectorStopped", 1usize
                         )
                     })
             });
@@ -134,12 +135,13 @@ impl crate::GlobalNamespace::BTSCharacterSpawnAnimationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDestroy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDestroy", 0usize
                         )
                     })
             });
@@ -154,7 +156,7 @@ impl crate::GlobalNamespace::BTSCharacterSpawnAnimationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -163,7 +165,8 @@ impl crate::GlobalNamespace::BTSCharacterSpawnAnimationController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PauseAnimation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PauseAnimation", 0usize
                         )
                     })
             });
@@ -178,7 +181,7 @@ impl crate::GlobalNamespace::BTSCharacterSpawnAnimationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -187,7 +190,8 @@ impl crate::GlobalNamespace::BTSCharacterSpawnAnimationController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PlayAnimation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PlayAnimation", 0usize
                         )
                     })
             });
@@ -202,7 +206,7 @@ impl crate::GlobalNamespace::BTSCharacterSpawnAnimationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -211,7 +215,8 @@ impl crate::GlobalNamespace::BTSCharacterSpawnAnimationController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResumeAnimation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResumeAnimation", 0usize
                         )
                     })
             });
@@ -227,7 +232,7 @@ impl crate::GlobalNamespace::BTSCharacterSpawnAnimationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::BTSCharacter,
@@ -238,7 +243,8 @@ impl crate::GlobalNamespace::BTSCharacterSpawnAnimationController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetCharacter", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetCharacter", 1usize
                         )
                     })
             });
@@ -253,12 +259,13 @@ impl crate::GlobalNamespace::BTSCharacterSpawnAnimationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Start", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Start",
+                            0usize
                         )
                     })
             });
@@ -273,7 +280,7 @@ impl crate::GlobalNamespace::BTSCharacterSpawnAnimationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -282,7 +289,8 @@ impl crate::GlobalNamespace::BTSCharacterSpawnAnimationController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StopAnimation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StopAnimation", 0usize
                         )
                     })
             });
@@ -297,7 +305,7 @@ impl crate::GlobalNamespace::BTSCharacterSpawnAnimationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -306,7 +314,8 @@ impl crate::GlobalNamespace::BTSCharacterSpawnAnimationController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WillResumeAnimation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WillResumeAnimation", 0usize
                         )
                     })
             });
@@ -321,12 +330,13 @@ impl crate::GlobalNamespace::BTSCharacterSpawnAnimationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -342,7 +352,7 @@ impl crate::GlobalNamespace::BTSCharacterSpawnAnimationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -351,7 +361,8 @@ impl crate::GlobalNamespace::BTSCharacterSpawnAnimationController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_animationFinishedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_animationFinishedEvent", 1usize
                         )
                     })
             });
@@ -368,7 +379,7 @@ impl crate::GlobalNamespace::BTSCharacterSpawnAnimationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -379,7 +390,8 @@ impl crate::GlobalNamespace::BTSCharacterSpawnAnimationController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_characterActivationTrack", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_characterActivationTrack", 0usize
                         )
                     })
             });
@@ -392,12 +404,13 @@ impl crate::GlobalNamespace::BTSCharacterSpawnAnimationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_duration")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_duration", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_duration", 0usize
                         )
                     })
             });
@@ -408,12 +421,13 @@ impl crate::GlobalNamespace::BTSCharacterSpawnAnimationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isCharacterVisible")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_isCharacterVisible", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isCharacterVisible", 0usize
                         )
                     })
             });
@@ -427,7 +441,7 @@ impl crate::GlobalNamespace::BTSCharacterSpawnAnimationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -436,7 +450,8 @@ impl crate::GlobalNamespace::BTSCharacterSpawnAnimationController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_animationFinishedEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_animationFinishedEvent", 1usize
                         )
                     })
             });

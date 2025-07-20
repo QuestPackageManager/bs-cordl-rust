@@ -93,12 +93,13 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Inflate {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -115,7 +116,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Inflate {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -129,7 +130,8 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Inflate {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "inflate", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "inflate",
+                            2usize
                         )
                     })
             });
@@ -143,7 +145,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Inflate {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
@@ -154,7 +156,8 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Inflate {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "inflateEnd", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "inflateEnd", 1usize
                         )
                     })
             });
@@ -169,7 +172,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Inflate {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -183,7 +186,8 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Inflate {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "inflateInit", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "inflateInit", 2usize
                         )
                     })
             });
@@ -197,7 +201,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Inflate {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
@@ -208,7 +212,8 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Inflate {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "inflateReset", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "inflateReset", 1usize
                         )
                     })
             });
@@ -224,7 +229,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Inflate {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -241,7 +246,8 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Inflate {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "inflateSetDictionary", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "inflateSetDictionary", 3usize
                         )
                     })
             });
@@ -257,7 +263,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Inflate {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
@@ -268,7 +274,8 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Inflate {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "inflateSync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "inflateSync", 1usize
                         )
                     })
             });
@@ -282,7 +289,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Inflate {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
@@ -293,7 +300,8 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Inflate {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "inflateSyncPoint", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "inflateSyncPoint", 1usize
                         )
                     })
             });

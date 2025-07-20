@@ -79,7 +79,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::Task_WhenAllPromise
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Threading::Tasks::Task,
@@ -90,7 +90,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::Task_WhenAllPromise
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Invoke", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Invoke",
+                            1usize
                         )
                     })
             });
@@ -131,7 +132,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::Task_WhenAllPromise
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -146,7 +147,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::Task_WhenAllPromise
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -165,12 +167,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::Task_WhenAllPromise
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_InvokeMayRunArbitraryCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_InvokeMayRunArbitraryCode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_InvokeMayRunArbitraryCode", 0usize
                         )
                     })
             });
@@ -187,7 +190,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::Task_WhenAllPromise
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         bool,
@@ -196,8 +199,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::Task_WhenAllPromise
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ShouldNotifyDebuggerOfWaitCompletion",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ShouldNotifyDebuggerOfWaitCompletion", 0usize
                         )
                     })
             });

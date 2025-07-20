@@ -47,7 +47,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -56,7 +56,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateEmptyGameObject", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateEmptyGameObject", 1usize
                         )
                     })
             });
@@ -75,12 +76,13 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), T, 0usize>("InstantiateComponentOnNewGameObject")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiateComponentOnNewGameObject", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateComponentOnNewGameObject", 0usize
                         )
                     })
             });
@@ -102,7 +104,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<
@@ -117,7 +119,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiateComponentOnNewGameObject", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateComponentOnNewGameObject", 1usize
                         )
                     })
             });
@@ -135,7 +138,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         T,
@@ -144,7 +147,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiateComponentOnNewGameObject", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateComponentOnNewGameObject", 1usize
                         )
                     })
             });
@@ -167,7 +171,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -187,7 +191,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiateComponentOnNewGameObject", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateComponentOnNewGameObject", 2usize
                         )
                     })
             });
@@ -207,7 +212,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
                         TContract,
@@ -216,7 +221,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiateComponent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateComponent", 1usize
                         )
                     })
             });
@@ -241,7 +247,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -259,7 +265,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiateComponent", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateComponent", 2usize
                         )
                     })
             });
@@ -278,7 +285,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -290,7 +297,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiateComponent", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateComponent", 2usize
                         )
                     })
             });
@@ -314,7 +322,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -333,7 +341,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiateComponent", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateComponent", 3usize
                         )
                     })
             });
@@ -353,7 +362,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>),
                         T,
@@ -362,7 +371,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabForComponent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabForComponent", 1usize
                         )
                     })
             });
@@ -385,7 +395,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -403,7 +413,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabForComponent", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabForComponent", 2usize
                         )
                     })
             });
@@ -424,7 +435,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -436,7 +447,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabForComponent", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabForComponent", 2usize
                         )
                     })
             });
@@ -462,7 +474,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -481,7 +493,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabForComponent", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabForComponent", 3usize
                         )
                     })
             });
@@ -504,7 +517,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -518,7 +531,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabForComponent", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabForComponent", 4usize
                         )
                     })
             });
@@ -548,7 +562,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -569,7 +583,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabForComponent", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabForComponent", 5usize
                         )
                     })
             });
@@ -598,7 +613,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -618,7 +633,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabForComponent", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabForComponent", 4usize
                         )
                     })
             });
@@ -644,7 +660,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         T,
@@ -653,8 +669,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabResourceForComponent",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabResourceForComponent", 1usize
                         )
                     })
             });
@@ -677,7 +693,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -697,8 +713,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabResourceForComponent",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabResourceForComponent", 2usize
                         )
                     })
             });
@@ -719,7 +735,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -733,8 +749,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabResourceForComponent",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabResourceForComponent", 2usize
                         )
                     })
             });
@@ -762,7 +778,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -783,8 +799,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabResourceForComponent",
-                            3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabResourceForComponent", 3usize
                         )
                     })
             });
@@ -809,7 +825,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -825,8 +841,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabResourceForComponent",
-                            4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabResourceForComponent", 4usize
                         )
                     })
             });
@@ -860,7 +876,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -883,8 +899,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabResourceForComponent",
-                            5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabResourceForComponent", 5usize
                         )
                     })
             });
@@ -913,7 +929,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -935,8 +951,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabResourceForComponent",
-                            4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabResourceForComponent", 4usize
                         )
                     })
             });
@@ -960,7 +976,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -969,7 +985,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabResource", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabResource", 1usize
                         )
                     })
             });
@@ -988,7 +1005,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1002,7 +1019,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabResource", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabResource", 2usize
                         )
                     })
             });
@@ -1023,7 +1041,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1039,7 +1057,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefabResource", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefabResource", 4usize
                         )
                     })
             });
@@ -1061,7 +1080,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -1070,7 +1089,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefab", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefab", 1usize
                         )
                     })
             });
@@ -1089,7 +1109,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -1101,7 +1121,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefab", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefab", 2usize
                         )
                     })
             });
@@ -1122,7 +1143,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
@@ -1136,7 +1157,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiatePrefab", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiatePrefab", 4usize
                         )
                     })
             });
@@ -1156,7 +1178,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         T,
@@ -1165,7 +1187,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiateScriptableObjectResource", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateScriptableObjectResource", 1usize
                         )
                     })
             });
@@ -1188,7 +1211,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1208,7 +1231,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiateScriptableObjectResource", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateScriptableObjectResource", 2usize
                         )
                     })
             });
@@ -1227,7 +1251,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -1241,7 +1265,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiateScriptableObjectResource", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateScriptableObjectResource", 2usize
                         )
                     })
             });
@@ -1267,7 +1292,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -1288,7 +1313,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InstantiateScriptableObjectResource", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateScriptableObjectResource", 3usize
                         )
                     })
             });
@@ -1308,12 +1334,13 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), T, 0usize>("Instantiate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Instantiate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Instantiate", 0usize
                         )
                     })
             });
@@ -1335,7 +1362,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<
@@ -1350,7 +1377,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Instantiate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Instantiate", 1usize
                         )
                     })
             });
@@ -1366,7 +1394,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -1375,7 +1403,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Instantiate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Instantiate", 1usize
                         )
                     })
             });
@@ -1398,7 +1427,7 @@ impl crate::Zenject::IInstantiator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -1416,7 +1445,8 @@ impl crate::Zenject::IInstantiator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Instantiate", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Instantiate", 2usize
                         )
                     })
             });

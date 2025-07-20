@@ -67,7 +67,7 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord),
                         quest_hook::libil2cpp::Void,
@@ -76,7 +76,8 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -93,7 +94,7 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::TMPro::TMP_GlyphAdjustmentRecord,
@@ -105,7 +106,8 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -121,7 +123,7 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::TMPro::FontFeatureLookupFlags,
@@ -130,7 +132,8 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_featureLookupFlags", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_featureLookupFlags", 0usize
                         )
                     })
             });
@@ -145,7 +148,7 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::TMPro::TMP_GlyphAdjustmentRecord,
@@ -154,7 +157,8 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_firstAdjustmentRecord", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_firstAdjustmentRecord", 0usize
                         )
                     })
             });
@@ -169,7 +173,7 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::TMPro::TMP_GlyphAdjustmentRecord,
@@ -178,7 +182,8 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_secondAdjustmentRecord", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_secondAdjustmentRecord", 0usize
                         )
                     })
             });
@@ -194,7 +199,7 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::TMPro::FontFeatureLookupFlags),
                         quest_hook::libil2cpp::Void,
@@ -203,7 +208,8 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_featureLookupFlags", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_featureLookupFlags", 1usize
                         )
                     })
             });
@@ -219,7 +225,7 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::TMPro::TMP_GlyphAdjustmentRecord),
                         quest_hook::libil2cpp::Void,
@@ -228,7 +234,8 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_firstAdjustmentRecord", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_firstAdjustmentRecord", 1usize
                         )
                     })
             });
@@ -244,7 +251,7 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::TMPro::TMP_GlyphAdjustmentRecord),
                         quest_hook::libil2cpp::Void,
@@ -253,7 +260,8 @@ impl crate::TMPro::TMP_GlyphPairAdjustmentRecord {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_secondAdjustmentRecord", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_secondAdjustmentRecord", 1usize
                         )
                     })
             });

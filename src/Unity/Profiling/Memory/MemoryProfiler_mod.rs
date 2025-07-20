@@ -46,7 +46,7 @@ impl crate::Unity::Profiling::Memory::MemoryProfiler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -60,7 +60,8 @@ impl crate::Unity::Profiling::Memory::MemoryProfiler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FinalizeSnapshot", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FinalizeSnapshot", 2usize
                         )
                     })
             });
@@ -75,7 +76,7 @@ impl crate::Unity::Profiling::Memory::MemoryProfiler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -86,7 +87,8 @@ impl crate::Unity::Profiling::Memory::MemoryProfiler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PrepareMetadata", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PrepareMetadata", 0usize
                         )
                     })
             });
@@ -107,7 +109,7 @@ impl crate::Unity::Profiling::Memory::MemoryProfiler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -126,7 +128,8 @@ impl crate::Unity::Profiling::Memory::MemoryProfiler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SaveScreenshotToDisk", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SaveScreenshotToDisk", 7usize
                         )
                     })
             });
@@ -147,7 +150,7 @@ impl crate::Unity::Profiling::Memory::MemoryProfiler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -162,7 +165,8 @@ impl crate::Unity::Profiling::Memory::MemoryProfiler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteIntToByteArray", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteIntToByteArray", 3usize
                         )
                     })
             });
@@ -179,7 +183,7 @@ impl crate::Unity::Profiling::Memory::MemoryProfiler {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -196,7 +200,8 @@ impl crate::Unity::Profiling::Memory::MemoryProfiler {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteStringToByteArray", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteStringToByteArray", 3usize
                         )
                     })
             });

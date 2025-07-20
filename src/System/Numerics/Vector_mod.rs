@@ -48,7 +48,7 @@ impl crate::System::Numerics::Vector {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::Numerics::Vector_1<T>),
                         crate::System::Numerics::Vector_1<u64>,
@@ -57,7 +57,8 @@ impl crate::System::Numerics::Vector {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AsVectorUInt64", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AsVectorUInt64", 1usize
                         )
                     })
             });
@@ -77,7 +78,7 @@ impl crate::System::Numerics::Vector {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::Numerics::Vector_1<T>,
@@ -89,7 +90,8 @@ impl crate::System::Numerics::Vector {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Equals", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            2usize
                         )
                     })
             });
@@ -102,12 +104,13 @@ impl crate::System::Numerics::Vector {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_IsHardwareAccelerated")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsHardwareAccelerated", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsHardwareAccelerated", 0usize
                         )
                     })
             });

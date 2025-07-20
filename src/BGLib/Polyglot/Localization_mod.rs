@@ -50,7 +50,7 @@ impl crate::BGLib::Polyglot::Localization {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::SystemLanguage),
                         crate::BGLib::Polyglot::Language,
@@ -59,7 +59,8 @@ impl crate::BGLib::Polyglot::Localization {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertSystemLanguage", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertSystemLanguage", 1usize
                         )
                     })
             });
@@ -76,7 +77,7 @@ impl crate::BGLib::Polyglot::Localization {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -85,7 +86,8 @@ impl crate::BGLib::Polyglot::Localization {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Get", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Get",
+                            1usize
                         )
                     })
             });
@@ -104,7 +106,7 @@ impl crate::BGLib::Polyglot::Localization {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -119,7 +121,8 @@ impl crate::BGLib::Polyglot::Localization {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetKeys", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetKeys",
+                            0usize
                         )
                     })
             });
@@ -136,7 +139,7 @@ impl crate::BGLib::Polyglot::Localization {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::BGLib::Polyglot::Language),
                         crate::BGLib::Polyglot::LanguageDirection,
@@ -145,7 +148,8 @@ impl crate::BGLib::Polyglot::Localization {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLanguageDirection", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLanguageDirection", 1usize
                         )
                     })
             });
@@ -158,12 +162,13 @@ impl crate::BGLib::Polyglot::Localization {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("HasNoSupportedLanguage")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HasNoSupportedLanguage", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HasNoSupportedLanguage", 0usize
                         )
                     })
             });
@@ -177,7 +182,7 @@ impl crate::BGLib::Polyglot::Localization {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::BGLib::Polyglot::Language),
                         bool,
@@ -186,7 +191,8 @@ impl crate::BGLib::Polyglot::Localization {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsLanguageSupported", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsLanguageSupported", 1usize
                         )
                     })
             });
@@ -206,7 +212,7 @@ impl crate::BGLib::Polyglot::Localization {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -215,7 +221,8 @@ impl crate::BGLib::Polyglot::Localization {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NoDomainReloadInit", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NoDomainReloadInit", 0usize
                         )
                     })
             });
@@ -230,7 +237,7 @@ impl crate::BGLib::Polyglot::Localization {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::BGLib::Polyglot::LocalizationModel,
@@ -241,7 +248,8 @@ impl crate::BGLib::Polyglot::Localization {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetSingletonInstance", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetSingletonInstance", 1usize
                         )
                     })
             });
@@ -256,12 +264,13 @@ impl crate::BGLib::Polyglot::Localization {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -278,7 +287,7 @@ impl crate::BGLib::Polyglot::Localization {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -287,7 +296,8 @@ impl crate::BGLib::Polyglot::Localization {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_EnglishLanguageName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_EnglishLanguageName", 0usize
                         )
                     })
             });
@@ -302,7 +312,7 @@ impl crate::BGLib::Polyglot::Localization {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::BGLib::Polyglot::Language,
@@ -311,7 +321,8 @@ impl crate::BGLib::Polyglot::Localization {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_FallbackLanguage", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_FallbackLanguage", 0usize
                         )
                     })
             });
@@ -326,7 +337,7 @@ impl crate::BGLib::Polyglot::Localization {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -337,7 +348,8 @@ impl crate::BGLib::Polyglot::Localization {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Instance", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Instance", 0usize
                         )
                     })
             });
@@ -354,7 +366,7 @@ impl crate::BGLib::Polyglot::Localization {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -363,7 +375,8 @@ impl crate::BGLib::Polyglot::Localization {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_LocalizedLanguageName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_LocalizedLanguageName", 0usize
                         )
                     })
             });
@@ -384,7 +397,7 @@ impl crate::BGLib::Polyglot::Localization {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -397,7 +410,8 @@ impl crate::BGLib::Polyglot::Localization {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_SupportedLanguages", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SupportedLanguages", 0usize
                         )
                     })
             });
@@ -412,12 +426,13 @@ impl crate::BGLib::Polyglot::Localization {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_selectedLanguageIndex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_selectedLanguageIndex", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_selectedLanguageIndex", 0usize
                         )
                     })
             });

@@ -158,12 +158,13 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i64), i64, 1usize>("AtomicAddAndGet")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AtomicAddAndGet", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AtomicAddAndGet", 1usize
                         )
                     })
             });
@@ -178,12 +179,13 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i64, i64), bool, 2usize>("AtomicCompareExchange")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AtomicCompareExchange", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AtomicCompareExchange", 2usize
                         )
                     })
             });
@@ -196,12 +198,13 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i64, 0usize>("AtomicDecrementAndGet")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AtomicDecrementAndGet", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AtomicDecrementAndGet", 0usize
                         )
                     })
             });
@@ -215,12 +218,13 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i64), i64, 1usize>("AtomicExchange")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AtomicExchange", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AtomicExchange", 1usize
                         )
                     })
             });
@@ -231,12 +235,13 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i64, 0usize>("AtomicIncrementAndGet")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AtomicIncrementAndGet", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AtomicIncrementAndGet", 0usize
                         )
                     })
             });
@@ -247,12 +252,13 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i64, 0usize>("ReadAcquireFence")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadAcquireFence", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadAcquireFence", 0usize
                         )
                     })
             });
@@ -263,12 +269,13 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i64, 0usize>("ReadCompilerOnlyFence")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadCompilerOnlyFence", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadCompilerOnlyFence", 0usize
                         )
                     })
             });
@@ -279,12 +286,13 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i64, 0usize>("ReadFullFence")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadFullFence", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadFullFence", 0usize
                         )
                     })
             });
@@ -295,12 +303,13 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i64, 0usize>("ReadUnfenced")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadUnfenced", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadUnfenced", 0usize
                         )
                     })
             });
@@ -315,7 +324,7 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -324,7 +333,8 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToString", 0usize
                         )
                     })
             });
@@ -340,7 +350,7 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i64),
                         quest_hook::libil2cpp::Void,
@@ -349,7 +359,8 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteCompilerOnlyFence", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteCompilerOnlyFence", 1usize
                         )
                     })
             });
@@ -365,7 +376,7 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i64),
                         quest_hook::libil2cpp::Void,
@@ -374,7 +385,8 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteFullFence", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteFullFence", 1usize
                         )
                     })
             });
@@ -390,7 +402,7 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i64),
                         quest_hook::libil2cpp::Void,
@@ -399,7 +411,8 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteReleaseFence", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteReleaseFence", 1usize
                         )
                     })
             });
@@ -415,7 +428,7 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i64),
                         quest_hook::libil2cpp::Void,
@@ -424,7 +437,8 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WriteUnfenced", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteUnfenced", 1usize
                         )
                     })
             });
@@ -440,12 +454,13 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i64), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });

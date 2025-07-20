@@ -51,7 +51,7 @@ impl crate::GlobalNamespace::GraphAPIClient {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, crate::GlobalNamespace::GraphAPIClient_PostOptions),
                         i32,
@@ -60,7 +60,8 @@ impl crate::GlobalNamespace::GraphAPIClient {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CalculateDelayMsBeforeRetry", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CalculateDelayMsBeforeRetry", 2usize
                         )
                     })
             });
@@ -96,7 +97,7 @@ impl crate::GlobalNamespace::GraphAPIClient {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -114,7 +115,8 @@ impl crate::GlobalNamespace::GraphAPIClient {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PostLoggedOut", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PostLoggedOut", 4usize
                         )
                     })
             });
@@ -148,7 +150,7 @@ impl crate::GlobalNamespace::GraphAPIClient {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -169,7 +171,8 @@ impl crate::GlobalNamespace::GraphAPIClient {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Post", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Post",
+                            5usize
                         )
                     })
             });
@@ -200,7 +203,7 @@ impl crate::GlobalNamespace::GraphAPIClient {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Uri>,
@@ -220,7 +223,8 @@ impl crate::GlobalNamespace::GraphAPIClient {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Post", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Post",
+                            4usize
                         )
                     })
             });
@@ -242,7 +246,7 @@ impl crate::GlobalNamespace::GraphAPIClient {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::INetworkConfig,
@@ -253,7 +257,8 @@ impl crate::GlobalNamespace::GraphAPIClient {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });

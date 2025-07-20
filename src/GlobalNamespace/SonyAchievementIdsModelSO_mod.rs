@@ -70,7 +70,7 @@ impl crate::GlobalNamespace::SonyAchievementIdsModelSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -86,7 +86,8 @@ impl crate::GlobalNamespace::SonyAchievementIdsModelSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAchievementId", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAchievementId", 2usize
                         )
                     })
             });
@@ -103,7 +104,7 @@ impl crate::GlobalNamespace::SonyAchievementIdsModelSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -117,7 +118,8 @@ impl crate::GlobalNamespace::SonyAchievementIdsModelSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTrophyId", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTrophyId", 2usize
                         )
                     })
             });
@@ -134,7 +136,7 @@ impl crate::GlobalNamespace::SonyAchievementIdsModelSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -145,7 +147,8 @@ impl crate::GlobalNamespace::SonyAchievementIdsModelSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTrophyIds", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTrophyIds", 0usize
                         )
                     })
             });
@@ -167,12 +170,13 @@ impl crate::GlobalNamespace::SonyAchievementIdsModelSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnEnable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnEnable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnEnable", 0usize
                         )
                     })
             });
@@ -187,12 +191,13 @@ impl crate::GlobalNamespace::SonyAchievementIdsModelSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -215,7 +220,7 @@ impl crate::GlobalNamespace::SonyAchievementIdsModelSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -230,7 +235,8 @@ impl crate::GlobalNamespace::SonyAchievementIdsModelSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_achievementsIds", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_achievementsIds", 0usize
                         )
                     })
             });
@@ -312,12 +318,13 @@ impl crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -334,7 +341,7 @@ impl crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AchievementSO>,
@@ -343,7 +350,8 @@ impl crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_achievement", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_achievement", 0usize
                         )
                     })
             });
@@ -360,7 +368,7 @@ impl crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -369,7 +377,8 @@ impl crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_achievementId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_achievementId", 0usize
                         )
                     })
             });
@@ -382,12 +391,13 @@ impl crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_ps4TrophyId")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ps4TrophyId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ps4TrophyId", 0usize
                         )
                     })
             });

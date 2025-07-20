@@ -50,7 +50,7 @@ impl crate::GlobalNamespace::QuantizedMathf {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Pose, crate::UnityEngine::Pose),
                         bool,
@@ -59,7 +59,8 @@ impl crate::GlobalNamespace::QuantizedMathf {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Approximately", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Approximately", 2usize
                         )
                     })
             });
@@ -73,7 +74,7 @@ impl crate::GlobalNamespace::QuantizedMathf {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Quaternion, crate::UnityEngine::Quaternion),
                         bool,
@@ -82,7 +83,8 @@ impl crate::GlobalNamespace::QuantizedMathf {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Approximately", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Approximately", 2usize
                         )
                     })
             });
@@ -96,7 +98,7 @@ impl crate::GlobalNamespace::QuantizedMathf {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Vector3, crate::UnityEngine::Vector3),
                         bool,
@@ -105,7 +107,8 @@ impl crate::GlobalNamespace::QuantizedMathf {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Approximately", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Approximately", 2usize
                         )
                     })
             });
@@ -120,12 +123,13 @@ impl crate::GlobalNamespace::QuantizedMathf {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32, f32, f32), bool, 3usize>("Approximately")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Approximately", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Approximately", 3usize
                         )
                     })
             });
@@ -140,12 +144,13 @@ impl crate::GlobalNamespace::QuantizedMathf {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, i32, i32), bool, 3usize>("Approximately")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Approximately", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Approximately", 3usize
                         )
                     })
             });
@@ -160,7 +165,7 @@ impl crate::GlobalNamespace::QuantizedMathf {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -169,7 +174,8 @@ impl crate::GlobalNamespace::QuantizedMathf {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "QuantizedVectorComponentToString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "QuantizedVectorComponentToString", 1usize
                         )
                     })
             });

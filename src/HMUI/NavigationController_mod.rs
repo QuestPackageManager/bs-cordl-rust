@@ -66,7 +66,7 @@ impl crate::HMUI::NavigationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -89,7 +89,8 @@ impl crate::HMUI::NavigationController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNewPositionsForViewControllers", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNewPositionsForViewControllers", 3usize
                         )
                     })
             });
@@ -115,7 +116,7 @@ impl crate::HMUI::NavigationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::List_1<
@@ -128,7 +129,8 @@ impl crate::HMUI::NavigationController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LayoutViewControllers", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LayoutViewControllers", 1usize
                         )
                     })
             });
@@ -152,7 +154,7 @@ impl crate::HMUI::NavigationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>, bool),
                         quest_hook::libil2cpp::Void,
@@ -161,7 +163,8 @@ impl crate::HMUI::NavigationController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PopViewController", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PopViewController", 2usize
                         )
                     })
             });
@@ -179,7 +182,7 @@ impl crate::HMUI::NavigationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, quest_hook::libil2cpp::Gc<crate::System::Action>, bool),
                         quest_hook::libil2cpp::Void,
@@ -188,7 +191,8 @@ impl crate::HMUI::NavigationController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PopViewControllers", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PopViewControllers", 3usize
                         )
                     })
             });
@@ -208,7 +212,7 @@ impl crate::HMUI::NavigationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         crate::UnityEngine::Vector3,
@@ -217,7 +221,8 @@ impl crate::HMUI::NavigationController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PositionVector", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PositionVector", 1usize
                         )
                     })
             });
@@ -235,7 +240,7 @@ impl crate::HMUI::NavigationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
@@ -248,7 +253,8 @@ impl crate::HMUI::NavigationController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PushViewController", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PushViewController", 3usize
                         )
                     })
             });
@@ -265,7 +271,7 @@ impl crate::HMUI::NavigationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>),
                         quest_hook::libil2cpp::Void,
@@ -274,7 +280,8 @@ impl crate::HMUI::NavigationController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetupViewControllerRect", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetupViewControllerRect", 1usize
                         )
                     })
             });
@@ -289,12 +296,13 @@ impl crate::HMUI::NavigationController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

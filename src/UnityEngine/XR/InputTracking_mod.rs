@@ -46,7 +46,7 @@ impl crate::UnityEngine::XR::InputTracking {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::XR::XRNode),
                         u64,
@@ -55,7 +55,8 @@ impl crate::UnityEngine::XR::InputTracking {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetDeviceIdAtXRNode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDeviceIdAtXRNode", 1usize
                         )
                     })
             });
@@ -72,7 +73,7 @@ impl crate::UnityEngine::XR::InputTracking {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::List_1<
@@ -85,7 +86,8 @@ impl crate::UnityEngine::XR::InputTracking {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNodeStates", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNodeStates", 1usize
                         )
                     })
             });
@@ -104,7 +106,7 @@ impl crate::UnityEngine::XR::InputTracking {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::List_1<
@@ -117,7 +119,8 @@ impl crate::UnityEngine::XR::InputTracking {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNodeStates_Internal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNodeStates_Internal", 1usize
                         )
                     })
             });
@@ -135,7 +138,7 @@ impl crate::UnityEngine::XR::InputTracking {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::XR::InputTracking_TrackingStateEventType,
@@ -149,7 +152,8 @@ impl crate::UnityEngine::XR::InputTracking {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InvokeTrackingEvent", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InvokeTrackingEvent", 4usize
                         )
                     })
             });
@@ -166,7 +170,7 @@ impl crate::UnityEngine::XR::InputTracking {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<crate::UnityEngine::XR::XRNodeState>,
@@ -177,7 +181,8 @@ impl crate::UnityEngine::XR::InputTracking {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_nodeAdded", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_nodeAdded", 1usize
                         )
                     })
             });
@@ -194,7 +199,7 @@ impl crate::UnityEngine::XR::InputTracking {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<crate::UnityEngine::XR::XRNodeState>,
@@ -205,7 +210,8 @@ impl crate::UnityEngine::XR::InputTracking {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_nodeRemoved", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_nodeRemoved", 1usize
                         )
                     })
             });
@@ -222,7 +228,7 @@ impl crate::UnityEngine::XR::InputTracking {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<crate::UnityEngine::XR::XRNodeState>,
@@ -233,7 +239,8 @@ impl crate::UnityEngine::XR::InputTracking {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_nodeAdded", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_nodeAdded", 1usize
                         )
                     })
             });
@@ -250,7 +257,7 @@ impl crate::UnityEngine::XR::InputTracking {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<crate::UnityEngine::XR::XRNodeState>,
@@ -261,7 +268,8 @@ impl crate::UnityEngine::XR::InputTracking {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_nodeRemoved", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_nodeRemoved", 1usize
                         )
                     })
             });

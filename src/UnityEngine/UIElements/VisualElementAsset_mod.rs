@@ -65,7 +65,7 @@ impl crate::UnityEngine::UIElements::VisualElementAsset {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -74,7 +74,8 @@ impl crate::UnityEngine::UIElements::VisualElementAsset {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnAfterDeserialize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnAfterDeserialize", 0usize
                         )
                     })
             });
@@ -89,7 +90,7 @@ impl crate::UnityEngine::UIElements::VisualElementAsset {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -98,7 +99,8 @@ impl crate::UnityEngine::UIElements::VisualElementAsset {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnBeforeSerialize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnBeforeSerialize", 0usize
                         )
                     })
             });
@@ -119,7 +121,7 @@ impl crate::UnityEngine::UIElements::VisualElementAsset {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -134,7 +136,8 @@ impl crate::UnityEngine::UIElements::VisualElementAsset {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_classes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_classes", 0usize
                         )
                     })
             });
@@ -149,12 +152,13 @@ impl crate::UnityEngine::UIElements::VisualElementAsset {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_hasStylesheetPaths")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_hasStylesheetPaths", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_hasStylesheetPaths", 0usize
                         )
                     })
             });
@@ -165,12 +169,13 @@ impl crate::UnityEngine::UIElements::VisualElementAsset {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_hasStylesheets")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_hasStylesheets", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_hasStylesheets", 0usize
                         )
                     })
             });
@@ -181,12 +186,13 @@ impl crate::UnityEngine::UIElements::VisualElementAsset {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_ruleIndex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ruleIndex", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ruleIndex", 0usize
                         )
                     })
             });
@@ -197,12 +203,13 @@ impl crate::UnityEngine::UIElements::VisualElementAsset {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_skipClone")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_skipClone", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_skipClone", 0usize
                         )
                     })
             });
@@ -221,7 +228,7 @@ impl crate::UnityEngine::UIElements::VisualElementAsset {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -236,7 +243,8 @@ impl crate::UnityEngine::UIElements::VisualElementAsset {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_stylesheetPaths", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_stylesheetPaths", 0usize
                         )
                     })
             });
@@ -259,7 +267,7 @@ impl crate::UnityEngine::UIElements::VisualElementAsset {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -274,7 +282,8 @@ impl crate::UnityEngine::UIElements::VisualElementAsset {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_stylesheets", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_stylesheets", 0usize
                         )
                     })
             });

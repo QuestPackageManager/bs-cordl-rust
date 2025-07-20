@@ -47,12 +47,13 @@ impl crate::GlobalNamespace::IBladeMovementData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_bladeSpeed")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_bladeSpeed", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_bladeSpeed", 0usize
                         )
                     })
             });
@@ -67,7 +68,7 @@ impl crate::GlobalNamespace::IBladeMovementData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::BladeMovementDataElement,
@@ -76,7 +77,8 @@ impl crate::GlobalNamespace::IBladeMovementData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_lastAddedData", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_lastAddedData", 0usize
                         )
                     })
             });
@@ -93,7 +95,7 @@ impl crate::GlobalNamespace::IBladeMovementData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::BladeMovementDataElement,
@@ -102,7 +104,8 @@ impl crate::GlobalNamespace::IBladeMovementData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_prevAddedData", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_prevAddedData", 0usize
                         )
                     })
             });

@@ -52,7 +52,7 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -70,7 +70,8 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ComputeTransitionPropertyData", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ComputeTransitionPropertyData", 2usize
                         )
                     })
             });
@@ -87,7 +88,7 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::UIElements::EasingMode),
                         quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
@@ -96,7 +97,8 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertTransitionFunction", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertTransitionFunction", 1usize
                         )
                     })
             });
@@ -111,7 +113,7 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::UIElements::TimeValue),
                         i32,
@@ -120,7 +122,8 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConvertTransitionTime", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertTransitionTime", 1usize
                         )
                     })
             });
@@ -141,7 +144,7 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::UnityEngine::UIElements::ComputedStyle,
@@ -156,7 +159,8 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetOrComputeTransitionPropertyData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetOrComputeTransitionPropertyData", 1usize
                         )
                     })
             });
@@ -175,7 +179,7 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::UnityEngine::UIElements::ComputedStyle,
@@ -186,7 +190,8 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTransitionHashCode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTransitionHashCode", 1usize
                         )
                     })
             });
@@ -205,7 +210,7 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -222,7 +227,8 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTransitionProperty", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTransitionProperty", 3usize
                         )
                     })
             });
@@ -243,7 +249,7 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -258,7 +264,8 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetWrappingTransitionData", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetWrappingTransitionData", 3usize
                         )
                     })
             });
@@ -276,7 +283,7 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -290,7 +297,8 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HasTransitionProperty", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HasTransitionProperty", 2usize
                         )
                     })
             });
@@ -308,7 +316,7 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -324,7 +332,8 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SameTransitionProperty", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SameTransitionProperty", 2usize
                         )
                     })
             });
@@ -346,7 +355,7 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -366,7 +375,8 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SameTransitionProperty", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SameTransitionProperty", 2usize
                         )
                     })
             });
@@ -388,7 +398,7 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -408,7 +418,8 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SameTransitionProperty", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SameTransitionProperty", 2usize
                         )
                     })
             });
@@ -423,7 +434,7 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::UnityEngine::UIElements::ComputedStyle,
@@ -434,7 +445,8 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateComputedTransitions", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateComputedTransitions", 1usize
                         )
                     })
             });

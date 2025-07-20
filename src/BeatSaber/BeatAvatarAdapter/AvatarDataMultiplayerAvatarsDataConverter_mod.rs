@@ -49,7 +49,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarDataMultiplayerAvatarsDataConver
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::MultiplayerAvatarData),
                         quest_hook::libil2cpp::Gc<
@@ -60,7 +60,8 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarDataMultiplayerAvatarsDataConver
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateAvatarData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateAvatarData", 1usize
                         )
                     })
             });
@@ -77,7 +78,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarDataMultiplayerAvatarsDataConver
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::BeatSaber::BeatAvatarSDK::AvatarData,
@@ -88,7 +89,8 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarDataMultiplayerAvatarsDataConver
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateMultiplayerAvatarsData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateMultiplayerAvatarsData", 1usize
                         )
                     })
             });

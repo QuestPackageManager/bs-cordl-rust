@@ -45,7 +45,7 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>),
                         quest_hook::libil2cpp::Void,
@@ -54,7 +54,8 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BakeMesh", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BakeMesh", 1usize
                         )
                     })
             });
@@ -71,7 +72,7 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>, bool),
                         quest_hook::libil2cpp::Void,
@@ -80,7 +81,8 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BakeMesh", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BakeMesh", 2usize
                         )
                     })
             });
@@ -96,12 +98,13 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), f32, 1usize>("GetBlendShapeWeight")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBlendShapeWeight", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBlendShapeWeight", 1usize
                         )
                     })
             });
@@ -116,7 +119,7 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
@@ -125,7 +128,8 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPreviousVertexBuffer", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPreviousVertexBuffer", 0usize
                         )
                     })
             });
@@ -142,7 +146,7 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
@@ -151,7 +155,8 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPreviousVertexBufferImpl", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPreviousVertexBufferImpl", 0usize
                         )
                     })
             });
@@ -168,7 +173,7 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
@@ -177,7 +182,8 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetVertexBuffer", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetVertexBuffer", 0usize
                         )
                     })
             });
@@ -194,7 +200,7 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
@@ -203,7 +209,8 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetVertexBufferImpl", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetVertexBufferImpl", 0usize
                         )
                     })
             });
@@ -227,7 +234,7 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, f32),
                         quest_hook::libil2cpp::Void,
@@ -236,7 +243,8 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetBlendShapeWeight", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetBlendShapeWeight", 2usize
                         )
                     })
             });
@@ -251,12 +259,13 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -277,7 +286,7 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -290,7 +299,8 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_bones", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_bones", 0usize
                         )
                     })
             });
@@ -307,7 +317,7 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         bool,
@@ -316,8 +326,8 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_forceMatrixRecalculationPerRender",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_forceMatrixRecalculationPerRender", 0usize
                         )
                     })
             });
@@ -330,7 +340,7 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::SkinQuality,
@@ -339,7 +349,8 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_quality", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_quality", 0usize
                         )
                     })
             });
@@ -356,7 +367,7 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -365,7 +376,8 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rootBone", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rootBone", 0usize
                         )
                     })
             });
@@ -382,7 +394,7 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
@@ -391,7 +403,8 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_sharedMesh", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_sharedMesh", 0usize
                         )
                     })
             });
@@ -404,12 +417,13 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_skinnedMotionVectors")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_skinnedMotionVectors", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_skinnedMotionVectors", 0usize
                         )
                     })
             });
@@ -420,12 +434,13 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_updateWhenOffscreen")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_updateWhenOffscreen", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_updateWhenOffscreen", 0usize
                         )
                     })
             });
@@ -438,7 +453,7 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::GraphicsBuffer_Target,
@@ -447,7 +462,8 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_vertexBufferTarget", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_vertexBufferTarget", 0usize
                         )
                     })
             });
@@ -467,7 +483,7 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -480,7 +496,8 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_bones", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_bones", 1usize
                         )
                     })
             });
@@ -496,7 +513,7 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -505,8 +522,8 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_forceMatrixRecalculationPerRender",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_forceMatrixRecalculationPerRender", 1usize
                         )
                     })
             });
@@ -522,7 +539,7 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::SkinQuality),
                         quest_hook::libil2cpp::Void,
@@ -531,7 +548,8 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_quality", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_quality", 1usize
                         )
                     })
             });
@@ -547,7 +565,7 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
                         quest_hook::libil2cpp::Void,
@@ -556,7 +574,8 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_rootBone", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_rootBone", 1usize
                         )
                     })
             });
@@ -572,7 +591,7 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>),
                         quest_hook::libil2cpp::Void,
@@ -581,7 +600,8 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_sharedMesh", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_sharedMesh", 1usize
                         )
                     })
             });
@@ -597,7 +617,7 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -606,7 +626,8 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_skinnedMotionVectors", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_skinnedMotionVectors", 1usize
                         )
                     })
             });
@@ -622,7 +643,7 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -631,7 +652,8 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_updateWhenOffscreen", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_updateWhenOffscreen", 1usize
                         )
                     })
             });
@@ -647,7 +669,7 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::GraphicsBuffer_Target),
                         quest_hook::libil2cpp::Void,
@@ -656,7 +678,8 @@ impl crate::UnityEngine::SkinnedMeshRenderer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_vertexBufferTarget", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_vertexBufferTarget", 1usize
                         )
                     })
             });

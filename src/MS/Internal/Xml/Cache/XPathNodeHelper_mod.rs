@@ -57,7 +57,7 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -80,7 +80,8 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetInScopeNamespaces", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetInScopeNamespaces", 3usize
                         )
                     })
             });
@@ -107,7 +108,7 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -130,7 +131,8 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLocalNamespaces", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLocalNamespaces", 3usize
                         )
                     })
             });
@@ -150,7 +152,7 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -166,7 +168,8 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLocation", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLocation", 2usize
                         )
                     })
             });
@@ -188,7 +191,7 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -206,7 +209,8 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNonDescendant", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNonDescendant", 2usize
                         )
                     })
             });
@@ -228,7 +232,7 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -246,7 +250,8 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetParent", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetParent", 2usize
                         )
                     })
             });
@@ -274,7 +279,7 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -298,7 +303,8 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTextFollowing", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTextFollowing", 4usize
                         )
                     })
             });

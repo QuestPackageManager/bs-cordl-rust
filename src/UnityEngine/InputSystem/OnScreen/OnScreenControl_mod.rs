@@ -63,12 +63,13 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDisable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDisable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDisable", 0usize
                         )
                     })
             });
@@ -83,12 +84,13 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnEnable")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnEnable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnEnable", 0usize
                         )
                     })
             });
@@ -108,7 +110,7 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (TValue),
                         quest_hook::libil2cpp::Void,
@@ -117,7 +119,8 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SendValueToControl", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SendValueToControl", 1usize
                         )
                     })
             });
@@ -132,7 +135,7 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -141,7 +144,8 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SentDefaultValueToControl", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SentDefaultValueToControl", 0usize
                         )
                     })
             });
@@ -156,7 +160,7 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -165,7 +169,8 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetupInputControl", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetupInputControl", 0usize
                         )
                     })
             });
@@ -180,12 +185,13 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -202,7 +208,7 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -213,7 +219,8 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_control", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_control", 0usize
                         )
                     })
             });
@@ -230,7 +237,7 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -239,7 +246,8 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_controlPath", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_controlPath", 0usize
                         )
                     })
             });
@@ -256,7 +264,7 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -265,7 +273,8 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_controlPathInternal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_controlPathInternal", 0usize
                         )
                     })
             });
@@ -281,7 +290,7 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -290,7 +299,8 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_controlPath", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_controlPath", 1usize
                         )
                     })
             });
@@ -306,7 +316,7 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -315,7 +325,8 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_controlPathInternal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_controlPathInternal", 1usize
                         )
                     })
             });
@@ -454,7 +465,7 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl_OnScreenDeviceIn
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::OnScreen::OnScreenControl,
@@ -465,7 +476,8 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl_OnScreenDeviceIn
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddControl", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddControl", 1usize
                         )
                     })
             });
@@ -480,12 +492,13 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl_OnScreenDeviceIn
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Destroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Destroy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Destroy",
+                            0usize
                         )
                     })
             });
@@ -505,7 +518,7 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl_OnScreenDeviceIn
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::OnScreen::OnScreenControl,
@@ -516,7 +529,8 @@ impl crate::UnityEngine::InputSystem::OnScreen::OnScreenControl_OnScreenDeviceIn
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RemoveControl", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RemoveControl", 1usize
                         )
                     })
             });

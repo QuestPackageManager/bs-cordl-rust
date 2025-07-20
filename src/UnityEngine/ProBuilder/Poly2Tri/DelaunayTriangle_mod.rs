@@ -56,12 +56,13 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f64, 0usize>("Area")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Area", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Area",
+                            0usize
                         )
                     })
             });
@@ -78,7 +79,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -89,7 +90,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Centroid", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Centroid", 0usize
                         )
                     })
             });
@@ -107,7 +109,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
@@ -118,7 +120,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Contains", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Contains", 1usize
                         )
                     })
             });
@@ -137,7 +140,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -153,7 +156,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EdgeIndex", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EdgeIndex", 2usize
                         )
                     })
             });
@@ -169,7 +173,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
@@ -180,7 +184,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetConstrainedEdgeAcross", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetConstrainedEdgeAcross", 1usize
                         )
                     })
             });
@@ -196,7 +201,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
@@ -207,7 +212,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetConstrainedEdgeCCW", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetConstrainedEdgeCCW", 1usize
                         )
                     })
             });
@@ -223,7 +229,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
@@ -234,7 +240,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetConstrainedEdgeCW", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetConstrainedEdgeCW", 1usize
                         )
                     })
             });
@@ -250,7 +257,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
@@ -261,7 +268,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetDelaunayEdgeAcross", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDelaunayEdgeAcross", 1usize
                         )
                     })
             });
@@ -277,7 +285,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
@@ -288,7 +296,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetDelaunayEdgeCCW", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDelaunayEdgeCCW", 1usize
                         )
                     })
             });
@@ -304,7 +313,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
@@ -315,7 +324,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetDelaunayEdgeCW", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDelaunayEdgeCW", 1usize
                         )
                     })
             });
@@ -331,7 +341,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
@@ -342,7 +352,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IndexCCWFrom", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IndexCCWFrom", 1usize
                         )
                     })
             });
@@ -358,7 +369,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
@@ -369,7 +380,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IndexCWFrom", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IndexCWFrom", 1usize
                         )
                     })
             });
@@ -385,7 +397,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
@@ -396,7 +408,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IndexOf", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "IndexOf",
+                            1usize
                         )
                     })
             });
@@ -415,7 +428,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -431,7 +444,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Legalize", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Legalize", 2usize
                         )
                     })
             });
@@ -449,7 +463,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
@@ -460,7 +474,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MarkConstrainedEdge", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MarkConstrainedEdge", 1usize
                         )
                     })
             });
@@ -481,7 +496,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -497,7 +512,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MarkConstrainedEdge", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MarkConstrainedEdge", 2usize
                         )
                     })
             });
@@ -513,7 +529,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -522,7 +538,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MarkConstrainedEdge", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MarkConstrainedEdge", 1usize
                         )
                     })
             });
@@ -540,7 +557,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
@@ -551,7 +568,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MarkEdge", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MarkEdge", 1usize
                         )
                     })
             });
@@ -573,7 +591,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::List_1<
@@ -588,7 +606,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MarkEdge", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MarkEdge", 1usize
                         )
                     })
             });
@@ -603,7 +622,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -612,7 +631,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MarkNeighborEdges", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MarkNeighborEdges", 0usize
                         )
                     })
             });
@@ -630,7 +650,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
@@ -641,7 +661,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MarkNeighbor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MarkNeighbor", 1usize
                         )
                     })
             });
@@ -665,7 +686,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -684,7 +705,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MarkNeighbor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MarkNeighbor", 3usize
                         )
                     })
             });
@@ -706,7 +728,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
@@ -719,7 +741,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NeighborAcrossFrom", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NeighborAcrossFrom", 1usize
                         )
                     })
             });
@@ -741,7 +764,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
@@ -754,7 +777,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NeighborCCWFrom", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NeighborCCWFrom", 1usize
                         )
                     })
             });
@@ -776,7 +800,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
@@ -789,7 +813,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NeighborCWFrom", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NeighborCWFrom", 1usize
                         )
                     })
             });
@@ -831,7 +856,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -849,7 +874,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OppositePoint", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OppositePoint", 2usize
                         )
                     })
             });
@@ -871,7 +897,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
@@ -884,7 +910,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PointCCWFrom", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PointCCWFrom", 1usize
                         )
                     })
             });
@@ -906,7 +933,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
@@ -919,7 +946,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PointCWFrom", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PointCWFrom", 1usize
                         )
                     })
             });
@@ -934,12 +962,13 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("RotateCW")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RotateCW", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RotateCW", 0usize
                         )
                     })
             });
@@ -958,7 +987,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -972,7 +1001,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetConstrainedEdgeAcross", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetConstrainedEdgeAcross", 2usize
                         )
                     })
             });
@@ -991,7 +1021,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1005,7 +1035,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetConstrainedEdgeCCW", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetConstrainedEdgeCCW", 2usize
                         )
                     })
             });
@@ -1024,7 +1055,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1038,7 +1069,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetConstrainedEdgeCW", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetConstrainedEdgeCW", 2usize
                         )
                     })
             });
@@ -1057,7 +1089,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1071,7 +1103,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetDelaunayEdgeAcross", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetDelaunayEdgeAcross", 2usize
                         )
                     })
             });
@@ -1090,7 +1123,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1104,7 +1137,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetDelaunayEdgeCCW", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetDelaunayEdgeCCW", 2usize
                         )
                     })
             });
@@ -1123,7 +1157,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1137,7 +1171,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetDelaunayEdgeCW", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetDelaunayEdgeCW", 2usize
                         )
                     })
             });
@@ -1154,7 +1189,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1163,7 +1198,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToString", 0usize
                         )
                     })
             });
@@ -1187,7 +1223,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1206,7 +1242,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });
@@ -1219,12 +1256,13 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsInterior")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsInterior", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsInterior", 0usize
                         )
                     })
             });
@@ -1238,7 +1276,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -1247,7 +1285,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_IsInterior", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_IsInterior", 1usize
                         )
                     })
             });

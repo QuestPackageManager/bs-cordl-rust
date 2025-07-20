@@ -109,7 +109,7 @@ impl crate::UnityEngine::UI::Navigation {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UI::Navigation),
                         bool,
@@ -118,7 +118,8 @@ impl crate::UnityEngine::UI::Navigation {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Equals", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            1usize
                         )
                     })
             });
@@ -131,7 +132,7 @@ impl crate::UnityEngine::UI::Navigation {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::UnityEngine::UI::Navigation,
@@ -140,7 +141,8 @@ impl crate::UnityEngine::UI::Navigation {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_defaultNavigation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_defaultNavigation", 0usize
                         )
                     })
             });
@@ -155,7 +157,7 @@ impl crate::UnityEngine::UI::Navigation {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::UI::Navigation_Mode,
@@ -164,7 +166,8 @@ impl crate::UnityEngine::UI::Navigation {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_mode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_mode", 0usize
                         )
                     })
             });
@@ -181,7 +184,7 @@ impl crate::UnityEngine::UI::Navigation {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
@@ -190,7 +193,8 @@ impl crate::UnityEngine::UI::Navigation {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_selectOnDown", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_selectOnDown", 0usize
                         )
                     })
             });
@@ -207,7 +211,7 @@ impl crate::UnityEngine::UI::Navigation {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
@@ -216,7 +220,8 @@ impl crate::UnityEngine::UI::Navigation {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_selectOnLeft", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_selectOnLeft", 0usize
                         )
                     })
             });
@@ -233,7 +238,7 @@ impl crate::UnityEngine::UI::Navigation {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
@@ -242,7 +247,8 @@ impl crate::UnityEngine::UI::Navigation {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_selectOnRight", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_selectOnRight", 0usize
                         )
                     })
             });
@@ -259,7 +265,7 @@ impl crate::UnityEngine::UI::Navigation {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
@@ -268,7 +274,8 @@ impl crate::UnityEngine::UI::Navigation {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_selectOnUp", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_selectOnUp", 0usize
                         )
                     })
             });
@@ -281,12 +288,13 @@ impl crate::UnityEngine::UI::Navigation {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_wrapAround")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_wrapAround", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_wrapAround", 0usize
                         )
                     })
             });
@@ -300,7 +308,7 @@ impl crate::UnityEngine::UI::Navigation {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::UI::Navigation_Mode),
                         quest_hook::libil2cpp::Void,
@@ -309,7 +317,8 @@ impl crate::UnityEngine::UI::Navigation {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_mode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_mode", 1usize
                         )
                     })
             });
@@ -325,7 +334,7 @@ impl crate::UnityEngine::UI::Navigation {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>),
                         quest_hook::libil2cpp::Void,
@@ -334,7 +343,8 @@ impl crate::UnityEngine::UI::Navigation {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_selectOnDown", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_selectOnDown", 1usize
                         )
                     })
             });
@@ -350,7 +360,7 @@ impl crate::UnityEngine::UI::Navigation {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>),
                         quest_hook::libil2cpp::Void,
@@ -359,7 +369,8 @@ impl crate::UnityEngine::UI::Navigation {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_selectOnLeft", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_selectOnLeft", 1usize
                         )
                     })
             });
@@ -375,7 +386,7 @@ impl crate::UnityEngine::UI::Navigation {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>),
                         quest_hook::libil2cpp::Void,
@@ -384,7 +395,8 @@ impl crate::UnityEngine::UI::Navigation {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_selectOnRight", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_selectOnRight", 1usize
                         )
                     })
             });
@@ -400,7 +412,7 @@ impl crate::UnityEngine::UI::Navigation {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>),
                         quest_hook::libil2cpp::Void,
@@ -409,7 +421,8 @@ impl crate::UnityEngine::UI::Navigation {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_selectOnUp", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_selectOnUp", 1usize
                         )
                     })
             });
@@ -425,7 +438,7 @@ impl crate::UnityEngine::UI::Navigation {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -434,7 +447,8 @@ impl crate::UnityEngine::UI::Navigation {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_wrapAround", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_wrapAround", 1usize
                         )
                     })
             });

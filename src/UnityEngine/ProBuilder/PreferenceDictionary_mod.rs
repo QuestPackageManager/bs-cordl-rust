@@ -133,12 +133,13 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Clear", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Clear",
+                            0usize
                         )
                     })
             });
@@ -154,7 +155,7 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -163,7 +164,8 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DeleteKey", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DeleteKey", 1usize
                         )
                     })
             });
@@ -184,7 +186,7 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -198,7 +200,8 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Get", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Get",
+                            2usize
                         )
                     })
             });
@@ -213,7 +216,7 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -227,7 +230,8 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBool", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetBool",
+                            2usize
                         )
                     })
             });
@@ -249,7 +253,7 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -265,7 +269,8 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBoolDictionary", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBoolDictionary", 0usize
                         )
                     })
             });
@@ -285,7 +290,7 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -299,7 +304,8 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetColor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetColor", 2usize
                         )
                     })
             });
@@ -321,7 +327,7 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -337,7 +343,8 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetColorDictionary", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetColorDictionary", 0usize
                         )
                     })
             });
@@ -357,7 +364,7 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -371,7 +378,8 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetFloat", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetFloat", 2usize
                         )
                     })
             });
@@ -393,7 +401,7 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -409,7 +417,8 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetFloatDictionary", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetFloatDictionary", 0usize
                         )
                     })
             });
@@ -429,7 +438,7 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -443,7 +452,8 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetInt", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetInt",
+                            2usize
                         )
                     })
             });
@@ -465,7 +475,7 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -481,7 +491,8 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetIntDictionary", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetIntDictionary", 0usize
                         )
                     })
             });
@@ -503,7 +514,7 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -517,7 +528,8 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMaterial", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMaterial", 2usize
                         )
                     })
             });
@@ -539,7 +551,7 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -555,7 +567,8 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMaterialDictionary", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMaterialDictionary", 0usize
                         )
                     })
             });
@@ -577,7 +590,7 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -593,7 +606,8 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetString", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetString", 2usize
                         )
                     })
             });
@@ -615,7 +629,7 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -633,7 +647,8 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetStringDictionary", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetStringDictionary", 0usize
                         )
                     })
             });
@@ -652,7 +667,7 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -661,7 +676,8 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HasKey", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "HasKey",
+                            1usize
                         )
                     })
             });
@@ -679,7 +695,7 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -688,7 +704,8 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HasKey", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "HasKey",
+                            1usize
                         )
                     })
             });
@@ -708,7 +725,7 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -717,7 +734,8 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnAfterDeserialize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnAfterDeserialize", 0usize
                         )
                     })
             });
@@ -732,7 +750,7 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -741,7 +759,8 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnBeforeSerialize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnBeforeSerialize", 0usize
                         )
                     })
             });
@@ -762,7 +781,7 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -776,7 +795,8 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Set", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Set",
+                            2usize
                         )
                     })
             });
@@ -793,7 +813,7 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -807,7 +827,8 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetBool", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetBool",
+                            2usize
                         )
                     })
             });
@@ -824,7 +845,7 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -838,7 +859,8 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetColor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetColor", 2usize
                         )
                     })
             });
@@ -853,7 +875,7 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -862,7 +884,8 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetDefaultValues", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetDefaultValues", 0usize
                         )
                     })
             });
@@ -879,7 +902,7 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -893,7 +916,8 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetFloat", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetFloat", 2usize
                         )
                     })
             });
@@ -910,7 +934,7 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -924,7 +948,8 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetInt", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetInt",
+                            2usize
                         )
                     })
             });
@@ -941,7 +966,7 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -955,7 +980,8 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetMaterial", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetMaterial", 2usize
                         )
                     })
             });
@@ -972,7 +998,7 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -988,7 +1014,8 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetString", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetString", 2usize
                         )
                     })
             });
@@ -1003,12 +1030,13 @@ impl crate::UnityEngine::ProBuilder::PreferenceDictionary {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

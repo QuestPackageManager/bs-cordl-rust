@@ -45,7 +45,7 @@ impl crate::GlobalNamespace::IGameEnergyCounter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -54,7 +54,8 @@ impl crate::GlobalNamespace::IGameEnergyCounter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_didInitEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_didInitEvent", 1usize
                         )
                     })
             });
@@ -70,7 +71,7 @@ impl crate::GlobalNamespace::IGameEnergyCounter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>),
                         quest_hook::libil2cpp::Void,
@@ -79,7 +80,8 @@ impl crate::GlobalNamespace::IGameEnergyCounter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_gameEnergyDidChangeEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_gameEnergyDidChangeEvent", 1usize
                         )
                     })
             });
@@ -95,7 +97,7 @@ impl crate::GlobalNamespace::IGameEnergyCounter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -104,7 +106,8 @@ impl crate::GlobalNamespace::IGameEnergyCounter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_gameEnergyDidReach0Event", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_gameEnergyDidReach0Event", 1usize
                         )
                     })
             });
@@ -122,12 +125,13 @@ impl crate::GlobalNamespace::IGameEnergyCounter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_batteryEnergy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_batteryEnergy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_batteryEnergy", 0usize
                         )
                     })
             });
@@ -138,12 +142,13 @@ impl crate::GlobalNamespace::IGameEnergyCounter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_batteryLives")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_batteryLives", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_batteryLives", 0usize
                         )
                     })
             });
@@ -154,12 +159,13 @@ impl crate::GlobalNamespace::IGameEnergyCounter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_energy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_energy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_energy", 0usize
                         )
                     })
             });
@@ -174,7 +180,7 @@ impl crate::GlobalNamespace::IGameEnergyCounter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::GameplayModifiers_EnergyType,
@@ -183,7 +189,8 @@ impl crate::GlobalNamespace::IGameEnergyCounter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_energyType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_energyType", 0usize
                         )
                     })
             });
@@ -196,12 +203,13 @@ impl crate::GlobalNamespace::IGameEnergyCounter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_failOnSaberClash")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_failOnSaberClash", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_failOnSaberClash", 0usize
                         )
                     })
             });
@@ -212,12 +220,13 @@ impl crate::GlobalNamespace::IGameEnergyCounter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_instaFail")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_instaFail", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_instaFail", 0usize
                         )
                     })
             });
@@ -228,12 +237,13 @@ impl crate::GlobalNamespace::IGameEnergyCounter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isInitialized")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_isInitialized", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isInitialized", 0usize
                         )
                     })
             });
@@ -244,12 +254,13 @@ impl crate::GlobalNamespace::IGameEnergyCounter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_noFail")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_noFail", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_noFail", 0usize
                         )
                     })
             });
@@ -263,7 +274,7 @@ impl crate::GlobalNamespace::IGameEnergyCounter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -272,7 +283,8 @@ impl crate::GlobalNamespace::IGameEnergyCounter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_didInitEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_didInitEvent", 1usize
                         )
                     })
             });
@@ -288,7 +300,7 @@ impl crate::GlobalNamespace::IGameEnergyCounter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>),
                         quest_hook::libil2cpp::Void,
@@ -297,7 +309,8 @@ impl crate::GlobalNamespace::IGameEnergyCounter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_gameEnergyDidChangeEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_gameEnergyDidChangeEvent", 1usize
                         )
                     })
             });
@@ -313,7 +326,7 @@ impl crate::GlobalNamespace::IGameEnergyCounter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -322,7 +335,8 @@ impl crate::GlobalNamespace::IGameEnergyCounter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_gameEnergyDidReach0Event", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_gameEnergyDidReach0Event", 1usize
                         )
                     })
             });

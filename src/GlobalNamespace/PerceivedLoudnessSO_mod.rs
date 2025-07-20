@@ -54,7 +54,7 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         crate::System::Nullable_1<f32>,
@@ -63,7 +63,8 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLoudnessData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLoudnessData", 1usize
                         )
                     })
             });
@@ -92,7 +93,7 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<
@@ -107,7 +108,8 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetLoudnessData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetLoudnessData", 1usize
                         )
                     })
             });
@@ -131,7 +133,7 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -149,7 +151,8 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToDictionary", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToDictionary", 0usize
                         )
                     })
             });
@@ -169,12 +172,13 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -197,7 +201,7 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -212,7 +216,8 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_perceivedLoudnessPairs", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_perceivedLoudnessPairs", 0usize
                         )
                     })
             });
@@ -298,7 +303,7 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             f32,
@@ -312,7 +317,8 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetLoudness", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetLoudness", 2usize
                         )
                     })
             });
@@ -328,7 +334,7 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -337,7 +343,8 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -354,7 +361,7 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -363,7 +370,8 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_checksum", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_checksum", 0usize
                         )
                     })
             });
@@ -380,7 +388,7 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -389,7 +397,8 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_levelId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_levelId", 0usize
                         )
                     })
             });
@@ -402,12 +411,13 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_perceivedLoudness")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_perceivedLoudness", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_perceivedLoudness", 0usize
                         )
                     })
             });

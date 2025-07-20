@@ -43,12 +43,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DatagramTransport {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetReceiveLimit")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetReceiveLimit", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetReceiveLimit", 0usize
                         )
                     })
             });
@@ -59,12 +60,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DatagramTransport {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetSendLimit")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSendLimit", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSendLimit", 0usize
                         )
                     })
             });
@@ -81,7 +83,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DatagramTransport {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -97,7 +99,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DatagramTransport {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Receive", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Receive",
+                            4usize
                         )
                     })
             });
@@ -115,7 +118,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DatagramTransport {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -130,7 +133,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DatagramTransport {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Send", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Send",
+                            3usize
                         )
                     })
             });

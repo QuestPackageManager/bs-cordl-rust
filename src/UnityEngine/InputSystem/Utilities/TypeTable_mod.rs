@@ -114,7 +114,7 @@ impl crate::UnityEngine::InputSystem::Utilities::TypeTable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -128,7 +128,8 @@ impl crate::UnityEngine::InputSystem::Utilities::TypeTable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddTypeRegistration", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddTypeRegistration", 2usize
                         )
                     })
             });
@@ -146,7 +147,7 @@ impl crate::UnityEngine::InputSystem::Utilities::TypeTable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -155,7 +156,8 @@ impl crate::UnityEngine::InputSystem::Utilities::TypeTable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FindNameForType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindNameForType", 1usize
                         )
                     })
             });
@@ -170,12 +172,13 @@ impl crate::UnityEngine::InputSystem::Utilities::TypeTable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Initialize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize", 0usize
                         )
                     })
             });
@@ -191,7 +194,7 @@ impl crate::UnityEngine::InputSystem::Utilities::TypeTable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -200,7 +203,8 @@ impl crate::UnityEngine::InputSystem::Utilities::TypeTable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LookupTypeRegistration", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LookupTypeRegistration", 1usize
                         )
                     })
             });
@@ -221,7 +225,7 @@ impl crate::UnityEngine::InputSystem::Utilities::TypeTable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -234,7 +238,8 @@ impl crate::UnityEngine::InputSystem::Utilities::TypeTable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_internedNames", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_internedNames", 0usize
                         )
                     })
             });
@@ -257,7 +262,7 @@ impl crate::UnityEngine::InputSystem::Utilities::TypeTable {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -272,7 +277,8 @@ impl crate::UnityEngine::InputSystem::Utilities::TypeTable {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_names", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_names", 0usize
                         )
                     })
             });

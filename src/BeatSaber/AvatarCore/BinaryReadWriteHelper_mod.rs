@@ -45,7 +45,7 @@ impl crate::BeatSaber::AvatarCore::BinaryReadWriteHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>),
                         crate::UnityEngine::Color,
@@ -54,7 +54,8 @@ impl crate::BeatSaber::AvatarCore::BinaryReadWriteHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ReadColor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadColor", 1usize
                         )
                     })
             });
@@ -70,7 +71,7 @@ impl crate::BeatSaber::AvatarCore::BinaryReadWriteHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::IO::BinaryWriter>,
@@ -82,7 +83,8 @@ impl crate::BeatSaber::AvatarCore::BinaryReadWriteHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Write", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Write",
+                            2usize
                         )
                     })
             });

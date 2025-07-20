@@ -90,7 +90,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -108,7 +108,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddScore", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddScore", 4usize
                         )
                     })
             });
@@ -128,7 +129,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -147,7 +148,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddScore", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddScore", 5usize
                         )
                     })
             });
@@ -180,7 +182,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -205,7 +207,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AppendLeaderboardScores", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AppendLeaderboardScores", 3usize
                         )
                     })
             });
@@ -223,7 +226,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -232,7 +235,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ClearAllLeaderboardsAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ClearAllLeaderboardsAsync", 1usize
                         )
                     })
             });
@@ -247,7 +251,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -256,7 +260,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ClearLastScorePosition", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ClearLastScorePosition", 0usize
                         )
                     })
             });
@@ -272,7 +277,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -281,7 +286,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ClearLeaderboard", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ClearLeaderboard", 1usize
                         )
                     })
             });
@@ -294,12 +300,13 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i64, 0usize>("GetCurrentTimestamp")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCurrentTimestamp", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCurrentTimestamp", 0usize
                         )
                     })
             });
@@ -314,7 +321,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -328,7 +335,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHighScore", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHighScore", 2usize
                         )
                     })
             });
@@ -345,7 +353,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -359,7 +367,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLastScorePosition", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLastScorePosition", 2usize
                         )
                     })
             });
@@ -380,7 +389,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -396,7 +405,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLeaderboardData", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLeaderboardData", 2usize
                         )
                     })
             });
@@ -420,7 +430,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType),
                         quest_hook::libil2cpp::Gc<
@@ -435,7 +445,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLeaderboardsData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLeaderboardsData", 1usize
                         )
                     })
             });
@@ -457,7 +468,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -472,7 +483,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPositionInLeaderboard", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPositionInLeaderboard", 3usize
                         )
                     })
             });
@@ -497,7 +509,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -517,7 +529,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetScores", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetScores", 2usize
                         )
                     })
             });
@@ -536,12 +549,13 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Load")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Load", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Load",
+                            0usize
                         )
                     })
             });
@@ -558,7 +572,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -567,7 +581,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadAsync", 0usize
                         )
                     })
             });
@@ -582,7 +597,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -591,7 +606,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadInternal", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadInternal", 0usize
                         )
                     })
             });
@@ -615,7 +631,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -630,7 +646,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadLeaderboardsData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadLeaderboardsData", 1usize
                         )
                     })
             });
@@ -662,7 +679,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -681,7 +698,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadLeaderboardsDataAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadLeaderboardsDataAsync", 1usize
                         )
                     })
             });
@@ -714,7 +732,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::LocalLeaderboardsModel_SavedLeaderboardsData,
@@ -731,7 +749,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadLeaderboardsDataInternal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadLeaderboardsDataInternal", 1usize
                         )
                     })
             });
@@ -757,7 +776,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -775,7 +794,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MigrateQuestLeaderboards", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MigrateQuestLeaderboards", 2usize
                         )
                     })
             });
@@ -804,7 +824,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -813,7 +833,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SaveAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SaveAsync", 0usize
                         )
                     })
             });
@@ -838,7 +859,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -858,7 +879,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SaveLeaderboardsData", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SaveLeaderboardsData", 2usize
                         )
                     })
             });
@@ -877,7 +899,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -893,7 +915,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SaveLeaderboardsDataAsync", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SaveLeaderboardsDataAsync", 2usize
                         )
                     })
             });
@@ -909,7 +932,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -918,7 +941,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateDailyLeaderboard", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateDailyLeaderboard", 1usize
                         )
                     })
             });
@@ -936,7 +960,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -951,7 +975,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WillScoreGoIntoLeaderboard", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WillScoreGoIntoLeaderboard", 3usize
                         )
                     })
             });
@@ -968,7 +993,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -982,7 +1007,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WillScoreGoIntoLeaderboard", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WillScoreGoIntoLeaderboard", 2usize
                         )
                     })
             });
@@ -1001,7 +1027,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1017,7 +1043,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -1038,7 +1065,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_2<
@@ -1054,8 +1081,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_newScoreWasAddedToLeaderboardEvent",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_newScoreWasAddedToLeaderboardEvent", 1usize
                         )
                     })
             });
@@ -1076,7 +1103,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_2<
@@ -1092,8 +1119,8 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_newScoreWasAddedToLeaderboardEvent",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_newScoreWasAddedToLeaderboardEvent", 1usize
                         )
                     })
             });
@@ -1176,12 +1203,13 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -1356,12 +1384,13 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel_SavedLeaderboardsData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -1439,12 +1468,13 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

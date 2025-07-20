@@ -44,7 +44,7 @@ impl crate::System::Net::Mime::MailBnfHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -55,7 +55,8 @@ impl crate::System::Net::Mime::MailBnfHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateCharactersAllowedInAtoms", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateCharactersAllowedInAtoms", 0usize
                         )
                     })
             });
@@ -70,7 +71,7 @@ impl crate::System::Net::Mime::MailBnfHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -81,7 +82,8 @@ impl crate::System::Net::Mime::MailBnfHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateCharactersAllowedInComments", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateCharactersAllowedInComments", 0usize
                         )
                     })
             });
@@ -96,7 +98,7 @@ impl crate::System::Net::Mime::MailBnfHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -107,8 +109,8 @@ impl crate::System::Net::Mime::MailBnfHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateCharactersAllowedInDomainLiterals",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateCharactersAllowedInDomainLiterals", 0usize
                         )
                     })
             });
@@ -123,7 +125,7 @@ impl crate::System::Net::Mime::MailBnfHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -134,7 +136,8 @@ impl crate::System::Net::Mime::MailBnfHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateCharactersAllowedInHeaderNames", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateCharactersAllowedInHeaderNames", 0usize
                         )
                     })
             });
@@ -149,7 +152,7 @@ impl crate::System::Net::Mime::MailBnfHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -160,8 +163,8 @@ impl crate::System::Net::Mime::MailBnfHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateCharactersAllowedInQuotedStrings",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateCharactersAllowedInQuotedStrings", 0usize
                         )
                     })
             });
@@ -176,7 +179,7 @@ impl crate::System::Net::Mime::MailBnfHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -187,7 +190,8 @@ impl crate::System::Net::Mime::MailBnfHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateCharactersAllowedInTokens", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateCharactersAllowedInTokens", 0usize
                         )
                     })
             });
@@ -200,12 +204,13 @@ impl crate::System::Net::Mime::MailBnfHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(char), bool, 1usize>("IsAllowedWhiteSpace")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsAllowedWhiteSpace", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsAllowedWhiteSpace", 1usize
                         )
                     })
             });

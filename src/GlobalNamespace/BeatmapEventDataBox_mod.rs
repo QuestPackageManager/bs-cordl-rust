@@ -58,7 +58,7 @@ impl crate::GlobalNamespace::BeatmapEventDataBox {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             f32,
@@ -71,7 +71,8 @@ impl crate::GlobalNamespace::BeatmapEventDataBox {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BeatDistributionParamToStep", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BeatDistributionParamToStep", 3usize
                         )
                     })
             });
@@ -91,7 +92,7 @@ impl crate::GlobalNamespace::BeatmapEventDataBox {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -106,7 +107,8 @@ impl crate::GlobalNamespace::BeatmapEventDataBox {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EventDistributionParamToStep", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EventDistributionParamToStep", 5usize
                         )
                     })
             });
@@ -128,7 +130,7 @@ impl crate::GlobalNamespace::BeatmapEventDataBox {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -144,7 +146,8 @@ impl crate::GlobalNamespace::BeatmapEventDataBox {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBeatStep", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBeatStep", 4usize
                         )
                     })
             });
@@ -169,12 +172,13 @@ impl crate::GlobalNamespace::BeatmapEventDataBox {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(f32), f32, 1usize>("GetBeatStep")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBeatStep", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBeatStep", 1usize
                         )
                     })
             });
@@ -191,12 +195,13 @@ impl crate::GlobalNamespace::BeatmapEventDataBox {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(bool, i32), f32, 2usize>("GetDistribution")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetDistribution", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDistribution", 2usize
                         )
                     })
             });
@@ -255,7 +260,7 @@ impl crate::GlobalNamespace::BeatmapEventDataBox {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             f32,
@@ -284,7 +289,8 @@ impl crate::GlobalNamespace::BeatmapEventDataBox {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Unpack", 9usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Unpack",
+                            9usize
                         )
                     })
             });
@@ -320,7 +326,7 @@ impl crate::GlobalNamespace::BeatmapEventDataBox {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -339,7 +345,8 @@ impl crate::GlobalNamespace::BeatmapEventDataBox {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            7usize
                         )
                     })
             });
@@ -364,12 +371,13 @@ impl crate::GlobalNamespace::BeatmapEventDataBox {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_beatStep")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_beatStep", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_beatStep", 0usize
                         )
                     })
             });
@@ -384,7 +392,7 @@ impl crate::GlobalNamespace::BeatmapEventDataBox {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IndexFilter>,
@@ -393,7 +401,8 @@ impl crate::GlobalNamespace::BeatmapEventDataBox {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_indexFilter", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_indexFilter", 0usize
                         )
                     })
             });
@@ -406,12 +415,13 @@ impl crate::GlobalNamespace::BeatmapEventDataBox {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_subtypeIdentifier")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_subtypeIdentifier", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_subtypeIdentifier", 0usize
                         )
                     })
             });

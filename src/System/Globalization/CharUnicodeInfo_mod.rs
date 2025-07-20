@@ -43,12 +43,13 @@ impl crate::System::Globalization::CharUnicodeInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(char), f64, 1usize>("GetNumericValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNumericValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNumericValue", 1usize
                         )
                     })
             });
@@ -62,7 +63,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -76,7 +77,8 @@ impl crate::System::Globalization::CharUnicodeInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetUnicodeCategory", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetUnicodeCategory", 2usize
                         )
                     })
             });
@@ -91,7 +93,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (char),
                         crate::System::Globalization::UnicodeCategory,
@@ -100,7 +102,8 @@ impl crate::System::Globalization::CharUnicodeInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetUnicodeCategory", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetUnicodeCategory", 1usize
                         )
                     })
             });
@@ -115,7 +118,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         crate::System::Globalization::UnicodeCategory,
@@ -124,7 +127,8 @@ impl crate::System::Globalization::CharUnicodeInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetUnicodeCategory", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetUnicodeCategory", 1usize
                         )
                     })
             });
@@ -141,7 +145,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -156,7 +160,8 @@ impl crate::System::Globalization::CharUnicodeInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InternalConvertToUtf32", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InternalConvertToUtf32", 3usize
                         )
                     })
             });
@@ -172,7 +177,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -186,7 +191,8 @@ impl crate::System::Globalization::CharUnicodeInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InternalConvertToUtf32", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InternalConvertToUtf32", 2usize
                         )
                     })
             });
@@ -200,7 +206,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, i32),
                         u8,
@@ -209,7 +215,8 @@ impl crate::System::Globalization::CharUnicodeInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InternalGetCategoryValue", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InternalGetCategoryValue", 2usize
                         )
                     })
             });
@@ -220,12 +227,13 @@ impl crate::System::Globalization::CharUnicodeInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), f64, 1usize>("InternalGetNumericValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InternalGetNumericValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InternalGetNumericValue", 1usize
                         )
                     })
             });
@@ -240,7 +248,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -255,7 +263,8 @@ impl crate::System::Globalization::CharUnicodeInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InternalGetUnicodeCategory", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InternalGetUnicodeCategory", 3usize
                         )
                     })
             });
@@ -271,7 +280,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -285,7 +294,8 @@ impl crate::System::Globalization::CharUnicodeInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InternalGetUnicodeCategory", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InternalGetUnicodeCategory", 2usize
                         )
                     })
             });
@@ -301,7 +311,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -315,7 +325,8 @@ impl crate::System::Globalization::CharUnicodeInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsWhiteSpace", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsWhiteSpace", 2usize
                         )
                     })
             });
@@ -326,12 +337,13 @@ impl crate::System::Globalization::CharUnicodeInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(char), bool, 1usize>("IsWhiteSpace")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsWhiteSpace", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsWhiteSpace", 1usize
                         )
                     })
             });
@@ -344,7 +356,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::System::ReadOnlySpan_1<u8>,
@@ -353,7 +365,8 @@ impl crate::System::Globalization::CharUnicodeInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CategoriesValue", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CategoriesValue", 0usize
                         )
                     })
             });
@@ -368,7 +381,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::System::ReadOnlySpan_1<u8>,
@@ -377,7 +390,8 @@ impl crate::System::Globalization::CharUnicodeInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CategoryLevel1Index", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CategoryLevel1Index", 0usize
                         )
                     })
             });
@@ -392,7 +406,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::System::ReadOnlySpan_1<u8>,
@@ -401,7 +415,8 @@ impl crate::System::Globalization::CharUnicodeInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CategoryLevel2Index", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CategoryLevel2Index", 0usize
                         )
                     })
             });
@@ -416,7 +431,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::System::ReadOnlySpan_1<u8>,
@@ -425,7 +440,8 @@ impl crate::System::Globalization::CharUnicodeInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CategoryLevel3Index", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CategoryLevel3Index", 0usize
                         )
                     })
             });
@@ -440,7 +456,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::System::ReadOnlySpan_1<u8>,
@@ -449,7 +465,8 @@ impl crate::System::Globalization::CharUnicodeInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_NumericLevel1Index", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_NumericLevel1Index", 0usize
                         )
                     })
             });
@@ -464,7 +481,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::System::ReadOnlySpan_1<u8>,
@@ -473,7 +490,8 @@ impl crate::System::Globalization::CharUnicodeInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_NumericLevel2Index", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_NumericLevel2Index", 0usize
                         )
                     })
             });
@@ -488,7 +506,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::System::ReadOnlySpan_1<u8>,
@@ -497,7 +515,8 @@ impl crate::System::Globalization::CharUnicodeInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_NumericLevel3Index", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_NumericLevel3Index", 0usize
                         )
                     })
             });
@@ -512,7 +531,7 @@ impl crate::System::Globalization::CharUnicodeInfo {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::System::ReadOnlySpan_1<u8>,
@@ -521,7 +540,8 @@ impl crate::System::Globalization::CharUnicodeInfo {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_NumericValues", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_NumericValues", 0usize
                         )
                     })
             });

@@ -48,12 +48,13 @@ impl crate::BeatSaber::Init::GameVersionProvider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), u64, 0usize>("GetBuildId")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBuildId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBuildId", 0usize
                         )
                     })
             });
@@ -66,7 +67,7 @@ impl crate::BeatSaber::Init::GameVersionProvider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
@@ -75,7 +76,8 @@ impl crate::BeatSaber::Init::GameVersionProvider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBuildTimeGameVersion", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBuildTimeGameVersion", 0usize
                         )
                     })
             });
@@ -90,7 +92,7 @@ impl crate::BeatSaber::Init::GameVersionProvider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::BeatSaber::Init::GameVersion_Content,
@@ -99,7 +101,8 @@ impl crate::BeatSaber::Init::GameVersionProvider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetContentVersion", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetContentVersion", 0usize
                         )
                     })
             });
@@ -120,7 +123,7 @@ impl crate::BeatSaber::Init::GameVersionProvider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -135,7 +138,8 @@ impl crate::BeatSaber::Init::GameVersionProvider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetVersionAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetVersionAsync", 0usize
                         )
                     })
             });
@@ -158,7 +162,7 @@ impl crate::BeatSaber::Init::GameVersionProvider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -173,7 +177,8 @@ impl crate::BeatSaber::Init::GameVersionProvider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetVersionInternalAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetVersionInternalAsync", 0usize
                         )
                     })
             });
@@ -190,12 +195,13 @@ impl crate::BeatSaber::Init::GameVersionProvider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Initialize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize", 0usize
                         )
                     })
             });
@@ -217,7 +223,7 @@ impl crate::BeatSaber::Init::GameVersionProvider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -226,7 +232,8 @@ impl crate::BeatSaber::Init::GameVersionProvider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NoDomainReloadInit", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NoDomainReloadInit", 0usize
                         )
                     })
             });
@@ -241,12 +248,13 @@ impl crate::BeatSaber::Init::GameVersionProvider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

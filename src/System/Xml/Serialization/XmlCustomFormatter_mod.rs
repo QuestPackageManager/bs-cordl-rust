@@ -54,7 +54,7 @@ impl crate::System::Xml::Serialization::XmlCustomFormatter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i64,
@@ -78,7 +78,8 @@ impl crate::System::Xml::Serialization::XmlCustomFormatter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FromEnum", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FromEnum", 4usize
                         )
                     })
             });
@@ -95,7 +96,7 @@ impl crate::System::Xml::Serialization::XmlCustomFormatter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -104,7 +105,8 @@ impl crate::System::Xml::Serialization::XmlCustomFormatter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FromXmlNCName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FromXmlNCName", 1usize
                         )
                     })
             });
@@ -121,7 +123,7 @@ impl crate::System::Xml::Serialization::XmlCustomFormatter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -130,7 +132,8 @@ impl crate::System::Xml::Serialization::XmlCustomFormatter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FromXmlName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FromXmlName", 1usize
                         )
                     })
             });
@@ -150,7 +153,7 @@ impl crate::System::Xml::Serialization::XmlCustomFormatter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -166,7 +169,8 @@ impl crate::System::Xml::Serialization::XmlCustomFormatter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FromXmlString", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FromXmlString", 2usize
                         )
                     })
             });
@@ -186,7 +190,7 @@ impl crate::System::Xml::Serialization::XmlCustomFormatter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -202,7 +206,8 @@ impl crate::System::Xml::Serialization::XmlCustomFormatter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToXmlString", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToXmlString", 2usize
                         )
                     })
             });

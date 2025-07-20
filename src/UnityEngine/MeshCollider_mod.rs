@@ -51,12 +51,13 @@ impl crate::UnityEngine::MeshCollider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -69,12 +70,13 @@ impl crate::UnityEngine::MeshCollider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_convex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_convex", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_convex", 0usize
                         )
                     })
             });
@@ -87,7 +89,7 @@ impl crate::UnityEngine::MeshCollider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::MeshColliderCookingOptions,
@@ -96,7 +98,8 @@ impl crate::UnityEngine::MeshCollider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_cookingOptions", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_cookingOptions", 0usize
                         )
                     })
             });
@@ -109,12 +112,13 @@ impl crate::UnityEngine::MeshCollider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_inflateMesh")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_inflateMesh", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_inflateMesh", 0usize
                         )
                     })
             });
@@ -129,7 +133,7 @@ impl crate::UnityEngine::MeshCollider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
@@ -138,7 +142,8 @@ impl crate::UnityEngine::MeshCollider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_sharedMesh", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_sharedMesh", 0usize
                         )
                     })
             });
@@ -151,12 +156,13 @@ impl crate::UnityEngine::MeshCollider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_skinWidth")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_skinWidth", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_skinWidth", 0usize
                         )
                     })
             });
@@ -167,12 +173,13 @@ impl crate::UnityEngine::MeshCollider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_smoothSphereCollisions")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_smoothSphereCollisions", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_smoothSphereCollisions", 0usize
                         )
                     })
             });
@@ -186,7 +193,7 @@ impl crate::UnityEngine::MeshCollider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -195,7 +202,8 @@ impl crate::UnityEngine::MeshCollider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_convex", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_convex", 1usize
                         )
                     })
             });
@@ -211,7 +219,7 @@ impl crate::UnityEngine::MeshCollider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::MeshColliderCookingOptions),
                         quest_hook::libil2cpp::Void,
@@ -220,7 +228,8 @@ impl crate::UnityEngine::MeshCollider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_cookingOptions", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_cookingOptions", 1usize
                         )
                     })
             });
@@ -236,7 +245,7 @@ impl crate::UnityEngine::MeshCollider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -245,7 +254,8 @@ impl crate::UnityEngine::MeshCollider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_inflateMesh", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_inflateMesh", 1usize
                         )
                     })
             });
@@ -261,7 +271,7 @@ impl crate::UnityEngine::MeshCollider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>),
                         quest_hook::libil2cpp::Void,
@@ -270,7 +280,8 @@ impl crate::UnityEngine::MeshCollider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_sharedMesh", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_sharedMesh", 1usize
                         )
                     })
             });
@@ -286,7 +297,7 @@ impl crate::UnityEngine::MeshCollider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -295,7 +306,8 @@ impl crate::UnityEngine::MeshCollider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_skinWidth", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_skinWidth", 1usize
                         )
                     })
             });
@@ -311,7 +323,7 @@ impl crate::UnityEngine::MeshCollider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -320,7 +332,8 @@ impl crate::UnityEngine::MeshCollider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_smoothSphereCollisions", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_smoothSphereCollisions", 1usize
                         )
                     })
             });

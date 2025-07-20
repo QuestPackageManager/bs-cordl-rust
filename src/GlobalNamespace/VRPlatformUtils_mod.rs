@@ -51,7 +51,7 @@ impl crate::GlobalNamespace::VRPlatformUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::IVRPlatformHelper,
@@ -62,8 +62,8 @@ impl crate::GlobalNamespace::VRPlatformUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAnyJoystickMaxAxisDefaultImplementation",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAnyJoystickMaxAxisDefaultImplementation", 1usize
                         )
                     })
             });
@@ -76,7 +76,7 @@ impl crate::GlobalNamespace::VRPlatformUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         bool,
@@ -85,7 +85,8 @@ impl crate::GlobalNamespace::VRPlatformUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMenuButtonDefaultImplementation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMenuButtonDefaultImplementation", 0usize
                         )
                     })
             });
@@ -98,7 +99,7 @@ impl crate::GlobalNamespace::VRPlatformUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         bool,
@@ -107,8 +108,8 @@ impl crate::GlobalNamespace::VRPlatformUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMenuButtonDownDefaultImplementation",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMenuButtonDownDefaultImplementation", 0usize
                         )
                     })
             });
@@ -121,7 +122,7 @@ impl crate::GlobalNamespace::VRPlatformUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::IVerboseLogger,
@@ -132,7 +133,8 @@ impl crate::GlobalNamespace::VRPlatformUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StopXR", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "StopXR",
+                            1usize
                         )
                     })
             });
@@ -147,7 +149,7 @@ impl crate::GlobalNamespace::VRPlatformUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::XR::XRNode),
                         f32,
@@ -156,7 +158,8 @@ impl crate::GlobalNamespace::VRPlatformUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TriggerValueDefaultImplementation", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TriggerValueDefaultImplementation", 1usize
                         )
                     })
             });

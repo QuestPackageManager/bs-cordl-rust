@@ -47,7 +47,7 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::HoudiniEngineUnity::HEU_HoudiniAsset,
@@ -58,7 +58,8 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ChangeParmsAndCook", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ChangeParmsAndCook", 1usize
                         )
                     })
             });
@@ -75,7 +76,7 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::HoudiniEngineUnity::HEU_HoudiniAsset,
@@ -86,7 +87,8 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CookAsset", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CookAsset", 1usize
                         )
                     })
             });
@@ -114,7 +116,7 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -137,7 +139,8 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "QueryAttribute", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "QueryAttribute", 5usize
                         )
                     })
             });
@@ -162,7 +165,7 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -183,7 +186,8 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "QueryAttributeByStorageType", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "QueryAttributeByStorageType", 5usize
                         )
                     })
             });
@@ -199,7 +203,7 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -215,7 +219,8 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "QueryGeoParts", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "QueryGeoParts", 2usize
                         )
                     })
             });
@@ -232,7 +237,7 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
                         quest_hook::libil2cpp::Gc<
@@ -243,7 +248,8 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "QueryHoudiniAsset", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "QueryHoudiniAsset", 1usize
                         )
                     })
             });
@@ -260,7 +266,7 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::HoudiniEngineUnity::HEU_HoudiniAsset,
@@ -271,7 +277,8 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "QueryObjects", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "QueryObjects", 1usize
                         )
                     })
             });
@@ -291,7 +298,7 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -309,7 +316,8 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "QueryPartAttributeByOwner", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "QueryPartAttributeByOwner", 6usize
                         )
                     })
             });
@@ -322,7 +330,7 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -331,7 +339,8 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartQuery", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartQuery", 0usize
                         )
                     })
             });
@@ -346,12 +355,13 @@ impl crate::GlobalNamespace::HEU_ExampleEvergreenQuery {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

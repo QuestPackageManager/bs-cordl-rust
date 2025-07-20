@@ -54,7 +54,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<crate::System::IO::StringWriter>,
@@ -63,7 +63,8 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateStringWriter", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateStringWriter", 1usize
                         )
                     })
             });
@@ -79,7 +80,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -93,7 +94,8 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EndsWith", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EndsWith", 2usize
                         )
                     })
             });
@@ -119,7 +121,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -143,7 +145,8 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ForgivingCaseSensitiveFind", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ForgivingCaseSensitiveFind", 3usize
                         )
                     })
             });
@@ -166,7 +169,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -187,7 +190,8 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FormatWith", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FormatWith", 3usize
                         )
                     })
             });
@@ -206,7 +210,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -223,7 +227,8 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FormatWith", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FormatWith", 3usize
                         )
                     })
             });
@@ -243,7 +248,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -263,7 +268,8 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FormatWith", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FormatWith", 4usize
                         )
                     })
             });
@@ -284,7 +290,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -307,7 +313,8 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FormatWith", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FormatWith", 5usize
                         )
                     })
             });
@@ -331,7 +338,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -357,7 +364,8 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FormatWith", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FormatWith", 6usize
                         )
                     })
             });
@@ -375,7 +383,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -389,7 +397,8 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IndexOf", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "IndexOf",
+                            2usize
                         )
                     })
             });
@@ -400,12 +409,13 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(char), bool, 1usize>("IsHighSurrogate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsHighSurrogate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsHighSurrogate", 1usize
                         )
                     })
             });
@@ -416,12 +426,13 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(char), bool, 1usize>("IsLowSurrogate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsLowSurrogate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsLowSurrogate", 1usize
                         )
                     })
             });
@@ -434,7 +445,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -443,7 +454,8 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsNullOrEmpty", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsNullOrEmpty", 1usize
                         )
                     })
             });
@@ -456,7 +468,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -465,7 +477,8 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsWhiteSpace", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsWhiteSpace", 1usize
                         )
                     })
             });
@@ -482,7 +495,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -501,7 +514,8 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Replace", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Replace",
+                            3usize
                         )
                     })
             });
@@ -517,7 +531,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -531,7 +545,8 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartsWith", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartsWith", 2usize
                         )
                     })
             });
@@ -546,7 +561,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -555,7 +570,8 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToCamelCase", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToCamelCase", 1usize
                         )
                     })
             });
@@ -571,7 +587,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             char,
@@ -585,7 +601,8 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToCharAsUnicode", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToCharAsUnicode", 2usize
                         )
                     })
             });
@@ -602,7 +619,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -611,7 +628,8 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToKebabCase", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToKebabCase", 1usize
                         )
                     })
             });
@@ -624,12 +642,13 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(char), char, 1usize>("ToLower")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToLower", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "ToLower",
+                            1usize
                         )
                     })
             });
@@ -645,7 +664,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -659,7 +678,8 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToSeparatedCase", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToSeparatedCase", 2usize
                         )
                     })
             });
@@ -676,7 +696,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -685,7 +705,8 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToSnakeCase", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToSnakeCase", 1usize
                         )
                     })
             });
@@ -704,7 +725,7 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -719,7 +740,8 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Trim", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Trim",
+                            3usize
                         )
                     })
             });

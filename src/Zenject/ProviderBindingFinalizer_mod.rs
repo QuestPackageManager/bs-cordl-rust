@@ -46,7 +46,7 @@ impl crate::Zenject::ProviderBindingFinalizer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>),
                         quest_hook::libil2cpp::Void,
@@ -55,7 +55,8 @@ impl crate::Zenject::ProviderBindingFinalizer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FinalizeBinding", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FinalizeBinding", 1usize
                         )
                     })
             });
@@ -70,12 +71,13 @@ impl crate::Zenject::ProviderBindingFinalizer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), crate::Zenject::ScopeTypes, 0usize>("GetScope")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetScope", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetScope", 0usize
                         )
                     })
             });
@@ -100,7 +102,7 @@ impl crate::Zenject::ProviderBindingFinalizer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>),
                         quest_hook::libil2cpp::Void,
@@ -109,7 +111,8 @@ impl crate::Zenject::ProviderBindingFinalizer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnFinalizeBinding", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnFinalizeBinding", 1usize
                         )
                     })
             });
@@ -126,7 +129,7 @@ impl crate::Zenject::ProviderBindingFinalizer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
@@ -138,7 +141,8 @@ impl crate::Zenject::ProviderBindingFinalizer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterProviderForAllContracts", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterProviderForAllContracts", 2usize
                         )
                     })
             });
@@ -161,7 +165,7 @@ impl crate::Zenject::ProviderBindingFinalizer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
@@ -179,7 +183,8 @@ impl crate::Zenject::ProviderBindingFinalizer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterProviderPerContract", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterProviderPerContract", 2usize
                         )
                     })
             });
@@ -200,7 +205,7 @@ impl crate::Zenject::ProviderBindingFinalizer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
@@ -212,7 +217,8 @@ impl crate::Zenject::ProviderBindingFinalizer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterProvider", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterProvider", 2usize
                         )
                     })
             });
@@ -230,7 +236,7 @@ impl crate::Zenject::ProviderBindingFinalizer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
@@ -243,7 +249,8 @@ impl crate::Zenject::ProviderBindingFinalizer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterProvider", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterProvider", 3usize
                         )
                     })
             });
@@ -271,7 +278,7 @@ impl crate::Zenject::ProviderBindingFinalizer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
@@ -294,7 +301,7 @@ impl crate::Zenject::ProviderBindingFinalizer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "RegisterProvidersForAllContractsPerConcreteType", 3usize
                         )
                     })
@@ -323,7 +330,7 @@ impl crate::Zenject::ProviderBindingFinalizer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
@@ -346,8 +353,8 @@ impl crate::Zenject::ProviderBindingFinalizer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterProvidersPerContractAndConcreteType",
-                            3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterProvidersPerContractAndConcreteType", 3usize
                         )
                     })
             });
@@ -364,7 +371,7 @@ impl crate::Zenject::ProviderBindingFinalizer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -376,7 +383,8 @@ impl crate::Zenject::ProviderBindingFinalizer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ValidateBindTypes", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValidateBindTypes", 2usize
                         )
                     })
             });
@@ -392,7 +400,7 @@ impl crate::Zenject::ProviderBindingFinalizer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>),
                         quest_hook::libil2cpp::Void,
@@ -401,7 +409,8 @@ impl crate::Zenject::ProviderBindingFinalizer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -418,7 +427,7 @@ impl crate::Zenject::ProviderBindingFinalizer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
@@ -427,7 +436,8 @@ impl crate::Zenject::ProviderBindingFinalizer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_BindInfo", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_BindInfo", 0usize
                         )
                     })
             });
@@ -442,7 +452,7 @@ impl crate::Zenject::ProviderBindingFinalizer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::Zenject::BindingInheritanceMethods,
@@ -451,7 +461,8 @@ impl crate::Zenject::ProviderBindingFinalizer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_BindingInheritanceMethod", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_BindingInheritanceMethod", 0usize
                         )
                     })
             });
@@ -467,7 +478,7 @@ impl crate::Zenject::ProviderBindingFinalizer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>),
                         quest_hook::libil2cpp::Void,
@@ -476,7 +487,8 @@ impl crate::Zenject::ProviderBindingFinalizer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_BindInfo", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_BindInfo", 1usize
                         )
                     })
             });

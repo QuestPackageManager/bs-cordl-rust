@@ -60,12 +60,13 @@ impl crate::GlobalNamespace::OVRNetwork {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -289,7 +290,7 @@ impl crate::GlobalNamespace::OVRNetwork_FrameHeader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -300,7 +301,8 @@ impl crate::GlobalNamespace::OVRNetwork_FrameHeader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FromBytes", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FromBytes", 1usize
                         )
                     })
             });
@@ -317,7 +319,7 @@ impl crate::GlobalNamespace::OVRNetwork_FrameHeader {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -328,7 +330,8 @@ impl crate::GlobalNamespace::OVRNetwork_FrameHeader {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToBytes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "ToBytes",
+                            0usize
                         )
                     })
             });
@@ -408,12 +411,13 @@ impl crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpClient {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("Connect")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Connect", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Connect",
+                            1usize
                         )
                     })
             });
@@ -429,7 +433,7 @@ impl crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpClient {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
                         quest_hook::libil2cpp::Void,
@@ -438,7 +442,8 @@ impl crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpClient {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConnectCallback", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConnectCallback", 1usize
                         )
                     })
             });
@@ -453,12 +458,13 @@ impl crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpClient {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Disconnect")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Disconnect", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Disconnect", 0usize
                         )
                     })
             });
@@ -481,7 +487,7 @@ impl crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpClient {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
                         quest_hook::libil2cpp::Void,
@@ -490,7 +496,8 @@ impl crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpClient {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnReadDataCallback", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnReadDataCallback", 1usize
                         )
                     })
             });
@@ -505,12 +512,13 @@ impl crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpClient {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Tick")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Tick", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Tick",
+                            0usize
                         )
                     })
             });
@@ -525,12 +533,13 @@ impl crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpClient {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -543,12 +552,13 @@ impl crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpClient {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_Connected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Connected", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Connected", 0usize
                         )
                     })
             });
@@ -563,7 +573,7 @@ impl crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpClient {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::OVRNetworkTcpClient_OVRNetwork_ConnectionState,
@@ -572,7 +582,8 @@ impl crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpClient {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_connectionState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_connectionState", 0usize
                         )
                     })
             });
@@ -648,7 +659,7 @@ impl crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpServer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             i32,
@@ -662,7 +673,8 @@ impl crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpServer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Broadcast", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Broadcast", 2usize
                         )
                     })
             });
@@ -678,7 +690,7 @@ impl crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpServer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
                         quest_hook::libil2cpp::Void,
@@ -687,7 +699,8 @@ impl crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpServer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoAcceptTcpClientCallback", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoAcceptTcpClientCallback", 1usize
                         )
                     })
             });
@@ -703,7 +716,7 @@ impl crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpServer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
                         quest_hook::libil2cpp::Void,
@@ -712,7 +725,8 @@ impl crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpServer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoWriteDataCallback", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoWriteDataCallback", 1usize
                         )
                     })
             });
@@ -725,12 +739,13 @@ impl crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpServer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("HasConnectedClient")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HasConnectedClient", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HasConnectedClient", 0usize
                         )
                     })
             });
@@ -751,7 +766,7 @@ impl crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpServer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -760,7 +775,8 @@ impl crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpServer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartListening", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartListening", 1usize
                         )
                     })
             });
@@ -775,7 +791,7 @@ impl crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpServer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -784,7 +800,8 @@ impl crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpServer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StopListening", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StopListening", 0usize
                         )
                     })
             });
@@ -799,12 +816,13 @@ impl crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpServer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

@@ -67,7 +67,7 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32, bool),
                         quest_hook::libil2cpp::Void,
@@ -76,7 +76,8 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AnimateClose", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AnimateClose", 3usize
                         )
                     })
             });
@@ -92,7 +93,7 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -101,7 +102,8 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AnimateOpen", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AnimateOpen", 1usize
                         )
                     })
             });
@@ -116,7 +118,7 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -125,7 +127,8 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DespawnAllActiveTweens", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DespawnAllActiveTweens", 0usize
                         )
                     })
             });
@@ -138,12 +141,13 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("GetContentXOffset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetContentXOffset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetContentXOffset", 0usize
                         )
                     })
             });
@@ -154,12 +158,13 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("GetContentYOffset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetContentYOffset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetContentYOffset", 0usize
                         )
                     })
             });
@@ -177,7 +182,7 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32, f32, i32, i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -186,7 +191,8 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Init", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            5usize
                         )
                     })
             });
@@ -212,12 +218,13 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDestroy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDestroy", 0usize
                         )
                     })
             });
@@ -234,7 +241,7 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -243,7 +250,8 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScrollToRowIdxInstant", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScrollToRowIdxInstant", 2usize
                         )
                     })
             });
@@ -259,7 +267,7 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector2),
                         quest_hook::libil2cpp::Void,
@@ -268,7 +276,8 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<AnimateClose>b__19_0", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<AnimateClose>b__19_0", 1usize
                         )
                     })
             });
@@ -283,7 +292,7 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -292,7 +301,8 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<AnimateClose>b__19_1", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<AnimateClose>b__19_1", 0usize
                         )
                     })
             });
@@ -308,7 +318,7 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector2),
                         quest_hook::libil2cpp::Void,
@@ -317,7 +327,8 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<AnimateClose>b__19_2", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<AnimateClose>b__19_2", 1usize
                         )
                     })
             });
@@ -332,7 +343,7 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -341,7 +352,8 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<AnimateClose>b__19_3", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<AnimateClose>b__19_3", 0usize
                         )
                     })
             });
@@ -357,7 +369,7 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector2),
                         quest_hook::libil2cpp::Void,
@@ -366,7 +378,8 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<AnimateOpen>b__18_0", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<AnimateOpen>b__18_0", 1usize
                         )
                     })
             });
@@ -381,7 +394,7 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -390,7 +403,8 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<AnimateOpen>b__18_1", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<AnimateOpen>b__18_1", 0usize
                         )
                     })
             });
@@ -406,7 +420,7 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector2),
                         quest_hook::libil2cpp::Void,
@@ -415,7 +429,8 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<AnimateOpen>b__18_2", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<AnimateOpen>b__18_2", 1usize
                         )
                     })
             });
@@ -430,7 +445,7 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -439,7 +454,8 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<AnimateOpen>b__18_3", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<AnimateOpen>b__18_3", 0usize
                         )
                     })
             });
@@ -454,12 +470,13 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridViewAnimator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

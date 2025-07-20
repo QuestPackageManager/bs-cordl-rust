@@ -53,7 +53,7 @@ impl crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         i32,
@@ -62,7 +62,8 @@ impl crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FindProperty", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindProperty", 1usize
                         )
                     })
             });
@@ -88,7 +89,7 @@ impl crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             bool,
@@ -104,7 +105,8 @@ impl crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NotifyMessage", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NotifyMessage", 4usize
                         )
                     })
             });
@@ -122,7 +124,7 @@ impl crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Runtime::Remoting::Contexts::IDynamicProperty,
@@ -133,7 +135,8 @@ impl crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterDynamicProperty", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterDynamicProperty", 1usize
                         )
                     })
             });
@@ -147,7 +150,7 @@ impl crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -156,7 +159,8 @@ impl crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnregisterDynamicProperty", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnregisterDynamicProperty", 1usize
                         )
                     })
             });
@@ -169,12 +173,13 @@ impl crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -187,12 +192,13 @@ impl crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_HasProperties")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_HasProperties", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_HasProperties", 0usize
                         )
                     })
             });
@@ -282,12 +288,13 @@ impl crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection_Dynam
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

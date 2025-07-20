@@ -65,7 +65,7 @@ impl crate::HMUI::ContainerViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
@@ -88,7 +88,8 @@ impl crate::HMUI::ContainerViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddViewController", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddViewController", 4usize
                         )
                     })
             });
@@ -122,7 +123,7 @@ impl crate::HMUI::ContainerViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
@@ -147,7 +148,8 @@ impl crate::HMUI::ContainerViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddViewControllerCoroutine", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddViewControllerCoroutine", 4usize
                         )
                     })
             });
@@ -168,7 +170,7 @@ impl crate::HMUI::ContainerViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -177,7 +179,8 @@ impl crate::HMUI::ContainerViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ClearChildViewControllers", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ClearChildViewControllers", 0usize
                         )
                     })
             });
@@ -192,7 +195,7 @@ impl crate::HMUI::ContainerViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -201,7 +204,8 @@ impl crate::HMUI::ContainerViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DeactivateGameObject", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DeactivateGameObject", 0usize
                         )
                     })
             });
@@ -224,7 +228,7 @@ impl crate::HMUI::ContainerViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -242,7 +246,8 @@ impl crate::HMUI::ContainerViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNewXPositionsForViewControllers", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNewXPositionsForViewControllers", 2usize
                         )
                     })
             });
@@ -257,12 +262,13 @@ impl crate::HMUI::ContainerViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("IsChildInTransition")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsChildInTransition", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsChildInTransition", 0usize
                         )
                     })
             });
@@ -280,7 +286,7 @@ impl crate::HMUI::ContainerViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::List_1<
@@ -293,7 +299,8 @@ impl crate::HMUI::ContainerViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LayoutViewControllers", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LayoutViewControllers", 1usize
                         )
                     })
             });
@@ -337,7 +344,7 @@ impl crate::HMUI::ContainerViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -369,7 +376,8 @@ impl crate::HMUI::ContainerViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RemoveViewControllers", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RemoveViewControllers", 4usize
                         )
                     })
             });
@@ -412,7 +420,7 @@ impl crate::HMUI::ContainerViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -446,7 +454,8 @@ impl crate::HMUI::ContainerViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RemoveViewControllersCoroutine", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RemoveViewControllersCoroutine", 4usize
                         )
                     })
             });
@@ -473,7 +482,7 @@ impl crate::HMUI::ContainerViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>),
                         quest_hook::libil2cpp::Void,
@@ -482,7 +491,8 @@ impl crate::HMUI::ContainerViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetChildViewController", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetChildViewController", 1usize
                         )
                     })
             });
@@ -502,7 +512,7 @@ impl crate::HMUI::ContainerViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -515,7 +525,8 @@ impl crate::HMUI::ContainerViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetChildViewControllers", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetChildViewControllers", 1usize
                         )
                     })
             });
@@ -532,7 +543,7 @@ impl crate::HMUI::ContainerViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, bool),
                         quest_hook::libil2cpp::Void,
@@ -541,7 +552,8 @@ impl crate::HMUI::ContainerViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "__Activate", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "__Activate", 2usize
                         )
                     })
             });
@@ -559,7 +571,7 @@ impl crate::HMUI::ContainerViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, bool, bool),
                         quest_hook::libil2cpp::Void,
@@ -568,7 +580,8 @@ impl crate::HMUI::ContainerViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "__Deactivate", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "__Deactivate", 3usize
                         )
                     })
             });
@@ -592,7 +605,7 @@ impl crate::HMUI::ContainerViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::HMUI::Screen>,
@@ -607,7 +620,8 @@ impl crate::HMUI::ContainerViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "__Init", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "__Init",
+                            3usize
                         )
                     })
             });
@@ -626,12 +640,13 @@ impl crate::HMUI::ContainerViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -648,7 +663,7 @@ impl crate::HMUI::ContainerViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -657,7 +672,8 @@ impl crate::HMUI::ContainerViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_controllersContainer", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_controllersContainer", 0usize
                         )
                     })
             });
@@ -678,7 +694,7 @@ impl crate::HMUI::ContainerViewController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -691,7 +707,8 @@ impl crate::HMUI::ContainerViewController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_viewControllers", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_viewControllers", 0usize
                         )
                     })
             });

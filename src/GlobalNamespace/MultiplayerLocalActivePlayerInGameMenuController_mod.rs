@@ -69,7 +69,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -78,7 +78,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "HandleInGameMenuViewControllerDidPressDisconnectButton",
                             0usize
                         )
@@ -95,7 +95,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -104,7 +104,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "HandleInGameMenuViewControllerDidPressGiveUpButton", 0usize
                         )
                     })
@@ -120,7 +120,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -129,7 +129,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "HandleInGameMenuViewControllerDidPressResumeButton", 0usize
                         )
                     })
@@ -145,7 +145,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -154,7 +154,8 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleInputFocusWasCaptured", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleInputFocusWasCaptured", 0usize
                         )
                     })
             });
@@ -169,7 +170,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -178,7 +179,8 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleMenuButtonTriggered", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleMenuButtonTriggered", 0usize
                         )
                     })
             });
@@ -194,7 +196,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::MultiplayerController_State),
                         quest_hook::libil2cpp::Void,
@@ -203,7 +205,8 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleStateChanged", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleStateChanged", 1usize
                         )
                     })
             });
@@ -218,7 +221,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -227,7 +230,8 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HideInGameMenu", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HideInGameMenu", 0usize
                         )
                     })
             });
@@ -250,7 +254,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -259,7 +263,8 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnApplicationPause", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnApplicationPause", 1usize
                         )
                     })
             });
@@ -274,12 +279,13 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDestroy", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDestroy", 0usize
                         )
                     })
             });
@@ -294,7 +300,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -303,7 +309,8 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShowInGameMenu", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShowInGameMenu", 0usize
                         )
                     })
             });
@@ -318,12 +325,13 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Start", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Start",
+                            0usize
                         )
                     })
             });
@@ -338,12 +346,13 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -359,7 +368,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -368,7 +377,8 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_didGiveUpEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_didGiveUpEvent", 1usize
                         )
                     })
             });
@@ -384,7 +394,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -393,7 +403,8 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_requestsDisconnectEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_requestsDisconnectEvent", 1usize
                         )
                     })
             });
@@ -406,12 +417,13 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_canChangeMenuState")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_canChangeMenuState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_canChangeMenuState", 0usize
                         )
                     })
             });
@@ -422,12 +434,13 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_gameMenuIsShown")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_gameMenuIsShown", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_gameMenuIsShown", 0usize
                         )
                     })
             });
@@ -441,7 +454,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -450,7 +463,8 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_didGiveUpEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_didGiveUpEvent", 1usize
                         )
                     })
             });
@@ -466,7 +480,7 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -475,7 +489,8 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerInGameMenuController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_requestsDisconnectEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_requestsDisconnectEvent", 1usize
                         )
                     })
             });

@@ -47,7 +47,7 @@ impl crate::GlobalNamespace::IPosesSerializer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -58,7 +58,8 @@ impl crate::GlobalNamespace::IPosesSerializer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadRecording", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadRecording", 1usize
                         )
                     })
             });
@@ -74,7 +75,7 @@ impl crate::GlobalNamespace::IPosesSerializer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -83,7 +84,8 @@ impl crate::GlobalNamespace::IPosesSerializer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RecordingCanBeCreated", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RecordingCanBeCreated", 1usize
                         )
                     })
             });
@@ -97,7 +99,7 @@ impl crate::GlobalNamespace::IPosesSerializer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -106,7 +108,8 @@ impl crate::GlobalNamespace::IPosesSerializer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RecordingExists", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RecordingExists", 1usize
                         )
                     })
             });
@@ -122,7 +125,7 @@ impl crate::GlobalNamespace::IPosesSerializer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -139,7 +142,8 @@ impl crate::GlobalNamespace::IPosesSerializer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SaveRecording", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SaveRecording", 3usize
                         )
                     })
             });
@@ -156,7 +160,7 @@ impl crate::GlobalNamespace::IPosesSerializer {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -172,7 +176,8 @@ impl crate::GlobalNamespace::IPosesSerializer {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SaveToOldFormat", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SaveToOldFormat", 2usize
                         )
                     })
             });

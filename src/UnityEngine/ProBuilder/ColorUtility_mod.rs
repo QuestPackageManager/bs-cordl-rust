@@ -50,7 +50,7 @@ impl crate::UnityEngine::ProBuilder::ColorUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32, f32, f32, f32),
                         quest_hook::libil2cpp::Gc<
@@ -61,7 +61,8 @@ impl crate::UnityEngine::ProBuilder::ColorUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CIELabFromRGB", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CIELabFromRGB", 4usize
                         )
                     })
             });
@@ -77,7 +78,7 @@ impl crate::UnityEngine::ProBuilder::ColorUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -93,7 +94,8 @@ impl crate::UnityEngine::ProBuilder::ColorUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DeltaE", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "DeltaE",
+                            2usize
                         )
                     })
             });
@@ -106,7 +108,7 @@ impl crate::UnityEngine::ProBuilder::ColorUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Vector3),
                         crate::UnityEngine::Color,
@@ -115,7 +117,8 @@ impl crate::UnityEngine::ProBuilder::ColorUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetColor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetColor", 1usize
                         )
                     })
             });
@@ -132,7 +135,7 @@ impl crate::UnityEngine::ProBuilder::ColorUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Color),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -141,7 +144,8 @@ impl crate::UnityEngine::ProBuilder::ColorUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetColorName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetColorName", 1usize
                         )
                     })
             });
@@ -156,7 +160,7 @@ impl crate::UnityEngine::ProBuilder::ColorUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::HSVColor,
@@ -167,7 +171,8 @@ impl crate::UnityEngine::ProBuilder::ColorUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HSVtoRGB", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HSVtoRGB", 1usize
                         )
                     })
             });
@@ -184,7 +189,7 @@ impl crate::UnityEngine::ProBuilder::ColorUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32, f32, f32),
                         crate::UnityEngine::Color,
@@ -193,7 +198,8 @@ impl crate::UnityEngine::ProBuilder::ColorUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HSVtoRGB", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HSVtoRGB", 3usize
                         )
                     })
             });
@@ -210,7 +216,7 @@ impl crate::UnityEngine::ProBuilder::ColorUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Color),
                         quest_hook::libil2cpp::Gc<
@@ -221,7 +227,8 @@ impl crate::UnityEngine::ProBuilder::ColorUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RGBToXYZ", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RGBToXYZ", 1usize
                         )
                     })
             });
@@ -240,7 +247,7 @@ impl crate::UnityEngine::ProBuilder::ColorUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32, f32, f32),
                         quest_hook::libil2cpp::Gc<
@@ -251,7 +258,8 @@ impl crate::UnityEngine::ProBuilder::ColorUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RGBToXYZ", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RGBToXYZ", 3usize
                         )
                     })
             });
@@ -268,7 +276,7 @@ impl crate::UnityEngine::ProBuilder::ColorUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Color),
                         quest_hook::libil2cpp::Gc<
@@ -279,7 +287,8 @@ impl crate::UnityEngine::ProBuilder::ColorUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RGBtoHSV", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RGBtoHSV", 1usize
                         )
                     })
             });
@@ -296,7 +305,7 @@ impl crate::UnityEngine::ProBuilder::ColorUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::XYZColor,
@@ -309,7 +318,8 @@ impl crate::UnityEngine::ProBuilder::ColorUtility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "XYZToCIE_Lab", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "XYZToCIE_Lab", 1usize
                         )
                     })
             });
@@ -322,12 +332,13 @@ impl crate::UnityEngine::ProBuilder::ColorUtility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32, f32), bool, 2usize>("approx")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "approx", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "approx",
+                            2usize
                         )
                     })
             });

@@ -74,7 +74,7 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -83,7 +83,8 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ApplyAddressablesOverrides", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ApplyAddressablesOverrides", 0usize
                         )
                     })
             });
@@ -104,7 +105,7 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
@@ -117,7 +118,8 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateAddResourceLocatorInput", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateAddResourceLocatorInput", 1usize
                         )
                     })
             });
@@ -132,12 +134,13 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Dispose", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            0usize
                         )
                     })
             });
@@ -155,7 +158,7 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -164,7 +167,8 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FetchTokenAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FetchTokenAsync", 1usize
                         )
                     })
             });
@@ -179,12 +183,13 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Initialize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize", 0usize
                         )
                     })
             });
@@ -202,7 +207,7 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<
@@ -213,7 +218,8 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitializeInternalAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitializeInternalAsync", 1usize
                         )
                     })
             });
@@ -233,7 +239,7 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
@@ -244,7 +250,8 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InternalIdTransformFunc", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InternalIdTransformFunc", 1usize
                         )
                     })
             });
@@ -259,7 +266,7 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -268,7 +275,8 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MakeRemoteCatalogTopPriority", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MakeRemoteCatalogTopPriority", 0usize
                         )
                     })
             });
@@ -314,7 +322,7 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -323,7 +331,8 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateCatalogsAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateCatalogsAsync", 1usize
                         )
                     })
             });
@@ -341,7 +350,7 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -350,7 +359,8 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateCatalogsInternalAsync", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateCatalogsInternalAsync", 1usize
                         )
                     })
             });
@@ -367,7 +377,7 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -378,7 +388,8 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WaitInitAsync", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WaitInitAsync", 0usize
                         )
                     })
             });
@@ -396,7 +407,7 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::Networking::UnityWebRequest,
@@ -407,7 +418,8 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WebRequestOverride", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WebRequestOverride", 1usize
                         )
                     })
             });
@@ -433,7 +445,7 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -458,7 +470,8 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            5usize
                         )
                     })
             });
@@ -484,7 +497,7 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -493,7 +506,8 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_didCatalogLoadOrUpdateEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_didCatalogLoadOrUpdateEvent", 1usize
                         )
                     })
             });
@@ -508,7 +522,7 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -517,7 +531,8 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_RemoteCatalogPath", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_RemoteCatalogPath", 0usize
                         )
                     })
             });
@@ -533,7 +548,7 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>),
                         quest_hook::libil2cpp::Void,
@@ -542,7 +557,8 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_didCatalogLoadOrUpdateEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_didCatalogLoadOrUpdateEvent", 1usize
                         )
                     })
             });
@@ -678,7 +694,7 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorI
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -697,7 +713,8 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorI
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
                         )
                     })
             });

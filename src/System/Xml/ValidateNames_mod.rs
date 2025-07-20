@@ -48,7 +48,7 @@ impl crate::System::Xml::ValidateNames {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -63,7 +63,8 @@ impl crate::System::Xml::ValidateNames {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetInvalidNameException", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetInvalidNameException", 3usize
                         )
                     })
             });
@@ -78,7 +79,7 @@ impl crate::System::Xml::ValidateNames {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -87,7 +88,8 @@ impl crate::System::Xml::ValidateNames {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsNameNoNamespaces", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsNameNoNamespaces", 1usize
                         )
                     })
             });
@@ -100,7 +102,7 @@ impl crate::System::Xml::ValidateNames {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         i32,
@@ -109,7 +111,8 @@ impl crate::System::Xml::ValidateNames {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseNCName", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseNCName", 1usize
                         )
                     })
             });
@@ -123,7 +126,7 @@ impl crate::System::Xml::ValidateNames {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -137,7 +140,8 @@ impl crate::System::Xml::ValidateNames {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseNCName", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseNCName", 2usize
                         )
                     })
             });
@@ -151,7 +155,7 @@ impl crate::System::Xml::ValidateNames {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -165,7 +169,8 @@ impl crate::System::Xml::ValidateNames {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseNameNoNamespaces", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseNameNoNamespaces", 2usize
                         )
                     })
             });
@@ -179,7 +184,7 @@ impl crate::System::Xml::ValidateNames {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -193,7 +198,8 @@ impl crate::System::Xml::ValidateNames {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseNmtoken", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseNmtoken", 2usize
                         )
                     })
             });
@@ -207,7 +213,7 @@ impl crate::System::Xml::ValidateNames {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -221,7 +227,8 @@ impl crate::System::Xml::ValidateNames {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseNmtokenNoNamespaces", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseNmtokenNoNamespaces", 2usize
                         )
                     })
             });
@@ -236,7 +243,7 @@ impl crate::System::Xml::ValidateNames {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -251,7 +258,8 @@ impl crate::System::Xml::ValidateNames {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseQName", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseQName", 3usize
                         )
                     })
             });
@@ -272,7 +280,7 @@ impl crate::System::Xml::ValidateNames {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -295,7 +303,8 @@ impl crate::System::Xml::ValidateNames {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ParseQNameThrow", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ParseQNameThrow", 3usize
                         )
                     })
             });
@@ -316,7 +325,7 @@ impl crate::System::Xml::ValidateNames {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -339,7 +348,8 @@ impl crate::System::Xml::ValidateNames {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SplitQName", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SplitQName", 3usize
                         )
                     })
             });
@@ -356,7 +366,7 @@ impl crate::System::Xml::ValidateNames {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -371,7 +381,8 @@ impl crate::System::Xml::ValidateNames {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ThrowInvalidName", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ThrowInvalidName", 3usize
                         )
                     })
             });

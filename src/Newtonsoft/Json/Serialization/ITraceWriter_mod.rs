@@ -48,7 +48,7 @@ impl crate::Newtonsoft::Json::Serialization::ITraceWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::System::Diagnostics::TraceLevel,
@@ -63,7 +63,8 @@ impl crate::Newtonsoft::Json::Serialization::ITraceWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Trace", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Trace",
+                            3usize
                         )
                     })
             });
@@ -83,7 +84,7 @@ impl crate::Newtonsoft::Json::Serialization::ITraceWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::System::Diagnostics::TraceLevel,
@@ -92,7 +93,8 @@ impl crate::Newtonsoft::Json::Serialization::ITraceWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_LevelFilter", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_LevelFilter", 0usize
                         )
                     })
             });

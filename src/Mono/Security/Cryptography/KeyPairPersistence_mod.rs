@@ -51,7 +51,7 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -60,7 +60,8 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CanSecure", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CanSecure", 1usize
                         )
                     })
             });
@@ -78,7 +79,7 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Security::Cryptography::CspParameters,
@@ -91,7 +92,8 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Copy", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Copy",
+                            1usize
                         )
                     })
             });
@@ -107,7 +109,7 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -116,7 +118,8 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FromXml", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "FromXml",
+                            1usize
                         )
                     })
             });
@@ -131,7 +134,7 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -140,7 +143,8 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsMachineProtected", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsMachineProtected", 1usize
                         )
                     })
             });
@@ -153,7 +157,7 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -162,7 +166,8 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsUserProtected", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsUserProtected", 1usize
                         )
                     })
             });
@@ -173,12 +178,13 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("Load")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Load", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Load",
+                            0usize
                         )
                     })
             });
@@ -214,7 +220,7 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -223,7 +229,8 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProtectMachine", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProtectMachine", 1usize
                         )
                     })
             });
@@ -236,7 +243,7 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -245,7 +252,8 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ProtectUser", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProtectUser", 1usize
                         )
                     })
             });
@@ -258,12 +266,13 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Remove")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Remove", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Remove",
+                            0usize
                         )
                     })
             });
@@ -278,12 +287,13 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Save")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Save", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Save",
+                            0usize
                         )
                     })
             });
@@ -300,7 +310,7 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -309,7 +319,8 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToXml", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "ToXml",
+                            0usize
                         )
                     })
             });
@@ -324,7 +335,7 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         bool,
@@ -333,7 +344,8 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "_CanSecure", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "_CanSecure", 1usize
                         )
                     })
             });
@@ -346,7 +358,7 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         bool,
@@ -355,7 +367,8 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "_IsMachineProtected", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "_IsMachineProtected", 1usize
                         )
                     })
             });
@@ -368,7 +381,7 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         bool,
@@ -377,7 +390,8 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "_IsUserProtected", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "_IsUserProtected", 1usize
                         )
                     })
             });
@@ -390,7 +404,7 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         bool,
@@ -399,7 +413,8 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "_ProtectMachine", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "_ProtectMachine", 1usize
                         )
                     })
             });
@@ -412,7 +427,7 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         bool,
@@ -421,7 +436,8 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "_ProtectUser", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "_ProtectUser", 1usize
                         )
                     })
             });
@@ -437,7 +453,7 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Security::Cryptography::CspParameters,
@@ -448,7 +464,8 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -467,7 +484,7 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -483,7 +500,8 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -496,12 +514,13 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_CanChange")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CanChange", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CanChange", 0usize
                         )
                     })
             });
@@ -516,7 +535,7 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -525,7 +544,8 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ContainerName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ContainerName", 0usize
                         )
                     })
             });
@@ -542,7 +562,7 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -551,7 +571,8 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Filename", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Filename", 0usize
                         )
                     })
             });
@@ -568,7 +589,7 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -577,7 +598,8 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_KeyValue", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_KeyValue", 0usize
                         )
                     })
             });
@@ -592,7 +614,7 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -601,7 +623,8 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_MachinePath", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_MachinePath", 0usize
                         )
                     })
             });
@@ -614,12 +637,13 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_UseDefaultKeyContainer")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_UseDefaultKeyContainer", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_UseDefaultKeyContainer", 0usize
                         )
                     })
             });
@@ -630,12 +654,13 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_UseMachineKeyStore")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_UseMachineKeyStore", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_UseMachineKeyStore", 0usize
                         )
                     })
             });
@@ -648,7 +673,7 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -657,7 +682,8 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_UserPath", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_UserPath", 0usize
                         )
                     })
             });
@@ -673,7 +699,7 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -682,7 +708,8 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_KeyValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_KeyValue", 1usize
                         )
                     })
             });

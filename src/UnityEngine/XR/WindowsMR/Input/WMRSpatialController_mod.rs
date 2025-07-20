@@ -97,7 +97,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -106,7 +106,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FinishSetup", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FinishSetup", 0usize
                         )
                     })
             });
@@ -128,12 +129,13 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -150,7 +152,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -161,7 +163,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_batteryLevel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_batteryLevel", 0usize
                         )
                     })
             });
@@ -180,7 +183,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -191,7 +194,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_deviceAngularVelocity", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_deviceAngularVelocity", 0usize
                         )
                     })
             });
@@ -210,7 +214,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -221,7 +225,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_deviceVelocity", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_deviceVelocity", 0usize
                         )
                     })
             });
@@ -238,7 +243,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -249,7 +254,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_grip", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_grip", 0usize
                         )
                     })
             });
@@ -268,7 +274,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -279,7 +285,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_gripPressed", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_gripPressed", 0usize
                         )
                     })
             });
@@ -298,7 +305,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -309,7 +316,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_joystick", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_joystick", 0usize
                         )
                     })
             });
@@ -328,7 +336,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -339,7 +347,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_joystickClicked", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_joystickClicked", 0usize
                         )
                     })
             });
@@ -358,7 +367,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -369,7 +378,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_menu", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_menu", 0usize
                         )
                     })
             });
@@ -388,7 +398,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -399,7 +409,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_pointerPosition", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_pointerPosition", 0usize
                         )
                     })
             });
@@ -418,7 +429,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -429,7 +440,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_pointerRotation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_pointerRotation", 0usize
                         )
                     })
             });
@@ -448,7 +460,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -459,7 +471,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_sourceLossMitigationDirection", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_sourceLossMitigationDirection", 0usize
                         )
                     })
             });
@@ -476,7 +489,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -487,7 +500,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_sourceLossRisk", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_sourceLossRisk", 0usize
                         )
                     })
             });
@@ -506,7 +520,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -517,7 +531,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_touchpad", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_touchpad", 0usize
                         )
                     })
             });
@@ -536,7 +551,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -547,7 +562,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_touchpadClicked", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_touchpadClicked", 0usize
                         )
                     })
             });
@@ -566,7 +582,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -577,7 +593,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_touchpadTouched", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_touchpadTouched", 0usize
                         )
                     })
             });
@@ -594,7 +611,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -605,7 +622,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_trigger", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_trigger", 0usize
                         )
                     })
             });
@@ -624,7 +642,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -635,7 +653,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_triggerPressed", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_triggerPressed", 0usize
                         )
                     })
             });
@@ -653,7 +672,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::AxisControl,
@@ -664,7 +683,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_batteryLevel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_batteryLevel", 1usize
                         )
                     })
             });
@@ -682,7 +702,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -693,7 +713,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_deviceAngularVelocity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_deviceAngularVelocity", 1usize
                         )
                     })
             });
@@ -711,7 +732,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -722,7 +743,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_deviceVelocity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_deviceVelocity", 1usize
                         )
                     })
             });
@@ -740,7 +762,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::AxisControl,
@@ -751,7 +773,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_grip", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_grip", 1usize
                         )
                     })
             });
@@ -769,7 +792,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -780,7 +803,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_gripPressed", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_gripPressed", 1usize
                         )
                     })
             });
@@ -798,7 +822,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::Vector2Control,
@@ -809,7 +833,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_joystick", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_joystick", 1usize
                         )
                     })
             });
@@ -827,7 +852,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -838,7 +863,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_joystickClicked", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_joystickClicked", 1usize
                         )
                     })
             });
@@ -856,7 +882,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -867,7 +893,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_menu", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_menu", 1usize
                         )
                     })
             });
@@ -885,7 +912,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -896,7 +923,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_pointerPosition", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_pointerPosition", 1usize
                         )
                     })
             });
@@ -914,7 +942,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::QuaternionControl,
@@ -925,7 +953,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_pointerRotation", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_pointerRotation", 1usize
                         )
                     })
             });
@@ -943,7 +972,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::Vector3Control,
@@ -954,7 +983,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_sourceLossMitigationDirection", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_sourceLossMitigationDirection", 1usize
                         )
                     })
             });
@@ -972,7 +1002,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::AxisControl,
@@ -983,7 +1013,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_sourceLossRisk", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_sourceLossRisk", 1usize
                         )
                     })
             });
@@ -1001,7 +1032,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::Vector2Control,
@@ -1012,7 +1043,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_touchpad", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_touchpad", 1usize
                         )
                     })
             });
@@ -1030,7 +1062,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -1041,7 +1073,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_touchpadClicked", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_touchpadClicked", 1usize
                         )
                     })
             });
@@ -1059,7 +1092,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -1070,7 +1103,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_touchpadTouched", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_touchpadTouched", 1usize
                         )
                     })
             });
@@ -1088,7 +1122,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::AxisControl,
@@ -1099,7 +1133,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_trigger", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_trigger", 1usize
                         )
                     })
             });
@@ -1117,7 +1152,7 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::Controls::ButtonControl,
@@ -1128,7 +1163,8 @@ impl crate::UnityEngine::XR::WindowsMR::Input::WMRSpatialController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_triggerPressed", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_triggerPressed", 1usize
                         )
                     })
             });

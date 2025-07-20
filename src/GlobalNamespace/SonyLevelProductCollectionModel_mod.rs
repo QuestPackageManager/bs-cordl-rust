@@ -86,7 +86,7 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -97,7 +97,8 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLevelPackProductData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLevelPackProductData", 1usize
                         )
                     })
             });
@@ -117,7 +118,7 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -128,7 +129,8 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLevelPackRedirectionData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLevelPackRedirectionData", 1usize
                         )
                     })
             });
@@ -148,7 +150,7 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -159,7 +161,8 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLevelProductData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLevelProductData", 1usize
                         )
                     })
             });
@@ -192,7 +195,7 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<
@@ -207,7 +210,8 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -287,12 +291,13 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_AdditionalPackProdu
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -372,12 +377,13 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_AdditionalProductDa
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -463,7 +469,7 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductDat
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData,
@@ -474,7 +480,8 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductDat
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CompareTo", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CompareTo", 1usize
                         )
                     })
             });
@@ -526,7 +533,7 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductDat
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -551,7 +558,8 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductDat
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            5usize
                         )
                     })
             });
@@ -580,7 +588,7 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductDat
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -591,7 +599,8 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductDat
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_additionalPackProductData", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_additionalPackProductData", 0usize
                         )
                     })
             });
@@ -608,7 +617,7 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductDat
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -617,7 +626,8 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductDat
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_levelPackId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_levelPackId", 0usize
                         )
                     })
             });
@@ -640,7 +650,7 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductDat
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -655,7 +665,8 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductDat
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_levelProductsData", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_levelProductsData", 0usize
                         )
                     })
             });
@@ -672,12 +683,13 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductDat
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_packIndex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_packIndex", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_packIndex", 0usize
                         )
                     })
             });
@@ -690,12 +702,13 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductDat
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_packLevelPriceDiscountMul")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_packLevelPriceDiscountMul", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_packLevelPriceDiscountMul", 0usize
                         )
                     })
             });
@@ -710,7 +723,7 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductDat
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -719,7 +732,8 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductDat
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_productLabel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_productLabel", 0usize
                         )
                     })
             });
@@ -906,7 +920,7 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectio
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -928,7 +942,8 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectio
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
                         )
                     })
             });
@@ -954,7 +969,7 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectio
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -963,7 +978,8 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectio
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_redirectedProductLabel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_redirectedProductLabel", 0usize
                         )
                     })
             });
@@ -980,7 +996,7 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectio
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -989,7 +1005,8 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectio
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_shouldOwnLevelPackId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_shouldOwnLevelPackId", 0usize
                         )
                     })
             });
@@ -1006,7 +1023,7 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectio
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1015,7 +1032,8 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectio
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_targetLevelPackId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_targetLevelPackId", 0usize
                         )
                     })
             });
@@ -1032,7 +1050,7 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectio
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1041,7 +1059,8 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectio
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_validUntilDate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_validUntilDate", 0usize
                         )
                     })
             });
@@ -1141,7 +1160,7 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -1166,7 +1185,8 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            5usize
                         )
                     })
             });
@@ -1189,7 +1209,7 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -1200,7 +1220,8 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_additionalProductData", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_additionalProductData", 0usize
                         )
                     })
             });
@@ -1217,7 +1238,7 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1226,7 +1247,8 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_entitlementLabel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_entitlementLabel", 0usize
                         )
                     })
             });
@@ -1243,7 +1265,7 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1252,7 +1274,8 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_levelId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_levelId", 0usize
                         )
                     })
             });
@@ -1269,7 +1292,7 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1278,7 +1301,8 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_productLabel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_productLabel", 0usize
                         )
                     })
             });
@@ -1295,7 +1319,7 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1304,7 +1328,8 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_sieaAcCode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_sieaAcCode", 0usize
                         )
                     })
             });
@@ -1321,7 +1346,7 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1330,7 +1355,8 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_sieeDcCode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_sieeDcCode", 0usize
                         )
                     })
             });
@@ -1424,12 +1450,13 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_ProductData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

@@ -45,7 +45,7 @@ impl crate::Mono::Math::Prime::PrimalityTests {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -57,7 +57,8 @@ impl crate::Mono::Math::Prime::PrimalityTests {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSPPRounds", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSPPRounds", 2usize
                         )
                     })
             });
@@ -71,7 +72,7 @@ impl crate::Mono::Math::Prime::PrimalityTests {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
@@ -83,7 +84,8 @@ impl crate::Mono::Math::Prime::PrimalityTests {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RabinMillerTest", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RabinMillerTest", 2usize
                         )
                     })
             });

@@ -44,7 +44,7 @@ impl crate::Unity::Burst::CompilerServices::Hint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -53,7 +53,8 @@ impl crate::Unity::Burst::CompilerServices::Hint {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Assume", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Assume",
+                            1usize
                         )
                     })
             });
@@ -66,12 +67,13 @@ impl crate::Unity::Burst::CompilerServices::Hint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(bool), bool, 1usize>("Likely")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Likely", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Likely",
+                            1usize
                         )
                     })
             });
@@ -82,12 +84,13 @@ impl crate::Unity::Burst::CompilerServices::Hint {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(bool), bool, 1usize>("Unlikely")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Unlikely", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Unlikely", 1usize
                         )
                     })
             });

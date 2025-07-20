@@ -51,7 +51,7 @@ impl crate::GlobalNamespace::IAuthenticationTokenProvider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -64,7 +64,8 @@ impl crate::GlobalNamespace::IAuthenticationTokenProvider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAuthenticationToken", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAuthenticationToken", 0usize
                         )
                     })
             });
@@ -84,7 +85,7 @@ impl crate::GlobalNamespace::IAuthenticationTokenProvider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::PlatformEnvironment),
                         crate::GlobalNamespace::AuthenticationToken_Platform,
@@ -93,7 +94,8 @@ impl crate::GlobalNamespace::IAuthenticationTokenProvider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTokenPlatform", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTokenPlatform", 1usize
                         )
                     })
             });
@@ -115,7 +117,7 @@ impl crate::GlobalNamespace::IAuthenticationTokenProvider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -124,7 +126,8 @@ impl crate::GlobalNamespace::IAuthenticationTokenProvider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_hashedUserId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_hashedUserId", 0usize
                         )
                     })
             });
@@ -141,7 +144,7 @@ impl crate::GlobalNamespace::IAuthenticationTokenProvider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::AuthenticationToken_Platform,
@@ -150,7 +153,8 @@ impl crate::GlobalNamespace::IAuthenticationTokenProvider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_platform", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_platform", 0usize
                         )
                     })
             });
@@ -167,7 +171,7 @@ impl crate::GlobalNamespace::IAuthenticationTokenProvider {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -176,7 +180,8 @@ impl crate::GlobalNamespace::IAuthenticationTokenProvider {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_userName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_userName", 0usize
                         )
                     })
             });

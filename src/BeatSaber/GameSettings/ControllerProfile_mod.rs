@@ -57,7 +57,7 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::IVRPlatformHelper,
@@ -68,7 +68,8 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Activate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Activate", 1usize
                         )
                     })
             });
@@ -83,7 +84,7 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -92,7 +93,8 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CopyFromLeftToRight", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CopyFromLeftToRight", 0usize
                         )
                     })
             });
@@ -110,7 +112,7 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::BeatSaber::GameSettings::ControllerProfile,
@@ -121,7 +123,8 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CopyFromOtherControllerProfile", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CopyFromOtherControllerProfile", 1usize
                         )
                     })
             });
@@ -136,7 +139,7 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -145,7 +148,8 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CopyFromRightToLeft", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CopyFromRightToLeft", 0usize
                         )
                     })
             });
@@ -160,12 +164,13 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Deactivate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Deactivate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Deactivate", 0usize
                         )
                     })
             });
@@ -185,7 +190,7 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -201,7 +206,8 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FromSaveData", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FromSaveData", 2usize
                         )
                     })
             });
@@ -214,12 +220,13 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("HasDefaultValues")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HasDefaultValues", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HasDefaultValues", 0usize
                         )
                     })
             });
@@ -256,7 +263,7 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -265,7 +272,8 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RefreshControllers", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RefreshControllers", 0usize
                         )
                     })
             });
@@ -281,7 +289,7 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -290,7 +298,8 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetRotateThanMove", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetRotateThanMove", 1usize
                         )
                     })
             });
@@ -309,7 +318,7 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -320,7 +329,8 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToSaveData", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToSaveData", 0usize
                         )
                     })
             });
@@ -337,7 +347,7 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, crate::UnityEngine::Vector3),
                         quest_hook::libil2cpp::Void,
@@ -346,7 +356,8 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateControllerPosition", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateControllerPosition", 2usize
                         )
                     })
             });
@@ -363,7 +374,7 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, crate::UnityEngine::Vector3),
                         quest_hook::libil2cpp::Void,
@@ -372,7 +383,8 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateControllerRotation", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateControllerRotation", 2usize
                         )
                     })
             });
@@ -393,7 +405,7 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -411,7 +423,8 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            6usize
                         )
                     })
             });
@@ -435,12 +448,13 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_alternativeHandling")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_alternativeHandling", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_alternativeHandling", 0usize
                         )
                     })
             });
@@ -453,7 +467,7 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::BeatSaber::GameSettings::Controller,
@@ -462,7 +476,8 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_leftController", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_leftController", 0usize
                         )
                     })
             });
@@ -477,7 +492,7 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::BeatSaber::GameSettings::Controller,
@@ -486,7 +501,8 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rightController", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rightController", 0usize
                         )
                     })
             });
@@ -502,7 +518,7 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -511,7 +527,8 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_alternativeHandling", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_alternativeHandling", 1usize
                         )
                     })
             });
@@ -527,7 +544,7 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::BeatSaber::GameSettings::Controller),
                         quest_hook::libil2cpp::Void,
@@ -536,7 +553,8 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_leftController", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_leftController", 1usize
                         )
                     })
             });
@@ -552,7 +570,7 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::BeatSaber::GameSettings::Controller),
                         quest_hook::libil2cpp::Void,
@@ -561,7 +579,8 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_rightController", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_rightController", 1usize
                         )
                     })
             });

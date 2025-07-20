@@ -44,7 +44,7 @@ impl crate::TMPro::ShaderUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
                         crate::UnityEngine::Vector4,
@@ -53,7 +53,8 @@ impl crate::TMPro::ShaderUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetFontExtent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetFontExtent", 1usize
                         )
                     })
             });
@@ -74,7 +75,7 @@ impl crate::TMPro::ShaderUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -91,7 +92,8 @@ impl crate::TMPro::ShaderUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPadding", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPadding", 3usize
                         )
                     })
             });
@@ -108,7 +110,7 @@ impl crate::TMPro::ShaderUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -121,7 +123,8 @@ impl crate::TMPro::ShaderUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPadding", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPadding", 3usize
                         )
                     })
             });
@@ -136,7 +139,7 @@ impl crate::TMPro::ShaderUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -145,7 +148,8 @@ impl crate::TMPro::ShaderUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetShaderPropertyIDs", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetShaderPropertyIDs", 0usize
                         )
                     })
             });
@@ -160,7 +164,7 @@ impl crate::TMPro::ShaderUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
                         bool,
@@ -169,7 +173,8 @@ impl crate::TMPro::ShaderUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsMaskingEnabled", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsMaskingEnabled", 1usize
                         )
                     })
             });
@@ -182,7 +187,7 @@ impl crate::TMPro::ShaderUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
                         quest_hook::libil2cpp::Void,
@@ -191,7 +196,8 @@ impl crate::TMPro::ShaderUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateShaderRatios", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateShaderRatios", 1usize
                         )
                     })
             });
@@ -206,7 +212,7 @@ impl crate::TMPro::ShaderUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
@@ -215,7 +221,8 @@ impl crate::TMPro::ShaderUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ShaderRef_MobileBitmap", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ShaderRef_MobileBitmap", 0usize
                         )
                     })
             });
@@ -230,7 +237,7 @@ impl crate::TMPro::ShaderUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
@@ -239,7 +246,8 @@ impl crate::TMPro::ShaderUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ShaderRef_MobileSDF", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ShaderRef_MobileSDF", 0usize
                         )
                     })
             });

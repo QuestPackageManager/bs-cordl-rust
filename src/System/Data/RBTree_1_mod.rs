@@ -88,12 +88,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(K), i32, 1usize>("Add")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Add", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Add",
+                            1usize
                         )
                     })
             });
@@ -113,7 +114,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
@@ -124,7 +125,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AllocPage", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AllocPage", 1usize
                         )
                     })
             });
@@ -141,12 +143,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Clear", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Clear",
+                            0usize
                         )
                     })
             });
@@ -167,12 +170,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(K, K), i32, 2usize>("CompareNode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CompareNode", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CompareNode", 2usize
                         )
                     })
             });
@@ -193,12 +197,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(K, K), i32, 2usize>("CompareSateliteTreeNode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CompareSateliteTreeNode", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CompareSateliteTreeNode", 2usize
                         )
                     })
             });
@@ -218,12 +223,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("ComputeIndexByNode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ComputeIndexByNode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ComputeIndexByNode", 1usize
                         )
                     })
             });
@@ -241,12 +247,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("ComputeIndexWithSatelliteByNode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ComputeIndexWithSatelliteByNode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ComputeIndexWithSatelliteByNode", 1usize
                         )
                     })
             });
@@ -265,7 +272,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, quest_hook::libil2cpp::ByRefMut<i32>),
                         i32,
@@ -274,7 +281,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ComputeNodeByIndex", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ComputeNodeByIndex", 2usize
                         )
                     })
             });
@@ -295,12 +303,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, i32), i32, 2usize>("ComputeNodeByIndex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ComputeNodeByIndex", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ComputeNodeByIndex", 2usize
                         )
                     })
             });
@@ -319,7 +328,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Array>, i32),
                         quest_hook::libil2cpp::Void,
@@ -328,7 +337,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CopyTo", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "CopyTo",
+                            2usize
                         )
                     })
             });
@@ -349,7 +359,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -363,7 +373,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CopyTo", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "CopyTo",
+                            2usize
                         )
                     })
             });
@@ -383,7 +394,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -392,7 +403,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DecreaseSize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DecreaseSize", 1usize
                         )
                     })
             });
@@ -409,12 +421,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), K, 1usize>("DeleteByIndex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DeleteByIndex", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DeleteByIndex", 1usize
                         )
                     })
             });
@@ -432,7 +445,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -441,7 +454,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FreeNode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FreeNode", 1usize
                         )
                     })
             });
@@ -461,7 +475,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Data::RBTree_1_TreePage<K>,
@@ -472,7 +486,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FreePage", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FreePage", 1usize
                         )
                     })
             });
@@ -493,7 +508,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -504,7 +519,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetEnumerator", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetEnumerator", 0usize
                         )
                     })
             });
@@ -521,12 +537,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(K), i32, 1usize>("GetIndexByKey")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetIndexByKey", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetIndexByKey", 1usize
                         )
                     })
             });
@@ -541,12 +558,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("GetIndexByNode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetIndexByNode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetIndexByNode", 1usize
                         )
                     })
             });
@@ -564,7 +582,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Data::RBTree_1_NodePath<K>),
                         i32,
@@ -573,7 +591,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetIndexByNodePath", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetIndexByNodePath", 1usize
                         )
                     })
             });
@@ -591,12 +610,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(bool), i32, 1usize>("GetIndexOfPageWithFreeSlot")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetIndexOfPageWithFreeSlot", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetIndexOfPageWithFreeSlot", 1usize
                         )
                     })
             });
@@ -613,12 +633,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32), i32, 1usize>("GetIntValueFromBitMap")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetIntValueFromBitMap", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetIntValueFromBitMap", 1usize
                         )
                     })
             });
@@ -633,12 +654,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(K), i32, 1usize>("GetNewNode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNewNode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNewNode", 1usize
                         )
                     })
             });
@@ -656,7 +678,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         crate::System::Data::RBTree_1_NodePath<K>,
@@ -665,7 +687,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNodeByIndex", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNodeByIndex", 1usize
                         )
                     })
             });
@@ -685,7 +708,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (K),
                         crate::System::Data::RBTree_1_NodePath<K>,
@@ -694,7 +717,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNodeByKey", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNodeByKey", 1usize
                         )
                     })
             });
@@ -714,7 +738,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -723,7 +747,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IncreaseSize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IncreaseSize", 1usize
                         )
                     })
             });
@@ -740,12 +765,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, K), i32, 2usize>("IndexOf")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IndexOf", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "IndexOf",
+                            2usize
                         )
                     })
             });
@@ -762,12 +788,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("InitTree")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitTree", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitTree", 0usize
                         )
                     })
             });
@@ -789,12 +816,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, K, bool), i32, 3usize>("InsertAt")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InsertAt", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InsertAt", 3usize
                         )
                     })
             });
@@ -811,12 +839,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(K), i32, 1usize>("Insert")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Insert", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Insert",
+                            1usize
                         )
                     })
             });
@@ -835,12 +864,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, K), i32, 2usize>("Insert")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Insert", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Insert",
+                            2usize
                         )
                     })
             });
@@ -857,12 +887,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), K, 1usize>("Key")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Key", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Key",
+                            1usize
                         )
                     })
             });
@@ -877,12 +908,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("Left")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Left", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Left",
+                            1usize
                         )
                     })
             });
@@ -902,12 +934,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, i32, i32), i32, 3usize>("LeftRotate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LeftRotate", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LeftRotate", 3usize
                         )
                     })
             });
@@ -927,7 +960,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Data::RBTree_1_TreePage<K>,
@@ -938,7 +971,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MarkPageFree", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MarkPageFree", 1usize
                         )
                     })
             });
@@ -958,7 +992,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Data::RBTree_1_TreePage<K>,
@@ -969,7 +1003,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MarkPageFull", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MarkPageFull", 1usize
                         )
                     })
             });
@@ -986,12 +1021,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("Minimum")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Minimum", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Minimum",
+                            1usize
                         )
                     })
             });
@@ -1019,12 +1055,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("Next")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Next", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Next",
+                            1usize
                         )
                     })
             });
@@ -1039,12 +1076,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("Parent")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Parent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Parent",
+                            1usize
                         )
                     })
             });
@@ -1059,12 +1097,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("RBDelete")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RBDelete", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RBDelete", 1usize
                         )
                     })
             });
@@ -1085,12 +1124,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, i32, i32, i32), i32, 4usize>("RBDeleteFixup")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RBDeleteFixup", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RBDeleteFixup", 4usize
                         )
                     })
             });
@@ -1112,12 +1152,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, i32, i32), i32, 3usize>("RBDeleteX")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RBDeleteX", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RBDeleteX", 3usize
                         )
                     })
             });
@@ -1141,12 +1182,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, i32, i32, i32, bool), i32, 5usize>("RBInsert")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RBInsert", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RBInsert", 5usize
                         )
                     })
             });
@@ -1170,7 +1212,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -1179,7 +1221,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RecomputeSize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RecomputeSize", 1usize
                         )
                     })
             });
@@ -1199,7 +1242,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -1208,7 +1251,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RemoveAt", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RemoveAt", 1usize
                         )
                     })
             });
@@ -1225,12 +1269,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("Right")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Right", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Right",
+                            1usize
                         )
                     })
             });
@@ -1250,12 +1295,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, i32, i32), i32, 3usize>("RightRotate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RightRotate", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RightRotate", 3usize
                         )
                     })
             });
@@ -1276,12 +1322,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, K), i32, 2usize>("SearchSubTree")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SearchSubTree", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SearchSubTree", 2usize
                         )
                     })
             });
@@ -1300,7 +1347,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, crate::System::Data::RBTree_1_NodeColor<K>),
                         quest_hook::libil2cpp::Void,
@@ -1309,7 +1356,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetColor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetColor", 2usize
                         )
                     })
             });
@@ -1330,7 +1378,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, K),
                         quest_hook::libil2cpp::Void,
@@ -1339,7 +1387,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetKey", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetKey",
+                            2usize
                         )
                     })
             });
@@ -1360,7 +1409,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -1369,7 +1418,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetLeft", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetLeft",
+                            2usize
                         )
                     })
             });
@@ -1390,7 +1440,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -1399,7 +1449,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetNext", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetNext",
+                            2usize
                         )
                     })
             });
@@ -1420,7 +1471,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -1429,7 +1480,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetParent", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetParent", 2usize
                         )
                     })
             });
@@ -1450,7 +1502,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -1459,7 +1511,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetRight", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetRight", 2usize
                         )
                     })
             });
@@ -1480,7 +1533,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -1489,7 +1542,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetSubTreeSize", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetSubTreeSize", 2usize
                         )
                     })
             });
@@ -1506,12 +1560,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("SubTreeSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SubTreeSize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SubTreeSize", 1usize
                         )
                     })
             });
@@ -1530,7 +1585,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<i32>,
@@ -1542,7 +1597,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Successor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Successor", 2usize
                         )
                     })
             });
@@ -1559,12 +1615,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), i32, 1usize>("Successor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Successor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Successor", 1usize
                         )
                     })
             });
@@ -1583,7 +1640,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (K, K),
                         quest_hook::libil2cpp::Void,
@@ -1592,7 +1649,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateNodeKey", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateNodeKey", 2usize
                         )
                     })
             });
@@ -1612,7 +1670,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Data::TreeAccessMethod),
                         quest_hook::libil2cpp::Void,
@@ -1621,7 +1679,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -1641,7 +1700,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         crate::System::Data::RBTree_1_NodeColor<K>,
@@ -1650,7 +1709,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "color", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "color",
+                            1usize
                         )
                     })
             });
@@ -1667,12 +1727,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_Count")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Count", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Count", 0usize
                         )
                     })
             });
@@ -1687,12 +1748,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_HasDuplicates")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_HasDuplicates", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_HasDuplicates", 0usize
                         )
                     })
             });
@@ -1707,12 +1769,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), K, 1usize>("get_Item")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Item", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Item", 1usize
                         )
                     })
             });
@@ -2089,7 +2152,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_NodePath<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -2098,7 +2161,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_NodePath<K> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -2242,12 +2306,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Dispose", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            0usize
                         )
                     })
             });
@@ -2264,12 +2329,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("MoveNext")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MoveNext", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MoveNext", 0usize
                         )
                     })
             });
@@ -2286,7 +2352,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -2295,7 +2361,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "System.Collections.IEnumerator.Reset", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "System.Collections.IEnumerator.Reset", 0usize
                         )
                     })
             });
@@ -2316,7 +2383,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -2325,8 +2392,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "System.Collections.IEnumerator.get_Current",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "System.Collections.IEnumerator.get_Current", 0usize
                         )
                     })
             });
@@ -2346,7 +2413,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1<K>>),
                         quest_hook::libil2cpp::Void,
@@ -2355,7 +2422,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -2376,7 +2444,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1<K>>,
@@ -2388,7 +2456,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -2405,12 +2474,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), K, 0usize>("get_Current")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Current", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Current", 0usize
                         )
                     })
             });
@@ -2542,7 +2612,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1<K>>),
                         i32,
@@ -2551,7 +2621,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AllocSlot", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AllocSlot", 1usize
                         )
                     })
             });
@@ -2582,12 +2653,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -2604,12 +2676,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_InUseCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_InUseCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_InUseCount", 0usize
                         )
                     })
             });
@@ -2624,12 +2697,13 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_PageId")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_PageId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_PageId", 0usize
                         )
                     })
             });
@@ -2647,7 +2721,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -2656,7 +2730,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_InUseCount", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_InUseCount", 1usize
                         )
                     })
             });
@@ -2676,7 +2751,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -2685,7 +2760,8 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_PageId", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_PageId", 1usize
                         )
                     })
             });

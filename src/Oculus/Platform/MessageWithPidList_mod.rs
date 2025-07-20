@@ -51,7 +51,7 @@ impl crate::Oculus::Platform::MessageWithPidList {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::IntPtr),
                         quest_hook::libil2cpp::Gc<
@@ -62,7 +62,8 @@ impl crate::Oculus::Platform::MessageWithPidList {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetDataFromMessage", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDataFromMessage", 1usize
                         )
                     })
             });
@@ -79,7 +80,7 @@ impl crate::Oculus::Platform::MessageWithPidList {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -90,7 +91,8 @@ impl crate::Oculus::Platform::MessageWithPidList {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPidList", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPidList", 0usize
                         )
                     })
             });
@@ -115,7 +117,7 @@ impl crate::Oculus::Platform::MessageWithPidList {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::IntPtr),
                         quest_hook::libil2cpp::Void,
@@ -124,7 +126,8 @@ impl crate::Oculus::Platform::MessageWithPidList {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });

@@ -44,7 +44,7 @@ impl crate::UnityEngine::PhysicsSceneExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::SceneManagement::Scene),
                         crate::UnityEngine::PhysicsScene,
@@ -53,7 +53,8 @@ impl crate::UnityEngine::PhysicsSceneExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPhysicsScene", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPhysicsScene", 1usize
                         )
                     })
             });
@@ -68,7 +69,7 @@ impl crate::UnityEngine::PhysicsSceneExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::SceneManagement::Scene),
                         crate::UnityEngine::PhysicsScene,
@@ -77,7 +78,8 @@ impl crate::UnityEngine::PhysicsSceneExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPhysicsScene_Internal", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPhysicsScene_Internal", 1usize
                         )
                     })
             });
@@ -95,7 +97,7 @@ impl crate::UnityEngine::PhysicsSceneExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -111,7 +113,8 @@ impl crate::UnityEngine::PhysicsSceneExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPhysicsScene_Internal_Injected", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPhysicsScene_Internal_Injected", 2usize
                         )
                     })
             });

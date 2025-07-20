@@ -858,7 +858,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -874,7 +874,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddCustomMetadata", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddCustomMetadata", 2usize
                         )
                     })
             });
@@ -890,7 +891,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -904,7 +905,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddInsightPassthroughSurfaceGeometry", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddInsightPassthroughSurfaceGeometry", 4usize
                         )
                     })
             });
@@ -921,7 +923,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         bool,
@@ -930,7 +932,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AreControllerDrivenHandPosesNatural", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AreControllerDrivenHandPosesNatural", 0usize
                         )
                     })
             });
@@ -944,7 +947,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Step,
@@ -956,8 +959,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AreHandPosesGeneratedByControllerData",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AreHandPosesGeneratedByControllerData", 2usize
                         )
                     })
             });
@@ -978,7 +981,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_OverlayShape,
@@ -995,7 +998,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CalculateLayerDesc", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CalculateLayerDesc", 7usize
                         )
                     })
             });
@@ -1022,7 +1026,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -1031,7 +1035,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ChangeVirtualKeyboardTextContext", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ChangeVirtualKeyboardTextContext", 1usize
                         )
                     })
             });
@@ -1051,7 +1056,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -1071,7 +1076,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateInsightTriangleMesh", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateInsightTriangleMesh", 4usize
                         )
                     })
             });
@@ -1089,7 +1095,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_PassthroughColorLutChannels,
@@ -1103,7 +1109,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreatePassthroughColorLut", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreatePassthroughColorLut", 4usize
                         )
                     })
             });
@@ -1119,7 +1126,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64, quest_hook::libil2cpp::ByRefMut<u64>),
                         bool,
@@ -1128,7 +1135,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateSpaceUser", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateSpaceUser", 2usize
                         )
                     })
             });
@@ -1144,7 +1152,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_SpatialAnchorCreateInfo,
@@ -1156,7 +1164,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateSpatialAnchor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateSpatialAnchor", 2usize
                         )
                     })
             });
@@ -1171,7 +1180,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_VirtualKeyboardCreateInfo),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -1180,7 +1189,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateVirtualKeyboard", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateVirtualKeyboard", 1usize
                         )
                     })
             });
@@ -1196,7 +1206,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_VirtualKeyboardSpaceCreateInfo,
@@ -1208,7 +1218,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateVirtualKeyboardSpace", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateVirtualKeyboardSpace", 2usize
                         )
                     })
             });
@@ -1223,7 +1234,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         bool,
@@ -1232,8 +1243,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DestroyInsightPassthroughGeometryInstance",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DestroyInsightPassthroughGeometryInstance", 1usize
                         )
                     })
             });
@@ -1248,7 +1259,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         bool,
@@ -1257,7 +1268,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DestroyInsightTriangleMesh", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DestroyInsightTriangleMesh", 1usize
                         )
                     })
             });
@@ -1270,7 +1282,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         bool,
@@ -1279,7 +1291,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DestroyPassthroughColorLut", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DestroyPassthroughColorLut", 1usize
                         )
                     })
             });
@@ -1290,12 +1303,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64), bool, 1usize>("DestroySpace")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DestroySpace", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DestroySpace", 1usize
                         )
                     })
             });
@@ -1308,12 +1322,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64), bool, 1usize>("DestroySpaceUser")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DestroySpaceUser", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DestroySpaceUser", 1usize
                         )
                     })
             });
@@ -1328,7 +1343,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -1337,7 +1352,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DestroyVirtualKeyboard", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DestroyVirtualKeyboard", 0usize
                         )
                     })
             });
@@ -1352,7 +1368,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         bool,
@@ -1361,7 +1377,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnqueueDestroyLayer", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnqueueDestroyLayer", 1usize
                         )
                     })
             });
@@ -1376,7 +1393,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_LayerDesc,
@@ -1389,7 +1406,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnqueueSetupLayer", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnqueueSetupLayer", 3usize
                         )
                     })
             });
@@ -1427,7 +1445,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             bool,
@@ -1461,7 +1479,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnqueueSubmitLayer", 24usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnqueueSubmitLayer", 24usize
                         )
                     })
             });
@@ -1511,7 +1530,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u64,
@@ -1528,7 +1547,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EnumerateSpaceSupportedComponents", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnumerateSpaceSupportedComponents", 3usize
                         )
                     })
             });
@@ -1549,7 +1569,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u64,
@@ -1562,7 +1582,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EraseSpace", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EraseSpace", 3usize
                         )
                     })
             });
@@ -1577,7 +1598,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Controller,
@@ -1586,7 +1607,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetActiveController", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetActiveController", 0usize
                         )
                     })
             });
@@ -1599,7 +1621,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         f32,
@@ -1608,7 +1630,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAdaptiveGPUPerformanceScale", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAdaptiveGPUPerformanceScale", 0usize
                         )
                     })
             });
@@ -1619,12 +1642,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("GetAppCpuStartToGpuEndTime")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAppCpuStartToGpuEndTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAppCpuStartToGpuEndTime", 0usize
                         )
                     })
             });
@@ -1635,12 +1659,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("GetAppFramerate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAppFramerate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAppFramerate", 0usize
                         )
                     })
             });
@@ -1653,7 +1678,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_AppPerfStats,
@@ -1662,7 +1687,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetAppPerfStats", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAppPerfStats", 0usize
                         )
                     })
             });
@@ -1680,7 +1706,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Step,
@@ -1694,7 +1720,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBodyState", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBodyState", 2usize
                         )
                     })
             });
@@ -1707,12 +1734,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("GetBoundaryConfigured")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBoundaryConfigured", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBoundaryConfigured", 0usize
                         )
                     })
             });
@@ -1725,7 +1753,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_BoundaryType),
                         crate::GlobalNamespace::OVRPlugin_Vector3f,
@@ -1734,7 +1762,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBoundaryDimensions", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBoundaryDimensions", 1usize
                         )
                     })
             });
@@ -1751,7 +1780,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_BoundaryType),
                         crate::GlobalNamespace::OVRPlugin_BoundaryGeometry,
@@ -1760,7 +1789,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBoundaryGeometry", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBoundaryGeometry", 1usize
                         )
                     })
             });
@@ -1777,7 +1807,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_BoundaryType,
@@ -1790,7 +1820,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBoundaryGeometry2", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBoundaryGeometry2", 3usize
                         )
                     })
             });
@@ -1803,12 +1834,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("GetBoundaryVisible")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetBoundaryVisible", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBoundaryVisible", 0usize
                         )
                     })
             });
@@ -1821,7 +1853,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Controller,
@@ -1830,7 +1862,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetConnectedControllers", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetConnectedControllers", 0usize
                         )
                     })
             });
@@ -1845,7 +1878,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u32),
                         crate::GlobalNamespace::OVRPlugin_HapticsDesc,
@@ -1854,7 +1887,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetControllerHapticsDesc", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetControllerHapticsDesc", 1usize
                         )
                     })
             });
@@ -1869,7 +1903,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u32),
                         crate::GlobalNamespace::OVRPlugin_HapticsState,
@@ -1878,7 +1912,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetControllerHapticsState", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetControllerHapticsState", 1usize
                         )
                     })
             });
@@ -1894,7 +1929,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Step,
@@ -1906,7 +1941,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetControllerIsInHand", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetControllerIsInHand", 2usize
                         )
                     })
             });
@@ -1922,7 +1958,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Controller,
@@ -1934,7 +1970,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetControllerSampleRateHz", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetControllerSampleRateHz", 2usize
                         )
                     })
             });
@@ -1951,7 +1988,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u32),
                         crate::GlobalNamespace::OVRPlugin_ControllerState,
@@ -1960,7 +1997,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetControllerState", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetControllerState", 1usize
                         )
                     })
             });
@@ -1977,7 +2015,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u32),
                         crate::GlobalNamespace::OVRPlugin_ControllerState2,
@@ -1986,7 +2024,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetControllerState2", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetControllerState2", 1usize
                         )
                     })
             });
@@ -2003,7 +2042,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u32),
                         crate::GlobalNamespace::OVRPlugin_ControllerState4,
@@ -2012,7 +2051,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetControllerState4", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetControllerState4", 1usize
                         )
                     })
             });
@@ -2029,7 +2069,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u32),
                         crate::GlobalNamespace::OVRPlugin_ControllerState5,
@@ -2038,7 +2078,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetControllerState5", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetControllerState5", 1usize
                         )
                     })
             });
@@ -2055,7 +2096,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u32),
                         crate::GlobalNamespace::OVRPlugin_ControllerState6,
@@ -2064,7 +2105,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetControllerState6", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetControllerState6", 1usize
                         )
                     })
             });
@@ -2081,7 +2123,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Hand),
                         crate::GlobalNamespace::OVRPlugin_InteractionProfile,
@@ -2090,7 +2132,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCurrentDetachedInteractionProfile", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCurrentDetachedInteractionProfile", 1usize
                         )
                     })
             });
@@ -2107,7 +2150,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Hand),
                         crate::GlobalNamespace::OVRPlugin_InteractionProfile,
@@ -2116,7 +2159,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCurrentInteractionProfile", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCurrentInteractionProfile", 1usize
                         )
                     })
             });
@@ -2131,7 +2175,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Posef,
@@ -2140,7 +2184,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCurrentTrackingTransformPose", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCurrentTrackingTransformPose", 0usize
                         )
                     })
             });
@@ -2155,7 +2200,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_EyeTextureFormat,
@@ -2164,7 +2209,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetDesiredEyeTextureFormat", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDesiredEyeTextureFormat", 0usize
                         )
                     })
             });
@@ -2179,7 +2225,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Handedness,
@@ -2188,7 +2234,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetDominantHand", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDominantHand", 0usize
                         )
                     })
             });
@@ -2201,12 +2248,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("GetExternalCameraCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetExternalCameraCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetExternalCameraCount", 0usize
                         )
                     })
             });
@@ -2219,7 +2267,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Eye),
                         crate::GlobalNamespace::OVRPlugin_Frustumf,
@@ -2228,7 +2276,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetEyeFrustum", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetEyeFrustum", 1usize
                         )
                     })
             });
@@ -2247,7 +2296,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Step,
@@ -2262,7 +2311,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetEyeGazesState", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetEyeGazesState", 3usize
                         )
                     })
             });
@@ -2279,7 +2329,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Sizei,
@@ -2290,7 +2340,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetEyeLayerRecommendedResolution", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetEyeLayerRecommendedResolution", 1usize
                         )
                     })
             });
@@ -2303,7 +2354,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         f32,
@@ -2312,7 +2363,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetEyeRecommendedResolutionScale", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetEyeRecommendedResolutionScale", 0usize
                         )
                     })
             });
@@ -2325,7 +2377,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Eye),
                         crate::GlobalNamespace::OVRPlugin_Sizei,
@@ -2334,7 +2386,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetEyeTextureSize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetEyeTextureSize", 1usize
                         )
                     })
             });
@@ -2353,7 +2406,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Step,
@@ -2368,7 +2421,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetFaceState", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetFaceState", 3usize
                         )
                     })
             });
@@ -2387,7 +2441,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Step,
@@ -2402,7 +2456,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetFaceStateInternal", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetFaceStateInternal", 3usize
                         )
                     })
             });
@@ -2415,12 +2470,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f64, 0usize>("GetHandNodePoseStateLatency")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHandNodePoseStateLatency", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHandNodePoseStateLatency", 0usize
                         )
                     })
             });
@@ -2437,7 +2493,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Step,
@@ -2452,7 +2508,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHandState", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHandState", 3usize
                         )
                     })
             });
@@ -2465,12 +2522,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("GetHandTrackingEnabled")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHandTrackingEnabled", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHandTrackingEnabled", 0usize
                         )
                     })
             });
@@ -2488,7 +2546,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -2504,7 +2562,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHeadPoseModifier", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHeadPoseModifier", 2usize
                         )
                     })
             });
@@ -2519,7 +2578,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_ColorSpace,
@@ -2528,7 +2587,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHmdColorDesc", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHmdColorDesc", 0usize
                         )
                     })
             });
@@ -2543,7 +2603,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -2552,8 +2612,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetInsightPassthroughInitializationState",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetInsightPassthroughInitializationState", 0usize
                         )
                     })
             });
@@ -2571,7 +2631,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Step,
@@ -2585,7 +2645,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetKeyboardState", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetKeyboardState", 2usize
                         )
                     })
             });
@@ -2600,7 +2661,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         crate::System::IntPtr,
@@ -2609,7 +2670,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLayerAndroidSurfaceObject", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLayerAndroidSurfaceObject", 1usize
                         )
                     })
             });
@@ -2627,7 +2689,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -2641,7 +2703,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLayerRecommendedResolution", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLayerRecommendedResolution", 2usize
                         )
                     })
             });
@@ -2658,7 +2721,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, i32, crate::GlobalNamespace::OVRPlugin_Eye),
                         crate::System::IntPtr,
@@ -2667,7 +2730,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLayerTexture", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLayerTexture", 3usize
                         )
                     })
             });
@@ -2682,7 +2746,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         i32,
@@ -2691,7 +2755,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLayerTextureStageCount", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLayerTextureStageCount", 1usize
                         )
                     })
             });
@@ -2702,7 +2767,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         i32,
@@ -2711,7 +2776,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetLocalTrackingSpaceRecenterCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLocalTrackingSpaceRecenterCount", 0usize
                         )
                     })
             });
@@ -2727,7 +2793,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_MeshType,
@@ -2743,7 +2809,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMesh", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetMesh",
+                            2usize
                         )
                     })
             });
@@ -2764,7 +2831,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -2781,7 +2848,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMixedRealityCameraInfo", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMixedRealityCameraInfo", 3usize
                         )
                     })
             });
@@ -2794,12 +2862,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), u64, 0usize>("GetNativeOpenXRInstance")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNativeOpenXRInstance", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNativeOpenXRInstance", 0usize
                         )
                     })
             });
@@ -2810,12 +2879,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), u64, 0usize>("GetNativeOpenXRSession")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNativeOpenXRSession", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNativeOpenXRSession", 0usize
                         )
                     })
             });
@@ -2829,7 +2899,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Node,
@@ -2841,7 +2911,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNodeAcceleration", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNodeAcceleration", 2usize
                         )
                     })
             });
@@ -2857,7 +2928,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Node,
@@ -2869,7 +2940,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNodeAngularAcceleration", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNodeAngularAcceleration", 2usize
                         )
                     })
             });
@@ -2885,7 +2957,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Node,
@@ -2897,7 +2969,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNodeAngularVelocity", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNodeAngularVelocity", 2usize
                         )
                     })
             });
@@ -2915,7 +2988,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Node,
@@ -2929,7 +3002,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNodeFrustum2", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNodeFrustum2", 2usize
                         )
                     })
             });
@@ -2944,7 +3018,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Node),
                         bool,
@@ -2953,7 +3027,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNodeOrientationTracked", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNodeOrientationTracked", 1usize
                         )
                     })
             });
@@ -2966,7 +3041,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Node),
                         bool,
@@ -2975,7 +3050,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNodeOrientationValid", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNodeOrientationValid", 1usize
                         )
                     })
             });
@@ -2989,7 +3065,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Node,
@@ -3001,7 +3077,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNodePose", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNodePose", 2usize
                         )
                     })
             });
@@ -3017,7 +3094,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f64, crate::GlobalNamespace::OVRPlugin_Node),
                         crate::GlobalNamespace::OVRPlugin_PoseStatef,
@@ -3026,7 +3103,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNodePoseStateAtTime", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNodePoseStateAtTime", 2usize
                         )
                     })
             });
@@ -3041,7 +3119,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Node),
                         crate::GlobalNamespace::OVRPlugin_PoseStatef,
@@ -3050,7 +3128,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNodePoseStateImmediate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNodePoseStateImmediate", 1usize
                         )
                     })
             });
@@ -3066,7 +3145,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Node,
@@ -3078,7 +3157,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNodePoseStateRaw", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNodePoseStateRaw", 2usize
                         )
                     })
             });
@@ -3093,7 +3173,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Node),
                         bool,
@@ -3102,7 +3182,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNodePositionTracked", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNodePositionTracked", 1usize
                         )
                     })
             });
@@ -3115,7 +3196,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Node),
                         bool,
@@ -3124,7 +3205,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNodePositionValid", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNodePositionValid", 1usize
                         )
                     })
             });
@@ -3137,7 +3219,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Node),
                         bool,
@@ -3146,7 +3228,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNodePresent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNodePresent", 1usize
                         )
                     })
             });
@@ -3160,7 +3243,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Node,
@@ -3172,7 +3255,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNodeVelocity", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNodeVelocity", 2usize
                         )
                     })
             });
@@ -3189,7 +3273,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_PassthroughCapabilities,
@@ -3200,7 +3284,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPassthroughCapabilities", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPassthroughCapabilities", 1usize
                         )
                     })
             });
@@ -3215,7 +3300,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_PassthroughCapabilityFlags,
@@ -3224,7 +3309,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPassthroughCapabilityFlags", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPassthroughCapabilityFlags", 0usize
                         )
                     })
             });
@@ -3241,7 +3327,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_PassthroughPreferences,
@@ -3252,7 +3338,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPassthroughPreferences", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPassthroughPreferences", 1usize
                         )
                     })
             });
@@ -3267,7 +3354,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_PerfMetrics),
                         crate::System::Nullable_1<f32>,
@@ -3276,7 +3363,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPerfMetricsFloat", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPerfMetricsFloat", 1usize
                         )
                     })
             });
@@ -3291,7 +3379,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_PerfMetrics),
                         crate::System::Nullable_1<i32>,
@@ -3300,7 +3388,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPerfMetricsInt", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPerfMetricsInt", 1usize
                         )
                     })
             });
@@ -3319,7 +3408,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -3334,7 +3423,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetRenderModelPaths", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetRenderModelPaths", 0usize
                         )
                     })
             });
@@ -3354,7 +3444,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -3370,7 +3460,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetRenderModelProperties", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetRenderModelProperties", 2usize
                         )
                     })
             });
@@ -3388,7 +3479,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_SkeletonType,
@@ -3402,7 +3493,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSkeleton", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSkeleton", 2usize
                         )
                     })
             });
@@ -3420,7 +3512,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_SkeletonType,
@@ -3434,7 +3526,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSkeleton2", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSkeleton2", 2usize
                         )
                     })
             });
@@ -3450,7 +3543,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64, quest_hook::libil2cpp::ByRefMut<i32>),
                         bool,
@@ -3459,7 +3552,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSpaceBoundary2DCount", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSpaceBoundary2DCount", 2usize
                         )
                     })
             });
@@ -3475,7 +3569,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64, crate::Unity::Collections::Allocator),
                         crate::Unity::Collections::NativeArray_1<
@@ -3486,7 +3580,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSpaceBoundary2D", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSpaceBoundary2D", 2usize
                         )
                     })
             });
@@ -3506,7 +3601,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u64,
@@ -3524,7 +3619,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSpaceBoundary2D", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSpaceBoundary2D", 2usize
                         )
                     })
             });
@@ -3540,7 +3636,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u64,
@@ -3554,7 +3650,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSpaceBoundary2D", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSpaceBoundary2D", 2usize
                         )
                     })
             });
@@ -3571,7 +3668,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u64,
@@ -3586,7 +3683,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSpaceBoundary2D", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSpaceBoundary2D", 3usize
                         )
                     })
             });
@@ -3602,7 +3700,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u64,
@@ -3616,7 +3714,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSpaceBoundingBox2D", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSpaceBoundingBox2D", 2usize
                         )
                     })
             });
@@ -3632,7 +3731,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u64,
@@ -3646,7 +3745,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSpaceBoundingBox3D", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSpaceBoundingBox3D", 2usize
                         )
                     })
             });
@@ -3662,7 +3762,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u64,
@@ -3676,7 +3776,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSpaceComponentStatus", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSpaceComponentStatus", 4usize
                         )
                     })
             });
@@ -3694,7 +3795,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u64,
@@ -3708,7 +3809,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSpaceComponentStatusInternal", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSpaceComponentStatusInternal", 4usize
                         )
                     })
             });
@@ -3728,7 +3830,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u64,
@@ -3744,7 +3846,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSpaceContainer", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSpaceContainer", 2usize
                         )
                     })
             });
@@ -3762,7 +3865,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u64,
@@ -3776,7 +3879,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSpaceRoomLayout", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSpaceRoomLayout", 2usize
                         )
                     })
             });
@@ -3794,7 +3898,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u64,
@@ -3810,7 +3914,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSpaceSemanticLabels", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSpaceSemanticLabels", 2usize
                         )
                     })
             });
@@ -3825,7 +3930,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u64,
@@ -3840,7 +3945,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSpaceTriangleMesh", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSpaceTriangleMesh", 3usize
                         )
                     })
             });
@@ -3857,7 +3963,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u64,
@@ -3870,7 +3976,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSpaceTriangleMeshCounts", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSpaceTriangleMeshCounts", 3usize
                         )
                     })
             });
@@ -3886,7 +3993,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64, quest_hook::libil2cpp::ByRefMut<u64>),
                         bool,
@@ -3895,7 +4002,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSpaceUserId", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSpaceUserId", 2usize
                         )
                     })
             });
@@ -3911,7 +4019,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64, quest_hook::libil2cpp::ByRefMut<crate::System::Guid>),
                         bool,
@@ -3920,7 +4028,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSpaceUuid", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSpaceUuid", 2usize
                         )
                     })
             });
@@ -3933,7 +4042,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_SystemHeadset,
@@ -3942,7 +4051,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSystemHeadsetType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSystemHeadsetType", 0usize
                         )
                     })
             });
@@ -3955,7 +4065,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         bool,
@@ -3964,7 +4074,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSystemHmd3DofModeEnabled", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSystemHmd3DofModeEnabled", 0usize
                         )
                     })
             });
@@ -3980,7 +4091,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_TrackedKeyboardQueryFlags,
@@ -3994,7 +4105,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSystemKeyboardDescription", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSystemKeyboardDescription", 2usize
                         )
                     })
             });
@@ -4007,12 +4119,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f64, 0usize>("GetTimeInSeconds")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTimeInSeconds", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTimeInSeconds", 0usize
                         )
                     })
             });
@@ -4025,7 +4138,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Tracker),
                         crate::GlobalNamespace::OVRPlugin_Frustumf,
@@ -4034,7 +4147,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTrackerFrustum", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTrackerFrustum", 1usize
                         )
                     })
             });
@@ -4049,7 +4163,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Tracker),
                         crate::GlobalNamespace::OVRPlugin_Posef,
@@ -4058,7 +4172,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTrackerPose", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTrackerPose", 1usize
                         )
                     })
             });
@@ -4073,7 +4188,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Posef,
@@ -4082,7 +4197,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTrackingCalibratedOrigin", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTrackingCalibratedOrigin", 0usize
                         )
                     })
             });
@@ -4097,7 +4213,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_TrackingOrigin,
@@ -4106,7 +4222,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTrackingOriginType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTrackingOriginType", 0usize
                         )
                     })
             });
@@ -4121,7 +4238,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Posef,
@@ -4130,7 +4247,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTrackingTransformRawPose", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTrackingTransformRawPose", 0usize
                         )
                     })
             });
@@ -4145,7 +4263,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_TrackingOrigin),
                         crate::GlobalNamespace::OVRPlugin_Posef,
@@ -4154,7 +4272,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetTrackingTransformRelativePose", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTrackingTransformRelativePose", 1usize
                         )
                     })
             });
@@ -4169,7 +4288,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         bool,
@@ -4178,7 +4297,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetUseOverriddenExternalCameraFov", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetUseOverriddenExternalCameraFov", 1usize
                         )
                     })
             });
@@ -4191,7 +4311,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         bool,
@@ -4200,8 +4320,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetUseOverriddenExternalCameraStaticPose",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetUseOverriddenExternalCameraStaticPose", 1usize
                         )
                     })
             });
@@ -4216,7 +4336,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_VirtualKeyboardTextureIds,
@@ -4227,7 +4347,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetVirtualKeyboardDirtyTextures", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetVirtualKeyboardDirtyTextures", 1usize
                         )
                     })
             });
@@ -4244,7 +4365,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationStates,
@@ -4255,8 +4376,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetVirtualKeyboardModelAnimationStates",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetVirtualKeyboardModelAnimationStates", 1usize
                         )
                     })
             });
@@ -4271,7 +4392,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<f32>),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -4280,7 +4401,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetVirtualKeyboardScale", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetVirtualKeyboardScale", 1usize
                         )
                     })
             });
@@ -4298,7 +4420,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u64,
@@ -4312,7 +4434,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetVirtualKeyboardTextureData", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetVirtualKeyboardTextureData", 2usize
                         )
                     })
             });
@@ -4329,7 +4452,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::Guid),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -4338,7 +4461,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GuidToUuidString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GuidToUuidString", 1usize
                         )
                     })
             });
@@ -4351,7 +4475,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         bool,
@@ -4360,7 +4484,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitializeInsightPassthrough", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitializeInsightPassthrough", 0usize
                         )
                     })
             });
@@ -4371,12 +4496,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("InitializeMixedReality")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitializeMixedReality", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitializeMixedReality", 0usize
                         )
                     })
             });
@@ -4387,7 +4513,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         bool,
@@ -4396,7 +4522,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsControllerDrivenHandPosesEnabled", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsControllerDrivenHandPosesEnabled", 0usize
                         )
                     })
             });
@@ -4407,7 +4534,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         bool,
@@ -4416,7 +4543,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsInsightPassthroughInitialized", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsInsightPassthroughInitialized", 0usize
                         )
                     })
             });
@@ -4427,7 +4555,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         bool,
@@ -4436,7 +4564,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsInsightPassthroughSupported", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsInsightPassthroughSupported", 0usize
                         )
                     })
             });
@@ -4447,12 +4576,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("IsMixedRealityInitialized")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsMixedRealityInitialized", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsMixedRealityInitialized", 0usize
                         )
                     })
             });
@@ -4465,7 +4595,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         bool,
@@ -4474,8 +4604,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsMultimodalHandsControllersSupported",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsMultimodalHandsControllersSupported", 0usize
                         )
                     })
             });
@@ -4488,7 +4618,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_SpaceLocationFlags),
                         bool,
@@ -4497,7 +4627,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsOrientationTracked", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsOrientationTracked", 1usize
                         )
                     })
             });
@@ -4510,7 +4641,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_SpaceLocationFlags),
                         bool,
@@ -4519,7 +4650,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsOrientationValid", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsOrientationValid", 1usize
                         )
                     })
             });
@@ -4532,7 +4664,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_OverlayShape),
                         bool,
@@ -4541,7 +4673,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsPassthroughShape", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsPassthroughShape", 1usize
                         )
                     })
             });
@@ -4554,7 +4687,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_PerfMetrics),
                         bool,
@@ -4563,7 +4696,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsPerfMetricsSupported", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsPerfMetricsSupported", 1usize
                         )
                     })
             });
@@ -4576,7 +4710,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_SpaceLocationFlags),
                         bool,
@@ -4585,7 +4719,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsPositionTracked", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsPositionTracked", 1usize
                         )
                     })
             });
@@ -4598,7 +4733,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_SpaceLocationFlags),
                         bool,
@@ -4607,7 +4742,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsPositionValid", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsPositionValid", 1usize
                         )
                     })
             });
@@ -4620,7 +4756,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Result),
                         bool,
@@ -4629,7 +4765,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsSuccess", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsSuccess", 1usize
                         )
                     })
             });
@@ -4643,7 +4780,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_BoneId,
@@ -4655,7 +4792,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsValidBone", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsValidBone", 2usize
                         )
                     })
             });
@@ -4672,7 +4810,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<
@@ -4683,7 +4821,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadRenderModel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadRenderModel", 1usize
                         )
                     })
             });
@@ -4699,7 +4838,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64, crate::GlobalNamespace::OVRPlugin_TrackingOrigin),
                         crate::GlobalNamespace::OVRPlugin_Posef,
@@ -4708,7 +4847,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LocateSpace", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LocateSpace", 2usize
                         )
                     })
             });
@@ -4723,7 +4863,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -4732,7 +4872,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnEditorShutdown", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnEditorShutdown", 0usize
                         )
                     })
             });
@@ -4749,7 +4890,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, bool, crate::GlobalNamespace::OVRPlugin_Fovf),
                         bool,
@@ -4758,7 +4899,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OverrideExternalCameraFov", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OverrideExternalCameraFov", 3usize
                         )
                     })
             });
@@ -4775,7 +4917,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, bool, crate::GlobalNamespace::OVRPlugin_Posef),
                         bool,
@@ -4784,7 +4926,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OverrideExternalCameraStaticPose", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OverrideExternalCameraStaticPose", 3usize
                         )
                     })
             });
@@ -4802,7 +4945,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_EventDataBuffer,
@@ -4813,7 +4956,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PollEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PollEvent", 1usize
                         )
                     })
             });
@@ -4829,7 +4973,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo,
@@ -4841,7 +4985,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "QuerySpaces", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "QuerySpaces", 2usize
                         )
                     })
             });
@@ -4856,7 +5001,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_RecenterFlags),
                         bool,
@@ -4865,7 +5010,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RecenterTrackingOrigin", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RecenterTrackingOrigin", 1usize
                         )
                     })
             });
@@ -4879,7 +5025,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -4893,7 +5039,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RequestSceneCapture", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RequestSceneCapture", 2usize
                         )
                     })
             });
@@ -4906,12 +5053,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("ResetAppPerfStats")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResetAppPerfStats", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResetAppPerfStats", 0usize
                         )
                     })
             });
@@ -4922,12 +5070,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("ResetDefaultExternalCamera")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ResetDefaultExternalCamera", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResetDefaultExternalCamera", 0usize
                         )
                     })
             });
@@ -4946,7 +5095,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u64,
@@ -4963,7 +5112,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RetrieveSpaceQueryResults", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RetrieveSpaceQueryResults", 3usize
                         )
                     })
             });
@@ -4985,7 +5135,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u64,
@@ -5003,7 +5153,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RetrieveSpaceQueryResults", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RetrieveSpaceQueryResults", 2usize
                         )
                     })
             });
@@ -5021,7 +5172,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u64,
@@ -5035,7 +5186,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SaveSpace", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SaveSpace", 4usize
                         )
                     })
             });
@@ -5052,7 +5204,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Unity::Collections::NativeArray_1<u64>,
@@ -5065,7 +5217,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SaveSpaceList", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SaveSpaceList", 3usize
                         )
                     })
             });
@@ -5082,7 +5235,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -5101,7 +5254,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SendEvent", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SendEvent", 3usize
                         )
                     })
             });
@@ -5119,7 +5273,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_VirtualKeyboardInputInfo,
@@ -5133,7 +5287,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SendVirtualKeyboardInput", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SendVirtualKeyboardInput", 2usize
                         )
                     })
             });
@@ -5146,12 +5301,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(bool), bool, 1usize>("SetBoundaryVisible")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetBoundaryVisible", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetBoundaryVisible", 1usize
                         )
                     })
             });
@@ -5164,7 +5320,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_ColorSpace),
                         bool,
@@ -5173,7 +5329,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetClientColorDesc", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetClientColorDesc", 1usize
                         )
                     })
             });
@@ -5188,7 +5345,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Vector4, crate::UnityEngine::Vector4, bool),
                         bool,
@@ -5197,7 +5354,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetColorScaleAndOffset", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetColorScaleAndOffset", 3usize
                         )
                     })
             });
@@ -5212,7 +5370,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         bool,
@@ -5221,7 +5379,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetControllerDrivenHandPoses", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetControllerDrivenHandPoses", 1usize
                         )
                     })
             });
@@ -5236,7 +5395,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         bool,
@@ -5245,8 +5404,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetControllerDrivenHandPosesAreNatural",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetControllerDrivenHandPosesAreNatural", 1usize
                         )
                     })
             });
@@ -5262,7 +5421,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u32, crate::GlobalNamespace::OVRPlugin_HapticsBuffer),
                         bool,
@@ -5271,7 +5430,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetControllerHaptics", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetControllerHaptics", 2usize
                         )
                     })
             });
@@ -5287,7 +5447,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Controller,
@@ -5299,8 +5459,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetControllerHapticsAmplitudeEnvelope",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetControllerHapticsAmplitudeEnvelope", 2usize
                         )
                     })
             });
@@ -5316,7 +5476,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Controller,
@@ -5328,7 +5488,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetControllerHapticsPcm", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetControllerHapticsPcm", 2usize
                         )
                     })
             });
@@ -5346,7 +5507,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Controller,
@@ -5360,7 +5521,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetControllerLocalizedVibration", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetControllerLocalizedVibration", 4usize
                         )
                     })
             });
@@ -5381,7 +5543,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u32, f32, f32),
                         bool,
@@ -5390,7 +5552,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetControllerVibration", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetControllerVibration", 3usize
                         )
                     })
             });
@@ -5411,7 +5574,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -5430,7 +5593,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetDefaultExternalCamera", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetDefaultExternalCamera", 3usize
                         )
                     })
             });
@@ -5446,7 +5610,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_EyeTextureFormat),
                         bool,
@@ -5455,7 +5619,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetDesiredEyeTextureFormat", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetDesiredEyeTextureFormat", 1usize
                         )
                     })
             });
@@ -5468,7 +5633,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Bool),
                         bool,
@@ -5477,7 +5642,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetDeveloperMode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetDeveloperMode", 1usize
                         )
                     })
             });
@@ -5496,7 +5662,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -5515,7 +5681,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetExternalCameraProperties", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetExternalCameraProperties", 3usize
                         )
                     })
             });
@@ -5531,7 +5698,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_LayerSharpenType),
                         bool,
@@ -5540,7 +5707,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetEyeBufferSharpenType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetEyeBufferSharpenType", 1usize
                         )
                     })
             });
@@ -5553,7 +5721,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f64),
                         bool,
@@ -5562,7 +5730,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetHandNodePoseStateLatency", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetHandNodePoseStateLatency", 1usize
                         )
                     })
             });
@@ -5582,7 +5751,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -5598,7 +5767,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetHeadPoseModifier", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetHeadPoseModifier", 2usize
                         )
                     })
             });
@@ -5614,7 +5784,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -5626,8 +5796,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetInsightPassthroughKeyboardHandsIntensity",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetInsightPassthroughKeyboardHandsIntensity", 2usize
                         )
                     })
             });
@@ -5643,7 +5813,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, crate::GlobalNamespace::OVRPlugin_InsightPassthroughStyle),
                         bool,
@@ -5652,7 +5822,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetInsightPassthroughStyle", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetInsightPassthroughStyle", 2usize
                         )
                     })
             });
@@ -5668,7 +5839,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -5680,7 +5851,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetInsightPassthroughStyle", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetInsightPassthroughStyle", 2usize
                         )
                     })
             });
@@ -5695,7 +5867,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Vector2f),
                         bool,
@@ -5704,7 +5876,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetKeyboardOverlayUV", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetKeyboardOverlayUV", 1usize
                         )
                     })
             });
@@ -5719,7 +5892,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::OVRPlugin_LogCallback2DelegateType,
@@ -5730,7 +5903,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetLogCallback2", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetLogCallback2", 1usize
                         )
                     })
             });
@@ -5745,7 +5919,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         bool,
@@ -5754,8 +5928,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetMultimodalHandsControllersSupported",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetMultimodalHandsControllersSupported", 1usize
                         )
                     })
             });
@@ -5768,7 +5942,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         bool,
@@ -5777,8 +5951,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetSimultaneousHandsAndControllersEnabled",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetSimultaneousHandsAndControllersEnabled", 1usize
                         )
                     })
             });
@@ -5795,7 +5969,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u64,
@@ -5810,7 +5984,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetSpaceComponentStatus", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetSpaceComponentStatus", 5usize
                         )
                     })
             });
@@ -5827,7 +6002,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         bool,
@@ -5836,7 +6011,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetTrackingCalibratedOrigin", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetTrackingCalibratedOrigin", 0usize
                         )
                     })
             });
@@ -5849,7 +6025,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_TrackingOrigin),
                         bool,
@@ -5858,7 +6034,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetTrackingOriginType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetTrackingOriginType", 1usize
                         )
                     })
             });
@@ -5873,7 +6050,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelVisibility,
@@ -5884,7 +6061,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetVirtualKeyboardModelVisibility", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetVirtualKeyboardModelVisibility", 1usize
                         )
                     })
             });
@@ -5901,7 +6079,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::Unity::Collections::NativeArray_1<u64>,
@@ -5914,7 +6092,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShareSpaces", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShareSpaces", 3usize
                         )
                     })
             });
@@ -5929,7 +6108,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_PlatformUI),
                         bool,
@@ -5938,7 +6117,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShowUI", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "ShowUI",
+                            1usize
                         )
                     })
             });
@@ -5949,12 +6129,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("ShutdownInsightPassthrough")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShutdownInsightPassthrough", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShutdownInsightPassthrough", 0usize
                         )
                     })
             });
@@ -5965,12 +6146,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("ShutdownMixedReality")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ShutdownMixedReality", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShutdownMixedReality", 0usize
                         )
                     })
             });
@@ -5981,12 +6163,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("StartBodyTracking")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartBodyTracking", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartBodyTracking", 0usize
                         )
                     })
             });
@@ -5997,12 +6180,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("StartEyeTracking")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartEyeTracking", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartEyeTracking", 0usize
                         )
                     })
             });
@@ -6013,12 +6197,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("StartFaceTracking")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartFaceTracking", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartFaceTracking", 0usize
                         )
                     })
             });
@@ -6031,12 +6216,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64), bool, 1usize>("StartKeyboardTracking")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartKeyboardTracking", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartKeyboardTracking", 1usize
                         )
                     })
             });
@@ -6049,12 +6235,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("StopBodyTracking")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StopBodyTracking", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StopBodyTracking", 0usize
                         )
                     })
             });
@@ -6065,12 +6252,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("StopEyeTracking")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StopEyeTracking", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StopEyeTracking", 0usize
                         )
                     })
             });
@@ -6081,12 +6269,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("StopFaceTracking")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StopFaceTracking", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StopFaceTracking", 0usize
                         )
                     })
             });
@@ -6097,12 +6286,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("StopKeyboardTracking")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StopKeyboardTracking", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StopKeyboardTracking", 0usize
                         )
                     })
             });
@@ -6115,7 +6305,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_VirtualKeyboardLocationInfo),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -6124,7 +6314,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SuggestVirtualKeyboardLocation", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SuggestVirtualKeyboardLocation", 1usize
                         )
                     })
             });
@@ -6142,7 +6333,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Node,
@@ -6154,7 +6345,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TestBoundaryNode", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TestBoundaryNode", 2usize
                         )
                     })
             });
@@ -6172,7 +6364,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Vector3f,
@@ -6184,7 +6376,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TestBoundaryPoint", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TestBoundaryPoint", 2usize
                         )
                     })
             });
@@ -6199,7 +6392,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -6208,7 +6401,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToBool", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "ToBool",
+                            1usize
                         )
                     })
             });
@@ -6228,7 +6422,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u64,
@@ -6246,7 +6440,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryLocateSpace", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryLocateSpace", 4usize
                         )
                     })
             });
@@ -6263,7 +6458,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u64,
@@ -6278,7 +6473,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryLocateSpace", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryLocateSpace", 3usize
                         )
                     })
             });
@@ -6291,12 +6487,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("UpdateExternalCamera")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateExternalCamera", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateExternalCamera", 0usize
                         )
                     })
             });
@@ -6310,7 +6507,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64, crate::UnityEngine::Matrix4x4),
                         bool,
@@ -6319,8 +6516,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateInsightPassthroughGeometryTransform",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateInsightPassthroughGeometryTransform", 2usize
                         )
                     })
             });
@@ -6336,7 +6533,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, f64),
                         bool,
@@ -6345,7 +6542,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateNodePhysicsPoses", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateNodePhysicsPoses", 2usize
                         )
                     })
             });
@@ -6361,7 +6559,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64, crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData),
                         bool,
@@ -6370,7 +6568,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdatePassthroughColorLut", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdatePassthroughColorLut", 2usize
                         )
                     })
             });
@@ -6383,12 +6582,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_AsymmetricFovEnabled")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_AsymmetricFovEnabled", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_AsymmetricFovEnabled", 0usize
                         )
                     })
             });
@@ -6399,12 +6599,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_EyeTextureArrayEnabled")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_EyeTextureArrayEnabled", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_EyeTextureArrayEnabled", 0usize
                         )
                     })
             });
@@ -6417,7 +6618,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -6426,7 +6627,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_audioInId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_audioInId", 0usize
                         )
                     })
             });
@@ -6441,7 +6643,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -6450,7 +6652,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_audioOutId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_audioOutId", 0usize
                         )
                     })
             });
@@ -6463,12 +6666,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_batteryLevel")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_batteryLevel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_batteryLevel", 0usize
                         )
                     })
             });
@@ -6481,7 +6685,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_BatteryStatus,
@@ -6490,7 +6694,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_batteryStatus", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_batteryStatus", 0usize
                         )
                     })
             });
@@ -6503,12 +6708,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_batteryTemperature")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_batteryTemperature", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_batteryTemperature", 0usize
                         )
                     })
             });
@@ -6519,12 +6725,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_bodyTrackingEnabled")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_bodyTrackingEnabled", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_bodyTrackingEnabled", 0usize
                         )
                     })
             });
@@ -6535,12 +6742,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_bodyTrackingSupported")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_bodyTrackingSupported", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_bodyTrackingSupported", 0usize
                         )
                     })
             });
@@ -6551,12 +6759,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_chromatic")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_chromatic", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_chromatic", 0usize
                         )
                     })
             });
@@ -6567,12 +6776,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("get_cpuLevel")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_cpuLevel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_cpuLevel", 0usize
                         )
                     })
             });
@@ -6583,12 +6793,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_eyeDepth")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_eyeDepth", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_eyeDepth", 0usize
                         )
                     })
             });
@@ -6601,7 +6812,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         bool,
@@ -6610,8 +6821,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_eyeFovPremultipliedAlphaModeEnabled",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_eyeFovPremultipliedAlphaModeEnabled", 0usize
                         )
                     })
             });
@@ -6622,12 +6833,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_eyeHeight")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_eyeHeight", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_eyeHeight", 0usize
                         )
                     })
             });
@@ -6640,7 +6852,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         bool,
@@ -6649,8 +6861,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_eyeTrackedFoveatedRenderingEnabled",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_eyeTrackedFoveatedRenderingEnabled", 0usize
                         )
                     })
             });
@@ -6663,7 +6875,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         bool,
@@ -6672,8 +6884,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_eyeTrackedFoveatedRenderingSupported",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_eyeTrackedFoveatedRenderingSupported", 0usize
                         )
                     })
             });
@@ -6684,12 +6896,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_eyeTrackingEnabled")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_eyeTrackingEnabled", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_eyeTrackingEnabled", 0usize
                         )
                     })
             });
@@ -6700,12 +6913,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_eyeTrackingSupported")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_eyeTrackingSupported", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_eyeTrackingSupported", 0usize
                         )
                     })
             });
@@ -6716,12 +6930,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_faceTrackingEnabled")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_faceTrackingEnabled", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_faceTrackingEnabled", 0usize
                         )
                     })
             });
@@ -6732,12 +6947,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_faceTrackingSupported")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_faceTrackingSupported", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_faceTrackingSupported", 0usize
                         )
                     })
             });
@@ -6750,7 +6966,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_FixedFoveatedRenderingLevel,
@@ -6759,7 +6975,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_fixedFoveatedRenderingLevel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_fixedFoveatedRenderingLevel", 0usize
                         )
                     })
             });
@@ -6772,7 +6989,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         bool,
@@ -6781,7 +6998,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_fixedFoveatedRenderingSupported", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_fixedFoveatedRenderingSupported", 0usize
                         )
                     })
             });
@@ -6794,7 +7012,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_FoveatedRenderingLevel,
@@ -6803,7 +7021,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_foveatedRenderingLevel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_foveatedRenderingLevel", 0usize
                         )
                     })
             });
@@ -6816,7 +7035,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         bool,
@@ -6825,7 +7044,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_foveatedRenderingSupported", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_foveatedRenderingSupported", 0usize
                         )
                     })
             });
@@ -6836,12 +7056,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("get_gpuLevel")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_gpuLevel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_gpuLevel", 0usize
                         )
                     })
             });
@@ -6852,12 +7073,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_gpuUtilLevel")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_gpuUtilLevel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_gpuUtilLevel", 0usize
                         )
                     })
             });
@@ -6868,12 +7090,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_gpuUtilSupported")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_gpuUtilSupported", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_gpuUtilSupported", 0usize
                         )
                     })
             });
@@ -6884,12 +7107,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_hasInputFocus")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_hasInputFocus", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_hasInputFocus", 0usize
                         )
                     })
             });
@@ -6900,12 +7124,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_hasVrFocus")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_hasVrFocus", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_hasVrFocus", 0usize
                         )
                     })
             });
@@ -6916,12 +7141,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_headphonesPresent")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_headphonesPresent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_headphonesPresent", 0usize
                         )
                     })
             });
@@ -6932,12 +7158,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_hmdPresent")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_hmdPresent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_hmdPresent", 0usize
                         )
                     })
             });
@@ -6948,12 +7175,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_initialized")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_initialized", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_initialized", 0usize
                         )
                     })
             });
@@ -6964,12 +7192,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_ipd")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ipd", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_ipd",
+                            0usize
                         )
                     })
             });
@@ -6982,7 +7211,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -6991,7 +7220,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_latency", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_latency", 0usize
                         )
                     })
             });
@@ -7004,12 +7234,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_localDimming")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_localDimming", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_localDimming", 0usize
                         )
                     })
             });
@@ -7020,12 +7251,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_localDimmingSupported")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_localDimmingSupported", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_localDimmingSupported", 0usize
                         )
                     })
             });
@@ -7036,12 +7268,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_monoscopic")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_monoscopic", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_monoscopic", 0usize
                         )
                     })
             });
@@ -7054,7 +7287,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Version>,
@@ -7063,7 +7296,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_nativeSDKVersion", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_nativeSDKVersion", 0usize
                         )
                     })
             });
@@ -7078,7 +7312,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_XrApi,
@@ -7087,7 +7321,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_nativeXrApi", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_nativeXrApi", 0usize
                         )
                     })
             });
@@ -7100,12 +7335,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_occlusionMesh")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_occlusionMesh", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_occlusionMesh", 0usize
                         )
                     })
             });
@@ -7116,12 +7352,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_position")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_position", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_position", 0usize
                         )
                     })
             });
@@ -7132,12 +7369,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_positionSupported")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_positionSupported", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_positionSupported", 0usize
                         )
                     })
             });
@@ -7148,12 +7386,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_positionTracked")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_positionTracked", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_positionTracked", 0usize
                         )
                     })
             });
@@ -7164,12 +7403,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_powerSaving")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_powerSaving", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_powerSaving", 0usize
                         )
                     })
             });
@@ -7182,7 +7422,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -7191,7 +7431,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_productName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_productName", 0usize
                         )
                     })
             });
@@ -7204,12 +7445,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("get_recommendedMSAALevel")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_recommendedMSAALevel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_recommendedMSAALevel", 0usize
                         )
                     })
             });
@@ -7220,12 +7462,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_rotation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rotation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rotation", 0usize
                         )
                     })
             });
@@ -7236,12 +7479,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_shouldQuit")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_shouldQuit", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_shouldQuit", 0usize
                         )
                     })
             });
@@ -7252,12 +7496,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_shouldRecenter")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_shouldRecenter", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_shouldRecenter", 0usize
                         )
                     })
             });
@@ -7270,7 +7515,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_ProcessorPerformanceLevel,
@@ -7279,7 +7524,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_suggestedCpuPerfLevel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_suggestedCpuPerfLevel", 0usize
                         )
                     })
             });
@@ -7294,7 +7540,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_ProcessorPerformanceLevel,
@@ -7303,7 +7549,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_suggestedGpuPerfLevel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_suggestedGpuPerfLevel", 0usize
                         )
                     })
             });
@@ -7318,7 +7565,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -7329,8 +7576,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_systemDisplayFrequenciesAvailable",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_systemDisplayFrequenciesAvailable", 0usize
                         )
                     })
             });
@@ -7343,12 +7590,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_systemDisplayFrequency")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_systemDisplayFrequency", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_systemDisplayFrequency", 0usize
                         )
                     })
             });
@@ -7361,7 +7609,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_SystemRegion,
@@ -7370,7 +7618,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_systemRegion", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_systemRegion", 0usize
                         )
                     })
             });
@@ -7383,12 +7632,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("get_systemVolume")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_systemVolume", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_systemVolume", 0usize
                         )
                     })
             });
@@ -7401,7 +7651,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_TiledMultiResLevel,
@@ -7410,7 +7660,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_tiledMultiResLevel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_tiledMultiResLevel", 0usize
                         )
                     })
             });
@@ -7423,12 +7674,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_tiledMultiResSupported")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_tiledMultiResSupported", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_tiledMultiResSupported", 0usize
                         )
                     })
             });
@@ -7441,7 +7693,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         bool,
@@ -7450,7 +7702,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_useDynamicFixedFoveatedRendering", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_useDynamicFixedFoveatedRendering", 0usize
                         )
                     })
             });
@@ -7461,7 +7714,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         bool,
@@ -7470,7 +7723,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_useDynamicFoveatedRendering", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_useDynamicFoveatedRendering", 0usize
                         )
                     })
             });
@@ -7481,7 +7735,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         bool,
@@ -7490,7 +7744,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_useIPDInPositionTracking", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_useIPDInPositionTracking", 0usize
                         )
                     })
             });
@@ -7501,12 +7756,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("get_userPresent")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_userPresent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_userPresent", 0usize
                         )
                     })
             });
@@ -7519,7 +7775,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Version>,
@@ -7528,7 +7784,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_version", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_version", 0usize
                         )
                     })
             });
@@ -7541,12 +7798,13 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("get_vsyncCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_vsyncCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_vsyncCount", 0usize
                         )
                     })
             });
@@ -7559,7 +7817,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -7568,7 +7826,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_chromatic", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_chromatic", 1usize
                         )
                     })
             });
@@ -7583,7 +7842,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -7592,7 +7851,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_cpuLevel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_cpuLevel", 1usize
                         )
                     })
             });
@@ -7607,7 +7867,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -7616,7 +7876,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_eyeDepth", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_eyeDepth", 1usize
                         )
                     })
             });
@@ -7631,7 +7892,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -7640,8 +7901,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_eyeFovPremultipliedAlphaModeEnabled",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_eyeFovPremultipliedAlphaModeEnabled", 1usize
                         )
                     })
             });
@@ -7656,7 +7917,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -7665,7 +7926,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_eyeHeight", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_eyeHeight", 1usize
                         )
                     })
             });
@@ -7680,7 +7942,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -7689,8 +7951,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_eyeTrackedFoveatedRenderingEnabled",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_eyeTrackedFoveatedRenderingEnabled", 1usize
                         )
                     })
             });
@@ -7705,7 +7967,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_FixedFoveatedRenderingLevel),
                         quest_hook::libil2cpp::Void,
@@ -7714,7 +7976,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_fixedFoveatedRenderingLevel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_fixedFoveatedRenderingLevel", 1usize
                         )
                     })
             });
@@ -7729,7 +7992,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_FoveatedRenderingLevel),
                         quest_hook::libil2cpp::Void,
@@ -7738,7 +8001,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_foveatedRenderingLevel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_foveatedRenderingLevel", 1usize
                         )
                     })
             });
@@ -7753,7 +8017,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -7762,7 +8026,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_gpuLevel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_gpuLevel", 1usize
                         )
                     })
             });
@@ -7777,7 +8042,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -7786,7 +8051,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_ipd", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "set_ipd",
+                            1usize
                         )
                     })
             });
@@ -7801,7 +8067,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -7810,7 +8076,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_localDimming", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_localDimming", 1usize
                         )
                     })
             });
@@ -7825,7 +8092,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -7834,7 +8101,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_monoscopic", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_monoscopic", 1usize
                         )
                     })
             });
@@ -7849,7 +8117,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -7858,7 +8126,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_occlusionMesh", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_occlusionMesh", 1usize
                         )
                     })
             });
@@ -7873,7 +8142,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -7882,7 +8151,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_position", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_position", 1usize
                         )
                     })
             });
@@ -7897,7 +8167,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -7906,7 +8176,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_rotation", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_rotation", 1usize
                         )
                     })
             });
@@ -7921,7 +8192,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_ProcessorPerformanceLevel),
                         quest_hook::libil2cpp::Void,
@@ -7930,7 +8201,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_suggestedCpuPerfLevel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_suggestedCpuPerfLevel", 1usize
                         )
                     })
             });
@@ -7945,7 +8217,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_ProcessorPerformanceLevel),
                         quest_hook::libil2cpp::Void,
@@ -7954,7 +8226,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_suggestedGpuPerfLevel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_suggestedGpuPerfLevel", 1usize
                         )
                     })
             });
@@ -7969,7 +8242,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -7978,7 +8251,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_systemDisplayFrequency", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_systemDisplayFrequency", 1usize
                         )
                     })
             });
@@ -7993,7 +8267,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_TiledMultiResLevel),
                         quest_hook::libil2cpp::Void,
@@ -8002,7 +8276,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_tiledMultiResLevel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_tiledMultiResLevel", 1usize
                         )
                     })
             });
@@ -8017,7 +8292,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -8026,7 +8301,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_useDynamicFixedFoveatedRendering", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_useDynamicFixedFoveatedRendering", 1usize
                         )
                     })
             });
@@ -8041,7 +8317,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -8050,7 +8326,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_useDynamicFoveatedRendering", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_useDynamicFoveatedRendering", 1usize
                         )
                     })
             });
@@ -8065,7 +8342,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -8074,7 +8351,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_useIPDInPositionTracking", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_useIPDInPositionTracking", 1usize
                         )
                     })
             });
@@ -8089,7 +8367,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         quest_hook::libil2cpp::Void,
@@ -8098,7 +8376,8 @@ impl crate::GlobalNamespace::OVRPlugin {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_vsyncCount", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_vsyncCount", 1usize
                         )
                     })
             });
@@ -8642,12 +8921,13 @@ impl crate::GlobalNamespace::OVRPlugin_BodyJointLocation {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_OrientationTracked")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_OrientationTracked", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_OrientationTracked", 0usize
                         )
                     })
             });
@@ -8658,12 +8938,13 @@ impl crate::GlobalNamespace::OVRPlugin_BodyJointLocation {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_OrientationValid")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_OrientationValid", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_OrientationValid", 0usize
                         )
                     })
             });
@@ -8674,12 +8955,13 @@ impl crate::GlobalNamespace::OVRPlugin_BodyJointLocation {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_PositionTracked")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_PositionTracked", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_PositionTracked", 0usize
                         )
                     })
             });
@@ -8690,12 +8972,13 @@ impl crate::GlobalNamespace::OVRPlugin_BodyJointLocation {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_PositionValid")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_PositionValid", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_PositionValid", 0usize
                         )
                     })
             });
@@ -10860,7 +11143,7 @@ impl crate::GlobalNamespace::OVRPlugin_Colorf {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -10869,7 +11152,8 @@ impl crate::GlobalNamespace::OVRPlugin_Colorf {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToString", 0usize
                         )
                     })
             });
@@ -11213,7 +11497,7 @@ impl crate::GlobalNamespace::OVRPlugin_ControllerState2 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::OVRPlugin_ControllerState),
                         quest_hook::libil2cpp::Void,
@@ -11222,7 +11506,8 @@ impl crate::GlobalNamespace::OVRPlugin_ControllerState2 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -11385,7 +11670,7 @@ impl crate::GlobalNamespace::OVRPlugin_ControllerState4 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::OVRPlugin_ControllerState2),
                         quest_hook::libil2cpp::Void,
@@ -11394,7 +11679,8 @@ impl crate::GlobalNamespace::OVRPlugin_ControllerState4 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -11537,7 +11823,7 @@ impl crate::GlobalNamespace::OVRPlugin_ControllerState5 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::OVRPlugin_ControllerState4),
                         quest_hook::libil2cpp::Void,
@@ -11546,7 +11832,8 @@ impl crate::GlobalNamespace::OVRPlugin_ControllerState5 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -11691,7 +11978,7 @@ impl crate::GlobalNamespace::OVRPlugin_ControllerState6 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::OVRPlugin_ControllerState5),
                         quest_hook::libil2cpp::Void,
@@ -11700,7 +11987,8 @@ impl crate::GlobalNamespace::OVRPlugin_ControllerState6 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -12117,12 +12405,13 @@ impl crate::GlobalNamespace::OVRPlugin_EyeGazeState {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_IsValid")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_IsValid", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsValid", 0usize
                         )
                     })
             });
@@ -12904,7 +13193,7 @@ impl crate::GlobalNamespace::OVRPlugin_FaceExpressionStatusInternal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_FaceExpressionStatus,
@@ -12913,7 +13202,8 @@ impl crate::GlobalNamespace::OVRPlugin_FaceExpressionStatusInternal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToFaceExpressionStatus", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToFaceExpressionStatus", 0usize
                         )
                     })
             });
@@ -14128,12 +14418,13 @@ impl crate::GlobalNamespace::OVRPlugin_GUID {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -16024,7 +16315,7 @@ impl crate::GlobalNamespace::OVRPlugin_InsightPassthroughStyle2 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_InsightPassthroughStyle,
@@ -16035,7 +16326,8 @@ impl crate::GlobalNamespace::OVRPlugin_InsightPassthroughStyle2 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CopyTo", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "CopyTo",
+                            1usize
                         )
                     })
             });
@@ -16585,7 +16877,7 @@ impl crate::GlobalNamespace::OVRPlugin_Ktx {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         bool,
@@ -16594,7 +16886,8 @@ impl crate::GlobalNamespace::OVRPlugin_Ktx {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DestroyKtxTexture", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DestroyKtxTexture", 1usize
                         )
                     })
             });
@@ -16609,7 +16902,7 @@ impl crate::GlobalNamespace::OVRPlugin_Ktx {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, crate::System::IntPtr, u32),
                         bool,
@@ -16618,7 +16911,8 @@ impl crate::GlobalNamespace::OVRPlugin_Ktx {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetKtxTextureData", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetKtxTextureData", 3usize
                         )
                     })
             });
@@ -16633,7 +16927,7 @@ impl crate::GlobalNamespace::OVRPlugin_Ktx {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         u32,
@@ -16642,7 +16936,8 @@ impl crate::GlobalNamespace::OVRPlugin_Ktx {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetKtxTextureHeight", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetKtxTextureHeight", 1usize
                         )
                     })
             });
@@ -16655,7 +16950,7 @@ impl crate::GlobalNamespace::OVRPlugin_Ktx {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         u32,
@@ -16664,7 +16959,8 @@ impl crate::GlobalNamespace::OVRPlugin_Ktx {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetKtxTextureSize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetKtxTextureSize", 1usize
                         )
                     })
             });
@@ -16677,7 +16973,7 @@ impl crate::GlobalNamespace::OVRPlugin_Ktx {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         u32,
@@ -16686,7 +16982,8 @@ impl crate::GlobalNamespace::OVRPlugin_Ktx {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetKtxTextureWidth", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetKtxTextureWidth", 1usize
                         )
                     })
             });
@@ -16700,7 +16997,7 @@ impl crate::GlobalNamespace::OVRPlugin_Ktx {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, u32),
                         crate::System::IntPtr,
@@ -16709,7 +17006,8 @@ impl crate::GlobalNamespace::OVRPlugin_Ktx {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LoadKtxFromMemory", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadKtxFromMemory", 2usize
                         )
                     })
             });
@@ -16732,7 +17030,7 @@ impl crate::GlobalNamespace::OVRPlugin_Ktx {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, u32),
                         bool,
@@ -16741,7 +17039,8 @@ impl crate::GlobalNamespace::OVRPlugin_Ktx {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TranscodeKtxTexture", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TranscodeKtxTexture", 2usize
                         )
                     })
             });
@@ -16756,12 +17055,13 @@ impl crate::GlobalNamespace::OVRPlugin_Ktx {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -16907,7 +17207,7 @@ impl crate::GlobalNamespace::OVRPlugin_LayerDesc {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -16916,7 +17216,8 @@ impl crate::GlobalNamespace::OVRPlugin_LayerDesc {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToString", 0usize
                         )
                     })
             });
@@ -17050,7 +17351,7 @@ impl crate::GlobalNamespace::OVRPlugin_LayerDescInternal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_LayerDesc,
@@ -17059,7 +17360,8 @@ impl crate::GlobalNamespace::OVRPlugin_LayerDescInternal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToLayerDesc", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToLayerDesc", 0usize
                         )
                     })
             });
@@ -17075,7 +17377,7 @@ impl crate::GlobalNamespace::OVRPlugin_LayerDescInternal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::OVRPlugin_LayerDesc),
                         quest_hook::libil2cpp::Void,
@@ -17084,7 +17386,8 @@ impl crate::GlobalNamespace::OVRPlugin_LayerDescInternal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -17637,7 +17940,7 @@ impl crate::GlobalNamespace::OVRPlugin_LogCallback2DelegateType {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_LogLevel,
@@ -17654,7 +17957,8 @@ impl crate::GlobalNamespace::OVRPlugin_LogCallback2DelegateType {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BeginInvoke", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BeginInvoke", 5usize
                         )
                     })
             });
@@ -17674,7 +17978,7 @@ impl crate::GlobalNamespace::OVRPlugin_LogCallback2DelegateType {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
                         quest_hook::libil2cpp::Void,
@@ -17683,7 +17987,8 @@ impl crate::GlobalNamespace::OVRPlugin_LogCallback2DelegateType {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EndInvoke", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EndInvoke", 1usize
                         )
                     })
             });
@@ -17701,7 +18006,7 @@ impl crate::GlobalNamespace::OVRPlugin_LogCallback2DelegateType {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_LogLevel,
@@ -17714,7 +18019,8 @@ impl crate::GlobalNamespace::OVRPlugin_LogCallback2DelegateType {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Invoke", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Invoke",
+                            3usize
                         )
                     })
             });
@@ -17741,7 +18047,7 @@ impl crate::GlobalNamespace::OVRPlugin_LogCallback2DelegateType {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -17755,7 +18061,8 @@ impl crate::GlobalNamespace::OVRPlugin_LogCallback2DelegateType {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -17926,7 +18233,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::IntPtr,
@@ -17946,7 +18253,8 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EncodeMrcFrame", 8usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EncodeMrcFrame", 8usize
                         )
                     })
             });
@@ -17980,7 +18288,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
@@ -17999,7 +18307,8 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "EncodeMrcFrame", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EncodeMrcFrame", 7usize
                         )
                     })
             });
@@ -18024,12 +18333,13 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("GetInitialized")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetInitialized", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetInitialized", 0usize
                         )
                     })
             });
@@ -18042,7 +18352,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::Media_OVRPlugin_MrcActivationMode,
@@ -18051,7 +18361,8 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMrcActivationMode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMrcActivationMode", 0usize
                         )
                     })
             });
@@ -18064,12 +18375,13 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("GetMrcAudioSampleRate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMrcAudioSampleRate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMrcAudioSampleRate", 0usize
                         )
                     })
             });
@@ -18080,12 +18392,13 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("GetMrcFrameImageFlipped")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMrcFrameImageFlipped", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMrcFrameImageFlipped", 0usize
                         )
                     })
             });
@@ -18099,7 +18412,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<i32>,
@@ -18111,7 +18424,8 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMrcFrameSize", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMrcFrameSize", 2usize
                         )
                     })
             });
@@ -18126,7 +18440,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::Media_OVRPlugin_InputVideoBufferType,
@@ -18135,7 +18449,8 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMrcInputVideoBufferType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMrcInputVideoBufferType", 0usize
                         )
                     })
             });
@@ -18150,7 +18465,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::Media_OVRPlugin_PlatformCameraMode,
@@ -18159,7 +18474,8 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPlatformCameraMode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPlatformCameraMode", 0usize
                         )
                     })
             });
@@ -18172,12 +18488,13 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("Initialize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Initialize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize", 0usize
                         )
                     })
             });
@@ -18188,12 +18505,13 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("IsCastingToRemoteClient")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsCastingToRemoteClient", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsCastingToRemoteClient", 0usize
                         )
                     })
             });
@@ -18204,12 +18522,13 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("IsMrcActivated")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsMrcActivated", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsMrcActivated", 0usize
                         )
                     })
             });
@@ -18220,12 +18539,13 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("IsMrcEnabled")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsMrcEnabled", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsMrcEnabled", 0usize
                         )
                     })
             });
@@ -18245,7 +18565,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u32),
                         bool,
@@ -18254,7 +18574,8 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetAvailableQueueIndexVulkan", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetAvailableQueueIndexVulkan", 1usize
                         )
                     })
             });
@@ -18267,7 +18588,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::Media_OVRPlugin_MrcActivationMode),
                         bool,
@@ -18276,7 +18597,8 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetMrcActivationMode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetMrcActivationMode", 1usize
                         )
                     })
             });
@@ -18289,12 +18611,13 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), bool, 1usize>("SetMrcAudioSampleRate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetMrcAudioSampleRate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetMrcAudioSampleRate", 1usize
                         )
                     })
             });
@@ -18307,7 +18630,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
                         bool,
@@ -18316,7 +18639,8 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetMrcFrameImageFlipped", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetMrcFrameImageFlipped", 1usize
                         )
                     })
             });
@@ -18330,12 +18654,13 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32, i32), bool, 2usize>("SetMrcFrameSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetMrcFrameSize", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetMrcFrameSize", 2usize
                         )
                     })
             });
@@ -18352,7 +18677,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Posef,
@@ -18365,7 +18690,8 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetMrcHeadsetControllerPose", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetMrcHeadsetControllerPose", 3usize
                         )
                     })
             });
@@ -18384,7 +18710,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::Media_OVRPlugin_InputVideoBufferType),
                         bool,
@@ -18393,7 +18719,8 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetMrcInputVideoBufferType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetMrcInputVideoBufferType", 1usize
                         )
                     })
             });
@@ -18408,7 +18735,7 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::Media_OVRPlugin_PlatformCameraMode),
                         bool,
@@ -18417,7 +18744,8 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetPlatformCameraMode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetPlatformCameraMode", 1usize
                         )
                     })
             });
@@ -18428,12 +18756,13 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("SetPlatformInitialized")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetPlatformInitialized", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetPlatformInitialized", 0usize
                         )
                     })
             });
@@ -18444,12 +18773,13 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("Shutdown")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Shutdown", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Shutdown", 0usize
                         )
                     })
             });
@@ -18460,12 +18790,13 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), bool, 1usize>("SyncMrcFrame")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SyncMrcFrame", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SyncMrcFrame", 1usize
                         )
                     })
             });
@@ -18476,12 +18807,13 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("Update")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Update", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Update",
+                            0usize
                         )
                     })
             });
@@ -18492,12 +18824,13 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("UseMrcDebugCamera")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UseMrcDebugCamera", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UseMrcDebugCamera", 0usize
                         )
                     })
             });
@@ -18510,12 +18843,13 @@ impl crate::GlobalNamespace::OVRPlugin_Media {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -18606,12 +18940,13 @@ impl crate::GlobalNamespace::OVRPlugin_Mesh {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -18962,7 +19297,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_0_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Eye),
                         crate::GlobalNamespace::OVRPlugin_Sizei,
@@ -18971,7 +19306,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_0_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetEyeTextureSize", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetEyeTextureSize", 1usize
                         )
                     })
             });
@@ -19042,7 +19378,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_0_1_1 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Bool,
@@ -19058,7 +19394,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_0_1_1 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetOverlayQuad2", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetOverlayQuad2", 6usize
                         )
                     })
             });
@@ -19125,7 +19462,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_0_1_2 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Node),
                         crate::GlobalNamespace::OVRPlugin_Posef,
@@ -19134,7 +19471,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_0_1_2 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetNodePose", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetNodePose", 1usize
                         )
                     })
             });
@@ -19151,7 +19489,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_0_1_2 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u32, f32, f32),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -19160,7 +19498,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_0_1_2 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetControllerVibration", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetControllerVibration", 3usize
                         )
                     })
             });
@@ -19226,7 +19565,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_0_1_3 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Node),
                         crate::GlobalNamespace::OVRPlugin_Posef,
@@ -19235,7 +19574,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_0_1_3 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetNodeAcceleration", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetNodeAcceleration", 1usize
                         )
                     })
             });
@@ -19250,7 +19590,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_0_1_3 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Node),
                         crate::GlobalNamespace::OVRPlugin_Posef,
@@ -19259,7 +19599,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_0_1_3 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetNodeVelocity", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetNodeVelocity", 1usize
                         )
                     })
             });
@@ -19375,7 +19716,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_0_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Posef,
@@ -19384,7 +19725,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_0_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetTrackingCalibratedOrigin", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetTrackingCalibratedOrigin", 0usize
                         )
                     })
             });
@@ -19399,7 +19741,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_0_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_TrackingOrigin,
@@ -19408,7 +19750,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_0_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetTrackingOriginType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetTrackingOriginType", 0usize
                         )
                     })
             });
@@ -19423,7 +19766,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_0_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u32),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -19432,7 +19775,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_0_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_RecenterTrackingOrigin", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_RecenterTrackingOrigin", 1usize
                         )
                     })
             });
@@ -19447,7 +19791,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_0_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_TrackingOrigin),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -19456,7 +19800,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_0_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetTrackingOriginType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetTrackingOriginType", 1usize
                         )
                     })
             });
@@ -19573,7 +19918,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_11_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_EyeTextureFormat,
@@ -19582,7 +19927,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_11_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetDesiredEyeTextureFormat", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetDesiredEyeTextureFormat", 0usize
                         )
                     })
             });
@@ -19597,7 +19943,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_11_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_EyeTextureFormat),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -19606,7 +19952,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_11_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetDesiredEyeTextureFormat", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetDesiredEyeTextureFormat", 1usize
                         )
                     })
             });
@@ -19671,12 +20018,13 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_12_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("ovrp_GetAppFramerate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetAppFramerate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetAppFramerate", 0usize
                         )
                     })
             });
@@ -19691,7 +20039,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_12_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u32),
                         crate::GlobalNamespace::OVRPlugin_ControllerState2,
@@ -19700,7 +20048,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_12_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetControllerState2", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetControllerState2", 1usize
                         )
                     })
             });
@@ -19716,7 +20065,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_12_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Step,
@@ -19728,7 +20077,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_12_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetNodePoseState", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetNodePoseState", 2usize
                         )
                     })
             });
@@ -19807,7 +20157,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_OverlayShape,
@@ -19829,7 +20179,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_CalculateLayerDesc", 8usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_CalculateLayerDesc", 8usize
                         )
                     })
             });
@@ -19857,7 +20208,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -19866,7 +20217,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_EnqueueDestroyLayer", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_EnqueueDestroyLayer", 1usize
                         )
                     })
             });
@@ -19884,7 +20236,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -19898,7 +20250,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_EnqueueSetupLayer", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_EnqueueSetupLayer", 2usize
                         )
                     })
             });
@@ -19922,7 +20275,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u32,
@@ -19944,7 +20297,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_EnqueueSubmitLayer", 8usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_EnqueueSubmitLayer", 8usize
                         )
                     })
             });
@@ -19972,7 +20326,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<i32>),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -19981,7 +20335,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetExternalCameraCount", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetExternalCameraCount", 1usize
                         )
                     })
             });
@@ -19999,7 +20354,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -20013,7 +20368,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetExternalCameraExtrinsics", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetExternalCameraExtrinsics", 2usize
                         )
                     })
             });
@@ -20031,7 +20387,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -20045,7 +20401,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetExternalCameraIntrinsics", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetExternalCameraIntrinsics", 2usize
                         )
                     })
             });
@@ -20061,7 +20418,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -20075,7 +20432,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetExternalCameraName", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetExternalCameraName", 2usize
                         )
                     })
             });
@@ -20090,7 +20448,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -20099,7 +20457,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetEyeTextureArrayEnabled", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetEyeTextureArrayEnabled", 0usize
                         )
                     })
             });
@@ -20117,7 +20476,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -20131,7 +20490,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetLayerTexturePtr", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetLayerTexturePtr", 4usize
                         )
                     })
             });
@@ -20147,7 +20507,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, quest_hook::libil2cpp::ByRefMut<i32>),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -20156,7 +20516,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetLayerTextureStageCount", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetLayerTextureStageCount", 2usize
                         )
                     })
             });
@@ -20171,7 +20532,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -20180,7 +20541,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetMixedRealityInitialized", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetMixedRealityInitialized", 0usize
                         )
                     })
             });
@@ -20198,7 +20560,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Node,
@@ -20212,7 +20574,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetNodeFrustum2", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetNodeFrustum2", 2usize
                         )
                     })
             });
@@ -20227,7 +20590,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -20236,7 +20599,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_InitializeMixedReality", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_InitializeMixedReality", 0usize
                         )
                     })
             });
@@ -20251,7 +20615,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -20260,7 +20624,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_ShutdownMixedReality", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_ShutdownMixedReality", 0usize
                         )
                     })
             });
@@ -20275,7 +20640,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -20284,7 +20649,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_UpdateExternalCamera", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_UpdateExternalCamera", 0usize
                         )
                     })
             });
@@ -20351,7 +20717,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_CameraDevice),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -20360,7 +20726,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_CloseCameraDevice", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_CloseCameraDevice", 1usize
                         )
                     })
             });
@@ -20377,7 +20744,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_CameraDevice,
@@ -20390,8 +20757,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetCameraDeviceColorFrameBgraPixels",
-                            3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetCameraDeviceColorFrameBgraPixels", 3usize
                         )
                     })
             });
@@ -20413,7 +20780,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_CameraDevice,
@@ -20427,7 +20794,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetCameraDeviceColorFrameSize", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetCameraDeviceColorFrameSize", 2usize
                         )
                     })
             });
@@ -20445,7 +20813,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u32,
@@ -20459,7 +20827,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetControllerState4", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetControllerState4", 2usize
                         )
                     })
             });
@@ -20474,7 +20843,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_CameraDevice),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -20483,7 +20852,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_HasCameraDeviceOpened", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_HasCameraDeviceOpened", 1usize
                         )
                     })
             });
@@ -20498,7 +20868,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_CameraDevice),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -20507,7 +20877,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_IsCameraDeviceAvailable", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_IsCameraDeviceAvailable", 1usize
                         )
                     })
             });
@@ -20522,7 +20893,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_CameraDevice),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -20531,8 +20902,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_IsCameraDeviceColorFrameAvailable",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_IsCameraDeviceColorFrameAvailable", 1usize
                         )
                     })
             });
@@ -20547,7 +20918,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_CameraDevice),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -20556,7 +20927,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_OpenCameraDevice", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_OpenCameraDevice", 1usize
                         )
                     })
             });
@@ -20572,7 +20944,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_CameraDevice,
@@ -20584,8 +20956,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetCameraDevicePreferredColorFrameSize",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetCameraDevicePreferredColorFrameSize", 2usize
                         )
                     })
             });
@@ -20600,7 +20972,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -20609,7 +20981,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_UpdateCameraDevices", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_UpdateCameraDevices", 0usize
                         )
                     })
             });
@@ -20729,7 +21102,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_18_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Bool,
@@ -20740,7 +21113,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_18_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetAppHasInputFocus", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetAppHasInputFocus", 1usize
                         )
                     })
             });
@@ -20755,7 +21129,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_18_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<f64>),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -20764,7 +21138,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_18_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetHandNodePoseStateLatency", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetHandNodePoseStateLatency", 1usize
                         )
                     })
             });
@@ -20779,7 +21154,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_18_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f64),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -20788,7 +21163,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_18_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetHandNodePoseStateLatency", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetHandNodePoseStateLatency", 1usize
                         )
                     })
             });
@@ -20906,7 +21282,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::System::IntPtr,
@@ -20915,7 +21291,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "_ovrp_GetAppLatencyTimings", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "_ovrp_GetAppLatencyTimings", 0usize
                         )
                     })
             });
@@ -20930,7 +21307,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::System::IntPtr,
@@ -20939,7 +21316,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "_ovrp_GetNativeSDKVersion", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "_ovrp_GetNativeSDKVersion", 0usize
                         )
                     })
             });
@@ -20954,7 +21332,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::System::IntPtr,
@@ -20963,7 +21341,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "_ovrp_GetSystemProductName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "_ovrp_GetSystemProductName", 0usize
                         )
                     })
             });
@@ -20976,7 +21355,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::System::IntPtr,
@@ -20985,7 +21364,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "_ovrp_GetVersion", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "_ovrp_GetVersion", 0usize
                         )
                     })
             });
@@ -21000,7 +21380,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -21009,7 +21389,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetAppHasVrFocus", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetAppHasVrFocus", 0usize
                         )
                     })
             });
@@ -21024,7 +21405,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -21033,7 +21414,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetAppLatencyTimings", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetAppLatencyTimings", 0usize
                         )
                     })
             });
@@ -21048,7 +21430,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -21057,7 +21439,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetAppMonoscopic", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetAppMonoscopic", 0usize
                         )
                     })
             });
@@ -21072,7 +21455,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -21081,7 +21464,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetAppShouldQuit", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetAppShouldQuit", 0usize
                         )
                     })
             });
@@ -21096,7 +21480,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -21105,7 +21489,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetAppShouldRecenter", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetAppShouldRecenter", 0usize
                         )
                     })
             });
@@ -21118,7 +21503,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::System::IntPtr,
@@ -21127,7 +21512,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetAudioInId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetAudioInId", 0usize
                         )
                     })
             });
@@ -21140,7 +21526,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::System::IntPtr,
@@ -21149,7 +21535,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetAudioOutId", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetAudioOutId", 0usize
                         )
                     })
             });
@@ -21166,7 +21553,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u32),
                         crate::GlobalNamespace::OVRPlugin_ControllerState,
@@ -21175,7 +21562,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetControllerState", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetControllerState", 1usize
                         )
                     })
             });
@@ -21188,12 +21576,13 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("ovrp_GetEyeTextureScale")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetEyeTextureScale", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetEyeTextureScale", 0usize
                         )
                     })
             });
@@ -21206,7 +21595,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -21215,7 +21604,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetInitialized", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetInitialized", 0usize
                         )
                     })
             });
@@ -21230,7 +21620,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -21239,7 +21629,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetNativeSDKVersion", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetNativeSDKVersion", 0usize
                         )
                     })
             });
@@ -21254,7 +21645,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Node),
                         crate::GlobalNamespace::OVRPlugin_Frustumf,
@@ -21263,7 +21654,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetNodeFrustum", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetNodeFrustum", 1usize
                         )
                     })
             });
@@ -21278,7 +21670,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Node),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -21287,7 +21679,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetNodeOrientationTracked", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetNodeOrientationTracked", 1usize
                         )
                     })
             });
@@ -21302,7 +21695,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Node),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -21311,7 +21704,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetNodePositionTracked", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetNodePositionTracked", 1usize
                         )
                     })
             });
@@ -21326,7 +21720,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Node),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -21335,7 +21729,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetNodePresent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetNodePresent", 1usize
                         )
                     })
             });
@@ -21348,12 +21743,13 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("ovrp_GetSystemBatteryLevel")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetSystemBatteryLevel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSystemBatteryLevel", 0usize
                         )
                     })
             });
@@ -21366,7 +21762,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_BatteryStatus,
@@ -21375,7 +21771,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetSystemBatteryStatus", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSystemBatteryStatus", 0usize
                         )
                     })
             });
@@ -21388,7 +21785,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         f32,
@@ -21397,7 +21794,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetSystemBatteryTemperature", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSystemBatteryTemperature", 0usize
                         )
                     })
             });
@@ -21408,12 +21806,13 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("ovrp_GetSystemCpuLevel")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetSystemCpuLevel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSystemCpuLevel", 0usize
                         )
                     })
             });
@@ -21424,7 +21823,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         f32,
@@ -21433,7 +21832,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetSystemDisplayFrequency", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSystemDisplayFrequency", 0usize
                         )
                     })
             });
@@ -21444,12 +21844,13 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("ovrp_GetSystemGpuLevel")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetSystemGpuLevel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSystemGpuLevel", 0usize
                         )
                     })
             });
@@ -21462,7 +21863,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -21471,7 +21872,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetSystemPowerSavingMode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSystemPowerSavingMode", 0usize
                         )
                     })
             });
@@ -21486,7 +21888,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -21495,7 +21897,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetSystemProductName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSystemProductName", 0usize
                         )
                     })
             });
@@ -21508,12 +21911,13 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), i32, 0usize>("ovrp_GetSystemVSyncCount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetSystemVSyncCount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSystemVSyncCount", 0usize
                         )
                     })
             });
@@ -21524,12 +21928,13 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("ovrp_GetSystemVolume")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetSystemVolume", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSystemVolume", 0usize
                         )
                     })
             });
@@ -21542,7 +21947,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -21551,7 +21956,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetTrackingOrientationEnabled", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetTrackingOrientationEnabled", 0usize
                         )
                     })
             });
@@ -21566,7 +21972,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -21575,7 +21981,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetTrackingOrientationSupported", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetTrackingOrientationSupported", 0usize
                         )
                     })
             });
@@ -21590,7 +21997,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -21599,7 +22006,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetTrackingPositionEnabled", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetTrackingPositionEnabled", 0usize
                         )
                     })
             });
@@ -21614,7 +22022,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -21623,7 +22031,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetTrackingPositionSupported", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetTrackingPositionSupported", 0usize
                         )
                     })
             });
@@ -21636,12 +22045,13 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("ovrp_GetUserEyeDepth")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetUserEyeDepth", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetUserEyeDepth", 0usize
                         )
                     })
             });
@@ -21652,12 +22062,13 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("ovrp_GetUserEyeHeight")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetUserEyeHeight", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetUserEyeHeight", 0usize
                         )
                     })
             });
@@ -21668,12 +22079,13 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), f32, 0usize>("ovrp_GetUserIPD")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetUserIPD", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetUserIPD", 0usize
                         )
                     })
             });
@@ -21686,7 +22098,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -21695,7 +22107,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetUserPresent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetUserPresent", 0usize
                         )
                     })
             });
@@ -21710,7 +22123,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -21719,7 +22132,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetVersion", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetVersion", 0usize
                         )
                     })
             });
@@ -21734,7 +22148,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Bool),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -21743,7 +22157,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetAppMonoscopic", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetAppMonoscopic", 1usize
                         )
                     })
             });
@@ -21758,7 +22173,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -21767,7 +22182,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetEyeTextureScale", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetEyeTextureScale", 1usize
                         )
                     })
             });
@@ -21782,7 +22198,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -21791,7 +22207,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetSystemCpuLevel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetSystemCpuLevel", 1usize
                         )
                     })
             });
@@ -21806,7 +22223,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -21815,7 +22232,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetSystemGpuLevel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetSystemGpuLevel", 1usize
                         )
                     })
             });
@@ -21830,7 +22248,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Bool),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -21839,7 +22257,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetTrackingOrientationEnabled", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetTrackingOrientationEnabled", 1usize
                         )
                     })
             });
@@ -21854,7 +22273,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Bool),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -21863,7 +22282,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetTrackingPositionEnabled", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetTrackingPositionEnabled", 1usize
                         )
                     })
             });
@@ -21878,7 +22298,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -21887,7 +22307,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetUserEyeDepth", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetUserEyeDepth", 1usize
                         )
                     })
             });
@@ -21902,7 +22323,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -21911,7 +22332,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetUserEyeHeight", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetUserEyeHeight", 1usize
                         )
                     })
             });
@@ -21926,7 +22348,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -21935,7 +22357,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetUserIPD", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetUserIPD", 1usize
                         )
                     })
             });
@@ -21950,7 +22373,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_PlatformUI),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -21959,7 +22382,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_ShowSystemUI", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_ShowSystemUI", 1usize
                         )
                     })
             });
@@ -22027,7 +22451,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Bool,
@@ -22038,7 +22462,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetAppAsymmetricFov", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetAppAsymmetricFov", 1usize
                         )
                     })
             });
@@ -22053,7 +22478,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<f32>),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -22062,7 +22487,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetGPUUtilLevel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetGPUUtilLevel", 1usize
                         )
                     })
             });
@@ -22079,7 +22505,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Bool,
@@ -22090,7 +22516,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetGPUUtilSupported", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetGPUUtilSupported", 1usize
                         )
                     })
             });
@@ -22106,7 +22533,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, quest_hook::libil2cpp::ByRefMut<i32>),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -22115,8 +22542,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetSystemDisplayAvailableFrequencies",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSystemDisplayAvailableFrequencies", 2usize
                         )
                     })
             });
@@ -22135,7 +22562,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<f32>),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -22144,7 +22571,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetSystemDisplayFrequency2", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSystemDisplayFrequency2", 1usize
                         )
                     })
             });
@@ -22161,7 +22589,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_FoveatedRenderingLevel,
@@ -22172,7 +22600,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetTiledMultiResLevel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetTiledMultiResLevel", 1usize
                         )
                     })
             });
@@ -22189,7 +22618,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Bool,
@@ -22200,7 +22629,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetTiledMultiResSupported", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetTiledMultiResSupported", 1usize
                         )
                     })
             });
@@ -22215,7 +22645,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (f32),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -22224,7 +22654,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetSystemDisplayFrequency", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetSystemDisplayFrequency", 1usize
                         )
                     })
             });
@@ -22239,7 +22670,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_FoveatedRenderingLevel),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -22248,7 +22679,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetTiledMultiResLevel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetTiledMultiResLevel", 1usize
                         )
                     })
             });
@@ -22319,7 +22751,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_28_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -22334,7 +22766,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_28_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_EnqueueSetupLayer2", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_EnqueueSetupLayer2", 3usize
                         )
                     })
             });
@@ -22351,7 +22784,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_28_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Handedness,
@@ -22362,7 +22795,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_28_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetDominantHand", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetDominantHand", 1usize
                         )
                     })
             });
@@ -22378,7 +22812,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_28_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -22394,7 +22828,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_28_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SendEvent", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SendEvent", 2usize
                         )
                     })
             });
@@ -22466,7 +22901,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_29_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -22482,7 +22917,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_29_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetHeadPoseModifier", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetHeadPoseModifier", 2usize
                         )
                     })
             });
@@ -22498,7 +22934,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_29_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -22507,7 +22943,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_29_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetLayerAndroidSurfaceObject", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetLayerAndroidSurfaceObject", 2usize
                         )
                     })
             });
@@ -22527,7 +22964,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_29_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Step,
@@ -22543,7 +22980,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_29_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetNodePoseStateRaw", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetNodePoseStateRaw", 4usize
                         )
                     })
             });
@@ -22563,7 +23001,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_29_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -22579,7 +23017,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_29_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetHeadPoseModifier", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetHeadPoseModifier", 2usize
                         )
                     })
             });
@@ -22646,7 +23085,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_2_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -22655,7 +23094,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_2_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetSystemVSyncCount", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetSystemVSyncCount", 1usize
                         )
                     })
             });
@@ -22670,7 +23110,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_2_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -22679,7 +23119,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_2_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrpi_SetTrackingCalibratedOrigin", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrpi_SetTrackingCalibratedOrigin", 0usize
                         )
                     })
             });
@@ -22747,7 +23188,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_30_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Posef,
@@ -22758,7 +23199,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_30_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetCurrentTrackingTransformPose", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetCurrentTrackingTransformPose", 1usize
                         )
                     })
             });
@@ -22774,7 +23216,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_30_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_PerfMetrics,
@@ -22786,7 +23228,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_30_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetPerfMetricsFloat", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetPerfMetricsFloat", 2usize
                         )
                     })
             });
@@ -22802,7 +23245,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_30_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_PerfMetrics,
@@ -22814,7 +23257,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_30_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetPerfMetricsInt", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetPerfMetricsInt", 2usize
                         )
                     })
             });
@@ -22831,7 +23275,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_30_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Posef,
@@ -22842,7 +23286,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_30_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetTrackingTransformRawPose", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetTrackingTransformRawPose", 1usize
                         )
                     })
             });
@@ -22860,7 +23305,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_30_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_PerfMetrics,
@@ -22874,7 +23319,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_30_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_IsPerfMetricsSupported", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_IsPerfMetricsSupported", 2usize
                         )
                     })
             });
@@ -22891,7 +23337,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_30_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -22910,7 +23356,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_30_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SendEvent2", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SendEvent2", 3usize
                         )
                     })
             });
@@ -22977,7 +23424,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_31_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<f64>),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -22986,7 +23433,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_31_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetTimeInSeconds", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetTimeInSeconds", 1usize
                         )
                     })
             });
@@ -23003,7 +23451,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_31_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::Vector4,
@@ -23016,7 +23464,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_31_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetColorScaleAndOffset", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetColorScaleAndOffset", 3usize
                         )
                     })
             });
@@ -23084,7 +23533,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_32_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -23100,7 +23549,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_32_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_AddCustomMetadata", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_AddCustomMetadata", 2usize
                         )
                     })
             });
@@ -23183,7 +23633,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_34_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u32,
@@ -23212,7 +23662,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_34_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_EnqueueSubmitLayer2", 13usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_EnqueueSubmitLayer2", 13usize
                         )
                     })
             });
@@ -23453,7 +23904,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Node,
@@ -23467,7 +23918,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetNodeOrientationValid", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetNodeOrientationValid", 2usize
                         )
                     })
             });
@@ -23485,7 +23937,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Node,
@@ -23499,7 +23951,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetNodePositionValid", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetNodePositionValid", 2usize
                         )
                     })
             });
@@ -23517,7 +23970,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -23531,8 +23984,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetTrackingTransformRelativePose",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetTrackingTransformRelativePose", 2usize
                         )
                     })
             });
@@ -23552,7 +24005,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::IntPtr,
@@ -23568,7 +24021,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_EncodeMrcFrame", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_EncodeMrcFrame", 6usize
                         )
                     })
             });
@@ -23600,7 +24054,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::IntPtr,
@@ -23617,8 +24071,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_EncodeMrcFrameWithDualTextures",
-                            7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_EncodeMrcFrameWithDualTextures", 7usize
                         )
                     })
             });
@@ -23647,7 +24101,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Bool,
@@ -23658,7 +24112,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_GetInitialized", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_GetInitialized", 1usize
                         )
                     })
             });
@@ -23675,7 +24130,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::Media_OVRPlugin_MrcActivationMode,
@@ -23686,7 +24141,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_GetMrcActivationMode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_GetMrcActivationMode", 1usize
                         )
                     })
             });
@@ -23701,7 +24157,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<i32>),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -23710,7 +24166,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_GetMrcAudioSampleRate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_GetMrcAudioSampleRate", 1usize
                         )
                     })
             });
@@ -23725,7 +24182,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Bool,
@@ -23736,7 +24193,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_GetMrcFrameImageFlipped", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_GetMrcFrameImageFlipped", 1usize
                         )
                     })
             });
@@ -23752,7 +24210,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<i32>,
@@ -23764,7 +24222,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_GetMrcFrameSize", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_GetMrcFrameSize", 2usize
                         )
                     })
             });
@@ -23781,7 +24240,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::Media_OVRPlugin_InputVideoBufferType,
@@ -23792,8 +24251,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_GetMrcInputVideoBufferType",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_GetMrcInputVideoBufferType", 1usize
                         )
                     })
             });
@@ -23808,7 +24267,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -23817,7 +24276,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_Initialize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_Initialize", 0usize
                         )
                     })
             });
@@ -23834,7 +24294,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Bool,
@@ -23845,7 +24305,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_IsMrcActivated", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_IsMrcActivated", 1usize
                         )
                     })
             });
@@ -23862,7 +24323,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Bool,
@@ -23873,7 +24334,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_IsMrcEnabled", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_IsMrcEnabled", 1usize
                         )
                     })
             });
@@ -23888,7 +24350,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::Media_OVRPlugin_MrcActivationMode),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -23897,7 +24359,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_SetMrcActivationMode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_SetMrcActivationMode", 1usize
                         )
                     })
             });
@@ -23912,7 +24375,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -23921,7 +24384,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_SetMrcAudioSampleRate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_SetMrcAudioSampleRate", 1usize
                         )
                     })
             });
@@ -23936,7 +24400,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Bool),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -23945,7 +24409,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_SetMrcFrameImageFlipped", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_SetMrcFrameImageFlipped", 1usize
                         )
                     })
             });
@@ -23961,7 +24426,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, i32),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -23970,7 +24435,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_SetMrcFrameSize", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_SetMrcFrameSize", 2usize
                         )
                     })
             });
@@ -23985,7 +24451,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::Media_OVRPlugin_InputVideoBufferType),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -23994,8 +24460,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_SetMrcInputVideoBufferType",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_SetMrcInputVideoBufferType", 1usize
                         )
                     })
             });
@@ -24010,7 +24476,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -24019,7 +24485,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_Shutdown", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_Shutdown", 0usize
                         )
                     })
             });
@@ -24034,7 +24501,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -24043,7 +24510,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_SyncMrcFrame", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_SyncMrcFrame", 1usize
                         )
                     })
             });
@@ -24058,7 +24526,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -24067,7 +24535,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_Update", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_Update", 0usize
                         )
                     })
             });
@@ -24084,7 +24553,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Bool,
@@ -24095,7 +24564,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_UseMrcDebugCamera", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_UseMrcDebugCamera", 1usize
                         )
                     })
             });
@@ -24110,7 +24580,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Bool),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -24119,7 +24589,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetDeveloperMode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetDeveloperMode", 1usize
                         )
                     })
             });
@@ -24237,7 +24708,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_3_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -24246,7 +24717,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_3_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetEyeOcclusionMeshEnabled", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetEyeOcclusionMeshEnabled", 0usize
                         )
                     })
             });
@@ -24261,7 +24733,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_3_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -24270,7 +24742,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_3_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetSystemHeadphonesPresent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSystemHeadphonesPresent", 0usize
                         )
                     })
             });
@@ -24285,7 +24758,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_3_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Bool),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -24294,7 +24767,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_3_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetEyeOcclusionMeshEnabled", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetEyeOcclusionMeshEnabled", 1usize
                         )
                     })
             });
@@ -24462,7 +24936,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_42_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<f32>),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -24471,7 +24945,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_42_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetAdaptiveGpuPerformanceScale2", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetAdaptiveGpuPerformanceScale2", 1usize
                         )
                     })
             });
@@ -24593,7 +25068,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Step,
@@ -24608,7 +25083,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetHandState", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetHandState", 3usize
                         )
                     })
             });
@@ -24625,7 +25101,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Bool,
@@ -24636,7 +25112,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetHandTrackingEnabled", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetHandTrackingEnabled", 1usize
                         )
                     })
             });
@@ -24651,7 +25128,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<i32>),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -24660,8 +25137,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetLocalTrackingSpaceRecenterCount",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetLocalTrackingSpaceRecenterCount", 1usize
                         )
                     })
             });
@@ -24677,7 +25154,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_MeshType,
@@ -24689,7 +25166,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetMesh", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetMesh", 2usize
                         )
                     })
             });
@@ -24707,7 +25185,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_SkeletonType,
@@ -24721,7 +25199,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetSkeleton", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSkeleton", 2usize
                         )
                     })
             });
@@ -24739,7 +25218,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -24753,8 +25232,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetUseOverriddenExternalCameraFov",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetUseOverriddenExternalCameraFov", 2usize
                         )
                     })
             });
@@ -24772,7 +25251,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -24786,7 +25265,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "ovrp_GetUseOverriddenExternalCameraStaticPose", 2usize
                         )
                     })
@@ -24804,7 +25283,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -24819,7 +25298,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_OverrideExternalCameraFov", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_OverrideExternalCameraFov", 3usize
                         )
                     })
             });
@@ -24838,7 +25318,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -24853,8 +25333,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_OverrideExternalCameraStaticPose",
-                            3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_OverrideExternalCameraStaticPose", 3usize
                         )
                     })
             });
@@ -24870,7 +25350,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -24879,7 +25359,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_ResetDefaultExternalCamera", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_ResetDefaultExternalCamera", 0usize
                         )
                     })
             });
@@ -24900,7 +25381,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -24919,7 +25400,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetDefaultExternalCamera", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetDefaultExternalCamera", 3usize
                         )
                     })
             });
@@ -24987,7 +25469,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_45_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Bool,
@@ -24998,7 +25480,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_45_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetSystemHmd3DofModeEnabled", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSystemHmd3DofModeEnabled", 1usize
                         )
                     })
             });
@@ -25013,7 +25496,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_45_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u32),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -25022,8 +25505,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_45_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_SetAvailableQueueIndexVulkan",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_SetAvailableQueueIndexVulkan", 1usize
                         )
                     })
             });
@@ -25092,7 +25575,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_46_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Bool,
@@ -25103,7 +25586,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_46_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetTiledMultiResDynamic", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetTiledMultiResDynamic", 1usize
                         )
                     })
             });
@@ -25118,7 +25602,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_46_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Bool),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -25127,7 +25611,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_46_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetTiledMultiResDynamic", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetTiledMultiResDynamic", 1usize
                         )
                     })
             });
@@ -25251,7 +25736,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_48_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -25270,7 +25755,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_48_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetExternalCameraProperties", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetExternalCameraProperties", 3usize
                         )
                     })
             });
@@ -25341,7 +25827,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_ColorSpace,
@@ -25352,7 +25838,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetHmdColorDesc", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetHmdColorDesc", 1usize
                         )
                     })
             });
@@ -25368,7 +25855,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::IntPtr,
@@ -25380,7 +25867,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_CreateCustomCameraAnchor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_CreateCustomCameraAnchor", 2usize
                         )
                     })
             });
@@ -25395,7 +25883,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -25404,7 +25892,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_DestroyCustomCameraAnchor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_DestroyCustomCameraAnchor", 1usize
                         )
                     })
             });
@@ -25426,7 +25915,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::IntPtr,
@@ -25444,7 +25933,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "ovrp_Media_EncodeMrcFrameDualTexturesWithPoseTime", 8usize
                         )
                     })
@@ -25479,7 +25968,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::IntPtr,
@@ -25496,8 +25985,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_EncodeMrcFrameWithPoseTime",
-                            7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_EncodeMrcFrameWithPoseTime", 7usize
                         )
                     })
             });
@@ -25525,7 +26014,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<i32>,
@@ -25537,8 +26026,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_EnumerateCameraAnchorHandles",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_EnumerateCameraAnchorHandles", 2usize
                         )
                     })
             });
@@ -25554,7 +26043,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::IntPtr,
@@ -25566,7 +26055,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_GetCameraAnchorHandle", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_GetCameraAnchorHandle", 2usize
                         )
                     })
             });
@@ -25582,7 +26072,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::IntPtr,
@@ -25596,7 +26086,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_GetCameraAnchorName", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_GetCameraAnchorName", 2usize
                         )
                     })
             });
@@ -25614,7 +26105,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::IntPtr,
@@ -25628,7 +26119,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_GetCameraAnchorType", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_GetCameraAnchorType", 2usize
                         )
                     })
             });
@@ -25645,7 +26137,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::IntPtr,
@@ -25658,7 +26150,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_GetCameraMinMaxDistance", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_GetCameraMinMaxDistance", 3usize
                         )
                     })
             });
@@ -25673,7 +26166,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -25682,8 +26175,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_GetCurrentCameraAnchorHandle",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_GetCurrentCameraAnchorHandle", 1usize
                         )
                     })
             });
@@ -25699,7 +26192,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::IntPtr,
@@ -25713,7 +26206,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_GetCustomCameraAnchorPose", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_GetCustomCameraAnchorPose", 2usize
                         )
                     })
             });
@@ -25730,7 +26224,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, f64, f64),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -25739,7 +26233,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_SetCameraMinMaxDistance", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_SetCameraMinMaxDistance", 3usize
                         )
                     })
             });
@@ -25755,7 +26250,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, crate::GlobalNamespace::OVRPlugin_Posef),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -25764,7 +26259,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_SetCustomCameraAnchorPose", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_SetCustomCameraAnchorPose", 2usize
                         )
                     })
             });
@@ -25781,7 +26277,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Posef,
@@ -25794,7 +26290,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_SetHeadsetControllerPose", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_SetHeadsetControllerPose", 3usize
                         )
                     })
             });
@@ -25813,7 +26310,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_ColorSpace),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -25822,7 +26319,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetClientColorDesc", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetClientColorDesc", 1usize
                         )
                     })
             });
@@ -26093,7 +26591,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_54_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -26102,7 +26600,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_54_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_SetPlatformInitialized", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_SetPlatformInitialized", 0usize
                         )
                     })
             });
@@ -26170,7 +26669,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_55_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<u64>,
@@ -26182,7 +26681,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_55_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetNativeOpenXRHandles", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetNativeOpenXRHandles", 2usize
                         )
                     })
             });
@@ -26197,7 +26697,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_55_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_XrApi,
@@ -26208,7 +26708,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_55_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetNativeXrApiType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetNativeXrApiType", 1usize
                         )
                     })
             });
@@ -26226,7 +26727,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_55_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_SkeletonType,
@@ -26240,7 +26741,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_55_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetSkeleton2", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSkeleton2", 2usize
                         )
                     })
             });
@@ -26257,7 +26759,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_55_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_EventDataBuffer,
@@ -26268,7 +26770,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_55_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_PollEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_PollEvent", 1usize
                         )
                     })
             });
@@ -26338,7 +26841,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_55_1 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -26352,7 +26855,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_55_1 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_PollEvent2", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_PollEvent2", 2usize
                         )
                     })
             });
@@ -26470,7 +26974,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_57_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Bool,
@@ -26481,7 +26985,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_57_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetEyeFovPremultipliedAlphaMode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetEyeFovPremultipliedAlphaMode", 1usize
                         )
                     })
             });
@@ -26498,7 +27003,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_57_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::Media_OVRPlugin_PlatformCameraMode,
@@ -26509,7 +27014,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_57_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_GetPlatformCameraMode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_GetPlatformCameraMode", 1usize
                         )
                     })
             });
@@ -26524,7 +27030,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_57_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::Media_OVRPlugin_PlatformCameraMode),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -26533,7 +27039,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_57_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_SetPlatformCameraMode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_SetPlatformCameraMode", 1usize
                         )
                     })
             });
@@ -26548,7 +27055,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_57_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Bool),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -26557,7 +27064,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_57_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetEyeFovPremultipliedAlphaMode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetEyeFovPremultipliedAlphaMode", 1usize
                         )
                     })
             });
@@ -26572,7 +27080,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_57_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Vector2f),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -26581,7 +27089,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_57_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetKeyboardOverlayUV", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetKeyboardOverlayUV", 1usize
                         )
                     })
             });
@@ -26750,7 +27259,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_5_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_SystemRegion,
@@ -26759,7 +27268,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_5_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetSystemRegion", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSystemRegion", 0usize
                         )
                     })
             });
@@ -26981,7 +27491,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -26995,8 +27505,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_AddInsightPassthroughSurfaceGeometry",
-                            4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_AddInsightPassthroughSurfaceGeometry", 4usize
                         )
                     })
             });
@@ -27020,7 +27530,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -27036,7 +27546,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_CreateInsightTriangleMesh", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_CreateInsightTriangleMesh", 6usize
                         )
                     })
             });
@@ -27062,7 +27573,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -27071,7 +27582,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "ovrp_DestroyInsightPassthroughGeometryInstance", 1usize
                         )
                     })
@@ -27087,7 +27598,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -27096,7 +27607,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_DestroyInsightTriangleMesh", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_DestroyInsightTriangleMesh", 1usize
                         )
                     })
             });
@@ -27111,7 +27623,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -27120,8 +27632,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetInsightPassthroughInitialized",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetInsightPassthroughInitialized", 0usize
                         )
                     })
             });
@@ -27136,7 +27648,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -27145,7 +27657,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_InitializeInsightPassthrough", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_InitializeInsightPassthrough", 0usize
                         )
                     })
             });
@@ -27161,7 +27674,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, crate::GlobalNamespace::OVRPlugin_InsightPassthroughStyle),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -27170,7 +27683,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetInsightPassthroughStyle", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetInsightPassthroughStyle", 2usize
                         )
                     })
             });
@@ -27185,7 +27699,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -27194,7 +27708,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_ShutdownInsightPassthrough", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_ShutdownInsightPassthrough", 0usize
                         )
                     })
             });
@@ -27210,7 +27725,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64, crate::UnityEngine::Matrix4x4),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -27219,7 +27734,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "ovrp_UpdateInsightPassthroughGeometryTransform", 2usize
                         )
                     })
@@ -27291,7 +27806,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_64_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -27306,7 +27821,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_64_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_LocateSpace", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_LocateSpace", 3usize
                         )
                     })
             });
@@ -27373,7 +27889,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<u64>),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -27382,7 +27898,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_DestroySpace", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_DestroySpace", 1usize
                         )
                     })
             });
@@ -27397,7 +27914,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -27406,7 +27923,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_KtxDestroy", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_KtxDestroy", 1usize
                         )
                     })
             });
@@ -27423,7 +27941,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, crate::System::IntPtr, u32),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -27432,7 +27950,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_KtxGetTextureData", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_KtxGetTextureData", 3usize
                         )
                     })
             });
@@ -27449,7 +27968,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
@@ -27462,7 +27981,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_KtxLoadFromMemory", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_KtxLoadFromMemory", 3usize
                         )
                     })
             });
@@ -27478,7 +27998,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, quest_hook::libil2cpp::ByRefMut<u32>),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -27487,7 +28007,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_KtxTextureHeight", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_KtxTextureHeight", 2usize
                         )
                     })
             });
@@ -27503,7 +28024,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, quest_hook::libil2cpp::ByRefMut<u32>),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -27512,7 +28033,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_KtxTextureSize", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_KtxTextureSize", 2usize
                         )
                     })
             });
@@ -27528,7 +28050,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, quest_hook::libil2cpp::ByRefMut<u32>),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -27537,7 +28059,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_KtxTextureWidth", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_KtxTextureWidth", 2usize
                         )
                     })
             });
@@ -27553,7 +28076,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr, u32),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -27562,7 +28085,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_KtxTranscode", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_KtxTranscode", 2usize
                         )
                     })
             });
@@ -27629,7 +28153,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_66_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -27638,7 +28162,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_66_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "ovrp_GetInsightPassthroughInitializationState", 0usize
                         )
                     })
@@ -27656,7 +28180,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_66_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Bool,
@@ -27667,7 +28191,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_66_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Media_IsCastingToRemoteClient", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Media_IsCastingToRemoteClient", 1usize
                         )
                     })
             });
@@ -27791,7 +28316,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Step,
@@ -27806,7 +28331,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetKeyboardState", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetKeyboardState", 3usize
                         )
                     })
             });
@@ -27822,7 +28348,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u32, crate::System::IntPtr),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -27831,7 +28357,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetRenderModelPaths", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetRenderModelPaths", 2usize
                         )
                     })
             });
@@ -27849,7 +28376,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -27865,7 +28392,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetRenderModelProperties", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetRenderModelProperties", 2usize
                         )
                     })
             });
@@ -27883,7 +28411,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_TrackedKeyboardQueryFlags,
@@ -27897,7 +28425,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetSystemKeyboardDescription", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSystemKeyboardDescription", 2usize
                         )
                     })
             });
@@ -27915,7 +28444,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u64,
@@ -27929,7 +28458,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_LoadRenderModel", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_LoadRenderModel", 4usize
                         )
                     })
             });
@@ -27949,7 +28479,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -27961,7 +28491,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "ovrp_SetInsightPassthroughKeyboardHandsIntensity", 2usize
                         )
                     })
@@ -27977,7 +28507,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -27986,7 +28516,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_StartKeyboardTracking", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_StartKeyboardTracking", 1usize
                         )
                     })
             });
@@ -28001,7 +28532,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -28010,7 +28541,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_StopKeyboardTracking", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_StopKeyboardTracking", 0usize
                         )
                     })
             });
@@ -28080,7 +28612,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_69_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Node,
@@ -28094,7 +28626,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_69_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetNodePoseStateImmediate", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetNodePoseStateImmediate", 2usize
                         )
                     })
             });
@@ -28159,7 +28692,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         f32,
@@ -28168,7 +28701,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetAppCpuStartToGpuEndTime", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetAppCpuStartToGpuEndTime", 0usize
                         )
                     })
             });
@@ -28181,7 +28715,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u32),
                         crate::GlobalNamespace::OVRPlugin_HapticsDesc,
@@ -28190,7 +28724,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetControllerHapticsDesc", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetControllerHapticsDesc", 1usize
                         )
                     })
             });
@@ -28205,7 +28740,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u32),
                         crate::GlobalNamespace::OVRPlugin_HapticsState,
@@ -28214,7 +28749,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetControllerHapticsState", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetControllerHapticsState", 1usize
                         )
                     })
             });
@@ -28229,7 +28765,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         f32,
@@ -28238,8 +28774,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetEyeRecommendedResolutionScale",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetEyeRecommendedResolutionScale", 0usize
                         )
                     })
             });
@@ -28250,7 +28786,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         i32,
@@ -28259,7 +28795,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetSystemRecommendedMSAALevel", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSystemRecommendedMSAALevel", 0usize
                         )
                     })
             });
@@ -28272,7 +28809,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -28281,7 +28818,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetTrackingIPDEnabled", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetTrackingIPDEnabled", 0usize
                         )
                     })
             });
@@ -28297,7 +28835,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u32, crate::GlobalNamespace::OVRPlugin_HapticsBuffer),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -28306,7 +28844,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetControllerHaptics", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetControllerHaptics", 2usize
                         )
                     })
             });
@@ -28327,7 +28866,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u32,
@@ -28344,7 +28883,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetOverlayQuad3", 7usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetOverlayQuad3", 7usize
                         )
                     })
             });
@@ -28363,7 +28903,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Bool),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -28372,7 +28912,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetTrackingIPDEnabled", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetTrackingIPDEnabled", 1usize
                         )
                     })
             });
@@ -28440,7 +28981,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_70_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::OVRPlugin_LogCallback2DelegateType,
@@ -28451,7 +28992,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_70_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetLogCallback2", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetLogCallback2", 1usize
                         )
                     })
             });
@@ -28520,7 +29062,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_ProcessorPerformanceLevel,
@@ -28531,7 +29073,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetSuggestedCpuPerformanceLevel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSuggestedCpuPerformanceLevel", 1usize
                         )
                     })
             });
@@ -28548,7 +29091,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_ProcessorPerformanceLevel,
@@ -28559,7 +29102,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetSuggestedGpuPerformanceLevel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSuggestedGpuPerformanceLevel", 1usize
                         )
                     })
             });
@@ -28576,7 +29120,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Bool,
@@ -28587,7 +29131,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_IsInsightPassthroughSupported", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_IsInsightPassthroughSupported", 1usize
                         )
                     })
             });
@@ -28602,7 +29147,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_ProcessorPerformanceLevel),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -28611,7 +29156,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetSuggestedCpuPerformanceLevel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetSuggestedCpuPerformanceLevel", 1usize
                         )
                     })
             });
@@ -28626,7 +29172,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_ProcessorPerformanceLevel),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -28635,7 +29181,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetSuggestedGpuPerformanceLevel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetSuggestedGpuPerformanceLevel", 1usize
                         )
                     })
             });
@@ -28650,7 +29197,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         crate::System::IntPtr,
@@ -28659,8 +29206,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_UnityOpenXR_HookGetInstanceProcAddr",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_UnityOpenXR_HookGetInstanceProcAddr", 1usize
                         )
                     })
             });
@@ -28675,7 +29222,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Void,
@@ -28684,7 +29231,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_UnityOpenXR_OnAppSpaceChange", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_UnityOpenXR_OnAppSpaceChange", 1usize
                         )
                     })
             });
@@ -28699,7 +29247,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -28708,7 +29256,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_UnityOpenXR_OnInstanceCreate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_UnityOpenXR_OnInstanceCreate", 1usize
                         )
                     })
             });
@@ -28723,7 +29272,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Void,
@@ -28732,7 +29281,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_UnityOpenXR_OnInstanceDestroy", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_UnityOpenXR_OnInstanceDestroy", 1usize
                         )
                     })
             });
@@ -28747,7 +29297,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Void,
@@ -28756,7 +29306,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_UnityOpenXR_OnSessionBegin", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_UnityOpenXR_OnSessionBegin", 1usize
                         )
                     })
             });
@@ -28771,7 +29322,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Void,
@@ -28780,7 +29331,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_UnityOpenXR_OnSessionCreate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_UnityOpenXR_OnSessionCreate", 1usize
                         )
                     })
             });
@@ -28795,7 +29347,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Void,
@@ -28804,7 +29356,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_UnityOpenXR_OnSessionDestroy", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_UnityOpenXR_OnSessionDestroy", 1usize
                         )
                     })
             });
@@ -28819,7 +29372,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Void,
@@ -28828,7 +29381,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_UnityOpenXR_OnSessionEnd", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_UnityOpenXR_OnSessionEnd", 1usize
                         )
                     })
             });
@@ -28843,7 +29397,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Void,
@@ -28852,7 +29406,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_UnityOpenXR_OnSessionExiting", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_UnityOpenXR_OnSessionExiting", 1usize
                         )
                     })
             });
@@ -28868,7 +29423,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -28877,8 +29432,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_UnityOpenXR_OnSessionStateChange",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_UnityOpenXR_OnSessionStateChange", 2usize
                         )
                     })
             });
@@ -28895,7 +29450,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -28904,7 +29459,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_UnityOpenXR_SetClientVersion", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_UnityOpenXR_SetClientVersion", 3usize
                         )
                     })
             });
@@ -28974,7 +29530,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -28988,7 +29544,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_CreateSpatialAnchor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_CreateSpatialAnchor", 2usize
                         )
                     })
             });
@@ -29012,7 +29569,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<u64>,
@@ -29032,8 +29589,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_EnumerateSpaceSupportedComponents",
-                            4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_EnumerateSpaceSupportedComponents", 4usize
                         )
                     })
             });
@@ -29059,7 +29616,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<u64>,
@@ -29072,7 +29629,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_EraseSpace", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_EraseSpace", 3usize
                         )
                     })
             });
@@ -29090,7 +29648,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<u64>,
@@ -29104,7 +29662,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetSpaceBoundary2D", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSpaceBoundary2D", 2usize
                         )
                     })
             });
@@ -29120,7 +29679,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<u64>,
@@ -29134,7 +29693,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetSpaceBoundingBox2D", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSpaceBoundingBox2D", 2usize
                         )
                     })
             });
@@ -29152,7 +29712,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<u64>,
@@ -29166,7 +29726,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetSpaceBoundingBox3D", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSpaceBoundingBox3D", 2usize
                         )
                     })
             });
@@ -29186,7 +29747,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<u64>,
@@ -29204,7 +29765,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetSpaceComponentStatus", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSpaceComponentStatus", 4usize
                         )
                     })
             });
@@ -29222,7 +29784,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<u64>,
@@ -29236,7 +29798,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetSpaceContainer", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSpaceContainer", 2usize
                         )
                     })
             });
@@ -29254,7 +29817,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<u64>,
@@ -29268,7 +29831,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetSpaceRoomLayout", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSpaceRoomLayout", 2usize
                         )
                     })
             });
@@ -29286,7 +29850,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<u64>,
@@ -29300,7 +29864,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetSpaceSemanticLabels", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSpaceSemanticLabels", 2usize
                         )
                     })
             });
@@ -29318,7 +29883,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -29332,7 +29897,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_QuerySpaces", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_QuerySpaces", 2usize
                         )
                     })
             });
@@ -29350,7 +29916,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -29364,7 +29930,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_RequestSceneCapture", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_RequestSceneCapture", 2usize
                         )
                     })
             });
@@ -29382,7 +29949,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<u64>,
@@ -29396,7 +29963,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_RetrieveSpaceQueryResults", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_RetrieveSpaceQueryResults", 4usize
                         )
                     })
             });
@@ -29418,7 +29986,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<u64>,
@@ -29432,7 +30000,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SaveSpace", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SaveSpace", 4usize
                         )
                     })
             });
@@ -29451,7 +30020,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<u64>,
@@ -29466,7 +30035,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetSpaceComponentStatus", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetSpaceComponentStatus", 5usize
                         )
                     })
             });
@@ -29588,7 +30158,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -29597,8 +30167,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_ChangeVirtualKeyboardTextContext",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_ChangeVirtualKeyboardTextContext", 1usize
                         )
                     })
             });
@@ -29613,7 +30183,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_VirtualKeyboardCreateInfo),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -29622,7 +30192,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_CreateVirtualKeyboard", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_CreateVirtualKeyboard", 1usize
                         )
                     })
             });
@@ -29638,7 +30209,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_VirtualKeyboardSpaceCreateInfo,
@@ -29650,7 +30221,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_CreateVirtualKeyboardSpace", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_CreateVirtualKeyboardSpace", 2usize
                         )
                     })
             });
@@ -29665,7 +30237,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -29674,7 +30246,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_DestroyVirtualKeyboard", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_DestroyVirtualKeyboard", 0usize
                         )
                     })
             });
@@ -29693,7 +30266,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -29710,7 +30283,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetRenderModelProperties2", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetRenderModelProperties2", 3usize
                         )
                     })
             });
@@ -29726,7 +30300,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<u64>,
@@ -29738,7 +30312,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetSpaceUuid", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSpaceUuid", 2usize
                         )
                     })
             });
@@ -29753,7 +30328,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<f32>),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -29762,7 +30337,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetVirtualKeyboardScale", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetVirtualKeyboardScale", 1usize
                         )
                     })
             });
@@ -29780,7 +30356,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_VirtualKeyboardInputInfo,
@@ -29794,7 +30370,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SendVirtualKeyboardInput", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SendVirtualKeyboardInput", 2usize
                         )
                     })
             });
@@ -29809,7 +30386,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_VirtualKeyboardLocationInfo),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -29818,7 +30395,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SuggestVirtualKeyboardLocation", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SuggestVirtualKeyboardLocation", 1usize
                         )
                     })
             });
@@ -29940,7 +30518,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_76_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             f64,
@@ -29955,7 +30533,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_76_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetNodePoseStateAtTime", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetNodePoseStateAtTime", 3usize
                         )
                     })
             });
@@ -30026,7 +30605,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Step,
@@ -30041,7 +30620,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetBodyState", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetBodyState", 3usize
                         )
                     })
             });
@@ -30056,7 +30636,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Bool,
@@ -30067,7 +30647,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetBodyTrackingEnabled", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetBodyTrackingEnabled", 1usize
                         )
                     })
             });
@@ -30082,7 +30663,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Bool,
@@ -30093,7 +30674,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetBodyTrackingSupported", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetBodyTrackingSupported", 1usize
                         )
                     })
             });
@@ -30109,7 +30691,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Controller,
@@ -30121,7 +30703,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetControllerSampleRateHz", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetControllerSampleRateHz", 2usize
                         )
                     })
             });
@@ -30139,7 +30722,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u32,
@@ -30153,7 +30736,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetControllerState5", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetControllerState5", 2usize
                         )
                     })
             });
@@ -30171,7 +30755,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Hand,
@@ -30185,7 +30769,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetCurrentInteractionProfile", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetCurrentInteractionProfile", 2usize
                         )
                     })
             });
@@ -30204,7 +30789,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Step,
@@ -30219,7 +30804,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetEyeGazesState", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetEyeGazesState", 3usize
                         )
                     })
             });
@@ -30236,7 +30822,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Bool,
@@ -30247,7 +30833,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetEyeTrackingEnabled", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetEyeTrackingEnabled", 1usize
                         )
                     })
             });
@@ -30264,7 +30851,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Bool,
@@ -30275,7 +30862,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetEyeTrackingSupported", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetEyeTrackingSupported", 1usize
                         )
                     })
             });
@@ -30294,7 +30882,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Step,
@@ -30309,7 +30897,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetFaceState", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetFaceState", 3usize
                         )
                     })
             });
@@ -30326,7 +30915,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Bool,
@@ -30337,7 +30926,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetFaceTrackingEnabled", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetFaceTrackingEnabled", 1usize
                         )
                     })
             });
@@ -30354,7 +30944,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Bool,
@@ -30365,7 +30955,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetFaceTrackingSupported", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetFaceTrackingSupported", 1usize
                         )
                     })
             });
@@ -30382,7 +30973,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Bool,
@@ -30393,7 +30984,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetFoveationEyeTracked", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetFoveationEyeTracked", 1usize
                         )
                     })
             });
@@ -30410,7 +31002,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Bool,
@@ -30421,7 +31013,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetFoveationEyeTrackedSupported", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetFoveationEyeTrackedSupported", 1usize
                         )
                     })
             });
@@ -30438,7 +31031,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Bool,
@@ -30449,7 +31042,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetLocalDimming", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetLocalDimming", 1usize
                         )
                     })
             });
@@ -30466,7 +31060,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Bool,
@@ -30477,7 +31071,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetLocalDimmingSupported", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetLocalDimmingSupported", 1usize
                         )
                     })
             });
@@ -30494,7 +31089,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_PassthroughCapabilityFlags,
@@ -30505,7 +31100,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetPassthroughCapabilityFlags", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetPassthroughCapabilityFlags", 1usize
                         )
                     })
             });
@@ -30521,7 +31117,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Controller,
@@ -30533,8 +31129,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetControllerHapticsAmplitudeEnvelope",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetControllerHapticsAmplitudeEnvelope", 2usize
                         )
                     })
             });
@@ -30550,7 +31146,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Controller,
@@ -30562,7 +31158,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetControllerHapticsPcm", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetControllerHapticsPcm", 2usize
                         )
                     })
             });
@@ -30580,7 +31177,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Controller,
@@ -30594,7 +31191,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetControllerLocalizedVibration", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetControllerLocalizedVibration", 4usize
                         )
                     })
             });
@@ -30613,7 +31211,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Bool),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -30622,7 +31220,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetFoveationEyeTracked", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetFoveationEyeTracked", 1usize
                         )
                     })
             });
@@ -30637,7 +31236,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Bool),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -30646,7 +31245,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetLocalDimming", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetLocalDimming", 1usize
                         )
                     })
             });
@@ -30661,7 +31261,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -30670,7 +31270,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_StartBodyTracking", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_StartBodyTracking", 0usize
                         )
                     })
             });
@@ -30685,7 +31286,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -30694,7 +31295,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_StartEyeTracking", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_StartEyeTracking", 0usize
                         )
                     })
             });
@@ -30709,7 +31311,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -30718,7 +31320,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_StartFaceTracking", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_StartFaceTracking", 0usize
                         )
                     })
             });
@@ -30733,7 +31336,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -30742,7 +31345,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_StopBodyTracking", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_StopBodyTracking", 0usize
                         )
                     })
             });
@@ -30757,7 +31361,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -30766,7 +31370,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_StopEyeTracking", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_StopEyeTracking", 0usize
                         )
                     })
             });
@@ -30781,7 +31386,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -30790,7 +31395,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_StopFaceTracking", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_StopFaceTracking", 0usize
                         )
                     })
             });
@@ -30858,7 +31464,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<u64>,
@@ -30870,7 +31476,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_CreateSpaceUser", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_CreateSpaceUser", 2usize
                         )
                     })
             });
@@ -30886,7 +31493,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<u64>,
@@ -30898,7 +31505,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_DeclareUser", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_DeclareUser", 2usize
                         )
                     })
             });
@@ -30913,7 +31521,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<u64>),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -30922,7 +31530,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_DestroySpaceUser", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_DestroySpaceUser", 1usize
                         )
                     })
             });
@@ -30938,7 +31547,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<u64>,
@@ -30950,7 +31559,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetSpaceUserId", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSpaceUserId", 2usize
                         )
                     })
             });
@@ -30969,7 +31579,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -30984,7 +31594,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_LocateSpace2", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_LocateSpace2", 3usize
                         )
                     })
             });
@@ -31000,7 +31611,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -31014,7 +31625,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_QplCreateMarkerHandle", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_QplCreateMarkerHandle", 2usize
                         )
                     })
             });
@@ -31029,7 +31641,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -31038,7 +31650,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_QplDestroyMarkerHandle", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_QplDestroyMarkerHandle", 1usize
                         )
                     })
             });
@@ -31056,7 +31669,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -31074,7 +31687,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_QplMarkerAnnotation", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_QplMarkerAnnotation", 4usize
                         )
                     })
             });
@@ -31096,7 +31710,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -31110,7 +31724,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_QplMarkerEnd", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_QplMarkerEnd", 4usize
                         )
                     })
             });
@@ -31132,7 +31747,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, i32, i32, i64),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -31141,7 +31756,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_QplMarkerPointCached", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_QplMarkerPointCached", 4usize
                         )
                     })
             });
@@ -31159,7 +31775,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, i32, i64),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -31168,7 +31784,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_QplMarkerStart", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_QplMarkerStart", 3usize
                         )
                     })
             });
@@ -31186,7 +31803,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -31202,7 +31819,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SaveSpaceList", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SaveSpaceList", 4usize
                         )
                     })
             });
@@ -31221,7 +31839,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -31240,7 +31858,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_ShareSpaces", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_ShareSpaces", 5usize
                         )
                     })
             });
@@ -31311,7 +31930,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_7_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -31320,7 +31939,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_7_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetAppChromaticCorrection", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetAppChromaticCorrection", 0usize
                         )
                     })
             });
@@ -31335,7 +31955,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_7_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Bool),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -31344,7 +31964,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_7_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetAppChromaticCorrection", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetAppChromaticCorrection", 1usize
                         )
                     })
             });
@@ -31464,7 +32085,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_82_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<u64>,
@@ -31478,7 +32099,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_82_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetSpaceTriangleMesh", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSpaceTriangleMesh", 2usize
                         )
                     })
             });
@@ -31548,7 +32170,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_83_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u32,
@@ -31562,7 +32184,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_83_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetControllerState6", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetControllerState6", 2usize
                         )
                     })
             });
@@ -31579,7 +32202,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_83_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_VirtualKeyboardTextureIdsInternal,
@@ -31590,7 +32213,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_83_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetVirtualKeyboardDirtyTextures", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetVirtualKeyboardDirtyTextures", 1usize
                         )
                     })
             });
@@ -31607,7 +32231,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_83_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationStatesInternal,
@@ -31618,8 +32242,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_83_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetVirtualKeyboardModelAnimationStates",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetVirtualKeyboardModelAnimationStates", 1usize
                         )
                     })
             });
@@ -31637,7 +32261,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_83_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u64,
@@ -31651,7 +32275,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_83_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetVirtualKeyboardTextureData", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetVirtualKeyboardTextureData", 2usize
                         )
                     })
             });
@@ -31668,7 +32293,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_83_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelVisibility,
@@ -31679,8 +32304,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_83_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetVirtualKeyboardModelVisibility",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetVirtualKeyboardModelVisibility", 1usize
                         )
                     })
             });
@@ -31750,7 +32375,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_84_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_PassthroughColorLutChannels,
@@ -31764,7 +32389,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_84_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_CreatePassthroughColorLut", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_CreatePassthroughColorLut", 4usize
                         )
                     })
             });
@@ -31779,7 +32405,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_84_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -31788,7 +32414,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_84_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_DestroyPassthroughColorLut", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_DestroyPassthroughColorLut", 1usize
                         )
                     })
             });
@@ -31805,7 +32432,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_84_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Sizei,
@@ -31816,8 +32443,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_84_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetEyeLayerRecommendedResolution",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetEyeLayerRecommendedResolution", 1usize
                         )
                     })
             });
@@ -31835,7 +32462,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_84_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -31849,7 +32476,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_84_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetLayerRecommendedResolution", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetLayerRecommendedResolution", 2usize
                         )
                     })
             });
@@ -31867,7 +32495,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_84_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -31881,7 +32509,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_84_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetInsightPassthroughStyle2", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetInsightPassthroughStyle2", 2usize
                         )
                     })
             });
@@ -31897,7 +32526,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_84_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64, crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -31906,7 +32535,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_84_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_UpdatePassthroughColorLut", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_UpdatePassthroughColorLut", 2usize
                         )
                     })
             });
@@ -31975,7 +32605,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_85_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_PassthroughCapabilities,
@@ -31986,7 +32616,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_85_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetPassthroughCapabilities", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetPassthroughCapabilities", 1usize
                         )
                     })
             });
@@ -32001,7 +32632,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_85_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -32010,7 +32641,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_85_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_OnEditorShutdown", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_OnEditorShutdown", 0usize
                         )
                     })
             });
@@ -32081,7 +32713,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Step,
@@ -32096,8 +32728,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_AreHandPosesGeneratedByControllerData",
-                            3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_AreHandPosesGeneratedByControllerData", 3usize
                         )
                     })
             });
@@ -32114,7 +32746,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Step,
@@ -32129,7 +32761,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetControllerIsInHand", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetControllerIsInHand", 3usize
                         )
                     })
             });
@@ -32147,7 +32780,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Hand,
@@ -32161,8 +32794,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetCurrentDetachedInteractionProfile",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetCurrentDetachedInteractionProfile", 2usize
                         )
                     })
             });
@@ -32177,7 +32810,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Bool,
@@ -32188,8 +32821,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_IsControllerDrivenHandPosesEnabled",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_IsControllerDrivenHandPosesEnabled", 1usize
                         )
                     })
             });
@@ -32206,7 +32839,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Bool,
@@ -32217,8 +32850,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_IsMultimodalHandsControllersSupported",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_IsMultimodalHandsControllersSupported", 1usize
                         )
                     })
             });
@@ -32233,7 +32866,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Bool),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -32242,7 +32875,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetControllerDrivenHandPoses", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetControllerDrivenHandPoses", 1usize
                         )
                     })
             });
@@ -32257,7 +32891,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Bool),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -32266,8 +32900,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetMultimodalHandsControllersSupported",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetMultimodalHandsControllersSupported", 1usize
                         )
                     })
             });
@@ -32334,7 +32968,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_87_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_Bool,
@@ -32345,8 +32979,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_87_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_AreControllerDrivenHandPosesNatural",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_AreControllerDrivenHandPosesNatural", 1usize
                         )
                     })
             });
@@ -32363,7 +32997,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_87_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::GlobalNamespace::OVRPlugin_PassthroughPreferences,
@@ -32374,7 +33008,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_87_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetPassthroughPreferences", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetPassthroughPreferences", 1usize
                         )
                     })
             });
@@ -32389,7 +33024,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_87_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Bool),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -32398,8 +33033,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_87_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetControllerDrivenHandPosesAreNatural",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetControllerDrivenHandPosesAreNatural", 1usize
                         )
                     })
             });
@@ -32414,7 +33049,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_87_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_LayerSharpenType),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -32423,7 +33058,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_87_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetEyeBufferSharpenType", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetEyeBufferSharpenType", 1usize
                         )
                     })
             });
@@ -32490,7 +33126,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_88_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Bool),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -32499,7 +33135,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_88_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "ovrp_SetSimultaneousHandsAndControllersEnabled", 1usize
                         )
                     })
@@ -32567,7 +33203,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -32576,7 +33212,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetBoundaryConfigured", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetBoundaryConfigured", 0usize
                         )
                     })
             });
@@ -32591,7 +33228,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_BoundaryType),
                         crate::GlobalNamespace::OVRPlugin_Vector3f,
@@ -32600,7 +33237,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetBoundaryDimensions", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetBoundaryDimensions", 1usize
                         )
                     })
             });
@@ -32617,7 +33255,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_BoundaryType),
                         crate::GlobalNamespace::OVRPlugin_BoundaryGeometry,
@@ -32626,7 +33264,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetBoundaryGeometry", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetBoundaryGeometry", 1usize
                         )
                     })
             });
@@ -32641,7 +33280,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -32650,7 +33289,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetBoundaryVisible", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetBoundaryVisible", 0usize
                         )
                     })
             });
@@ -32666,7 +33306,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, crate::GlobalNamespace::OVRPlugin_Node),
                         crate::GlobalNamespace::OVRPlugin_Posef,
@@ -32675,7 +33315,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetNodeAcceleration2", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetNodeAcceleration2", 2usize
                         )
                     })
             });
@@ -32691,7 +33332,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, crate::GlobalNamespace::OVRPlugin_Node),
                         crate::GlobalNamespace::OVRPlugin_Posef,
@@ -32700,7 +33341,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetNodePose2", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetNodePose2", 2usize
                         )
                     })
             });
@@ -32716,7 +33358,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, crate::GlobalNamespace::OVRPlugin_Node),
                         crate::GlobalNamespace::OVRPlugin_Posef,
@@ -32725,7 +33367,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetNodeVelocity2", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetNodeVelocity2", 2usize
                         )
                     })
             });
@@ -32740,7 +33383,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_Bool),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -32749,7 +33392,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_SetBoundaryVisible", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetBoundaryVisible", 1usize
                         )
                     })
             });
@@ -32767,7 +33411,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Node,
@@ -32779,7 +33423,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_TestBoundaryNode", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_TestBoundaryNode", 2usize
                         )
                     })
             });
@@ -32797,7 +33442,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_Vector3f,
@@ -32809,7 +33454,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_TestBoundaryPoint", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_TestBoundaryPoint", 2usize
                         )
                     })
             });
@@ -32826,7 +33472,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, i32, f64),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -32835,7 +33481,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_Update2", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_Update2", 3usize
                         )
                     })
             });
@@ -32901,7 +33548,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_9_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Controller,
@@ -32910,7 +33557,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_9_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetActiveController", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetActiveController", 0usize
                         )
                     })
             });
@@ -32925,7 +33573,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_9_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_AppPerfStats,
@@ -32934,7 +33582,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_9_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetAppPerfStats", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetAppPerfStats", 0usize
                         )
                     })
             });
@@ -32951,7 +33600,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_9_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_BoundaryType,
@@ -32964,7 +33613,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_9_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetBoundaryGeometry2", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetBoundaryGeometry2", 3usize
                         )
                     })
             });
@@ -32979,7 +33629,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_9_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Controller,
@@ -32988,7 +33638,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_9_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetConnectedControllers", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetConnectedControllers", 0usize
                         )
                     })
             });
@@ -33003,7 +33654,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_9_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_SystemHeadset,
@@ -33012,7 +33663,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_9_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_GetSystemHeadsetType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSystemHeadsetType", 0usize
                         )
                     })
             });
@@ -33027,7 +33679,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_9_0 {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::GlobalNamespace::OVRPlugin_Bool,
@@ -33036,7 +33688,8 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_9_0 {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ovrp_ResetAppPerfStats", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_ResetAppPerfStats", 0usize
                         )
                     })
             });
@@ -34270,12 +34923,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVRPlugin_PinnedArr
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Dispose", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            0usize
                         )
                     })
             });
@@ -34295,7 +34949,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVRPlugin_PinnedArr
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<T>,
@@ -34306,7 +34960,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVRPlugin_PinnedArr
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -34325,7 +34980,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVRPlugin_PinnedArr
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::OVRPlugin_PinnedArray_1<T>),
                         crate::System::IntPtr,
@@ -34334,7 +34989,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVRPlugin_PinnedArr
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "op_Implicit", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Implicit", 1usize
                         )
                     })
             });
@@ -34772,7 +35428,7 @@ impl crate::GlobalNamespace::OVRPlugin_Posef {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -34781,7 +35437,8 @@ impl crate::GlobalNamespace::OVRPlugin_Posef {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToString", 0usize
                         )
                     })
             });
@@ -34938,7 +35595,7 @@ impl crate::GlobalNamespace::OVRPlugin_Qpl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -34952,7 +35609,8 @@ impl crate::GlobalNamespace::OVRPlugin_Qpl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateMarkerHandle", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateMarkerHandle", 2usize
                         )
                     })
             });
@@ -34965,12 +35623,13 @@ impl crate::GlobalNamespace::OVRPlugin_Qpl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), bool, 1usize>("DestroyMarkerHandle")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DestroyMarkerHandle", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DestroyMarkerHandle", 1usize
                         )
                     })
             });
@@ -34986,7 +35645,7 @@ impl crate::GlobalNamespace::OVRPlugin_Qpl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -35004,7 +35663,8 @@ impl crate::GlobalNamespace::OVRPlugin_Qpl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MarkerAnnotation", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MarkerAnnotation", 4usize
                         )
                     })
             });
@@ -35026,7 +35686,7 @@ impl crate::GlobalNamespace::OVRPlugin_Qpl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             i32,
@@ -35040,7 +35700,8 @@ impl crate::GlobalNamespace::OVRPlugin_Qpl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MarkerEnd", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MarkerEnd", 4usize
                         )
                     })
             });
@@ -35062,7 +35723,7 @@ impl crate::GlobalNamespace::OVRPlugin_Qpl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, i32, i32, i64),
                         quest_hook::libil2cpp::Void,
@@ -35071,7 +35732,8 @@ impl crate::GlobalNamespace::OVRPlugin_Qpl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MarkerPointCached", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MarkerPointCached", 4usize
                         )
                     })
             });
@@ -35089,7 +35751,7 @@ impl crate::GlobalNamespace::OVRPlugin_Qpl {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, i32, i64),
                         quest_hook::libil2cpp::Void,
@@ -35098,7 +35760,8 @@ impl crate::GlobalNamespace::OVRPlugin_Qpl {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MarkerStart", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MarkerStart", 3usize
                         )
                     })
             });
@@ -35227,7 +35890,7 @@ impl crate::GlobalNamespace::OVRPlugin_Quatf {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -35236,7 +35899,8 @@ impl crate::GlobalNamespace::OVRPlugin_Quatf {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToString", 0usize
                         )
                     })
             });
@@ -36579,7 +37243,7 @@ impl crate::GlobalNamespace::OVRPlugin_Sizei {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         bool,
@@ -36588,7 +37252,8 @@ impl crate::GlobalNamespace::OVRPlugin_Sizei {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Equals", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            1usize
                         )
                     })
             });
@@ -36602,7 +37267,7 @@ impl crate::GlobalNamespace::OVRPlugin_Sizei {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::OVRPlugin_Sizei),
                         bool,
@@ -36611,7 +37276,8 @@ impl crate::GlobalNamespace::OVRPlugin_Sizei {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Equals", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            1usize
                         )
                     })
             });
@@ -36622,12 +37288,13 @@ impl crate::GlobalNamespace::OVRPlugin_Sizei {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("GetHashCode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHashCode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHashCode", 0usize
                         )
                     })
             });
@@ -39159,7 +39826,7 @@ impl crate::GlobalNamespace::OVRPlugin_TextureRectMatrixf {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -39168,7 +39835,8 @@ impl crate::GlobalNamespace::OVRPlugin_TextureRectMatrixf {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToString", 0usize
                         )
                     })
             });
@@ -39989,7 +40657,7 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         crate::System::IntPtr,
@@ -39998,7 +40666,8 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HookGetInstanceProcAddr", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HookGetInstanceProcAddr", 1usize
                         )
                     })
             });
@@ -40020,7 +40689,7 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Void,
@@ -40029,7 +40698,8 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnAppSpaceChange", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnAppSpaceChange", 1usize
                         )
                     })
             });
@@ -40042,12 +40712,13 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u64), bool, 1usize>("OnInstanceCreate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnInstanceCreate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnInstanceCreate", 1usize
                         )
                     })
             });
@@ -40060,7 +40731,7 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Void,
@@ -40069,7 +40740,8 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnInstanceDestroy", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnInstanceDestroy", 1usize
                         )
                     })
             });
@@ -40084,7 +40756,7 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Void,
@@ -40093,7 +40765,8 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnSessionBegin", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnSessionBegin", 1usize
                         )
                     })
             });
@@ -40108,7 +40781,7 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Void,
@@ -40117,7 +40790,8 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnSessionCreate", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnSessionCreate", 1usize
                         )
                     })
             });
@@ -40132,7 +40806,7 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Void,
@@ -40141,7 +40815,8 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnSessionDestroy", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnSessionDestroy", 1usize
                         )
                     })
             });
@@ -40156,7 +40831,7 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Void,
@@ -40165,7 +40840,8 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnSessionEnd", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnSessionEnd", 1usize
                         )
                     })
             });
@@ -40180,7 +40856,7 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Void,
@@ -40189,7 +40865,8 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnSessionExiting", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnSessionExiting", 1usize
                         )
                     })
             });
@@ -40205,7 +40882,7 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32, i32),
                         quest_hook::libil2cpp::Void,
@@ -40214,7 +40891,8 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnSessionStateChange", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnSessionStateChange", 2usize
                         )
                     })
             });
@@ -40229,7 +40907,7 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -40238,7 +40916,8 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetClientVersion", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetClientVersion", 0usize
                         )
                     })
             });
@@ -40253,12 +40932,13 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -40596,7 +41276,7 @@ impl crate::GlobalNamespace::OVRPlugin_Vector3f {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -40605,7 +41285,8 @@ impl crate::GlobalNamespace::OVRPlugin_Vector3f {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToString", 0usize
                         )
                     })
             });
@@ -40728,7 +41409,7 @@ impl crate::GlobalNamespace::OVRPlugin_Vector4f {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -40737,7 +41418,8 @@ impl crate::GlobalNamespace::OVRPlugin_Vector4f {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToString", 0usize
                         )
                     })
             });
@@ -40860,7 +41542,7 @@ impl crate::GlobalNamespace::OVRPlugin_Vector4s {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -40869,7 +41551,8 @@ impl crate::GlobalNamespace::OVRPlugin_Vector4s {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToString", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToString", 0usize
                         )
                     })
             });
@@ -41897,12 +42580,13 @@ impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelVisibility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_Visible")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Visible", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Visible", 0usize
                         )
                     })
             });
@@ -41916,7 +42600,7 @@ impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelVisibility {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -41925,7 +42609,8 @@ impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelVisibility {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_Visible", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Visible", 1usize
                         )
                     })
             });

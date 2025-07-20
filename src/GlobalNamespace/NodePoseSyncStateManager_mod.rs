@@ -70,7 +70,7 @@ impl crate::GlobalNamespace::NodePoseSyncStateManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::GlobalNamespace::PoseSerializable,
@@ -85,7 +85,8 @@ impl crate::GlobalNamespace::NodePoseSyncStateManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Interpolate", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Interpolate", 5usize
                         )
                     })
             });
@@ -110,7 +111,7 @@ impl crate::GlobalNamespace::NodePoseSyncStateManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::GlobalNamespace::PoseSerializable,
@@ -123,7 +124,8 @@ impl crate::GlobalNamespace::NodePoseSyncStateManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Smooth", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Smooth",
+                            3usize
                         )
                     })
             });
@@ -138,12 +140,13 @@ impl crate::GlobalNamespace::NodePoseSyncStateManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -160,7 +163,7 @@ impl crate::GlobalNamespace::NodePoseSyncStateManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
@@ -169,7 +172,8 @@ impl crate::GlobalNamespace::NodePoseSyncStateManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_deltaMessageType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_deltaMessageType", 0usize
                         )
                     })
             });
@@ -192,7 +196,7 @@ impl crate::GlobalNamespace::NodePoseSyncStateManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -207,7 +211,8 @@ impl crate::GlobalNamespace::NodePoseSyncStateManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_deltaSerializablePool", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_deltaSerializablePool", 0usize
                         )
                     })
             });
@@ -224,12 +229,13 @@ impl crate::GlobalNamespace::NodePoseSyncStateManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i64, 0usize>("get_deltaUpdateFrequencyMs")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_deltaUpdateFrequencyMs", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_deltaUpdateFrequencyMs", 0usize
                         )
                     })
             });
@@ -242,12 +248,13 @@ impl crate::GlobalNamespace::NodePoseSyncStateManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i64, 0usize>("get_fullStateUpdateFrequencyMs")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_fullStateUpdateFrequencyMs", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_fullStateUpdateFrequencyMs", 0usize
                         )
                     })
             });
@@ -258,12 +265,13 @@ impl crate::GlobalNamespace::NodePoseSyncStateManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_localBufferSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_localBufferSize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_localBufferSize", 0usize
                         )
                     })
             });
@@ -278,7 +286,7 @@ impl crate::GlobalNamespace::NodePoseSyncStateManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
@@ -287,7 +295,8 @@ impl crate::GlobalNamespace::NodePoseSyncStateManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_messageType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_messageType", 0usize
                         )
                     })
             });
@@ -300,12 +309,13 @@ impl crate::GlobalNamespace::NodePoseSyncStateManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_remoteBufferSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_remoteBufferSize", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_remoteBufferSize", 0usize
                         )
                     })
             });
@@ -326,7 +336,7 @@ impl crate::GlobalNamespace::NodePoseSyncStateManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -341,7 +351,8 @@ impl crate::GlobalNamespace::NodePoseSyncStateManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_serializablePool", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_serializablePool", 0usize
                         )
                     })
             });

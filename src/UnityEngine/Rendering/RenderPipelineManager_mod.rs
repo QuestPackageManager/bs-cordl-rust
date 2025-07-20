@@ -45,7 +45,7 @@ impl crate::UnityEngine::Rendering::RenderPipelineManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -54,7 +54,8 @@ impl crate::UnityEngine::Rendering::RenderPipelineManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CleanupRenderPipeline", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CleanupRenderPipeline", 0usize
                         )
                     })
             });
@@ -73,7 +74,7 @@ impl crate::UnityEngine::Rendering::RenderPipelineManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -88,7 +89,8 @@ impl crate::UnityEngine::Rendering::RenderPipelineManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DoRenderLoop_Internal", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoRenderLoop_Internal", 3usize
                         )
                     })
             });
@@ -103,7 +105,7 @@ impl crate::UnityEngine::Rendering::RenderPipelineManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -112,7 +114,8 @@ impl crate::UnityEngine::Rendering::RenderPipelineManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCurrentPipelineAssetType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCurrentPipelineAssetType", 0usize
                         )
                     })
             });
@@ -129,7 +132,7 @@ impl crate::UnityEngine::Rendering::RenderPipelineManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::Rendering::RenderPipelineAsset,
@@ -140,7 +143,8 @@ impl crate::UnityEngine::Rendering::RenderPipelineManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleRenderPipelineChange", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleRenderPipelineChange", 1usize
                         )
                     })
             });
@@ -153,12 +157,13 @@ impl crate::UnityEngine::Rendering::RenderPipelineManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(), bool, 0usize>("IsPipelineRequireCreation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsPipelineRequireCreation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsPipelineRequireCreation", 0usize
                         )
                     })
             });
@@ -172,7 +177,7 @@ impl crate::UnityEngine::Rendering::RenderPipelineManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -188,7 +193,8 @@ impl crate::UnityEngine::Rendering::RenderPipelineManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnActiveRenderPipelineAssetChanged", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnActiveRenderPipelineAssetChanged", 2usize
                         )
                     })
             });
@@ -203,7 +209,7 @@ impl crate::UnityEngine::Rendering::RenderPipelineManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -212,7 +218,8 @@ impl crate::UnityEngine::Rendering::RenderPipelineManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnActiveRenderPipelineTypeChanged", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnActiveRenderPipelineTypeChanged", 0usize
                         )
                     })
             });
@@ -229,7 +236,7 @@ impl crate::UnityEngine::Rendering::RenderPipelineManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::Rendering::RenderPipelineAsset,
@@ -240,7 +247,8 @@ impl crate::UnityEngine::Rendering::RenderPipelineManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PrepareRenderPipeline", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PrepareRenderPipeline", 1usize
                         )
                     })
             });
@@ -260,7 +268,7 @@ impl crate::UnityEngine::Rendering::RenderPipelineManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_2<
@@ -274,7 +282,8 @@ impl crate::UnityEngine::Rendering::RenderPipelineManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_beginCameraRendering", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_beginCameraRendering", 1usize
                         )
                     })
             });
@@ -289,7 +298,7 @@ impl crate::UnityEngine::Rendering::RenderPipelineManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -300,7 +309,8 @@ impl crate::UnityEngine::Rendering::RenderPipelineManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_currentPipeline", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_currentPipeline", 0usize
                         )
                     })
             });
@@ -320,7 +330,7 @@ impl crate::UnityEngine::Rendering::RenderPipelineManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_2<
@@ -334,7 +344,8 @@ impl crate::UnityEngine::Rendering::RenderPipelineManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_beginCameraRendering", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_beginCameraRendering", 1usize
                         )
                     })
             });
@@ -349,7 +360,7 @@ impl crate::UnityEngine::Rendering::RenderPipelineManager {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::Rendering::RenderPipeline,
@@ -360,7 +371,8 @@ impl crate::UnityEngine::Rendering::RenderPipelineManager {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_currentPipeline", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_currentPipeline", 1usize
                         )
                     })
             });

@@ -48,7 +48,7 @@ impl crate::UnityEngine::UINumericFieldsUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -67,7 +67,8 @@ impl crate::UnityEngine::UINumericFieldsUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryConvertStringToDouble", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryConvertStringToDouble", 3usize
                         )
                     })
             });
@@ -86,7 +87,7 @@ impl crate::UnityEngine::UINumericFieldsUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -103,7 +104,8 @@ impl crate::UnityEngine::UINumericFieldsUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryConvertStringToDouble", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryConvertStringToDouble", 3usize
                         )
                     })
             });
@@ -122,7 +124,7 @@ impl crate::UnityEngine::UINumericFieldsUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -139,7 +141,8 @@ impl crate::UnityEngine::UINumericFieldsUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryConvertStringToFloat", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryConvertStringToFloat", 3usize
                         )
                     })
             });
@@ -158,7 +161,7 @@ impl crate::UnityEngine::UINumericFieldsUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -175,7 +178,8 @@ impl crate::UnityEngine::UINumericFieldsUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryConvertStringToInt", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryConvertStringToInt", 3usize
                         )
                     })
             });
@@ -194,7 +198,7 @@ impl crate::UnityEngine::UINumericFieldsUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -213,7 +217,8 @@ impl crate::UnityEngine::UINumericFieldsUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryConvertStringToLong", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryConvertStringToLong", 3usize
                         )
                     })
             });
@@ -232,7 +237,7 @@ impl crate::UnityEngine::UINumericFieldsUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -249,7 +254,8 @@ impl crate::UnityEngine::UINumericFieldsUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryConvertStringToLong", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryConvertStringToLong", 3usize
                         )
                     })
             });
@@ -268,7 +274,7 @@ impl crate::UnityEngine::UINumericFieldsUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -285,7 +291,8 @@ impl crate::UnityEngine::UINumericFieldsUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryConvertStringToUInt", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryConvertStringToUInt", 3usize
                         )
                     })
             });
@@ -304,7 +311,7 @@ impl crate::UnityEngine::UINumericFieldsUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -323,7 +330,8 @@ impl crate::UnityEngine::UINumericFieldsUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryConvertStringToULong", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryConvertStringToULong", 3usize
                         )
                     })
             });
@@ -342,7 +350,7 @@ impl crate::UnityEngine::UINumericFieldsUtils {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -359,7 +367,8 @@ impl crate::UnityEngine::UINumericFieldsUtils {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TryConvertStringToULong", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryConvertStringToULong", 3usize
                         )
                     })
             });

@@ -49,7 +49,7 @@ impl crate::BGLib::Polyglot::CsvWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -69,7 +69,8 @@ impl crate::BGLib::Polyglot::CsvWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AppendCSVLine", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AppendCSVLine", 2usize
                         )
                     })
             });
@@ -89,7 +90,7 @@ impl crate::BGLib::Polyglot::CsvWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -109,7 +110,8 @@ impl crate::BGLib::Polyglot::CsvWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AppendCSVLine", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AppendCSVLine", 2usize
                         )
                     })
             });
@@ -125,7 +127,7 @@ impl crate::BGLib::Polyglot::CsvWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -141,7 +143,8 @@ impl crate::BGLib::Polyglot::CsvWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AppendElement", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AppendElement", 2usize
                         )
                     })
             });
@@ -161,7 +164,7 @@ impl crate::BGLib::Polyglot::CsvWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -181,7 +184,8 @@ impl crate::BGLib::Polyglot::CsvWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AppendRow", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AppendRow", 2usize
                         )
                     })
             });
@@ -201,7 +205,7 @@ impl crate::BGLib::Polyglot::CsvWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -221,7 +225,8 @@ impl crate::BGLib::Polyglot::CsvWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AppendRowInternal", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AppendRowInternal", 2usize
                         )
                     })
             });
@@ -236,7 +241,7 @@ impl crate::BGLib::Polyglot::CsvWriter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         bool,
@@ -245,7 +250,8 @@ impl crate::BGLib::Polyglot::CsvWriter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HasEscapeChars", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HasEscapeChars", 1usize
                         )
                     })
             });

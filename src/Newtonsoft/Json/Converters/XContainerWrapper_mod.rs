@@ -55,7 +55,7 @@ impl crate::Newtonsoft::Json::Converters::XContainerWrapper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Newtonsoft::Json::Converters::IXmlNode,
@@ -68,7 +68,8 @@ impl crate::Newtonsoft::Json::Converters::XContainerWrapper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AppendChild", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AppendChild", 1usize
                         )
                     })
             });
@@ -94,7 +95,7 @@ impl crate::Newtonsoft::Json::Converters::XContainerWrapper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XObject>),
                         quest_hook::libil2cpp::Gc<
@@ -105,7 +106,8 @@ impl crate::Newtonsoft::Json::Converters::XContainerWrapper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "WrapNode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WrapNode", 1usize
                         )
                     })
             });
@@ -121,7 +123,7 @@ impl crate::Newtonsoft::Json::Converters::XContainerWrapper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Xml::Linq::XContainer,
@@ -132,7 +134,8 @@ impl crate::Newtonsoft::Json::Converters::XContainerWrapper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -153,7 +156,7 @@ impl crate::Newtonsoft::Json::Converters::XContainerWrapper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -168,7 +171,8 @@ impl crate::Newtonsoft::Json::Converters::XContainerWrapper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ChildNodes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ChildNodes", 0usize
                         )
                     })
             });
@@ -187,7 +191,7 @@ impl crate::Newtonsoft::Json::Converters::XContainerWrapper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XContainer>,
@@ -196,7 +200,8 @@ impl crate::Newtonsoft::Json::Converters::XContainerWrapper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_Container", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Container", 0usize
                         )
                     })
             });
@@ -209,12 +214,13 @@ impl crate::Newtonsoft::Json::Converters::XContainerWrapper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_HasChildNodes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_HasChildNodes", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_HasChildNodes", 0usize
                         )
                     })
             });
@@ -229,7 +235,7 @@ impl crate::Newtonsoft::Json::Converters::XContainerWrapper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -240,7 +246,8 @@ impl crate::Newtonsoft::Json::Converters::XContainerWrapper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ParentNode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ParentNode", 0usize
                         )
                     })
             });

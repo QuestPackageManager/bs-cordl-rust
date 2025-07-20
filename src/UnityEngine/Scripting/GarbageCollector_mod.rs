@@ -47,7 +47,7 @@ impl crate::UnityEngine::Scripting::GarbageCollector {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         crate::UnityEngine::Scripting::GarbageCollector_Mode,
@@ -56,7 +56,8 @@ impl crate::UnityEngine::Scripting::GarbageCollector {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetMode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetMode",
+                            0usize
                         )
                     })
             });
@@ -71,7 +72,7 @@ impl crate::UnityEngine::Scripting::GarbageCollector {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Scripting::GarbageCollector_Mode),
                         quest_hook::libil2cpp::Void,
@@ -80,7 +81,8 @@ impl crate::UnityEngine::Scripting::GarbageCollector {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetMode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetMode",
+                            1usize
                         )
                     })
             });
@@ -95,7 +97,7 @@ impl crate::UnityEngine::Scripting::GarbageCollector {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Scripting::GarbageCollector_Mode),
                         quest_hook::libil2cpp::Void,
@@ -104,7 +106,8 @@ impl crate::UnityEngine::Scripting::GarbageCollector {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_GCMode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_GCMode", 1usize
                         )
                     })
             });

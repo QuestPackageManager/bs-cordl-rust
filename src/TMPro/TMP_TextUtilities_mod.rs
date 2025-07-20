@@ -50,7 +50,7 @@ impl crate::TMPro::TMP_TextUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::Vector3,
@@ -63,7 +63,8 @@ impl crate::TMPro::TMP_TextUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DistanceToLine", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DistanceToLine", 3usize
                         )
                     })
             });
@@ -79,7 +80,7 @@ impl crate::TMPro::TMP_TextUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
@@ -93,7 +94,8 @@ impl crate::TMPro::TMP_TextUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FindIntersectingCharacter", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindIntersectingCharacter", 4usize
                         )
                     })
             });
@@ -110,7 +112,7 @@ impl crate::TMPro::TMP_TextUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
@@ -123,7 +125,8 @@ impl crate::TMPro::TMP_TextUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FindIntersectingLine", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindIntersectingLine", 3usize
                         )
                     })
             });
@@ -140,7 +143,7 @@ impl crate::TMPro::TMP_TextUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
@@ -153,7 +156,8 @@ impl crate::TMPro::TMP_TextUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FindIntersectingLink", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindIntersectingLink", 3usize
                         )
                     })
             });
@@ -170,7 +174,7 @@ impl crate::TMPro::TMP_TextUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
@@ -183,7 +187,8 @@ impl crate::TMPro::TMP_TextUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FindIntersectingWord", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindIntersectingWord", 3usize
                         )
                     })
             });
@@ -201,7 +206,7 @@ impl crate::TMPro::TMP_TextUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
@@ -215,7 +220,8 @@ impl crate::TMPro::TMP_TextUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FindNearestCharacter", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindNearestCharacter", 4usize
                         )
                     })
             });
@@ -234,7 +240,7 @@ impl crate::TMPro::TMP_TextUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
@@ -249,7 +255,8 @@ impl crate::TMPro::TMP_TextUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FindNearestCharacterOnLine", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindNearestCharacterOnLine", 5usize
                         )
                     })
             });
@@ -266,7 +273,7 @@ impl crate::TMPro::TMP_TextUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
@@ -279,7 +286,8 @@ impl crate::TMPro::TMP_TextUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FindNearestLine", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindNearestLine", 3usize
                         )
                     })
             });
@@ -296,7 +304,7 @@ impl crate::TMPro::TMP_TextUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
@@ -309,7 +317,8 @@ impl crate::TMPro::TMP_TextUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FindNearestLink", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindNearestLink", 3usize
                         )
                     })
             });
@@ -326,7 +335,7 @@ impl crate::TMPro::TMP_TextUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
@@ -339,7 +348,8 @@ impl crate::TMPro::TMP_TextUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FindNearestWord", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindNearestWord", 3usize
                         )
                     })
             });
@@ -357,7 +367,7 @@ impl crate::TMPro::TMP_TextUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
@@ -371,7 +381,8 @@ impl crate::TMPro::TMP_TextUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCursorIndexFromPosition", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCursorIndexFromPosition", 4usize
                         )
                     })
             });
@@ -388,7 +399,7 @@ impl crate::TMPro::TMP_TextUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
@@ -401,7 +412,8 @@ impl crate::TMPro::TMP_TextUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetCursorIndexFromPosition", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCursorIndexFromPosition", 3usize
                         )
                     })
             });
@@ -416,7 +428,7 @@ impl crate::TMPro::TMP_TextUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         i32,
@@ -425,7 +437,8 @@ impl crate::TMPro::TMP_TextUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetHashCode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHashCode", 1usize
                         )
                     })
             });
@@ -438,7 +451,7 @@ impl crate::TMPro::TMP_TextUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         i32,
@@ -447,7 +460,8 @@ impl crate::TMPro::TMP_TextUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSimpleHashCode", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSimpleHashCode", 1usize
                         )
                     })
             });
@@ -460,7 +474,7 @@ impl crate::TMPro::TMP_TextUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         u32,
@@ -469,7 +483,8 @@ impl crate::TMPro::TMP_TextUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSimpleHashCodeLowercase", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSimpleHashCodeLowercase", 1usize
                         )
                     })
             });
@@ -480,12 +495,13 @@ impl crate::TMPro::TMP_TextUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(char), i32, 1usize>("HexToInt")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HexToInt", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HexToInt", 1usize
                         )
                     })
             });
@@ -501,7 +517,7 @@ impl crate::TMPro::TMP_TextUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::TMPro::TMP_TextUtilities_LineSegment,
@@ -515,7 +531,8 @@ impl crate::TMPro::TMP_TextUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IntersectLinePlane", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IntersectLinePlane", 4usize
                         )
                     })
             });
@@ -532,7 +549,7 @@ impl crate::TMPro::TMP_TextUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -545,7 +562,8 @@ impl crate::TMPro::TMP_TextUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsIntersectingRectTransform", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsIntersectingRectTransform", 3usize
                         )
                     })
             });
@@ -564,7 +582,7 @@ impl crate::TMPro::TMP_TextUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::Vector3,
@@ -579,7 +597,8 @@ impl crate::TMPro::TMP_TextUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PointIntersectRectangle", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PointIntersectRectangle", 5usize
                         )
                     })
             });
@@ -595,7 +614,7 @@ impl crate::TMPro::TMP_TextUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -609,7 +628,8 @@ impl crate::TMPro::TMP_TextUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ScreenPointToWorldPointInRectangle", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScreenPointToWorldPointInRectangle", 4usize
                         )
                     })
             });
@@ -624,7 +644,7 @@ impl crate::TMPro::TMP_TextUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         i32,
@@ -633,7 +653,8 @@ impl crate::TMPro::TMP_TextUtilities {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StringHexToInt", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StringHexToInt", 1usize
                         )
                     })
             });
@@ -644,12 +665,13 @@ impl crate::TMPro::TMP_TextUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(char), char, 1usize>("ToLowerFast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToLowerFast", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToLowerFast", 1usize
                         )
                     })
             });
@@ -660,12 +682,13 @@ impl crate::TMPro::TMP_TextUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u32), u32, 1usize>("ToUpperASCIIFast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToUpperASCIIFast", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToUpperASCIIFast", 1usize
                         )
                     })
             });
@@ -676,12 +699,13 @@ impl crate::TMPro::TMP_TextUtilities {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(char), char, 1usize>("ToUpperFast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToUpperFast", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToUpperFast", 1usize
                         )
                     })
             });
@@ -809,7 +833,7 @@ impl crate::TMPro::TMP_TextUtilities_LineSegment {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector3, crate::UnityEngine::Vector3),
                         quest_hook::libil2cpp::Void,
@@ -818,7 +842,8 @@ impl crate::TMPro::TMP_TextUtilities_LineSegment {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });

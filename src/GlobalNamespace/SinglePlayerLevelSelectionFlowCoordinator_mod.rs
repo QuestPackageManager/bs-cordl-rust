@@ -81,7 +81,7 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -90,7 +90,8 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ActionButtonWasPressed", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ActionButtonWasPressed", 0usize
                         )
                     })
             });
@@ -106,7 +107,7 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>),
                         quest_hook::libil2cpp::Void,
@@ -115,7 +116,8 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BackButtonWasPressed", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BackButtonWasPressed", 1usize
                         )
                     })
             });
@@ -132,7 +134,7 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>, bool),
                         quest_hook::libil2cpp::Void,
@@ -141,7 +143,8 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DismissPracticeViewController", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DismissPracticeViewController", 2usize
                         )
                     })
             });
@@ -160,7 +163,7 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -174,7 +177,8 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleBasicLevelCompletionResults", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleBasicLevelCompletionResults", 2usize
                         )
                     })
             });
@@ -189,7 +193,7 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -198,7 +202,7 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "HandlePracticeViewControllerDidPressPlayButton", 0usize
                         )
                     })
@@ -220,7 +224,7 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -236,7 +240,8 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleStandardLevelDidFinish", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleStandardLevelDidFinish", 2usize
                         )
                     })
             });
@@ -257,7 +262,7 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, bool),
                         quest_hook::libil2cpp::Void,
@@ -266,8 +271,8 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LevelSelectionFlowCoordinatorDidActivate",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LevelSelectionFlowCoordinatorDidActivate", 2usize
                         )
                     })
             });
@@ -283,7 +288,7 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -292,8 +297,8 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LevelSelectionFlowCoordinatorDidDeactivate",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LevelSelectionFlowCoordinatorDidDeactivate", 1usize
                         )
                     })
             });
@@ -311,7 +316,7 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
@@ -324,7 +329,7 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "LevelSelectionFlowCoordinatorTopViewControllerWillChange",
                             3usize
                         )
@@ -352,7 +357,7 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -361,7 +366,8 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PracticeButtonWasPressed", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PracticeButtonWasPressed", 0usize
                         )
                     })
             });
@@ -388,7 +394,7 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -412,7 +418,7 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "ProcessLevelCompletionResultsAfterLevelDidFinish", 6usize
                         )
                     })
@@ -441,7 +447,7 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -457,7 +463,8 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SelectionDidChange", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SelectionDidChange", 2usize
                         )
                     })
             });
@@ -475,7 +482,7 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, bool, bool),
                         quest_hook::libil2cpp::Void,
@@ -484,7 +491,8 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetupGameplaySetupViewController", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetupGameplaySetupViewController", 3usize
                         )
                     })
             });
@@ -509,7 +517,7 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, bool),
                         quest_hook::libil2cpp::Void,
@@ -518,7 +526,7 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "SinglePlayerLevelSelectionFlowCoordinatorDidActivate",
                             2usize
                         )
@@ -536,7 +544,7 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -545,7 +553,7 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(),
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
                             "SinglePlayerLevelSelectionFlowCoordinatorDidDeactivate",
                             1usize
                         )
@@ -564,7 +572,7 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>, bool),
                         quest_hook::libil2cpp::Void,
@@ -573,7 +581,8 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartLevel", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartLevel", 2usize
                         )
                     })
             });
@@ -590,7 +599,7 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Action>, bool),
                         quest_hook::libil2cpp::Void,
@@ -599,7 +608,8 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartLevelOrShow360Prompt", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartLevelOrShow360Prompt", 2usize
                         )
                     })
             });
@@ -614,12 +624,13 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -641,7 +652,7 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -656,7 +667,8 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "add_didFinishEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_didFinishEvent", 1usize
                         )
                     })
             });
@@ -669,12 +681,13 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_enableCustomLevels")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_enableCustomLevels", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_enableCustomLevels", 0usize
                         )
                     })
             });
@@ -689,7 +702,7 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -698,7 +711,8 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_gameMode", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_gameMode", 0usize
                         )
                     })
             });
@@ -715,7 +729,7 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -726,7 +740,8 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_gameplayModifiers", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_gameplayModifiers", 0usize
                         )
                     })
             });
@@ -739,12 +754,13 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_hideGameplaySetup")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_hideGameplaySetup", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_hideGameplaySetup", 0usize
                         )
                     })
             });
@@ -759,7 +775,7 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
@@ -768,7 +784,8 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_initialLeftScreenViewController", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_initialLeftScreenViewController", 0usize
                         )
                     })
             });
@@ -785,7 +802,7 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
@@ -794,7 +811,8 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_initialTopScreenViewController", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_initialTopScreenViewController", 0usize
                         )
                     })
             });
@@ -807,12 +825,13 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isInPracticeView")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_isInPracticeView", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isInPracticeView", 0usize
                         )
                     })
             });
@@ -827,7 +846,7 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -838,7 +857,8 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_leaderboardViewController", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_leaderboardViewController", 0usize
                         )
                     })
             });
@@ -855,7 +875,7 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -866,7 +886,8 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_playerSettings", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_playerSettings", 0usize
                         )
                     })
             });
@@ -888,7 +909,7 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
@@ -903,7 +924,8 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "remove_didFinishEvent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_didFinishEvent", 1usize
                         )
                     })
             });

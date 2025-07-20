@@ -46,7 +46,7 @@ impl crate::Oculus::Platform::IAP {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
@@ -55,7 +55,8 @@ impl crate::Oculus::Platform::IAP {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ConsumePurchase", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConsumePurchase", 1usize
                         )
                     })
             });
@@ -76,7 +77,7 @@ impl crate::Oculus::Platform::IAP {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Oculus::Platform::Models::ProductList,
@@ -93,7 +94,8 @@ impl crate::Oculus::Platform::IAP {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNextProductListPage", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNextProductListPage", 1usize
                         )
                     })
             });
@@ -116,7 +118,7 @@ impl crate::Oculus::Platform::IAP {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::Oculus::Platform::Models::PurchaseList,
@@ -133,7 +135,8 @@ impl crate::Oculus::Platform::IAP {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetNextPurchaseListPage", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetNextPurchaseListPage", 1usize
                         )
                     })
             });
@@ -160,7 +163,7 @@ impl crate::Oculus::Platform::IAP {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -181,7 +184,8 @@ impl crate::Oculus::Platform::IAP {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetProductsBySKU", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetProductsBySKU", 1usize
                         )
                     })
             });
@@ -202,7 +206,7 @@ impl crate::Oculus::Platform::IAP {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -217,7 +221,8 @@ impl crate::Oculus::Platform::IAP {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetViewerPurchases", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetViewerPurchases", 0usize
                         )
                     })
             });
@@ -238,7 +243,7 @@ impl crate::Oculus::Platform::IAP {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -253,7 +258,8 @@ impl crate::Oculus::Platform::IAP {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetViewerPurchasesDurableCache", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetViewerPurchasesDurableCache", 0usize
                         )
                     })
             });
@@ -276,7 +282,7 @@ impl crate::Oculus::Platform::IAP {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
@@ -291,7 +297,8 @@ impl crate::Oculus::Platform::IAP {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LaunchCheckoutFlow", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LaunchCheckoutFlow", 1usize
                         )
                     })
             });

@@ -46,7 +46,7 @@ impl crate::Oculus::Platform::Notifications {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
@@ -55,7 +55,8 @@ impl crate::Oculus::Platform::Notifications {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MarkAsRead", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MarkAsRead", 1usize
                         )
                     })
             });

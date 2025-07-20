@@ -63,12 +63,13 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(i32, i32), i32, 2usize>("CompareId")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CompareId", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CompareId", 2usize
                         )
                     })
             });
@@ -81,7 +82,7 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -90,7 +91,8 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DelayExpandDropItem", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DelayExpandDropItem", 0usize
                         )
                     })
             });
@@ -105,7 +107,7 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -114,7 +116,8 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DragCleanup", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DragCleanup", 0usize
                         )
                     })
             });
@@ -129,7 +132,7 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -138,7 +141,8 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ExpandDropItem", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExpandDropItem", 0usize
                         )
                     })
             });
@@ -157,7 +161,7 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -171,7 +175,8 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleAutoExpand", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleAutoExpand", 2usize
                         )
                     })
             });
@@ -189,7 +194,7 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::IListDragAndDropArgs,
@@ -200,7 +205,8 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "HandleDragAndDrop", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleDragAndDrop", 1usize
                         )
                     })
             });
@@ -227,7 +233,7 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::IListDragAndDropArgs,
@@ -238,7 +244,8 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OnDrop", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "OnDrop",
+                            1usize
                         )
                     })
             });
@@ -254,7 +261,7 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::List_1<i32>,
@@ -265,7 +272,8 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RestoreExpanded", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RestoreExpanded", 1usize
                         )
                     })
             });
@@ -284,7 +292,7 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -298,7 +306,8 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetupDragAndDrop", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetupDragAndDrop", 2usize
                         )
                     })
             });
@@ -314,7 +323,7 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::BaseTreeView,
@@ -325,7 +334,8 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -418,12 +428,13 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController_Dr
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

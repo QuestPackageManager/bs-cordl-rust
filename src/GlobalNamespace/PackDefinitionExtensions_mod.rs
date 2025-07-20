@@ -57,7 +57,7 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<
@@ -78,7 +78,8 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetOculusLevelProductPacks", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetOculusLevelProductPacks", 1usize
                         )
                     })
             });
@@ -107,7 +108,7 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<
@@ -128,7 +129,8 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPS4LeaderboardIds", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPS4LeaderboardIds", 1usize
                         )
                     })
             });
@@ -155,7 +157,7 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<
@@ -176,7 +178,8 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPS4LevelProductPacks", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPS4LevelProductPacks", 1usize
                         )
                     })
             });
@@ -203,7 +206,7 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<
@@ -224,7 +227,8 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPS5LeaderboardIds", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPS5LeaderboardIds", 1usize
                         )
                     })
             });
@@ -251,7 +255,7 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<
@@ -272,7 +276,8 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPS5LevelProductPacks", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPS5LevelProductPacks", 1usize
                         )
                     })
             });
@@ -299,7 +304,7 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<
@@ -320,7 +325,8 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetPerceivedLoudnessSOs", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPerceivedLoudnessSOs", 1usize
                         )
                     })
             });
@@ -347,7 +353,7 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<
@@ -368,7 +374,8 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetQuestLeaderboardIds", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetQuestLeaderboardIds", 1usize
                         )
                     })
             });
@@ -395,7 +402,7 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<
@@ -416,7 +423,8 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetRiftLeaderboardIds", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetRiftLeaderboardIds", 1usize
                         )
                     })
             });
@@ -443,7 +451,7 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<
@@ -464,7 +472,8 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSteamLeaderboardIds", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSteamLeaderboardIds", 1usize
                         )
                     })
             });
@@ -493,7 +502,7 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<
@@ -514,7 +523,8 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSteamLevelProductPacks", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSteamLevelProductPacks", 1usize
                         )
                     })
             });

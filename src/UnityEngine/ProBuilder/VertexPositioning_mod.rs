@@ -47,7 +47,7 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -62,7 +62,8 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetSharedVertexPosition", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetSharedVertexPosition", 3usize
                         )
                     })
             });
@@ -79,7 +80,7 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -96,7 +97,8 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetSharedVertexValues", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetSharedVertexValues", 3usize
                         )
                     })
             });
@@ -113,7 +115,7 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -130,7 +132,8 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TranslateVerticesInWorldSpace", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TranslateVerticesInWorldSpace", 3usize
                         )
                     })
             });
@@ -149,7 +152,7 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -168,7 +171,8 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TranslateVerticesInWorldSpace", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TranslateVerticesInWorldSpace", 5usize
                         )
                     })
             });
@@ -188,7 +192,7 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -205,7 +209,8 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TranslateVerticesInternal", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TranslateVerticesInternal", 3usize
                         )
                     })
             });
@@ -224,7 +229,7 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -241,7 +246,8 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TranslateVertices", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TranslateVertices", 3usize
                         )
                     })
             });
@@ -262,7 +268,7 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -281,7 +287,8 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TranslateVertices", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TranslateVertices", 3usize
                         )
                     })
             });
@@ -302,7 +309,7 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -323,7 +330,8 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TranslateVertices", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TranslateVertices", 3usize
                         )
                     })
             });
@@ -342,7 +350,7 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::ProBuilderMesh,
@@ -357,7 +365,8 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "VerticesInWorldSpace", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "VerticesInWorldSpace", 1usize
                         )
                     })
             });

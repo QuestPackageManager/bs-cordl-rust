@@ -52,7 +52,7 @@ impl crate::GlobalNamespace::OculusAnalyticsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -75,7 +75,8 @@ impl crate::GlobalNamespace::OculusAnalyticsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LogClick", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LogClick", 2usize
                         )
                     })
             });
@@ -97,7 +98,7 @@ impl crate::GlobalNamespace::OculusAnalyticsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -120,7 +121,8 @@ impl crate::GlobalNamespace::OculusAnalyticsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LogEditAvatarEvent", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LogEditAvatarEvent", 2usize
                         )
                     })
             });
@@ -142,7 +144,7 @@ impl crate::GlobalNamespace::OculusAnalyticsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -165,7 +167,8 @@ impl crate::GlobalNamespace::OculusAnalyticsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LogEvent", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LogEvent", 2usize
                         )
                     })
             });
@@ -187,7 +190,7 @@ impl crate::GlobalNamespace::OculusAnalyticsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -210,7 +213,8 @@ impl crate::GlobalNamespace::OculusAnalyticsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LogExposure", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LogExposure", 2usize
                         )
                     })
             });
@@ -232,7 +236,7 @@ impl crate::GlobalNamespace::OculusAnalyticsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -255,7 +259,8 @@ impl crate::GlobalNamespace::OculusAnalyticsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LogImpression", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LogImpression", 2usize
                         )
                     })
             });
@@ -272,7 +277,7 @@ impl crate::GlobalNamespace::OculusAnalyticsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::BeatSaberSessionEventType, i32),
                         quest_hook::libil2cpp::Void,
@@ -281,7 +286,8 @@ impl crate::GlobalNamespace::OculusAnalyticsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "LogSessionEvent", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LogSessionEvent", 2usize
                         )
                     })
             });
@@ -303,7 +309,7 @@ impl crate::GlobalNamespace::OculusAnalyticsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -312,7 +318,8 @@ impl crate::GlobalNamespace::OculusAnalyticsModel {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "OpenDataPrivacyPage", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OpenDataPrivacyPage", 0usize
                         )
                     })
             });
@@ -327,12 +334,13 @@ impl crate::GlobalNamespace::OculusAnalyticsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -347,12 +355,13 @@ impl crate::GlobalNamespace::OculusAnalyticsModel {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_supportsOpenDataPrivacyPage")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_supportsOpenDataPrivacyPage", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_supportsOpenDataPrivacyPage", 0usize
                         )
                     })
             });

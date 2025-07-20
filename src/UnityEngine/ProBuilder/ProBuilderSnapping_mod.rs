@@ -46,7 +46,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderSnapping {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Vector3),
                         crate::UnityEngine::Vector3,
@@ -55,7 +55,8 @@ impl crate::UnityEngine::ProBuilder::ProBuilderSnapping {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetSnappingMaskBasedOnNormalVector", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSnappingMaskBasedOnNormalVector", 1usize
                         )
                     })
             });
@@ -70,7 +71,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderSnapping {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Vector3),
                         bool,
@@ -79,7 +80,8 @@ impl crate::UnityEngine::ProBuilder::ProBuilderSnapping {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "IsCardinalDirection", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsCardinalDirection", 1usize
                         )
                     })
             });
@@ -95,7 +97,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderSnapping {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::UnityEngine::Ray,
@@ -109,7 +111,8 @@ impl crate::UnityEngine::ProBuilder::ProBuilderSnapping {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SnapValueOnRay", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SnapValueOnRay", 4usize
                         )
                     })
             });
@@ -128,7 +131,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderSnapping {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -145,7 +148,8 @@ impl crate::UnityEngine::ProBuilder::ProBuilderSnapping {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SnapVertices", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SnapVertices", 3usize
                         )
                     })
             });
@@ -161,7 +165,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderSnapping {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Vector3, crate::UnityEngine::Vector3),
                         crate::UnityEngine::Vector3,
@@ -170,7 +174,8 @@ impl crate::UnityEngine::ProBuilder::ProBuilderSnapping {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Snap", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Snap",
+                            2usize
                         )
                     })
             });
@@ -183,12 +188,13 @@ impl crate::UnityEngine::ProBuilder::ProBuilderSnapping {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(f32, f32), f32, 2usize>("Snap")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Snap", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Snap",
+                            2usize
                         )
                     })
             });

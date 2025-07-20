@@ -42,12 +42,13 @@ impl crate::Mono::RuntimeMarshal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(i32), i32, 1usize>("AsciHexDigitValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AsciHexDigitValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AsciHexDigitValue", 1usize
                         )
                     })
             });
@@ -62,7 +63,7 @@ impl crate::Mono::RuntimeMarshal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         quest_hook::libil2cpp::Gc<
@@ -73,7 +74,8 @@ impl crate::Mono::RuntimeMarshal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DecodeBlobArray", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DecodeBlobArray", 1usize
                         )
                     })
             });
@@ -89,7 +91,7 @@ impl crate::Mono::RuntimeMarshal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             crate::System::IntPtr,
@@ -101,7 +103,8 @@ impl crate::Mono::RuntimeMarshal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DecodeBlobSize", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DecodeBlobSize", 2usize
                         )
                     })
             });
@@ -117,7 +120,7 @@ impl crate::Mono::RuntimeMarshal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
@@ -131,7 +134,8 @@ impl crate::Mono::RuntimeMarshal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "FreeAssemblyName", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FreeAssemblyName", 2usize
                         )
                     })
             });
@@ -146,7 +150,7 @@ impl crate::Mono::RuntimeMarshal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         crate::Mono::SafeStringMarshal,
@@ -155,7 +159,8 @@ impl crate::Mono::RuntimeMarshal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MarshalString", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MarshalString", 1usize
                         )
                     })
             });
@@ -172,7 +177,7 @@ impl crate::Mono::RuntimeMarshal {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::IntPtr),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -181,7 +186,8 @@ impl crate::Mono::RuntimeMarshal {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PtrToUtf8String", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PtrToUtf8String", 1usize
                         )
                     })
             });

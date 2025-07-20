@@ -47,7 +47,7 @@ impl crate::OVR::OpenVR::CVRExtendedDisplay {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<i32>,
@@ -59,7 +59,8 @@ impl crate::OVR::OpenVR::CVRExtendedDisplay {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetDXGIOutputInfo", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDXGIOutputInfo", 2usize
                         )
                     })
             });
@@ -79,7 +80,7 @@ impl crate::OVR::OpenVR::CVRExtendedDisplay {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::OVR::OpenVR::EVREye,
@@ -94,7 +95,8 @@ impl crate::OVR::OpenVR::CVRExtendedDisplay {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetEyeOutputViewport", 5usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetEyeOutputViewport", 5usize
                         )
                     })
             });
@@ -113,7 +115,7 @@ impl crate::OVR::OpenVR::CVRExtendedDisplay {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<i32>,
@@ -127,7 +129,8 @@ impl crate::OVR::OpenVR::CVRExtendedDisplay {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetWindowBounds", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetWindowBounds", 4usize
                         )
                     })
             });
@@ -152,7 +155,7 @@ impl crate::OVR::OpenVR::CVRExtendedDisplay {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::IntPtr),
                         quest_hook::libil2cpp::Void,
@@ -161,7 +164,8 @@ impl crate::OVR::OpenVR::CVRExtendedDisplay {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });

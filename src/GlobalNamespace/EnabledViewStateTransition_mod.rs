@@ -59,7 +59,7 @@ impl crate::GlobalNamespace::EnabledViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -68,7 +68,8 @@ impl crate::GlobalNamespace::EnabledViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetDisabledState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetDisabledState", 0usize
                         )
                     })
             });
@@ -83,7 +84,7 @@ impl crate::GlobalNamespace::EnabledViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -92,7 +93,8 @@ impl crate::GlobalNamespace::EnabledViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetHighlightedState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetHighlightedState", 0usize
                         )
                     })
             });
@@ -107,7 +109,7 @@ impl crate::GlobalNamespace::EnabledViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -116,7 +118,8 @@ impl crate::GlobalNamespace::EnabledViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetNormalState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetNormalState", 0usize
                         )
                     })
             });
@@ -131,7 +134,7 @@ impl crate::GlobalNamespace::EnabledViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -140,7 +143,8 @@ impl crate::GlobalNamespace::EnabledViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetPressedState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetPressedState", 0usize
                         )
                     })
             });
@@ -155,7 +159,7 @@ impl crate::GlobalNamespace::EnabledViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -164,7 +168,8 @@ impl crate::GlobalNamespace::EnabledViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetSelectedAndHighlightedState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetSelectedAndHighlightedState", 0usize
                         )
                     })
             });
@@ -179,7 +184,7 @@ impl crate::GlobalNamespace::EnabledViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -188,7 +193,8 @@ impl crate::GlobalNamespace::EnabledViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SetSelectedState", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetSelectedState", 0usize
                         )
                     })
             });
@@ -206,7 +212,7 @@ impl crate::GlobalNamespace::EnabledViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::TransitionTimingSO,
@@ -217,7 +223,8 @@ impl crate::GlobalNamespace::EnabledViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TransitionToDisabledState", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TransitionToDisabledState", 1usize
                         )
                     })
             });
@@ -235,7 +242,7 @@ impl crate::GlobalNamespace::EnabledViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::TransitionTimingSO,
@@ -246,7 +253,8 @@ impl crate::GlobalNamespace::EnabledViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TransitionToHighlightedState", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TransitionToHighlightedState", 1usize
                         )
                     })
             });
@@ -264,7 +272,7 @@ impl crate::GlobalNamespace::EnabledViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::TransitionTimingSO,
@@ -275,7 +283,8 @@ impl crate::GlobalNamespace::EnabledViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TransitionToNormalState", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TransitionToNormalState", 1usize
                         )
                     })
             });
@@ -293,7 +302,7 @@ impl crate::GlobalNamespace::EnabledViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::TransitionTimingSO,
@@ -304,7 +313,8 @@ impl crate::GlobalNamespace::EnabledViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TransitionToPressedState", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TransitionToPressedState", 1usize
                         )
                     })
             });
@@ -322,7 +332,7 @@ impl crate::GlobalNamespace::EnabledViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::TransitionTimingSO,
@@ -333,8 +343,8 @@ impl crate::GlobalNamespace::EnabledViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TransitionToSelectedAndHighlightedState",
-                            1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TransitionToSelectedAndHighlightedState", 1usize
                         )
                     })
             });
@@ -352,7 +362,7 @@ impl crate::GlobalNamespace::EnabledViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::TransitionTimingSO,
@@ -363,7 +373,8 @@ impl crate::GlobalNamespace::EnabledViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "TransitionToSelectedState", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TransitionToSelectedState", 1usize
                         )
                     })
             });
@@ -378,12 +389,13 @@ impl crate::GlobalNamespace::EnabledViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });
@@ -400,7 +412,7 @@ impl crate::GlobalNamespace::EnabledViewStateTransition {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -411,7 +423,8 @@ impl crate::GlobalNamespace::EnabledViewStateTransition {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_transition", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_transition", 0usize
                         )
                     })
             });

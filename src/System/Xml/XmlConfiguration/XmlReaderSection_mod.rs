@@ -45,7 +45,7 @@ impl crate::System::Xml::XmlConfiguration::XmlReaderSection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
@@ -54,7 +54,8 @@ impl crate::System::Xml::XmlConfiguration::XmlReaderSection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateDefaultResolver", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateDefaultResolver", 0usize
                         )
                     })
             });
@@ -69,7 +70,7 @@ impl crate::System::Xml::XmlConfiguration::XmlReaderSection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         bool,
@@ -78,8 +79,8 @@ impl crate::System::Xml::XmlConfiguration::XmlReaderSection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_CollapseWhiteSpaceIntoEmptyString",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CollapseWhiteSpaceIntoEmptyString", 0usize
                         )
                     })
             });
@@ -90,7 +91,7 @@ impl crate::System::Xml::XmlConfiguration::XmlReaderSection {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
                         bool,
@@ -99,7 +100,8 @@ impl crate::System::Xml::XmlConfiguration::XmlReaderSection {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_ProhibitDefaultUrlResolver", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ProhibitDefaultUrlResolver", 0usize
                         )
                     })
             });

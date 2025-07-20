@@ -59,7 +59,7 @@ impl crate::GlobalNamespace::NumericConvertInstruction_ToUnderlying {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -68,7 +68,8 @@ impl crate::GlobalNamespace::NumericConvertInstruction_ToUnderlying {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Convert", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Convert",
+                            1usize
                         )
                     })
             });
@@ -95,7 +96,7 @@ impl crate::GlobalNamespace::NumericConvertInstruction_ToUnderlying {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::TypeCode, bool),
                         quest_hook::libil2cpp::Void,
@@ -104,7 +105,8 @@ impl crate::GlobalNamespace::NumericConvertInstruction_ToUnderlying {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
                         )
                     })
             });
@@ -121,7 +123,7 @@ impl crate::GlobalNamespace::NumericConvertInstruction_ToUnderlying {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -130,7 +132,8 @@ impl crate::GlobalNamespace::NumericConvertInstruction_ToUnderlying {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_InstructionName", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_InstructionName", 0usize
                         )
                     })
             });

@@ -53,7 +53,7 @@ impl crate::Oculus::Platform::UserDataStore {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u64,
@@ -73,7 +73,8 @@ impl crate::Oculus::Platform::UserDataStore {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PrivateDeleteEntryByKey", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PrivateDeleteEntryByKey", 2usize
                         )
                     })
             });
@@ -103,7 +104,7 @@ impl crate::Oculus::Platform::UserDataStore {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<
@@ -125,7 +126,8 @@ impl crate::Oculus::Platform::UserDataStore {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PrivateGetEntries", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PrivateGetEntries", 1usize
                         )
                     })
             });
@@ -159,7 +161,7 @@ impl crate::Oculus::Platform::UserDataStore {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u64,
@@ -186,7 +188,8 @@ impl crate::Oculus::Platform::UserDataStore {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PrivateGetEntryByKey", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PrivateGetEntryByKey", 2usize
                         )
                     })
             });
@@ -218,7 +221,7 @@ impl crate::Oculus::Platform::UserDataStore {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u64,
@@ -241,7 +244,8 @@ impl crate::Oculus::Platform::UserDataStore {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PrivateWriteEntry", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PrivateWriteEntry", 3usize
                         )
                     })
             });
@@ -269,7 +273,7 @@ impl crate::Oculus::Platform::UserDataStore {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u64,
@@ -289,7 +293,8 @@ impl crate::Oculus::Platform::UserDataStore {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PublicDeleteEntryByKey", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PublicDeleteEntryByKey", 2usize
                         )
                     })
             });
@@ -319,7 +324,7 @@ impl crate::Oculus::Platform::UserDataStore {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<
@@ -341,7 +346,8 @@ impl crate::Oculus::Platform::UserDataStore {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PublicGetEntries", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PublicGetEntries", 1usize
                         )
                     })
             });
@@ -375,7 +381,7 @@ impl crate::Oculus::Platform::UserDataStore {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u64,
@@ -402,7 +408,8 @@ impl crate::Oculus::Platform::UserDataStore {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PublicGetEntryByKey", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PublicGetEntryByKey", 2usize
                         )
                     })
             });
@@ -434,7 +441,7 @@ impl crate::Oculus::Platform::UserDataStore {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             u64,
@@ -457,7 +464,8 @@ impl crate::Oculus::Platform::UserDataStore {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "PublicWriteEntry", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PublicWriteEntry", 3usize
                         )
                     })
             });

@@ -61,7 +61,7 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataMinMaxIntSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -87,7 +87,8 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataMinMaxIntSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CalculateBadgeData", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CalculateBadgeData", 4usize
                         )
                     })
             });
@@ -118,7 +119,7 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataMinMaxIntSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -138,7 +139,8 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataMinMaxIntSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CalculateMax", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CalculateMax", 2usize
                         )
                     })
             });
@@ -163,7 +165,7 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataMinMaxIntSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -183,7 +185,8 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataMinMaxIntSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CalculateMin", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CalculateMin", 2usize
                         )
                     })
             });
@@ -201,7 +204,7 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataMinMaxIntSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::MultiplayerPlayerResultsData,
@@ -212,7 +215,8 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataMinMaxIntSO {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetValue", 1usize
                         )
                     })
             });
@@ -232,12 +236,13 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataMinMaxIntSO {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

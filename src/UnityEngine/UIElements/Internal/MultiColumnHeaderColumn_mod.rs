@@ -68,7 +68,7 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -77,7 +77,8 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "BindHeaderContent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BindHeaderContent", 0usize
                         )
                     })
             });
@@ -94,7 +95,7 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -105,7 +106,8 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateDefaultHeaderContent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateDefaultHeaderContent", 0usize
                         )
                     })
             });
@@ -121,7 +123,7 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::VisualElement,
@@ -132,7 +134,8 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DefaultBindHeaderContent", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DefaultBindHeaderContent", 1usize
                         )
                     })
             });
@@ -147,7 +150,7 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -156,7 +159,8 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "DestroyHeaderContent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DestroyHeaderContent", 0usize
                         )
                     })
             });
@@ -171,7 +175,7 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -180,7 +184,8 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InitManipulators", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitManipulators", 0usize
                         )
                     })
             });
@@ -204,7 +209,7 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -213,7 +218,8 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UnbindHeaderContent", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnbindHeaderContent", 0usize
                         )
                     })
             });
@@ -228,7 +234,7 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -237,7 +243,8 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateDataFromColumn", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateDataFromColumn", 0usize
                         )
                     })
             });
@@ -252,7 +259,7 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -261,7 +268,8 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateGeometryFromColumn", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateGeometryFromColumn", 0usize
                         )
                     })
             });
@@ -276,7 +284,7 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Void,
@@ -285,7 +293,8 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "UpdateHeaderTemplate", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateHeaderTemplate", 0usize
                         )
                     })
             });
@@ -303,7 +312,7 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::Internal::ColumnMover,
@@ -314,7 +323,8 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<InitManipulators>b__46_0", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<InitManipulators>b__46_0", 1usize
                         )
                     })
             });
@@ -331,7 +341,7 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -345,7 +355,8 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<.ctor>b__45_0", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<.ctor>b__45_0", 2usize
                         )
                     })
             });
@@ -361,7 +372,7 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::Column,
@@ -372,7 +383,8 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "<.ctor>b__45_1", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<.ctor>b__45_1", 1usize
                         )
                     })
             });
@@ -388,7 +400,7 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::Column,
@@ -399,7 +411,8 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
                         )
                     })
             });
@@ -416,7 +429,7 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -427,7 +440,8 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_clickable", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_clickable", 0usize
                         )
                     })
             });
@@ -444,7 +458,7 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -455,7 +469,8 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_column", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_column", 0usize
                         )
                     })
             });
@@ -472,7 +487,7 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -483,7 +498,8 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_content", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_content", 0usize
                         )
                     })
             });
@@ -496,12 +512,13 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), bool, 0usize>("get_isContentBound")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_isContentBound", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isContentBound", 0usize
                         )
                     })
             });
@@ -516,7 +533,7 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
@@ -527,7 +544,8 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_mover", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_mover", 0usize
                         )
                     })
             });
@@ -543,7 +561,7 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::Clickable,
@@ -554,7 +572,8 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_clickable", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_clickable", 1usize
                         )
                     })
             });
@@ -570,7 +589,7 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::Column,
@@ -581,7 +600,8 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_column", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_column", 1usize
                         )
                     })
             });
@@ -597,7 +617,7 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::VisualElement,
@@ -608,7 +628,8 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_content", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_content", 1usize
                         )
                     })
             });
@@ -624,7 +645,7 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Void,
@@ -633,7 +654,8 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_isContentBound", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_isContentBound", 1usize
                         )
                     })
             });
@@ -651,7 +673,7 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::Internal::ColumnMover,
@@ -662,7 +684,8 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_mover", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_mover", 1usize
                         )
                     })
             });
@@ -678,7 +701,7 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Void,
@@ -687,7 +710,8 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_sortOrderLabel", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_sortOrderLabel", 1usize
                         )
                     })
             });

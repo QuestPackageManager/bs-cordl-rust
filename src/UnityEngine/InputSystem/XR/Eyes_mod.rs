@@ -111,7 +111,7 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector3,
@@ -120,7 +120,8 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_fixationPoint", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_fixationPoint", 0usize
                         )
                     })
             });
@@ -133,12 +134,13 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_leftEyeOpenAmount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_leftEyeOpenAmount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_leftEyeOpenAmount", 0usize
                         )
                     })
             });
@@ -151,7 +153,7 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector3,
@@ -160,7 +162,8 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_leftEyePosition", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_leftEyePosition", 0usize
                         )
                     })
             });
@@ -175,7 +178,7 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Quaternion,
@@ -184,7 +187,8 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_leftEyeRotation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_leftEyeRotation", 0usize
                         )
                     })
             });
@@ -197,12 +201,13 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_rightEyeOpenAmount")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rightEyeOpenAmount", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rightEyeOpenAmount", 0usize
                         )
                     })
             });
@@ -215,7 +220,7 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Vector3,
@@ -224,7 +229,8 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rightEyePosition", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rightEyePosition", 0usize
                         )
                     })
             });
@@ -239,7 +245,7 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::UnityEngine::Quaternion,
@@ -248,7 +254,8 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_rightEyeRotation", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rightEyeRotation", 0usize
                         )
                     })
             });
@@ -264,7 +271,7 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector3),
                         quest_hook::libil2cpp::Void,
@@ -273,7 +280,8 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_fixationPoint", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_fixationPoint", 1usize
                         )
                     })
             });
@@ -289,7 +297,7 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -298,7 +306,8 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_leftEyeOpenAmount", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_leftEyeOpenAmount", 1usize
                         )
                     })
             });
@@ -314,7 +323,7 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector3),
                         quest_hook::libil2cpp::Void,
@@ -323,7 +332,8 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_leftEyePosition", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_leftEyePosition", 1usize
                         )
                     })
             });
@@ -339,7 +349,7 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Quaternion),
                         quest_hook::libil2cpp::Void,
@@ -348,7 +358,8 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_leftEyeRotation", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_leftEyeRotation", 1usize
                         )
                     })
             });
@@ -364,7 +375,7 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (f32),
                         quest_hook::libil2cpp::Void,
@@ -373,7 +384,8 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_rightEyeOpenAmount", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_rightEyeOpenAmount", 1usize
                         )
                     })
             });
@@ -389,7 +401,7 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Vector3),
                         quest_hook::libil2cpp::Void,
@@ -398,7 +410,8 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_rightEyePosition", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_rightEyePosition", 1usize
                         )
                     })
             });
@@ -414,7 +427,7 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::UnityEngine::Quaternion),
                         quest_hook::libil2cpp::Void,
@@ -423,7 +436,8 @@ impl crate::UnityEngine::InputSystem::XR::Eyes {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "set_rightEyeRotation", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_rightEyeRotation", 1usize
                         )
                     })
             });

@@ -48,7 +48,7 @@ impl crate::System::Xml::Serialization::ReflectionHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>, bool),
                         quest_hook::libil2cpp::Void,
@@ -57,7 +57,8 @@ impl crate::System::Xml::Serialization::ReflectionHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CheckSerializableType", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckSerializableType", 2usize
                         )
                     })
             });
@@ -76,7 +77,7 @@ impl crate::System::Xml::Serialization::ReflectionHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -92,7 +93,8 @@ impl crate::System::Xml::Serialization::ReflectionHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetRegisteredClrType", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetRegisteredClrType", 2usize
                         )
                     })
             });
@@ -111,7 +113,7 @@ impl crate::System::Xml::Serialization::ReflectionHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -129,7 +131,8 @@ impl crate::System::Xml::Serialization::ReflectionHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetRegisteredSchemaType", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetRegisteredSchemaType", 2usize
                         )
                     })
             });
@@ -156,7 +159,7 @@ impl crate::System::Xml::Serialization::ReflectionHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -173,7 +176,8 @@ impl crate::System::Xml::Serialization::ReflectionHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterClrType", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterClrType", 3usize
                         )
                     })
             });
@@ -193,7 +197,7 @@ impl crate::System::Xml::Serialization::ReflectionHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -212,7 +216,8 @@ impl crate::System::Xml::Serialization::ReflectionHelper {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "RegisterSchemaType", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterSchemaType", 3usize
                         )
                     })
             });
@@ -227,12 +232,13 @@ impl crate::System::Xml::Serialization::ReflectionHelper {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

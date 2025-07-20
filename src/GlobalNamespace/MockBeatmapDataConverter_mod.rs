@@ -49,7 +49,7 @@ impl crate::GlobalNamespace::MockBeatmapDataConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::IReadonlyBeatmapData,
@@ -62,7 +62,8 @@ impl crate::GlobalNamespace::MockBeatmapDataConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToMockBeatmapData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToMockBeatmapData", 1usize
                         )
                     })
             });
@@ -79,7 +80,7 @@ impl crate::GlobalNamespace::MockBeatmapDataConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>),
                         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockNoteData>,
@@ -88,7 +89,8 @@ impl crate::GlobalNamespace::MockBeatmapDataConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToMockNoteData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToMockNoteData", 1usize
                         )
                     })
             });
@@ -105,7 +107,7 @@ impl crate::GlobalNamespace::MockBeatmapDataConverter {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::ObstacleData,
@@ -118,7 +120,8 @@ impl crate::GlobalNamespace::MockBeatmapDataConverter {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToMockObstacleData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToMockObstacleData", 1usize
                         )
                     })
             });

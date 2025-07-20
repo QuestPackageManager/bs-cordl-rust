@@ -46,7 +46,7 @@ impl crate::BeatSaber::RecPlay::Poser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
@@ -59,7 +59,8 @@ impl crate::BeatSaber::RecPlay::Poser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InterpolatePose", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InterpolatePose", 3usize
                         )
                     })
             });
@@ -74,7 +75,7 @@ impl crate::BeatSaber::RecPlay::Poser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Pose),
                         crate::UnityEngine::Pose,
@@ -83,7 +84,8 @@ impl crate::BeatSaber::RecPlay::Poser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "InvertPose", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InvertPose", 1usize
                         )
                     })
             });
@@ -98,7 +100,7 @@ impl crate::BeatSaber::RecPlay::Poser {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::Pose),
                         crate::UnityEngine::Pose,
@@ -107,7 +109,8 @@ impl crate::BeatSaber::RecPlay::Poser {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "MirrorPoseYZ", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MirrorPoseYZ", 1usize
                         )
                     })
             });

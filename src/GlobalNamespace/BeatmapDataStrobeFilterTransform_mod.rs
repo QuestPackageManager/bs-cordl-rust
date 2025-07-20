@@ -55,7 +55,7 @@ impl crate::GlobalNamespace::BeatmapDataStrobeFilterTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
@@ -73,7 +73,8 @@ impl crate::GlobalNamespace::BeatmapDataStrobeFilterTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CreateTransformedData", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateTransformedData", 2usize
                         )
                     })
             });
@@ -94,7 +95,7 @@ impl crate::GlobalNamespace::BeatmapDataStrobeFilterTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::EnvironmentColorType),
                         i32,
@@ -103,7 +104,8 @@ impl crate::GlobalNamespace::BeatmapDataStrobeFilterTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetFlashAndFadeToBlackEventDataValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetFlashAndFadeToBlackEventDataValue", 1usize
                         )
                     })
             });
@@ -116,7 +118,7 @@ impl crate::GlobalNamespace::BeatmapDataStrobeFilterTransform {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::EnvironmentColorType),
                         i32,
@@ -125,7 +127,8 @@ impl crate::GlobalNamespace::BeatmapDataStrobeFilterTransform {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "GetOnEventDataValue", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetOnEventDataValue", 1usize
                         )
                     })
             });
@@ -205,7 +208,7 @@ impl crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::BasicBeatmapEventData,
@@ -216,7 +219,8 @@ impl crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "AddStrobeData", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddStrobeData", 1usize
                         )
                     })
             });
@@ -241,7 +245,7 @@ impl crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::BasicBeatmapEventData,
@@ -252,7 +256,8 @@ impl crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "StartPotentialStrobe", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartPotentialStrobe", 1usize
                         )
                     })
             });
@@ -267,12 +272,13 @@ impl crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
                         )
                     })
             });

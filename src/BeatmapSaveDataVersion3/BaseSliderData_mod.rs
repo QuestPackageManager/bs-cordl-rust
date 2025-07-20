@@ -88,7 +88,7 @@ impl crate::BeatmapSaveDataVersion3::BaseSliderData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
                             crate::BeatmapSaveDataCommon::NoteColorType,
@@ -106,7 +106,8 @@ impl crate::BeatmapSaveDataVersion3::BaseSliderData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), ".ctor", 8usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            8usize
                         )
                     })
             });
@@ -134,7 +135,7 @@ impl crate::BeatmapSaveDataVersion3::BaseSliderData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::BeatmapSaveDataCommon::NoteColorType,
@@ -143,7 +144,8 @@ impl crate::BeatmapSaveDataVersion3::BaseSliderData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_colorType", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_colorType", 0usize
                         )
                     })
             });
@@ -158,7 +160,7 @@ impl crate::BeatmapSaveDataVersion3::BaseSliderData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
                         crate::BeatmapSaveDataCommon::NoteCutDirection,
@@ -167,7 +169,8 @@ impl crate::BeatmapSaveDataVersion3::BaseSliderData {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_headCutDirection", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_headCutDirection", 0usize
                         )
                     })
             });
@@ -180,12 +183,13 @@ impl crate::BeatmapSaveDataVersion3::BaseSliderData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_headLayer")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_headLayer", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_headLayer", 0usize
                         )
                     })
             });
@@ -196,12 +200,13 @@ impl crate::BeatmapSaveDataVersion3::BaseSliderData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_headLine")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_headLine", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_headLine", 0usize
                         )
                     })
             });
@@ -212,12 +217,13 @@ impl crate::BeatmapSaveDataVersion3::BaseSliderData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), f32, 0usize>("get_tailBeat")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_tailBeat", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_tailBeat", 0usize
                         )
                     })
             });
@@ -228,12 +234,13 @@ impl crate::BeatmapSaveDataVersion3::BaseSliderData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_tailLayer")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_tailLayer", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_tailLayer", 0usize
                         )
                     })
             });
@@ -244,12 +251,13 @@ impl crate::BeatmapSaveDataVersion3::BaseSliderData {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<(), i32, 0usize>("get_tailLine")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "get_tailLine", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_tailLine", 0usize
                         )
                     })
             });

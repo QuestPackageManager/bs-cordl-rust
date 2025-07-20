@@ -46,7 +46,7 @@ impl crate::Internal::Cryptography::Helpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -59,7 +59,8 @@ impl crate::Internal::Cryptography::Helpers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "CloneByteArray", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CloneByteArray", 1usize
                         )
                     })
             });
@@ -72,12 +73,13 @@ impl crate::Internal::Cryptography::Helpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<(u8), char, 1usize>("NibbleToHex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "NibbleToHex", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NibbleToHex", 1usize
                         )
                     })
             });
@@ -92,7 +94,7 @@ impl crate::Internal::Cryptography::Helpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -105,7 +107,8 @@ impl crate::Internal::Cryptography::Helpers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToHexArrayUpper", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToHexArrayUpper", 1usize
                         )
                     })
             });
@@ -122,7 +125,7 @@ impl crate::Internal::Cryptography::Helpers {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
-                Self::class()
+                <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -133,7 +136,8 @@ impl crate::Internal::Cryptography::Helpers {
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "ToHexStringUpper", 1usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToHexStringUpper", 1usize
                         )
                     })
             });
